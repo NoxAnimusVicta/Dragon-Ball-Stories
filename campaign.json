@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-07-ooc-timeline-reference",
+  "revision": "2026-10-07-simple-home-timelines",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "Training with Vegeta",
@@ -190,17 +190,8 @@
       "status": "Partner",
       "facts": [
         {
-          "label": "Version",
-          "value": "Time Patroller / Your partner"
-        },
-        {
-          "label": "Person ID · OOC",
-          "value": "NPC-0001"
-        },
-        {
           "label": "Home timeline · OOC",
-          "value": "TL-002 · Frieza on Earth",
-          "note": "Post-Frieza recruit; Goku became Super Saiyan and defeated Frieza on Earth. Early-Z temperament."
+          "value": "TL-002 · Frieza on Earth"
         },
         {
           "label": "Current assignment",
@@ -220,17 +211,8 @@
       "status": "Instructor",
       "facts": [
         {
-          "label": "Version",
-          "value": "Training instructor"
-        },
-        {
-          "label": "Person ID · OOC",
-          "value": "NPC-0008"
-        },
-        {
           "label": "Home timeline · OOC",
-          "value": "TL-004 · Post-Tournament of Power",
-          "note": "Recruited after the tournament; distinct from earlier-era Krillins."
+          "value": "TL-004 · Post-Tournament of Power"
         },
         {
           "label": "Last seen",
@@ -246,17 +228,8 @@
       "status": "Supervisor",
       "facts": [
         {
-          "label": "Version",
-          "value": "Temporal Super Stars dispatcher"
-        },
-        {
-          "label": "Person ID · OOC",
-          "value": "NPC-0006"
-        },
-        {
           "label": "Home timeline · OOC",
-          "value": "TL-003 · Dispatcher branch",
-          "note": "Alternate Mr. Satan; recruitment era and historical divergence not established."
+          "value": "TL-003 · Dispatcher branch"
         },
         {
           "label": "Authority",
@@ -277,17 +250,8 @@
       "details": "Small, pink-skinned, pointed ears, swept orange hair, gold earrings and purple-and-gold clothing. Bright, brisk questions and direct authority. She confirmed Zero’s game-history account and offered supervised trainee membership. She is not his everyday dispatcher. No result explaining his origin has yet been reported. Exact age unknown.",
       "facts": [
         {
-          "label": "Version",
-          "value": "Supreme Kai of Time / Hub contact"
-        },
-        {
-          "label": "Person ID · OOC",
-          "value": "NPC-0007"
-        },
-        {
           "label": "Home timeline · OOC",
-          "value": "Time Patrol hub",
-          "note": "No separate home-branch assignment established."
+          "value": "Time Patrol hub"
         }
       ]
     },
@@ -299,17 +263,8 @@
       "details": "Appears in her forties, brown skin, square face, close-cropped black hair grey at the temples, white medical jacket over teal clothing. Low, brisk voice and concrete clinical answers. Reported completed treatment and clear scans, heard Zero’s account, forwarded it to coordination and measured his power at 50. Last seen in the medical ward; present whereabouts unknown.",
       "facts": [
         {
-          "label": "Version",
-          "value": "Time Patrol clinician"
-        },
-        {
-          "label": "Person ID · OOC",
-          "value": "NPC-0004"
-        },
-        {
           "label": "Home timeline · OOC",
-          "value": "Unassigned",
-          "note": "Home history has not been defined in the campaign."
+          "value": "Unassigned"
         }
       ]
     },
@@ -321,17 +276,8 @@
       "details": "Huge, bald, black moustache, white-and-gold Saiyan armour, bare muscular arms and brown tail. Deep, rough voice; amused cruelty gave way to anger at Zero’s insults. Zero’s punches, clawing and biting attempts did not visibly injure him. Vegeta knocked him unconscious; he was breathing when last seen. His later whereabouts are unknown to Zero. Exact age unknown.",
       "facts": [
         {
-          "label": "Version",
-          "value": "West City attacker"
-        },
-        {
-          "label": "Person ID · OOC",
-          "value": "NPC-0003"
-        },
-        {
           "label": "Home timeline · OOC",
-          "value": "TL-001 · Opening branch",
-          "note": "The Nappa encountered in West City during the disrupted Saiyan arrival."
+          "value": "TL-001 · Opening branch"
         }
       ]
     },
@@ -342,17 +288,8 @@
       "status": "Training partner",
       "facts": [
         {
-          "label": "Version",
-          "value": "Courtyard sparring partner"
-        },
-        {
-          "label": "Person ID · OOC",
-          "value": "NPC-0011"
-        },
-        {
           "label": "Home timeline · OOC",
-          "value": "TL-005 · A world without Goku",
-          "note": "Led his own Z Fighters; extracted just before Raditz could kill him."
+          "value": "TL-005 · A world without Goku"
         },
         {
           "label": "Reported power",
@@ -372,17 +309,8 @@
       "status": "Technical contact",
       "facts": [
         {
-          "label": "Version",
-          "value": "Training complex technician"
-        },
-        {
-          "label": "Person ID · OOC",
-          "value": "NPC-0012"
-        },
-        {
           "label": "Home timeline · OOC",
-          "value": "TL-002 · Frieza on Earth",
-          "note": "Same home timeline as your partner Vegeta; accompanied him into the Time Patrol."
+          "value": "TL-002 · Frieza on Earth"
         },
         {
           "label": "Last seen",

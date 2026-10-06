@@ -20,4 +20,4 @@ Generated from campaign.json. Edit that authoritative source, then run build.py.
 - Character artwork: Provided: zero-portrait.jpg.
 - Published audience: public, read-only companion. Character records plus explicitly labelled OOC timeline references.
 
-Unpublished fields can exist in private preparation. Story records contain enacted, character-known facts. The user-authorised exception is explicitly labelled OOC person IDs, home timelines and approved origin summaries; these do not grant Zero knowledge. Future plot plans remain private. The story clock measures elapsed time from the opening; documentation does not start it. The Capsule Corp visual theme does not establish affiliations, equipment or geography.
+Unpublished fields can exist in private preparation. Story records contain enacted, character-known facts. The user-authorised exception is explicitly labelled OOC home-timeline labels; these do not grant Zero knowledge. Future plot plans remain private. The story clock measures elapsed time from the opening; documentation does not start it. The Capsule Corp visual theme does not establish affiliations, equipment or geography.
