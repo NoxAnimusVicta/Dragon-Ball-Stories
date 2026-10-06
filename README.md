@@ -17,6 +17,7 @@ The app is a published reference. Send character details and artwork through the
 ## Maintaining records
 
 - [Start here](START-HERE.md)
+- [Narrator guide](NARRATOR-GUIDE.md)
 - [Campaign configuration](CAMPAIGN-CONFIG.md)
 - [Current continuity](CURRENT-CONTINUITY.md)
 - [Corrections](RETCONS.md)

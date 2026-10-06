@@ -2,6 +2,8 @@
 
 This repository is the public companion for Dragon Ball Stories, a Dragon Ball Isekai.
 
+Read [the narrator guide](NARRATOR-GUIDE.md) for character records, narration and continuity rules.
+
 1. Read campaign.json for authoritative public character and story data.
 2. Read CAMPAIGN-CONFIG.md and CURRENT-CONTINUITY.md for readable summaries.
 3. Read RETCONS.md before relying on older records.
@@ -15,4 +17,4 @@ No scene has been recorded. The Capsule Corp styling does not establish a charac
 
 Update campaign.json first. Generate the readable summaries with the local build.py, validate with verify.py, then publish only the manifest's files. See MAINTENANCE.md for the data format and portrait workflow. Preserve historical events and dated corrections. A public snapshot may lag live play.
 
-The app requires an internet connection and fetches current data without storing character edits on the device. There are no external analytics, external scripts or offline caches. The original handbook and private source stay local. Never upload the entire campaign-source folder.
+The app requires an internet connection and fetches current data without storing character edits on the device. There are no external analytics, external scripts or offline caches. The updated narrator guide is published here; private source and unrevealed campaign material stay local. Never upload the entire campaign-source folder.
