@@ -1,0 +1,16 @@
+{
+  "files": [
+    ".gitignore",
+    ".nojekyll",
+    "README.md",
+    "START-HERE.md",
+    "CAMPAIGN-CONFIG.md",
+    "CURRENT-CONTINUITY.md",
+    "RETCONS.md",
+    "index.html",
+    "public-manifest.json"
+  ],
+  "destination": "NoxAnimusVicta/Dragon-Ball-Stories",
+  "branch": "main",
+  "site_entry": "index.html"
+}

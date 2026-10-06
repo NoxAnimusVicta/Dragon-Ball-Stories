@@ -18,4 +18,13 @@ The supplied Story Runner Handbook is setup reference material. It does not itse
 
 ## Next steps
 
-Establish the campaign era, protagonist and starting circumstances before filling records. Confirm companion-site scope before publication.
+Establish the campaign era, protagonist and starting circumstances before filling records. The starter companion site is approved and configured for GitHub Pages from main / (root).
+
+## Companion site
+
+[Open Dragon Ball Stories](https://noxanimusvicta.github.io/Dragon-Ball-Stories/)
+
+[Start here](START-HERE.md) · [Campaign setup](CAMPAIGN-CONFIG.md) · [Current continuity](CURRENT-CONTINUITY.md) · [Corrections](RETCONS.md)
+
+The public-file manifest lists the approved starter files. Review content before each upload. Publishing does not advance the story.
+
