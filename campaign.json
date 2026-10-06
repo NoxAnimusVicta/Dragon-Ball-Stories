@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-07-character-origins",
+  "revision": "2026-10-07-ooc-timeline-reference",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "Training with Vegeta",
@@ -194,9 +194,13 @@
           "value": "Time Patroller / Your partner"
         },
         {
-          "label": "Home timeline",
-          "value": "Origin unknown",
-          "note": "Not yet learned by Zero."
+          "label": "Person ID · OOC",
+          "value": "NPC-0001"
+        },
+        {
+          "label": "Home timeline · OOC",
+          "value": "TL-002 · Frieza on Earth",
+          "note": "Post-Frieza recruit; Goku became Super Saiyan and defeated Frieza on Earth. Early-Z temperament."
         },
         {
           "label": "Current assignment",
@@ -220,9 +224,13 @@
           "value": "Training instructor"
         },
         {
-          "label": "Home timeline",
-          "value": "Origin unknown",
-          "note": "Not yet learned by Zero."
+          "label": "Person ID · OOC",
+          "value": "NPC-0008"
+        },
+        {
+          "label": "Home timeline · OOC",
+          "value": "TL-004 · Post-Tournament of Power",
+          "note": "Recruited after the tournament; distinct from earlier-era Krillins."
         },
         {
           "label": "Last seen",
@@ -242,9 +250,13 @@
           "value": "Temporal Super Stars dispatcher"
         },
         {
-          "label": "Home timeline",
-          "value": "Origin unknown",
-          "note": "Not yet learned by Zero."
+          "label": "Person ID · OOC",
+          "value": "NPC-0006"
+        },
+        {
+          "label": "Home timeline · OOC",
+          "value": "TL-003 · Dispatcher branch",
+          "note": "Alternate Mr. Satan; recruitment era and historical divergence not established."
         },
         {
           "label": "Authority",
@@ -269,9 +281,13 @@
           "value": "Supreme Kai of Time / Hub contact"
         },
         {
-          "label": "Home timeline",
-          "value": "Origin unknown",
-          "note": "Not yet learned by Zero."
+          "label": "Person ID · OOC",
+          "value": "NPC-0007"
+        },
+        {
+          "label": "Home timeline · OOC",
+          "value": "Time Patrol hub",
+          "note": "No separate home-branch assignment established."
         }
       ]
     },
@@ -287,9 +303,13 @@
           "value": "Time Patrol clinician"
         },
         {
-          "label": "Home timeline",
-          "value": "Origin unknown",
-          "note": "Not yet learned by Zero."
+          "label": "Person ID · OOC",
+          "value": "NPC-0004"
+        },
+        {
+          "label": "Home timeline · OOC",
+          "value": "Unassigned",
+          "note": "Home history has not been defined in the campaign."
         }
       ]
     },
@@ -305,9 +325,13 @@
           "value": "West City attacker"
         },
         {
-          "label": "Home timeline",
-          "value": "Origin unknown",
-          "note": "Not yet learned by Zero."
+          "label": "Person ID · OOC",
+          "value": "NPC-0003"
+        },
+        {
+          "label": "Home timeline · OOC",
+          "value": "TL-001 · Opening branch",
+          "note": "The Nappa encountered in West City during the disrupted Saiyan arrival."
         }
       ]
     },
@@ -322,9 +346,13 @@
           "value": "Courtyard sparring partner"
         },
         {
-          "label": "Home timeline",
-          "value": "Origin unknown",
-          "note": "Not yet learned by Zero."
+          "label": "Person ID · OOC",
+          "value": "NPC-0011"
+        },
+        {
+          "label": "Home timeline · OOC",
+          "value": "TL-005 · A world without Goku",
+          "note": "Led his own Z Fighters; extracted just before Raditz could kill him."
         },
         {
           "label": "Reported power",
@@ -348,9 +376,13 @@
           "value": "Training complex technician"
         },
         {
-          "label": "Home timeline",
-          "value": "Origin unknown",
-          "note": "Not yet learned by Zero."
+          "label": "Person ID · OOC",
+          "value": "NPC-0012"
+        },
+        {
+          "label": "Home timeline · OOC",
+          "value": "TL-002 · Frieza on Earth",
+          "note": "Same home timeline as your partner Vegeta; accompanied him into the Time Patrol."
         },
         {
           "label": "Last seen",
