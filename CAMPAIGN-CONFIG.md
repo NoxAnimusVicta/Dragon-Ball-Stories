@@ -6,7 +6,7 @@ Generated from campaign.json. Edit that authoritative source, then run build.py.
 - Phase: Character creation.
 - Protagonist: Zero.
 - Age: 26 years.
-- Height: 5′5″–5′6″ (Approx. 165–168 cm); approximate.
+- Height: 5′6″ (167.64 cm).
 - Story identity: Zero. The former name is not recorded or used. Keep identifying real-world details outside public campaign records.
 - Race/species: Human.
 - Character appearance: Not publicly recorded.

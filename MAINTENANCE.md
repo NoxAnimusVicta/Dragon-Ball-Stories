@@ -20,7 +20,7 @@ character: name, age, height, heightMetric, heightApproximate, portrait, portrai
 
 story: era, date, location, situation, pendingChoice. Set started=true only after an enacted opening scene. Use date for elapsed story time from that opening, and era for the known local era/continuity. The private clock tracks elapsed time separately from local calendar coordinates; changing eras must not reset elapsed time. Before play begins, the clock is not started. Documentation and real-world waiting never advance it.
 
-Use Zero as the sole character name in public files, UI, metadata, prompts and narration. Never restore the former name or describe character fields as real-world identifying facts. Keep surnames, birthdays, addresses, contact details, real-world locations, occupations and identifying background out of public records. Age 26 and approximate height remain the approved character profile. Artwork and character facts come from the user; being supplied does not automatically make them publishable. Consult the local knowledge ledger and publication review before promoting private material.
+Use Zero as the sole character name in public files, UI, metadata, prompts and narration. Never restore the former name or describe character fields as real-world identifying facts. Keep surnames, birthdays, addresses, contact details, real-world locations, occupations and identifying background out of public records. Age 26 and height 5′6″ remain the approved character profile. Artwork and character facts come from the user; being supplied does not automatically make them publishable. Consult the local knowledge ledger and publication review before promoting private material.
 
 ## Collections
 

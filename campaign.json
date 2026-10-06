@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-06-character-confirmed",
+  "revision": "2026-10-06-height",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "Character creation",
@@ -8,9 +8,9 @@
   "character": {
     "name": "Zero",
     "age": 26,
-    "height": "5′5″–5′6″",
-    "heightMetric": "Approx. 165–168 cm",
-    "heightApproximate": true,
+    "height": "5′6″",
+    "heightMetric": "167.64 cm",
+    "heightApproximate": false,
     "portrait": "zero-portrait.jpg",
     "portraitAlt": "Zero with long auburn hair and beard, wearing a black martial-arts outfit, burgundy cape and sash, and black-and-burgundy boots. Reference scenery is not a story location.",
     "race": "Human",
