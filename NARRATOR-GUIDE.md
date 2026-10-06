@@ -1,6 +1,6 @@
 # Persistent Story and Companion App Handbook
 
-Version 2 • Updated 6 October 2026
+Version 3 • Updated 6 October 2026
 
 Public narrator reference. Campaign-specific secrets, unrevealed character dossiers and planned scenes are maintained separately and are not included here.
 
@@ -72,7 +72,7 @@ Record how confidence, impatience, insults, aggression and speech change when a 
 
 Give different speakers different priorities, not merely different catchphrases. A practical parent may ask whether someone has eaten; a commander may ask what support a plan requires; a merchant may ask who pays if delivery fails. None must speak that way in every conversation.
 
-Use contractions, incomplete thoughts and silence when natural. Do not mechanically add stammers or interruptions. Check the literal logic of metaphors, pronouns and comparisons. A sentence that sounds elegant but means nothing should be rewritten plainly.
+Use contractions, incomplete thoughts and silence when natural. Do not mechanically add stammers or interruptions. Check the literal logic of metaphors, pronouns and comparisons. Never answer an unspoken thought as if it were dialogue. Let speech and selective observable behaviour carry subtext; remove explanatory sentences that label a gesture’s real meaning, deny hidden affection or explain the joke. Read each exchange aloud in sequence and delete forced final quips or ornamental maxims. A sentence that sounds elegant but means nothing should be rewritten plainly.
 
 For example, when a grown character handles a childhood weapon, a familiar observer might say, "Looks small in your hand now." A remembered detail is appropriate only if that observer could actually know it. Do not invent a shared memory simply to make a line affectionate.
 
@@ -96,6 +96,8 @@ For unusual abilities, separate strength, precision, range, sustained output, at
 
 Preserve accepted scale across scenes. Do not silently convert a powerful protagonist into an ordinary person to create suspense. Do not invent specialised counters solely to cancel an advantage. Opposition should have an established or credibly introduced basis.
 
+Training records distinguish durable growth, momentary readings, control, technique and field readiness. Resolve authorised routine drills as montages at meaningful milestones, preserving consequential player choices. Record duration, method, recovery, previous/current benchmark and rationale. Do not freeze growth merely because it has not been measured or invent a universal gain-per-week formula from unrelated feats. Once routine self-checks are established, include comparable refreshed readings without demanding a separate user action each time.
+
 A successful demonstration establishes what happened under those conditions, not necessarily a universal maximum. An unmeasured effect should not become an exact range, energy yield or target count. Record observations and uncertainty separately.
 
 ## 5 Fair uncertainty and private rolls
@@ -116,6 +118,8 @@ Do not silently erase contradictory history. Preserve the original transcript an
 
 Maintain an exact transcript locally during every turn. Include the player message and the complete delivered response, including the status block. Label out-of-character discussion and progress commentary separately. Write the final scene into the archive before delivering the same text. Check the archive tail first to prevent omissions and duplicates.
 
+Future story-beat discussions count as archive exchanges: save both sides verbatim and classify proposals, agreements, unresolved choices and superseded ideas in private planning notes. They do not become character knowledge or guaranteed outcomes merely by being recorded.
+
 If an assistant response is unavailable, mark the gap rather than reconstructing it as a quotation. A summary is useful but is not an exact transcript. Split large archives into numbered files with an index if needed; stable exchange IDs make corrections and citations easier.
 
 Maintain one current checkpoint containing location, date, immediate situation, resources, equipped versus stored items, active abilities or effects, outstanding choices and relevant NPC knowledge. Keep earlier checkpoints as history. Update the start file to point to the actual latest checkpoint; do not leave several files all claiming to be current.
@@ -128,7 +132,7 @@ Establish the calendar before prolonged play: epoch, year length, month lengths,
 
 Track event date, report date and publication date separately. Advancing the real-world clock does not advance fiction. A travel deadline must have an explicit starting point. Record whether arrival and departure days count as travel or full days at a destination.
 
-Chronological age equals starting chronological age plus elapsed local time. Apparent age, physical maturity and slowed ageing are separate fields. If the birthday is unknown, preserve an approximate age rather than inventing a precise birthday. An external time-distortion ratio must not silently rewrite established local ageing.
+Chronological age follows the character’s physical elapsed time, including any agreed effects of time distortion; jumping between historical dates does not reset or add calendar centuries to their age. Apparent age, physical maturity and slowed ageing are separate fields. If the birthday is unknown, preserve an approximate age rather than inventing a precise birthday. An external time-distortion ratio must not silently rewrite established local ageing.
 
 Process each crossed payday, anniversary and review date exactly once. If the protagonist is away, money may enter an account rather than a wallet; define that arrangement. Pay earned, payment received and cash carried are distinct.
 
@@ -355,6 +359,8 @@ Latest published revision and how it differs:
 
 ```text
 Stable ID and name:
+Home timeline/continuity, recruitment point and personal elapsed service:
+Separate identity for coexisting alternate versions; no shared memories by default:
 Role and actual authority:
 Age or birth date with uncertainty (required; mark unknown explicitly):
 Apparent age if different:
@@ -439,6 +445,6 @@ Before each scene, confirm the actual location and date, what the protagonist kn
 
 Before a substantial skip, review delegated tasks, scheduled income and expenses, travel, projects, conflicts and relevant health or leadership events. Give each active item a dated outcome or a specific next step. Do not leave competent NPCs inert because they are offscreen.
 
-Before a documentation release, reconcile sources and summaries, inspect all changed content, validate calculations and links, check privacy, test the affected app views and verify the live publication. State what remains pending without implying completion.
+Before a documentation release, reconcile sources and summaries, read each edited document in full before and after editing, reconcile overlaps, validate calculations and links, check privacy, test the affected app views and verify the live publication. State what remains pending without implying completion.
 
 The standard is continuity the player can trust: the protagonist retains what they have learned, NPCs act on the authority they have received, money follows recorded movements, the world develops through elapsed time, and the app presents those results clearly.

@@ -17,7 +17,7 @@ These references informed the design; their screenshots are not distributed with
 - [Dragon Ball Z: Kakarot character menu](https://gamergen.com/actualites/24h-sur-gamergen-telechargements-stadia-video-dragon-ball-kakarot-bonus-red-dead-redemption-2-307589-1) — prominent character art and grouped information.
 - [Official Dragon Ball: Sparking! ZERO menu screenshots](https://dragon-ball-official.com/news/01_4325.html) — character focus, clear selection and compact technique panels.
 
-The interface itself is implemented in HTML, CSS and JavaScript. No game screenshots or game UI textures are bundled. zero-portrait.jpg is the fictional character artwork supplied and approved by the user. Its pixels are unchanged; identifying metadata was removed from the publication copy. The depicted background does not establish a story location or affiliation.
+The interface itself is implemented in HTML, CSS and JavaScript. No game screenshots or game UI textures are bundled. zero-portrait.jpg is the fictional character artwork supplied and approved by the user. Its pixels are unchanged; identifying metadata was removed from the publication copy. The updated portrait includes Zero’s recovered red scouter. Its Capsule Corp background matches the established arrival setting, but does not establish his current location, an affiliation, a new visit or repairs to clothing. The public copy retains the supplied image pixels and dimensions; the original remains private.
 
 Unofficial personal fan project. Dragon Ball, Capsule Corporation and related characters belong to their respective rights holders. No affiliation or endorsement. The icon's license does not claim ownership of the underlying franchise.
 

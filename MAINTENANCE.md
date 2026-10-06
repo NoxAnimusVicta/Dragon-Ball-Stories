@@ -10,13 +10,13 @@ GitHub Pages publishes main / (root). Relative asset paths support the /Dragon-B
 
 ## Character art
 
-An explicitly approved character-creation portrait may be shown before play without asserting an event. Otherwise wait until the depicted appearance is established and character-known. Place the approved publication copy in public/ with a stable filename, such as zero-portrait.webp. Set character.portrait to that relative filename and provide a descriptive character.portraitAlt. Add the filename to both manifests. The image is displayed with object-fit: contain and can be opened in a full-art dialog. Null displays the intentional placeholder. Only images within this site's project directory are accepted; a broken image shows a readable fallback.
+An explicitly approved character-creation portrait may be shown before play without asserting an event. Otherwise wait until the depicted appearance is established and character-known. Place the approved publication copy in public/ with a stable filename, such as zero-portrait.webp. Set character.portrait to that relative filename and provide a descriptive character.portraitAlt. Add the filename to both manifests. The portrait card uses the supplied 853:1280 aspect ratio with object-fit: cover, filling the box without cropping this same-ratio image. The full-art dialog uses contain. If future art has another aspect ratio, update the card ratio and check the complete composition on phone and desktop. Null displays the intentional placeholder. Only images within this site's project directory are accepted; a broken image shows a readable fallback.
 
 Before publishing supplied character art, remove identifying metadata and use a neutral filename. Retain the original privately. Do not publish photographs, filenames, captions or metadata that disclose real-world identity or location.
 
 ## Character and story fields
 
-character: name, age, height, heightMetric, heightApproximate, portrait, portraitAlt, race, origin, appearance, personality, backstory, arrival, motivation, knowledge, limitations.
+character: name, age, height, heightMetric, heightApproximate, portrait, portraitAlt, race, origin, appearance, personality, backstory, arrival, motivation, knowledge, limitations, battlePower, powerReading, role and condition. battlePower is the current character-known measured value; historical readings remain separate records. recordedThrough identifies the exchange/correction represented by the release.
 
 story: era, date, location, situation, pendingChoice. Set started=true only after an enacted opening scene. Use date for elapsed story time from that opening, and era for the known local era/continuity. The private clock tracks elapsed time separately from local calendar coordinates; changing eras must not reset elapsed time. Before play begins, the clock is not started. Documentation and real-world waiting never advance it.
 
@@ -38,7 +38,7 @@ abilities, inventory, accounts, people, places, projects and events each contain
 }
 ```
 
-IDs use lowercase letters, digits and hyphens and are unique across collections. Search links directly to a record and focuses it. Text is escaped before rendering, so source text never becomes executable HTML. Separate carried and stored items, personal and other accounts, established abilities and potential. Record sums and calculations in authoritative ledgers, not only in a display string. Keep private motives and hidden outcomes out of public data.
+IDs use lowercase letters, digits and hyphens and are unique across collections. Events remain in chronological order in campaign.json; the app renders newest first. Stable disclosure keys preserve the specific expanded record during updates, even when many summaries say Read more. World category links use reserved people/places/projects anchors; do not reuse those as record IDs. Search links directly to a record and focuses it. Text is escaped before rendering, so source text never becomes executable HTML. Separate carried and stored items, personal and other accounts, established abilities and potential. Record sums and calculations in authoritative ledgers, not only in a display string. Keep private motives and hidden outcomes out of public data.
 
 ## Release check
 
@@ -59,4 +59,4 @@ updates.js checks a cache-busted release.json with cache: no-store at startup, o
 
 Updates preserve the current route, scroll position, expanded details and session sound preference. They wait for dialogs to close and five seconds after interaction. A short-lived session guard prevents repeated reloads of the same release. Network errors leave the working screen untouched; checks resume when the connection returns. Mobile operating systems suspend closed/backgrounded web apps, so updates apply on the next visible online session, not while fully closed. The pre-updater version needs one fresh opening to receive this mechanism.
 
-No service worker, offline cache, analytics or remote account is added. Only a motion preference and temporary update-resume state are stored on the device. Run the update lifecycle tests in tests/updates.test.cjs and tests/test_release.py before changing update logic; these are local-only files and must not be uploaded. Read the full release notes and generated release.json before publication. GitHub Pages remains main / (root).
+No service worker, offline cache, analytics or remote account is added. Only a motion preference and temporary update-resume state are stored on the device. Run the update lifecycle tests in tests/updates.test.cjs and tests/test_release.py before changing update logic; these are local-only files and must not be uploaded. Read every edited document in full before and after editing, then read generated release.json before publication. Preserve original transcripts and historical snapshots; use dated correction entries rather than rewriting them as though the original exchange never happened. GitHub Pages remains main / (root).

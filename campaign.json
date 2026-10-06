@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-06-height",
+  "revision": "2026-10-06-s022-c012",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
-  "phase": "Character creation",
-  "started": false,
+  "phase": "First steps in the Time Patrol",
+  "started": true,
   "character": {
     "name": "Zero",
     "age": 26,
@@ -12,29 +12,500 @@
     "heightMetric": "167.64 cm",
     "heightApproximate": false,
     "portrait": "zero-portrait.jpg",
-    "portraitAlt": "Zero with long auburn hair and beard, wearing a black martial-arts outfit, burgundy cape and sash, and black-and-burgundy boots. Reference scenery is not a story location.",
+    "portraitAlt": "Zero, an athletic human with long auburn hair, a full beard and blue eyes, wearing a red-lensed scouter, black martial outfit and burgundy cape outside Capsule Corp. Character illustration.",
     "race": "Human",
-    "origin": null,
-    "appearance": null,
-    "personality": null,
-    "backstory": null,
-    "arrival": null,
-    "motivation": null,
-    "knowledge": null,
-    "limitations": null
+    "origin": "From a world where Dragon Ball is fiction. The cause of the crossing is still unknown.",
+    "appearance": "Athletic build, long curly auburn hair, full auburn beard and blue eyes. Black wrap-front outfit and loose trousers, burgundy sash and wrist wraps, burgundy cape with round gold fasteners, black-and-burgundy boots. The recovered scouter has a red lens; the cape’s hem was torn during the arrival encounter.",
+    "personality": "Expressed through your choices and dialogue.",
+    "backstory": "Familiar with Dragon Ball through anime, manga, films and games before the crossing. No further personal background is recorded.",
+    "arrival": "Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness.",
+    "motivation": "Train, become stronger and qualify for field work.",
+    "knowledge": "Retains referential knowledge of Z, Super, the films, manga, GT and the first two Xenoverse main stories. Chronoa confirmed that the two Xenoverse stories correspond to this Patrol’s past, with distinct hero partners; the second occurred about two hub years ago. This particular Vegeta’s home history remains unknown.",
+    "limitations": "Source knowledge does not grant fighting mastery or reveal every alternate history. Basic ki control and slow flight still need concentration. No field clearance or independent timeline access; city movement still requires an authorised escort.",
+    "battlePower": 60,
+    "powerReading": "Rested self-scan · Day 8",
+    "role": "Supervised Time Patrol trainee",
+    "condition": "Training soreness and minor bruises; no serious injury."
   },
   "story": {
-    "era": null,
-    "date": null,
-    "location": null,
-    "situation": null,
-    "pendingChoice": null
+    "era": "Time Patrol hub; local calendar date unconfirmed",
+    "date": "Day 8 · Approximately 7 days, 6 hours since awakening",
+    "location": "Toki Toki City · Training courtyard",
+    "situation": "A week of training has brought Zero’s rested scouter reading to 60. He can hover and fly slowly across the courtyard, but remains off field duty.",
+    "pendingChoice": "The flight assessment has just ended. Krillin is nearby; Mr. Satan and Vegeta are beneath the awning. Vegeta has asked what assignment is available tomorrow. The scene awaits your next action."
   },
-  "abilities": [],
-  "inventory": [],
-  "accounts": [],
-  "people": [],
-  "places": [],
-  "projects": [],
-  "events": []
+  "abilities": [
+    {
+      "id": "power",
+      "title": "Battle power · 60",
+      "summary": "Current rested reading from regular scouter self-checks.",
+      "status": "Measured",
+      "facts": [
+        {
+          "label": "First reading",
+          "value": "50 · Day 1"
+        },
+        {
+          "label": "Current reading",
+          "value": "60 · Day 8"
+        },
+        {
+          "label": "First-week gain",
+          "value": "+10 · 20%"
+        }
+      ],
+      "details": "Rill first measured 50 twice in the medical ward. Regular self-checks during the training week established the current 60. Fatigue and effort affect momentary output; a number alone does not establish technique or mission readiness."
+    },
+    {
+      "id": "combat-basics",
+      "title": "Combat fundamentals",
+      "summary": "Workable guard, balance, footwork and simple unarmed attacks; improving through controlled sparring.",
+      "status": "Developing",
+      "details": "Krillin’s drills exposed slow responses to abrupt reversals and an overlong recovery step. Smaller steps helped. Sparring is improving recognition of feints, but fatigue brings old mistakes back. Vegeta pointed out the shoulder wind-up before attacks. Neither improvement closes the enormous gap with experienced fighters."
+    },
+    {
+      "id": "ki-control",
+      "title": "Deliberate ki control",
+      "summary": "Can gather and hold a small light between the palms while standing and turning.",
+      "status": "Basic control",
+      "details": "The first afternoon produced three momentary pinpricks of light. After a week of instruction, gathering is more dependable. Forcing more ki into it causes trembling and loss of control. This is not yet a usable energy attack."
+    },
+    {
+      "id": "flight",
+      "title": "Flight",
+      "summary": "Brief low hovering and slow flight over courtyard distances.",
+      "status": "Training only",
+      "facts": [
+        {
+          "label": "Hover",
+          "value": "A few feet high, for several breaths"
+        },
+        {
+          "label": "Flight",
+          "value": "Slow crossing and return"
+        },
+        {
+          "label": "Field use",
+          "value": "Not cleared"
+        }
+      ],
+      "details": "The latest crossing ended with a wide turn and two stumbling steps on landing, but Zero stayed upright. Braking, acceleration and keeping airborne while attention shifts still need work. Krillin has intervened during unstable attempts. No fast, long-range or combat flight demonstrated."
+    }
+  ],
+  "inventory": [
+    {
+      "id": "outfit",
+      "title": "Black-and-burgundy outfit",
+      "summary": "The clothing worn on awakening.",
+      "status": "Owned",
+      "facts": [
+        {
+          "label": "Pieces",
+          "value": "Wrap-front top, loose trousers, sash, wrist wraps and boots"
+        }
+      ],
+      "details": "No protective rating or unusual material property has been established."
+    },
+    {
+      "id": "cape",
+      "title": "Burgundy cape",
+      "summary": "Gold-coloured round fasteners; torn near the hem.",
+      "status": "Owned",
+      "details": "Removed for the initial training assessment and retrieved before leaving for the room visit. No repair has been recorded."
+    },
+    {
+      "id": "scouter",
+      "title": "Recovered red scouter",
+      "summary": "Taken from Nappa before evacuation. Basic power scanning works.",
+      "status": "Functional",
+      "facts": [
+        {
+          "label": "Condition",
+          "value": "Scuffed casing; intact red lens"
+        },
+        {
+          "label": "Known use",
+          "value": "Target acquisition and power readings"
+        },
+        {
+          "label": "Routine",
+          "value": "Regular self-checks"
+        }
+      ],
+      "details": "Rill used it to obtain the first reading of 50. Zero now checks his own rested output by targeting his outstretched arm while wearing it. Communications, maximum range and upper measurement capacity have not been tested."
+    },
+    {
+      "id": "room-card",
+      "title": "Room 214 access card",
+      "summary": "Issued by Mr. Satan during the first evening’s room visit.",
+      "status": "Owned",
+      "details": "Opens the assigned room. It does not grant independent timeline travel or cancel the escort restriction."
+    }
+  ],
+  "accounts": [
+    {
+      "id": "resources",
+      "title": "Patrol support",
+      "summary": "Assigned accommodation and dining-hall meals are covered.",
+      "status": "Provided",
+      "facts": [
+        {
+          "label": "Personal funds",
+          "value": "None recorded"
+        },
+        {
+          "label": "Accommodation",
+          "value": "Room 214"
+        },
+        {
+          "label": "Meals",
+          "value": "Dining hall"
+        }
+      ],
+      "details": "No starting funds, wage, payment or personal account balance has been established. Housing and meals are support, not cash income."
+    }
+  ],
+  "people": [
+    {
+      "id": "vegeta-patroller",
+      "title": "Vegeta · Time Patroller",
+      "summary": "Rescuer and assigned partner. Openly resents being paired with a weak human trainee.",
+      "status": "Partner",
+      "facts": [
+        {
+          "label": "Current assignment",
+          "value": "Temporary lower-risk solo roster"
+        },
+        {
+          "label": "Last seen",
+          "value": "Training courtyard awning"
+        }
+      ],
+      "details": "Short, muscular, upright black hair and widow’s peak; blue suit and white-and-gold armour. Clipped commands, insults and imperious pride. He intervened against Nappa and arranged evacuation. He has said his correction mission is complete, without explaining the details. Chronoa noted his refusal of previous proposed partners. He can take restricted solo work until Zero is field-ready; the partnership remains. His exact age, power and home history are unknown."
+    },
+    {
+      "id": "krillin",
+      "title": "Krillin",
+      "summary": "Combat and ki instructor through the first training week.",
+      "status": "Instructor",
+      "facts": [
+        {
+          "label": "Last seen",
+          "value": "Training courtyard beside Zero"
+        }
+      ],
+      "details": "Short, compact and muscular, bald with six forehead dots, orange gi, blue wristbands and calloused hands. A lively conversational voice, wry humour and practical corrections. He keeps the sparring controlled and catches unstable flight attempts. Exact age, battle power and home history have not been established."
+    },
+    {
+      "id": "mr-satan",
+      "title": "Mr. Satan · Hercule",
+      "summary": "Dispatcher and routine supervisor of the “Temporal Super Stars.”",
+      "status": "Supervisor",
+      "facts": [
+        {
+          "label": "Authority",
+          "value": "Scheduling, training logistics and restricted tasking"
+        },
+        {
+          "label": "Last seen",
+          "value": "Courtyard awning with Vegeta"
+        }
+      ],
+      "details": "Stocky, thick black moustache and large curly hair; burgundy martial outfit, white cape, conspicuous gold belt and dispatch headset. Booming, gravelly showmanship and grand claims accompany practical arrangements for escort, training, housing and meals. He authorised Vegeta’s temporary lower-risk solo roster. His exact age and alternate history are unknown."
+    },
+    {
+      "id": "chronoa",
+      "title": "Chronoa",
+      "summary": "Supreme Kai of Time; conducted the exceptional review of Zero’s arrival and knowledge.",
+      "status": "Anomaly review",
+      "details": "Small, pink-skinned, pointed ears, swept orange hair, gold earrings and purple-and-gold clothing. Bright, brisk questions and direct authority. She confirmed Zero’s game-history account and offered supervised trainee membership. She is not his everyday dispatcher. No result explaining his origin has yet been reported. Exact age unknown."
+    },
+    {
+      "id": "doctor-rill",
+      "title": "Dr. Rill",
+      "summary": "Time Patrol clinician who treated and medically cleared Zero.",
+      "status": "Medical contact",
+      "details": "Appears in her forties, brown skin, square face, close-cropped black hair grey at the temples, white medical jacket over teal clothing. Low, brisk voice and concrete clinical answers. Reported completed treatment and clear scans, heard Zero’s account, forwarded it to coordination and measured his power at 50. Last seen in the medical ward; present whereabouts unknown."
+    },
+    {
+      "id": "nappa",
+      "title": "Nappa",
+      "summary": "Attacked Zero outside Capsule Corp; overwhelmingly stronger.",
+      "status": "Hostile encounter",
+      "details": "Huge, bald, black moustache, white-and-gold Saiyan armour, bare muscular arms and brown tail. Deep, rough voice; amused cruelty gave way to anger at Zero’s insults. Zero’s punches, clawing and biting attempts did not visibly injure him. Vegeta knocked him unconscious; he was breathing when last seen. His later whereabouts are unknown to Zero. Exact age unknown."
+    }
+  ],
+  "places": [
+    {
+      "id": "toki-toki-city",
+      "title": "Toki Toki City",
+      "summary": "Time Patrol hub where Zero was treated, assessed and housed.",
+      "status": "Current city",
+      "details": "Recognised from prior game knowledge and identified by Rill. Zero has visited the ward, reception, training facilities, quarters and dining hall. The city’s local calendar date has not been confirmed."
+    },
+    {
+      "id": "courtyard",
+      "title": "Training hall & courtyard",
+      "summary": "Site of the initial assessment, sparring, ki instruction and first flight.",
+      "status": "Current location",
+      "details": "The initial room had a half-hour booking. Mr. Satan arranged the courtyard for continued training. At the end of the first week, Krillin is near Zero while Satan and Vegeta stand beneath the awning."
+    },
+    {
+      "id": "quarters-214",
+      "title": "Room 214",
+      "summary": "Assigned quarters, visited on the first evening.",
+      "status": "Accommodation",
+      "details": "Single bed, desk, empty wardrobe, bathroom, clean towels, window and bedside terminal for reception and training schedules. Access card received. Contact Satan for escort while the restriction remains."
+    },
+    {
+      "id": "dining-hall",
+      "title": "Dining hall",
+      "summary": "Covered meals and communal seating for patrollers.",
+      "status": "Visited",
+      "details": "Reached after the room visit. Routine meals and rest occurred during the authorised training week; no specific new purchases or favourite meals recorded."
+    },
+    {
+      "id": "medical-ward",
+      "title": "Medical ward",
+      "summary": "Where Zero woke after emergency evacuation and treatment.",
+      "status": "Visited",
+      "details": "An empty glass treatment chamber stood opposite the bed. Rill reported that roughly an hour had passed since admission and that the latest scans were clear after treatment for internal bleeding, damaged ribs and a head injury. Original clothes and the scouter were kept nearby."
+    },
+    {
+      "id": "assessment-room",
+      "title": "Reception · Room three",
+      "summary": "Across the square from the ward; site of Chronoa’s assessment.",
+      "status": "Visited",
+      "details": "Zero recounted his source-world knowledge in front of Chronoa, Vegeta and Mr. Satan, then accepted supervised trainee membership."
+    },
+    {
+      "id": "capsule-frontage",
+      "title": "Capsule Corp · West City",
+      "summary": "Awakening site and the scene of Nappa’s attack.",
+      "status": "Arrival location",
+      "details": "Capsule Corp signage and buildings, damaged streets, fleeing people and dead civilians. No Capsule Corp affiliation, property or vehicle ownership follows from awakening there. The exact local chronology was not confirmed to Zero."
+    }
+  ],
+  "projects": [
+    {
+      "id": "field-training",
+      "title": "Qualify for field duty",
+      "summary": "Foundational combat, ki control and flight under supervision.",
+      "status": "In progress",
+      "facts": [
+        {
+          "label": "Current result",
+          "value": "Not field-cleared"
+        },
+        {
+          "label": "Focus",
+          "value": "Control, turning, braking and divided attention"
+        }
+      ],
+      "details": "The latest slow crossing was completed upright. Keeping airborne under threat still consumes too much attention. No deadline or automatic qualification promised."
+    },
+    {
+      "id": "partner-assignment",
+      "title": "Vegeta partnership",
+      "summary": "Zero accepted the supervised trainee assignment.",
+      "status": "Active",
+      "facts": [
+        {
+          "label": "Dispatcher",
+          "value": "Mr. Satan"
+        },
+        {
+          "label": "Partner",
+          "value": "Patroller Vegeta"
+        }
+      ],
+      "details": "Vegeta was initially held from ordinary field assignments. He later secured a temporary lower-risk solo roster with brief compliance, active communications and escalation reporting. This ends when Zero qualifies for paired deployment. No particular future mission has been assigned."
+    },
+    {
+      "id": "origin-review",
+      "title": "Origin assessment",
+      "summary": "Zero’s account and unusual arrival remain under investigation.",
+      "status": "Unresolved",
+      "details": "Rill forwarded his report; Chronoa tested and confirmed his knowledge of past events. No explanation for the crossing or independent timeline clearance has been given."
+    }
+  ],
+  "events": [
+    {
+      "id": "s001",
+      "title": "Awakening in West City",
+      "summary": "Zero wakes on his back, notices an athletic body and unfamiliar clothes, then stands outside Capsule Corp.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Nappa approaches from the damaged street and swings a backhand toward him."
+    },
+    {
+      "id": "s002",
+      "title": "A punch that changes nothing",
+      "summary": "Zero ducks the casual swing and puts his weight behind a punch to Nappa’s jaw. It lands without harming him.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Nappa grabs his upper arm, knees his abdomen and throws him onto the paving. Zero remains conscious, hurt and struggling to breathe."
+    },
+    {
+      "id": "s003",
+      "title": "Anger against a Saiyan",
+      "summary": "Surrounded by destruction and dead civilians, Zero insults Nappa and charges again.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Nappa strikes his face and ribs, drops him and moves to stomp him. A recognisable Vegeta interrupts and orders Nappa away. Anger did not close the power gap."
+    },
+    {
+      "id": "s004",
+      "title": "Vegeta intervenes",
+      "summary": "Zero lunges at distracted Nappa with clawing and biting attempts; Nappa restrains him without visible injury.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Vegeta knocks Nappa unconscious with two strikes. Nappa is still breathing. Vegeta scans Zero with an unfamiliar instrument and asks what he is."
+    },
+    {
+      "id": "s005",
+      "title": "A name and a scouter",
+      "summary": "Critically injured and vomiting blood, Zero takes Nappa’s scouter and whispers his name.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Vegeta speaks to an unseen contact about the readings, then calls for medical recovery. Zero is placed in an emergency transport cradle. The reply from the other end is inaudible."
+    },
+    {
+      "id": "s006",
+      "title": "Waking in Toki Toki City",
+      "summary": "Zero wakes in a Time Patrol medical ward, physically healed, and meets Dr. Rill.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "She reports treatment and clear scans, including the repaired head injury. His clothes and scouter were kept. About an hour has passed since admission; no permanent physical deficit remains."
+    },
+    {
+      "id": "s007",
+      "title": "The Time Patrol",
+      "summary": "Zero asks where he is and why. Rill explains the emergency extraction and identifies Vegeta as a Patroller.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "She describes the Patrol’s work against interference with history and asks for his last memory before West City."
+    },
+    {
+      "id": "s008",
+      "title": "Fiction somewhere else",
+      "summary": "Zero describes going to sleep and waking changed in West City, and says this world is fiction where he comes from.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Rill records his account as unverified and forwards it to coordination. Zero insists he must be dreaming."
+    },
+    {
+      "id": "s009",
+      "title": "The first reading · 50",
+      "summary": "Zero confirms his clothing and body changed, activates the recovered scouter and experiments with its controls.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Rill assists by scanning him twice: 50. She returns the device. Recovery itself granted no power increase."
+    },
+    {
+      "id": "s010",
+      "title": "Cleared to leave the ward",
+      "summary": "Zero asks whether he is free to go. Rill distinguishes medical discharge from the pending assessment.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "An authorised escort is required beyond the ward. The automated reply confirms Mr. Satan has been notified."
+    },
+    {
+      "id": "s011",
+      "title": "The illustrious dispatcher",
+      "summary": "Zero dresses in his original outfit. Mr. Satan arrives and introduces his “Temporal Super Stars.”",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Assessment is in reception room three, across the square. Satan confirms clearance and offers to escort Zero."
+    },
+    {
+      "id": "s012",
+      "title": "An audience with Chronoa",
+      "summary": "Zero follows Mr. Satan to the assessment room, where Chronoa and his rescuer Vegeta wait.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Chronoa has read Rill’s report. She asks what the game showed him about this place."
+    },
+    {
+      "id": "s013",
+      "title": "Knowledge of their past",
+      "summary": "Zero recounts the first two Xenoverse main stories. Chronoa confirms that the account matches real past events.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "The two stories had distinct hero Patrollers; the second happened about two hub years ago. She asks whether Zero can identify this particular Vegeta’s history."
+    },
+    {
+      "id": "s014",
+      "title": "The offer",
+      "summary": "Zero summarises his broader Dragon Ball knowledge but acknowledges he cannot identify an unfamiliar alternate Vegeta.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Chronoa confirms the control question and offers supervised trainee membership, housing and instruction. Vegeta says his correction mission is complete, without explaining it, and fiercely objects to the proposed partnership."
+    },
+    {
+      "id": "s015",
+      "title": "A reluctant partner",
+      "summary": "Zero accepts and honestly questions whether he would slow Vegeta down.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Chronoa records the acceptance and explains the supervision. Satan handles logistics. Vegeta’s ordinary field deployment is initially suspended until Zero is ready, provoking open resentment."
+    },
+    {
+      "id": "s016",
+      "title": "Meeting the instructor",
+      "summary": "Zero follows Satan to the training hall; Vegeta accompanies them. Krillin takes the initial assessment.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Krillin has the medical clearance and power reading. A half-hour room slot is available; he asks Zero to set aside cape and scouter and show his stance."
+    },
+    {
+      "id": "s017",
+      "title": "Taking a stance",
+      "summary": "Zero places the scouter on his removed cape and steps onto the mat, left arm and leg forward.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Krillin cues fist closure when striking and begins a guarded advance-and-retreat drill."
+    },
+    {
+      "id": "s018",
+      "title": "Finding the footwork",
+      "summary": "Steady advance and retreat are manageable; abrupt reversals reveal hesitation and a long recovery step.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Smaller steps improve the slower repeat. Controlled sparring follows the footwork assessment."
+    },
+    {
+      "id": "s019",
+      "title": "Controlled sparring",
+      "summary": "Krillin avoids or redirects the opening attacks, taps an exposed rib and trips Zero with a controlled palm strike.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Zero gets back into stance. Krillin advises tracking the body; Vegeta points out the shoulder wind-up. The exercise continues into the afternoon."
+    },
+    {
+      "id": "s020",
+      "title": "The first spark",
+      "summary": "An afternoon of controlled sparring brings bruises and a minor split lip. Ki practice finally produces three tiny flashes.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Training moves to the courtyard after the room booking ends. Gathering remains unreliable and fatigue-sensitive. Satan arranges refreshments and reports the room is ready."
+    },
+    {
+      "id": "s021",
+      "title": "Room 214",
+      "summary": "Zero retrieves cape and scouter, follows Satan to his room and receives the access card before visiting the dining hall.",
+      "status": "Recorded",
+      "date": "Day 1",
+      "details": "Housing and meals are covered. The bedside terminal handles reception and schedules; the escort restriction remains. Krillin recommends rest instead of exhausted overnight practice."
+    },
+    {
+      "id": "s022",
+      "title": "One week later · 60",
+      "summary": "A week of training, meals and rest yields basic deliberate ki control, low hovering and slow courtyard flight. Rested self-checks now read 60.",
+      "status": "Recorded",
+      "date": "Day 8 · End of first week",
+      "details": "The old split lip heals; ordinary soreness and minor bruises remain. Vegeta gains temporary permission for lower-risk solo work until Zero is field-ready. The latest flight ends upright after a wide turn and stumbling landing. Krillin warns that airborne control still needs too much attention under threat. Satan gives Vegeta the assessment: still not cleared. Vegeta asks what is available tomorrow; no answer is recorded."
+    }
+  ],
+  "recordedThrough": "S022 / C012"
 }

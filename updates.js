@@ -40,7 +40,7 @@
   function savePlace(nextVersion) {
     write('resume', {
       version:nextVersion, hash:location.hash, y:window.scrollY, savedAt:Date.now(),
-      details:[...document.querySelectorAll('main details[open]')].map(d=>d.querySelector('summary')?.textContent),
+      details:[...document.querySelectorAll('main details[open]')].map(d=>d.getAttribute('data-detail-key') || d.querySelector('summary')?.textContent),
       sound:document.getElementById('sound-toggle')?.getAttribute('aria-pressed') === 'true'
     });
   }
@@ -89,7 +89,7 @@
     if (!saved || saved.version !== version || saved.hash !== location.hash || Date.now()-saved.savedAt > 300000) return;
     write('resume', null);
     document.querySelectorAll('main details').forEach(d=>{
-      if (saved.details?.includes(d.querySelector('summary')?.textContent)) d.open = true;
+      if (saved.details?.includes(d.getAttribute('data-detail-key') || d.querySelector('summary')?.textContent)) d.open = true;
     });
     if (saved.sound) document.dispatchEvent(new CustomEvent('restore-menu-sound'));
     const restoreScroll = () => requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo({top:saved.y || 0,behavior:'instant'})));

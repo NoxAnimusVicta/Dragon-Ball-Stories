@@ -9,9 +9,9 @@ Read [the narrator guide](NARRATOR-GUIDE.md) for character records, narration an
 3. Read RETCONS.md before relying on older records.
 4. Consult the complete local transcript and private narrator checkpoint through their authorized location before narrating. They are intentionally absent here.
 
-The protagonist is Zero, age 26, 5′6″. No opening scene has occurred. Publish new character and story facts only after they are established in play and known to Zero. Future plans stay in private preparation. The explicitly approved character-creation portrait may be displayed before play; its background is illustrative. Keep real-world identity, location, contact details and identifiable background information out of public records.
+The protagonist is Zero, age 26, 5′6″. The story has reached Day 8, S022 with C012: supervised training in Toki Toki City, measured power 60 and limited flight, still not field-ready. Publish new character and story facts only after they are established in play and known to Zero. Future plans stay in private preparation. The approved fictional portrait now includes the recovered scouter. It does not enact a return to its background location or repair recorded clothing damage. Keep real-world identity, location, contact details and identifiable background information out of public records.
 
-No scene has been recorded. The Capsule Corp styling does not establish a character affiliation or grant items. The landscape is decorative menu scenery, not an established story location.
+Twenty-two story exchanges are summarised in the journal. The complete exact archive stays private; summaries apply accepted corrections. The Capsule Corp styling does not establish a character affiliation or grant items. The landscape is decorative menu scenery, not an established story location.
 
 ## Maintenance
 
