@@ -9,9 +9,9 @@ Read [the narrator guide](NARRATOR-GUIDE.md) for character records, narration an
 3. Read RETCONS.md before relying on older records.
 4. Consult the complete local transcript and private narrator checkpoint through their authorized location before narrating. They are intentionally absent here.
 
-The protagonist is Zero, age 26, 5′6″. The story has reached Day 8, S022 with C012: supervised training in Toki Toki City, measured power 60 and limited flight, still not field-ready. Publish new character and story facts only after they are established in play and known to Zero. Future plans stay in private preparation. The approved fictional portrait now includes the recovered scouter. It does not enact a return to its background location or repair recorded clothing damage. Keep real-world identity, location, contact details and identifiable background information out of public records.
+The protagonist is Zero, age 26, 5′6″. The story has reached Day 30 dawn, S045 (reconciled C020): rested measured power85, small planted ki blasts and limited flight, still not field-ready. Vegeta has arrived for training; scouter removal and the first attack remain pending. Publish new character and story facts only after they are established in play and known to Zero. Future plans stay in private preparation. The approved fictional portrait now includes the recovered scouter. It does not enact a return to its background location or repair recorded clothing damage. Keep real-world identity, location, contact details and identifiable background information out of public records.
 
-Twenty-two story exchanges are summarised in the journal. The complete exact archive stays private; summaries apply accepted corrections. The Capsule Corp styling does not establish a character affiliation or grant items. The landscape is decorative menu scenery, not an established story location.
+Forty-five story exchanges are summarised in the journal. The complete exact archive stays private; summaries apply accepted corrections. The Capsule Corp styling does not establish a character affiliation or grant items. The landscape is decorative menu scenery, not an established story location.
 
 ## Maintenance
 

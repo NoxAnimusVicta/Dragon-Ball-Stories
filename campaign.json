@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-06-s022-c012",
+  "revision": "2026-10-06-s045-c020",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
-  "phase": "First steps in the Time Patrol",
+  "phase": "Training with Vegeta",
   "started": true,
   "character": {
     "name": "Zero",
@@ -21,24 +21,24 @@
     "arrival": "Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness.",
     "motivation": "Train, become stronger and qualify for field work.",
     "knowledge": "Retains referential knowledge of Z, Super, the films, manga, GT and the first two Xenoverse main stories. Chronoa confirmed that the two Xenoverse stories correspond to this Patrol’s past, with distinct hero partners; the second occurred about two hub years ago. This particular Vegeta’s home history remains unknown.",
-    "limitations": "Source knowledge does not grant fighting mastery or reveal every alternate history. Basic ki control and slow flight still need concentration. No field clearance or independent timeline access; city movement still requires an authorised escort.",
-    "battlePower": 60,
-    "powerReading": "Rested self-scan · Day 8",
+    "limitations": "Source knowledge does not grant fighting mastery or reveal alternate histories. Flight turns, braking and divided attention remain unreliable. Small ki blasts need a planted stance and deliberate charge. No field clearance or independent timeline access; the city escort restriction has not been lifted.",
+    "battlePower": 85,
+    "powerReading": "Rested self-scan · Day 30 · Confirmed twice",
     "role": "Supervised Time Patrol trainee",
-    "condition": "Training soreness and minor bruises; no serious injury."
+    "condition": "Rested and lightly warmed up. Mild stiffness eased; no serious injury. No weights equipped."
   },
   "story": {
     "era": "Time Patrol hub; local calendar date unconfirmed",
-    "date": "Day 8 · Approximately 7 days, 6 hours since awakening",
+    "date": "Day 30 · Dawn · Approximately 29 days since awakening",
     "location": "Toki Toki City · Training courtyard",
-    "situation": "A week of training has brought Zero’s rested scouter reading to 60. He can hover and fly slowly across the courtyard, but remains off field duty.",
-    "pendingChoice": "The flight assessment has just ended. Krillin is nearby; Mr. Satan and Vegeta are beneath the awning. Vegeta has asked what assignment is available tomorrow. The scene awaits your next action."
+    "situation": "After weeks of training, Zero’s rested scouter reading is 85. Vegeta has arrived for their first training session.",
+    "pendingChoice": "Vegeta has told Zero to remove the scouter and attack. Zero is rested, lightly warmed up and unweighted. The scouter is still on; the first move is yours."
   },
   "abilities": [
     {
       "id": "power",
-      "title": "Battle power · 60",
-      "summary": "Current rested reading from regular scouter self-checks.",
+      "title": "Battle power · 85",
+      "summary": "Rested output confirmed twice before the first session with Vegeta.",
       "status": "Measured",
       "facts": [
         {
@@ -47,28 +47,28 @@
         },
         {
           "label": "Current reading",
-          "value": "60 · Day 8"
+          "value": "85 · Day 30"
         },
         {
-          "label": "First-week gain",
-          "value": "+10 · 20%"
+          "label": "Change since arrival",
+          "value": "+35 · 70%"
         }
       ],
-      "details": "Rill first measured 50 twice in the medical ward. Regular self-checks during the training week established the current 60. Fatigue and effort affect momentary output; a number alone does not establish technique or mission readiness."
+      "details": "Comparable early rested readings were 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 after midnight on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. After overnight rest, two Day 30 scans read 85. Fatigue and effort affect measured output; recovery is not a separate training gain. A number alone does not establish technique or field readiness."
     },
     {
       "id": "combat-basics",
       "title": "Combat fundamentals",
-      "summary": "Workable guard, balance, footwork and simple unarmed attacks; improving through controlled sparring.",
+      "summary": "Improving guard, short combinations, foot placement and low-kick recovery; tested in controlled sparring.",
       "status": "Developing",
-      "details": "Krillin’s drills exposed slow responses to abrupt reversals and an overlong recovery step. Smaller steps helped. Sparring is improving recognition of feints, but fatigue brings old mistakes back. Vegeta pointed out the shoulder wind-up before attacks. Neither improvement closes the enormous gap with experienced fighters."
+      "details": "Against restrained Yamcha, a palm-light feint created a sweep opening and a committed shove allowed one successful shoulder throw. Guard held through a controlled combination; a longer attack sequence broke down with fatigue. Weighted work reached 100 kg per wrist and ankle, 400 kg total, with cleaner short combinations and low kicks. High kicks, hurried turns and fatigue still expose balance problems. No equivalence to Yamcha’s full strength or mastery of a remembered movie technique is established."
     },
     {
       "id": "ki-control",
       "title": "Deliberate ki control",
-      "summary": "Can gather and hold a small light between the palms while standing and turning.",
+      "summary": "Can gather, hold, extinguish and regather a small ki light during controlled steps and turns.",
       "status": "Basic control",
-      "details": "The first afternoon produced three momentary pinpricks of light. After a week of instruction, gathering is more dependable. Forcing more ki into it causes trembling and loss of control. This is not yet a usable energy attack."
+      "details": "Developed from the first tiny flashes through weighted practice. Keeping energy steady while both arms work remains harder than slow deliberate movements. A palm light has worked as a sparring distraction. Precise sensing and suppression have not been demonstrated; projected blasts are recorded separately."
     },
     {
       "id": "flight",
@@ -89,7 +89,24 @@
           "value": "Not cleared"
         }
       ],
-      "details": "The latest crossing ended with a wide turn and two stumbling steps on landing, but Zero stayed upright. Braking, acceleration and keeping airborne while attention shifts still need work. Krillin has intervened during unstable attempts. No fast, long-range or combat flight demonstrated."
+      "details": "Low hovering and slow courtyard flight are established. Zero sometimes keeps airborne through glancing contact or recovers from a sideways shove, but solid body shots disrupt concentration. A faster unweighted crossing on Day 22 produced a wide turn, a drop and a slower return, ending upright. Braking, turning and divided attention remain unreliable. No fast long-range or dependable combat flight demonstrated."
+    },
+    {
+      "id": "ki-blast",
+      "title": "Small ki blast",
+      "summary": "Repeatable low-power shots from a planted stance after deliberate gathering.",
+      "status": "Developing",
+      "facts": [
+        {
+          "label": "First success",
+          "value": "Day 22 · Shallow chip in a practice wall"
+        },
+        {
+          "label": "Current control",
+          "value": "Repeatable while planted; aim inconsistent"
+        }
+      ],
+      "details": "The first shot succeeded once among several failed attempts. Practice through Day 29 made release repeatable, but shots still vary in aim and moving release is poor. No named beam, rapid barrage or destructive large-scale attack has been learned."
     }
   ],
   "inventory": [
@@ -132,7 +149,7 @@
           "value": "Regular self-checks"
         }
       ],
-      "details": "Rill used it to obtain the first reading of 50. Zero now checks his own rested output by targeting his outstretched arm while wearing it. Communications, maximum range and upper measurement capacity have not been tested."
+      "details": "Rill used it to obtain the first reading of 50. Zero now checks his own rested output by targeting his outstretched arm while wearing it. Communications, maximum range and upper measurement capacity have not been tested. Two Day 30 self-scans read 85. Vegeta has requested its removal for training; it has not yet been taken off."
     },
     {
       "id": "room-card",
@@ -162,7 +179,7 @@
           "value": "Dining hall"
         }
       ],
-      "details": "No starting funds, wage, payment or personal account balance has been established. Housing and meals are support, not cash income."
+      "details": "No starting funds, wage, payment or personal account balance has been established. Housing and meals are support, not cash income. Borrowed wrist and ankle weights are facility equipment, not personal property; the latest set was returned after Day 29 training."
     }
   ],
   "people": [
@@ -174,27 +191,27 @@
       "facts": [
         {
           "label": "Current assignment",
-          "value": "Temporary lower-risk solo roster"
+          "value": "Temporary lower-risk solo roster; partnership retained"
         },
         {
           "label": "Last seen",
-          "value": "Training courtyard awning"
+          "value": "Day 30 dawn · Training courtyard"
         }
       ],
-      "details": "Short, muscular, upright black hair and widow’s peak; blue suit and white-and-gold armour. Clipped commands, insults and imperious pride. He intervened against Nappa and arranged evacuation. He has said his correction mission is complete, without explaining the details. Chronoa noted his refusal of previous proposed partners. He can take restricted solo work until Zero is field-ready; the partnership remains. His exact age, power and home history are unknown."
+      "details": "Short, muscular, upright black hair and widow’s peak; blue suit and white-and-gold armour. Clipped commands, insults and imperious pride. He intervened against Nappa and arranged evacuation. He has said his correction mission is complete, without explaining the details. Chronoa noted his refusal of previous proposed partners. He can take restricted solo work until Zero is field-ready; the partnership remains. His exact age, power and home history are unknown. After Zero challenged him, he grabbed and released Zero’s clothing without injury and agreed to dawn training without weights. He rejected comparisons with other versions of himself. He has now arrived and invited Zero to attack. No private motive, new power reading or home-history revelation follows from that agreement."
     },
     {
       "id": "krillin",
       "title": "Krillin",
-      "summary": "Combat and ki instructor through the first training week.",
+      "summary": "Combat and ki instructor through the first month of training.",
       "status": "Instructor",
       "facts": [
         {
           "label": "Last seen",
-          "value": "Training courtyard beside Zero"
+          "value": "Day 29 evening · Outside room 214"
         }
       ],
-      "details": "Short, compact and muscular, bald with six forehead dots, orange gi, blue wristbands and calloused hands. A lively conversational voice, wry humour and practical corrections. He keeps the sparring controlled and catches unstable flight attempts. Exact age, battle power and home history have not been established."
+      "details": "Short, compact and muscular, bald with six forehead dots, orange gi, blue wristbands and calloused hands. Lively conversational voice, wry humour and direct practical corrections. He introduced Yamcha, supervised controlled sparring, corrected weighted movement and taught the first projected blasts. He escorted Zero home after the maintenance-bay encounter. His exact age, power, recruitment history and local family circumstances have not been revealed to Zero."
     },
     {
       "id": "mr-satan",
@@ -208,7 +225,7 @@
         },
         {
           "label": "Last seen",
-          "value": "Courtyard awning with Vegeta"
+          "value": "Day 8 · Courtyard awning; current whereabouts unconfirmed"
         }
       ],
       "details": "Stocky, thick black moustache and large curly hair; burgundy martial outfit, white cape, conspicuous gold belt and dispatch headset. Booming, gravelly showmanship and grand claims accompany practical arrangements for escort, training, housing and meals. He authorised Vegeta’s temporary lower-risk solo roster. His exact age and alternate history are unknown."
@@ -233,6 +250,40 @@
       "summary": "Attacked Zero outside Capsule Corp; overwhelmingly stronger.",
       "status": "Hostile encounter",
       "details": "Huge, bald, black moustache, white-and-gold Saiyan armour, bare muscular arms and brown tail. Deep, rough voice; amused cruelty gave way to anger at Zero’s insults. Zero’s punches, clawing and biting attempts did not visibly injure him. Vegeta knocked him unconscious; he was breathing when last seen. His later whereabouts are unknown to Zero. Exact age unknown."
+    },
+    {
+      "id": "yamcha",
+      "title": "Yamcha",
+      "summary": "Sparring partner introduced by Krillin. Experienced and much stronger than Zero.",
+      "status": "Training partner",
+      "facts": [
+        {
+          "label": "Reported power",
+          "value": "210 · Reported by Krillin, not self-scanned by Zero"
+        },
+        {
+          "label": "Last seen",
+          "value": "Day 10 evening · Leaving the practice court"
+        }
+      ],
+      "details": "Appears in his late twenties; lean and broad-shouldered, long black hair, familiar cheek and forehead scars, faded orange gi, blue wraps and worn knuckles. Relaxed, slightly rough voice, easygoing conversation and dry humour. Controlled his strikes during the spar, recovered from a shoulder throw and countered Zero’s exhausted final kick. His exact age, home history and formal Patrol role remain unknown."
+    },
+    {
+      "id": "bulma",
+      "title": "Bulma",
+      "summary": "Technical-maintenance specialist at the training complex.",
+      "status": "Technical contact",
+      "facts": [
+        {
+          "label": "Last seen",
+          "value": "Day 29 evening · Maintenance bay"
+        },
+        {
+          "label": "Home history",
+          "value": "Not yet known"
+        }
+      ],
+      "details": "Appears in her thirties; jaw-length turquoise hair, blue work jacket with rolled sleeves, dark trousers and tool belt. Bright, brisk voice and dry sarcasm when rushed. Zero has noticed Vegeta frequently nearby, but their relationship is unknown. She warned him against switching on exposed machinery, demanded he release Zero and said he should train Zero. The training room she was repairing was out of service when last discussed; completion is unconfirmed."
     }
   ],
   "places": [
@@ -246,16 +297,16 @@
     {
       "id": "courtyard",
       "title": "Training hall & courtyard",
-      "summary": "Site of the initial assessment, sparring, ki instruction and first flight.",
+      "summary": "Training complex used for sparring, weighted conditioning, ki practice and flight.",
       "status": "Current location",
-      "details": "The initial room had a half-hour booking. Mr. Satan arranged the courtyard for continued training. At the end of the first week, Krillin is near Zero while Satan and Vegeta stand beneath the awning."
+      "details": "Zero has trained here through Day 29. At dawn on Day 30, he is outside the hall on the open training court with Vegeta, rested and lightly warmed up. A separate room was under maintenance the previous evening; no repair completion has been reported."
     },
     {
       "id": "quarters-214",
       "title": "Room 214",
-      "summary": "Assigned quarters, visited on the first evening.",
+      "summary": "Assigned quarters and overnight recovery space.",
       "status": "Accommodation",
-      "details": "Single bed, desk, empty wardrobe, bathroom, clean towels, window and bedside terminal for reception and training schedules. Access card received. Contact Satan for escort while the restriction remains."
+      "details": "Single bed, desk, wardrobe, bathroom, clean towels, window, reception/schedule terminal and a fridge with supplied cola. Access card opens the room. Zero rested here before the Day 30 dawn appointment. The city escort restriction remains in effect."
     },
     {
       "id": "dining-hall",
@@ -284,13 +335,20 @@
       "summary": "Awakening site and the scene of Nappa’s attack.",
       "status": "Arrival location",
       "details": "Capsule Corp signage and buildings, damaged streets, fleeing people and dead civilians. No Capsule Corp affiliation, property or vehicle ownership follows from awakening there. The exact local chronology was not confirmed to Zero."
+    },
+    {
+      "id": "maintenance-bay",
+      "title": "Training complex · Maintenance bay",
+      "summary": "Adjoining work area where Bulma repairs training equipment.",
+      "status": "Visited",
+      "details": "Visited with Krillin on Day 29. Bulma worked beside an open equipment casing with a diagnostic tablet; Vegeta stood by a wall control panel. This was where Vegeta agreed to train Zero at dawn. No technical specifications or repaired-room access have been established."
     }
   ],
   "projects": [
     {
       "id": "field-training",
       "title": "Qualify for field duty",
-      "summary": "Foundational combat, ki control and flight under supervision.",
+      "summary": "Combat, flight and ki training; first session with Vegeta is about to begin.",
       "status": "In progress",
       "facts": [
         {
@@ -298,11 +356,11 @@
           "value": "Not field-cleared"
         },
         {
-          "label": "Focus",
-          "value": "Control, turning, braking and divided attention"
+          "label": "Next step",
+          "value": "Respond to Vegeta’s invitation to attack"
         }
       ],
-      "details": "The latest slow crossing was completed upright. Keeping airborne under threat still consumes too much attention. No deadline or automatic qualification promised."
+      "details": "Rested measured power is 85. Small planted ki shots and weighted short combinations have improved, but moving aim, aerial control and sustained fighting still need work. Vegeta has asked for the scouter to be removed. No first attack, completed session or qualification deadline has been recorded."
     },
     {
       "id": "partner-assignment",
@@ -319,7 +377,7 @@
           "value": "Patroller Vegeta"
         }
       ],
-      "details": "Vegeta was initially held from ordinary field assignments. He later secured a temporary lower-risk solo roster with brief compliance, active communications and escalation reporting. This ends when Zero qualifies for paired deployment. No particular future mission has been assigned."
+      "details": "Vegeta was initially held from ordinary field assignments. He later secured a temporary lower-risk solo roster with brief compliance, active communications and escalation reporting. This ends when Zero qualifies for paired deployment. No particular future mission has been assigned. Vegeta agreed to train Zero after their Day 29 confrontation and has arrived for the dawn session. This does not cancel the solo waiver or establish a friendlier relationship."
     },
     {
       "id": "origin-review",
@@ -505,7 +563,191 @@
       "status": "Recorded",
       "date": "Day 8 · End of first week",
       "details": "The old split lip heals; ordinary soreness and minor bruises remain. Vegeta gains temporary permission for lower-risk solo work until Zero is field-ready. The latest flight ends upright after a wide turn and stumbling landing. Krillin warns that airborne control still needs too much attention under threat. Satan gives Vegeta the assessment: still not cleared. Vegeta asks what is available tomorrow; no answer is recorded."
+    },
+    {
+      "id": "s023",
+      "title": "Seeking harder training",
+      "summary": "Zero approaches Krillin after the flight assessment.",
+      "status": "Recorded",
+      "date": "Day 8",
+      "details": "Krillin asks what is bothering him; no new mission is assigned."
+    },
+    {
+      "id": "s024",
+      "title": "A harder programme",
+      "summary": "Zero asks to train harder and longer. Krillin agrees to increase the work.",
+      "status": "Recorded",
+      "date": "Day 8",
+      "details": "Morning weighted conditioning and longer controlled sparring are arranged, beginning with low aerial pressure practice."
+    },
+    {
+      "id": "s025",
+      "title": "A new sparring partner · 64",
+      "summary": "Two days of intensified practice bring two rested readings of 64. Krillin introduces Yamcha.",
+      "status": "Recorded",
+      "date": "Day 10",
+      "details": "Krillin reports Yamcha’s full power as 210. Low-flight recovery through light contact improves, but solid body shots still break concentration."
+    },
+    {
+      "id": "s026",
+      "title": "The opening kick",
+      "summary": "A ki-assisted rush carries Zero around Yamcha’s side, but the spinning kick is blocked.",
+      "status": "Recorded",
+      "date": "Day 10",
+      "details": "Poor braking widens the pivot. Yamcha checks a counter into the ribs; Zero stays upright."
+    },
+    {
+      "id": "s027",
+      "title": "A feint and a sweep",
+      "summary": "A palm-light feint draws Yamcha’s attention; the sweep catches an ankle and off-balances him.",
+      "status": "Recorded",
+      "date": "Day 10",
+      "details": "Yamcha vaults clear, then advances with a shoulder shove. No actual ki blast was fired."
+    },
+    {
+      "id": "s028",
+      "title": "Using his momentum",
+      "summary": "Zero catches the reaching wrist and completes a shoulder throw using Yamcha’s forward step.",
+      "status": "Recorded",
+      "date": "Day 10",
+      "details": "Yamcha rolls through the landing without apparent injury, stands and approaches more cautiously with a jab."
+    },
+    {
+      "id": "s029",
+      "title": "Holding the guard",
+      "summary": "Zero blocks the jab and a short controlled combination.",
+      "status": "Recorded",
+      "date": "Day 10",
+      "details": "The impacts sting and move his guard, but he remains upright. Yamcha circles just outside range."
+    },
+    {
+      "id": "s030",
+      "title": "The final combination",
+      "summary": "A long attack sequence forces Yamcha to give ground and glances his shoulder.",
+      "status": "Recorded",
+      "date": "Day 10",
+      "details": "Fatigue spoils the final spinning kick. Yamcha interrupts with a controlled chest-palm shove; Zero falls, exhausted, and Krillin ends the round."
+    },
+    {
+      "id": "s031",
+      "title": "Back on his feet",
+      "summary": "Zero struggles upright, loudly gasping for air.",
+      "status": "Recorded",
+      "date": "Day 10",
+      "details": "Krillin keeps the round stopped and asks whether he is dizzy or just breathless. No serious injury is established."
+    },
+    {
+      "id": "s032",
+      "title": "Guard raised again",
+      "summary": "Zero raises his guard despite exhaustion.",
+      "status": "Recorded",
+      "date": "Day 10",
+      "details": "Yamcha declines another exchange. Krillin steps between them and keeps the round stopped."
+    },
+    {
+      "id": "s033",
+      "title": "A break in the spar",
+      "summary": "Zero objects to being coddled. Krillin confirms the break.",
+      "status": "Recorded",
+      "date": "Day 10",
+      "details": "Yamcha sits at the edge of the court. Zero remains standing in guard; no new round occurs."
+    },
+    {
+      "id": "s034",
+      "title": "Back to the weights",
+      "summary": "Zero equips borrowed wrist and ankle weights and begins shadowboxing without resting.",
+      "status": "Recorded",
+      "date": "Day 10",
+      "details": "Fatigue slows his punches and disrupts footwork. Krillin declines further sparring in that condition."
+    },
+    {
+      "id": "s035",
+      "title": "Five days of escalating weight",
+      "summary": "The load rises from 5 to 80 kg per limb over five training days.",
+      "status": "Recorded",
+      "date": "Days 11–15",
+      "details": "Slow technique and ki-light control improve at lighter loads; the final 320 kg total badly slows combinations. A Day 13 check reads 67. By Day 15 evening the exhausted reading is 58."
+    },
+    {
+      "id": "s036",
+      "title": "One more set",
+      "summary": "Zero reports 58 to Krillin and tries another set.",
+      "status": "Recorded",
+      "date": "Day 15",
+      "details": "Three short punches go out before the right arm stalls below guard. Krillin offers to remove the weights. No new injury occurs."
+    },
+    {
+      "id": "s037",
+      "title": "Rest and a reading · 68",
+      "summary": "Krillin removes and returns the weights, then escorts Zero to room 214.",
+      "status": "Recorded",
+      "date": "Day 16 · After midnight",
+      "details": "After a couple of hours’ sleep, Zero drinks cola and checks himself: 68. Acute exhaustion has eased, but soreness and tiredness remain."
+    },
+    {
+      "id": "s038",
+      "title": "Adapting to 320 kg",
+      "summary": "Seven days at 80 kg per wrist and ankle improve short combinations, footing and deliberate ki control.",
+      "status": "Recorded",
+      "date": "Days 16–22",
+      "details": "Two pre-training scans on Day 22 read 75. At the evening session’s end, Krillin requests an unweighted movement test."
+    },
+    {
+      "id": "s039",
+      "title": "The first ki blast",
+      "summary": "Unweighted movement is freer, though fast aerial turns remain unstable. One small ki shot reaches the wall.",
+      "status": "Recorded",
+      "date": "Day 22",
+      "details": "The yellow-white shot chips the surface a few metres away. Other attempts fail; reliable repetition has not yet been achieved."
+    },
+    {
+      "id": "s040",
+      "title": "Four hundred kilos · 84",
+      "summary": "Another week at 100 kg per limb improves short combinations and low-kick recovery.",
+      "status": "Recorded",
+      "date": "Days 23–29",
+      "details": "Small planted ki blasts become repeatable, with variable aim and poor moving release. Two Day 29 morning scans read 84. Zero remains off field duty."
+    },
+    {
+      "id": "s041",
+      "title": "Bulma’s maintenance bay",
+      "summary": "Zero returns the weights and finds Vegeta with Bulma, accompanied by Krillin.",
+      "status": "Recorded",
+      "date": "Day 29 · Evening",
+      "details": "Bulma is repairing equipment and says the training room is out of service. Her home history and relationship with this Vegeta are unknown."
+    },
+    {
+      "id": "s042",
+      "title": "An agreement at dawn",
+      "summary": "Zero challenges Vegeta to train him. Vegeta grabs and releases his clothing, then agrees.",
+      "status": "Recorded",
+      "date": "Day 29 · Evening",
+      "details": "Krillin and Bulma intervene. Zero is uninjured. Vegeta specifies dawn outside the training hall, without weights."
+    },
+    {
+      "id": "s043",
+      "title": "Other versions of the prince",
+      "summary": "Zero invokes Vegeta’s father, Frieza and admiration for another version of him.",
+      "status": "Recorded",
+      "date": "Day 29 · Evening",
+      "details": "Vegeta rejects the assumed understanding and comparisons, maintains the dawn appointment and leaves. No alternate biography is confirmed."
+    },
+    {
+      "id": "s044",
+      "title": "Returning to room 214",
+      "summary": "Zero explains his provocation. Bulma agrees Vegeta should train him but objects to the father reference.",
+      "status": "Recorded",
+      "date": "Day 29 · Evening",
+      "details": "Krillin escorts Zero back to his room and suggests sleep. Bulma’s history and relationship remain unconfirmed."
+    },
+    {
+      "id": "s045",
+      "title": "Training with Vegeta · 85",
+      "summary": "After overnight rest, Zero arrives two hours early, warms up lightly and scans himself twice: 85.",
+      "status": "Recorded",
+      "date": "Day 30 · Dawn",
+      "details": "Vegeta arrives at dawn, tells him to remove the scouter and invites him to attack. The device is still worn and the first move is pending."
     }
   ],
-  "recordedThrough": "S022 / C012"
+  "recordedThrough": "S045 / C020"
 }
