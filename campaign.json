@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-07-simple-home-timelines",
+  "revision": "2026-10-07-home-timeline-numbers",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "Training with Vegeta",
@@ -191,7 +191,7 @@
       "facts": [
         {
           "label": "Home timeline · OOC",
-          "value": "TL-002 · Frieza on Earth"
+          "value": "TL-398 · Frieza on Earth"
         },
         {
           "label": "Current assignment",
@@ -212,7 +212,7 @@
       "facts": [
         {
           "label": "Home timeline · OOC",
-          "value": "TL-004 · Post-Tournament of Power"
+          "value": "TL-657 · Post-Tournament of Power"
         },
         {
           "label": "Last seen",
@@ -229,7 +229,7 @@
       "facts": [
         {
           "label": "Home timeline · OOC",
-          "value": "TL-003 · Dispatcher branch"
+          "value": "TL-782 · Dispatcher branch"
         },
         {
           "label": "Authority",
@@ -277,7 +277,7 @@
       "facts": [
         {
           "label": "Home timeline · OOC",
-          "value": "TL-001 · Opening branch"
+          "value": "TL-218 · Opening branch"
         }
       ]
     },
@@ -289,7 +289,7 @@
       "facts": [
         {
           "label": "Home timeline · OOC",
-          "value": "TL-005 · A world without Goku"
+          "value": "TL-503 · A world without Goku"
         },
         {
           "label": "Reported power",
@@ -310,7 +310,7 @@
       "facts": [
         {
           "label": "Home timeline · OOC",
-          "value": "TL-002 · Frieza on Earth"
+          "value": "TL-398 · Frieza on Earth"
         },
         {
           "label": "Last seen",
