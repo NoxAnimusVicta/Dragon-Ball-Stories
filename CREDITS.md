@@ -19,6 +19,18 @@ These references informed the design; their screenshots are not distributed with
 - [Dragon Ball Z: Kakarot character menu](https://gamergen.com/actualites/24h-sur-gamergen-telechargements-stadia-video-dragon-ball-kakarot-bonus-red-dead-redemption-2-307589-1) — prominent character art and grouped information.
 - [Official Dragon Ball: Sparking! ZERO menu screenshots](https://dragon-ball-official.com/news/01_4325.html) — character focus, clear selection and compact technique panels.
 
-The interface itself is implemented in HTML, CSS and JavaScript. No game screenshots, game UI textures, commercial fonts or character art are bundled. The user will supply the protagonist's artwork.
+The interface itself is implemented in HTML, CSS and JavaScript. No game screenshots, game UI textures or character art are bundled. The user will supply the protagonist's artwork.
 
 Unofficial personal fan project. Dragon Ball, Capsule Corporation and related characters belong to their respective rights holders. No affiliation or endorsement. The icon's license does not claim ownership of the underlying franchise.
+
+## Illustrated menu backdrop
+
+menu-world.webp was generated for this project with OpenAI's built-in image generation tool, then encoded as WebP. It depicts decorative menu scenery, not an established story location. The original generated PNG is retained locally.
+
+Prompt: Create a premium background illustration for an unofficial Dragon Ball inspired interactive story game menu. Wide 16:9 landscape, exquisite hand painted cel shaded 1990s adventure anime background. View from grassy plateau toward a sun drenched turquoise bay and huge rounded emerald limestone mountains, distant blue ocean, dramatic fluffy white clouds in a luminous cyan sky. On the right middle ground a charming retro futuristic white spherical capsule house with curved teal windows, orange roof trim, palms and a winding cream road. Foreground right windswept grass, tiny flowers and rocks. Warm summer optimism, saturated green and cyan, clean ink outlines, painterly texture with careful lighting and depth. Strong composition: horizon mid-height, spectacular scenery most detailed center and right, left third relatively open sky and distant soft mountains suitable for menu overlay. No people, no characters, no silhouettes, no text, no logos, no symbols, no UI, no border, no dragon balls. This is decorative menu scenery only, not a literal story location. Landscape should feel expansive, cinematic, joyful, magical and inviting, never photorealistic or generic corporate vector art.
+
+## Typeface and sound
+
+[Bangers](https://fonts.google.com/specimen/Bangers) by Vernon Adams, redistributed under the SIL Open Font License 1.1. Font and FONT-LICENSE.txt are included locally. Font source: https://github.com/google/fonts/tree/main/ofl/bangers.
+
+Menu tones are synthesized in the browser only after Sound is enabled. No game audio or music is redistributed. Sound and motion switches apply for the current visit; no personal data is stored.

@@ -46,3 +46,7 @@ IDs use lowercase letters, digits and hyphens and are unique across collections.
 4. Check all six sections, search including no results, character briefing, keyboard navigation, dialogs and phone layouts. Test the portrait workflow when adding art.
 5. Upload only manifest-listed files, commit, verify the GitHub deployment and compare live assets with local source hashes.
 6. Record the commit, deployment and limitations in the local private publication log. Never upload that log or the complete transcript.
+
+## Game menu presentation
+
+The illustrated backdrop is decorative; never infer geography, possessions or affiliations from it. The one-star icon is unchanged. Bangers and the backdrop are local assets listed in the manifest. Motion can be paused and the system reduced-motion preference is respected. Menu sounds require explicit opt-in and are off on every fresh load. Arrow keys move menu focus, Enter follows links, Escape returns to the main menu or dismisses a dialog. Standard Tab navigation remains available. The world radar's numbered links correspond to menu destinations, not story coordinates.
