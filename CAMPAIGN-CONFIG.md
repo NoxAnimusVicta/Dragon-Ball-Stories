@@ -1,19 +1,20 @@
 # Campaign configuration
 
-Status: awaiting campaign decisions. This is a blank record, not enacted story content.
+Generated from campaign.json. Edit that authoritative source, then run build.py.
 
-| Field | Confirmed value |
-| --- | --- |
-| Repository | NoxAnimusVicta/Dragon-Ball-Stories |
-| Setting label | Dragon Ball Stories |
-| Canon continuity, era and location | Not established |
-| Protagonist, age and starting circumstances | Not established |
-| Knowledge, capabilities and limitations | Not established |
-| Tone and content preferences | Not established |
-| Viewpoint and tense | Not established |
-| Calendar, units and currency | Not established |
-| Opening funds and possessions | Not established |
-| Scope of world simulation | Not established |
-| Companion content audience | Pending; initial page contains setup status only |
+- Premise: Dragon Ball Isekai.
+- Phase: Character creation.
+- Protagonist first name: Jake.
+- Age: 26 years.
+- Height: 5′5″–5′6″ (Approx. 165–168 cm); approximate.
+- Personal carryover: first name, age and height only. Do not infer or import any other real-world details.
+- Race/species: Not established.
+- Character appearance: Not established.
+- Canon, continuity and era: Not established.
+- Arrival: Not established.
+- Current location: Not established.
+- Story date: Not established.
+- Character artwork: To be supplied by the user.
+- Published audience: public, read-only companion. No private narrator information.
 
-The repository name does not select a particular Dragon Ball canon, saga, power scale or character. Confirm those decisions before play.
+Narrative tone, calendar rules, currency and initial resources require explicit establishment before relevant play. The Capsule Corp and Dragon Radar visual theme does not establish affiliations, equipment or coordinates.

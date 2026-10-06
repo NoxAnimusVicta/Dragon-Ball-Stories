@@ -1,18 +1,18 @@
 # Start here
 
-This repository is the public reference for Dragon Ball Stories. Setup date: 6 October 2026.
+This repository is the public companion for Dragon Ball Stories, a Dragon Ball Isekai.
 
-1. Read CAMPAIGN-CONFIG.md for confirmed decisions and unresolved setup.
-2. Read CURRENT-CONTINUITY.md for the latest established situation.
-3. Read RETCONS.md for corrections before using older records.
-4. Consult the complete local transcript and private narrator records through their authorized location before narrating. They are intentionally absent here.
+1. Read campaign.json for authoritative public character and story data.
+2. Read CAMPAIGN-CONFIG.md and CURRENT-CONTINUITY.md for readable summaries.
+3. Read RETCONS.md before relying on older records.
+4. Consult the complete local transcript and private narrator checkpoint through their authorized location before narrating. They are intentionally absent here.
 
-No scene has been recorded. Do not infer a protagonist, timeline, opening funds or capabilities from the repository title.
+Confirmed personal carryover is limited to Jake, age 26, approximately 5′5″–5′6″. No additional real-world personal information is to be inferred or imported. Character art will be supplied later.
+
+No scene has been recorded. The Capsule Corp styling does not establish a character affiliation or grant items. The radar is decorative, not evidence of a location or Dragon Ball positions.
 
 ## Maintenance
 
-Update authoritative records before summaries. Preserve historical events; log corrections rather than silently replacing history. A published snapshot may lag live play. Do not advance fiction while building or publishing.
+Update campaign.json first. Generate the readable summaries with the local build.py, validate with verify.py, then publish only the manifest's files. See MAINTENANCE.md for the data format and portrait workflow. Preserve historical events and dated corrections. A public snapshot may lag live play.
 
-Only index.html is intended as the initial companion landing page. The initial release contains no campaign data, tracking, external scripts or private files. GitHub Pages may serve other public repository files when publishing the root; everything committed here must be safe to disclose.
-
-The original handbook and full private source should remain outside this public repository. Never upload handovers, hidden rolls or private conversation archives. A .gitignore is a guardrail, not a privacy boundary.
+The app requires an internet connection and fetches current data without storing character edits on the device. There are no external analytics, external scripts or offline caches. The original handbook and private source stay local. Never upload the entire campaign-source folder.

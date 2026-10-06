@@ -1,0 +1,11 @@
+{
+ "schemaVersion":1,"revision":"2026-10-06-companion-1","title":"Dragon Ball Stories","premise":"Dragon Ball Isekai","phase":"Character creation","started":false,
+ "character":{"name":"Jake","age":26,"height":"5′5″–5′6″","heightMetric":"Approx. 165–168 cm","heightApproximate":true,"portrait":null,"portraitAlt":"Character artwork of Jake","race":null,"origin":null,"appearance":null,"personality":null,"backstory":null,"arrival":null,"motivation":null,"knowledge":null,"limitations":null},
+ "story":{"era":null,"date":null,"location":null,"situation":null,"pendingChoice":null},
+ "abilities":[],"inventory":[],"accounts":[],"people":[],"places":[],"projects":[],"events":[],
+ "briefing":[
+ {"title":"Who you become","body":"Race or species, appearance, personality and any differences from your original self."},
+ {"title":"What comes with you","body":"Starting abilities, strengths, limits, Dragon Ball knowledge, equipment and possessions."},
+ {"title":"Where it begins","body":"Canon or continuity, era, arrival location and how the isekai happens."},
+ {"title":"What you want from the story","body":"Your character's aims, the tone you want, and anything to include or avoid."}]
+}

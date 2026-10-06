@@ -1,30 +1,28 @@
 # Dragon Ball Stories
 
-Persistent campaign records and a read-only companion reference for Dragon Ball Stories.
+A read-only companion for Jake's Dragon Ball Isekai, styled after Capsule Corp equipment, the Dragon Radar and Dragon Ball game menus.
 
-## Status
+[Open the companion](https://noxanimusvicta.github.io/Dragon-Ball-Stories/)
 
-Repository initialized on 6 October 2026. Campaign setup is pending; no protagonist, era, starting resources or story events have been established here.
+## Current state
 
-## Records
+Character creation. Confirmed: Jake, age 26, approximately 5′5″–5′6″ (165–168 cm). Only first name, age and height carry over from personal details. Race, powers, appearance, arrival, era, funds and possessions remain undecided. No story has begun.
 
-Record confirmed campaign configuration, current continuity and dated corrections separately from proposals. Preserve player control over major choices and keep each fact in one authoritative record.
+## The app
 
-## Public and private material
+Six sections: overview, character, abilities, inventory, world and chronicle. Includes search, a copyable character brief, expandable records and a portrait space with a full-art viewer when an image is supplied. The one-star Dragon Ball is used for the favicon and home-screen icon.
 
-Only approved public references and companion-site files belong in this repository. Keep complete conversation archives, narrator secrets, hidden rolls, credentials and private handovers outside it.
+The app is a published reference. Send character details and artwork through the chat; there are no device-local character edits or uploads. It requires an internet connection and does not install an offline service worker.
 
-The supplied Story Runner Handbook is setup reference material. It does not itself begin a story or authorize publication of private material.
+## Maintaining records
 
-## Next steps
+- [Start here](START-HERE.md)
+- [Campaign configuration](CAMPAIGN-CONFIG.md)
+- [Current continuity](CURRENT-CONTINUITY.md)
+- [Corrections](RETCONS.md)
+- [Maintenance and data format](MAINTENANCE.md)
+- [Artwork and design credits](CREDITS.md)
 
-Establish the campaign era, protagonist and starting circumstances before filling records. The starter companion site is approved and configured for GitHub Pages from main / (root).
+`campaign.json` is the authoritative public app data. GitHub Pages publishes `main / (root)`. Only the files in `public-manifest.json` belong in the publication set.
 
-## Companion site
-
-[Open Dragon Ball Stories](https://noxanimusvicta.github.io/Dragon-Ball-Stories/)
-
-[Start here](START-HERE.md) · [Campaign setup](CAMPAIGN-CONFIG.md) · [Current continuity](CURRENT-CONTINUITY.md) · [Corrections](RETCONS.md)
-
-The public-file manifest lists the approved starter files. Review content before each upload. Publishing does not advance the story.
-
+Complete transcripts, narrator secrets, hidden rolls, credentials and private handovers remain outside this public repository. Everything committed here is publicly readable. Publication does not advance the story.
