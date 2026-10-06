@@ -26,7 +26,7 @@
   const groups = ['abilities','inventory','accounts','people','places','projects','events'];
 
   function validate(d) {
-    if (d.schemaVersion !== 1 || !d.character || !d.story || typeof d.character.name !== 'string' || !Array.isArray(d.briefing) || groups.some(k => !Array.isArray(d[k]))) throw new Error('Campaign record format is not supported.');
+    if (d.schemaVersion !== 1 || !d.character || !d.story || typeof d.character.name !== 'string' || groups.some(k => !Array.isArray(d[k]))) throw new Error('Campaign record format is not supported.');
     const ids = new Set();
     for (const key of groups) for (const record of d[key]) {
       if (!record || typeof record.id !== 'string' || !/^[a-z0-9-]+$/.test(record.id) || ids.has(record.id) || typeof record.title !== 'string') throw new Error('A record is missing its unique ID or title.');
@@ -46,15 +46,15 @@
   }
 
   function artCard() {
-    return `<section class="character-stage" aria-label="Character portrait"><span class="stage-label">PLAYER 01</span><div class="aura-ring" aria-hidden="true"></div><div class="portrait">${portraitUrl ? `<button class="art-button" data-art aria-label="View full character artwork"><img class="portrait-image" src="${escape(portraitUrl)}" alt="${escape(data.character.portraitAlt)}"></button>` : `<div class="portrait-placeholder"><div class="portrait-symbol">?</div><span>YOUR STORY AWAITS</span><p>Your portrait will appear<br>when your story begins.</p><button class="small-action" data-brief>Open character guide ↗</button></div>`}</div><div class="stage-name">${escape(data.character.name)}</div><div class="stage-bottom"><span>${escape(data.character.race || 'RACE UNRECORDED')}</span><span>${portraitUrl ? 'SELECT ART TO ENLARGE' : 'PORTRAIT UNREVEALED'}</span></div></section>`;
+    return `<section class="character-stage" aria-label="Character portrait"><span class="stage-label">PLAYER 01</span><div class="aura-ring" aria-hidden="true"></div><div class="portrait">${portraitUrl ? `<button class="art-button" data-art aria-label="View full character artwork"><img class="portrait-image" src="${escape(portraitUrl)}" alt="${escape(data.character.portraitAlt)}"></button>` : `<div class="portrait-placeholder"><div class="portrait-symbol">?</div><span>YOUR STORY AWAITS</span><p>Your portrait will appear<br>when your story begins.</p></div>`}</div><div class="stage-name">${escape(data.character.name)}</div><div class="stage-bottom"><span>${escape(data.character.race || 'RACE UNRECORDED')}</span><span>${portraitUrl ? 'SELECT ART TO ENLARGE' : 'PORTRAIT UNREVEALED'}</span></div></section>`;
   }
   function pageHeader(number, title, description) {
     return `<div class="page-heading"><div><span class="eyebrow">${number} / YOUR ADVENTURE</span><h1>${title}</h1></div><p>${description}</p></div>`;
   }
   const definition = (label, v, sub = '') => `<div><dt>${escape(label)}</dt><dd>${value(v)}${sub ? `<small>${escape(sub)}</small>` : ''}</dd></div>`;
   const detail = (title, text, fallback) => `<details><summary>${escape(title)}</summary><p>${escape(text || fallback)}</p></details>`;
-  function empty(symbol, title, body, action = false) {
-    return `<div class="empty-state"><div class="empty-symbol">${icon(symbol)}</div><span class="eyebrow">THE ADVENTURE IS STILL AHEAD</span><h2>${title}</h2><p>${body}</p>${action ? '<button class="primary" data-brief>Open character guide '+icon('arrow')+'</button>' : ''}</div>`;
+  function empty(symbol, title, body) {
+    return `<div class="empty-state"><div class="empty-symbol">${icon(symbol)}</div><span class="eyebrow">THE ADVENTURE IS STILL AHEAD</span><h2>${title}</h2><p>${body}</p></div>`;
   }
   function records(items) {
     return items.map(r => `<article class="record" id="record-${escape(r.id)}" tabindex="-1">${r.status || r.date ? `<div class="record-meta">${escape([r.status,r.date].filter(Boolean).join(' / '))}</div>` : ''}<h3>${escape(r.title)}</h3><p>${escape(r.summary || '')}</p>${Array.isArray(r.facts) && r.facts.length ? `<dl class="definition-grid">${r.facts.map(f => definition(f.label,f.value,f.note)).join('')}</dl>` : ''}${r.details ? '<div class="detail-list">'+detail('Read more',r.details,'')+'</div>' : ''}</article>`).join('');
@@ -71,13 +71,13 @@
   }
   function character() {
     const c=data.character;
-    return pageHeader('01','Character','Your place in the story.')+`<div class="character-layout">${artCard()}<div class="character-info"><div class="player-banner"><span class="eyebrow">${data.started ? 'YOUR PROTAGONIST' : 'CHARACTER SETUP'}</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'IN THE STORY' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div><section class="panel identity-panel"><h3>Identity & background</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Your discovered identity and appearance will be recorded here.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Your character record will grow with the story.')}${detail('Backstory',c.backstory,'No backstory has been recorded here.')}${detail('Arrival & new identity',c.arrival,'No arrival has been recorded yet.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'Known information and discovered limits will appear here.')}</div></section><button class="primary brief-launch" data-brief>Open character guide ${icon('arrow')}</button><p class="subtle-note">Continue character preparation in our chat. This record grows through play.</p></div></div>`;
+    return pageHeader('01','Character','Your place in the story.')+`<div class="character-layout">${artCard()}<div class="character-info"><div class="player-banner"><span class="eyebrow">${data.started ? 'YOUR PROTAGONIST' : 'CHARACTER SETUP'}</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'IN THE STORY' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div><section class="panel identity-panel"><h3>Identity & background</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Your discovered identity and appearance will be recorded here.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Your character record will grow with the story.')}${detail('Backstory',c.backstory,'No backstory has been recorded here.')}${detail('Arrival & new identity',c.arrival,'No arrival has been recorded yet.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'Known information and discovered limits will appear here.')}</div></section><p class="subtle-note">Your choices shape Zero. This record grows through play.</p></div></div>`;
   }
   function abilities() {
-    return pageHeader('03','Abilities','Find your fighting spirit.')+`<div class="loadout-screen"><section class="panel main-panel">${data.abilities.length ? records(data.abilities) : empty('abilities','Discover what you can do.','Known abilities and demonstrated skills will appear here as you discover them.',true)}</section><aside class="side-note"><span class="giant-kanji" aria-hidden="true">気</span><span class="eyebrow">POWER IS ONLY THE BEGINNING</span><h2>Strength.<br>Control.<br>Resolve.</h2><p>Every technique has a story. Learned abilities and training progress will appear here as your journey unfolds.</p><div class="slot-strip" aria-hidden="true"><span>✦</span><span>✦</span><span>✦</span></div></aside></div>`;
+    return pageHeader('03','Abilities','Find your fighting spirit.')+`<div class="loadout-screen"><section class="panel main-panel">${data.abilities.length ? records(data.abilities) : empty('abilities','Discover what you can do.','Known abilities and demonstrated skills will appear here as you discover them.')}</section><aside class="side-note"><span class="giant-kanji" aria-hidden="true">気</span><span class="eyebrow">POWER IS ONLY THE BEGINNING</span><h2>Strength.<br>Control.<br>Resolve.</h2><p>Every technique has a story. Learned abilities and training progress will appear here as your journey unfolds.</p><div class="slot-strip" aria-hidden="true"><span>✦</span><span>✦</span><span>✦</span></div></aside></div>`;
   }
   function inventory() {
-    return pageHeader('04','Inventory','Pack for a life beyond the ordinary.')+`<div class="loadout-screen"><section class="panel main-panel">${data.inventory.length ? records(data.inventory) : empty('inventory','What comes with you?','Your known possessions will appear here once they are established in the story.',true)}</section><aside class="panel funds-panel"><div class="capsule-object" aria-hidden="true"><span>CAPSULE</span><b>?</b></div><h2>Resources</h2>${data.accounts.length ? records(data.accounts) : '<span class="balance">— <small>ZENI?</small></span><p>No known funds have been recorded yet.</p>'}<span class="eyebrow">CARRIED · STORED · OWNED</span></aside></div>`;
+    return pageHeader('04','Inventory','Pack for a life beyond the ordinary.')+`<div class="loadout-screen"><section class="panel main-panel">${data.inventory.length ? records(data.inventory) : empty('inventory','What comes with you?','Your known possessions will appear here once they are established in the story.')}</section><aside class="panel funds-panel"><div class="capsule-object" aria-hidden="true"><span>CAPSULE</span><b>?</b></div><h2>Resources</h2>${data.accounts.length ? records(data.accounts) : '<span class="balance">— <small>ZENI?</small></span><p>No known funds have been recorded yet.</p>'}<span class="eyebrow">CARRIED · STORED · OWNED</span></aside></div>`;
   }
   function world() {
     return pageHeader('05','World','Follow your curiosity.')+`<section class="world-stage"><div class="world-intro"><span class="eyebrow">${data.started ? 'YOUR CURRENT LOCATION' : 'NEXT STOP / ANOTHER LIFE'}</span><h2>${escape(data.story.location || 'Somewhere extraordinary.')}</h2><p>${data.story.location ? 'Your discoveries, connections and ongoing projects are gathered below.' : 'Your surroundings and discoveries will take shape here as the adventure unfolds.'}</p><dl class="definition-grid">${definition('Era / continuity',data.story.era)}${definition('Time since arrival',data.story.date)}</dl></div></section><div class="world-groups"><section class="panel"><h2>People</h2>${data.people.length ? records(data.people) : '<p>Friends, rivals, strangers.<br>Your first encounter is still ahead.</p>'}</section><section class="panel"><h2>Places</h2>${data.places.length ? records(data.places) : '<p>A world waiting to unfold.<br>No discoveries recorded yet.</p>'}</section><section class="panel"><h2>Projects</h2>${data.projects.length ? records(data.projects) : '<p>Big ideas start somewhere.<br>No projects started yet.</p>'}</section></div>`;
@@ -127,14 +127,9 @@
     $('search-results').hidden = false;
     $('search').setAttribute('aria-expanded','true');
   }
-  function briefing() {
-    const c = data.character;
-    $('brief-content').innerHTML = `<div class="brief-confirmed"><strong>Published profile:</strong> ${escape(c.name)} · ${escape(c.age)} years old · ${escape(c.height)} (${escape(c.heightMetric)}).<br>${escape(data.premise)} · A new life as Zero.</div>`+data.briefing.map((b,i) => `<div class="brief-item"><span class="number">0${i+1}</span><div><h3>${escape(b.title)}</h3><p>${escape(b.body)}</p></div></div>`).join('')+'<div class="brief-item"><span class="number">05</span><div><h3>Your character art</h3><p>Your approved character portrait can be shown during setup. Future story changes stay private until revealed. Select the portrait to see the full image.</p></div></div>';
-  }
   document.addEventListener('click', event => {
     if (event.target instanceof HTMLDialogElement) { const box=event.target.getBoundingClientRect(); if(event.clientX<box.left || event.clientX>box.right || event.clientY<box.top || event.clientY>box.bottom) event.target.close(); }
     if (event.target.closest('.skip-link')) { event.preventDefault(); $('main').focus(); }
-    if (event.target.closest('[data-brief]')) { $('copy-status').textContent = ''; $('brief-dialog').showModal(); }
     if (event.target.closest('[data-search]')) { $('search-dialog').showModal(); $('search').focus(); search(); }
     if (event.target.closest('#about-button,[data-about]')) $('about-dialog').showModal();
     if (event.target.closest('.close-dialog')) event.target.closest('dialog').close();
@@ -157,12 +152,6 @@
     e.preventDefault();
     const i = links.indexOf(document.activeElement);
     links[(i + (e.key === 'ArrowDown' ? 1 : -1) + links.length) % links.length].focus();
-  });
-  $('copy-brief').addEventListener('click',async () => {
-    const c = data.character;
-    const text = `My Dragon Ball Isekai character\n\nConfirmed: ${c.name}, ${c.age} years old, approximately ${c.height} (${c.heightMetric}). Zero is the name used throughout the adventure.\n\n`+data.briefing.map(b => `${b.title}\n${b.body}\nCharacter details: \n`).join('\n')+'\nCharacter art: discuss or share privately in our chat.\n';
-    try { await navigator.clipboard.writeText(text); $('copy-status').textContent='Copied. Ready for our chat.'; }
-    catch { $('copy-status').textContent='Select and copy the guide below.'; let field=$('brief-fallback'); if(!field){field=document.createElement('textarea');field.id='brief-fallback';field.readOnly=true;field.setAttribute('aria-label','Character guide to copy');field.style.cssText='width:100%;height:180px;margin-top:12px';$('brief-content').append(field);} field.value=text;field.focus();field.select(); }
   });
 
   let soundOn = false;
@@ -243,7 +232,7 @@
       $('navigation').innerHTML=nav.map(([route,label]) => `<a class="nav-link" href="#${route}" aria-label="${label}">${icon(route)}<span>${label}</span></a>`).join('');
       document.querySelector('.user-chip').textContent=data.character.name;
       document.querySelector('.user-chip').setAttribute('aria-label',data.character.name);
-      buildSearch(); briefing(); render();
+      buildSearch(); render();
       window.addEventListener('hashchange', () => render(true));
     } catch (error) {
       $('main').innerHTML='<section class="panel error-card"><h1>Unable to load your adventure.</h1><p>Your adventure could not be loaded. Check your connection and try again.</p><button class="primary" id="retry">Try again</button><p style="margin-top:25px"><a href="./CURRENT-CONTINUITY.md">Read the continuity record</a></p></section>';

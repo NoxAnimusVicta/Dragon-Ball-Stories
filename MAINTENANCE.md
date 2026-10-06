@@ -45,7 +45,7 @@ IDs use lowercase letters, digits and hyphens and are unique across collections.
 1. Read changed records fully; reconcile current summaries and accepted corrections. Record the event/exchange and how Zero learned each new fact in the private knowledge ledger. Review the public data and manually update the local publication-review fingerprint; builds must never approve facts automatically.
 2. Run the local build and verification tools. Review the exact public file set.
 3. Preview via a local HTTP server on a fresh port and under a project prefix. Avoid an old localhost origin with another project's service worker.
-4. Check all six sections, search including no results, character briefing, keyboard navigation, dialogs and phone layouts. Test the portrait workflow when adding art.
+4. Check all six sections, search including no results, keyboard navigation, dialogs and phone layouts. Test the portrait workflow when adding art.
 5. Upload only manifest-listed files, commit, verify the GitHub deployment and compare live assets with local source hashes.
 6. Record the commit, deployment and limitations in the local private publication log. Never upload that log or the complete transcript.
 

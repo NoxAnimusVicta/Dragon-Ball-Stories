@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-06-portrait",
+  "revision": "2026-10-06-character-confirmed",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "Character creation",
@@ -13,7 +13,7 @@
     "heightApproximate": true,
     "portrait": "zero-portrait.jpg",
     "portraitAlt": "Zero with long auburn hair and beard, wearing a black martial-arts outfit, burgundy cape and sash, and black-and-burgundy boots. Reference scenery is not a story location.",
-    "race": null,
+    "race": "Human",
     "origin": null,
     "appearance": null,
     "personality": null,
@@ -36,23 +36,5 @@
   "people": [],
   "places": [],
   "projects": [],
-  "events": [],
-  "briefing": [
-    {
-      "title": "Who you become",
-      "body": "Race or species, appearance, personality and the kind of person Zero becomes."
-    },
-    {
-      "title": "What comes with you",
-      "body": "Starting abilities, strengths, limits, knowledge of Dragon Ball, equipment and possessions."
-    },
-    {
-      "title": "Where it begins",
-      "body": "Discuss the opening in our chat. Plans stay private until they become part of your experience."
-    },
-    {
-      "title": "What you want from the story",
-      "body": "Zero’s goals, the tone of the adventure, and anything you want to include or avoid."
-    }
-  ]
+  "events": []
 }

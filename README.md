@@ -10,7 +10,7 @@ Character creation. Confirmed: Zero, age 26, approximately 5′5″–5′6″ (
 
 ## The app
 
-Six screens: main menu, character, story, abilities, inventory and world. An illustrated world, animated selections, keyboard navigation and optional menu sounds make the adventure fun to explore. Includes search, a copyable character guide, expandable records and a large character art stage with a full-art viewer when an image is supplied. The one-star Dragon Ball is used for the favicon and home-screen icon. Motion can be paused, and reduced-motion preferences are respected.
+Six screens: main menu, character, story, abilities, inventory and world. An illustrated world, animated selections, keyboard navigation and optional menu sounds make the adventure fun to explore. Includes search, expandable records and a large character art stage with a full-art viewer when an image is supplied. The one-star Dragon Ball is used for the favicon and home-screen icon. Motion can be paused, and reduced-motion preferences are respected.
 
 The app is a published reference. Send character details and artwork through the chat; there are no device-local character edits or uploads. It checks for new app and story releases automatically when opened or resumed, and every minute while visible. Updates preserve your place and wait for open panels to close. It requires an internet connection and does not install an offline service worker. Open the latest version once to activate automatic updates on an older installation.
 
