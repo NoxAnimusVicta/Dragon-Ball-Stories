@@ -129,7 +129,7 @@
   }
   function briefing() {
     const c = data.character;
-    $('brief-content').innerHTML = `<div class="brief-confirmed"><strong>Published profile:</strong> ${escape(c.name)} · ${escape(c.age)} years old · ${escape(c.height)} (${escape(c.heightMetric)}).<br>${escape(data.premise)} · A new life as Zero.</div>`+data.briefing.map((b,i) => `<div class="brief-item"><span class="number">0${i+1}</span><div><h3>${escape(b.title)}</h3><p>${escape(b.body)}</p></div></div>`).join('')+'<div class="brief-item"><span class="number">05</span><div><h3>Your character art</h3><p>Artwork shared in our chat stays private until its appearance is established in the story. The portrait view preserves the full image.</p></div></div>';
+    $('brief-content').innerHTML = `<div class="brief-confirmed"><strong>Published profile:</strong> ${escape(c.name)} · ${escape(c.age)} years old · ${escape(c.height)} (${escape(c.heightMetric)}).<br>${escape(data.premise)} · A new life as Zero.</div>`+data.briefing.map((b,i) => `<div class="brief-item"><span class="number">0${i+1}</span><div><h3>${escape(b.title)}</h3><p>${escape(b.body)}</p></div></div>`).join('')+'<div class="brief-item"><span class="number">05</span><div><h3>Your character art</h3><p>Your approved character portrait can be shown during setup. Future story changes stay private until revealed. Select the portrait to see the full image.</p></div></div>';
   }
   document.addEventListener('click', event => {
     if (event.target instanceof HTMLDialogElement) { const box=event.target.getBoundingClientRect(); if(event.clientX<box.left || event.clientX>box.right || event.clientY<box.top || event.clientY>box.bottom) event.target.close(); }

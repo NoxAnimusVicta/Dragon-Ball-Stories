@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-06-character-known-records",
+  "revision": "2026-10-06-portrait",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "Character creation",
@@ -11,8 +11,8 @@
     "height": "5′5″–5′6″",
     "heightMetric": "Approx. 165–168 cm",
     "heightApproximate": true,
-    "portrait": null,
-    "portraitAlt": "Character artwork of Zero",
+    "portrait": "zero-portrait.jpg",
+    "portraitAlt": "Zero with long auburn hair and beard, wearing a black martial-arts outfit, burgundy cape and sash, and black-and-burgundy boots. Reference scenery is not a story location.",
     "race": null,
     "origin": null,
     "appearance": null,

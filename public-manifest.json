@@ -23,7 +23,8 @@
     "public-manifest.json",
     "release.json",
     "styles.css",
-    "updates.js"
+    "updates.js",
+    "zero-portrait.jpg"
   ],
   "destination": "NoxAnimusVicta/Dragon-Ball-Stories",
   "branch": "main",

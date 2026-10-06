@@ -14,7 +14,7 @@ Generated from campaign.json. Edit that authoritative source, then run build.py.
 - Arrival: Not publicly recorded.
 - Current location: Not publicly recorded.
 - Story date: Not publicly recorded.
-- Character artwork: Not published.
+- Character artwork: Provided: zero-portrait.jpg.
 - Published audience: public, read-only companion. No private narrator information.
 
 Unpublished fields can exist in private preparation. Only enacted, character-known facts belong here. The story clock measures elapsed time from the opening; documentation does not start it. The Capsule Corp visual theme does not establish affiliations, equipment or geography.

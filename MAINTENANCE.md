@@ -2,7 +2,7 @@
 
 ## Source and publication
 
-campaign.json is the authoritative character-facing data source. A new fact must be established in play AND known to Zero before publication. Player-approved future plans are not character knowledge. Keep unrevealed facts and artwork outside public/ entirely, including source, comments, metadata, search data and commit messages. Null means not publicly recorded; it may already exist in private preparation. An empty collection means no records, not proof that the character owns nothing or cannot do anything.
+campaign.json is the authoritative character-facing data source. A new fact must be established in play AND known to Zero before publication. Player-approved future plans are not character knowledge. Keep unrevealed facts and unapproved artwork outside public/ entirely, including source, comments, metadata, search data and commit messages. Null means not publicly recorded; it may already exist in private preparation. An empty collection means no records, not proof that the character owns nothing or cannot do anything.
 
 The complete local campaign-source folder holds build.py, verify.py, the handbook and private material. Only its public/ contents listed in public-manifest.json are uploaded. Run `python build.py` then `python verify.py` from that local source folder. This generates readable summaries without advancing time or altering story state.
 
@@ -10,7 +10,7 @@ GitHub Pages publishes main / (root). Relative asset paths support the /Dragon-B
 
 ## Character art
 
-After the artwork depicts an established, character-known appearance in play, place the approved publication copy in public/ with a stable filename, such as zero-portrait.webp. Set character.portrait to that relative filename and provide a descriptive character.portraitAlt. Add the filename to both manifests. The image is displayed with object-fit: contain and can be opened in a full-art dialog. Null displays the intentional placeholder. Only images within this site's project directory are accepted; a broken image shows a readable fallback.
+An explicitly approved character-creation portrait may be shown before play without asserting an event. Otherwise wait until the depicted appearance is established and character-known. Place the approved publication copy in public/ with a stable filename, such as zero-portrait.webp. Set character.portrait to that relative filename and provide a descriptive character.portraitAlt. Add the filename to both manifests. The image is displayed with object-fit: contain and can be opened in a full-art dialog. Null displays the intentional placeholder. Only images within this site's project directory are accepted; a broken image shows a readable fallback.
 
 Before publishing supplied character art, remove identifying metadata and use a neutral filename. Retain the original privately. Do not publish photographs, filenames, captions or metadata that disclose real-world identity or location.
 
