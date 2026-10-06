@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-06-s045-c020",
+  "revision": "2026-10-07-character-origins",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "Training with Vegeta",
@@ -190,6 +190,15 @@
       "status": "Partner",
       "facts": [
         {
+          "label": "Version",
+          "value": "Time Patroller / Your partner"
+        },
+        {
+          "label": "Home timeline",
+          "value": "Origin unknown",
+          "note": "Not yet learned by Zero."
+        },
+        {
           "label": "Current assignment",
           "value": "Temporary lower-risk solo roster; partnership retained"
         },
@@ -207,6 +216,15 @@
       "status": "Instructor",
       "facts": [
         {
+          "label": "Version",
+          "value": "Training instructor"
+        },
+        {
+          "label": "Home timeline",
+          "value": "Origin unknown",
+          "note": "Not yet learned by Zero."
+        },
+        {
           "label": "Last seen",
           "value": "Day 29 evening · Outside room 214"
         }
@@ -219,6 +237,15 @@
       "summary": "Dispatcher and routine supervisor of the “Temporal Super Stars.”",
       "status": "Supervisor",
       "facts": [
+        {
+          "label": "Version",
+          "value": "Temporal Super Stars dispatcher"
+        },
+        {
+          "label": "Home timeline",
+          "value": "Origin unknown",
+          "note": "Not yet learned by Zero."
+        },
         {
           "label": "Authority",
           "value": "Scheduling, training logistics and restricted tasking"
@@ -235,21 +262,54 @@
       "title": "Chronoa",
       "summary": "Supreme Kai of Time; conducted the exceptional review of Zero’s arrival and knowledge.",
       "status": "Anomaly review",
-      "details": "Small, pink-skinned, pointed ears, swept orange hair, gold earrings and purple-and-gold clothing. Bright, brisk questions and direct authority. She confirmed Zero’s game-history account and offered supervised trainee membership. She is not his everyday dispatcher. No result explaining his origin has yet been reported. Exact age unknown."
+      "details": "Small, pink-skinned, pointed ears, swept orange hair, gold earrings and purple-and-gold clothing. Bright, brisk questions and direct authority. She confirmed Zero’s game-history account and offered supervised trainee membership. She is not his everyday dispatcher. No result explaining his origin has yet been reported. Exact age unknown.",
+      "facts": [
+        {
+          "label": "Version",
+          "value": "Supreme Kai of Time / Hub contact"
+        },
+        {
+          "label": "Home timeline",
+          "value": "Origin unknown",
+          "note": "Not yet learned by Zero."
+        }
+      ]
     },
     {
       "id": "doctor-rill",
       "title": "Dr. Rill",
       "summary": "Time Patrol clinician who treated and medically cleared Zero.",
       "status": "Medical contact",
-      "details": "Appears in her forties, brown skin, square face, close-cropped black hair grey at the temples, white medical jacket over teal clothing. Low, brisk voice and concrete clinical answers. Reported completed treatment and clear scans, heard Zero’s account, forwarded it to coordination and measured his power at 50. Last seen in the medical ward; present whereabouts unknown."
+      "details": "Appears in her forties, brown skin, square face, close-cropped black hair grey at the temples, white medical jacket over teal clothing. Low, brisk voice and concrete clinical answers. Reported completed treatment and clear scans, heard Zero’s account, forwarded it to coordination and measured his power at 50. Last seen in the medical ward; present whereabouts unknown.",
+      "facts": [
+        {
+          "label": "Version",
+          "value": "Time Patrol clinician"
+        },
+        {
+          "label": "Home timeline",
+          "value": "Origin unknown",
+          "note": "Not yet learned by Zero."
+        }
+      ]
     },
     {
       "id": "nappa",
       "title": "Nappa",
       "summary": "Attacked Zero outside Capsule Corp; overwhelmingly stronger.",
       "status": "Hostile encounter",
-      "details": "Huge, bald, black moustache, white-and-gold Saiyan armour, bare muscular arms and brown tail. Deep, rough voice; amused cruelty gave way to anger at Zero’s insults. Zero’s punches, clawing and biting attempts did not visibly injure him. Vegeta knocked him unconscious; he was breathing when last seen. His later whereabouts are unknown to Zero. Exact age unknown."
+      "details": "Huge, bald, black moustache, white-and-gold Saiyan armour, bare muscular arms and brown tail. Deep, rough voice; amused cruelty gave way to anger at Zero’s insults. Zero’s punches, clawing and biting attempts did not visibly injure him. Vegeta knocked him unconscious; he was breathing when last seen. His later whereabouts are unknown to Zero. Exact age unknown.",
+      "facts": [
+        {
+          "label": "Version",
+          "value": "West City attacker"
+        },
+        {
+          "label": "Home timeline",
+          "value": "Origin unknown",
+          "note": "Not yet learned by Zero."
+        }
+      ]
     },
     {
       "id": "yamcha",
@@ -257,6 +317,15 @@
       "summary": "Sparring partner introduced by Krillin. Experienced and much stronger than Zero.",
       "status": "Training partner",
       "facts": [
+        {
+          "label": "Version",
+          "value": "Courtyard sparring partner"
+        },
+        {
+          "label": "Home timeline",
+          "value": "Origin unknown",
+          "note": "Not yet learned by Zero."
+        },
         {
           "label": "Reported power",
           "value": "210 · Reported by Krillin, not self-scanned by Zero"
@@ -275,12 +344,17 @@
       "status": "Technical contact",
       "facts": [
         {
-          "label": "Last seen",
-          "value": "Day 29 evening · Maintenance bay"
+          "label": "Version",
+          "value": "Training complex technician"
         },
         {
-          "label": "Home history",
-          "value": "Not yet known"
+          "label": "Home timeline",
+          "value": "Origin unknown",
+          "note": "Not yet learned by Zero."
+        },
+        {
+          "label": "Last seen",
+          "value": "Day 29 evening · Maintenance bay"
         }
       ],
       "details": "Appears in her thirties; jaw-length turquoise hair, blue work jacket with rolled sleeves, dark trousers and tool belt. Bright, brisk voice and dry sarcasm when rushed. Zero has noticed Vegeta frequently nearby, but their relationship is unknown. She warned him against switching on exposed machinery, demanded he release Zero and said he should train Zero. The training room she was repairing was out of service when last discussed; completion is unconfirmed."
