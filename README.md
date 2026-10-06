@@ -6,7 +6,7 @@ A game-style home for Zero's Dragon Ball Isekai, inspired by Capsule Corp equipm
 
 ## Current state
 
-Character creation. Confirmed: Zero, age 26, approximately 5′5″–5′6″ (165–168 cm). He will adopt the name Zero when he recognises his new reality in the opening scene. The former name is not recorded. Race, powers, appearance, arrival method, era, funds and possessions remain undecided. No story has begun.
+Character creation. Confirmed: Zero, age 26, approximately 5′5″–5′6″ (165–168 cm). No story has begun. This public companion records only established, character-known information. Unpublished fields are not evidence that a decision has not been made; private preparation and future plot ideas remain outside this repository.
 
 ## The app
 

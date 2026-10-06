@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-06-zero-setup",
+  "revision": "2026-10-06-character-known-records",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "Character creation",
@@ -18,7 +18,7 @@
     "appearance": null,
     "personality": null,
     "backstory": null,
-    "arrival": "Planned for the opening: once he realises he has been isekaied, he adopts the name Zero and leaves his former name behind. The era, location and method of arrival are still undecided.",
+    "arrival": null,
     "motivation": null,
     "knowledge": null,
     "limitations": null
@@ -48,7 +48,7 @@
     },
     {
       "title": "Where it begins",
-      "body": "Continuity, era, starting location and how the isekai happens. Zero adopts his chosen name when he recognises his new reality."
+      "body": "Discuss the opening in our chat. Plans stay private until they become part of your experience."
     },
     {
       "title": "What you want from the story",

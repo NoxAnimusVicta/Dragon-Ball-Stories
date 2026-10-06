@@ -7,7 +7,7 @@ This repository is the public companion for Dragon Ball Stories, a Dragon Ball I
 3. Read RETCONS.md before relying on older records.
 4. Consult the complete local transcript and private narrator checkpoint through their authorized location before narrating. They are intentionally absent here.
 
-The protagonist is Zero, age 26, approximately 5′5″–5′6″. In the planned opening, he takes this name after recognising that he has been isekaied. The former name is never recorded or used. Character art will be supplied later. Keep real-world identity, location, contact details and identifiable background information out of public records.
+The protagonist is Zero, age 26, approximately 5′5″–5′6″. No opening scene has occurred. Publish new character and story facts only after they are established in play and known to Zero. Future plans and unrevealed artwork stay in private preparation. Keep real-world identity, location, contact details and identifiable background information out of public records.
 
 No scene has been recorded. The Capsule Corp styling does not establish a character affiliation or grant items. The landscape is decorative menu scenery, not an established story location.
 

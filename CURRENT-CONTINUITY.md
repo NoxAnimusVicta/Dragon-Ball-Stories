@@ -4,10 +4,10 @@ Generated from campaign.json. Edit that authoritative source, then run build.py.
 
 - Status: Character preparation; story not started.
 - Protagonist: Zero, age 26, height 5′5″–5′6″ (Approx. 165–168 cm).
-- Story date: Not established.
-- Location: Not established.
-- Immediate situation: Not established.
-- Pending choice: Provide the remaining fictional character details, character art and starting-world decisions.
+- Story date: Not publicly recorded.
+- Location: Not publicly recorded.
+- Immediate situation: Not publicly recorded.
+- Pending choice: Continue preparation in chat; no in-story choice is active.
 - Latest recorded event: None.
 - Ability records: 0.
 - Possession records: 0.

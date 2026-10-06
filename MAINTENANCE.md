@@ -2,7 +2,7 @@
 
 ## Source and publication
 
-campaign.json is the authoritative public data source. Edit confirmed facts there; never invent missing values to fill a panel. Null means unknown. An empty collection means no records, not proof that the character owns nothing or cannot do anything.
+campaign.json is the authoritative character-facing data source. A new fact must be established in play AND known to Zero before publication. Player-approved future plans are not character knowledge. Keep unrevealed facts and artwork outside public/ entirely, including source, comments, metadata, search data and commit messages. Null means not publicly recorded; it may already exist in private preparation. An empty collection means no records, not proof that the character owns nothing or cannot do anything.
 
 The complete local campaign-source folder holds build.py, verify.py, the handbook and private material. Only its public/ contents listed in public-manifest.json are uploaded. Run `python build.py` then `python verify.py` from that local source folder. This generates readable summaries without advancing time or altering story state.
 
@@ -10,7 +10,7 @@ GitHub Pages publishes main / (root). Relative asset paths support the /Dragon-B
 
 ## Character art
 
-Place the supplied, approved image directly in public/ with a stable filename, such as zero-portrait.webp. Set character.portrait to that relative filename and provide a descriptive character.portraitAlt. Add the filename to both manifests. The image is displayed with object-fit: contain and can be opened in a full-art dialog. Null displays the intentional placeholder. Only images within this site's project directory are accepted; a broken image shows a readable fallback.
+After the artwork depicts an established, character-known appearance in play, place the approved publication copy in public/ with a stable filename, such as zero-portrait.webp. Set character.portrait to that relative filename and provide a descriptive character.portraitAlt. Add the filename to both manifests. The image is displayed with object-fit: contain and can be opened in a full-art dialog. Null displays the intentional placeholder. Only images within this site's project directory are accepted; a broken image shows a readable fallback.
 
 Before publishing supplied character art, remove identifying metadata and use a neutral filename. Retain the original privately. Do not publish photographs, filenames, captions or metadata that disclose real-world identity or location.
 
@@ -18,9 +18,9 @@ Before publishing supplied character art, remove identifying metadata and use a 
 
 character: name, age, height, heightMetric, heightApproximate, portrait, portraitAlt, race, origin, appearance, personality, backstory, arrival, motivation, knowledge, limitations.
 
-story: era, date, location, situation, pendingChoice. Set started=true only after an enacted opening scene, and update phase to the actual story phase. Do not use real-world time as a story date.
+story: era, date, location, situation, pendingChoice. Set started=true only after an enacted opening scene. Use date for elapsed story time from that opening, and era for the known local era/continuity. The private clock tracks elapsed time separately from local calendar coordinates; changing eras must not reset elapsed time. Before play begins, the clock is not started. Documentation and real-world waiting never advance it.
 
-Use Zero as the sole character name in public files, UI, metadata, prompts and narration. Never restore the former name or describe character fields as real-world identifying facts. Keep surnames, birthdays, addresses, contact details, real-world locations, occupations and identifying background out of public records. Age 26 and approximate height remain the approved character profile. Artwork and remaining character facts come from the user. The planned adoption of Zero belongs to the opening; it does not mean the story has already started.
+Use Zero as the sole character name in public files, UI, metadata, prompts and narration. Never restore the former name or describe character fields as real-world identifying facts. Keep surnames, birthdays, addresses, contact details, real-world locations, occupations and identifying background out of public records. Age 26 and approximate height remain the approved character profile. Artwork and character facts come from the user; being supplied does not automatically make them publishable. Consult the local knowledge ledger and publication review before promoting private material.
 
 ## Collections
 
@@ -42,7 +42,7 @@ IDs use lowercase letters, digits and hyphens and are unique across collections.
 
 ## Release check
 
-1. Read changed records fully; reconcile current summaries and accepted corrections.
+1. Read changed records fully; reconcile current summaries and accepted corrections. Record the event/exchange and how Zero learned each new fact in the private knowledge ledger. Review the public data and manually update the local publication-review fingerprint; builds must never approve facts automatically.
 2. Run the local build and verification tools. Review the exact public file set.
 3. Preview via a local HTTP server on a fresh port and under a project prefix. Avoid an old localhost origin with another project's service worker.
 4. Check all six sections, search including no results, character briefing, keyboard navigation, dialogs and phone layouts. Test the portrait workflow when adding art.
