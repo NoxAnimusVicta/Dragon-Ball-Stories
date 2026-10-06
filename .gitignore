@@ -1,0 +1,12 @@
+# Private source must remain outside this public repository.
+private/
+handovers/
+story-transcript*
+.env
+.env.*
+*.pem
+*.key
+*.zip
+*.7z
+__pycache__/
+node_modules/
