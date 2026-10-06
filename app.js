@@ -13,12 +13,13 @@
     people: '<circle cx="9" cy="8" r="3"/><path d="M2 20v-2a7 7 0 0 1 14 0v2M16 5a3 3 0 0 1 0 6M19 14a6 6 0 0 1 3 5"/>',
     project: '<path d="m14 3 7 7-11 11H3v-7zM11 6l7 7M3 15l6 6"/>'
   };
-  const nav = [['overview','Main menu'],['character','Character'],['abilities','Abilities'],['inventory','Inventory'],['world','World'],['chronicle','Story']];
+  const nav = [['overview','Main menu'],['character','Character'],['chronicle','Story'],['abilities','Abilities'],['inventory','Inventory'],['world','World']];
   const $ = id => document.getElementById(id);
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const icon = name => `<svg viewBox="0 0 24 24" aria-hidden="true">${paths[name] || paths.overview}</svg>`;
   const present = value => value !== null && value !== undefined && value !== '';
   const value = (v, fallback = 'Not yet established') => present(v) ? escape(v) : `<span class="unknown">${fallback}</span>`;
+  const release = document.querySelector('meta[name="app-release"]')?.content || '';
   let data;
   let searchIndex = [];
   let portraitUrl = null;
@@ -38,13 +39,14 @@
     try {
       const url = new URL(path, location.href);
       const base = new URL('./', location.href);
-      return url.origin === base.origin && url.pathname.startsWith(base.pathname) && /\.(png|jpe?g|webp|avif|svg)$/i.test(url.pathname) ? url.href : null;
+      if (url.origin !== base.origin || !url.pathname.startsWith(base.pathname) || !/\.(png|jpe?g|webp|avif|svg)$/i.test(url.pathname)) return null;
+      url.searchParams.set('v', release);
+      return url.href;
     } catch { return null; }
   }
 
-  const radar = (interactive = false) => `<div class="radar-shell"><div class="radar-stem"></div><div class="radar-rim"><div class="radar-screen"><div class="radar-sweep"></div><span class="radar-cross"></span>${interactive ? '<a class="radar-node node-one" href="#character" aria-label="Character"><span>01</span></a><a class="radar-node node-two" href="#abilities" aria-label="Abilities"><span>03</span></a><a class="radar-node node-three" href="#inventory" aria-label="Inventory"><span>04</span></a><a class="radar-node node-four" href="#chronicle" aria-label="Story"><span>02</span></a>' : ''}<span class="radar-label">${interactive ? 'SELECT A SIGNAL' : 'DESTINATION UNKNOWN'}</span></div></div><span class="radar-brand">CAPSULE CORP. STYLE / MENU RADAR</span>${interactive ? '<div class="radar-legend"><a href="#character">01 Character</a><a href="#chronicle">02 Story</a><a href="#abilities">03 Abilities</a><a href="#inventory">04 Inventory</a></div>' : ''}</div>`;
   function artCard() {
-    return `<section class="character-stage" aria-label="Character portrait"><span class="stage-label">PLAYER 01</span><div class="aura-ring" aria-hidden="true"></div><div class="portrait">${portraitUrl ? `<button class="art-button" data-art aria-label="View full character artwork"><img class="portrait-image" src="${escape(portraitUrl)}" alt="${escape(data.character.portraitAlt)}"></button>` : `<div class="portrait-placeholder"><div class="portrait-symbol">?</div><span>YOUR HERO GOES HERE</span><p>Bring your character to life.<br>Your artwork takes centre stage.</p><button class="small-action" data-brief>Add your character details ↗</button></div>`}</div><div class="stage-name">${escape(data.character.name)}</div><div class="stage-bottom"><span>${escape(data.character.race || 'IDENTITY UNDECIDED')}</span><span>${portraitUrl ? 'SELECT ART TO ENLARGE' : 'AWAITING YOUR ART'}</span></div></section>`;
+    return `<section class="character-stage" aria-label="Character portrait"><span class="stage-label">PLAYER 01</span><div class="aura-ring" aria-hidden="true"></div><div class="portrait">${portraitUrl ? `<button class="art-button" data-art aria-label="View full character artwork"><img class="portrait-image" src="${escape(portraitUrl)}" alt="${escape(data.character.portraitAlt)}"></button>` : `<div class="portrait-placeholder"><div class="portrait-symbol">?</div><span>YOUR HERO GOES HERE</span><p>Bring your character to life.<br>Your artwork takes centre stage.</p><button class="small-action" data-brief>Open character guide ↗</button></div>`}</div><div class="stage-name">${escape(data.character.name)}</div><div class="stage-bottom"><span>${escape(data.character.race || 'RACE UNDECIDED')}</span><span>${portraitUrl ? 'SELECT ART TO ENLARGE' : 'AWAITING YOUR ART'}</span></div></section>`;
   }
   function pageHeader(number, title, description) {
     return `<div class="page-heading"><div><span class="eyebrow">${number} / YOUR ADVENTURE</span><h1>${title}</h1></div><p>${description}</p></div>`;
@@ -52,7 +54,7 @@
   const definition = (label, v, sub = '') => `<div><dt>${escape(label)}</dt><dd>${value(v)}${sub ? `<small>${escape(sub)}</small>` : ''}</dd></div>`;
   const detail = (title, text, fallback) => `<details><summary>${escape(title)}</summary><p>${escape(text || fallback)}</p></details>`;
   function empty(symbol, title, body, action = false) {
-    return `<div class="empty-state"><div class="empty-symbol">${icon(symbol)}</div><span class="eyebrow">THE ADVENTURE IS STILL AHEAD</span><h2>${title}</h2><p>${body}</p>${action ? '<button class="primary" data-brief>Shape your character '+icon('arrow')+'</button>' : ''}</div>`;
+    return `<div class="empty-state"><div class="empty-symbol">${icon(symbol)}</div><span class="eyebrow">THE ADVENTURE IS STILL AHEAD</span><h2>${title}</h2><p>${body}</p>${action ? '<button class="primary" data-brief>Open character guide '+icon('arrow')+'</button>' : ''}</div>`;
   }
   function records(items) {
     return items.map(r => `<article class="record" id="record-${escape(r.id)}" tabindex="-1">${r.status || r.date ? `<div class="record-meta">${escape([r.status,r.date].filter(Boolean).join(' / '))}</div>` : ''}<h3>${escape(r.title)}</h3><p>${escape(r.summary || '')}</p>${Array.isArray(r.facts) && r.facts.length ? `<dl class="definition-grid">${r.facts.map(f => definition(f.label,f.value,f.note)).join('')}</dl>` : ''}${r.details ? '<div class="detail-list">'+detail('Read more',r.details,'')+'</div>' : ''}</article>`).join('');
@@ -65,23 +67,23 @@
       ['inventory','Inventory','Everything you take with you','04'],
       ['world','World','A whole world waiting out there','05']
     ];
-    return `<section class="title-screen"><div class="menu-column"><div class="title-logo"><span class="logo-kicker">AN ISEKAI ADVENTURE</span><h1><span>DRAGON <em>BALL</em></span><strong>STORIES</strong></h1><span class="logo-rule">YOUR NEXT LIFE STARTS HERE</span></div><nav class="game-menu" aria-label="Adventure menu">${entries.map(([key,label,desc,n])=>`<a class="menu-choice" href="#${key}" data-menu><span class="menu-number">${n}</span>${icon(key)}<span class="menu-title">${label}</span><span class="menu-arrow">›</span><span class="menu-description">${desc}</span></a>`).join('')}</nav></div><div class="home-feature"><span class="chapter-tag">${data.started ? 'YOUR ADVENTURE' : 'BEFORE CHAPTER ONE'}</span><h2>${data.started ? 'What happens<br><em>next?</em>' : 'A new world.<br><em>A new you.</em>'}</h2><p>${escape(data.story.situation || `The next chapter belongs to you, ${data.character.name}.`)}</p><a class="primary launch-button" href="${data.started ? '#chronicle' : '#character'}">${data.started ? 'Return to your story' : 'Create your character'} ${icon('arrow')}</a></div><a class="home-radar" href="#world" aria-label="Explore the world"><div class="mini-radar"><span></span><b>+</b></div><span>WORLD RADAR</span></a><div class="scene-caption">MENU SCENERY · YOUR STARTING WORLD IS STILL OPEN</div></section>`;
+    return `<section class="title-screen"><div class="menu-column"><div class="title-logo"><span class="logo-kicker">AN ISEKAI ADVENTURE</span><h1><span>DRAGON <em>BALL</em></span><strong>STORIES</strong></h1><span class="logo-rule">YOUR NEXT LIFE STARTS HERE</span></div><nav class="game-menu" aria-label="Adventure menu">${entries.map(([key,label,desc,n])=>`<a class="menu-choice" href="#${key}" data-menu><span class="menu-number">${n}</span>${icon(key)}<span class="menu-title">${label}</span><span class="menu-arrow">›</span><span class="menu-description">${desc}</span></a>`).join('')}</nav></div><div class="home-feature"><span class="chapter-tag">${data.started ? 'YOUR ADVENTURE' : 'BEFORE CHAPTER ONE'}</span><h2>${data.started ? 'What happens<br><em>next?</em>' : 'A new world.<br><em>A new you.</em>'}</h2><p>${escape(data.story.situation || `The next chapter belongs to you, ${data.character.name}.`)}</p><a class="primary launch-button" href="${data.started ? '#chronicle' : '#character'}">${data.started ? 'Return to your story' : 'Meet Zero'} ${icon('arrow')}</a></div><div class="scene-caption">${data.started ? 'DECORATIVE MENU SCENERY' : 'MENU SCENERY · YOUR STARTING WORLD IS STILL OPEN'}</div></section>`;
   }
   function character() {
     const c=data.character;
-    return pageHeader('01','Character','Every adventure needs a protagonist.')+`<div class="character-layout">${artCard()}<div class="character-info"><div class="player-banner"><span class="eyebrow">A NEW LIFE / CHARACTER CREATION</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'IN THE STORY' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div><section class="panel identity-panel"><h3>Make this life yours</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Race, appearance and origin are yours to decide.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Who is Jake in this world? What drives him?')}${detail('Before the arrival',c.backstory,'Your fictional backstory is still unwritten.')}${detail('The isekai',c.arrival,'Choose how you arrive and what comes with you.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'What do you know about this world, and where do your limits lie?')}</div></section><button class="primary brief-launch" data-brief>Build your character brief ${icon('arrow')}</button><p class="subtle-note">Send your details and artwork in our chat. Only your first name, age and approximate height carry over from real life.</p></div></div>`;
+    return pageHeader('01','Character','A new name. A life of your own.')+`<div class="character-layout">${artCard()}<div class="character-info"><div class="player-banner"><span class="eyebrow">${data.started ? 'YOUR PROTAGONIST' : 'CHARACTER SETUP'}</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'IN THE STORY' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div><section class="panel identity-panel"><h3>Identity & background</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Race, appearance and origin are yours to decide.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Who is Zero in this world? What drives him?')}${detail('Backstory',c.backstory,'The life before the arrival is still unwritten.')}${detail('Arrival & new identity',c.arrival,'Choose how you arrive and what comes with you.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'What do you know about this world, and where do your limits lie?')}</div></section><button class="primary brief-launch" data-brief>Open character guide ${icon('arrow')}</button><p class="subtle-note">Share Zero’s character details and artwork in our chat when you’re ready.</p></div></div>`;
   }
   function abilities() {
-    return pageHeader('03','Abilities','Find your fighting spirit.')+`<div class="loadout-screen"><section class="panel main-panel">${data.abilities.length ? records(data.abilities) : empty('abilities','Your potential is unwritten.','Techniques. Transformations. A fighting style of your own. Your starting abilities and their limits are still yours to shape.',true)}</section><aside class="side-note"><span class="giant-kanji" aria-hidden="true">気</span><span class="eyebrow">POWER IS ONLY THE BEGINNING</span><h2>Strength.<br>Control.<br>Resolve.</h2><p>Every technique has a story. Learned abilities and training progress will appear here as your journey unfolds.</p><div class="slot-strip" aria-label="No techniques established"><span>?</span><span>?</span><span>?</span></div></aside></div>`;
+    return pageHeader('03','Abilities','Find your fighting spirit.')+`<div class="loadout-screen"><section class="panel main-panel">${data.abilities.length ? records(data.abilities) : empty('abilities','Your potential is unwritten.','Techniques. Transformations. A fighting style of your own. Your starting abilities and their limits are still yours to shape.',true)}</section><aside class="side-note"><span class="giant-kanji" aria-hidden="true">気</span><span class="eyebrow">POWER IS ONLY THE BEGINNING</span><h2>Strength.<br>Control.<br>Resolve.</h2><p>Every technique has a story. Learned abilities and training progress will appear here as your journey unfolds.</p><div class="slot-strip" aria-hidden="true"><span>✦</span><span>✦</span><span>✦</span></div></aside></div>`;
   }
   function inventory() {
     return pageHeader('04','Inventory','Pack for a life beyond the ordinary.')+`<div class="loadout-screen"><section class="panel main-panel">${data.inventory.length ? records(data.inventory) : empty('inventory','What comes with you?','Your starting gear and possessions are still undecided. Once established, this is where you will find them.',true)}</section><aside class="panel funds-panel"><div class="capsule-object" aria-hidden="true"><span>CAPSULE</span><b>?</b></div><h2>Resources</h2>${data.accounts.length ? records(data.accounts) : '<span class="balance">— <small>ZENI?</small></span><p>Currency and opening funds have not been decided.</p>'}<span class="eyebrow">CARRIED · STORED · OWNED</span></aside></div>`;
   }
   function world() {
-    return pageHeader('05','World','Follow your curiosity.')+`<section class="world-stage"><div>${radar(true)}</div><div class="world-intro"><span class="eyebrow">${data.started ? 'YOUR CURRENT LOCATION' : 'NEXT STOP / ANOTHER LIFE'}</span><h2>${escape(data.story.location || 'Somewhere extraordinary.')}</h2><p>${data.story.location ? 'Your discoveries, connections and ongoing projects are gathered below.' : 'Your arrival point is still open. Choose your era and starting location when we build your character.'}</p><dl class="definition-grid">${definition('Era / continuity',data.story.era)}${definition('Story date',data.story.date)}</dl><p class="subtle-note">Radar signals are menu shortcuts, not story coordinates.</p></div></section><div class="world-groups"><section class="panel"><h2>People</h2>${data.people.length ? records(data.people) : '<p>Friends, rivals, strangers.<br>Your first encounter is still ahead.</p>'}</section><section class="panel"><h2>Places</h2>${data.places.length ? records(data.places) : '<p>A world waiting to unfold.<br>No discoveries recorded yet.</p>'}</section><section class="panel"><h2>Projects</h2>${data.projects.length ? records(data.projects) : '<p>Big ideas start somewhere.<br>No ongoing projects yet.</p>'}</section></div>`;
+    return pageHeader('05','World','Follow your curiosity.')+`<section class="world-stage"><div class="world-intro"><span class="eyebrow">${data.started ? 'YOUR CURRENT LOCATION' : 'NEXT STOP / ANOTHER LIFE'}</span><h2>${escape(data.story.location || 'Somewhere extraordinary.')}</h2><p>${data.story.location ? 'Your discoveries, connections and ongoing projects are gathered below.' : 'The era and starting location are still yours to choose. Your discoveries will take shape here as the adventure unfolds.'}</p><dl class="definition-grid">${definition('Era / continuity',data.story.era)}${definition('Story date',data.story.date)}</dl></div></section><div class="world-groups"><section class="panel"><h2>People</h2>${data.people.length ? records(data.people) : '<p>Friends, rivals, strangers.<br>Your first encounter is still ahead.</p>'}</section><section class="panel"><h2>Places</h2>${data.places.length ? records(data.places) : '<p>A world waiting to unfold.<br>No discoveries recorded yet.</p>'}</section><section class="panel"><h2>Projects</h2>${data.projects.length ? records(data.projects) : '<p>Big ideas start somewhere.<br>No projects started yet.</p>'}</section></div>`;
   }
   function chronicle() {
-    return pageHeader('02','Story','Every choice leaves a mark.')+`<div class="story-screen"><section class="chapter-cover"><span class="eyebrow">${data.started ? 'THE JOURNEY SO FAR' : 'YOUR FIRST SAGA'}</span><img src="./dragon-ball.svg" width="130" height="130" alt="One-star Dragon Ball"><h2>${data.started ? 'The story<br>continues.' : 'Beyond<br>the familiar.'}</h2><span class="chapter-tag">${data.started ? escape(data.phase) : 'CHAPTER ONE / NOT STARTED'}</span></section><section class="story-content">${data.events.length ? records(data.events) : `<span class="eyebrow">PROLOGUE / CHARACTER CREATION</span><h2>The first step<br>is yours.</h2><p>A different world. A different life. Before the adventure begins, let's decide who steps into it.</p><div class="story-progress"><span class="complete">Personal basics</span><span>Character & artwork</span><span>Opening setting</span></div><a class="primary" href="#character">Meet your protagonist ${icon('arrow')}</a><p class="subtle-note">No opening scene has taken place yet.</p>`}${data.started && data.story.pendingChoice ? `<div class="pending-choice"><span class="eyebrow">YOUR NEXT CHOICE</span><p>${escape(data.story.pendingChoice)}</p></div>` : ''}</section></div>`;
+    return pageHeader('02','Story','Every choice leaves a mark.')+`<div class="story-screen"><section class="chapter-cover"><span class="eyebrow">${data.started ? 'THE JOURNEY SO FAR' : 'YOUR FIRST SAGA'}</span><img src="./dragon-ball.svg?v=${release}" width="130" height="130" alt="One-star Dragon Ball"><h2>${data.started ? 'The story<br>continues.' : 'Beyond<br>the familiar.'}</h2><span class="chapter-tag">${data.started ? escape(data.phase) : 'CHAPTER ONE / NOT STARTED'}</span></section><section class="story-content">${data.events.length ? records(data.events) : `<span class="eyebrow">PROLOGUE / CHARACTER CREATION</span><h2>The first step<br>is yours.</h2><p>A different world. A name chosen for a new life. Before the adventure begins, let's decide who Zero becomes.</p><div class="story-progress"><span class="complete">Name, age & height</span><span>Character & artwork</span><span>Opening setting</span></div><a class="primary" href="#character">Meet Zero ${icon('arrow')}</a><p class="subtle-note">No opening scene has taken place yet.</p>`}${data.started && data.story.pendingChoice ? `<div class="pending-choice"><span class="eyebrow">YOUR NEXT CHOICE</span><p>${escape(data.story.pendingChoice)}</p></div>` : ''}</section></div>`;
   }
   const pages = {overview,character,abilities,inventory,world,chronicle};
   function hideSearch() { $('search-results').hidden = true; $('search').setAttribute('aria-expanded','false'); }
@@ -110,7 +112,7 @@
     }
   }
   function buildSearch() {
-    searchIndex = nav.map(([route,title]) => ({route,title,summary:`Open ${title.toLowerCase()} records`,text:title}));
+    searchIndex = nav.map(([route,title]) => ({route,title,summary:route === 'overview' ? 'Return to the adventure menu' : `Explore ${title.toLowerCase()}`,text:title}));
     const c = data.character;
     searchIndex.push({route:'character',title:c.name,summary:`Age ${c.age}; ${c.height} (${c.heightMetric})`,text:Object.values(c).filter(v => typeof v === 'string' || typeof v === 'number').join(' ')});
     const mapping = {abilities:'abilities',inventory:'inventory',accounts:'inventory',people:'world',places:'world',projects:'world',events:'chronicle'};
@@ -118,23 +120,24 @@
   }
   function search() {
     const q = $('search').value.trim().toLocaleLowerCase();
-    if (!q) return hideSearch();
-    const results = searchIndex.filter(r => (r.title+' '+r.text).toLocaleLowerCase().includes(q)).slice(0,12);
-    $('search-results').innerHTML = results.length ? results.map(r => `<a class="search-result" href="#${escape(r.route)}"><strong>${escape(r.title)}</strong><span>${escape(r.summary)}</span></a>`).join('') : '<p class="search-empty" role="status">No records found. Try a name or section.</p>';
+    const matches = q ? searchIndex.filter(r => (r.title+' '+r.text).toLocaleLowerCase().includes(q)) : searchIndex.filter(r=>!r.route.includes('/'));
+    const results = matches.slice(0,12);
+    $('search-count').textContent = q ? (matches.length ? `${matches.length} result${matches.length === 1 ? '' : 's'}${matches.length > 12 ? ' · showing the first 12' : ''}` : 'No matches') : 'Jump to a screen or search your adventure';
+    $('search-results').innerHTML = results.length ? results.map(r => `<a class="search-result" href="#${escape(r.route)}"><strong>${escape(r.title)}</strong><span>${escape(r.summary.length > 150 ? r.summary.slice(0,147)+'…' : r.summary)}</span></a>`).join('') : '<p class="search-empty" role="status">Nothing found yet. Try a name, place or menu section.</p>';
     $('search-results').hidden = false;
     $('search').setAttribute('aria-expanded','true');
   }
   function briefing() {
     const c = data.character;
-    $('brief-content').innerHTML = `<div class="brief-confirmed"><strong>Already confirmed:</strong> ${escape(c.name)} · ${escape(c.age)} years old · ${escape(c.height)} (${escape(c.heightMetric)}).<br>Premise: ${escape(data.premise)}. No other real-life details carry over.</div>`+data.briefing.map((b,i) => `<div class="brief-item"><span class="number">0${i+1}</span><div><h3>${escape(b.title)}</h3><p>${escape(b.body)}</p></div></div>`).join('')+'<div class="brief-item"><span class="number">05</span><div><h3>Your character art</h3><p>Send your image in our chat. It will go into the portrait space without cropping away your character.</p></div></div>';
+    $('brief-content').innerHTML = `<div class="brief-confirmed"><strong>Character so far:</strong> ${escape(c.name)} · ${escape(c.age)} years old · ${escape(c.height)} (${escape(c.heightMetric)}).<br>${escape(data.premise)} · A new life as Zero.</div>`+data.briefing.map((b,i) => `<div class="brief-item"><span class="number">0${i+1}</span><div><h3>${escape(b.title)}</h3><p>${escape(b.body)}</p></div></div>`).join('')+'<div class="brief-item"><span class="number">05</span><div><h3>Your character art</h3><p>Send your image in our chat. It will go into the portrait space without cropping away your character.</p></div></div>';
   }
   document.addEventListener('click', event => {
+    if (event.target instanceof HTMLDialogElement) { const box=event.target.getBoundingClientRect(); if(event.clientX<box.left || event.clientX>box.right || event.clientY<box.top || event.clientY>box.bottom) event.target.close(); }
     if (event.target.closest('.skip-link')) { event.preventDefault(); $('main').focus(); }
     if (event.target.closest('[data-brief]')) { $('copy-status').textContent = ''; $('brief-dialog').showModal(); }
-    if (event.target.closest('[data-search]')) { $('search-dialog').showModal(); $('search').focus(); }
+    if (event.target.closest('[data-search]')) { $('search-dialog').showModal(); $('search').focus(); search(); }
     if (event.target.closest('#about-button,[data-about]')) $('about-dialog').showModal();
     if (event.target.closest('.close-dialog')) event.target.closest('dialog').close();
-    if (!event.target.closest('.search-wrap')) hideSearch();
     const result = event.target.closest('.search-result');
     if (result) { $('search-dialog').close(); hideSearch(); $('search').value=''; if (result.hash === location.hash) render(true); }
     if (event.target.closest('[data-art]') && portraitUrl) {
@@ -157,7 +160,7 @@
   });
   $('copy-brief').addEventListener('click',async () => {
     const c = data.character;
-    const text = `My Dragon Ball Isekai character\n\nConfirmed: ${c.name}, ${c.age} years old, approximately ${c.height} (${c.heightMetric}). Only these personal details carry over.\n\n`+data.briefing.map(b => `${b.title}\n${b.body}\nMy details: \n`).join('\n')+'\nCharacter art: I will attach it in our chat.\n';
+    const text = `My Dragon Ball Isekai character\n\nConfirmed: ${c.name}, ${c.age} years old, approximately ${c.height} (${c.heightMetric}). Zero is the name used throughout the adventure.\n\n`+data.briefing.map(b => `${b.title}\n${b.body}\nCharacter details: \n`).join('\n')+'\nCharacter art: I will attach it in our chat.\n';
     try { await navigator.clipboard.writeText(text); $('copy-status').textContent='Copied. Ready for our chat.'; }
     catch { $('copy-status').textContent='Select and copy the brief below.'; let field=$('brief-fallback'); if(!field){field=document.createElement('textarea');field.id='brief-fallback';field.readOnly=true;field.setAttribute('aria-label','Character brief to copy');field.style.cssText='width:100%;height:180px;margin-top:12px';$('brief-content').append(field);} field.value=text;field.focus();field.select(); }
   });
@@ -188,13 +191,30 @@
     $('sound-toggle').textContent=soundOn ? 'Sound on' : 'Sound off';
     playTone(true);
   });
-  $('motion-toggle').addEventListener('click',()=>{
-    const paused=document.body.classList.toggle('motion-paused');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const motionKey = 'db-stories:motion:' + new URL('./',location.href).pathname;
+  let motionPreference = null;
+  try { motionPreference = localStorage.getItem(motionKey); } catch { /* Optional preference only. */ }
+  function syncMotion() {
+    const paused = reducedMotion.matches || motionPreference === 'off';
+    document.body.classList.toggle('motion-paused',paused);
     $('motion-toggle').setAttribute('aria-pressed',String(paused));
-    $('motion-toggle').textContent=paused ? 'Motion off' : 'Motion on';
+    $('motion-toggle').textContent = paused ? 'Motion off' : 'Motion on';
+    $('motion-toggle').title = reducedMotion.matches ? 'Reduced motion is enabled in your device settings' : 'Pause or resume background animation';
+    $('motion-toggle').disabled = reducedMotion.matches;
+  }
+  $('motion-toggle').addEventListener('click',()=>{
+    motionPreference = document.body.classList.contains('motion-paused') ? 'on' : 'off';
+    try { localStorage.setItem(motionKey,motionPreference); } catch { /* No storage required to use the app. */ }
+    syncMotion();
   });
-  const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
-  if(reducedMotion.matches) { document.body.classList.add('motion-paused'); $('motion-toggle').setAttribute('aria-pressed','true'); $('motion-toggle').textContent='Motion off'; }
+  reducedMotion.addEventListener('change',syncMotion);
+  syncMotion();
+  document.addEventListener('restore-menu-sound',()=>{
+    soundOn=true;
+    $('sound-toggle').setAttribute('aria-pressed','true');
+    $('sound-toggle').textContent='Sound on';
+  });
   document.addEventListener('click',e=> { if(e.target.closest('a,button,summary') && !e.target.closest('#sound-toggle')) playTone(true); });
   function selectMenu(target) { const chosen=target.closest('[data-menu]'); if(chosen) document.querySelectorAll('[data-menu]').forEach(item=>item.classList.toggle('selected',item===chosen)); }
   document.addEventListener('pointerover',e=>selectMenu(e.target));
@@ -213,8 +233,10 @@
   });
 
   async function load() {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(),12000);
     try {
-      const response = await fetch('./campaign.json', {cache:'no-store'});
+      const response = await fetch('./campaign.json?v='+release, {cache:'no-store',signal:controller.signal});
       if (!response.ok) throw new Error('Campaign records are unavailable.');
       data = validate(await response.json());
       portraitUrl = safePortrait(data.character.portrait);
@@ -224,11 +246,12 @@
       buildSearch(); briefing(); render();
       window.addEventListener('hashchange', () => render(true));
     } catch (error) {
-      $('main').innerHTML='<section class="panel error-card"><h1>Records unavailable.</h1><p>The companion could not load its campaign records. Check your connection and try again.</p><button class="primary" id="retry">Try again</button><p style="margin-top:25px"><a href="./CURRENT-CONTINUITY.md">Read the continuity record</a></p></section>';
+      $('main').innerHTML='<section class="panel error-card"><h1>Unable to load your adventure.</h1><p>Your adventure could not be loaded. Check your connection and try again.</p><button class="primary" id="retry">Try again</button><p style="margin-top:25px"><a href="./CURRENT-CONTINUITY.md">Read the continuity record</a></p></section>';
       $('retry').addEventListener('click',() => location.reload());
       $('search').disabled=true;
       console.error('Campaign load failed:',error.message);
-    }
+    } finally { clearTimeout(timeout); document.dispatchEvent(new CustomEvent('adventure-ready')); }
   }
+  document.addEventListener('visibilitychange',()=>document.body.classList.toggle('app-backgrounded',document.hidden));
   load();
 })();

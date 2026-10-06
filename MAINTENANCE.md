@@ -6,11 +6,13 @@ campaign.json is the authoritative public data source. Edit confirmed facts ther
 
 The complete local campaign-source folder holds build.py, verify.py, the handbook and private material. Only its public/ contents listed in public-manifest.json are uploaded. Run `python build.py` then `python verify.py` from that local source folder. This generates readable summaries without advancing time or altering story state.
 
-GitHub Pages publishes main / (root). Relative asset paths support the /Dragon-Ball-Stories/ project prefix. When changing CSS or JavaScript, increment their query versions in index.html. Data is fetched with cache: no-store. There is deliberately no service worker, offline mode, analytics or device-local character editing.
+GitHub Pages publishes main / (root). Relative asset paths support the /Dragon-Ball-Stories/ project prefix. build.py calls release.py to derive a release ID from every public file and version the HTML, stylesheet resources and app icons. Always run build.py AFTER all public edits; verify.py rejects stale release markers. Do not manually bump query versions. Data is fetched with cache: no-store. There is deliberately no service worker, offline mode, analytics or device-local character editing.
 
 ## Character art
 
-Place the supplied, approved image directly in public/ with a stable filename, such as jake-portrait.webp. Set character.portrait to that relative filename and provide a descriptive character.portraitAlt. Add the filename to both manifests. The image is displayed with object-fit: contain and can be opened in a full-art dialog. Null displays the intentional placeholder. Only images within this site's project directory are accepted; a broken image shows a readable fallback.
+Place the supplied, approved image directly in public/ with a stable filename, such as zero-portrait.webp. Set character.portrait to that relative filename and provide a descriptive character.portraitAlt. Add the filename to both manifests. The image is displayed with object-fit: contain and can be opened in a full-art dialog. Null displays the intentional placeholder. Only images within this site's project directory are accepted; a broken image shows a readable fallback.
+
+Before publishing supplied character art, remove identifying metadata and use a neutral filename. Retain the original privately. Do not publish photographs, filenames, captions or metadata that disclose real-world identity or location.
 
 ## Character and story fields
 
@@ -18,7 +20,7 @@ character: name, age, height, heightMetric, heightApproximate, portrait, portrai
 
 story: era, date, location, situation, pendingChoice. Set started=true only after an enacted opening scene, and update phase to the actual story phase. Do not use real-world time as a story date.
 
-Only Jake's first name, age and approximate height are authorized real-world carryover. Do not include surname, birthday, address, contact information, real-world location, occupation or other personal details. Artwork and remaining character facts come from the user.
+Use Zero as the sole character name in public files, UI, metadata, prompts and narration. Never restore the former name or describe character fields as real-world identifying facts. Keep surnames, birthdays, addresses, contact details, real-world locations, occupations and identifying background out of public records. Age 26 and approximate height remain the approved character profile. Artwork and remaining character facts come from the user. The planned adoption of Zero belongs to the opening; it does not mean the story has already started.
 
 ## Collections
 
@@ -49,4 +51,12 @@ IDs use lowercase letters, digits and hyphens and are unique across collections.
 
 ## Game menu presentation
 
-The illustrated backdrop is decorative; never infer geography, possessions or affiliations from it. The one-star icon is unchanged. Bangers and the backdrop are local assets listed in the manifest. Motion can be paused and the system reduced-motion preference is respected. Menu sounds require explicit opt-in and are off on every fresh load. Arrow keys move menu focus, Enter follows links, Escape returns to the main menu or dismisses a dialog. Standard Tab navigation remains available. The world radar's numbered links correspond to menu destinations, not story coordinates.
+The illustrated backdrop is decorative; never infer geography, possessions or affiliations from it. The one-star icon is unchanged. Bangers and the backdrop are local assets listed in the manifest. Motion can be paused and the system reduced-motion preference is respected. Menu sounds require explicit opt-in and are off on a fresh visit; an automatic update preserves the current sound setting. The motion preference is stored locally and the system reduced-motion setting takes priority. Arrow keys move menu focus, Enter follows links, Escape returns to the main menu or dismisses a dialog. Standard Tab navigation remains available.
+
+## Automatic phone updates
+
+updates.js checks a cache-busted release.json with cache: no-store at startup, on visibility/pageshow/focus/reconnection and every 60 seconds while visible. Repeated foreground events are throttled. All public file contents contribute to the release ID, including campaign data and artwork. The new index must advertise the same release before a refresh is allowed. A versioned URL bypasses stale HTML and all referenced runtime assets have versioned paths. Character artwork uses the release ID too.
+
+Updates preserve the current route, scroll position, expanded details and session sound preference. They wait for dialogs to close and five seconds after interaction. A short-lived session guard prevents repeated reloads of the same release. Network errors leave the working screen untouched; checks resume when the connection returns. Mobile operating systems suspend closed/backgrounded web apps, so updates apply on the next visible online session, not while fully closed. The pre-updater version needs one fresh opening to receive this mechanism.
+
+No service worker, offline cache, analytics or remote account is added. Only a motion preference and temporary update-resume state are stored on the device. Run the update lifecycle tests in tests/updates.test.cjs and tests/test_release.py before changing update logic; these are local-only files and must not be uploaded. Read the full release notes and generated release.json before publication. GitHub Pages remains main / (root).

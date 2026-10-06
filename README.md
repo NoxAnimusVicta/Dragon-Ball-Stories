@@ -1,18 +1,18 @@
 # Dragon Ball Stories
 
-A game-style home for Jake's Dragon Ball Isekai, inspired by Capsule Corp equipment, the Dragon Radar and Dragon Ball adventure menus.
+A game-style home for Zero's Dragon Ball Isekai, inspired by Capsule Corp equipment and Dragon Ball adventure menus.
 
 [Open the companion](https://noxanimusvicta.github.io/Dragon-Ball-Stories/)
 
 ## Current state
 
-Character creation. Confirmed: Jake, age 26, approximately 5′5″–5′6″ (165–168 cm). Only first name, age and height carry over from personal details. Race, powers, appearance, arrival, era, funds and possessions remain undecided. No story has begun.
+Character creation. Confirmed: Zero, age 26, approximately 5′5″–5′6″ (165–168 cm). He will adopt the name Zero when he recognises his new reality in the opening scene. The former name is not recorded. Race, powers, appearance, arrival method, era, funds and possessions remain undecided. No story has begun.
 
 ## The app
 
-Six screens: main menu, character, abilities, inventory, world and story. An illustrated world, animated selections, keyboard navigation, optional menu sounds and an interactive menu radar make the adventure fun to explore. Includes search, a copyable character brief, expandable records and a large character art stage with a full-art viewer when an image is supplied. The one-star Dragon Ball is used for the favicon and home-screen icon. Motion can be paused, and reduced-motion preferences are respected.
+Six screens: main menu, character, story, abilities, inventory and world. An illustrated world, animated selections, keyboard navigation and optional menu sounds make the adventure fun to explore. Includes search, a copyable character guide, expandable records and a large character art stage with a full-art viewer when an image is supplied. The one-star Dragon Ball is used for the favicon and home-screen icon. Motion can be paused, and reduced-motion preferences are respected.
 
-The app is a published reference. Send character details and artwork through the chat; there are no device-local character edits or uploads. It requires an internet connection and does not install an offline service worker.
+The app is a published reference. Send character details and artwork through the chat; there are no device-local character edits or uploads. It checks for new app and story releases automatically when opened or resumed, and every minute while visible. Updates preserve your place and wait for open panels to close. It requires an internet connection and does not install an offline service worker. Open the latest version once to activate automatic updates on an older installation.
 
 ## Maintaining records
 

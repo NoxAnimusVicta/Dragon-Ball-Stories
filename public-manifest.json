@@ -21,7 +21,9 @@
     "index.html",
     "menu-world.webp",
     "public-manifest.json",
-    "styles.css"
+    "release.json",
+    "styles.css",
+    "updates.js"
   ],
   "destination": "NoxAnimusVicta/Dragon-Ball-Stories",
   "branch": "main",

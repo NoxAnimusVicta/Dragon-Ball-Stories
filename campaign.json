@@ -1,11 +1,58 @@
 {
- "schemaVersion":1,"revision":"2026-10-06-companion-1","title":"Dragon Ball Stories","premise":"Dragon Ball Isekai","phase":"Character creation","started":false,
- "character":{"name":"Jake","age":26,"height":"5′5″–5′6″","heightMetric":"Approx. 165–168 cm","heightApproximate":true,"portrait":null,"portraitAlt":"Character artwork of Jake","race":null,"origin":null,"appearance":null,"personality":null,"backstory":null,"arrival":null,"motivation":null,"knowledge":null,"limitations":null},
- "story":{"era":null,"date":null,"location":null,"situation":null,"pendingChoice":null},
- "abilities":[],"inventory":[],"accounts":[],"people":[],"places":[],"projects":[],"events":[],
- "briefing":[
- {"title":"Who you become","body":"Race or species, appearance, personality and any differences from your original self."},
- {"title":"What comes with you","body":"Starting abilities, strengths, limits, Dragon Ball knowledge, equipment and possessions."},
- {"title":"Where it begins","body":"Canon or continuity, era, arrival location and how the isekai happens."},
- {"title":"What you want from the story","body":"Your character's aims, the tone you want, and anything to include or avoid."}]
+  "schemaVersion": 1,
+  "revision": "2026-10-06-zero-setup",
+  "title": "Dragon Ball Stories",
+  "premise": "Dragon Ball Isekai",
+  "phase": "Character creation",
+  "started": false,
+  "character": {
+    "name": "Zero",
+    "age": 26,
+    "height": "5′5″–5′6″",
+    "heightMetric": "Approx. 165–168 cm",
+    "heightApproximate": true,
+    "portrait": null,
+    "portraitAlt": "Character artwork of Zero",
+    "race": null,
+    "origin": null,
+    "appearance": null,
+    "personality": null,
+    "backstory": null,
+    "arrival": "Planned for the opening: once he realises he has been isekaied, he adopts the name Zero and leaves his former name behind. The era, location and method of arrival are still undecided.",
+    "motivation": null,
+    "knowledge": null,
+    "limitations": null
+  },
+  "story": {
+    "era": null,
+    "date": null,
+    "location": null,
+    "situation": null,
+    "pendingChoice": null
+  },
+  "abilities": [],
+  "inventory": [],
+  "accounts": [],
+  "people": [],
+  "places": [],
+  "projects": [],
+  "events": [],
+  "briefing": [
+    {
+      "title": "Who you become",
+      "body": "Race or species, appearance, personality and the kind of person Zero becomes."
+    },
+    {
+      "title": "What comes with you",
+      "body": "Starting abilities, strengths, limits, knowledge of Dragon Ball, equipment and possessions."
+    },
+    {
+      "title": "Where it begins",
+      "body": "Continuity, era, starting location and how the isekai happens. Zero adopts his chosen name when he recognises his new reality."
+    },
+    {
+      "title": "What you want from the story",
+      "body": "Zero’s goals, the tone of the adventure, and anything you want to include or avoid."
+    }
+  ]
 }

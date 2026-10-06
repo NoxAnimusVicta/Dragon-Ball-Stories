@@ -12,9 +12,7 @@ The SVG is retained unchanged. icon-180.png, icon-192.png and icon-512.png are r
 
 These references informed the design; their screenshots are not distributed with the app.
 
-- [Official Dragon Ball: Four-Star Ball and Dragon Radar](https://en.dragon-ball-official.com/news/01_3263.html) — round equipment and green radar display.
 - [Official Dragon Ball: Dr. Brief](https://en.dragon-ball-official.com/news/01_2148.html) — Capsule Corporation and its inventions.
-- [Dragon Radar reference frame](https://daikousya.net/businessblog/detail/20230501231323/) — ivory housing, green grid and red pointer.
 - [Capsule Corporation visual reference](https://fictionalbrandsarchive.com/item.php?id=85) — rounded cream architecture, dark labels and blue window bands.
 - [Dragon Ball Z: Kakarot character menu](https://gamergen.com/actualites/24h-sur-gamergen-telechargements-stadia-video-dragon-ball-kakarot-bonus-red-dead-redemption-2-307589-1) — prominent character art and grouped information.
 - [Official Dragon Ball: Sparking! ZERO menu screenshots](https://dragon-ball-official.com/news/01_4325.html) — character focus, clear selection and compact technique panels.
@@ -33,4 +31,4 @@ Prompt: Create a premium background illustration for an unofficial Dragon Ball i
 
 [Bangers](https://fonts.google.com/specimen/Bangers) by Vernon Adams, redistributed under the SIL Open Font License 1.1. Font and FONT-LICENSE.txt are included locally. Font source: https://github.com/google/fonts/tree/main/ofl/bangers.
 
-Menu tones are synthesized in the browser only after Sound is enabled. No game audio or music is redistributed. Sound and motion switches apply for the current visit; no personal data is stored.
+Menu tones are synthesized in the browser only after Sound is enabled. No game audio or music is redistributed. Sound starts off on a fresh visit. The device stores a motion preference and temporary update-resume state; no personal character edits are stored.

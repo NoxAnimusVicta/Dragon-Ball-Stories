@@ -3,7 +3,7 @@
 Generated from campaign.json. Edit that authoritative source, then run build.py.
 
 - Status: Character preparation; story not started.
-- Protagonist: Jake, age 26, height 5′5″–5′6″ (Approx. 165–168 cm).
+- Protagonist: Zero, age 26, height 5′5″–5′6″ (Approx. 165–168 cm).
 - Story date: Not established.
 - Location: Not established.
 - Immediate situation: Not established.
