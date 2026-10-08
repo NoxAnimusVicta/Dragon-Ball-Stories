@@ -9,7 +9,7 @@ Generated from campaign.json. Edit that authoritative source, then run build.py.
 - Condition: Rested and lightly warmed up. Mild stiffness eased; no serious injury. No weights equipped.
 - Protagonist: Zero, age 26, height 5′6″ (167.64 cm).
 - Story date: Day 30 · Dawn · Approximately 29 days since awakening.
-- Location: Toki Toki City · Training courtyard.
+- Location: Conton City · Training courtyard.
 - Immediate situation: After weeks of training, Zero’s rested scouter reading is 85. Vegeta has arrived for their first training session.
 - Pending choice: Vegeta has told Zero to remove the scouter and attack. Zero is rested, lightly warmed up and unweighted. The scouter is still on; the first move is yours.
 - Latest recorded event: s045.

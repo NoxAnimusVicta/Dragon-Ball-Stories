@@ -6,7 +6,7 @@ A game-style home for Zero's Dragon Ball Isekai, inspired by Capsule Corp equipm
 
 ## Current state
 
-Story in progress through S045, reconciled in C020. Day 30, dawn: Zero, human, 26, 5′6″ (167.64 cm), meets Vegeta for training in Toki Toki City. His rested scouter reading is 85, confirmed twice. Small planted ki blasts are repeatable; flight and moving control still need work. No field clearance. Vegeta has requested the scouter’s removal and invited the first attack; neither has happened yet. This public companion records only established, character-known information. Unpublished fields are not evidence that a decision has not been made; private preparation and future plot ideas remain outside this repository.
+Story in progress through S045, reconciled in C020. Day 30, dawn: Zero, human, 26, 5′6″ (167.64 cm), meets Vegeta for training in Conton City. His rested scouter reading is 85, confirmed twice. Small planted ki blasts are repeatable; flight and moving control still need work. No field clearance. Vegeta has requested the scouter’s removal and invited the first attack; neither has happened yet. This public companion records only established, character-known information. Unpublished fields are not evidence that a decision has not been made; private preparation and future plot ideas remain outside this repository.
 
 ## The app
 

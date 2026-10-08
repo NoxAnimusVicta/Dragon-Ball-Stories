@@ -4,6 +4,7 @@ Reviewed 6 October 2026 through S045 / C020. Corrections below affect already kn
 
 | Record | Effective point | Correction |
 | --- | --- | --- |
+| C089 | All hub scenes | The current hub is Conton City. Earlier Toki Toki City labels refer to the same enacted locations and are corrected; no relocation or time advance. The old city name remains appropriate to Xenoverse 1 history. |
 | Profile | Approved profile | Use Zero exclusively; height is exactly 5′6″ / 167.64 cm, replacing the earlier range. The fictional portrait is not a real likeness. |
 | C005 | S010 | Replace the abandoned dispatcher placeholder with Mr. Satan in the ward notification. No separate officer was introduced or later removed in-story. |
 | C006 | Future narration after S010 | Natural dialogue and preserved subtext; remove nonsensical closing lines and narrator explanations of obvious tone. No event change. |

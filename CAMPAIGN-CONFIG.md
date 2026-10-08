@@ -15,7 +15,7 @@ Generated from campaign.json. Edit that authoritative source, then run build.py.
 - Character appearance: Athletic build, long curly auburn hair, full auburn beard and blue eyes. Black wrap-front outfit and loose trousers, burgundy sash and wrist wraps, burgundy cape with round gold fasteners, black-and-burgundy boots. The recovered scouter has a red lens; the cape’s hem was torn during the arrival encounter.
 - Canon, continuity and era: Time Patrol hub; local calendar date unconfirmed.
 - Arrival: Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness.
-- Current location: Toki Toki City · Training courtyard.
+- Current location: Conton City · Training courtyard.
 - Story date: Day 30 · Dawn · Approximately 29 days since awakening.
 - Character artwork: Provided: zero-portrait.jpg.
 - Published audience: public, read-only companion. Character records plus explicitly labelled OOC timeline references.

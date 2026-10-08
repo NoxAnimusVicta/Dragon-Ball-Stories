@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-07-home-timeline-numbers",
+  "revision": "2026-10-08-conton-city",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "Training with Vegeta",
@@ -30,7 +30,7 @@
   "story": {
     "era": "Time Patrol hub; local calendar date unconfirmed",
     "date": "Day 30 · Dawn · Approximately 29 days since awakening",
-    "location": "Toki Toki City · Training courtyard",
+    "location": "Conton City · Training courtyard",
     "situation": "After weeks of training, Zero’s rested scouter reading is 85. Vegeta has arrived for their first training session.",
     "pendingChoice": "Vegeta has told Zero to remove the scouter and attack. Zero is rested, lightly warmed up and unweighted. The scouter is still on; the first move is yours."
   },
@@ -323,7 +323,7 @@
   "places": [
     {
       "id": "toki-toki-city",
-      "title": "Toki Toki City",
+      "title": "Conton City",
       "summary": "Time Patrol hub where Zero was treated, assessed and housed.",
       "status": "Current city",
       "details": "Recognised from prior game knowledge and identified by Rill. Zero has visited the ward, reception, training facilities, quarters and dining hall. The city’s local calendar date has not been confirmed."
@@ -464,7 +464,7 @@
     },
     {
       "id": "s006",
-      "title": "Waking in Toki Toki City",
+      "title": "Waking in Conton City",
       "summary": "Zero wakes in a Time Patrol medical ward, physically healed, and meets Dr. Rill.",
       "status": "Recorded",
       "date": "Day 1",
