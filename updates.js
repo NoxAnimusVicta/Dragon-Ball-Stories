@@ -47,7 +47,7 @@
   function applyPending() {
     clearTimeout(applyTimer);
     if (!pending || replacing || document.hidden || navigator.onLine === false) return;
-    if (document.querySelector('dialog[open]')) {
+    if (document.querySelector('dialog[open]:not(#launch-dialog)') || document.querySelector('#launch-dialog.granting')) {
       show('An update is ready. It will apply after you close this panel.');
       return;
     }
@@ -106,12 +106,19 @@
     setInterval(applyPending, 6000);
   }, {once:true});
   document.addEventListener('visibilitychange', () => { if (!document.hidden) { check(true); applyPending(); } });
-  window.addEventListener('pageshow', () => check());
-  window.addEventListener('focus', () => check());
+  window.addEventListener('pageshow', () => check(true));
+  window.addEventListener('focus', () => check(true));
   window.addEventListener('online', () => { show('Back online. Checking for updates…', true); check(true); });
   window.addEventListener('offline', () => show('You’re offline. Your current screen stays open.'));
   for (const event of ['pointerdown','keydown','scroll']) {
     document.addEventListener(event, () => { lastInteraction=Date.now(); }, {passive:true});
   }
   document.addEventListener('close', applyPending, true);
+  document.getElementById('reload-latest')?.addEventListener('click', () => {
+    const freshURL = new URL(location.href);
+    freshURL.searchParams.delete('v');
+    freshURL.searchParams.delete('_updated');
+    freshURL.searchParams.set('_refresh', String(Date.now()));
+    location.replace(freshURL.href);
+  });
 })();
