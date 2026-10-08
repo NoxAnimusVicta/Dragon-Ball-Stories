@@ -23,7 +23,7 @@ Unofficial personal fan project. Dragon Ball, Capsule Corporation and related ch
 
 ## Launch screen
 
-The resting seven-ball ring is drawn in inline SVG with one through seven red stars and amber gradients. On activation, a Canvas 2D sequence draws a white-gold charge, narrow light rays and tapered flight trails at the same positions. This uses one renderer for desktop and mobile instead of animating browser-dependent SVG filters. The removed oval and curved painted highlights are not used. It does not reuse the Wikimedia icon artwork. The orange launch screen is decorative; tapping it starts enabled audio and reveals the app. Keyboard activation and reduced-motion settings are supported.
+The seven-ball ring uses original artwork with one through seven red stars and amber gradients. Canvas textures for the balls, white-gold light rays and tapered flight trails are prepared when the screen opens. Those same elements remain in place through rest, touch, charge and flight; native browser animations change their opacity and position without redrawing them or replacing the artwork on release. Inline SVG supplies a fallback ring. A soft glow responds to holding the centre symbol, and releasing starts enabled audio and the launch sequence. The removed oval and curved painted highlights are not used. The launch artwork does not reuse the Wikimedia icon. The orange screen is decorative; keyboard activation and reduced-motion settings are supported.
 
 ## Illustrated menu backdrop
 
