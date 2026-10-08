@@ -23,7 +23,7 @@
     output.value = slider.value + '%';
   }
   async function start() {
-    if (!enabled || document.hidden) return;
+    if (!enabled || document.hidden || document.body.classList.contains('launch-pending')) return;
     try {
       if (!context) {
         context = new (window.AudioContext || window.webkitAudioContext)();
@@ -57,7 +57,7 @@
   }
   button.addEventListener('click', () => {
     enabled = !enabled; save(); sync();
-    if (gain) gain.gain.setValueAtTime(enabled ? volume : 0, context.currentTime);
+    if (gain) { gain.gain.cancelScheduledValues(context.currentTime); gain.gain.setValueAtTime(enabled ? volume : 0, context.currentTime); }
     if (enabled) start();
   });
   slider.addEventListener('input', () => {
@@ -77,5 +77,5 @@
     sync();
   });
   sync();
-  if (enabled) start();
+  document.addEventListener('launch-adventure', start);
 })();

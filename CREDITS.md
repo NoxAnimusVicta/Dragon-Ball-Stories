@@ -21,6 +21,10 @@ The interface itself is implemented in HTML, CSS and JavaScript. No game screens
 
 Unofficial personal fan project. Dragon Ball, Capsule Corporation and related characters belong to their respective rights holders. No affiliation or endorsement. The icon's license does not claim ownership of the underlying franchise.
 
+## Launch screen
+
+The seven-ball ring is drawn in inline SVG for this app, with one through seven red stars, amber gradients and a CSS glow-and-fade reveal. It does not reuse the Wikimedia icon artwork. The orange launch screen is decorative; tapping it starts enabled audio and reveals the app. Keyboard activation and reduced-motion settings are supported.
+
 ## Illustrated menu backdrop
 
 menu-world.webp was generated for this project with OpenAI's built-in image generation tool, then encoded as WebP. It depicts decorative menu scenery, not an established story location. The original generated PNG is retained locally.
@@ -33,4 +37,4 @@ Prompt: Create a premium background illustration for an unofficial Dragon Ball i
 
 Menu tones are synthesized in the browser while Sound is enabled. Background music alternates CAR_SBGM_01 and CAR_SBGM_02 from Dragon Ball Xenoverse 2 (streams 82 and 83 in CAR_BGM; listening previews 9 and 10), selected by the user from their game installation. Each plays from its beginning through its original loop endpoint (4523217 and 5184481 samples at 48000 Hz). Two-second fades soften each beginning and ending, with one second of silence between tracks, including the return to track 9. The sequence is encoded as MP3 for web playback. The music remains the property of its respective rights holders and is not covered by the font or icon licenses.
 
-Music and menu sounds default to on. Browser autoplay rules may require the first user interaction before audio plays. Explicit on/off choices for both, and music volume, are stored on this device. Music pauses when the app is hidden. The device also stores a motion preference and temporary update-resume state; no personal character edits are stored.
+Music and menu sounds default to on. The Dragon Ball launch button provides the user interaction needed to start enabled audio. Explicit on/off choices for both, and music volume, are stored on this device. Music pauses when the app is hidden. The device also stores a motion preference and temporary update-resume state; no personal character edits are stored.
