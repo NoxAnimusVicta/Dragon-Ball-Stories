@@ -23,7 +23,7 @@ Unofficial personal fan project. Dragon Ball, Capsule Corporation and related ch
 
 ## Launch screen
 
-The seven-ball ring is drawn in inline SVG for this app, with one through seven red stars, amber gradients and a CSS glow-and-fade reveal. It does not reuse the Wikimedia icon artwork. The orange launch screen is decorative; tapping it starts enabled audio and reveals the app. Keyboard activation and reduced-motion settings are supported.
+The seven-ball ring is drawn in inline SVG for this app, with one through seven red stars, amber gradients and a bright charging glow followed by the balls shooting outward with light trails to reveal the app. It does not reuse the Wikimedia icon artwork. The orange launch screen is decorative; tapping it starts enabled audio and reveals the app. Keyboard activation and reduced-motion settings are supported.
 
 ## Illustrated menu backdrop
 
