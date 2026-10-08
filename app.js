@@ -163,8 +163,9 @@
   function playTone(confirm = false) {
     if (!soundOn) return;
     try {
+      try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch { /* Optional on older browsers. */ }
       audioContext ||= new (window.AudioContext || window.webkitAudioContext)();
-      if (audioContext.state === 'suspended') audioContext.resume();
+      if (audioContext.state !== 'running') audioContext.resume().catch(() => {});
       const oscillator = audioContext.createOscillator();
       const gain = audioContext.createGain();
       const t = audioContext.currentTime;

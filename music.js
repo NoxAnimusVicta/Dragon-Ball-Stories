@@ -22,9 +22,13 @@
     slider.value = String(Math.round(volume * 100));
     output.value = slider.value + '%';
   }
+  function playbackSession() {
+    try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch { /* Older browsers use their default session. */ }
+  }
   async function start() {
     if (!enabled || document.hidden || document.body.classList.contains('launch-pending')) return;
     try {
+      playbackSession();
       if (!context) {
         context = new (window.AudioContext || window.webkitAudioContext)();
         gain = context.createGain(); gain.gain.value = enabled ? volume : 0; gain.connect(context.destination);
