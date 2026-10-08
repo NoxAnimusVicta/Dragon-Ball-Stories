@@ -159,7 +159,43 @@
     });
   }
 
-  trigger.addEventListener('click', () => {
+  // A press only lights the symbol. The native click follows pointer release,
+  // preserving the trusted user gesture that starts audio on iPhone.
+  let heldPointer=null, releaseAllowed=true;
+  function inside(event) {
+    const box=trigger.getBoundingClientRect();
+    return event.clientX>=box.left&&event.clientX<=box.right&&event.clientY>=box.top&&event.clientY<=box.bottom;
+  }
+  function cancelPress() {
+    heldPointer=null;releaseAllowed=false;
+    if(!entering)trigger.classList.remove('is-pressed');
+  }
+  trigger.addEventListener('pointerdown',event=>{
+    if(entering||!event.isPrimary||event.button!==0||heldPointer!==null)return;
+    heldPointer=event.pointerId;releaseAllowed=false;
+    trigger.classList.add('is-pressed');trigger.setPointerCapture(event.pointerId);
+  });
+  trigger.addEventListener('pointermove',event=>{
+    if(event.pointerId===heldPointer)trigger.classList.toggle('is-pressed',inside(event));
+  });
+  trigger.addEventListener('pointerup',event=>{
+    if(event.pointerId!==heldPointer)return;
+    releaseAllowed=inside(event);heldPointer=null;
+    if(!releaseAllowed)trigger.classList.remove('is-pressed');
+    // Keep a successful hold's soft glow until the existing centre fade ends.
+  });
+  trigger.addEventListener('pointercancel',cancelPress);
+  trigger.addEventListener('lostpointercapture',()=>{if(heldPointer!==null)cancelPress();});
+  // Safari may move focus to the dialog on pointer-down; that is not a cancelled hold.
+  trigger.addEventListener('blur',()=>{if(heldPointer===null)cancelPress();});
+  window.addEventListener('blur',cancelPress);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)cancelPress();});
+  trigger.addEventListener('keydown',event=>{
+    if(!entering&&(event.key===' '||event.key==='Enter'))trigger.classList.add('is-pressed');
+  });
+  trigger.addEventListener('contextmenu',event=>event.preventDefault());
+  trigger.addEventListener('click', event => {
+    if(heldPointer!==null||(event.detail>0&&!releaseAllowed)){event.preventDefault();return;}
     if (entering) return; entering=true;
     document.body.classList.remove('launch-pending'); document.body.classList.add('launch-entering');
     document.dispatchEvent(new CustomEvent('launch-adventure'));
