@@ -14,6 +14,20 @@ An explicitly approved character-creation portrait may be shown before play with
 
 Before publishing supplied character art, remove identifying metadata and use a neutral filename. Retain the original privately. Do not publish photographs, filenames, captions or metadata that disclose real-world identity or location.
 
+## Ability artwork direction
+
+Player-approved direction, 9 October 2026: use illustrated, cel-shaded ability icons that suit the existing Dragon Ball game interface. Pixel art is not the chosen direction. The artwork should make established techniques recognisable and give player-created abilities a consistent visual reference for later narration.
+
+- For each technique, record its established colour, energy shape, stance or hand gesture, motion and distinctive visual effects before generating art. Use that description and the accepted image together to keep later depictions consistent. Artwork must not invent mechanics, extra powers or a new transformation.
+- The player requests **“Pro 6 Image generation”** for future images. Preserve that preference verbatim. Check the actual model controls available when generating; use the requested model when selectable. If the tool does not expose or verify that model, disclose that limitation rather than claiming it was used or silently treating a different model as equivalent.
+- Favour clear silhouettes, crisp ink contours, cel shading and a consistent palette and composition across the set. Check readability at actual phone icon sizes, around 96–160 pixels, as well as at full resolution. Keep technique names, frames, selection states and optional restrained glow effects in app code rather than baking them into the illustration.
+- Inspect anatomy carefully before accepting an image: ordinary human hands have four fingers and a thumb, with believable joints, orientation and attachment. Account for deliberate occlusion; do not accept missing or extra digits as stylisation. Also check the intended gesture, clothing, energy direction and established character appearance.
+- The Kamehameha sample was a concept demonstration only. The player identified a missing pinky on the left hand; it is not approved for use and would need remaking. Zero has not learned Kamehameha. Do not upload that mock-up, add an ability entry or imply it has been acquired.
+- Introduce artwork on actual ability cards when the corresponding technique is established and character-known. Keep unrevealed abilities and speculative designs out of the public app and repository. Do not restore decorative star boxes that resemble unimplemented sprite slots.
+- Retain source artwork privately, publish an optimised image with a neutral filename and descriptive alternative text, and include approved assets in the publication manifests. Remove identifying metadata and check the complete card on phone and desktop. Record the accepted visual description and provenance with the ability/art reference so future changes have a consistent source.
+
+This is guidance for future artwork, not an instruction to generate a full set now or to advance the story. No ability-art rendering feature has been implemented by this documentation change.
+
 ## Character and story fields
 
 character: name, age, height, heightMetric, heightApproximate, portrait, portraitAlt, race, origin, appearance, personality, backstory, arrival, motivation, knowledge, limitations, battlePower, powerReading, role and condition. battlePower is the current character-known measured value; historical readings remain separate records. recordedThrough identifies the exchange/correction represented by the release.
