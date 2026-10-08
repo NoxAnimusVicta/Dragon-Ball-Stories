@@ -6,10 +6,10 @@
   const status = document.getElementById('music-status');
   const key = 'db-stories:music:' + new URL('./', location.href).pathname;
   const version = document.querySelector('meta[name="app-release"]')?.content || '';
-  let enabled = false, volume = .25, context, gain, source, buffer, loading;
+  let enabled = true, volume = .25, context, gain, source, buffer, loading;
   try {
     const saved = JSON.parse(localStorage.getItem(key));
-    enabled = saved?.enabled === true;
+    enabled = saved?.enabled !== false;
     if (Number.isFinite(saved?.volume)) volume = Math.min(1, Math.max(0, saved.volume));
   } catch { /* Storage is optional. */ }
   function save() {
@@ -55,7 +55,6 @@
     }
   }
   button.addEventListener('click', () => {
-    if (enabled && context?.state !== 'running') { start(); return; }
     enabled = !enabled; save();
     if (enabled) start(); else { context?.suspend().catch(() => {}); sync(); }
   });
@@ -76,4 +75,5 @@
     sync();
   });
   sync();
+  if (enabled) start();
 })();

@@ -154,7 +154,11 @@
     links[(i + (e.key === 'ArrowDown' ? 1 : -1) + links.length) % links.length].focus();
   });
 
-  let soundOn = false;
+  const soundKey = 'db-stories:sound:' + new URL('./',location.href).pathname;
+  let soundOn = true;
+  try { soundOn = localStorage.getItem(soundKey) !== 'off'; } catch { /* Optional preference. */ }
+  $('sound-toggle').setAttribute('aria-pressed',String(soundOn));
+  $('sound-toggle').textContent = soundOn ? 'Sound on' : 'Sound off';
   let audioContext;
   function playTone(confirm = false) {
     if (!soundOn) return;
@@ -176,6 +180,7 @@
   }
   $('sound-toggle').addEventListener('click',()=>{
     soundOn=!soundOn;
+    try { localStorage.setItem(soundKey,soundOn ? 'on' : 'off'); } catch { /* Optional preference. */ }
     $('sound-toggle').setAttribute('aria-pressed',String(soundOn));
     $('sound-toggle').textContent=soundOn ? 'Sound on' : 'Sound off';
     playTone(true);
@@ -200,6 +205,7 @@
   reducedMotion.addEventListener('change',syncMotion);
   syncMotion();
   document.addEventListener('restore-menu-sound',()=>{
+    try { if (localStorage.getItem(soundKey) === 'off') return; } catch { /* Optional preference. */ }
     soundOn=true;
     $('sound-toggle').setAttribute('aria-pressed','true');
     $('sound-toggle').textContent='Sound on';
