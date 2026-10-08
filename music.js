@@ -18,6 +18,7 @@
   let offset = 0, startedAt = 0, launched = false, pageAway = false;
   let resumeRequest = null, resumeTimer, needsReset = false, loadFailed = false;
   let lastTone = -Infinity, toneTicket = 0, primedContext;
+  let clockTimer, clockStalled = false;
   const status = $('music-status');
   const retry = document.createElement('button');
   retry.type = 'button'; retry.className = 'primary'; retry.textContent = 'Resume audio'; retry.hidden = true;
@@ -25,6 +26,10 @@
   const foreground = () => !document.hidden && !pageAway;
   const wanted = () => launched && foreground() && (enabled || soundOn);
   function message(text = '', recoverable = false) {
+    if (clockStalled && wanted()) {
+      text = 'Audio did not start. Tap any control to reconnect. If this keeps happening on iPhone, update iOS or open the app in Safari.';
+      recoverable = true;
+    }
     status.textContent = text; retry.hidden = !recoverable;
   }
   function sync() {
@@ -59,8 +64,23 @@
     try { old.stop(); } catch { /* Already stopped. */ }
     old.disconnect();
   }
+  function checkClock(ctx) {
+    if (clockTimer || clockStalled || !wanted() || ctx.state !== 'running') return;
+    const before = ctx.currentTime;
+    clockTimer = setTimeout(() => {
+      clockTimer = null;
+      if (ctx !== context || !wanted() || ctx.state !== 'running') return;
+      // Some iOS Home Screen failures report running while the render clock is frozen.
+      // A moving clock is necessary for output, but does not prove the speaker is audible.
+      if (ctx.currentTime - before <= .001) {
+        clockStalled = needsReset = true; resumeRequest = null;
+        message('',true);
+      } else if (!loadFailed && !loading) message();
+    },800);
+  }
   function resetContext() {
-    stopMusic(); clearTimeout(resumeTimer); resumeRequest = null;
+    stopMusic(); clearTimeout(resumeTimer); clearTimeout(clockTimer); clockTimer = null;
+    clockStalled = false; resumeRequest = null;
     if (context) {
       const old = context; old.onstatechange = null;
       old.close().catch(() => {});
@@ -81,8 +101,8 @@
       ctx.onstatechange = () => {
         if (ctx !== context) return;
         if (ctx.state === 'running') {
-          clearTimeout(resumeTimer); resumeRequest = null; needsReset = false;
-          if (wanted()) { ensureMusic(); if (!loadFailed) message(); }
+          clearTimeout(resumeTimer); resumeRequest = null; if (!clockStalled) needsReset = false;
+          if (wanted()) { ensureMusic(); checkClock(ctx); if (!loadFailed) message(); }
           else { stopMusic(); ctx.suspend().catch(() => {}); }
         } else if (wanted() && ctx.state !== 'closed') {
           message('Audio paused. Tap any control to resume.',true);
@@ -138,7 +158,7 @@
           primedContext = ctx;
         } catch { /* Still attempt normal resume if priming is unavailable. */ }
       }
-      if (ctx.state === 'running') { ensureMusic(); return Promise.resolve(true); }
+      if (ctx.state === 'running') { ensureMusic(); checkClock(ctx); return Promise.resolve(!clockStalled); }
       // A new trusted gesture retries resume synchronously, even if an earlier
       // background resume promise is still pending in Safari.
       if (resumeRequest && !gesture) return resumeRequest;
@@ -147,7 +167,8 @@
         if (ctx !== context) return false;
         if (!wanted()) { stopMusic(); ctx.suspend().catch(() => {}); return false; }
         if (ctx.state !== 'running') return false;
-        needsReset = false; ensureMusic(); if (!loadFailed) message(); return true;
+        if (!clockStalled) needsReset = false;
+        ensureMusic(); checkClock(ctx); if (!loadFailed) message(); return !clockStalled;
       }).catch(() => {
         if (ctx === context && wanted()) { needsReset = true; message('Audio paused. Tap any control to resume.',true); }
         return false;
@@ -165,7 +186,7 @@
     } catch (error) { message('Audio could not start (' + (error.name || 'device error') + '). Tap Resume audio to try again.',true); return Promise.resolve(false); }
   }
   function pause() {
-    toneTicket++; clearTimeout(resumeTimer); stopMusic();
+    toneTicket++; clearTimeout(resumeTimer); clearTimeout(clockTimer); clockTimer = null; stopMusic();
     context?.suspend().catch(() => {});
   }
   function playTone(confirm = false) {
