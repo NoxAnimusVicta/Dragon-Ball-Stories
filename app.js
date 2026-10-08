@@ -74,7 +74,15 @@
     return pageHeader('01','Character','Your place in the story.')+`<div class="character-layout">${artCard()}<div class="character-info"><div class="player-banner"><span class="eyebrow">${data.started ? 'YOUR PROTAGONIST' : 'CHARACTER SETUP'}</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'PATROL TRAINEE' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div>${present(c.battlePower) ? `<section class="power-panel" aria-label="Current battle power"><div><span class="eyebrow">SCOUTER READING</span><strong>${escape(c.battlePower)}</strong><span>${escape(c.powerReading)}</span></div><div><span class="status-stamp">TRAINING / NO FIELD CLEARANCE</span><p>${escape(c.condition)}</p><a href="#abilities/power">View training progress →</a></div></section>` : ''}<section class="panel identity-panel"><h3>Identity & background</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Your discovered identity and appearance will be recorded here.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Your character record will grow with the story.')}${detail('Backstory',c.backstory,'No backstory has been recorded here.')}${detail('Arrival & new identity',c.arrival,'No arrival has been recorded yet.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'Known information and discovered limits will appear here.')}</div></section><p class="subtle-note">Your choices shape Zero. This record grows through play.</p></div></div>`;
   }
   function abilities() {
-    return pageHeader('03','Abilities','Find your fighting spirit.')+`<div class="loadout-screen"><section class="panel main-panel">${data.abilities.length ? records(data.abilities) : empty('abilities','Discover what you can do.','Known abilities and demonstrated skills will appear here as you discover them.')}</section><aside class="side-note"><span class="giant-kanji" aria-hidden="true">気</span><span class="eyebrow">POWER IS ONLY THE BEGINNING</span><h2 class="ability-motto"><span>Strength</span> <span>Control</span> <span>Resolve</span></h2><p>Every technique has a story. Learned abilities and training progress will appear here as your journey unfolds.</p></aside></div>`;
+    // Power readings and broad combat fundamentals remain in the training record.
+    const techniques = data.abilities.filter(r => !['power','combat-basics'].includes(r.id));
+    const slots = Array.from({length:Math.max(3,techniques.length)}, (_,i) => {
+      const r = techniques[i];
+      if (!r) return '<div class="ability-slot is-empty"><span class="ability-slot-art" aria-hidden="true">✦</span><span class="ability-slot-name">Undiscovered</span></div>';
+      const art = safePortrait(r.artwork);
+      return `<button class="ability-slot" data-ability="${escape(r.id)}" aria-haspopup="dialog" aria-label="About ${escape(r.title)}"><span class="ability-slot-art"><span aria-hidden="true">✦</span>${art ? `<img class="ability-image" src="${escape(art)}" alt="${escape(r.artworkAlt || r.title)}" loading="lazy">` : ''}</span><span class="ability-slot-name">${escape(r.title)}</span></button>`;
+    }).join('');
+    return pageHeader('03','Abilities','Find your fighting spirit.')+`<div class="loadout-screen"><section class="panel main-panel">${data.abilities.length ? records(data.abilities) : empty('abilities','Discover what you can do.','Known abilities and demonstrated skills will appear here as you discover them.')}</section><aside class="side-note"><span class="giant-kanji" aria-hidden="true">気</span><span class="eyebrow">POWER IS ONLY THE BEGINNING</span><h2 class="ability-motto"><span>Strength</span> <span>Control</span> <span>Resolve</span></h2><p>Every technique has a story. Select an ability to explore how it works.</p><div class="ability-slots" role="group" aria-label="Known techniques">${slots}</div></aside></div>`;
   }
   function inventory() {
     return pageHeader('04','Inventory','Pack for a life beyond the ordinary.')+`<div class="loadout-screen"><section class="panel main-panel">${data.inventory.length ? records(data.inventory) : empty('inventory','What comes with you?','Your known possessions will appear here once they are established in the story.')}</section><aside class="panel funds-panel"><div class="capsule-object" aria-hidden="true"><span>CAPSULE</span><b>CC</b></div><h2>Resources</h2>${data.accounts.length ? records(data.accounts) : '<span class="balance">—</span><p>No known funds have been recorded yet.</p>'}<span class="eyebrow">CARRIED · STORED · OWNED</span></aside></div>`;
@@ -105,6 +113,7 @@
     hideSearch();
     const img = document.querySelector('.portrait-image');
     if (img) img.addEventListener('error', () => { img.closest('.portrait').innerHTML = '<div class="portrait-error"><p>Character art is temporarily unavailable.</p></div>'; }, {once:true});
+    document.querySelectorAll('.ability-image').forEach(img => img.addEventListener('error', () => img.remove(), {once:true}));
     if (focus) { $('main').focus({preventScroll:true}); window.scrollTo({top:0,behavior:'instant'}); }
     if (recordId && /^[a-z0-9-]+$/.test(recordId)) {
       const record = $('record-'+recordId);
@@ -135,6 +144,21 @@
     if (event.target.closest('.close-dialog')) event.target.closest('dialog').close();
     const result = event.target.closest('.search-result');
     if (result) { $('search-dialog').close(); hideSearch(); $('search').value=''; if (result.hash === location.hash) render(true); }
+    const abilityButton = event.target.closest('[data-ability]');
+    if (abilityButton) {
+      const ability = data.abilities.find(r => r.id === abilityButton.dataset.ability);
+      if (!ability) return;
+      let dialog = $('ability-dialog');
+      if (!dialog) {
+        dialog = document.createElement('dialog');
+        dialog.id = 'ability-dialog';
+        dialog.className = 'ability-dialog';
+        dialog.setAttribute('aria-labelledby','ability-dialog-title');
+        document.body.append(dialog);
+      }
+      dialog.innerHTML = `<div class="dialog-top"><span class="eyebrow">ABILITY / ${escape(ability.status || 'KNOWN')}</span><button class="icon-button close-dialog" aria-label="Close ability details" autofocus>×</button></div><h2 id="ability-dialog-title">${escape(ability.title)}</h2><p class="ability-summary">${escape(ability.summary || '')}</p>${ability.details ? `<div class="ability-explanation"><h3>How it works</h3><p>${escape(ability.details)}</p></div>` : ''}${Array.isArray(ability.facts) && ability.facts.length ? `<dl class="definition-grid">${ability.facts.map(f => definition(f.label,f.value,f.note)).join('')}</dl>` : ''}`;
+      dialog.showModal();
+    }
     if (event.target.closest('[data-art]') && portraitUrl) {
       let dialog = $('art-dialog');
       if (!dialog) { dialog = document.createElement('dialog'); dialog.id='art-dialog'; dialog.className='art-dialog'; dialog.setAttribute('aria-label','Character artwork'); document.body.append(dialog); }
