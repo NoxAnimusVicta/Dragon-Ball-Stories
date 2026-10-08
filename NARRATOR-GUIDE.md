@@ -1,6 +1,6 @@
 # Persistent Story and Companion App Handbook
 
-Version 3 • Updated 6 October 2026
+Version 4 • Updated 9 October 2026
 
 Public narrator reference. Campaign-specific secrets, unrevealed character dossiers and planned scenes are maintained separately and are not included here.
 
@@ -100,6 +100,8 @@ Training records distinguish durable growth, momentary readings, control, techni
 
 A successful demonstration establishes what happened under those conditions, not necessarily a universal maximum. An unmeasured effect should not become an exact range, energy yield or target count. Record observations and uncertainty separately.
 
+For campaigns using numerical combat scaling, give each active unique NPC a private ordinary-power benchmark with era, source or campaign-estimate status, available forms and observation conditions. Keep unrevealed values private. Compare proportional gaps between comparable outputs, not just raw point differences; numbers do not replace skill, stamina, injury or technique. One current ordinary base and explicit total form factors prevent double-counting.
+
 ## 5 Fair uncertainty and private rolls
 
 Use random resolution only where uncertainty changes something meaningful. Do not roll for remembering a mandate, using an ordinary established skill, or overcoming opposition that is plainly incapable of resisting the relevant ability.
@@ -136,6 +138,8 @@ Chronological age follows the character’s physical elapsed time, including any
 
 Process each crossed payday, anniversary and review date exactly once. If the protagonist is away, money may enter an account rather than a wallet; define that arrangement. Pay earned, payment received and cash carried are distinct.
 
+When age is tracked in years and months, store an explicit story-time anchor and accumulate subjective elapsed time, retaining fractional days. Display completed years and additional months. A declared present age is not automatically the arrival age. Do not double-count a time chamber’s interior duration and the simultaneous exterior interval; document the chosen date-free month/year convention when needed.
+
 ## 8 Time skips and delegated work
 
 Before resolving a skip, list its start and end dates, the player's activities, active projects, delegated NPC work, recurring obligations and foreseeable decisions. Resolve the same period for everyone affected, not just the protagonist.
@@ -152,7 +156,7 @@ If an earlier skip omitted delegated activity, flag and resolve the omission ope
 
 ## 9 Money and economic reference
 
-Define the purchasing power of the currency through wages, essential living costs, rent and ordinary purchases. Extend the same framework to houses, land, businesses, machinery, transport and major projects. A handful of food prices is insufficient for strategic decisions.
+First establish whether the setting uses currency, institutional provision or another allocation system; do not invent personal wages or cash for a currency-free setting. Where currency exists, define its purchasing power through wages, essential living costs, rent and ordinary purchases. Extend the same framework to houses, land, businesses, machinery, transport and major projects. A handful of food prices is insufficient for strategic decisions.
 
 Each reference price needs a date, place, unit, quality and what is included. Use ranges when evidence is weak. Mark modelled estimates as estimates. Prices may change with supply, wages, transport, conflict and policy; do not apply an unexplained universal inflation multiplier.
 
@@ -362,6 +366,7 @@ Stable ID and name:
 Home timeline/continuity, recruitment point and personal elapsed service:
 Separate identity for coexisting alternate versions; no shared memories by default:
 Role and actual authority:
+Ordinary power, era, source/estimate, accessible forms and measurement status (if numerical scaling applies):
 Age or birth date with uncertainty (required; mark unknown explicitly):
 Apparent age if different:
 Visual appearance, clothing, distinguishing features and health (required):

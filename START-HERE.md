@@ -9,9 +9,11 @@ Read [the narrator guide](NARRATOR-GUIDE.md) for character records, narration an
 3. Read RETCONS.md before relying on older records.
 4. Consult the complete local transcript and private narrator checkpoint through their authorized location before narrating. They are intentionally absent here.
 
-The protagonist is Zero, age 26, 5′6″. The story has reached Day 30 dawn, S045 (reconciled C020): rested measured power85, small planted ki blasts and limited flight, still not field-ready. Vegeta has arrived for training; scouter removal and the first attack remain pending. Publish new character and story facts only after they are established in play and known to Zero. Future plans stay in private preparation. The approved fictional portrait now includes the recovered scouter. It does not enact a return to its background location or repair recorded clothing damage. Keep real-world identity, location, contact details and identifiable background information out of public records.
+The protagonist is Zero, 26 years and 6 months old, 5′6″. The current scene is **S052, Day 45 evening**: after daily gravity training, healed measured power 174, with Krillin in a Conton City practice hall. Krillin has invited him in; Zero's reply is pending. No field clearance, named technique or transformation has been gained. Publication does not continue the conversation.
 
-Forty-five story exchanges are summarised in the journal. The complete exact archive stays private; summaries apply accepted corrections. The Capsule Corp styling does not establish a character affiliation or grant items. The landscape is decorative menu scenery, not an established story location.
+The 52-entry journal summarises enacted exchanges using accepted corrections. The complete exact archive stays private. Publish new facts only after they are established and known to Zero; OOC home-timeline labels and the approved profile/art are explicit exceptions, not permission to reveal full dossiers. Future plans remain private.
+
+The approved fictional portrait includes the recovered scouter and latest iris revision. It does not enact a return to Capsule Corp, an equipment acquisition or clothing repair. Decorative scenery and styling do not establish geography or affiliations. Keep real-world identity, location, contacts and identifying biography outside public records.
 
 ## Maintenance
 

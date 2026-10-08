@@ -1,10 +1,13 @@
 # Corrections and operative continuity
 
-Reviewed 6 October 2026 through S045 / C020. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
+Reviewed 9 October 2026 through S052. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
 
 | Record | Effective point | Correction |
 | --- | --- | --- |
 | C089 | All hub scenes | The current hub is Conton City. Earlier Toki Toki City labels refer to the same enacted locations and are corrected; no relocation or time advance. The old city name remains appropriate to Xenoverse 1 history. |
+| C096 | Current age at S052 | Age is 26 years and 6 months at Day 45 evening. Track future subjective ageing from this anchor; no birthday inferred. |
+| S052 | Instructor role | Krillin works for the Patrol as a combat instructor, rather than an active field Patroller. |
+| 9 October audit | Publication only | Synchronise records through S052: healed measured 174, Day 45 evening, gravity-training progress and 52 journal entries. Krillin’s invitation awaits a reply; no story time advances. |
 | Profile | Approved profile | Use Zero exclusively; height is exactly 5′6″ / 167.64 cm, replacing the earlier range. The fictional portrait is not a real likeness. |
 | C005 | S010 | Replace the abandoned dispatcher placeholder with Mr. Satan in the ward notification. No separate officer was introduced or later removed in-story. |
 | C006 | Future narration after S010 | Natural dialogue and preserved subtext; remove nonsensical closing lines and narrator explanations of obvious tone. No event change. |
