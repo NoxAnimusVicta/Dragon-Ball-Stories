@@ -103,7 +103,6 @@
     $('main').classList.remove('screen-enter');
     void $('main').offsetWidth;
     $('main').classList.add('screen-enter');
-    document.querySelector('[data-menu]')?.classList.add('selected');
     $('breadcrumb').textContent = nav.find(n => n[0] === route)[1];
     document.title = `${$('breadcrumb').textContent} · Dragon Ball Stories`;
     document.querySelectorAll('.nav-link').forEach(a => {
@@ -199,9 +198,7 @@
   reducedMotion.addEventListener('change',syncMotion);
   syncMotion();
   document.addEventListener('click',e=> { if(e.target.closest('a,button,summary') && !e.target.closest('#sound-toggle')) playTone(true); });
-  function selectMenu(target) { const chosen=target.closest('[data-menu]'); if(chosen) document.querySelectorAll('[data-menu]').forEach(item=>item.classList.toggle('selected',item===chosen)); }
-  document.addEventListener('pointerover',e=>selectMenu(e.target));
-  document.addEventListener('focusin',e=> { selectMenu(e.target); if(e.target.closest('[data-menu],.nav-link')) playTone(); });
+  document.addEventListener('focusin',e=> { if(e.target.closest('[data-menu],.nav-link')) playTone(); });
   document.addEventListener('keydown',e=>{
     if(document.querySelector('dialog[open]') || e.target.closest('input,textarea,select,summary') || e.ctrlKey || e.metaKey || e.altKey) return;
     if(e.key === 'Escape' && document.body.dataset.page !== 'overview') { location.hash='overview'; return; }

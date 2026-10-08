@@ -17,7 +17,7 @@
   let context, musicGain, effectsGain, source, buffer, loading;
   let offset = 0, startedAt = 0, launched = false, pageAway = false;
   let resumeRequest = null, resumeTimer, needsReset = false, loadFailed = false;
-  let lastTone = -Infinity, toneTicket = 0;
+  let lastTone = -Infinity, toneTicket = 0, primedContext;
   const status = $('music-status');
   const retry = document.createElement('button');
   retry.type = 'button'; retry.className = 'primary'; retry.textContent = 'Resume audio'; retry.hidden = true;
@@ -70,8 +70,9 @@
   function getContext() {
     if (context?.state === 'closed') resetContext();
     if (!context) {
-      // In-app audio: no HTML media player and no exclusive playback session.
-      try { if (navigator.audioSession) navigator.audioSession.type = 'ambient'; } catch { /* Optional API. */ }
+      // Use the media-volume output route on iOS while keeping playback in Web Audio.
+      // Ambient sessions can leave this shared music/effects output inaudible on phones.
+      try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch { /* Optional API. */ }
       const Audio = window.AudioContext || window.webkitAudioContext;
       context = new Audio({latencyHint:'interactive'});
       musicGain = context.createGain(); musicGain.gain.value = enabled ? volume * .45 : 0; musicGain.connect(context.destination);
@@ -126,6 +127,17 @@
     try {
       if (gesture && needsReset) resetContext();
       const ctx = getContext();
+      if (gesture && primedContext !== ctx) {
+        // Prime the device in the trusted tap itself; no fetch/decode promise may gate this.
+        try {
+          const primer = ctx.createBufferSource();
+          primer.buffer = ctx.createBuffer(1,1,ctx.sampleRate);
+          primer.connect(ctx.destination);
+          primer.onended = () => primer.disconnect();
+          primer.start(); primer.stop(ctx.currentTime + .01);
+          primedContext = ctx;
+        } catch { /* Still attempt normal resume if priming is unavailable. */ }
+      }
       if (ctx.state === 'running') { ensureMusic(); return Promise.resolve(true); }
       // A new trusted gesture retries resume synchronously, even if an earlier
       // background resume promise is still pending in Safari.
@@ -150,7 +162,7 @@
         }
       },1200);
       return pending;
-    } catch { message('Audio could not start. Tap Resume audio to try again.',true); return Promise.resolve(false); }
+    } catch (error) { message('Audio could not start (' + (error.name || 'device error') + '). Tap Resume audio to try again.',true); return Promise.resolve(false); }
   }
   function pause() {
     toneTicket++; clearTimeout(resumeTimer); stopMusic();
