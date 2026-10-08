@@ -30,6 +30,8 @@
     trigger.setAttribute('aria-disabled','true');
     const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches || document.body.classList.contains('motion-paused');
     setTimeout(() => {
+      document.querySelector('meta[name="theme-color"]').content = '#133441';
+      document.documentElement.classList.remove('launch-theme');
       screen.close();
       screen.remove();
       document.body.classList.remove('launch-entering');
