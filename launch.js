@@ -28,7 +28,7 @@
     const scale = orbit.width/520, radius = 35*scale;
     const origins = Array.from({length:7},(_,i)=>{
       const angle = -Math.PI/2+i*Math.PI*2/7;
-      return {angle,x:center.x+Math.cos(angle)*179*scale,y:center.y+Math.sin(angle)*179*scale};
+      return {angle,dx:Math.cos(angle),dy:Math.sin(angle),x:center.x+Math.cos(angle)*179*scale,y:center.y+Math.sin(angle)*179*scale};
     });
     const canvas = document.createElement('canvas'); canvas.className='wish-effects'; canvas.setAttribute('aria-hidden','true');
     const ratio = Math.min(devicePixelRatio||1,2);
@@ -37,16 +37,43 @@
     const ctx=canvas.getContext('2d');
     if (!ctx) { finish(); return; }
     ctx.scale(ratio,ratio);
+    // Rasterise gradients once. Reusing textures keeps the same glow without
+    // asking a phone to shade seven large radial gradients on every frame.
+    function texture(size, paint) {
+      const image=document.createElement('canvas');image.width=image.height=size;
+      const brush=image.getContext('2d');paint(brush,size);return image;
+    }
+    const glow=texture(512,(brush,size)=>{
+      const r=size/2,g=brush.createRadialGradient(r,r,r*.12,r,r,r);
+      g.addColorStop(0,'rgba(255,255,235,1)');g.addColorStop(.22,'rgba(255,238,124,.85)');
+      g.addColorStop(.5,'rgba(255,180,15,.38)');g.addColorStop(1,'rgba(255,170,0,0)');
+      brush.fillStyle=g;brush.fillRect(0,0,size,size);
+    });
+    const spheres=[['#ffe27a','#ffb41d','#db7209'],['#ffe27a','#ffd849','#db7209'],
+      ['#fffef3','#ffd849','#db7209'],['#fffef3','#fff5b2','#ffd13a']].map(colors=>texture(256,(brush,size)=>{
+      const r=size/2-2,c=size/2,g=brush.createRadialGradient(c-r*.25,c-r*.3,r*.05,c,c,r);
+      colors.forEach((color,i)=>g.addColorStop([0,.64,1][i],color));brush.fillStyle=g;
+      brush.beginPath();brush.arc(c,c,r,0,Math.PI*2);brush.fill();
+    }));
+    const stars=starLayouts.map(layout=>{
+      const path=new Path2D();
+      for(const [sx,sy] of layout){for(let k=0;k<10;k++){
+        const a=-Math.PI/2+k*Math.PI/5,d=k%2?2.15:5;
+        const x=sx+Math.cos(a)*d,y=sy+Math.sin(a)*d;k?path.lineTo(x,y):path.moveTo(x,y);
+      }path.closePath();}return path;
+    });
+    const backdrop=document.createElement('canvas');backdrop.width=canvas.width;backdrop.height=canvas.height;
+    const backgroundBrush=backdrop.getContext('2d');backgroundBrush.scale(ratio,ratio);
+    const background=backgroundBrush.createRadialGradient(width*.5,height*.48,0,width*.5,height*.48,Math.max(width,height)*.78);
+    background.addColorStop(0,'#ffbd39');background.addColorStop(.46,'#f99015');background.addColorStop(1,'#ed6610');
+    backgroundBrush.fillStyle=background;backgroundBrush.fillRect(0,0,width,height);
     screen.classList.add('granting');
     const begun=performance.now();
     const distance=Math.hypot(width,height)+radius*8;
     function halo(x,y,r,strength) {
-      const g=ctx.createRadialGradient(x,y,r*.12,x,y,r);
-      g.addColorStop(0,`rgba(255,255,235,${strength})`);
-      g.addColorStop(.22,`rgba(255,238,124,${strength*.85})`);
-      g.addColorStop(.5,`rgba(255,180,15,${strength*.38})`);
-      g.addColorStop(1,'rgba(255,170,0,0)');
-      ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();
+      ctx.globalAlpha=strength;
+      ctx.drawImage(glow,x-r,y-r,r*2,r*2);
+      ctx.globalAlpha=1;
     }
     function trail(x,y,angle,length,r,alpha) {
       ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.globalAlpha=alpha;
@@ -62,9 +89,8 @@
       ctx.clearRect(0,0,width,height);
       const reveal=smooth((elapsed-1230)/650);
       ctx.globalAlpha=1-reveal;
-      const background=ctx.createRadialGradient(width*.5,height*.48,0,width*.5,height*.48,Math.max(width,height)*.78);
-      background.addColorStop(0,'#ffbd39');background.addColorStop(.46,'#f99015');background.addColorStop(1,'#ed6610');
-      ctx.fillStyle=background;ctx.fillRect(0,0,width,height);ctx.globalAlpha=1;
+      if(reveal<1)ctx.drawImage(backdrop,0,0,width,height);
+      ctx.globalAlpha=1;
       const charge=smooth(elapsed/920);
       const departure=clamp((elapsed-1040)/640);
       const travel=departure*departure*departure*distance;
@@ -73,21 +99,21 @@
       const burst=Math.sin(clamp((elapsed-920)/500)*Math.PI);
       if(burst>0)halo(center.x,center.y,orbit.width*.78,burst*.25);
       origins.forEach((o,index)=>{
-        const x=o.x+Math.cos(o.angle)*travel,y=o.y+Math.sin(o.angle)*travel,r=radius*sphereScale;
+        const x=o.x+o.dx*travel,y=o.y+o.dy*travel,r=radius*sphereScale;
+        // Include the whole trailing tail before discarding an off-screen ball.
+        const margin=r*12;
+        if(x < -margin || x > width+margin || y < -margin || y > height+margin)return;
         if(departure>0)trail(x,y,o.angle,Math.min(travel*.72,r*10),r,smooth(departure*5));
         if(charge>0)halo(x,y,r*(1.7+charge*1.8),charge*.92);
         // Keep a saturated amber edge until the release; the core becomes true white-gold.
-        const sphere=ctx.createRadialGradient(x-r*.25,y-r*.3,r*.05,x,y,r);
-        sphere.addColorStop(0,charge>.5?'#fffef3':'#ffe27a');
-        sphere.addColorStop(.64,charge>.8?'#fff5b2':charge>.35?'#ffd849':'#ffb41d');
-        sphere.addColorStop(1,charge>.8?'#ffd13a':'#db7209');
-        ctx.fillStyle=sphere;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();
-        ctx.strokeStyle=`rgba(143,62,8,${.7*(1-charge)})`;ctx.lineWidth=1.5;ctx.stroke();
-        ctx.globalAlpha=1-smooth((charge-.34)/.5);ctx.fillStyle='#bc2c16';
-        for(const [sx,sy] of starLayouts[index]) {
-          ctx.beginPath();for(let k=0;k<10;k++){const a=-Math.PI/2+k*Math.PI/5,d=(k%2?2.15:5)*scale*sphereScale;const px=x+sx*scale*sphereScale+Math.cos(a)*d,py=y+sy*scale*sphereScale+Math.sin(a)*d;k?ctx.lineTo(px,py):ctx.moveTo(px,py);}ctx.closePath();ctx.fill();
-        }
-        ctx.globalAlpha=1;
+        const sphere=spheres[charge>.8?3:charge>.5?2:charge>.35?1:0];
+        const extent=r*128/126;
+        ctx.drawImage(sphere,x-extent,y-extent,extent*2,extent*2);
+        if(charge<1){ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);
+          ctx.strokeStyle=`rgba(143,62,8,${.7*(1-charge)})`;ctx.lineWidth=1.5;ctx.stroke();}
+        const starAlpha=1-smooth((charge-.34)/.5);
+        if(starAlpha>0){ctx.save();ctx.translate(x,y);ctx.scale(scale*sphereScale,scale*sphereScale);
+          ctx.globalAlpha=starAlpha;ctx.fillStyle='#bc2c16';ctx.fill(stars[index]);ctx.restore();}
         // Narrow luminous spikes make the peak feel energetic instead of foggy.
         const rays=smooth((charge-.55)/.45)*(1-departure);
         if(rays>0){ctx.save();ctx.translate(x,y);ctx.fillStyle='#fffbd6';ctx.globalAlpha=rays*.7;for(let k=0;k<4;k++){ctx.rotate(Math.PI/2);ctx.beginPath();ctx.moveTo(-r*.09,0);ctx.lineTo(0,-r*(2.1+rays*.6));ctx.lineTo(r*.09,0);ctx.closePath();ctx.fill();}ctx.restore();}
