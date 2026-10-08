@@ -16,8 +16,8 @@
     try { localStorage.setItem(key, JSON.stringify({enabled, volume})); } catch { /* Optional. */ }
   }
   function sync() {
-    const playing = enabled && source && context?.state === 'running' && !document.hidden;
-    button.textContent = !enabled ? 'Music off' : playing ? 'Music on' : 'Music · tap to play';
+    button.textContent = enabled ? 'Music on' : 'Music off';
+    button.title = enabled ? 'Turn background music off' : 'Turn background music on';
     button.setAttribute('aria-pressed', String(enabled));
     slider.value = String(Math.round(volume * 100));
     output.value = slider.value + '%';
@@ -27,7 +27,7 @@
     try {
       if (!context) {
         context = new (window.AudioContext || window.webkitAudioContext)();
-        gain = context.createGain(); gain.gain.value = volume; gain.connect(context.destination);
+        gain = context.createGain(); gain.gain.value = enabled ? volume : 0; gain.connect(context.destination);
         context.addEventListener('statechange', sync);
       }
       // Resume inside the user gesture, before any network await (required on phones).
@@ -40,7 +40,8 @@
         })().finally(() => { loading = null; });
         buffer = await loading;
       }
-      if (!enabled || document.hidden) { await context.suspend(); sync(); return; }
+      if (!enabled || document.hidden) { sync(); return; }
+      gain.gain.setValueAtTime(volume, context.currentTime);
       if (!source) {
         source = context.createBufferSource(); source.buffer = buffer;
         source.loop = true;
@@ -50,24 +51,25 @@
       }
       status.textContent = ''; sync();
     } catch {
-      enabled = false; save(); sync();
+      sync();
       status.textContent = 'Music could not start. Check your connection and tap Music to try again.';
     }
   }
   button.addEventListener('click', () => {
-    enabled = !enabled; save();
-    if (enabled) start(); else { context?.suspend().catch(() => {}); sync(); }
+    enabled = !enabled; save(); sync();
+    if (gain) gain.gain.setValueAtTime(enabled ? volume : 0, context.currentTime);
+    if (enabled) start();
   });
   slider.addEventListener('input', () => {
     volume = Number(slider.value) / 100;
-    if (gain) gain.gain.setTargetAtTime(volume, context.currentTime, .025);
+    if (gain) gain.gain.setTargetAtTime(enabled ? volume : 0, context.currentTime, .025);
     save(); sync();
   });
   document.addEventListener('click', event => {
-    if (!event.target.closest('#music-toggle') && enabled && context?.state !== 'running') start();
+    if (!event.target.closest('#music-toggle') && enabled && (!source || context?.state !== 'running')) start();
   });
   document.addEventListener('keydown', event => {
-    if (event.key === 'Enter' && !event.target.closest('#music-toggle') && enabled && context?.state !== 'running') start();
+    if (event.key === 'Enter' && !event.target.closest('#music-toggle') && enabled && (!source || context?.state !== 'running')) start();
   });
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) context?.suspend().catch(() => {});
