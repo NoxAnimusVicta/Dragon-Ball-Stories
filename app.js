@@ -178,38 +178,7 @@
     links[(i + (e.key === 'ArrowDown' ? 1 : -1) + links.length) % links.length].focus();
   });
 
-  const soundKey = 'db-stories:sound:' + new URL('./',location.href).pathname;
-  let soundOn = true;
-  try { soundOn = localStorage.getItem(soundKey) !== 'off'; } catch { /* Optional preference. */ }
-  $('sound-toggle').setAttribute('aria-pressed',String(soundOn));
-  $('sound-toggle').textContent = soundOn ? 'Sound on' : 'Sound off';
-  let audioContext;
-  function playTone(confirm = false) {
-    if (!soundOn) return;
-    try {
-      try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch { /* Optional on older browsers. */ }
-      audioContext ||= window.getAdventureAudioContext();
-      if (audioContext.state !== 'running') audioContext.resume().catch(() => {});
-      const oscillator = audioContext.createOscillator();
-      const gain = audioContext.createGain();
-      const t = audioContext.currentTime;
-      oscillator.type = 'sine';
-      oscillator.frequency.setValueAtTime(confirm ? 660 : 440,t);
-      oscillator.frequency.exponentialRampToValueAtTime(confirm ? 990 : 550,t+.07);
-      gain.gain.setValueAtTime(.045,t);
-      gain.gain.exponentialRampToValueAtTime(.001,t+.1);
-      oscillator.connect(gain); gain.connect(audioContext.destination);
-      oscillator.start(t); oscillator.stop(t+.11);
-      oscillator.onended = () => { oscillator.disconnect(); gain.disconnect(); };
-    } catch { soundOn=false; $('sound-toggle').setAttribute('aria-pressed','false'); $('sound-toggle').textContent='Sound off'; }
-  }
-  $('sound-toggle').addEventListener('click',()=>{
-    soundOn=!soundOn;
-    try { localStorage.setItem(soundKey,soundOn ? 'on' : 'off'); } catch { /* Optional preference. */ }
-    $('sound-toggle').setAttribute('aria-pressed',String(soundOn));
-    $('sound-toggle').textContent=soundOn ? 'Sound on' : 'Sound off';
-    playTone(true);
-  });
+  const playTone = (confirm = false) => window.adventureAudio?.playTone(confirm);
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const motionKey = 'db-stories:motion:' + new URL('./',location.href).pathname;
   let motionPreference = null;
@@ -229,12 +198,6 @@
   });
   reducedMotion.addEventListener('change',syncMotion);
   syncMotion();
-  document.addEventListener('restore-menu-sound',()=>{
-    try { if (localStorage.getItem(soundKey) === 'off') return; } catch { /* Optional preference. */ }
-    soundOn=true;
-    $('sound-toggle').setAttribute('aria-pressed','true');
-    $('sound-toggle').textContent='Sound on';
-  });
   document.addEventListener('click',e=> { if(e.target.closest('a,button,summary') && !e.target.closest('#sound-toggle')) playTone(true); });
   function selectMenu(target) { const chosen=target.closest('[data-menu]'); if(chosen) document.querySelectorAll('[data-menu]').forEach(item=>item.classList.toggle('selected',item===chosen)); }
   document.addEventListener('pointerover',e=>selectMenu(e.target));
