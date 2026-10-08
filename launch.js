@@ -159,49 +159,72 @@
     });
   }
 
-  // A press only lights the symbol. The native click follows pointer release,
-  // preserving the trusted user gesture that starts audio on iPhone.
-  let heldPointer=null, releaseAllowed=true;
-  function inside(event) {
-    const box=trigger.getBoundingClientRect();
-    return event.clientX>=box.left&&event.clientX<=box.right&&event.clientY>=box.top&&event.clientY<=box.bottom;
-  }
-  function cancelPress() {
-    heldPointer=null;releaseAllowed=false;
-    if(!entering)trigger.classList.remove('is-pressed');
-  }
-  trigger.addEventListener('pointerdown',event=>{
-    if(entering||!event.isPrimary||event.button!==0||heldPointer!==null)return;
-    heldPointer=event.pointerId;releaseAllowed=false;
-    trigger.classList.add('is-pressed');trigger.setPointerCapture(event.pointerId);
-  });
-  trigger.addEventListener('pointermove',event=>{
-    if(event.pointerId===heldPointer)trigger.classList.toggle('is-pressed',inside(event));
-  });
-  trigger.addEventListener('pointerup',event=>{
-    if(event.pointerId!==heldPointer)return;
-    releaseAllowed=inside(event);heldPointer=null;
-    if(!releaseAllowed)trigger.classList.remove('is-pressed');
-    // Keep a successful hold's soft glow until the existing centre fade ends.
-  });
-  trigger.addEventListener('pointercancel',cancelPress);
-  trigger.addEventListener('lostpointercapture',()=>{if(heldPointer!==null)cancelPress();});
-  // Safari may move focus to the dialog on pointer-down; that is not a cancelled hold.
-  trigger.addEventListener('blur',()=>{if(heldPointer===null)cancelPress();});
-  window.addEventListener('blur',cancelPress);
-  document.addEventListener('visibilitychange',()=>{if(document.hidden)cancelPress();});
-  trigger.addEventListener('keydown',event=>{
-    if(!entering&&(event.key===' '||event.key==='Enter'))trigger.classList.add('is-pressed');
-  });
-  trigger.addEventListener('contextmenu',event=>event.preventDefault());
-  trigger.addEventListener('click', event => {
-    if(heldPointer!==null||(event.detail>0&&!releaseAllowed)){event.preventDefault();return;}
+  function launch() {
     if (entering) return; entering=true;
     document.body.classList.remove('launch-pending'); document.body.classList.add('launch-entering');
+    // Run inside the actual release gesture, without waiting for a synthetic click.
     document.dispatchEvent(new CustomEvent('launch-adventure'));
     trigger.setAttribute('aria-disabled','true');
     const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches||document.body.classList.contains('motion-paused');
     if(reduced){finish();return;}
     try{animate();}catch{finish();}
+  }
+  let held=null;
+  function inside(point) {
+    const box=trigger.getBoundingClientRect();
+    return point.clientX>=box.left&&point.clientX<=box.right&&point.clientY>=box.top&&point.clientY<=box.bottom;
+  }
+  function cancelPress() {
+    held=null;
+    if(!entering)trigger.classList.remove('is-pressed');
+  }
+  function release(point) {
+    held=null;
+    if(inside(point))launch();else cancelPress();
+  }
+  // Safari delivers touchend directly, even when hover/focus handling consumes
+  // the subsequent compatibility click. Keep audio in that trusted release event.
+  trigger.addEventListener('touchstart',event=>{
+    if(entering)return;
+    if(event.touches.length!==1){cancelPress();return;}
+    if(held)return;
+    held={kind:'touch',id:event.changedTouches[0].identifier};
+    trigger.classList.add('is-pressed');
+  },{passive:true});
+  window.addEventListener('touchmove',event=>{
+    if(held?.kind!=='touch')return;
+    const touch=[...event.changedTouches].find(t=>t.identifier===held.id);
+    if(touch)trigger.classList.toggle('is-pressed',inside(touch));
+  },{passive:true});
+  window.addEventListener('touchend',event=>{
+    if(held?.kind!=='touch')return;
+    const touch=[...event.changedTouches].find(t=>t.identifier===held.id);
+    if(touch)release(touch);
+  },{passive:true});
+  window.addEventListener('touchcancel',()=>{if(held?.kind==='touch')cancelPress();},{passive:true});
+  trigger.addEventListener('pointerdown',event=>{
+    if(entering||event.pointerType==='touch'||!event.isPrimary||event.button!==0||held)return;
+    held={kind:'pointer',id:event.pointerId};trigger.classList.add('is-pressed');
+  });
+  window.addEventListener('pointermove',event=>{
+    if(held?.kind==='pointer'&&event.pointerId===held.id)trigger.classList.toggle('is-pressed',inside(event));
+  });
+  window.addEventListener('pointerup',event=>{
+    if(held?.kind==='pointer'&&event.pointerId===held.id)release(event);
+  });
+  window.addEventListener('pointercancel',event=>{
+    if(held?.kind==='pointer'&&event.pointerId===held.id)cancelPress();
+  });
+  window.addEventListener('blur',cancelPress);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)cancelPress();});
+  trigger.addEventListener('blur',()=>{if(!held)cancelPress();});
+  trigger.addEventListener('keydown',event=>{
+    if(!entering&&(event.key===' '||event.key==='Enter'))trigger.classList.add('is-pressed');
+  });
+  trigger.addEventListener('contextmenu',event=>event.preventDefault());
+  // Keyboard and assistive technology retain native button activation. Physical
+  // pointer clicks are already handled on release and must never launch twice.
+  trigger.addEventListener('click',event=>{
+    if(event.detail===0&&!event.pointerType&&!held)launch();
   });
 })();
