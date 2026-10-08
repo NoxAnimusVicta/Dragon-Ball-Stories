@@ -117,6 +117,13 @@
       motion(flare,t=>{const rays=smooth((smooth(t/920)-.55)/.45)*(1-clamp((t-1040)/640));
         return {opacity:rays*.7,transform:`scale(${(2.1+rays*.6)/2.7})`};});
     });
+    // Let the tap prompt dissolve into the charge instead of disappearing at
+    // the SVG-to-animation handoff. Use the same compositor timeline as the balls.
+    motion(screen.querySelector('.wish-center'),t=>{
+      const fade=smooth(t/480);
+      return {opacity:1-fade,transform:`scale(${1+fade*.06})`};
+    });
+    motion(screen.querySelector('#launch-title'),t=>({opacity:1-smooth(t/400)}));
     screen.classList.add('granting');
     // Start all layers on the same timeline after their first paint; audio was
     // already unlocked synchronously by the original tap.
