@@ -12,7 +12,7 @@ This companion records enacted, character-known facts, plus the approved profile
 
 ## The app
 
-Six screens: main menu, character, story, abilities, inventory and world. An illustrated world, animated selections, keyboard navigation and optional menu sounds make the adventure fun to explore. Includes search, expandable records, a 64-entry journal with the newest moment first, world-category navigation, a current scouter reading and the updated full-height character portrait with a full-art viewer. The one-star Dragon Ball is used for the favicon and home-screen icon. Motion can be paused, and reduced-motion preferences are respected.
+Six screens: main menu, character, story, abilities, inventory and world. An illustrated world, animated selections, keyboard navigation and optional menu sounds make the adventure fun to explore. Includes search, expandable records, a 64-entry journal with the newest moment first, world-category navigation, a power-level display with exact values and a full-height portrait prepared to cycle through unlocked forms. Only Base is currently available. The one-star Dragon Ball is used for the favicon and home-screen icon. Motion can be paused, and reduced-motion preferences are respected.
 
 The app is a published reference. Send character details and artwork through the chat; there are no device-local character edits or uploads. It checks for new app and story releases automatically when opened or resumed, and every minute while visible. Updates preserve your place and wait for open panels to close. It requires an internet connection and does not install an offline service worker. Open the latest version once to activate automatic updates on an older installation.
 

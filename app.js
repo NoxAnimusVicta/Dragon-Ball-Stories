@@ -24,6 +24,7 @@
   let data;
   let searchIndex = [];
   let portraitUrl = null;
+  let selectedForm = 0;
   const groups = ['abilities','inventory','accounts','people','places','projects','events'];
 
   function validate(d) {
@@ -46,8 +47,68 @@
     } catch { return null; }
   }
 
+  // Decimal strings keep future large power levels exact beyond Number's safe range.
+  function decimal(value) {
+    if (typeof value === 'number' && (!Number.isFinite(value) || value < 0 || (Number.isInteger(value) && !Number.isSafeInteger(value)))) return null;
+    const text = String(value ?? '');
+    if (!/^\d+(?:\.\d+)?$/.test(text)) return null;
+    const [whole, fraction = ''] = text.split('.');
+    return {digits: BigInt(whole + fraction), scale: fraction.length};
+  }
+  function multiplyPower(base, multiplier) {
+    const a = decimal(base), b = decimal(multiplier);
+    if (!a || !b) return null;
+    const scale = a.scale + b.scale;
+    const digits = (a.digits * b.digits).toString().padStart(scale + 1, '0');
+    return scale ? (digits.slice(0,-scale) + '.' + digits.slice(-scale)).replace(/\.?0+$/, '') : digits;
+  }
+  function exactPower(power) {
+    const [whole, fraction] = String(power).split('.');
+    return whole.replace(/\B(?=(\d{3})+(?!\d))/g, ',') + (fraction ? '.' + fraction : '');
+  }
+  function compactPower(power) {
+    const n = decimal(power);
+    if (!n) return '—';
+    const units = [[24,'Septillion'],[21,'Sextillion'],[18,'Quintillion'],[15,'Quadrillion'],[12,'Trillion'],[9,'Billion'],[6,'Million']];
+    for (const [exponent,name] of units) {
+      const divisor = 10n ** BigInt(exponent + n.scale);
+      if (n.digits >= divisor) {
+        // Truncate the short label; the detail panel always retains the exact value.
+        const hundredths = n.digits * 100n / divisor;
+        const fraction = (hundredths % 100n).toString().padStart(2,'0').replace(/0+$/, '');
+        return `${exactPower((hundredths / 100n).toString())}${fraction ? '.' + fraction : ''} ${name}`;
+      }
+    }
+    return exactPower(power);
+  }
+  function unlockedForms() {
+    const base = data.character.battlePower;
+    return (Array.isArray(data.character.forms) ? data.character.forms : []).filter(f =>
+      f && f.unlocked === true && typeof f.id === 'string' && typeof f.name === 'string' &&
+      decimal(f.multiplier)?.digits > 0n && decimal(base) && multiplyPower(base,f.multiplier) !== null
+    );
+  }
+  function portraitForms() {
+    return [{id:'base', name:'Base', portrait:portraitUrl, alt:data.character.portraitAlt, multiplier:'1'},
+      ...unlockedForms().filter(f => safePortrait(f.portrait)).map(f => ({...f, portrait:safePortrait(f.portrait), alt:f.portraitAlt || f.name}))];
+  }
   function artCard() {
-    return `<section class="character-stage${portraitUrl ? ' has-art' : ''}" aria-label="Character portrait"><span class="stage-label">PLAYER 01</span><div class="aura-ring" aria-hidden="true"></div><div class="portrait">${portraitUrl ? `<button class="art-button" data-art aria-label="View full character artwork"><img class="portrait-image" src="${escape(portraitUrl)}" alt="${escape(data.character.portraitAlt)}"></button>` : `<div class="portrait-placeholder"><div class="portrait-symbol">?</div><span>YOUR STORY AWAITS</span><p>Your portrait will appear<br>when your story begins.</p></div>`}</div><div class="stage-name">${escape(data.character.name)}</div><div class="stage-bottom"><span>${escape(data.character.race || 'RACE UNRECORDED')}</span><span>${portraitUrl ? 'SELECT ART TO ENLARGE' : 'PORTRAIT UNREVEALED'}</span></div></section>`;
+    const forms = portraitForms();
+    if (selectedForm >= forms.length) selectedForm = 0;
+    const form = forms[selectedForm], cycling = forms.length > 1;
+    const image = `<img class="portrait-image" width="853" height="1280" src="${escape(form.portrait)}" alt="${escape(form.alt)}">`;
+    return `<section class="character-stage${portraitUrl ? ' has-art' : ''}" aria-label="Character portrait"><div class="aura-ring" aria-hidden="true"></div><div class="portrait">${portraitUrl ? (cycling ? `<button class="art-button" data-form-cycle aria-label="${escape(form.name)}. Show next unlocked form">${image}</button>` : image) : `<div class="portrait-placeholder"><div class="portrait-symbol">?</div><span>YOUR STORY AWAITS</span><p>Your portrait will appear<br>when your story begins.</p></div>`}</div><div class="stage-name">${escape(data.character.name)}</div><div class="stage-bottom"><span>${escape(data.character.race || 'RACE UNRECORDED')}</span><span class="portrait-form" aria-live="polite"><strong>${escape(form.name)}</strong>${selectedForm ? `<span>PL ${escape(compactPower(multiplyPower(data.character.battlePower,form.multiplier)))}</span>` : ''}${cycling ? `<small>${selectedForm+1} / ${forms.length} · Tap to cycle</small>` : ''}</span></div></section>`;
+  }
+  function showPowerDetails() {
+    let dialog = $('power-dialog');
+    if (!dialog) {
+      dialog = document.createElement('dialog'); dialog.id='power-dialog'; dialog.className='power-dialog';
+      dialog.setAttribute('aria-labelledby','power-dialog-title'); document.body.append(dialog);
+      dialog.addEventListener('close', () => document.querySelector('[data-power-details]')?.focus({preventScroll:true}));
+    }
+    const rows = [{name:'Base',multiplier:'1'},...unlockedForms()];
+    dialog.innerHTML = `<div class="dialog-top"><span class="eyebrow">${escape(data.character.name)} / POWER</span><button class="icon-button close-dialog" aria-label="Close power details" autofocus>×</button></div><h2 id="power-dialog-title">Power levels</h2><p>Full output from your current recorded base.</p><dl class="power-level-list">${rows.map(f=>`<div><dt>${escape(f.name)} <span>×${escape(f.multiplier)}</span></dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl>${rows.length===1 ? '<p>No transformations unlocked yet.</p>' : ''}<p class="power-reading-note">${escape(data.character.powerReading || '')}</p>`;
+    dialog.showModal();
   }
   function pageHeader(number, title, description) {
     return `<div class="page-heading"><div><span class="eyebrow">${number} / YOUR ADVENTURE</span><h1>${title}</h1></div><p>${description}</p></div>`;
@@ -72,7 +133,7 @@
   }
   function character() {
     const c=data.character;
-    return pageHeader('01','Character','Your place in the story.')+`<div class="character-layout">${artCard()}<div class="character-info"><div class="player-banner"><span class="eyebrow">${data.started ? 'YOUR PROTAGONIST' : 'CHARACTER SETUP'}</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'PATROL TRAINEE' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS${Number.isInteger(c.ageMonths) ? ` · ${escape(c.ageMonths)} MONTHS` : ''}</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div>${present(c.battlePower) ? `<section class="power-panel" aria-label="Current battle power"><div><span class="eyebrow">SCOUTER READING</span><strong>${escape(c.battlePower)}</strong><span>${escape(c.powerReading)}</span></div><div><span class="status-stamp">TRAINING / NO FIELD CLEARANCE</span><p>${escape(c.condition)}</p><a href="#abilities/power">View training progress →</a></div></section>` : ''}<section class="panel identity-panel"><h3>Identity & background</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Your discovered identity and appearance will be recorded here.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Your character record will grow with the story.')}${detail('Backstory',c.backstory,'No backstory has been recorded here.')}${detail('Arrival & new identity',c.arrival,'No arrival has been recorded yet.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'Known information and discovered limits will appear here.')}</div></section><p class="subtle-note">Your choices shape Zero. This record grows through play.</p></div></div>`;
+    return pageHeader('01','Character','Your place in the story.')+`<div class="character-layout">${artCard()}<div class="character-info"><div class="player-banner"><span class="eyebrow">${data.started ? 'YOUR PROTAGONIST' : 'CHARACTER SETUP'}</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'PATROL TRAINEE' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS${Number.isInteger(c.ageMonths) ? ` · ${escape(c.ageMonths)} MONTHS` : ''}</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div>${present(c.battlePower) ? `<section class="power-panel" aria-label="Current battle power"><div><button class="power-readout" data-power-details aria-haspopup="dialog" aria-label="Power level ${escape(exactPower(c.battlePower))}. View exact base and unlocked forms"><span class="eyebrow">POWER LEVEL</span><strong>${escape(compactPower(c.battlePower))}</strong><span class="power-details-link">View power details ↗</span></button><span>${escape(c.powerReading)}</span></div><div><span class="status-stamp">TRAINING / NO FIELD CLEARANCE</span><p>${escape(c.condition)}</p><a href="#abilities/power">View training progress →</a></div></section>` : ''}<section class="panel identity-panel"><h3>Identity & background</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Your discovered identity and appearance will be recorded here.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Your character record will grow with the story.')}${detail('Backstory',c.backstory,'No backstory has been recorded here.')}${detail('Arrival & new identity',c.arrival,'No arrival has been recorded yet.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'Known information and discovered limits will appear here.')}</div></section><p class="subtle-note">Your choices shape Zero. This record grows through play.</p></div></div>`;
   }
   function abilities() {
     // Illustrated slots are opt-in for signature moves and transformations, not fundamentals.
@@ -111,14 +172,22 @@
     });
     $('campaign-status').textContent = data.started ? (data.story.date || 'Story in progress') : 'Before the first chapter';
     hideSearch();
-    const img = document.querySelector('.portrait-image');
-    if (img) img.addEventListener('error', () => { img.closest('.portrait').innerHTML = '<div class="portrait-error"><p>Character art is temporarily unavailable.</p></div>'; }, {once:true});
+    bindPortraitError();
     document.querySelectorAll('.ability-image').forEach(img => img.addEventListener('error', () => img.remove(), {once:true}));
     if (focus) { $('main').focus({preventScroll:true}); window.scrollTo({top:0,behavior:'instant'}); }
     if (recordId && /^[a-z0-9-]+$/.test(recordId)) {
       const record = $('record-'+recordId);
       if (record) { record.scrollIntoView({block:'center'}); record.focus({preventScroll:true}); }
     }
+  }
+  function bindPortraitError() {
+    const img = document.querySelector('.portrait-image');
+    if (img) img.addEventListener('error', () => {
+      const message = document.createElement('span'); message.className='portrait-error';
+      message.textContent='Artwork temporarily unavailable';
+      img.style.visibility='hidden'; img.closest('.portrait').classList.add('is-unavailable'); img.parentElement.append(message);
+      // Retain the cycle control so a failed form image never traps the portrait.
+    }, {once:true});
   }
   function buildSearch() {
     searchIndex = nav.map(([route,title]) => ({route,title,summary:route === 'overview' ? 'Return to the adventure menu' : `Explore ${title.toLowerCase()}`,text:title}));
@@ -159,11 +228,14 @@
       dialog.innerHTML = `<div class="dialog-top"><span class="eyebrow">ABILITY / ${escape(ability.status || 'KNOWN')}</span><button class="icon-button close-dialog" aria-label="Close ability details" autofocus>×</button></div><h2 id="ability-dialog-title">${escape(ability.title)}</h2><p class="ability-summary">${escape(ability.summary || '')}</p>${ability.details ? `<div class="ability-explanation"><h3>How it works</h3><p>${escape(ability.details)}</p></div>` : ''}${Array.isArray(ability.facts) && ability.facts.length ? `<dl class="definition-grid">${ability.facts.map(f => definition(f.label,f.value,f.note)).join('')}</dl>` : ''}`;
       dialog.showModal();
     }
-    if (event.target.closest('[data-art]') && portraitUrl) {
-      let dialog = $('art-dialog');
-      if (!dialog) { dialog = document.createElement('dialog'); dialog.id='art-dialog'; dialog.className='art-dialog'; dialog.setAttribute('aria-label','Character artwork'); document.body.append(dialog); }
-      dialog.innerHTML=`<div class="dialog-top"><span class="eyebrow">${escape(data.character.name)} / CHARACTER ART</span><button class="icon-button close-dialog" aria-label="Close artwork">×</button></div><img src="${escape(portraitUrl)}" alt="${escape(data.character.portraitAlt)}">`;
-      dialog.showModal();
+    if (event.target.closest('[data-power-details]')) showPowerDetails();
+    if (event.target.closest('[data-form-cycle]')) {
+      const forms = portraitForms();
+      selectedForm = (selectedForm + 1) % forms.length;
+      const stage = document.querySelector('.character-stage');
+      stage.outerHTML = artCard();
+      document.querySelector('[data-form-cycle]')?.focus({preventScroll:true});
+      bindPortraitError();
     }
   });
   $('search').addEventListener('input',search);
