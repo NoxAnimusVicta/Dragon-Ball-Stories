@@ -1,45 +1,45 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-09-story-S052",
+  "revision": "2026-10-10-story-S064",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
-  "phase": "Training with Vegeta",
+  "phase": "Back from the chamber",
   "started": true,
   "character": {
     "name": "Zero",
-    "age": 26,
+    "age": 27,
     "height": "5′6″",
     "heightMetric": "167.64 cm",
     "heightApproximate": false,
     "portrait": "zero-portrait.jpg",
-    "portraitAlt": "Zero, an athletic human with long auburn hair and a full beard, wearing a red-lensed scouter, black martial outfit and burgundy cape outside Capsule Corp. Character illustration.",
+    "portraitAlt": "Zero after a year of chamber training: muscular human with auburn curls, beard, green iris and red scouter, in a black outfit and burgundy cape. Capsule Corp illustration backdrop.",
     "race": "Human",
     "origin": "From a world where Dragon Ball is fiction. The cause of the crossing is still unknown.",
-    "appearance": "Athletic build, long curly auburn hair, full auburn beard. Black wrap-front outfit and loose trousers, burgundy sash and wrist wraps, burgundy cape with round gold fasteners, black-and-burgundy boots. The recovered scouter has a red lens; the cape’s hem was torn during the arrival encounter.",
+    "appearance": "Considerably greater muscle mass and definition after a year of training. Long curly auburn hair, full auburn beard and green iris. Black wrap-front outfit and loose trousers, burgundy sash and wrist wraps, burgundy cape with round gold fasteners, black-and-burgundy boots and a red-lensed scouter. The original clothes are repaired and fitted to his broader build.",
     "personality": "Expressed through your choices and dialogue.",
     "backstory": "Familiar with Dragon Ball through anime, manga, films and games before the crossing. No further personal background is recorded.",
     "arrival": "Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness.",
     "motivation": "Train, become stronger and qualify for field work.",
     "knowledge": "Retains referential knowledge of Z, Super, the films, manga, GT and the first two Xenoverse main stories. Chronoa confirmed that the two Xenoverse stories correspond to this Patrol’s past, with distinct hero partners; the second occurred about two hub years ago. This particular Vegeta’s home history remains unknown.",
-    "limitations": "Source knowledge does not grant fighting mastery or reveal alternate histories. Flight turns, braking and divided attention remain unreliable. Small ki blasts need a planted stance and deliberate charge. No field clearance or independent timeline access; the city escort restriction has not been lifted.",
-    "battlePower": 174,
-    "powerReading": "After full healing · Day 45 · Confirmed twice",
+    "limitations": "Live opponents remain less predictable than drones. Accuracy, stamina and suppression under sudden pressure still need work. No precise ki sensing, signature technique, transformation, field clearance or independent timeline access. The city escort restriction remains in place.",
+    "battlePower": 3075,
+    "powerReading": "Rested full output · End of chamber year · Usual suppression ≈1,538",
     "role": "Supervised Time Patrol trainee",
-    "condition": "Healed after the final senzu of today’s training. Clothes are bloodstained; scouter worn and cape collected. No weights equipped.",
+    "condition": "Healed, with no lasting functional injury recorded. Original outfit and cape clean, repaired and fitted; scouter worn. No weights or senzu remaining.",
     "ageMonths": 6
   },
   "story": {
-    "era": "Time Patrol hub; local calendar date unconfirmed",
-    "date": "Day 45 · Evening · Approximately 44 days since awakening",
-    "location": "Conton City · Practice hall",
-    "situation": "After another day of gravity training with Vegeta, Zero has healed and measured 174. He has found Krillin finishing an ordinary practice session.",
-    "pendingChoice": "Krillin notices the bloodstained clothes, asks whether Zero received a senzu, and welcomes him in: “I’m finished here. What’s up?” Zero has not answered yet."
+    "era": "Conton City · Age 854",
+    "date": "Day 47 · 16 February, Age 854 · About 09:40",
+    "location": "Conton City · Equipment services",
+    "situation": "A full year of solo chamber training is complete. Only a day passed in Conton. Zero has left with Krillin and had his original outfit and cape repaired and fitted to his more muscular build.",
+    "pendingChoice": "At the equipment-services doorway, Krillin asks, “Better. Ready?” Zero has not answered or chosen where to go next."
   },
   "abilities": [
     {
       "id": "power",
-      "title": "Battle power · 174",
-      "summary": "Current output confirmed twice after full healing at the end of Day 45.",
+      "title": "Battle power · 3,075",
+      "summary": "Rested full output after a year in the chamber; usually held near half.",
       "status": "Measured",
       "facts": [
         {
@@ -47,55 +47,59 @@
           "value": "50 · Day 1"
         },
         {
-          "label": "Current reading",
-          "value": "174 · Day 45"
+          "label": "Full output",
+          "value": "3,075 · End of chamber year"
+        },
+        {
+          "label": "Usual suppression",
+          "value": "Approximately 1,538"
         },
         {
           "label": "Change since arrival",
-          "value": "+124 · 248%"
+          "value": "+3,025 · 61.5 times the initial reading"
         }
       ],
-      "details": "Rested readings reached 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. Rested 85 was confirmed on Day 30 before Vegeta’s first session; after that day’s training and healing, two scans read 89. Continued training reached 124 at the end of Day 37 and 168 at the end of Day 44. Overnight rest confirmed the same 168 on Day 45; that day’s training increased it to 174, confirmed twice after the final senzu. Healing restores available output; it is not a separate human power boost. These readings do not establish field readiness."
+      "details": "Rested readings reached 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. Rested 85 was confirmed on Day 30 before Vegeta’s first session; after that day’s training and healing, two scans read 89. Continued training reached 124 at the end of Day 37 and 168 at the end of Day 44. Overnight rest confirmed the same 168 on Day 45; that day’s training increased it to 174, confirmed twice after the final senzu. Healing restores available output; it is not a separate human power boost. These readings do not establish field readiness. The quarterly rested endpoints were 454, 920, 1,597 and 3,075. The final full reading returned to 3,075 after a suppression check near 1,538. No new scan or gain occurred during the clothing repairs."
     },
     {
       "id": "combat-basics",
       "title": "Combat fundamentals",
-      "summary": "Improving guard, turning and short combinations under gravity; still developing timing and balance.",
+      "summary": "Integrated footwork, compact strikes and aerial rotations after a year of drone practice.",
       "status": "Developing",
-      "details": "Controlled sparring with Yamcha produced one successful shoulder throw using his committed shove, but Zero tired and the round ended. Weighted conditioning later reached 100 kg per wrist and ankle before those weights were returned. From Day 30, Vegeta’s sessions introduced 50× gravity. Zero can now complete controlled 25× warm-ups and stand, take measured steps and use short combinations at 50×. Quick turns and impacts still break his support. He has not landed a hit on Vegeta. No general mastery or dependable combat movement under that load is established."
+      "details": "Earlier sparring and weighted work developed into sustained solo practice with progressively stronger gravity and armed drones. Full-output ground rounds reached 75× gravity; deliberate heavy conditioning reached 150×. Short punches, guard recovery, flight-assisted kicks and changes of direction now flow together. These are different training loads, not interchangeable combat tolerances. Suppressed work uses lower settings. No rematch with Yamcha or successful hit on Vegeta has occurred."
     },
     {
       "id": "ki-control",
-      "title": "Deliberate ki control",
-      "summary": "Can gather, hold, extinguish and regather a small ki light during controlled steps and turns.",
-      "status": "Basic control",
-      "details": "Developed from tiny flashes through weighted practice. A palm light has worked as a sparring distraction. Gravity training now requires active ki support to stand and move under load; hurried movement and impacts still disrupt that support. Precise sensing and suppression have not been demonstrated. This progress does not establish reliable flight or blast use at 50× gravity."
+      "title": "Ki control",
+      "summary": "Supports loaded movement, flight and repeated blasts while managing available output.",
+      "status": "Developing control",
+      "details": "Combined practice improved bracing, energy gathering and switching between movement and attacks. Zero can deliberately lower and restore his output, but control still takes work under unfamiliar pressure. Precise ki sensing and effortless full-strength defence while suppressed are not established."
     },
     {
       "id": "flight",
       "title": "Flight",
-      "summary": "Brief low hovering and slow flight over courtyard distances.",
-      "status": "Training only",
+      "summary": "Sustained aerial combat drills with turns, bracing and controlled rotations.",
+      "status": "Practised in training",
       "facts": [
         {
-          "label": "Hover",
-          "value": "A few feet high, for several breaths"
+          "label": "Demonstrated",
+          "value": "Aerial combat against armed drones"
         },
         {
-          "label": "Flight",
-          "value": "Slow crossing and return"
+          "label": "Training load",
+          "value": "25× gravity at full output"
         },
         {
           "label": "Field use",
           "value": "Not cleared"
         }
       ],
-      "details": "Low hovering and slow courtyard flight are established. Zero sometimes keeps airborne through glancing contact or recovers from a sideways shove, but solid body shots disrupt concentration. A faster unweighted crossing on Day 22 produced a wide turn, a drop and a slower return, ending upright. Braking, turning and divided attention remain unreliable. No fast long-range or dependable combat flight demonstrated. No new flight milestone was recorded during the gravity sessions."
+      "details": "Flight is integrated with evasions, compact strikes and spinning kicks against drones. Full-output aerial rounds reached 25× gravity, distinct from 75× ground rounds and 150× slow conditioning. Familiar sequences are more fluid; long-range endurance and performance against live field threats remain untested. No field clearance has been granted."
     },
     {
       "id": "ki-blast",
-      "title": "Small ki blast",
-      "summary": "Repeatable low-power shots from a planted stance after deliberate gathering.",
+      "title": "Ki blasts",
+      "summary": "Tighter moving volleys and larger charged shots with faster, cleaner gathering.",
       "status": "Developing",
       "facts": [
         {
@@ -104,17 +108,24 @@
         },
         {
           "label": "Current control",
-          "value": "Repeatable while planted; aim inconsistent"
+          "value": "Moving volleys and larger charged shots; finite accuracy and stamina"
         }
       ],
-      "details": "The first shot succeeded once among several failed attempts. Practice through Day 29 made release repeatable, but shots still vary in aim and moving release is poor. No named beam, rapid barrage or destructive large-scale attack has been learned. Gravity training has not established accurate moving shots or firing at 50× gravity."
+      "details": "Started with one small shot on Day 22. Chamber practice developed step-release, moving-target fire and short volleys while manoeuvring. Larger shots require an opening and consume more stamina; accuracy remains imperfect. These are ordinary ki attacks, not an acquired named beam or signature technique."
+    },
+    {
+      "id": "ki-suppression",
+      "title": "Power suppression",
+      "summary": "Usually holds output near half during ordinary waking activity and familiar drills.",
+      "status": "Practised in training",
+      "details": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains."
     }
   ],
   "inventory": [
     {
       "id": "outfit",
       "title": "Black-and-burgundy outfit",
-      "summary": "The clothing worn on awakening.",
+      "summary": "Original clothing, repaired and fitted after the chamber year.",
       "status": "Owned",
       "facts": [
         {
@@ -122,14 +133,14 @@
           "value": "Wrap-front top, loose trousers, sash, wrist wraps and boots"
         }
       ],
-      "details": "Currently bloodstained from training, despite Zero’s injuries being healed. No protective rating, unusual material property or automatic clothing repair has been established."
+      "details": "Equipment services cleaned and repaired training damage, reinforced the worn sash and adjusted the fit for broader shoulders and arms. Original style and colours retained. No armour rating or power bonus gained."
     },
     {
       "id": "cape",
       "title": "Burgundy cape",
-      "summary": "Gold-coloured round fasteners; torn near the hem.",
+      "summary": "Burgundy cape with gold clasps; the tear from Nappa is repaired.",
       "status": "Owned",
-      "details": "Set aside with the scouter during Vegeta’s training and collected afterward. The hem remains torn; no repair or fresh fastening has been recorded."
+      "details": "Clean and fastened at Zero’s shoulders. Matching-fabric repair leaves a fine seam inside the formerly torn section and an even outer hem. Zero no longer wants the damage as a reminder of his first defeat."
     },
     {
       "id": "scouter",
@@ -150,7 +161,7 @@
           "value": "Regular self-checks"
         }
       ],
-      "details": "Rill obtained the first reading of 50. Zero regularly checks his own output by targeting his outstretched arm while wearing it. Set aside for gravity training and retrieved afterward; currently worn. Two Day 45 scans after final healing read 174. Communications, maximum range and upper measurement capacity remain untested."
+      "details": "Rill obtained the first reading of 50. Zero checks his own output by targeting his outstretched arm while wearing it. The final chamber check read 3,075 at full output and approximately 1,538 under suppression before returning to 3,075. Currently worn; communications, maximum range and upper measurement capacity remain untested."
     },
     {
       "id": "room-card",
@@ -180,7 +191,7 @@
           "value": "Dining hall"
         }
       ],
-      "details": "Housing and meals are Patrol provision, not cash income. No wage or personal balance has been established. Borrowed weights are facility equipment and the latest set was returned after Day 29. Vegeta supplied senzu for training recoveries: two on Day 30, twenty-four over Days 31–44 and two on Day 45. All twenty-eight were consumed; Zero has no personal stock."
+      "details": "Housing and meals are Patrol provision, not cash income. Borrowed weights were returned after Day 29. Twenty-eight senzu were consumed during training with Vegeta. All six assigned for the chamber were also used: three in the second quarter and three in the last. Total consumed: 34; none held or replenished. Four functional drones and supplied equipment stayed with the facility. Clothing repair was provided without a cash transaction."
     }
   ],
   "people": [
@@ -203,12 +214,12 @@
           "value": "Day 45 · Gravity training hall"
         }
       ],
-      "details": "Short, muscular, upright black hair and widow’s peak; retained brown tail, original white-and-gold Saiyan armour with extended shoulder and waist panels over a blue suit. Clipped commands, insults and imperious pride. He rescued Zero and later said his correction mission was complete without explaining it. Their partnership remains despite his temporary lower-risk solo roster. After Zero challenged him, he began punishing daily training at 50× gravity, providing senzu for severe injuries. Zero has not landed a hit on him. This does not establish a friendlier relationship. His exact age, numerical power and personal history remain unrevealed."
+      "details": "Short, muscular, upright black hair and widow’s peak; retained brown tail, original white-and-gold Saiyan armour with extended shoulder and waist panels over a blue suit. Clipped commands, insults and imperious pride. He rescued Zero and later said his correction mission was complete without explaining it. Their partnership remains despite his temporary lower-risk solo roster. After Zero challenged him, he began punishing daily training before the chamber visit at 50× gravity, providing senzu for severe injuries. Zero has not landed a hit on him. This does not establish a friendlier relationship. His exact age, numerical power and personal history remain unrevealed. His response to the chamber booking and Zero’s return has not been shown."
     },
     {
       "id": "krillin",
       "title": "Krillin",
-      "summary": "Time Patrol combat instructor and Zero’s first combat and ki teacher.",
+      "summary": "Combat instructor for Mr. Satan’s roster; Zero’s first combat and ki teacher.",
       "status": "Instructor",
       "facts": [
         {
@@ -217,10 +228,10 @@
         },
         {
           "label": "Last seen",
-          "value": "Day 45 evening · Practice hall, with Zero"
+          "value": "Day 47 · Equipment services, with Zero"
         }
       ],
-      "details": "Short, compact and muscular, bald with six forehead dots, orange gi, blue wristbands and calloused hands. Lively conversation, wry humour and practical corrections. He introduced Yamcha, supervised sparring and taught the first projected blasts. He works as a combat instructor, rather than an active field Patroller. Having finished instruction for the day, he notices Zero’s bloodstained clothes and asks whether he received a senzu before inviting him in. He has not been told the new 174 reading. His exact age, numerical power and family circumstances remain unrevealed."
+      "details": "Short, compact and muscular, bald with six forehead dots, orange gi, blue wristbands and calloused hands. Lively conversation, wry humour and practical corrections. He introduced Yamcha and taught Zero’s first projected blasts. He instructs Mr. Satan’s roster rather than serving as an active field Patroller. He helped arrange and prepare the chamber session, waited at its exit and accompanied Zero to repair his clothes. His latest question is “Better. Ready?” Zero has not reported the final power reading to him. His exact age, numerical power and family circumstances remain unrevealed."
     },
     {
       "id": "mr-satan",
@@ -238,10 +249,10 @@
         },
         {
           "label": "Last seen",
-          "value": "Day 8 · Courtyard awning; current whereabouts unconfirmed"
+          "value": "Day 45 evening · Dispatch office"
         }
       ],
-      "details": "Stocky, thick black moustache and large curly hair; burgundy martial outfit, white cape, conspicuous gold belt and dispatch headset. Booming, gravelly showmanship and grand claims accompany practical arrangements for escort, training, housing and meals. He authorised Vegeta’s temporary lower-risk solo roster. His exact age and alternate history are unknown."
+      "details": "Stocky, thick black moustache and large curly hair; burgundy martial outfit, white cape, conspicuous gold belt and dispatch headset. Booming, gravelly showmanship and grand claims accompany practical arrangements for escort, training, housing and meals. He authorised Vegeta’s temporary lower-risk solo roster. His exact age and alternate history are unknown. At dispatch he authorised the solo Chamber Three booking for Day 46 at 09:00 through Day 47 at 09:00, arranged preparation with Krillin and sent Vegeta a notification. No reply from Vegeta has been shown."
     },
     {
       "id": "chronoa",
@@ -272,7 +283,7 @@
     {
       "id": "nappa",
       "title": "Nappa",
-      "summary": "Attacked Zero outside Capsule Corp; overwhelmingly stronger.",
+      "summary": "Attacked Zero outside Capsule Corp and overwhelmingly outmatched him at arrival.",
       "status": "Hostile encounter",
       "details": "Huge, bald, black moustache, white-and-gold Saiyan armour, bare muscular arms and brown tail. Deep, rough voice; amused cruelty gave way to anger at Zero’s insults. Zero’s punches, clawing and biting attempts did not visibly injure him. Vegeta knocked him unconscious; he was breathing when last seen. His later whereabouts are unknown to Zero. Exact age unknown.",
       "facts": [
@@ -327,7 +338,7 @@
       "title": "Conton City",
       "summary": "Time Patrol hub where Zero was treated, assessed and housed.",
       "status": "Current city",
-      "details": "Recognised from prior game knowledge and identified by Rill. Zero has visited the ward, reception, training facilities, quarters and dining hall. The city’s local calendar date has not been confirmed."
+      "details": "Time Patrol hub recognised from prior game knowledge and identified by Rill. Zero has visited the ward, assessment and dispatch offices, training facilities, quarters, dining hall and equipment services. The current city date is 16 February, Age 854; chamber time is counted separately."
     },
     {
       "id": "courtyard",
@@ -341,7 +352,7 @@
       "title": "Room 214",
       "summary": "Assigned quarters and overnight recovery space.",
       "status": "Accommodation",
-      "details": "Single bed, desk, wardrobe, bathroom, clean towels, window, schedule terminal and a fridge with supplied cola. Zero slept here between training days; on Day 45 before dawn he confirmed 168 twice before leaving. The access card does not lift his escort restriction."
+      "details": "Single bed, desk, wardrobe, bathroom, clean towels, window, schedule terminal and a fridge with supplied cola. Zero slept here between training days; on Day 45 before dawn he confirmed 168 twice before leaving. The access card does not lift his escort restriction. Zero last slept here before meeting Krillin for chamber preparation on Day 46."
     },
     {
       "id": "dining-hall",
@@ -388,32 +399,53 @@
     {
       "id": "practice-hall",
       "title": "Practice hall",
-      "summary": "Ordinary practice hall where Krillin has just finished teaching.",
+      "summary": "Ordinary training hall where Zero asked Krillin about a chamber booking.",
+      "status": "Visited",
+      "details": "After Day 45 training with Vegeta, Zero found Krillin finishing instruction here. Their conversation led to the solo chamber booking; Zero is no longer in this hall."
+    },
+    {
+      "id": "dispatch-office",
+      "title": "Dispatch office",
+      "summary": "Mr. Satan’s scheduling and assignment desk.",
+      "status": "Visited",
+      "details": "Visited with Krillin to book the chamber. Mr. Satan arranged the session, supplies and preparation, and sent Vegeta notice."
+    },
+    {
+      "id": "chamber-three",
+      "title": "Hyperbolic Time Chamber · Three",
+      "summary": "One year of solo training completed during one day in Conton.",
+      "status": "Visit complete",
+      "details": "Booked 15 February at 09:00 to 16 February at 09:00, Age 854. At 365:1, the visit contained 365 subjective days, including initial rest and four training quarters. Independent gravity controls, a normal-gravity living area, recorded drills, four drones and finite food, medical and maintenance supplies supported the visit. All six senzu were used. Zero exited at checkout; no extension or new reservation."
+    },
+    {
+      "id": "equipment-services",
+      "title": "Equipment services",
+      "summary": "Automated clothing repairs and fitting adjustments near the training facilities.",
       "status": "Current location",
-      "details": "Reached after Day 45 training with Vegeta. Normal gravity; Krillin has noticed Zero’s bloodstained clothes and invited him in. No new exercise or spar has begun."
+      "details": "Krillin brought Zero here after the chamber. A repair station cleaned, mended and fitted the original outfit and cape, including the tear from Nappa. The temporary robe was left behind. Zero stands at the doorway with Krillin, dressed in the repaired clothes."
     }
   ],
   "projects": [
     {
       "id": "field-training",
       "title": "Qualify for field duty",
-      "summary": "Daily gravity training has increased power and loaded movement; field clearance remains outstanding.",
+      "summary": "A year of solo training is complete; field assessment and clearance remain outstanding.",
       "status": "In progress",
       "facts": [
         {
           "label": "Current result",
-          "value": "174 measured · Not field-cleared"
+          "value": "3,075 full output · Not field-cleared"
         },
         {
-          "label": "Training",
-          "value": "25× warm-ups; 50× sessions"
+          "label": "Completed training",
+          "value": "365 subjective days in Chamber Three"
         },
         {
           "label": "Immediate situation",
-          "value": "Speaking with Krillin after training"
+          "value": "With Krillin after clothing repairs"
         }
       ],
-      "details": "Zero can stand, move deliberately and use short combinations at 50× gravity. Fast turns, bracing under impact, flight and moving blast accuracy still need work. No named technique, transformation, mission assignment or qualification deadline has been established."
+      "details": "The chamber developed integrated combat, flight, blasts and suppression. Zero has not yet demonstrated this progress in a new live spar or field assessment. No mission, signature technique, transformation or qualification deadline has been assigned."
     },
     {
       "id": "partner-assignment",
@@ -430,7 +462,7 @@
           "value": "Patroller Vegeta"
         }
       ],
-      "details": "Vegeta was initially held from ordinary field assignments, then secured a temporary lower-risk solo roster with briefing compliance, active communications and escalation reporting. It ends when Zero qualifies for paired deployment. Since Day 30 he has trained Zero harshly each day; this does not cancel the waiver or imply a friendlier relationship. No particular future mission has been assigned."
+      "details": "Vegeta was initially held from ordinary field assignments, then secured a temporary lower-risk solo roster with briefing compliance, active communications and escalation reporting. It ends when Zero qualifies for paired deployment. From Day 30 through Day 45 he trained Zero harshly each day; this does not cancel the waiver or imply a friendlier relationship. No particular future mission has been assigned. The solo chamber year occupied one city day; his reaction to the result is pending."
     },
     {
       "id": "origin-review",
@@ -856,7 +888,103 @@
       "summary": "Another day of 25× preparation and 50× training ends with two senzu recoveries. Fully healed, Zero measures 174 twice and goes to find Krillin.",
       "details": "Scouter worn, cape collected and clothes bloodstained, Zero reaches an ordinary practice hall as Krillin finishes teaching. Krillin asks whether he received a senzu, then welcomes him in: “I’m finished here. What’s up?” Zero has not answered.",
       "status": "Recorded"
+    },
+    {
+      "id": "s053",
+      "date": "Day 45 · Evening",
+      "title": "A year in a day",
+      "summary": "Zero asks Krillin who handles a full-day Hyperbolic Time Chamber booking.",
+      "details": "Krillin explains the year-long interior duration, supplies and suitable programme, then asks whether Zero intends to go alone.",
+      "status": "Recorded"
+    },
+    {
+      "id": "s054",
+      "date": "Day 45 · Evening",
+      "title": "Going alone",
+      "summary": "Zero confirms that he plans to train alone.",
+      "details": "Krillin offers recorded drills and a flight check, then invites him to speak with Mr. Satan.",
+      "status": "Recorded"
+    },
+    {
+      "id": "s055",
+      "date": "Day 45 · Evening",
+      "title": "At dispatch",
+      "summary": "Zero follows Krillin to Mr. Satan’s dispatch office.",
+      "details": "Mr. Satan offers Chamber Three for the following morning; confirmation is pending.",
+      "status": "Recorded"
+    },
+    {
+      "id": "s056",
+      "date": "Day 45 · Evening",
+      "title": "Chamber Three reserved",
+      "summary": "Zero accepts the booking.",
+      "details": "The session runs from Day 46 at 09:00 to Day 47 at 09:00, with one year inside. Krillin will meet him at 08:00 to prepare. Supplies are arranged and Vegeta is notified; no reply is shown.",
+      "status": "Recorded"
+    },
+    {
+      "id": "s057",
+      "date": "Day 46 · 15 February, Age 854 · 09:00",
+      "title": "Ready at the threshold",
+      "summary": "After dinner and sleep, Zero meets Krillin and completes the chamber preparation.",
+      "details": "His morning reading remains 174. Flight work and recorded drills are reviewed; a year of provisions, six senzu, four drones and maintenance supplies are checked. Krillin explains the controls and appropriate starting loads. Zero is ready to enter.",
+      "status": "Recorded"
+    },
+    {
+      "id": "s058",
+      "date": "Day 46 · Chamber entry",
+      "title": "Behind the closed door",
+      "summary": "Zero thanks Krillin, enters and closes the door.",
+      "details": "Alone, he lets the fear and exhaustion surface. Memories of Nappa and the pressure of training have weighed on him. He crouches in the living area before beginning any exercise.",
+      "status": "Recorded"
+    },
+    {
+      "id": "s059",
+      "date": "Day 46 · Chamber day 3",
+      "title": "Time to breathe",
+      "summary": "Zero spends the first 48 hours sleeping, eating and slowing down.",
+      "details": "Privacy and extended time relieve some pressure. Fatigue eases; the nightmares have not yet entirely stopped. No training gain is awarded, and the rested reading remains 174. These days are part of the booked year.",
+      "status": "Recorded"
+    },
+    {
+      "id": "s060",
+      "date": "Day 46 · 15:00 outside · First quarter complete",
+      "title": "A steady foundation",
+      "summary": "Conditioning, martial drills and basic blast practice fill the first three months.",
+      "details": "Rested readings progress through 269 and 361 to 454. Ground drills reach 25× gravity and slow conditioning 60×. Footwork and ordinary shots improve; solitude suits him. All six senzu remain. Age: 26 years, 9 months.",
+      "status": "Recorded"
+    },
+    {
+      "id": "s061",
+      "date": "Day 46 · 21:00 outside · Second quarter complete",
+      "title": "Under fire",
+      "summary": "Zero enables drone weapons, increases intensity and experiments with suppression.",
+      "details": "Rested readings reach 588, 741 and 920. Ground drills reach 40× gravity and conditioning 100×. Lowering output works best while still and is harder during movement. Three senzu treat training injuries; three remain. Age: 27 years.",
+      "status": "Recorded"
+    },
+    {
+      "id": "s062",
+      "date": "Day 47 · 03:00 outside · Third quarter complete",
+      "title": "Taking the fight into the air",
+      "summary": "Zero practises aerial combat, compact punches, rotating kicks and faster, larger blasts.",
+      "details": "Drone weapons stay enabled at two lower difficulty levels to preserve senzu. Rested readings reach 1,117, 1,339 and 1,597. Aerial rounds reach 10× gravity, with tighter short volleys and improved flight control. No beans used this quarter. Age: 27 years, 3 months.",
+      "status": "Recorded"
+    },
+    {
+      "id": "s063",
+      "date": "Day 47 · 16 February, Age 854 · 09:00",
+      "title": "One year complete",
+      "summary": "The final quarter brings together movement, strikes, blasts and sustained suppression.",
+      "details": "Rested readings climb through 2,002 and 2,484 to 3,075. Full-output rounds reach 75× gravity on the ground and 25× in the air; slow conditioning reaches 150×. The last three senzu are used. A final test holds near 1,538 through walking and a combination, then returns to 3,075. Four drones are docked as checkout sounds. Age: 27 years, 6 months.",
+      "status": "Recorded"
+    },
+    {
+      "id": "s064",
+      "date": "Day 47 · About 09:40",
+      "title": "A clean start",
+      "summary": "Zero leaves the chamber, meets Krillin and has his original outfit and cape repaired.",
+      "details": "His build is visibly more muscular. The nightmares have stopped; remembering Nappa brings anger rather than panic. He no longer needs the torn cape as a reminder. Equipment services mends the damage and adjusts the fit without changing the style. At the doorway, Krillin asks, “Better. Ready?” No answer, destination or field clearance has followed.",
+      "status": "Recorded"
     }
   ],
-  "recordedThrough": "S052 · Story audit 9 October 2026"
+  "recordedThrough": "S064 · Story audit 10 October 2026"
 }
