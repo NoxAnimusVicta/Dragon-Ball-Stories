@@ -29,36 +29,15 @@
     "ageMonths": 6,
     "appearanceHistory": [
       {
-        "id": "arrival",
-        "name": "Arrival",
-        "caption": "Original portrait",
-        "portrait": "zero-history-arrival.jpg",
-        "portraitAlt": "Athletic Zero in his black outfit and burgundy cape, without a scouter. Capsule Corp illustration backdrop."
-      },
-      {
-        "id": "scouter",
-        "name": "Scouter recovered",
-        "caption": "Early training portrait",
-        "portrait": "zero-history-scouter.jpg",
-        "portraitAlt": "Athletic Zero wearing the recovered red scouter with his original black-and-burgundy clothing. Capsule Corp illustration backdrop."
-      },
-      {
-        "id": "refined",
-        "name": "Portrait refinement",
-        "caption": "Artwork revision",
-        "portrait": "zero-history-refined.jpg",
-        "portraitAlt": "Zero with refined angular anime features, red scouter and black-and-burgundy outfit before the chamber year. Capsule Corp illustration backdrop."
-      },
-      {
         "id": "iris",
-        "name": "Before the chamber",
-        "caption": "Iris artwork refinement",
+        "name": "Before Chamber",
+        "caption": "Earlier appearance",
         "portrait": "zero-history-iris.jpg",
         "portraitAlt": "Pre-chamber Zero with a green iris, red scouter, black outfit and burgundy cape. Capsule Corp illustration backdrop."
       },
       {
         "id": "post-chamber",
-        "name": "After the chamber",
+        "name": "After Chamber",
         "caption": "Current appearance",
         "portrait": "zero-portrait.jpg",
         "portraitAlt": "Zero after a year of chamber training: muscular human with auburn curls, beard, green iris and red scouter, in a black outfit and burgundy cape. Capsule Corp illustration backdrop."

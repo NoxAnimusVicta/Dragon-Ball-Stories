@@ -112,8 +112,21 @@
     const form = items[index], cycling = items.length > 1;
     const image = `<img class="portrait-image" width="853" height="1280" src="${escape(form.portrait)}" alt="${escape(form.alt)}">`;
     const control = history ? 'data-history-cycle' : 'data-form-cycle';
-    return `<section class="character-stage${form.portrait ? ' has-art' : ''}${cycling ? ' is-cycling' : ''}" aria-label="${history ? 'Appearance history' : 'Character portrait'}"><div class="aura-ring" aria-hidden="true"></div><div class="portrait">${form.portrait ? (cycling ? `<button class="art-button" ${control} aria-label="${escape(form.name)}. Show next ${history ? 'appearance' : 'unlocked form'}">${image}</button>` : image) : `<div class="portrait-placeholder"><div class="portrait-symbol">?</div><span>YOUR STORY AWAITS</span><p>Your portrait will appear<br>when your story begins.</p></div>`}</div><div class="stage-name">${escape(data.character.name)}</div><div class="stage-bottom"><span>${escape(history ? 'ART ARCHIVE' : data.character.race || 'RACE UNRECORDED')}</span><span class="portrait-form" aria-live="polite"><strong>${escape(form.name)}</strong>${history ? `<span>${escape(form.caption || '')}</span>` : index ? `<span>PL ${escape(compactPower(multiplyPower(data.character.battlePower,form.multiplier)))}</span>` : ''}${cycling ? `<small>${index+1} / ${items.length} · Tap to cycle</small>` : ''}</span></div></section>`;
+    return `<section class="character-stage${form.portrait ? ' has-art' : ''}${cycling ? ' is-cycling' : ''}" aria-label="${history ? 'Appearance history' : 'Character portrait'}"><div class="aura-ring" aria-hidden="true"></div><div class="portrait">${form.portrait ? (cycling ? `<button class="art-button" ${control} aria-label="${escape(form.name)}. Left side: previous; right side: next ${history ? 'appearance' : 'unlocked form'}. Keyboard: left/right arrows">${image}</button>` : image) : `<div class="portrait-placeholder"><div class="portrait-symbol">?</div><span>YOUR STORY AWAITS</span><p>Your portrait will appear<br>when your story begins.</p></div>`}</div><div class="stage-name">${escape(data.character.name)}</div><div class="stage-bottom"><span>${escape(history ? 'ART ARCHIVE' : data.character.race || 'RACE UNRECORDED')}</span><span class="portrait-form" aria-live="polite"><strong>${escape(form.name)}</strong>${history ? `<span>${escape(form.caption || '')}</span>` : index ? `<span>PL ${escape(compactPower(multiplyPower(data.character.battlePower,form.multiplier)))}</span>` : ''}${cycling ? `<small>${index+1} / ${items.length} · ← Previous · Next →</small>` : ''}</span></div></section>`;
   }
+  function cyclePortrait(direction) {
+    const count = portraitMode === 'history' ? portraitHistory().length : portraitForms().length;
+    if (portraitMode === 'history') selectedAppearance = (selectedAppearance + direction + count) % count;
+    else selectedForm = (selectedForm + direction + count) % count;
+    document.querySelector('.character-stage').outerHTML = artCard();
+    document.querySelector('[data-form-cycle],[data-history-cycle]')?.focus({preventScroll:true});
+    bindPortraitError();
+  }
+  document.addEventListener('keydown', event => {
+    if (!event.target.closest('[data-form-cycle],[data-history-cycle]') || !['ArrowLeft','ArrowRight'].includes(event.key)) return;
+    event.preventDefault();
+    cyclePortrait(event.key === 'ArrowLeft' ? -1 : 1);
+  });
   function showPowerDetails() {
     let dialog = $('power-dialog');
     if (!dialog) {
@@ -252,12 +265,12 @@
       document.querySelector(`[data-portrait-mode="${portraitMode}"]`)?.focus({preventScroll:true});
       bindPortraitError();
     }
-    if (event.target.closest('[data-form-cycle],[data-history-cycle]')) {
-      if (portraitMode === 'history') selectedAppearance = (selectedAppearance + 1) % portraitHistory().length;
-      else selectedForm = (selectedForm + 1) % portraitForms().length;
-      document.querySelector('.character-stage').outerHTML = artCard();
-      document.querySelector('[data-form-cycle],[data-history-cycle]')?.focus({preventScroll:true});
-      bindPortraitError();
+    const portraitButton = event.target.closest('[data-form-cycle],[data-history-cycle]');
+    if (portraitButton) {
+      const bounds = portraitButton.getBoundingClientRect();
+      // Keyboard activation has no pointer position; Enter/Space advance.
+      const direction = event.detail > 0 && event.clientX < bounds.left + bounds.width / 2 ? -1 : 1;
+      cyclePortrait(direction);
     }
   });
   $('search').addEventListener('input',search);
