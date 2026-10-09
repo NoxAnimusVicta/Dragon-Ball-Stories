@@ -25,6 +25,8 @@
   let searchIndex = [];
   let portraitUrl = null;
   let selectedForm = 0;
+  let portraitMode = 'forms';
+  let selectedAppearance = 0;
   const groups = ['abilities','inventory','accounts','people','places','projects','events'];
 
   function validate(d) {
@@ -92,12 +94,25 @@
     return [{id:'base', name:'Base', portrait:portraitUrl, alt:data.character.portraitAlt, multiplier:'1'},
       ...unlockedForms().filter(f => safePortrait(f.portrait)).map(f => ({...f, portrait:safePortrait(f.portrait), alt:f.portraitAlt || f.name}))];
   }
+  function portraitHistory() {
+    return (Array.isArray(data.character.appearanceHistory) ? data.character.appearanceHistory : [])
+      .filter(a => a && typeof a.name === 'string' && safePortrait(a.portrait))
+      .map(a => ({...a, portrait:safePortrait(a.portrait), alt:a.portraitAlt || a.name}));
+  }
+  function portraitPanel() {
+    const history = portraitHistory().length > 0;
+    return `<div class="portrait-panel">${history ? `<div class="portrait-modes" role="group" aria-label="Portrait collection"><button data-portrait-mode="forms" aria-pressed="${portraitMode==='forms'}">Forms</button><button data-portrait-mode="history" aria-pressed="${portraitMode==='history'}">Appearance history</button></div>` : ''}${artCard()}</div>`;
+  }
   function artCard() {
-    const forms = portraitForms();
-    if (selectedForm >= forms.length) selectedForm = 0;
-    const form = forms[selectedForm], cycling = forms.length > 1;
+    const history = portraitMode === 'history', items = history ? portraitHistory() : portraitForms();
+    if (!items.length) { portraitMode='forms'; return artCard(); }
+    if (selectedForm >= portraitForms().length) selectedForm = 0;
+    if (history && selectedAppearance >= items.length) selectedAppearance = 0;
+    const index = history ? selectedAppearance : selectedForm;
+    const form = items[index], cycling = items.length > 1;
     const image = `<img class="portrait-image" width="853" height="1280" src="${escape(form.portrait)}" alt="${escape(form.alt)}">`;
-    return `<section class="character-stage${portraitUrl ? ' has-art' : ''}" aria-label="Character portrait"><div class="aura-ring" aria-hidden="true"></div><div class="portrait">${portraitUrl ? (cycling ? `<button class="art-button" data-form-cycle aria-label="${escape(form.name)}. Show next unlocked form">${image}</button>` : image) : `<div class="portrait-placeholder"><div class="portrait-symbol">?</div><span>YOUR STORY AWAITS</span><p>Your portrait will appear<br>when your story begins.</p></div>`}</div><div class="stage-name">${escape(data.character.name)}</div><div class="stage-bottom"><span>${escape(data.character.race || 'RACE UNRECORDED')}</span><span class="portrait-form" aria-live="polite"><strong>${escape(form.name)}</strong>${selectedForm ? `<span>PL ${escape(compactPower(multiplyPower(data.character.battlePower,form.multiplier)))}</span>` : ''}${cycling ? `<small>${selectedForm+1} / ${forms.length} · Tap to cycle</small>` : ''}</span></div></section>`;
+    const control = history ? 'data-history-cycle' : 'data-form-cycle';
+    return `<section class="character-stage${form.portrait ? ' has-art' : ''}${cycling ? ' is-cycling' : ''}" aria-label="${history ? 'Appearance history' : 'Character portrait'}"><div class="aura-ring" aria-hidden="true"></div><div class="portrait">${form.portrait ? (cycling ? `<button class="art-button" ${control} aria-label="${escape(form.name)}. Show next ${history ? 'appearance' : 'unlocked form'}">${image}</button>` : image) : `<div class="portrait-placeholder"><div class="portrait-symbol">?</div><span>YOUR STORY AWAITS</span><p>Your portrait will appear<br>when your story begins.</p></div>`}</div><div class="stage-name">${escape(data.character.name)}</div><div class="stage-bottom"><span>${escape(history ? 'ART ARCHIVE' : data.character.race || 'RACE UNRECORDED')}</span><span class="portrait-form" aria-live="polite"><strong>${escape(form.name)}</strong>${history ? `<span>${escape(form.caption || '')}</span>` : index ? `<span>PL ${escape(compactPower(multiplyPower(data.character.battlePower,form.multiplier)))}</span>` : ''}${cycling ? `<small>${index+1} / ${items.length} · Tap to cycle</small>` : ''}</span></div></section>`;
   }
   function showPowerDetails() {
     let dialog = $('power-dialog');
@@ -133,7 +148,7 @@
   }
   function character() {
     const c=data.character;
-    return pageHeader('01','Character','Your place in the story.')+`<div class="character-layout">${artCard()}<div class="character-info"><div class="player-banner"><span class="eyebrow">${data.started ? 'YOUR PROTAGONIST' : 'CHARACTER SETUP'}</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'PATROL TRAINEE' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS${Number.isInteger(c.ageMonths) ? ` · ${escape(c.ageMonths)} MONTHS` : ''}</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div>${present(c.battlePower) ? `<section class="power-panel" aria-label="Current battle power"><div><button class="power-readout" data-power-details aria-haspopup="dialog" aria-label="Power level ${escape(exactPower(c.battlePower))}. View exact base and unlocked forms"><span class="eyebrow">POWER LEVEL</span><strong>${escape(compactPower(c.battlePower))}</strong><span class="power-details-link">View power details ↗</span></button><span>${escape(c.powerReading)}</span></div><div><span class="status-stamp">TRAINING / NO FIELD CLEARANCE</span><p>${escape(c.condition)}</p><a href="#abilities/power">View training progress →</a></div></section>` : ''}<section class="panel identity-panel"><h3>Identity & background</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Your discovered identity and appearance will be recorded here.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Your character record will grow with the story.')}${detail('Backstory',c.backstory,'No backstory has been recorded here.')}${detail('Arrival & new identity',c.arrival,'No arrival has been recorded yet.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'Known information and discovered limits will appear here.')}</div></section><p class="subtle-note">Your choices shape Zero. This record grows through play.</p></div></div>`;
+    return pageHeader('01','Character','Your place in the story.')+`<div class="character-layout">${portraitPanel()}<div class="character-info"><div class="player-banner"><span class="eyebrow">${data.started ? 'YOUR PROTAGONIST' : 'CHARACTER SETUP'}</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'PATROL TRAINEE' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS${Number.isInteger(c.ageMonths) ? ` · ${escape(c.ageMonths)} MONTHS` : ''}</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div>${present(c.battlePower) ? `<section class="power-panel" aria-label="Current battle power"><div><button class="power-readout" data-power-details aria-haspopup="dialog" aria-label="Power level ${escape(exactPower(c.battlePower))}. View exact base and unlocked forms"><span class="eyebrow">POWER LEVEL</span><strong>${escape(compactPower(c.battlePower))}</strong><span class="power-details-link">View power details ↗</span></button><span>${escape(c.powerReading)}</span></div><div><span class="status-stamp">TRAINING / NO FIELD CLEARANCE</span><p>${escape(c.condition)}</p><a href="#abilities/power">View training progress →</a></div></section>` : ''}<section class="panel identity-panel"><h3>Identity & background</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Your discovered identity and appearance will be recorded here.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Your character record will grow with the story.')}${detail('Backstory',c.backstory,'No backstory has been recorded here.')}${detail('Arrival & new identity',c.arrival,'No arrival has been recorded yet.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'Known information and discovered limits will appear here.')}</div></section><p class="subtle-note">Your choices shape Zero. This record grows through play.</p></div></div>`;
   }
   function abilities() {
     // Illustrated slots are opt-in for signature moves and transformations, not fundamentals.
@@ -229,12 +244,19 @@
       dialog.showModal();
     }
     if (event.target.closest('[data-power-details]')) showPowerDetails();
-    if (event.target.closest('[data-form-cycle]')) {
-      const forms = portraitForms();
-      selectedForm = (selectedForm + 1) % forms.length;
-      const stage = document.querySelector('.character-stage');
-      stage.outerHTML = artCard();
-      document.querySelector('[data-form-cycle]')?.focus({preventScroll:true});
+    const modeButton = event.target.closest('[data-portrait-mode]');
+    if (modeButton) {
+      portraitMode = modeButton.dataset.portraitMode === 'history' ? 'history' : 'forms';
+      selectedForm = 0;
+      document.querySelector('.portrait-panel').outerHTML = portraitPanel();
+      document.querySelector(`[data-portrait-mode="${portraitMode}"]`)?.focus({preventScroll:true});
+      bindPortraitError();
+    }
+    if (event.target.closest('[data-form-cycle],[data-history-cycle]')) {
+      if (portraitMode === 'history') selectedAppearance = (selectedAppearance + 1) % portraitHistory().length;
+      else selectedForm = (selectedForm + 1) % portraitForms().length;
+      document.querySelector('.character-stage').outerHTML = artCard();
+      document.querySelector('[data-form-cycle],[data-history-cycle]')?.focus({preventScroll:true});
       bindPortraitError();
     }
   });
