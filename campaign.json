@@ -33,16 +33,19 @@
         "name": "Before Chamber",
         "caption": "Earlier appearance",
         "portrait": "zero-history-iris.jpg",
-        "portraitAlt": "Pre-chamber Zero with a green iris, red scouter, black outfit and burgundy cape. Capsule Corp illustration backdrop."
+        "portraitAlt": "Pre-chamber Zero with a green iris, red scouter, black outfit and burgundy cape. Capsule Corp illustration backdrop.",
+        "date": "15 February, Age 854 · Day 46"
       },
       {
         "id": "post-chamber",
         "name": "After Chamber",
         "caption": "Current appearance",
         "portrait": "zero-portrait.jpg",
-        "portraitAlt": "Zero after a year of chamber training: muscular human with auburn curls, beard, green iris and red scouter, in a black outfit and burgundy cape. Capsule Corp illustration backdrop."
+        "portraitAlt": "Zero after a year of chamber training: muscular human with auburn curls, beard, green iris and red scouter, in a black outfit and burgundy cape. Capsule Corp illustration backdrop.",
+        "date": "16 February, Age 854 · Day 47"
       }
-    ]
+    ],
+    "portraitDate": "16 February, Age 854 · Day 47"
   },
   "story": {
     "era": "Conton City · Age 854",
