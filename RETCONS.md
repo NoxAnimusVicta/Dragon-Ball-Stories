@@ -1,10 +1,11 @@
 # Corrections and operative continuity
 
-Reviewed 11 October 2026 through S095. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
+Reviewed 11 October 2026 through S098. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
 
 | Record | Effective point | Correction |
 | --- | --- | --- |
-| Post-fight combat growth | S095 current assessment, no new scene | Zero3,100; Uncontrolled46,500 and untested channel31,000. Vegeta3,015,000 base /30,150,000 Wrathful orGreatApe. Modest combat adaptation; no scan, healing reward or changed historical readings. |
+| Vessel adaptation | Recovered state by S095; accepted after S098 | One20% increase on the already reconciled3,100 gives3,720. Current Uncontrolled55,800; first full Sealed Channel37,200. Historical Nappa-fight3,075/46,125 unchanged; no new scan or repeat award for the channel test. |
+| Post-fight combat growth | S095 current assessment, no new scene | The ordinary combat component raised Zero to3,100; its then-calculated46,500/31,000 form totals are superseded by the recovered-state correction above. Vegeta3,015,000 base /30,150,000 Wrathful orGreatApe. Modest combat adaptation; no scan, healing reward or changed historical readings. |
 | 11 October reconciliation | Publication through S095 | First assessment/mission, outbreak, containment, healing and pending channel test recorded. Initial publication retained3,075,46,125 and30,750; current capacities are superseded by the post-fight correction above. |
 | NPC progression | Day47 pre-mission calibration | Vegeta3,000,000 base and30,000,000 Wrathful/GreatApe supersede stale current2m/20m; initial values remain historical. TL782 family and NPC power references are explicitly OOC. |
 | S070 | Assessment ending | Accepted ending grants supervised field participation; rejected anger/pride lecture and renewed attack are withdrawn. |

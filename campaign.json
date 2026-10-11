@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-11-S095-combat-growth",
+  "revision": "2026-10-11-S098-vessel-adaptation",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "After the first mission",
@@ -15,17 +15,17 @@
     "portraitAlt": "Zero after a year of chamber training: muscular human with auburn curls, beard, green iris and red scouter, in a black outfit and burgundy cape. Capsule Corp illustration backdrop.",
     "race": "Human",
     "origin": "From a world where Dragon Ball is fiction. The cause of the crossing is still unknown.",
-    "appearance": "Muscular post-chamber build, long curly auburn hair, full auburn beard and green iris. Black-and-burgundy outfit with matching cape, boots and recovered red scouter. Clothing and equipment carry new mission damage. A permanent black circle with four inward-curving hooks marks the upper abdomen below the sternum. The portrait remains a standard-outfit reference, not a record of current damage.",
+    "appearance": "Muscular post-chamber build, long curly auburn hair, full auburn beard and normally green irises. Pale violet aura and red irises while Sealed Channel is active; no other transformation changes. Black-and-burgundy outfit with matching cape, boots and recovered red scouter. Clothing and equipment carry new mission damage. A permanent black circle with four inward-curving hooks marks the upper abdomen below the sternum. The portrait remains a standard-outfit reference, not a record of current damage.",
     "personality": "Expressed through your choices and dialogue.",
     "backstory": "Familiar with Dragon Ball through anime, manga, films and games before the crossing. No further personal background is recorded.",
     "arrival": "Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness.",
     "motivation": "Develop controlled strength and continue supervised Patrol work.",
     "knowledge": "Retains referential knowledge of Z, Super, the films, manga, GT and the first two Xenoverse main stories. Chronoa confirmed that the two Xenoverse stories correspond to this Patrol’s past, with distinct hero partners; the second occurred about two hub years ago. This particular Vegeta’s home history remains unknown. On his first paired mission he encountered Nappa and Turles in TL-218. He remembers losing control of his body; Chronoa identified the attachment as Dark Factor and explained the seal’s failure conditions. Its identity and the cause of the crossing remain unknown.",
-    "limitations": "No independent timeline access or rescinded city escort restriction. Uncontrolled power has manifested but is not voluntarily mastered. Sealed Channel is untested. No named attack, stable ki blade or precise ki-sensing mastery.",
-    "battlePower": 3100,
-    "powerReading": "OOC post-fight assessment · Last measured base 3,075 · No new scan; form totals are calculations",
+    "limitations": "No independent timeline access or rescinded city escort restriction. Uncontrolled is not voluntarily mastered. Sealed Channel has reached full output briefly, but maintaining it is difficult; no sustained mastery or combat test. No named attack, stable ki blade or precise ki-sensing mastery.",
+    "battlePower": 3720,
+    "powerReading": "OOC recovered-base assessment · Last measured base 3,075 · No new scan; form totals are calculations",
     "role": "Supervised Time Patrol trainee",
-    "condition": "Senzu healed battle injuries and physical fatigue. All forms inactive; seal intact. Clothing remains battle-damaged. Cape and scouter rest on the hall bench; no personal senzu held.",
+    "condition": "Sealed Channel active; conscious and in control, with rapidly rising exertional strain after roughly thirty seconds at full output. Seal intact. Prior battle injuries healed; clothing still battle-damaged. Cape and scouter are on the hall bench; no personal senzu held.",
     "ageMonths": 6,
     "appearanceHistory": [
       {
@@ -63,23 +63,25 @@
         "name": "Sealed Channel",
         "unlocked": true,
         "multiplier": 10,
-        "date": "16 February, Age 854 · Day 47 · Seal completed",
-        "status": "Untested · Calculated ceiling"
+        "date": "16 February, Age 854 · Day 47 · First full manifestation",
+        "status": "First full manifestation · Briefly sustained · Not mastered",
+        "portrait": "zero-sealed-channel.jpg",
+        "portraitAlt": "Zero with red irises and a pale violet aura, his ordinary auburn hair lifted by the power-up. Black outfit, burgundy cape and red scouter are illustrative standard equipment."
       }
     ]
   },
   "story": {
     "era": "Conton City · Age 854",
-    "date": "Day 47 · 16 February, Age 854 · 11:50",
+    "date": "Day 47 · 16 February, Age 854 · 11:53",
     "location": "Conton City · Training hall",
-    "situation": "The first paired mission ended with the supply operation dismantled and Turles and Nappa escaping. After the uncontrolled outbreak, Chronoa sealed the Dark Factor. Zero is healed; his first supervised channel test is pending at normal gravity.",
-    "pendingChoice": "Chronoa has made the seal’s access point perceptible as warmth and withdrawn her hand. With Krillin watching, Zero can attempt to draw a little into his own ki. No channel activation or new measurement has occurred."
+    "situation": "After a successful small draw and voluntary release, Zero has reached full Sealed Channel under Chronoa and Krillin’s supervision at normal gravity. He remains conscious and in control, but strain is rising quickly.",
+    "pendingChoice": "Krillin has asked Zero to bring the output down. The channel is still active; Zero’s response is pending."
   },
   "abilities": [
     {
       "id": "power",
-      "title": "Battle power · 3,100",
-      "summary": "Modest combat growth after the first mission; the new base has not been scanned.",
+      "title": "Battle power · 3,720",
+      "summary": "Recovered base after the first mission, including the accepted vessel-adaptation increase; not yet scanned.",
       "status": "OOC assessment",
       "facts": [
         {
@@ -92,18 +94,18 @@
         },
         {
           "label": "Current base · OOC",
-          "value": "3,100 · Post-fight assessment"
+          "value": "3,720 · Recovered-base assessment"
         },
         {
           "label": "Half-output target · OOC",
-          "value": "1,550 calculated · Last suppression check approximately 1,538"
+          "value": "1,860 calculated · Last suppression check approximately 1,538"
         },
         {
           "label": "Change since arrival",
-          "value": "+3,050 · 62 times the initial reading"
+          "value": "+3,670 · 74.4 times the initial reading"
         }
       ],
-      "details": "Rested readings reached 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. Rested 85 was confirmed on Day 30 before Vegeta’s first session; after that day’s training and healing, two scans read 89. Continued training reached 124 at the end of Day 37 and 168 at the end of Day 44. Overnight rest confirmed the same 168 on Day 45; that day’s training increased it to 174, confirmed twice after the final senzu. Healing restores available output; it is not a separate human power boost. Field readiness was assessed separately after the chamber. The quarterly rested endpoints were 454, 920, 1,597 and 3,075. The final full reading returned to 3,075 after a suppression check near 1,538. OOC: the completed mission adds a modest combat gain to 3,100. This reflects adaptation during fighting, not healing, the seal or an injury reward. There has been no later scan; the earlier readings remain historical."
+      "details": "Rested readings reached 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. Rested 85 was confirmed on Day 30 before Vegeta’s first session; after that day’s training and healing, two scans read 89. Continued training reached 124 at the end of Day 37 and 168 at the end of Day 44. Overnight rest confirmed the same 168 on Day 45; that day’s training increased it to 174, confirmed twice after the final senzu. Healing restores available output; it is not a separate human power boost. Field readiness was assessed separately after the chamber. The quarterly rested endpoints were 454, 920, 1,597 and 3,075. The final full reading returned to 3,075 after a suppression check near 1,538. OOC: the completed mission adds a modest combat gain to 3,100. This reflects adaptation during fighting, not healing, the seal or an injury reward. There has been no later scan; the earlier readings remain historical. The accepted OOC correction adds one 20% vessel-adaptation increase to that already reconciled 3,100, giving 3,720 after recovery. It does not change the Nappa fight’s original output or grant another bonus for the current channel test."
     },
     {
       "id": "combat-basics",
@@ -117,7 +119,7 @@
       "title": "Ki control",
       "summary": "Supports loaded movement, flight and repeated blasts while managing available output.",
       "status": "Developing control",
-      "details": "Combined practice improved bracing, energy gathering and switching between movement and attacks. Zero can deliberately lower and restore his output, but control still takes work under unfamiliar pressure. Precise ki sensing and effortless full-strength defence while suppressed are not established. During the outbreak Zero briefly felt two enormous nearby signatures; that does not establish precise or general-purpose sensing."
+      "details": "Combined practice improved bracing, energy gathering and switching between movement and attacks. Zero can deliberately lower and restore his output, but control still takes work under unfamiliar pressure. Precise ki sensing and effortless full-strength defence while suppressed are not established. During the outbreak Zero briefly felt two enormous nearby signatures; that does not establish precise or general-purpose sensing. In the supervised seal test, Zero drew a small amount and closed it without disrupting his own ki, then reached full Sealed Channel briefly. Sustaining the stronger flow rapidly became difficult."
     },
     {
       "id": "flight",
@@ -175,7 +177,7 @@
       "facts": [
         {
           "label": "Campaign factor · OOC",
-          "value": "×15 · 46,500 at the current base"
+          "value": "×15 · 55,800 at the current base"
         },
         {
           "label": "Current state",
@@ -187,20 +189,30 @@
     {
       "id": "sealed-channel-form",
       "title": "Sealed Channel",
-      "summary": "Chronoa’s seal permits a restricted flow of the contained power. The first test is pending.",
-      "status": "Available · Untested",
+      "summary": "A controlled flow through Chronoa’s seal, first brought to full output in supervised practice.",
+      "status": "Active · First full manifestation",
       "abilityType": "transformation",
       "facts": [
         {
           "label": "Campaign ceiling · OOC",
-          "value": "×10 · 31,000 at the current base"
+          "value": "×10 · 37,200 peak in the first full test; unscanned"
         },
         {
           "label": "Seal",
           "value": "Black circle and four inward hooks beneath the sternum"
+        },
+        {
+          "label": "Appearance",
+          "value": "Pale violet aura and red irises; ordinary physique and hair colour"
+        },
+        {
+          "label": "First-use endurance",
+          "value": "Roughly thirty seconds at full output so far; strain rising rapidly"
         }
       ],
-      "details": "Chronoa has shown Zero where to begin, but he has not activated the channel or demonstrated its ceiling. If he loses consciousness or approaches death while channeling, the Uncontrolled state takes over. Its ×15 replaces ×10 rather than stacking with it. With the channel closed, ordinary sleep is safe. The seal contains the attachment; it has not removed it or increased his base strength. No channel artwork has yet been supplied."
+      "details": "A small voluntary draw and release succeeded before Zero gradually increased the flow to full output. The first full manifestation produced gusts and shockwaves without damaging the hall. He remains conscious and in control, but sweat, deeper breathing, trembling legs and an uneven aura show how difficult it is to sustain. Krillin has asked him to reduce the flow; he has not done so yet. If Zero loses consciousness or approaches death while channeling, Uncontrolled takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; it has not removed it. The supplied art illustrates the form, not a new location, clothing repair or decision to put his cape and scouter back on.",
+      "artwork": "zero-sealed-channel.jpg",
+      "artworkAlt": "Zero with red irises and a pale violet aura, his ordinary auburn hair lifted by the power-up. Black outfit, burgundy cape and red scouter are illustrative standard equipment."
     }
   ],
   "inventory": [
@@ -660,9 +672,9 @@
     {
       "id": "channel-test-hall",
       "title": "Supervised channel-test hall",
-      "summary": "Nearby ordinary Conton training hall; current location.",
+      "summary": "Normal-gravity hall for the first supervised Sealed Channel trial.",
       "status": "Current",
-      "details": "Normal 1G gravity and drones off. Chronoa and Krillin supervise. Cape and scouter are on the bench beside the door. This is not a new chamber booking or evidence that the channel has been activated."
+      "details": "Chronoa and Krillin supervise at 1× gravity with the drones off. A small draw and release succeeded; Zero is now holding the first full manifestation with rapidly rising strain. The hall has not been damaged. Cape and scouter remain on the bench."
     }
   ],
   "projects": [
@@ -674,11 +686,11 @@
       "facts": [
         {
           "label": "Base",
-          "value": "3,100 · OOC post-fight assessment; no new scan"
+          "value": "3,720 · OOC recovered-base assessment; no new scan"
         },
         {
           "label": "Current work",
-          "value": "First sealed-channel test pending"
+          "value": "First full Sealed Channel trial; control and endurance still developing"
         }
       ],
       "details": "Vegeta accepted Zero for lesser opponents after the assessment. The first mission demonstrated effective basic attacks but also dangerous limitations against Nappa. Supervised trainee status continues; no independent travel clearance is granted."
@@ -710,9 +722,9 @@
     {
       "id": "dark-factor-containment",
       "title": "Dark Factor containment",
-      "summary": "Seal completed; safe voluntary channeling remains to be tested.",
-      "status": "First attempt pending",
-      "details": "Chronoa is investigating safe removal while supervising the initial attempt with Krillin. The attachment’s identity remains unknown to Zero. No removal, full channel mastery or further transformation has occurred."
+      "summary": "Seal intact through a small draw, voluntary release and first full manifestation.",
+      "status": "Supervised trial in progress",
+      "details": "Chronoa is investigating safe removal while supervising the channel with Krillin. Zero can open and close a small flow and has reached full output briefly; holding it is rapidly tiring him. The attachment’s identity remains unknown to Zero. No removal, sustained mastery or further transformation has occurred."
     }
   ],
   "events": [
@@ -1475,7 +1487,31 @@
       "status": "Recorded",
       "date": "Day 47 · 11:50",
       "details": "Cape and scouter are on the bench. Chronoa makes the seal’s access point perceptible, then withdraws her hand. Zero’s first actual channel attempt remains pending."
+    },
+    {
+      "id": "s096",
+      "title": "A first controlled draw",
+      "summary": "Zero draws a small flow through the seal while keeping control of his body.",
+      "status": "Recorded",
+      "date": "Day 47 · 11:51",
+      "details": "A faint violet-edged aura appears. Chronoa confirms the seal is holding; Krillin asks Zero to turn the flow off before trying more."
+    },
+    {
+      "id": "s097",
+      "title": "Closing the channel",
+      "summary": "Zero stops the borrowed flow without disturbing his own ki.",
+      "status": "Recorded",
+      "date": "Day 47 · 11:52",
+      "details": "The aura fades and the seal remains intact. Chronoa authorises a gradual stronger draw; no sparring begins."
+    },
+    {
+      "id": "s098",
+      "title": "Full Sealed Channel",
+      "summary": "Zero reaches full Sealed Channel with a pale violet aura and red irises.",
+      "status": "Recorded",
+      "date": "Day 47 · 11:53",
+      "details": "The onset sends shockwaves and gusts across the undamaged hall. Roughly thirty seconds into full output, strain rises quickly. Zero remains conscious and in control; Krillin asks him to reduce the flow. The form is still active. OOC corrected peak: ×10, 37,200; no scan."
     }
   ],
-  "recordedThrough": "S095 · Post-fight combat growth correction · 11 October 2026"
+  "recordedThrough": "S098 · First full Sealed Channel and accepted power correction · 11 October 2026"
 }
