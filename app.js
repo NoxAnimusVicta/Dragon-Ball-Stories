@@ -84,12 +84,29 @@
     }
     return exactPower(power);
   }
+  // Presentation order is independent of the chronological acquisition records.
+  // Assign formGroup to future families; groups retain their first-listed order.
+  function orderedForms(forms) {
+    const families = new Map();
+    for (const form of forms) {
+      const family = form.formGroup || 'default';
+      if (!families.has(family)) families.set(family, []);
+      families.get(family).push(form);
+    }
+    return [...families.values()].flatMap(items => items.slice().sort((a,b) => {
+      const x = decimal(a.multiplier), y = decimal(b.multiplier);
+      if (!x || !y) return x ? -1 : y ? 1 : 0;
+      const left = x.digits * 10n ** BigInt(y.scale);
+      const right = y.digits * 10n ** BigInt(x.scale);
+      return left < right ? -1 : left > right ? 1 : 0;
+    }));
+  }
   function unlockedForms() {
     const base = data.character.battlePower;
-    return (Array.isArray(data.character.forms) ? data.character.forms : []).filter(f =>
+    return orderedForms((Array.isArray(data.character.forms) ? data.character.forms : []).filter(f =>
       f && f.unlocked === true && typeof f.id === 'string' && typeof f.name === 'string' &&
       decimal(f.multiplier)?.digits > 0n && decimal(base) && multiplyPower(base,f.multiplier) !== null
-    );
+    ));
   }
   function portraitForms() {
     return [{id:'base', name:'Base', portrait:portraitUrl, alt:data.character.portraitAlt, multiplier:'1', date:data.character.portraitDate},
@@ -158,7 +175,7 @@
     const art = record.art || {};
     if (kind === 'places') return {images:artItems(art.images)};
     const appearance = artItems(art.appearance);
-    const forms = record.canTransform === true ? artItems(art.forms).filter(a => a.unlocked === true) : [];
+    const forms = record.canTransform === true ? orderedForms(artItems(art.forms).filter(a => a.unlocked === true)) : [];
     return {appearance, ...(record.canTransform === true && (appearance.length || forms.length) ?
       {forms:appearance.length ? [{...appearance.at(-1),name:'Base',multiplier:1}, ...forms] : forms} : {})};
   }
