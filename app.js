@@ -264,6 +264,7 @@
   function render(focus = false) {
     let [route, recordId] = location.hash.slice(1).split('/');
     if (!Object.hasOwn(pages, route)) route = 'overview';
+    if (route === 'world' && recordId === 'channel-test-hall') recordId = 'practice-hall';
     document.body.dataset.page = route;
     $('main').innerHTML = pages[route]();
     $('main').classList.remove('screen-enter');
@@ -283,7 +284,7 @@
     const worldCategory = route === 'world' && ['people','places','projects'].includes(recordId);
     if (route === 'world') {
       document.querySelectorAll('.world-groups > section').forEach(section => {
-        section.hidden = worldCategory && section.id !== 'record-'+recordId;
+        if (worldCategory && section.id !== 'record-'+recordId) section.remove();
       });
       document.querySelectorAll('[aria-label="World categories"] a').forEach(link => {
         if (link.hash === (worldCategory ? '#world/'+recordId : '#world')) link.setAttribute('aria-current','page');

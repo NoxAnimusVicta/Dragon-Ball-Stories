@@ -23,7 +23,7 @@
     "knowledge": "Retains referential knowledge of Z, Super, the films, manga, GT and the first two Xenoverse main stories. Chronoa confirmed that the two Xenoverse stories correspond to this Patrol’s past, with distinct hero partners; the second occurred about two hub years ago. This particular Vegeta’s home history remains unknown. On his first paired mission he encountered Nappa and Turles in TL-218. He remembers losing control of his body; Chronoa identified the attachment as Dark Factor and explained the seal’s failure conditions. Its identity and the cause of the crossing remain unknown.",
     "limitations": "No independent timeline access or rescinded city escort restriction. Uncontrolled Dark Factor is not voluntarily mastered. Dark Factor Sealed Channel has reached full output briefly, but maintaining it is difficult; no sustained mastery or combat test. No named attack, stable ki blade or precise ki-sensing mastery.",
     "battlePower": 3720,
-    "powerReading": "OOC recovered-base assessment · Last measured base 3,075 · No new scan; form totals are calculations",
+    "powerReading": "Recovered-base assessment · Last measured base 3,075 · No new scan; form totals are calculations",
     "role": "Supervised Time Patrol trainee",
     "condition": "Dark Factor Sealed Channel active; conscious and in control, with rapidly rising exertional strain after roughly thirty seconds at full output. Seal intact. Prior battle injuries healed; clothing still battle-damaged. Cape and scouter are on the hall bench; no personal senzu held.",
     "ageMonths": 6,
@@ -82,7 +82,7 @@
       "id": "power",
       "title": "Battle power · 3,720",
       "summary": "Recovered base after the first mission, including the accepted vessel-adaptation increase; not yet scanned.",
-      "status": "OOC assessment",
+      "status": "Assessment",
       "facts": [
         {
           "label": "First reading",
@@ -93,11 +93,11 @@
           "value": "3,075 · End of chamber year"
         },
         {
-          "label": "Current base · OOC",
+          "label": "Current base",
           "value": "3,720 · Recovered-base assessment"
         },
         {
-          "label": "Half-output target · OOC",
+          "label": "Half-output target",
           "value": "1,860 calculated · Last suppression check approximately 1,538"
         },
         {
@@ -105,7 +105,7 @@
           "value": "+3,670 · 74.4 times the initial reading"
         }
       ],
-      "details": "Rested readings reached 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. Rested 85 was confirmed on Day 30 before Vegeta’s first session; after that day’s training and healing, two scans read 89. Continued training reached 124 at the end of Day 37 and 168 at the end of Day 44. Overnight rest confirmed the same 168 on Day 45; that day’s training increased it to 174, confirmed twice after the final senzu. Healing restores available output; it is not a separate human power boost. Field readiness was assessed separately after the chamber. The quarterly rested endpoints were 454, 920, 1,597 and 3,075. The final full reading returned to 3,075 after a suppression check near 1,538. OOC: the completed mission adds a modest combat gain to 3,100. This reflects adaptation during fighting, not healing, the seal or an injury reward. There has been no later scan; the earlier readings remain historical. The accepted OOC correction adds one 20% vessel-adaptation increase to that already reconciled 3,100, giving 3,720 after recovery. It does not change the Nappa fight’s original output or grant another bonus for the current channel test."
+      "details": "Rested readings reached 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. Rested 85 was confirmed on Day 30 before Vegeta’s first session; after that day’s training and healing, two scans read 89. Continued training reached 124 at the end of Day 37 and 168 at the end of Day 44. Overnight rest confirmed the same 168 on Day 45; that day’s training increased it to 174, confirmed twice after the final senzu. Healing restores available output; it is not a separate human power boost. Field readiness was assessed separately after the chamber. The quarterly rested endpoints were 454, 920, 1,597 and 3,075. The final full reading returned to 3,075 after a suppression check near 1,538. The completed mission adds a modest combat gain to 3,100. This reflects adaptation during fighting, not healing, the seal or an injury reward. There has been no later scan; the earlier readings remain historical. The accepted correction adds one 20% vessel-adaptation increase to that already reconciled 3,100, giving 3,720 after recovery. It does not change the Nappa fight’s original output or grant another bonus for the current channel test."
     },
     {
       "id": "combat-basics",
@@ -176,7 +176,7 @@
       "artworkAlt": "Zero enclosed in a slightly enlarged black ki mantle with violet flames, horn-like projections and pale claws.",
       "facts": [
         {
-          "label": "Campaign factor · OOC",
+          "label": "Campaign factor",
           "value": "×15 · 55,800 at the current base"
         },
         {
@@ -194,7 +194,7 @@
       "abilityType": "transformation",
       "facts": [
         {
-          "label": "Campaign ceiling · OOC",
+          "label": "Campaign ceiling",
           "value": "×10 · 37,200 peak in the first full test; unscanned"
         },
         {
@@ -303,15 +303,15 @@
       "status": "Partner",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "TL-398 · Frieza on Earth"
         },
         {
-          "label": "Current base · OOC",
+          "label": "Current base",
           "value": "3,015,000 · Post-fight campaign assessment"
         },
         {
-          "label": "Wrathful / Great Ape · OOC",
+          "label": "Wrathful / Great Ape",
           "value": "×10 each · 30,150,000; separate forms"
         },
         {
@@ -319,7 +319,7 @@
           "value": "Day 47 · Leaving the medical ward"
         }
       ],
-      "details": "Original white-and-gold Saiyan armour with extended shoulder and waist panels over a blue suit; retained tail. Proud, impatient and contemptuous, with early-Z temperament. He allowed harmless hits during assessment and accepted Zero’s usefulness against lesser fighters. During the mission Turles intercepted him; he later broke away to stop Zero’s rampage with one strike. Last seen leaving the ward, angry that the enemies escaped, with a bloodied lip and cracked shoulder plate. No later repair or healing is established. OOC: elapsed training and service raised his initial 2,000,000 base to a pre-mission 3,000,000. Combat adaptation during the mission adds 15,000, bringing his assessed base to 3,015,000. This is no new scan, healing award or increased transformation multiplier. Zero saw his gold-eyed form but has not learned its name in dialogue.",
+      "details": "Original white-and-gold Saiyan armour with extended shoulder and waist panels over a blue suit; retained tail. Proud, impatient and contemptuous, with early-Z temperament. He allowed harmless hits during assessment and accepted Zero’s usefulness against lesser fighters. During the mission Turles intercepted him; he later broke away to stop Zero’s rampage with one strike. Last seen leaving the ward, angry that the enemies escaped, with a bloodied lip and cracked shoulder plate. No later repair or healing is established. Elapsed training and service raised his initial 2,000,000 base to a pre-mission 3,000,000. Combat adaptation during the mission adds 15,000, bringing his assessed base to 3,015,000. This is no new scan, healing award or increased transformation multiplier. Zero saw his gold-eyed form but has not learned its name in dialogue.",
       "canTransform": true,
       "art": {
         "appearance": [
@@ -350,7 +350,7 @@
       "status": "Instructor",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "TL-657 · Post-Tournament of Power"
         },
         {
@@ -358,7 +358,7 @@
           "value": "Day 47 · Training hall with Zero and Chronoa"
         },
         {
-          "label": "Power benchmark · OOC",
+          "label": "Power benchmark",
           "value": "100,000,000 · Campaign estimate"
         }
       ],
@@ -371,15 +371,15 @@
       "status": "Supervisor",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "TL-782 · Post-GT family branch"
         },
         {
-          "label": "Age / base · OOC",
+          "label": "Age / base",
           "value": "67 years · 10, campaign benchmark"
         },
         {
-          "label": "Service · OOC",
+          "label": "Service",
           "value": "Joined with family two Conton years ago"
         },
         {
@@ -387,7 +387,7 @@
           "value": "Temporal Super Stars dispatcher"
         }
       ],
-      "details": "Boisterous showman with a thick moustache, curly hair, burgundy outfit, white cape, championship belt and dispatch headset. He briefed and oversaw the TL-218 supply investigation and issued Zero’s communicator. OOC family background: Pan is his actual granddaughter; he joined Conton with Pan, Gohan and Videl on 16 February Age 852. His authority comes from dispatch, not high combat power. This family history and exact age are reference information, not a conversation Zero has had."
+      "details": "Boisterous showman with a thick moustache, curly hair, burgundy outfit, white cape, championship belt and dispatch headset. He briefed and oversaw the TL-218 supply investigation and issued Zero’s communicator. Family background: Pan is his actual granddaughter; he joined Conton with Pan, Gohan and Videl on 16 February Age 852. His authority comes from dispatch, not high combat power. This family history and exact age are reference information, not a conversation Zero has had."
     },
     {
       "id": "chronoa",
@@ -397,7 +397,7 @@
       "details": "Small, pink-skinned, pointed ears, swept orange hair, gold earrings and purple-and-gold clothing. Brisk, curious and authoritative. Her post-outbreak examination identified Dark Factor that was undetected while dormant. She sealed it while Zero was awake, leaving the four-hook abdominal mark, and explained the danger of losing consciousness or nearing death with the channel open. She is investigating whether safe removal is possible; no answer or deadline is established. Present for the first test alongside Krillin.",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "Time Patrol hub"
         }
       ]
@@ -410,7 +410,7 @@
       "details": "Appears in her forties, brown skin, square face, close-cropped black hair grey at the temples, white medical jacket over teal clothing. Low, brisk voice and concrete clinical answers. Reported completed treatment and clear scans, heard Zero’s account, forwarded it to coordination and measured his power at 50. Last seen in the medical ward; present whereabouts unknown.",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "Unassigned"
         }
       ]
@@ -423,7 +423,7 @@
       "details": "Massive bald Saiyan with black moustache, white-and-gold armour, bare arms and retained tail. Cruel, rough-voiced and contemptuous. Zero’s scouter read 6,000 before the fight. His trained tail resisted the disabling grip. Zero badly injured his right eye with a concentrated fingertip strike, then the uncontrolled eruption reversed the fight. Nappa ate a fruit and grew stronger but was overwhelmed. Last personally seen motionless below; his escape was subsequently reported. Present condition and post-recovery power have not been measured by Zero.",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "TL-218"
         },
         {
@@ -431,7 +431,7 @@
           "value": "6,000 · Before rematch"
         },
         {
-          "label": "Fruit state · OOC",
+          "label": "Fruit state",
           "value": "×5 · 30,000 ceiling during that fight"
         },
         {
@@ -447,7 +447,7 @@
       "status": "Training partner",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "TL-503 · A world without Goku"
         },
         {
@@ -468,7 +468,7 @@
       "status": "Technical contact",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "TL-398 · Frieza on Earth"
         },
         {
@@ -485,19 +485,19 @@
       "status": "Escaped enemy",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "TL-864"
         },
         {
-          "label": "Age · OOC",
+          "label": "Age",
           "value": "35"
         },
         {
-          "label": "Last encounter base · OOC",
+          "label": "Last encounter base",
           "value": "1,600,000"
         },
         {
-          "label": "Consumed fruit · OOC",
+          "label": "Consumed fruit",
           "value": "×10 · 16,000,000 ceiling"
         }
       ],
@@ -507,22 +507,22 @@
       "id": "pan",
       "title": "Pan · TL-782",
       "summary": "Active Time Patroller; established family background, not yet encountered by Zero.",
-      "status": "OOC reference · Not yet met",
+      "status": "Not yet met",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "TL-782 · Post-GT family branch"
         },
         {
-          "label": "Age · OOC",
+          "label": "Age",
           "value": "24 years"
         },
         {
-          "label": "Joined Conton · OOC",
+          "label": "Joined Conton",
           "value": "16 February, Age 852"
         },
         {
-          "label": "Current base · OOC",
+          "label": "Current base",
           "value": "200,000,000"
         }
       ],
@@ -532,18 +532,18 @@
       "id": "gohan",
       "title": "Gohan · TL-782",
       "summary": "Active Time Patroller; established family background, not yet encountered by Zero.",
-      "status": "OOC reference · Not yet met",
+      "status": "Not yet met",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "TL-782 · Post-GT family branch"
         },
         {
-          "label": "Age · OOC",
+          "label": "Age",
           "value": "46 years"
         },
         {
-          "label": "Joined Conton · OOC",
+          "label": "Joined Conton",
           "value": "16 February, Age 852"
         }
       ],
@@ -553,18 +553,18 @@
       "id": "videl",
       "title": "Videl · TL-782",
       "summary": "Time Patrol member; established family background, not yet encountered by Zero.",
-      "status": "OOC reference · Not yet met",
+      "status": "Not yet met",
       "facts": [
         {
-          "label": "Home timeline · OOC",
+          "label": "Home timeline",
           "value": "TL-782 · Post-GT family branch"
         },
         {
-          "label": "Age · OOC",
+          "label": "Age",
           "value": "47 years"
         },
         {
-          "label": "Joined Conton · OOC",
+          "label": "Joined Conton",
           "value": "16 February, Age 852"
         }
       ],
@@ -577,91 +577,221 @@
       "title": "Conton City",
       "summary": "Time Patrol hub where Zero was treated, assessed and housed.",
       "status": "Current city",
-      "details": "Time Patrol hub recognised from prior game knowledge and identified by Rill. Zero has visited the ward, assessment and dispatch offices, training facilities, quarters, dining hall and equipment services. The current city date is 16 February, Age 854; chamber time is counted separately."
+      "details": "Time Patrol hub recognised from prior game knowledge and identified by Rill. Zero has visited the ward, assessment and dispatch offices, training facilities, quarters, dining hall and equipment services. Chamber time is counted separately from the city calendar.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Time Patrol hub outside the ordinary timelines"
+        },
+        {
+          "label": "Position",
+          "value": "The city contains Patrol medical, administrative, residential and training facilities."
+        }
+      ]
     },
     {
       "id": "courtyard",
       "title": "Training courtyard",
       "summary": "Open court used for sparring, weighted conditioning, ki practice and flight.",
       "status": "Training grounds",
-      "details": "Used for later Krillin and Yamcha practice and Zero’s first rush at Vegeta on Day 30. Vegeta then led him into an adjoining equipped hall. The open court and enclosed gravity hall are distinct spaces."
+      "details": "Used for later Krillin and Yamcha practice and Zero’s first rush at Vegeta on Day 30. Vegeta then led him into an adjoining equipped hall. The open court and enclosed gravity hall are distinct spaces.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Conton City · Training complex · Open courtyard behind the training halls"
+        },
+        {
+          "label": "Position",
+          "value": "Adjoins the gravity training hall used by Vegeta; connected to the indoor practice rooms."
+        }
+      ]
     },
     {
       "id": "quarters-214",
       "title": "Room 214",
       "summary": "Assigned quarters and overnight recovery space.",
       "status": "Accommodation",
-      "details": "Single bed, desk, wardrobe, bathroom, clean towels, window, schedule terminal and a fridge with supplied cola. Zero slept here between training days; on Day 45 before dawn he confirmed 168 twice before leaving. The access card does not lift his escort restriction. Zero last slept here before meeting Krillin for chamber preparation on Day 46."
+      "details": "Single bed, desk, wardrobe, bathroom, clean towels, window, schedule terminal and a fridge with supplied cola. Zero slept here between training days; on Day 45 before dawn he confirmed 168 twice before leaving. The access card does not lift his escort restriction.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Conton City · Patroller residential building · Upstairs room 214"
+        },
+        {
+          "label": "Position",
+          "value": "Reached by the shallow steps to the residential building; its named district has not been established."
+        }
+      ]
     },
     {
       "id": "dining-hall",
       "title": "Dining hall",
       "summary": "Covered meals and communal seating for patrollers.",
       "status": "Visited",
-      "details": "Visited after receiving room 214 and used for covered meals during training. After Day 44 Zero ate a large meal of meat and rice with additional helpings before returning to sleep. No cash purchase was recorded."
+      "details": "Visited after receiving room 214 and used for covered meals during training. After Day 44 Zero ate a large meal of meat and rice with additional helpings before returning to sleep. No cash purchase was recorded.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Conton City · Communal Patrol dining facilities"
+        },
+        {
+          "label": "Position",
+          "value": "Within walking distance of the residential buildings; the exact building and district are not named."
+        }
+      ]
     },
     {
       "id": "medical-ward",
       "title": "Medical ward",
       "summary": "Where Zero woke after emergency evacuation and treatment.",
       "status": "Visited",
-      "details": "An empty glass treatment chamber stood opposite the bed. Rill reported that roughly an hour had passed since admission and that the latest scans were clear after treatment for internal bleeding, damaged ribs and a head injury. Original clothes and the scouter were kept nearby. Zero returned after the first mission, underwent Chronoa’s seal while awake and received a Senzu before moving to a nearby hall."
+      "details": "An empty glass treatment chamber stood opposite the bed. Rill reported that roughly an hour had passed since admission and that the latest scans were clear after treatment for internal bleeding, damaged ribs and a head injury. Original clothes and the scouter were kept nearby. Zero returned after the first mission, underwent Chronoa’s seal while awake and received a Senzu before moving to a nearby hall.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Conton City · Patrol medical facilities"
+        },
+        {
+          "label": "Position",
+          "value": "Across the square from the reception building containing assessment room three; ordinary training rooms are nearby."
+        }
+      ]
     },
     {
       "id": "assessment-room",
       "title": "Reception · Room three",
       "summary": "Across the square from the ward; site of Chronoa’s assessment.",
       "status": "Visited",
-      "details": "Zero recounted his source-world knowledge in front of Chronoa, Vegeta and Mr. Satan, then accepted supervised trainee membership."
+      "details": "Zero recounted his source-world knowledge in front of Chronoa, Vegeta and Mr. Satan, then accepted supervised trainee membership.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Conton City · Reception building · Room three"
+        },
+        {
+          "label": "Position",
+          "value": "Across the square from the medical ward."
+        }
+      ]
     },
     {
       "id": "capsule-frontage",
       "title": "Capsule Corp · West City",
       "summary": "Awakening site and the scene of Nappa’s attack.",
       "status": "Arrival location",
-      "details": "Capsule Corp signage and buildings, damaged streets, fleeing people and dead civilians. No Capsule Corp affiliation, property or vehicle ownership follows from awakening there. The exact local chronology was not confirmed to Zero."
+      "details": "Capsule Corp signage and buildings, damaged streets, fleeing people and dead civilians. No Capsule Corp affiliation, property or vehicle ownership follows from awakening there. The exact local chronology was not confirmed to Zero.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "TL-218 · Earth · West City · Capsule Corp frontage"
+        },
+        {
+          "label": "Position",
+          "value": "The street and paving outside Capsule Corp where Zero first appeared."
+        }
+      ]
     },
     {
       "id": "maintenance-bay",
       "title": "Training complex · Maintenance bay",
       "summary": "Adjoining work area where Bulma repairs training equipment.",
       "status": "Visited",
-      "details": "Visited with Krillin on Day 29. Bulma worked beside an open equipment casing with a diagnostic tablet; Vegeta stood by a wall control panel. This was where Vegeta agreed to train Zero at dawn. No technical specifications or repaired-room access have been established."
+      "details": "Visited with Krillin on Day 29. Bulma worked beside an open equipment casing with a diagnostic tablet; Vegeta stood by a wall control panel. This was where Vegeta agreed to train Zero at dawn. No technical specifications or repaired-room access have been established.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Conton City · Training complex · Equipment-maintenance work area"
+        },
+        {
+          "label": "Position",
+          "value": "Adjoins the training facilities; the specific room Bulma was repairing was out of service when last seen."
+        }
+      ]
     },
     {
       "id": "gravity-hall",
       "title": "Gravity training hall",
       "summary": "Enclosed hall used for Vegeta’s punishing training sessions.",
       "status": "Training grounds",
-      "details": "Entered on Day 30; Zero set aside cape and scouter inside. Vegeta switched the hall to 50× gravity. Subsequent mornings include 25× warm-ups before his arrival and 50× sessions with senzu recoveries. Gravity is lowered when needed to prevent death and switched off when the session ends. This does not establish that the separate room Bulma was repairing is operational."
+      "details": "Entered on Day 30; Zero set aside cape and scouter inside. Vegeta switched the hall to 50× gravity. Subsequent mornings include 25× warm-ups before his arrival and 50× sessions with senzu recoveries. Gravity is lowered when needed to prevent death and switched off when the session ends. This does not establish that the separate room Bulma was repairing is operational.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Conton City · Training complex · Enclosed hall adjoining the training courtyard"
+        },
+        {
+          "label": "Position",
+          "value": "The hall Vegeta led Zero into from the open court on Day 30."
+        }
+      ]
     },
     {
       "id": "practice-hall",
-      "title": "Practice hall",
-      "summary": "Ordinary training hall where Zero asked Krillin about a chamber booking.",
+      "title": "Training rooms",
+      "summary": "Ordinary indoor rooms for instruction, sparring and ki practice.",
       "status": "Visited",
-      "details": "After Day 45 training with Vegeta, Zero found Krillin finishing instruction here. Their conversation led to the solo chamber booking; Zero is no longer in this hall."
+      "details": "Krillin was finishing instruction here when Zero asked about a chamber booking after Day 45 training. An ordinary nearby training room was used after the first mission for the supervised Dark Factor Sealed Channel test, with gravity set to 1× and drones off. These are standard Patrol facilities used by fighters far stronger than Zero, not a purpose-built containment hall. Chronoa supervised the seal itself. Individual bookings do not establish a new location or imply that every session used the same numbered room.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Conton City · Training complex · Ordinary indoor practice rooms"
+        },
+        {
+          "label": "Position",
+          "value": "Includes the rooms used for Krillin’s instruction and the nearby room used after the medical-ward visit; individual room numbers are not established."
+        }
+      ]
     },
     {
       "id": "dispatch-office",
       "title": "Dispatch office",
       "summary": "Mr. Satan’s scheduling and assignment desk.",
       "status": "Visited",
-      "details": "Visited with Krillin to book the chamber. Mr. Satan arranged the session, supplies and preparation, and sent Vegeta notice. The first paired assignment was briefed here: identify the supplier, stop deliveries and preserve communications equipment."
+      "details": "Visited with Krillin to book the chamber. Mr. Satan arranged the session, supplies and preparation, and sent Vegeta notice. The first paired assignment was briefed here: identify the supplier, stop deliveries and preserve communications equipment.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Conton City · Time Patrol dispatch offices · Mr. Satan’s desk"
+        },
+        {
+          "label": "Position",
+          "value": "The office where chamber bookings and the first paired mission were arranged; a named district has not been established."
+        }
+      ]
     },
     {
       "id": "chamber-three",
       "title": "Hyperbolic Time Chamber · Three",
       "summary": "One year of solo training completed during one day in Conton.",
       "status": "Visit complete",
-      "details": "Booked 15 February at 09:00 to 16 February at 09:00, Age 854. At 365:1, the visit contained 365 subjective days, including initial rest and four training quarters. Independent gravity controls, a normal-gravity living area, recorded drills, four drones and finite food, medical and maintenance supplies supported the visit. All six senzu were used. Zero exited at checkout; no extension or new reservation."
+      "details": "Booked 15 February at 09:00 to 16 February at 09:00, Age 854. At 365:1, the visit contained 365 subjective days, including initial rest and four training quarters. Independent gravity controls, a normal-gravity living area, recorded drills, four drones and finite food, medical and maintenance supplies supported the visit. All six senzu were used. Zero exited at checkout; no extension or new reservation.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Conton City · Hyperbolic Time Chamber facility · Chamber Three"
+        },
+        {
+          "label": "Position",
+          "value": "Separate chamber facility reached from the practice hall; equipment services is nearby."
+        }
+      ]
     },
     {
       "id": "equipment-services",
       "title": "Equipment services",
       "summary": "Automated clothing repairs and fitting adjustments near the training facilities.",
       "status": "Visited",
-      "details": "Krillin brought Zero here after the chamber. A repair station cleaned, mended and fitted the original outfit and cape, including the arrival tear from Nappa. The temporary robe was left behind. Those repairs preceded the first mission; subsequent battle damage has not been repaired."
+      "details": "Krillin brought Zero here after the chamber. A repair station cleaned, mended and fitted the original outfit and cape, including the arrival tear from Nappa. The temporary robe was left behind. Those repairs preceded the first mission; subsequent battle damage has not been repaired.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Conton City · Near the training and chamber facilities · Ground floor of a rounded white building"
+        },
+        {
+          "label": "Position",
+          "value": "Windows display boots, gloves and uniforms; repair stations and curtained changing cubicles are inside."
+        }
+      ]
     },
     {
       "id": "tl218-supply-site",
@@ -669,14 +799,17 @@
       "summary": "Off-world weapons and armour operation on Earth, dismantled during the first paired mission.",
       "status": "Visited · Warehouse destroyed",
       "date": "16 February, Age 763 · TL-218",
-      "details": "Scrubland valley with a western ridge, fenced yard, truck, warehouse and landed spacecraft. The warehouse and powered console were destroyed or buried during the fight; data recovery is unassessed. The ship and operators escaped. No city attack occurred."
-    },
-    {
-      "id": "channel-test-hall",
-      "title": "Supervised channel-test hall",
-      "summary": "Normal-gravity hall for the first supervised Dark Factor Sealed Channel trial.",
-      "status": "Current",
-      "details": "Chronoa and Krillin supervise at 1× gravity with the drones off. A small draw and release succeeded; Zero is now holding the first full manifestation with rapidly rising strain. The hall has not been damaged. Cape and scouter remain on the bench."
+      "details": "Scrubland valley with a western ridge, fenced yard, truck, warehouse and landed spacecraft. The warehouse and powered console were destroyed or buried during the fight; data recovery is unassessed. The ship and operators escaped. No city attack occurred.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "TL-218 · Earth · Scrubland valley outside an unnamed city"
+        },
+        {
+          "label": "Position",
+          "value": "A western ridge overlooks the fenced compound; the city seen on the horizon has not been identified."
+        }
+      ]
     }
   ],
   "projects": [
@@ -688,7 +821,7 @@
       "facts": [
         {
           "label": "Base",
-          "value": "3,720 · OOC recovered-base assessment; no new scan"
+          "value": "3,720 recovered-base assessment; no new scan"
         },
         {
           "label": "Current work",
@@ -1512,7 +1645,7 @@
       "summary": "Zero reaches full Dark Factor Sealed Channel with a pale violet aura and red irises.",
       "status": "Recorded",
       "date": "Day 47 · 11:53",
-      "details": "The onset sends shockwaves and gusts across the undamaged hall. Roughly thirty seconds into full output, strain rises quickly. Zero remains conscious and in control; Krillin asks him to reduce the flow. The form is still active. OOC corrected peak: ×10, 37,200; no scan."
+      "details": "The onset sends shockwaves and gusts across the undamaged hall. Roughly thirty seconds into full output, strain rises quickly. Zero remains conscious and in control; Krillin asks him to reduce the flow. The form is still active. Corrected peak: ×10, 37,200; no scan."
     }
   ],
   "recordedThrough": "S098 · First full Dark Factor Sealed Channel and accepted power correction · 11 October 2026"

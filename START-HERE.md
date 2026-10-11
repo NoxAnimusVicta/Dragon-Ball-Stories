@@ -6,11 +6,11 @@ This repository is the public companion for Dragon Ball Stories.
 2. Read [Narrator guide](NARRATOR-GUIDE.md) and [Dialogue and Interactive Storytelling](DIALOGUE-AND-INTERACTIVE-STORYTELLING.md) before narration.
 3. Read [Corrections](RETCONS.md), then consult the authorised local exact scene archive and private checkpoint. Public summaries do not replace them.
 
-Coverage is **S095: Day 47, 16 February Age 854, 11:50**. The first mission, outbreak, diagnosis, seal and Senzu recovery are recorded. Zero is in the training hall with Chronoa and Krillin; his first channel attempt remains pending. Publication advances no time.
+Coverage is **S098: Day 47, 16 February Age 854, 11:53**. The first mission, outbreak, diagnosis, seal and Senzu recovery are recorded. Zero is in the training hall with Chronoa and Krillin; his first full channel manifestation is recorded. Publication advances no time.
 
-The journal has 95 accepted scene summaries. Current powers, form access, possessions and condition live in campaign.json. OOC home-timeline labels, current NPC ratings and the agreed TL-782 family background are reader references, not knowledge automatically granted to Zero. Calculated form ceilings are not new scouter readings. Future plans and unrevealed causes remain private.
+The journal has 98 accepted scene summaries. Current powers, form access, possessions and condition live in campaign.json. Home-timeline labels, current NPC ratings and the agreed TL-782 family background are reader references, not knowledge automatically granted to Zero. Calculated form ceilings are not new scouter readings. Future plans and unrevealed causes remain private.
 
-Approved art depicts standard appearances or established transformations, not a guarantee that equipment is currently pristine. Historical art remains dated; unused future designs stay unpublished. Decorative backgrounds establish no visit, affiliation or location. Keep real-world identity and identifying metadata out of public records.
+Approved art depicts standard appearances or established transformations, not a guarantee that equipment is currently pristine. Artwork dates and original power benchmarks are tracked in the private reference ledger; unused future designs stay unpublished. Decorative backgrounds establish no visit, affiliation or location. Keep real-world identity and identifying metadata out of public records.
 
 ## Maintenance
 
