@@ -2,7 +2,7 @@
 
 This repository is the public companion for Dragon Ball Stories, a Dragon Ball Isekai.
 
-Read [the narrator guide](NARRATOR-GUIDE.md) for character records, narration and continuity rules.
+Read [the narrator guide](NARRATOR-GUIDE.md) for character records, narration and continuity rules, and [Dialogue and Interactive Storytelling](DIALOGUE-AND-INTERACTIVE-STORYTELLING.md) for dialogue, subtext and player agency.
 
 1. Read campaign.json for authoritative public character and story data.
 2. Read CAMPAIGN-CONFIG.md and CURRENT-CONTINUITY.md for readable summaries.
