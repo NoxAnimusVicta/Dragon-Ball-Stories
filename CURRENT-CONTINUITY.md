@@ -3,9 +3,10 @@
 Generated from campaign.json. Edit that authoritative source, then run build.py.
 
 - Status: Story in progress.
-- Coverage: S095 · Story and NPC reconciliation 11 October 2026.
+- Coverage: S095 · Post-fight combat growth correction · 11 October 2026.
 - Role: Supervised Time Patrol trainee.
-- Current rested measured battle power: 3075.
+- Current ordinary base (campaign record): 3100.
+- Power record status: OOC post-fight assessment · Last measured base 3,075 · No new scan; form totals are calculations.
 - Condition: Senzu healed battle injuries and physical fatigue. All forms inactive; seal intact. Clothing remains battle-damaged. Cape and scouter rest on the hall bench; no personal senzu held.
 - Protagonist: Zero, age 27 years, 6 months, height 5′6″ (167.64 cm).
 - Story date: Day 47 · 16 February, Age 854 · 11:50.

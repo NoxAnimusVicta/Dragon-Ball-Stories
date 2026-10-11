@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-11-story-S095",
+  "revision": "2026-10-11-S095-combat-growth",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "After the first mission",
@@ -22,8 +22,8 @@
     "motivation": "Develop controlled strength and continue supervised Patrol work.",
     "knowledge": "Retains referential knowledge of Z, Super, the films, manga, GT and the first two Xenoverse main stories. Chronoa confirmed that the two Xenoverse stories correspond to this Patrol’s past, with distinct hero partners; the second occurred about two hub years ago. This particular Vegeta’s home history remains unknown. On his first paired mission he encountered Nappa and Turles in TL-218. He remembers losing control of his body; Chronoa identified the attachment as Dark Factor and explained the seal’s failure conditions. Its identity and the cause of the crossing remain unknown.",
     "limitations": "No independent timeline access or rescinded city escort restriction. Uncontrolled power has manifested but is not voluntarily mastered. Sealed Channel is untested. No named attack, stable ki blade or precise ki-sensing mastery.",
-    "battlePower": 3075,
-    "powerReading": "Base measured after the chamber year · Unchanged after recovery · Form totals are campaign calculations",
+    "battlePower": 3100,
+    "powerReading": "OOC post-fight assessment · Last measured base 3,075 · No new scan; form totals are calculations",
     "role": "Supervised Time Patrol trainee",
     "condition": "Senzu healed battle injuries and physical fatigue. All forms inactive; seal intact. Clothing remains battle-damaged. Cape and scouter rest on the hall bench; no personal senzu held.",
     "ageMonths": 6,
@@ -78,28 +78,32 @@
   "abilities": [
     {
       "id": "power",
-      "title": "Battle power · 3,075",
-      "summary": "Rested full output after a year in the chamber; usually held near half.",
-      "status": "Measured",
+      "title": "Battle power · 3,100",
+      "summary": "Modest combat growth after the first mission; the new base has not been scanned.",
+      "status": "OOC assessment",
       "facts": [
         {
           "label": "First reading",
           "value": "50 · Day 1"
         },
         {
-          "label": "Full output",
+          "label": "Last measured base",
           "value": "3,075 · End of chamber year"
         },
         {
-          "label": "Usual suppression",
-          "value": "Approximately 1,538"
+          "label": "Current base · OOC",
+          "value": "3,100 · Post-fight assessment"
+        },
+        {
+          "label": "Half-output target · OOC",
+          "value": "1,550 calculated · Last suppression check approximately 1,538"
         },
         {
           "label": "Change since arrival",
-          "value": "+3,025 · 61.5 times the initial reading"
+          "value": "+3,050 · 62 times the initial reading"
         }
       ],
-      "details": "Rested readings reached 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. Rested 85 was confirmed on Day 30 before Vegeta’s first session; after that day’s training and healing, two scans read 89. Continued training reached 124 at the end of Day 37 and 168 at the end of Day 44. Overnight rest confirmed the same 168 on Day 45; that day’s training increased it to 174, confirmed twice after the final senzu. Healing restores available output; it is not a separate human power boost. Field readiness was assessed separately after the chamber. The quarterly rested endpoints were 454, 920, 1,597 and 3,075. The final full reading returned to 3,075 after a suppression check near 1,538. No later scan or base gain has occurred through the mission, sealing and Senzu recovery."
+      "details": "Rested readings reached 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. Rested 85 was confirmed on Day 30 before Vegeta’s first session; after that day’s training and healing, two scans read 89. Continued training reached 124 at the end of Day 37 and 168 at the end of Day 44. Overnight rest confirmed the same 168 on Day 45; that day’s training increased it to 174, confirmed twice after the final senzu. Healing restores available output; it is not a separate human power boost. Field readiness was assessed separately after the chamber. The quarterly rested endpoints were 454, 920, 1,597 and 3,075. The final full reading returned to 3,075 after a suppression check near 1,538. OOC: the completed mission adds a modest combat gain to 3,100. This reflects adaptation during fighting, not healing, the seal or an injury reward. There has been no later scan; the earlier readings remain historical."
     },
     {
       "id": "combat-basics",
@@ -171,7 +175,7 @@
       "facts": [
         {
           "label": "Campaign factor · OOC",
-          "value": "×15 · 46,125 at the current base"
+          "value": "×15 · 46,500 at the current base"
         },
         {
           "label": "Current state",
@@ -189,7 +193,7 @@
       "facts": [
         {
           "label": "Campaign ceiling · OOC",
-          "value": "×10 · 30,750 at the current base"
+          "value": "×10 · 31,000 at the current base"
         },
         {
           "label": "Seal",
@@ -292,18 +296,18 @@
         },
         {
           "label": "Current base · OOC",
-          "value": "3,000,000 · Campaign benchmark"
+          "value": "3,015,000 · Post-fight campaign assessment"
         },
         {
           "label": "Wrathful / Great Ape · OOC",
-          "value": "×10 each · 30,000,000; separate forms"
+          "value": "×10 each · 30,150,000; separate forms"
         },
         {
           "label": "Last seen",
           "value": "Day 47 · Leaving the medical ward"
         }
       ],
-      "details": "Original white-and-gold Saiyan armour with extended shoulder and waist panels over a blue suit; retained tail. Proud, impatient and contemptuous, with early-Z temperament. He allowed harmless hits during assessment and accepted Zero’s usefulness against lesser fighters. During the mission Turles intercepted him; he later broke away to stop Zero’s rampage with one strike. Last seen leaving the ward, angry that the enemies escaped, with a bloodied lip and cracked shoulder plate. No later repair or healing is established. OOC: his initial 2,000,000 base has grown through elapsed training and service to 3,000,000. This corrects omitted progression, not a new scan or an instant post-mission reward. Zero saw his gold-eyed form but has not learned its name in dialogue.",
+      "details": "Original white-and-gold Saiyan armour with extended shoulder and waist panels over a blue suit; retained tail. Proud, impatient and contemptuous, with early-Z temperament. He allowed harmless hits during assessment and accepted Zero’s usefulness against lesser fighters. During the mission Turles intercepted him; he later broke away to stop Zero’s rampage with one strike. Last seen leaving the ward, angry that the enemies escaped, with a bloodied lip and cracked shoulder plate. No later repair or healing is established. OOC: elapsed training and service raised his initial 2,000,000 base to a pre-mission 3,000,000. Combat adaptation during the mission adds 15,000, bringing his assessed base to 3,015,000. This is no new scan, healing award or increased transformation multiplier. Zero saw his gold-eyed form but has not learned its name in dialogue.",
       "canTransform": true,
       "art": {
         "appearance": [
@@ -670,7 +674,7 @@
       "facts": [
         {
           "label": "Base",
-          "value": "3,075 · Unchanged after mission"
+          "value": "3,100 · OOC post-fight assessment; no new scan"
         },
         {
           "label": "Current work",
@@ -1473,5 +1477,5 @@
       "details": "Cape and scouter are on the bench. Chronoa makes the seal’s access point perceptible, then withdraws her hand. Zero’s first actual channel attempt remains pending."
     }
   ],
-  "recordedThrough": "S095 · Story and NPC reconciliation 11 October 2026"
+  "recordedThrough": "S095 · Post-fight combat growth correction · 11 October 2026"
 }

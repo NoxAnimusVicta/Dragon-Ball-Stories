@@ -4,8 +4,9 @@ Reviewed 11 October 2026 through S095. Dated publication rows describe their his
 
 | Record | Effective point | Correction |
 | --- | --- | --- |
-| 11 October reconciliation | Publication through S095 | First assessment/mission, outbreak, containment, healing and pending channel test recorded. Base remains3,075; calculated Uncontrolled46,125 and untested channel ceiling30,750. |
-| NPC progression | Day47 current references | Vegeta3,000,000 base and30,000,000 Wrathful/GreatApe supersede stale current2m/20m; initial values remain historical. TL782 family and NPC power references are explicitly OOC. |
+| Post-fight combat growth | S095 current assessment, no new scene | Zero3,100; Uncontrolled46,500 and untested channel31,000. Vegeta3,015,000 base /30,150,000 Wrathful orGreatApe. Modest combat adaptation; no scan, healing reward or changed historical readings. |
+| 11 October reconciliation | Publication through S095 | First assessment/mission, outbreak, containment, healing and pending channel test recorded. Initial publication retained3,075,46,125 and30,750; current capacities are superseded by the post-fight correction above. |
+| NPC progression | Day47 pre-mission calibration | Vegeta3,000,000 base and30,000,000 Wrathful/GreatApe supersede stale current2m/20m; initial values remain historical. TL782 family and NPC power references are explicitly OOC. |
 | S070 | Assessment ending | Accepted ending grants supervised field participation; rejected anger/pride lecture and renewed attack are withdrawn. |
 | S073 | Reconnaissance | Four guards are alien Frieza Force soldiers, not ordinary humans. No scouter handover. |
 | S088 | Awakening | Coaxed request for strength precedes the eruption; the earlier automatic awakening is withdrawn. |
