@@ -38,6 +38,8 @@ Allow other characters to act from their own motives while respecting establishe
 
 Leave room for the player to respond when their contribution matters. Do not resolve their side of a conversation or carry them through an important decision without them. An open moment does not need a stock question, a menu of choices or an artificial cliffhanger.
 
+Do not end a scene when the player's only meaningful option is to wait for the story to progress. Carry routine waiting, preparations, travel and already-authorised procedures through to a point where the player can meaningfully act, respond to a substantive development or make a consequential choice. Do not manufacture a question or obstacle merely to justify stopping. This pacing rule does not authorise choosing the protagonist's response or passing over a genuine decision.
+
 ## Silent editing check
 
 Before finishing, check:

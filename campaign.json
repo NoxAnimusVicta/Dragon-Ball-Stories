@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-10-story-S064",
+  "revision": "2026-10-11-story-S095",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
-  "phase": "Back from the chamber",
+  "phase": "After the first mission",
   "started": true,
   "character": {
     "name": "Zero",
@@ -15,17 +15,17 @@
     "portraitAlt": "Zero after a year of chamber training: muscular human with auburn curls, beard, green iris and red scouter, in a black outfit and burgundy cape. Capsule Corp illustration backdrop.",
     "race": "Human",
     "origin": "From a world where Dragon Ball is fiction. The cause of the crossing is still unknown.",
-    "appearance": "Considerably greater muscle mass and definition after a year of training. Long curly auburn hair, full auburn beard and green iris. Black wrap-front outfit and loose trousers, burgundy sash and wrist wraps, burgundy cape with round gold fasteners, black-and-burgundy boots and a red-lensed scouter. The original clothes are repaired and fitted to his broader build.",
+    "appearance": "Muscular post-chamber build, long curly auburn hair, full auburn beard and green iris. Black-and-burgundy outfit with matching cape, boots and recovered red scouter. Clothing and equipment carry new mission damage. A permanent black circle with four inward-curving hooks marks the upper abdomen below the sternum. The portrait remains a standard-outfit reference, not a record of current damage.",
     "personality": "Expressed through your choices and dialogue.",
     "backstory": "Familiar with Dragon Ball through anime, manga, films and games before the crossing. No further personal background is recorded.",
     "arrival": "Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness.",
-    "motivation": "Train, become stronger and qualify for field work.",
-    "knowledge": "Retains referential knowledge of Z, Super, the films, manga, GT and the first two Xenoverse main stories. Chronoa confirmed that the two Xenoverse stories correspond to this Patrol’s past, with distinct hero partners; the second occurred about two hub years ago. This particular Vegeta’s home history remains unknown.",
-    "limitations": "Live opponents remain less predictable than drones. Accuracy, stamina and suppression under sudden pressure still need work. No precise ki sensing, signature technique, transformation, field clearance or independent timeline access. The city escort restriction remains in place.",
+    "motivation": "Develop controlled strength and continue supervised Patrol work.",
+    "knowledge": "Retains referential knowledge of Z, Super, the films, manga, GT and the first two Xenoverse main stories. Chronoa confirmed that the two Xenoverse stories correspond to this Patrol’s past, with distinct hero partners; the second occurred about two hub years ago. This particular Vegeta’s home history remains unknown. On his first paired mission he encountered Nappa and Turles in TL-218. He remembers losing control of his body; Chronoa identified the attachment as Dark Factor and explained the seal’s failure conditions. Its identity and the cause of the crossing remain unknown.",
+    "limitations": "No independent timeline access or rescinded city escort restriction. Uncontrolled power has manifested but is not voluntarily mastered. Sealed Channel is untested. No named attack, stable ki blade or precise ki-sensing mastery.",
     "battlePower": 3075,
-    "powerReading": "Rested full output · End of chamber year · Usual suppression ≈1,538",
+    "powerReading": "Base measured after the chamber year · Unchanged after recovery · Form totals are campaign calculations",
     "role": "Supervised Time Patrol trainee",
-    "condition": "Healed, with no lasting functional injury recorded. Original outfit and cape clean, repaired and fitted; scouter worn. No weights or senzu remaining.",
+    "condition": "Senzu healed battle injuries and physical fatigue. All forms inactive; seal intact. Clothing remains battle-damaged. Cape and scouter rest on the hall bench; no personal senzu held.",
     "ageMonths": 6,
     "appearanceHistory": [
       {
@@ -45,14 +45,35 @@
         "date": "16 February, Age 854 · Day 47"
       }
     ],
-    "portraitDate": "16 February, Age 854 · Day 47"
+    "portraitDate": "16 February, Age 854 · Day 47",
+    "fieldStatus": "SUPERVISED FIELD TRAINEE",
+    "forms": [
+      {
+        "id": "uncontrolled",
+        "name": "Uncontrolled",
+        "unlocked": true,
+        "multiplier": 15,
+        "date": "16 February, Age 854 · Day 47 · First manifestation in TL-218, Age 763",
+        "portrait": "zero-uncontrolled.jpg",
+        "portraitAlt": "Zero enclosed in a slightly enlarged black ki mantle with violet flames, horn-like projections and pale claws.",
+        "status": "Manifested · Not voluntarily controlled"
+      },
+      {
+        "id": "sealed-channel",
+        "name": "Sealed Channel",
+        "unlocked": true,
+        "multiplier": 10,
+        "date": "16 February, Age 854 · Day 47 · Seal completed",
+        "status": "Untested · Calculated ceiling"
+      }
+    ]
   },
   "story": {
     "era": "Conton City · Age 854",
-    "date": "Day 47 · 16 February, Age 854 · About 09:40",
-    "location": "Conton City · Equipment services",
-    "situation": "A full year of solo chamber training is complete. Only a day passed in Conton. Zero has left with Krillin and had his original outfit and cape repaired and fitted to his more muscular build.",
-    "pendingChoice": "At the equipment-services doorway, Krillin asks, “Better. Ready?” Zero has not answered or chosen where to go next."
+    "date": "Day 47 · 16 February, Age 854 · 11:50",
+    "location": "Conton City · Training hall",
+    "situation": "The first paired mission ended with the supply operation dismantled and Turles and Nappa escaping. After the uncontrolled outbreak, Chronoa sealed the Dark Factor. Zero is healed; his first supervised channel test is pending at normal gravity.",
+    "pendingChoice": "Chronoa has made the seal’s access point perceptible as warmth and withdrawn her hand. With Krillin watching, Zero can attempt to draw a little into his own ki. No channel activation or new measurement has occurred."
   },
   "abilities": [
     {
@@ -78,27 +99,27 @@
           "value": "+3,025 · 61.5 times the initial reading"
         }
       ],
-      "details": "Rested readings reached 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. Rested 85 was confirmed on Day 30 before Vegeta’s first session; after that day’s training and healing, two scans read 89. Continued training reached 124 at the end of Day 37 and 168 at the end of Day 44. Overnight rest confirmed the same 168 on Day 45; that day’s training increased it to 174, confirmed twice after the final senzu. Healing restores available output; it is not a separate human power boost. These readings do not establish field readiness. The quarterly rested endpoints were 454, 920, 1,597 and 3,075. The final full reading returned to 3,075 after a suppression check near 1,538. No new scan or gain occurred during the clothing repairs."
+      "details": "Rested readings reached 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. Rested 85 was confirmed on Day 30 before Vegeta’s first session; after that day’s training and healing, two scans read 89. Continued training reached 124 at the end of Day 37 and 168 at the end of Day 44. Overnight rest confirmed the same 168 on Day 45; that day’s training increased it to 174, confirmed twice after the final senzu. Healing restores available output; it is not a separate human power boost. Field readiness was assessed separately after the chamber. The quarterly rested endpoints were 454, 920, 1,597 and 3,075. The final full reading returned to 3,075 after a suppression check near 1,538. No later scan or base gain has occurred through the mission, sealing and Senzu recovery."
     },
     {
       "id": "combat-basics",
       "title": "Combat fundamentals",
       "summary": "Integrated footwork, compact strikes and aerial rotations after a year of drone practice.",
       "status": "Developing",
-      "details": "Earlier sparring and weighted work developed into sustained solo practice with progressively stronger gravity and armed drones. Full-output ground rounds reached 75× gravity; deliberate heavy conditioning reached 150×. Short punches, guard recovery, flight-assisted kicks and changes of direction now flow together. These are different training loads, not interchangeable combat tolerances. Suppressed work uses lower settings. No rematch with Yamcha or successful hit on Vegeta has occurred."
+      "details": "Earlier sparring and weighted work developed into sustained solo practice with progressively stronger gravity and armed drones. Full-output ground rounds reached 75× gravity; deliberate heavy conditioning reached 150×. Short punches, guard recovery, flight-assisted kicks and changes of direction now flow together. These are different training loads, not interchangeable combat tolerances. Suppressed work uses lower settings. In the subsequent live assessment, Vegeta allowed several hits without taking damage. Against Nappa, feints and vulnerable targets earned real injuries, but did not overcome his greater strength and endurance. No Yamcha rematch has occurred."
     },
     {
       "id": "ki-control",
       "title": "Ki control",
       "summary": "Supports loaded movement, flight and repeated blasts while managing available output.",
       "status": "Developing control",
-      "details": "Combined practice improved bracing, energy gathering and switching between movement and attacks. Zero can deliberately lower and restore his output, but control still takes work under unfamiliar pressure. Precise ki sensing and effortless full-strength defence while suppressed are not established."
+      "details": "Combined practice improved bracing, energy gathering and switching between movement and attacks. Zero can deliberately lower and restore his output, but control still takes work under unfamiliar pressure. Precise ki sensing and effortless full-strength defence while suppressed are not established. During the outbreak Zero briefly felt two enormous nearby signatures; that does not establish precise or general-purpose sensing."
     },
     {
       "id": "flight",
       "title": "Flight",
       "summary": "Sustained aerial combat drills with turns, bracing and controlled rotations.",
-      "status": "Practised in training",
+      "status": "Used in the field",
       "facts": [
         {
           "label": "Demonstrated",
@@ -110,10 +131,10 @@
         },
         {
           "label": "Field use",
-          "value": "Not cleared"
+          "value": "Aerial exchanges against Nappa"
         }
       ],
-      "details": "Flight is integrated with evasions, compact strikes and spinning kicks against drones. Full-output aerial rounds reached 25× gravity, distinct from 75× ground rounds and 150× slow conditioning. Familiar sequences are more fluid; long-range endurance and performance against live field threats remain untested. No field clearance has been granted."
+      "details": "Flight is integrated with evasions, compact strikes and spinning kicks against drones. Full-output aerial rounds reached 25× gravity, distinct from 75× ground rounds and 150× slow conditioning. Flight has now been used in the assessment and first paired mission. Long-range endurance remains unmeasured; greater training gravity did not make Zero faster than a much stronger opponent."
     },
     {
       "id": "ki-blast",
@@ -130,21 +151,59 @@
           "value": "Moving volleys and larger charged shots; finite accuracy and stamina"
         }
       ],
-      "details": "Started with one small shot on Day 22. Chamber practice developed step-release, moving-target fire and short volleys while manoeuvring. Larger shots require an opening and consume more stamina; accuracy remains imperfect. These are ordinary ki attacks, not an acquired named beam or signature technique."
+      "details": "Started with one small shot on Day 22. Chamber practice developed step-release, moving-target fire and short volleys while manoeuvring. Larger shots require an opening and consume more stamina; accuracy remains imperfect. These are ordinary ki attacks, not an acquired named beam or signature technique. In the mission he destroyed the warehouse with an outward release and used contact blasts and concentrated ki at his fingertips. No stable blade or named technique was acquired."
     },
     {
       "id": "ki-suppression",
       "title": "Power suppression",
       "summary": "Usually holds output near half during ordinary waking activity and familiar drills.",
-      "status": "Practised in training",
-      "details": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains."
+      "status": "Demonstrated in the field",
+      "details": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains. The opening soldier engagement demonstrated a deliberate full-power striking burst followed by a return to half output."
+    },
+    {
+      "id": "uncontrolled-form",
+      "title": "Uncontrolled",
+      "summary": "A black-and-violet ki mantle first manifested while fighting Nappa.",
+      "status": "Manifested · Unmastered",
+      "abilityType": "transformation",
+      "artwork": "zero-uncontrolled.jpg",
+      "artworkAlt": "Zero enclosed in a slightly enlarged black ki mantle with violet flames, horn-like projections and pale claws.",
+      "facts": [
+        {
+          "label": "Campaign factor · OOC",
+          "value": "×15 · 46,125 at the current base"
+        },
+        {
+          "label": "Current state",
+          "value": "Inactive; contained by Chronoa’s seal"
+        }
+      ],
+      "details": "Power erupted after a voice that felt like Zero’s own thoughts offered strength. Fighting Nappa felt dreamlike and apparently voluntary until the body turned toward a city against his wishes. Vegeta stopped him before he reached it. The dense mantle encloses his body, hair and clothes and slightly enlarges his silhouette; reversion reveals what was underneath without repairing battle damage. Its layered growling laugh is not a new technique. This is a recorded manifestation, not a safe transformation he can freely activate."
+    },
+    {
+      "id": "sealed-channel-form",
+      "title": "Sealed Channel",
+      "summary": "Chronoa’s seal permits a restricted flow of the contained power. The first test is pending.",
+      "status": "Available · Untested",
+      "abilityType": "transformation",
+      "facts": [
+        {
+          "label": "Campaign ceiling · OOC",
+          "value": "×10 · 30,750 at the current base"
+        },
+        {
+          "label": "Seal",
+          "value": "Black circle and four inward hooks beneath the sternum"
+        }
+      ],
+      "details": "Chronoa has shown Zero where to begin, but he has not activated the channel or demonstrated its ceiling. If he loses consciousness or approaches death while channeling, the Uncontrolled state takes over. Its ×15 replaces ×10 rather than stacking with it. With the channel closed, ordinary sleep is safe. The seal contains the attachment; it has not removed it or increased his base strength. No channel artwork has yet been supplied."
     }
   ],
   "inventory": [
     {
       "id": "outfit",
       "title": "Black-and-burgundy outfit",
-      "summary": "Original clothing, repaired and fitted after the chamber year.",
+      "summary": "Original outfit, fitted after the chamber and damaged again during the first mission.",
       "status": "Owned",
       "facts": [
         {
@@ -152,24 +211,24 @@
           "value": "Wrap-front top, loose trousers, sash, wrist wraps and boots"
         }
       ],
-      "details": "Equipment services cleaned and repaired training damage, reinforced the worn sash and adjusted the fit for broader shoulders and arms. Original style and colours retained. No armour rating or power bonus gained."
+      "details": "S064 repairs remain part of its history. New combat wear includes a scorched shoulder and other battle damage. The Senzu healed Zero, not his clothing. Original style retained; no armour rating or bonus."
     },
     {
       "id": "cape",
       "title": "Burgundy cape",
-      "summary": "Burgundy cape with gold clasps; the tear from Nappa is repaired.",
-      "status": "Owned",
-      "details": "Clean and fastened at Zero’s shoulders. Matching-fabric repair leaves a fine seam inside the formerly torn section and an even outer hem. Zero no longer wants the damage as a reminder of his first defeat."
+      "summary": "Burgundy cape with gold clasps; now battle-worn again.",
+      "status": "On training-hall bench",
+      "details": "The arrival tear was repaired after the chamber. The Nappa rematch singed and frayed an edge; the cape was removed for treatment and is now beside the hall door. No second repair has occurred."
     },
     {
       "id": "scouter",
       "title": "Recovered red scouter",
-      "summary": "Taken from Nappa before evacuation. Basic power scanning works.",
-      "status": "Functional",
+      "summary": "Recovered red scouter; retained after the mission, not retested after combat.",
+      "status": "On training-hall bench",
       "facts": [
         {
           "label": "Condition",
-          "value": "Scuffed casing; intact red lens"
+          "value": "Battle-scuffed; post-mission function untested"
         },
         {
           "label": "Known use",
@@ -180,7 +239,7 @@
           "value": "Regular self-checks"
         }
       ],
-      "details": "Rill obtained the first reading of 50. Zero checks his own output by targeting his outstretched arm while wearing it. The final chamber check read 3,075 at full output and approximately 1,538 under suppression before returning to 3,075. Currently worn; communications, maximum range and upper measurement capacity remain untested."
+      "details": "Last self-check confirmed 3,075 after the chamber. During reconnaissance it read the four soldiers and Nappa at 6,000. It endured dust and scuffs; post-battle function has not been retested. Communications, maximum range and upper capacity remain untested."
     },
     {
       "id": "room-card",
@@ -188,6 +247,13 @@
       "summary": "Issued by Mr. Satan during the first evening’s room visit.",
       "status": "Owned",
       "details": "Opens the assigned room. It does not grant independent timeline travel or cancel the escort restriction."
+    },
+    {
+      "id": "patrol-communicator",
+      "title": "Collar communicator",
+      "summary": "Issued by Mr. Satan before the first paired mission.",
+      "status": "Carried",
+      "details": "Clipped beneath the collar, concealed but usable. Press its side to speak to dispatch. Separate from the recovered scouter; retained after evacuation."
     }
   ],
   "accounts": [
@@ -210,14 +276,14 @@
           "value": "Dining hall"
         }
       ],
-      "details": "Housing and meals are Patrol provision, not cash income. Borrowed weights were returned after Day 29. Twenty-eight senzu were consumed during training with Vegeta. All six assigned for the chamber were also used: three in the second quarter and three in the last. Total consumed: 34; none held or replenished. Four functional drones and supplied equipment stayed with the facility. Clothing repair was provided without a cash transaction."
+      "details": "Housing, meals and necessary treatment are Patrol provision. Twenty-eight Senzu were consumed before the chamber, six during the chamber year, and one from the ward after sealing: 35 total, none held. The ward bean healed injuries and fatigue without a base-power boost. Borrowed weights, four drones and chamber equipment remain facility property. Clothing repairs occurred before the mission; new damage remains."
     }
   ],
   "people": [
     {
       "id": "vegeta-patroller",
       "title": "Vegeta · Time Patroller",
-      "summary": "Rescuer and assigned partner. Openly resents being paired with a weak human trainee.",
+      "summary": "Assigned partner; approved and led Zero’s first supervised mission.",
       "status": "Partner",
       "facts": [
         {
@@ -225,15 +291,39 @@
           "value": "TL-398 · Frieza on Earth"
         },
         {
-          "label": "Current assignment",
-          "value": "Temporary lower-risk solo roster; partnership retained"
+          "label": "Current base · OOC",
+          "value": "3,000,000 · Campaign benchmark"
+        },
+        {
+          "label": "Wrathful / Great Ape · OOC",
+          "value": "×10 each · 30,000,000; separate forms"
         },
         {
           "label": "Last seen",
-          "value": "Day 45 · Gravity training hall"
+          "value": "Day 47 · Leaving the medical ward"
         }
       ],
-      "details": "Short, muscular, upright black hair and widow’s peak; retained brown tail, original white-and-gold Saiyan armour with extended shoulder and waist panels over a blue suit. Clipped commands, insults and imperious pride. He rescued Zero and later said his correction mission was complete without explaining it. Their partnership remains despite his temporary lower-risk solo roster. After Zero challenged him, he began punishing daily training before the chamber visit at 50× gravity, providing senzu for severe injuries. Zero has not landed a hit on him. This does not establish a friendlier relationship. His exact age, numerical power and personal history remain unrevealed. His response to the chamber booking and Zero’s return has not been shown."
+      "details": "Original white-and-gold Saiyan armour with extended shoulder and waist panels over a blue suit; retained tail. Proud, impatient and contemptuous, with early-Z temperament. He allowed harmless hits during assessment and accepted Zero’s usefulness against lesser fighters. During the mission Turles intercepted him; he later broke away to stop Zero’s rampage with one strike. Last seen leaving the ward, angry that the enemies escaped, with a bloodied lip and cracked shoulder plate. No later repair or healing is established. OOC: his initial 2,000,000 base has grown through elapsed training and service to 3,000,000. This corrects omitted progression, not a new scan or an instant post-mission reward. Zero saw his gold-eyed form but has not learned its name in dialogue.",
+      "canTransform": true,
+      "art": {
+        "appearance": [
+          {
+            "name": "Original Saiyan armour",
+            "date": "16 February, Age 854 · Day 47 · Standard outfit reference",
+            "portrait": "vegeta-base.jpg",
+            "portraitAlt": "Vegeta in original blue, white and gold Saiyan armour with his brown tail wrapped around his waist."
+          }
+        ],
+        "forms": [
+          {
+            "name": "Wrathful · OOC name",
+            "date": "16 February, Age 854 · Day 47 · TL-218 mission, Age 763",
+            "portrait": "vegeta-wrathful.jpg",
+            "portraitAlt": "Vegeta in original armour with flared black hair, gold eyes and golden Wrathful aura; tail retained.",
+            "unlocked": true
+          }
+        ]
+      }
     },
     {
       "id": "krillin",
@@ -247,10 +337,14 @@
         },
         {
           "label": "Last seen",
-          "value": "Day 47 · Equipment services, with Zero"
+          "value": "Day 47 · Training hall with Zero and Chronoa"
+        },
+        {
+          "label": "Power benchmark · OOC",
+          "value": "100,000,000 · Campaign estimate"
         }
       ],
-      "details": "Short, compact and muscular, bald with six forehead dots, orange gi, blue wristbands and calloused hands. Lively conversation, wry humour and practical corrections. He introduced Yamcha and taught Zero’s first projected blasts. He instructs Mr. Satan’s roster rather than serving as an active field Patroller. He helped arrange and prepare the chamber session, waited at its exit and accompanied Zero to repair his clothes. His latest question is “Better. Ready?” Zero has not reported the final power reading to him. His exact age, numerical power and family circumstances remain unrevealed."
+      "details": "Compact muscular build, bald with six forehead dots, orange gi and blue wristbands. Lively, informal, wry and experienced. Instructor for Mr. Satan’s roster, not an active field Patroller. He observed the post-chamber assessment, attended Zero after the mission, arranged a ward Senzu and accompanied him to the first supervised channel test. Exact age and personal service duration remain unassigned."
     },
     {
       "id": "mr-satan",
@@ -260,25 +354,29 @@
       "facts": [
         {
           "label": "Home timeline · OOC",
-          "value": "TL-782 · Dispatcher branch"
+          "value": "TL-782 · Post-GT family branch"
         },
         {
-          "label": "Authority",
-          "value": "Scheduling, training logistics and restricted tasking"
+          "label": "Age / base · OOC",
+          "value": "67 years · 10, campaign benchmark"
         },
         {
-          "label": "Last seen",
-          "value": "Day 45 evening · Dispatch office"
+          "label": "Service · OOC",
+          "value": "Joined with family two Conton years ago"
+        },
+        {
+          "label": "Role",
+          "value": "Temporal Super Stars dispatcher"
         }
       ],
-      "details": "Stocky, thick black moustache and large curly hair; burgundy martial outfit, white cape, conspicuous gold belt and dispatch headset. Booming, gravelly showmanship and grand claims accompany practical arrangements for escort, training, housing and meals. He authorised Vegeta’s temporary lower-risk solo roster. His exact age and alternate history are unknown. At dispatch he authorised the solo Chamber Three booking for Day 46 at 09:00 through Day 47 at 09:00, arranged preparation with Krillin and sent Vegeta a notification. No reply from Vegeta has been shown."
+      "details": "Boisterous showman with a thick moustache, curly hair, burgundy outfit, white cape, championship belt and dispatch headset. He briefed and oversaw the TL-218 supply investigation and issued Zero’s communicator. OOC family background: Pan is his actual granddaughter; he joined Conton with Pan, Gohan and Videl on 16 February Age 852. His authority comes from dispatch, not high combat power. This family history and exact age are reference information, not a conversation Zero has had."
     },
     {
       "id": "chronoa",
       "title": "Chronoa",
-      "summary": "Supreme Kai of Time; conducted the exceptional review of Zero’s arrival and knowledge.",
-      "status": "Anomaly review",
-      "details": "Small, pink-skinned, pointed ears, swept orange hair, gold earrings and purple-and-gold clothing. Bright, brisk questions and direct authority. She confirmed Zero’s game-history account and offered supervised trainee membership. She is not his everyday dispatcher. No result explaining his origin has yet been reported. Exact age unknown.",
+      "summary": "Supreme Kai of Time; identified and sealed Zero’s Dark Factor.",
+      "status": "Supervising channel test",
+      "details": "Small, pink-skinned, pointed ears, swept orange hair, gold earrings and purple-and-gold clothing. Brisk, curious and authoritative. Her post-outbreak examination identified Dark Factor that was undetected while dormant. She sealed it while Zero was awake, leaving the four-hook abdominal mark, and explained the danger of losing consciousness or nearing death with the channel open. She is investigating whether safe removal is possible; no answer or deadline is established. Present for the first test alongside Krillin.",
       "facts": [
         {
           "label": "Home timeline · OOC",
@@ -302,20 +400,32 @@
     {
       "id": "nappa",
       "title": "Nappa",
-      "summary": "Attacked Zero outside Capsule Corp and overwhelmingly outmatched him at arrival.",
-      "status": "Hostile encounter",
-      "details": "Huge, bald, black moustache, white-and-gold Saiyan armour, bare muscular arms and brown tail. Deep, rough voice; amused cruelty gave way to anger at Zero’s insults. Zero’s punches, clawing and biting attempts did not visibly injure him. Vegeta knocked him unconscious; he was breathing when last seen. His later whereabouts are unknown to Zero. Exact age unknown.",
+      "summary": "Returned as a commander at the TL-218 supply site; escaped after the rematch.",
+      "status": "Escaped enemy",
+      "details": "Massive bald Saiyan with black moustache, white-and-gold armour, bare arms and retained tail. Cruel, rough-voiced and contemptuous. Zero’s scouter read 6,000 before the fight. His trained tail resisted the disabling grip. Zero badly injured his right eye with a concentrated fingertip strike, then the uncontrolled eruption reversed the fight. Nappa ate a fruit and grew stronger but was overwhelmed. Last personally seen motionless below; his escape was subsequently reported. Present condition and post-recovery power have not been measured by Zero.",
       "facts": [
         {
           "label": "Home timeline · OOC",
-          "value": "TL-218 · Opening branch"
+          "value": "TL-218"
+        },
+        {
+          "label": "Last measured base",
+          "value": "6,000 · Before rematch"
+        },
+        {
+          "label": "Fruit state · OOC",
+          "value": "×5 · 30,000 ceiling during that fight"
+        },
+        {
+          "label": "Current rating",
+          "value": "Reassessment pending; not a fresh post-escape reading"
         }
       ]
     },
     {
       "id": "yamcha",
       "title": "Yamcha",
-      "summary": "Experienced sparring partner introduced by Krillin; his reported power is 210.",
+      "summary": "Experienced sparring partner introduced by Krillin; last reported power 210 on Day 10.",
       "status": "Training partner",
       "facts": [
         {
@@ -349,6 +459,98 @@
         }
       ],
       "details": "Appears in her thirties; jaw-length turquoise hair, blue work jacket with rolled sleeves, dark trousers and tool belt. Bright, brisk voice and dry sarcasm when rushed. Zero has noticed Vegeta frequently nearby, but their relationship is unknown. She warned him against switching on exposed machinery, demanded he release Zero and said he should train Zero. The training room she was repairing was out of service when last discussed; completion is unconfirmed."
+    },
+    {
+      "id": "turles",
+      "title": "Turles",
+      "summary": "Intercepted Vegeta during the supply-site fight; escaped with Nappa.",
+      "status": "Escaped enemy",
+      "facts": [
+        {
+          "label": "Home timeline · OOC",
+          "value": "TL-864"
+        },
+        {
+          "label": "Age · OOC",
+          "value": "35"
+        },
+        {
+          "label": "Last encounter base · OOC",
+          "value": "1,600,000"
+        },
+        {
+          "label": "Consumed fruit · OOC",
+          "value": "×10 · 16,000,000 ceiling"
+        }
+      ],
+      "details": "Saiyan with Goku-like black hair, dark complexion, charcoal armour with white edging and a wrapped brown tail. Smooth, sneering voice and calculated cruelty. His fight prevented Vegeta immediately intervening against Nappa. He powered up during that clash; Zero felt the enormous nearby energy. The supply operation was stopped, but neither he nor Nappa was captured. Ratings are campaign references, not Zero’s scans."
+    },
+    {
+      "id": "pan",
+      "title": "Pan · TL-782",
+      "summary": "Active Time Patroller; established family background, not yet encountered by Zero.",
+      "status": "OOC reference · Not yet met",
+      "facts": [
+        {
+          "label": "Home timeline · OOC",
+          "value": "TL-782 · Post-GT family branch"
+        },
+        {
+          "label": "Age · OOC",
+          "value": "24 years"
+        },
+        {
+          "label": "Joined Conton · OOC",
+          "value": "16 February, Age 852"
+        },
+        {
+          "label": "Current base · OOC",
+          "value": "200,000,000"
+        }
+      ],
+      "details": "Hercule’s granddaughter and Gohan and Videl’s daughter. Joined at 22 with a 50,000,000 base; two years of matched missions, training, recovery and ordinary life brought it to 200,000,000. No Super Saiyan or Wrathful acquired. These are campaign choices, not official GT measurements. The separate early-GT reference is 20,000,000; no end-GT measurement is claimed. Shared family arrival was two Conton years before the current scene; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
+    },
+    {
+      "id": "gohan",
+      "title": "Gohan · TL-782",
+      "summary": "Active Time Patroller; established family background, not yet encountered by Zero.",
+      "status": "OOC reference · Not yet met",
+      "facts": [
+        {
+          "label": "Home timeline · OOC",
+          "value": "TL-782 · Post-GT family branch"
+        },
+        {
+          "label": "Age · OOC",
+          "value": "46 years"
+        },
+        {
+          "label": "Joined Conton · OOC",
+          "value": "16 February, Age 852"
+        }
+      ],
+      "details": "Pursued a superhero career across time instead of the Prime counterpart’s scholarly path. Joined at 44 with Videl, Pan and Hercule. Precise combat rating and techniques have not been assigned for this version. Shared family arrival was two Conton years before the current scene; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
+    },
+    {
+      "id": "videl",
+      "title": "Videl · TL-782",
+      "summary": "Time Patrol member; established family background, not yet encountered by Zero.",
+      "status": "OOC reference · Not yet met",
+      "facts": [
+        {
+          "label": "Home timeline · OOC",
+          "value": "TL-782 · Post-GT family branch"
+        },
+        {
+          "label": "Age · OOC",
+          "value": "47 years"
+        },
+        {
+          "label": "Joined Conton · OOC",
+          "value": "16 February, Age 852"
+        }
+      ],
+      "details": "Joined at 45 with Gohan, Pan and her father Hercule. Precise specialism and combat rating remain to be established before a field appearance. Shared family arrival was two Conton years before the current scene; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
     }
   ],
   "places": [
@@ -385,7 +587,7 @@
       "title": "Medical ward",
       "summary": "Where Zero woke after emergency evacuation and treatment.",
       "status": "Visited",
-      "details": "An empty glass treatment chamber stood opposite the bed. Rill reported that roughly an hour had passed since admission and that the latest scans were clear after treatment for internal bleeding, damaged ribs and a head injury. Original clothes and the scouter were kept nearby."
+      "details": "An empty glass treatment chamber stood opposite the bed. Rill reported that roughly an hour had passed since admission and that the latest scans were clear after treatment for internal bleeding, damaged ribs and a head injury. Original clothes and the scouter were kept nearby. Zero returned after the first mission, underwent Chronoa’s seal while awake and received a Senzu before moving to a nearby hall."
     },
     {
       "id": "assessment-room",
@@ -427,7 +629,7 @@
       "title": "Dispatch office",
       "summary": "Mr. Satan’s scheduling and assignment desk.",
       "status": "Visited",
-      "details": "Visited with Krillin to book the chamber. Mr. Satan arranged the session, supplies and preparation, and sent Vegeta notice."
+      "details": "Visited with Krillin to book the chamber. Mr. Satan arranged the session, supplies and preparation, and sent Vegeta notice. The first paired assignment was briefed here: identify the supplier, stop deliveries and preserve communications equipment."
     },
     {
       "id": "chamber-three",
@@ -440,31 +642,42 @@
       "id": "equipment-services",
       "title": "Equipment services",
       "summary": "Automated clothing repairs and fitting adjustments near the training facilities.",
-      "status": "Current location",
-      "details": "Krillin brought Zero here after the chamber. A repair station cleaned, mended and fitted the original outfit and cape, including the tear from Nappa. The temporary robe was left behind. Zero stands at the doorway with Krillin, dressed in the repaired clothes."
+      "status": "Visited",
+      "details": "Krillin brought Zero here after the chamber. A repair station cleaned, mended and fitted the original outfit and cape, including the arrival tear from Nappa. The temporary robe was left behind. Those repairs preceded the first mission; subsequent battle damage has not been repaired."
+    },
+    {
+      "id": "tl218-supply-site",
+      "title": "TL-218 supply compound",
+      "summary": "Off-world weapons and armour operation on Earth, dismantled during the first paired mission.",
+      "status": "Visited · Warehouse destroyed",
+      "date": "16 February, Age 763 · TL-218",
+      "details": "Scrubland valley with a western ridge, fenced yard, truck, warehouse and landed spacecraft. The warehouse and powered console were destroyed or buried during the fight; data recovery is unassessed. The ship and operators escaped. No city attack occurred."
+    },
+    {
+      "id": "channel-test-hall",
+      "title": "Supervised channel-test hall",
+      "summary": "Nearby ordinary Conton training hall; current location.",
+      "status": "Current",
+      "details": "Normal 1G gravity and drones off. Chronoa and Krillin supervise. Cape and scouter are on the bench beside the door. This is not a new chamber booking or evidence that the channel has been activated."
     }
   ],
   "projects": [
     {
       "id": "field-training",
       "title": "Qualify for field duty",
-      "summary": "A year of solo training is complete; field assessment and clearance remain outstanding.",
-      "status": "In progress",
+      "summary": "Post-chamber assessment and first supervised paired mission completed.",
+      "status": "Continuing supervised training",
       "facts": [
         {
-          "label": "Current result",
-          "value": "3,075 full output · Not field-cleared"
+          "label": "Base",
+          "value": "3,075 · Unchanged after mission"
         },
         {
-          "label": "Completed training",
-          "value": "365 subjective days in Chamber Three"
-        },
-        {
-          "label": "Immediate situation",
-          "value": "With Krillin after clothing repairs"
+          "label": "Current work",
+          "value": "First sealed-channel test pending"
         }
       ],
-      "details": "The chamber developed integrated combat, flight, blasts and suppression. Zero has not yet demonstrated this progress in a new live spar or field assessment. No mission, signature technique, transformation or qualification deadline has been assigned."
+      "details": "Vegeta accepted Zero for lesser opponents after the assessment. The first mission demonstrated effective basic attacks but also dangerous limitations against Nappa. Supervised trainee status continues; no independent travel clearance is granted."
     },
     {
       "id": "partner-assignment",
@@ -481,7 +694,7 @@
           "value": "Patroller Vegeta"
         }
       ],
-      "details": "Vegeta was initially held from ordinary field assignments, then secured a temporary lower-risk solo roster with briefing compliance, active communications and escalation reporting. It ends when Zero qualifies for paired deployment. From Day 30 through Day 45 he trained Zero harshly each day; this does not cancel the waiver or imply a friendlier relationship. No particular future mission has been assigned. The solo chamber year occupied one city day; his reaction to the result is pending."
+      "details": "Vegeta’s temporary solo waiver covered the pre-field training period. Paired deployment resumed with the TL-218 supply investigation. The operation was stopped and operators identified, but they escaped when Vegeta broke away to contain Zero. This did not make Vegeta gentle or end his resentment."
     },
     {
       "id": "origin-review",
@@ -489,6 +702,13 @@
       "summary": "Zero’s account and unusual arrival remain under investigation.",
       "status": "Unresolved",
       "details": "Rill forwarded his report; Chronoa tested and confirmed his knowledge of past events. No explanation for the crossing or independent timeline clearance has been given."
+    },
+    {
+      "id": "dark-factor-containment",
+      "title": "Dark Factor containment",
+      "summary": "Seal completed; safe voluntary channeling remains to be tested.",
+      "status": "First attempt pending",
+      "details": "Chronoa is investigating safe removal while supervising the initial attempt with Krillin. The attachment’s identity remains unknown to Zero. No removal, full channel mastery or further transformation has occurred."
     }
   ],
   "events": [
@@ -1003,7 +1223,255 @@
       "summary": "Zero leaves the chamber, meets Krillin and has his original outfit and cape repaired.",
       "details": "His build is visibly more muscular. The nightmares have stopped; remembering Nappa brings anger rather than panic. He no longer needs the torn cape as a reminder. Equipment services mends the damage and adjusts the fit without changing the style. At the doorway, Krillin asks, “Better. Ready?” No answer, destination or field clearance has followed.",
       "status": "Recorded"
+    },
+    {
+      "id": "s065",
+      "title": "Finding Vegeta",
+      "summary": "Krillin accompanies Zero to the sparring court; Vegeta demands an assessment.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Only his rigid armour is on the bench; he is wearing the blue suit, gloves and boots."
+    },
+    {
+      "id": "s066",
+      "title": "Full power for assessment",
+      "summary": "Cape and scouter set aside, Zero releases suppression and takes his stance.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Vegeta opens with a restrained feint and low sweep."
+    },
+    {
+      "id": "s067",
+      "title": "Headbutt",
+      "summary": "Zero’s headbutt lands without moving or injuring Vegeta.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Vegeta floors him with a controlled counter; Zero is winded and sore."
+    },
+    {
+      "id": "s068",
+      "title": "Blast feint and knee kick",
+      "summary": "Vegeta smothers the blast, checks the kick and catches Zero’s ankle.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "His short counter begins while the ankle remains held."
+    },
+    {
+      "id": "s069",
+      "title": "Point-blank volley",
+      "summary": "Flight avoids the punch, but the volley fails to harm Vegeta.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Vegeta throws Zero aside; Krillin intercepts a stray shot."
+    },
+    {
+      "id": "s070",
+      "title": "Field assessment accepted",
+      "summary": "Zero’s flurry lands harmless hits; Vegeta ends the spar and agrees to take him on a mission.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "The accepted ending grants supervised participation against lesser opposition. No lecture about controlling anger or wounded pride occurred."
+    },
+    {
+      "id": "s071",
+      "title": "First assignment briefing",
+      "summary": "Mr. Satan briefs an illicit equipment-supply operation in TL-218.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Identify the supplier, stop deliveries and preserve communications equipment. Vegeta recognises Frieza-pattern gear."
+    },
+    {
+      "id": "s072",
+      "title": "Communicator offered",
+      "summary": "Mr. Satan confirms the supervised return is permitted and offers a collar communicator.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Arrival is planned at a concealed western ridge."
+    },
+    {
+      "id": "s073",
+      "title": "Return to TL-218",
+      "summary": "Zero takes the communicator and follows Vegeta through the portal.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Earth, 16 February Age 763. Four alien Frieza Force soldiers read 640, 780, 920 and 1,100. Zero keeps his scouter; no handover occurs."
+    },
+    {
+      "id": "s074",
+      "title": "Out-of-place soldiers",
+      "summary": "Vegeta confirms the troops are out of place, while noting their armour does not prove Frieza’s orders.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Both remain concealed on the ridge."
+    },
+    {
+      "id": "s075",
+      "title": "Drawing out the commander",
+      "summary": "Vegeta approves Zero approaching the soldiers to provoke a response.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Preserve the ship and communications equipment; Vegeta claims any worthy challenger."
+    },
+    {
+      "id": "s076",
+      "title": "Entering the yard",
+      "summary": "Zero lands by the truck with output suppressed near 1,538 and greets the soldiers.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "A blaster is raised and another soldier is told to fetch help."
+    },
+    {
+      "id": "s077",
+      "title": "A controlled power burst",
+      "summary": "A blast, kick and punch put three soldiers down.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Zero rises to full power for the strikes then returns to half. The fourth retreats into the ship to raise the alarm."
+    },
+    {
+      "id": "s078",
+      "title": "Nappa named",
+      "summary": "The injured red-skinned soldier identifies Nappa as his commander.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Zero allows the other soldier to run; Nappa’s presence is not yet visually confirmed."
+    },
+    {
+      "id": "s079",
+      "title": "Warehouse search",
+      "summary": "Zero throws the captive aside and enters the warehouse.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Weapons, armour and an active unfamiliar console are visible; footsteps descend the ship ramp."
+    },
+    {
+      "id": "s080",
+      "title": "Nappa returns",
+      "summary": "Nappa appears at the loading entrance; the scouter reads 6,000.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "He demands Zero come outside."
+    },
+    {
+      "id": "s081",
+      "title": "Warehouse destroyed",
+      "summary": "Zero’s outward ki release demolishes the warehouse; the surprise rush bloodies Nappa’s lip.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "The console is buried and disabled. Nappa counters hard; evidence preservation is compromised."
+    },
+    {
+      "id": "s082",
+      "title": "Contact blasts",
+      "summary": "One palm blast injures Nappa’s ear; he forces the other skyward.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Zero is grounded with abdominal pain and a strained wrist and shoulder."
+    },
+    {
+      "id": "s083",
+      "title": "Turles intercepts",
+      "summary": "Nappa’s conditioned tail resists Zero’s grip. Vegeta moves to intervene but Turles intercepts him.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Nappa elbows Zero’s ribs and continues closing."
+    },
+    {
+      "id": "s084",
+      "title": "Trading blows",
+      "summary": "Several counters land, but Nappa matches Zero’s movement and wears him down.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Gravity training gives no extra speed advantage beyond Zero’s actual abilities."
+    },
+    {
+      "id": "s085",
+      "title": "One more rush",
+      "summary": "Zero forces Nappa back briefly before another counter leaves him coughing blood.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Nappa begins a close-range blast."
+    },
+    {
+      "id": "s086",
+      "title": "The eye strike",
+      "summary": "Zero cuts around the blast and concentrates ki into his fingertips, badly injuring Nappa’s right eye.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "No stable blade forms. The shot burns Zero’s shoulder; he is thrown aside, severely depleted."
+    },
+    {
+      "id": "s087",
+      "title": "Caught by the throat",
+      "summary": "Zero rises and taunts Nappa, who lifts him by the throat.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "His injuries and exhaustion are severe; Nappa draws back his free fist."
+    },
+    {
+      "id": "s088",
+      "title": "Uncontrolled awakening",
+      "summary": "At the brink, a voice that feels like Zero’s own thoughts coaxes a request for strength.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Power erupts, throwing Nappa back. A black-and-violet mantle forms; Zero feels dreamlike apparent control. Campaign output: ×15, 46,125; not a scouter reading."
+    },
+    {
+      "id": "s089",
+      "title": "Nappa’s fruit",
+      "summary": "Zero overwhelms Nappa in the air. Nappa consumes a fruit and becomes much stronger.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Zero retains the advantage; Nappa’s chest armour shatters."
+    },
+    {
+      "id": "s090",
+      "title": "A demonic laugh",
+      "summary": "Zero drags Nappa across open ground, drives him upward and slams him back down.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Nappa lies motionless below; Zero remains aloft, laughing in layers of growling voices."
+    },
+    {
+      "id": "s091",
+      "title": "Loss of control",
+      "summary": "Zero wants to help Vegeta, but his body accelerates toward a distant city. Vegeta intercepts and knocks him unconscious.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "He wakes in Conton’s ward. The supply site is dismantled, Turles and Nappa escaped, and no city attack occurred. Chronoa asks what he remembers."
+    },
+    {
+      "id": "s092",
+      "title": "Reporting the takeover",
+      "summary": "Zero describes dreamlike recall and being unable to stop his body.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "Chronoa examines residual energy and asks how it began."
+    },
+    {
+      "id": "s093",
+      "title": "Dark Factor identified",
+      "summary": "Zero explains the familiar voice and apparent control. Chronoa identifies Dark Factor.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "She proposes containment while investigating whether safe removal is possible."
+    },
+    {
+      "id": "s094",
+      "title": "The seal",
+      "summary": "Chronoa seals the attachment while Zero is awake, leaving a black circle with four inward hooks below the sternum.",
+      "status": "Recorded",
+      "date": "Day 47",
+      "details": "She explains that losing consciousness or nearing death while channeling can release the uncontrolled state. Closed-channel sleep is safe. Injuries still require healing."
+    },
+    {
+      "id": "s095",
+      "title": "Recovery and the first test",
+      "summary": "A ward Senzu heals Zero’s injuries and fatigue. He joins Krillin and Chronoa in a normal-gravity training hall.",
+      "status": "Recorded",
+      "date": "Day 47 · 11:50",
+      "details": "Cape and scouter are on the bench. Chronoa makes the seal’s access point perceptible, then withdraws her hand. Zero’s first actual channel attempt remains pending."
     }
   ],
-  "recordedThrough": "S064 · Story audit 10 October 2026"
+  "recordedThrough": "S095 · Story and NPC reconciliation 11 October 2026"
 }

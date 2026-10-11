@@ -3,7 +3,7 @@
 Generated from campaign.json. Edit that authoritative source, then run build.py.
 
 - Premise: Dragon Ball Isekai.
-- Phase: Back from the chamber.
+- Phase: After the first mission.
 - Protagonist: Zero.
 - Age: 27 years, 6 months.
 - Height: 5′6″ (167.64 cm).
@@ -11,13 +11,13 @@ Generated from campaign.json. Edit that authoritative source, then run build.py.
 - Race/species: Human.
 - Role: Supervised Time Patrol trainee.
 - Current rested measured battle power: 3075.
-- Condition: Healed, with no lasting functional injury recorded. Original outfit and cape clean, repaired and fitted; scouter worn. No weights or senzu remaining.
-- Character appearance: Considerably greater muscle mass and definition after a year of training. Long curly auburn hair, full auburn beard and green iris. Black wrap-front outfit and loose trousers, burgundy sash and wrist wraps, burgundy cape with round gold fasteners, black-and-burgundy boots and a red-lensed scouter. The original clothes are repaired and fitted to his broader build.
+- Condition: Senzu healed battle injuries and physical fatigue. All forms inactive; seal intact. Clothing remains battle-damaged. Cape and scouter rest on the hall bench; no personal senzu held.
+- Character appearance: Muscular post-chamber build, long curly auburn hair, full auburn beard and green iris. Black-and-burgundy outfit with matching cape, boots and recovered red scouter. Clothing and equipment carry new mission damage. A permanent black circle with four inward-curving hooks marks the upper abdomen below the sternum. The portrait remains a standard-outfit reference, not a record of current damage.
 - Canon, continuity and era: Conton City · Age 854.
 - Arrival: Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness.
-- Current location: Conton City · Equipment services.
-- Story date: Day 47 · 16 February, Age 854 · About 09:40.
+- Current location: Conton City · Training hall.
+- Story date: Day 47 · 16 February, Age 854 · 11:50.
 - Character artwork: Provided: zero-portrait.jpg.
-- Published audience: public, read-only companion. Character records plus explicitly labelled OOC timeline references.
+- Published audience: public, read-only companion. Character records plus explicitly labelled OOC timeline, NPC power and TL-782 family references.
 
-Unpublished fields can exist in private preparation. Story records contain enacted, character-known facts. The user-authorised exception is explicitly labelled OOC home-timeline labels; these do not grant Zero knowledge. Future plot plans remain private. The story clock measures elapsed time from the opening; documentation does not start it. The Capsule Corp visual theme does not establish affiliations, equipment or geography.
+Unpublished fields can exist in private preparation. Story records contain enacted, character-known facts. User-authorised OOC timeline, current NPC power and TL-782 family references are explicitly labelled; they do not grant Zero knowledge. Form totals are campaign calculations, distinct from in-story measurements. Future plot plans remain private. The story clock measures elapsed time from the opening; documentation does not start it. The Capsule Corp visual theme does not establish affiliations, equipment or geography.

@@ -1,22 +1,19 @@
 # Start here
 
-This repository is the public companion for Dragon Ball Stories, a Dragon Ball Isekai.
+This repository is the public companion for Dragon Ball Stories.
 
-Read [the narrator guide](NARRATOR-GUIDE.md) for character records, narration and continuity rules, and [Dialogue and Interactive Storytelling](DIALOGUE-AND-INTERACTIVE-STORYTELLING.md) for dialogue, subtext and player agency.
+1. Read [campaign.json](campaign.json) for the authoritative app record and [Current continuity](CURRENT-CONTINUITY.md) for the generated checkpoint.
+2. Read [Narrator guide](NARRATOR-GUIDE.md) and [Dialogue and Interactive Storytelling](DIALOGUE-AND-INTERACTIVE-STORYTELLING.md) before narration.
+3. Read [Corrections](RETCONS.md), then consult the authorised local exact scene archive and private checkpoint. Public summaries do not replace them.
 
-1. Read campaign.json for authoritative public character and story data.
-2. Read CAMPAIGN-CONFIG.md and CURRENT-CONTINUITY.md for readable summaries.
-3. Read RETCONS.md before relying on older records.
-4. Consult the complete local transcript and private narrator checkpoint through their authorized location before narrating. They are intentionally absent here.
+Coverage is **S095: Day 47, 16 February Age 854, 11:50**. The first mission, outbreak, diagnosis, seal and Senzu recovery are recorded. Zero is in the training hall with Chronoa and Krillin; his first channel attempt remains pending. Publication advances no time.
 
-Story in progress through **S064, Day 47, 16 February Age 854, about 09:40**. Zero is human, 27 years and 6 months old and 5′6″ (167.64cm). He has completed 365 subjective days of solo chamber training during one day in Conton. Rested full output is 3,075, with usual suppression near 1,538. He is at equipment services with Krillin, wearing his original outfit and cape after repairs and fitting adjustments. Krillin has asked “Better. Ready?” No next destination or field clearance is established. Publication does not continue the conversation.
+The journal has 95 accepted scene summaries. Current powers, form access, possessions and condition live in campaign.json. OOC home-timeline labels, current NPC ratings and the agreed TL-782 family background are reader references, not knowledge automatically granted to Zero. Calculated form ceilings are not new scouter readings. Future plans and unrevealed causes remain private.
 
-The 64-entry journal summarises enacted exchanges using accepted corrections. The complete exact archive stays private. Publish new facts only after they are established and known to Zero; OOC home-timeline labels and the approved profile/art are explicit exceptions, not permission to reveal full dossiers. Future plans remain private.
-
-The approved fictional portrait shows the post-chamber muscular build, recovered scouter and repaired original clothing. The repairs occurred in S064; the image does not enact a return to Capsule Corp or a new acquisition. Decorative scenery and styling do not establish geography or affiliations. Keep real-world identity, location, contacts and identifying biography outside public records.
+Approved art depicts standard appearances or established transformations, not a guarantee that equipment is currently pristine. Historical art remains dated; unused future designs stay unpublished. Decorative backgrounds establish no visit, affiliation or location. Keep real-world identity and identifying metadata out of public records.
 
 ## Maintenance
 
-Update campaign.json first. Generate the readable summaries with the local build.py, validate with verify.py, then publish only the manifest's files. See MAINTENANCE.md for the data format and portrait workflow. Preserve historical events and dated corrections. A public snapshot may lag live play.
+Update campaign.json, generate summaries with the local build.py, validate with verify.py and publish only manifest-listed files. Read every edited document fully before and after. Preserve exact archives and dated corrections; consult MAINTENANCE.md for the workflow. Private source, full transcripts and publication receipts remain local.
 
-The app requires an internet connection and fetches current data without storing character edits on the device. There are no external analytics, external scripts or offline caches. The updated narrator guide is published here; private source and unrevealed campaign material stay local. Never upload the entire campaign-source folder.
+The app needs an internet connection and automatically checks for releases. It has no device-local character editing, external analytics or offline service worker.

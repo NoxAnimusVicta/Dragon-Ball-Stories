@@ -1,9 +1,15 @@
 # Corrections and operative continuity
 
-Reviewed 10 October 2026 through S064. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
+Reviewed 11 October 2026 through S095. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
 
 | Record | Effective point | Correction |
 | --- | --- | --- |
+| 11 October reconciliation | Publication through S095 | First assessment/mission, outbreak, containment, healing and pending channel test recorded. Base remains3,075; calculated Uncontrolled46,125 and untested channel ceiling30,750. |
+| NPC progression | Day47 current references | Vegeta3,000,000 base and30,000,000 Wrathful/GreatApe supersede stale current2m/20m; initial values remain historical. TL782 family and NPC power references are explicitly OOC. |
+| S070 | Assessment ending | Accepted ending grants supervised field participation; rejected anger/pride lecture and renewed attack are withdrawn. |
+| S073 | Reconnaissance | Four guards are alien Frieza Force soldiers, not ordinary humans. No scouter handover. |
+| S088 | Awakening | Coaxed request for strength precedes the eruption; the earlier automatic awakening is withdrawn. |
+| S091 | Ward dialogue | Corrected dialogue preserves interception, evacuation, escape and elapsed time. |
 | C089 | All hub scenes | The current hub is Conton City. Earlier Toki Toki City labels refer to the same enacted locations and are corrected; no relocation or time advance. The old city name remains appropriate to Xenoverse 1 history. |
 | C096 | Current age at S052 | Age is 26 years and 6 months at Day 45 evening. Track future subjective ageing from this anchor; no birthday inferred. |
 | S052 / S057 | Instructor role | Krillin is the combat instructor for Mr. Satan’s roster, rather than an active field Patroller. |

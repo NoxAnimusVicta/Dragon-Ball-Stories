@@ -29,8 +29,11 @@
     "release.json",
     "styles.css",
     "updates.js",
+    "vegeta-base.jpg",
+    "vegeta-wrathful.jpg",
     "zero-history-iris.jpg",
-    "zero-portrait.jpg"
+    "zero-portrait.jpg",
+    "zero-uncontrolled.jpg"
   ],
   "destination": "NoxAnimusVicta/Dragon-Ball-Stories",
   "branch": "main",

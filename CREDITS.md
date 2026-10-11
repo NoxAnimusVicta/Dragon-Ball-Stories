@@ -19,6 +19,8 @@ These references informed the design; their screenshots are not distributed with
 
 The interface itself is implemented in HTML, CSS and JavaScript. No game screenshots or game UI textures are bundled. zero-portrait.jpg is the fictional character artwork supplied and approved by the user. Its pixels are unchanged; identifying metadata was removed from the publication copy. The post-chamber portrait shows Zero’s increased muscle mass, green iris, recovered red scouter and original clothing repaired in S064. Its Capsule Corp background recalls the arrival setting; it does not establish his current location, an affiliation or a new visit. The public copy retains the supplied image pixels and dimensions; the original remains private. zero-history-iris.jpg is the approved before-chamber portrait; its pixels and dimensions are retained with identifying metadata removed. Appearance history contains only the before- and after-chamber looks, not earlier facial-art revisions. Historical illustrations do not assert exact clothing damage or location at each moment.
 
+zero-uncontrolled.jpg, vegeta-base.jpg and vegeta-wrathful.jpg are user-supplied fictional references. Identifying metadata is removed without changing the JPEG image data. Uncontrolled and Wrathful are enacted appearances; the landscapes are illustrative. Clean standard-outfit art does not undo current battle damage. Future outfit and transformation concepts are not published.
+
 Unofficial personal fan project. Dragon Ball, Capsule Corporation and related characters belong to their respective rights holders. No affiliation or endorsement. The icon's license does not claim ownership of the underlying franchise.
 
 ## Launch screen
