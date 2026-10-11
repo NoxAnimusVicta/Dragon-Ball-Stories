@@ -172,8 +172,8 @@
       "summary": "A black-and-violet ki mantle first manifested while fighting Nappa.",
       "status": "Manifested · Unmastered",
       "abilityType": "transformation",
-      "artwork": "zero-uncontrolled.jpg",
-      "artworkAlt": "Zero enclosed in a slightly enlarged black ki mantle with violet flames, horn-like projections and pale claws.",
+      "artwork": "ability-uncontrolled.webp",
+      "artworkAlt": "Symbolic black-and-violet horned energy eruption for Uncontrolled Dark Factor.",
       "facts": [
         {
           "label": "Campaign factor",
@@ -210,9 +210,9 @@
           "value": "Roughly thirty seconds at full output so far; strain rising rapidly"
         }
       ],
-      "details": "A small voluntary draw and release succeeded before Zero gradually increased the flow to full output. The first full manifestation produced gusts and shockwaves without damaging the hall. He remains conscious and in control, but sweat, deeper breathing, trembling legs and an uneven aura show how difficult it is to sustain. Krillin has asked him to reduce the flow; he has not done so yet. If Zero loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; it has not removed it. The supplied art illustrates the form, not a new location, clothing repair or decision to put his cape and scouter back on.",
-      "artwork": "zero-sealed-channel.jpg",
-      "artworkAlt": "Zero with red irises and a pale violet aura, his ordinary auburn hair lifted by the power-up. Black outfit, burgundy cape and red scouter are illustrative standard equipment."
+      "details": "A small voluntary draw and release succeeded before Zero gradually increased the flow to full output. The first full manifestation produced gusts and shockwaves without damaging the hall. He remains conscious and in control, but sweat, deeper breathing, trembling legs and an uneven aura show how difficult it is to sustain. Krillin has asked him to reduce the flow; he has not done so yet. If Zero loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; it has not removed it. The ability icon is symbolic; the character gallery retains the full appearance reference.",
+      "artwork": "ability-sealed-channel.webp",
+      "artworkAlt": "A circular four-hook seal containing pale violet energy, symbolising Dark Factor Sealed Channel."
     }
   ],
   "inventory": [
@@ -224,17 +224,10 @@
       "facts": [
         {
           "label": "Pieces",
-          "value": "Wrap-front top, loose trousers, sash, wrist wraps and boots"
+          "value": "Wrap-front top, loose trousers, sash, wrist wraps, boots and burgundy cape with gold clasps"
         }
       ],
-      "details": "S064 repairs remain part of its history. New combat wear includes a scorched shoulder and other battle damage. The Senzu healed Zero, not his clothing. Original style retained; no armour rating or bonus."
-    },
-    {
-      "id": "cape",
-      "title": "Burgundy cape",
-      "summary": "Burgundy cape with gold clasps; now battle-worn again.",
-      "status": "On training-hall bench",
-      "details": "The arrival tear was repaired after the chamber. The Nappa rematch singed and frayed an edge; the cape was removed for treatment and is now beside the hall door. No second repair has occurred."
+      "details": "S064 repairs remain part of its history. New combat wear includes a scorched shoulder and other battle damage. The Senzu healed Zero, not his clothing. Original style retained; no armour rating or bonus. The cape is part of this outfit: its arrival tear was repaired after the chamber, but the rematch singed and frayed an edge. It is currently removed on the training-hall bench; no second repair has occurred."
     },
     {
       "id": "scouter",
@@ -604,7 +597,8 @@
           "label": "Position",
           "value": "Adjoins the gravity training hall used by Vegeta; connected to the indoor practice rooms."
         }
-      ]
+      ],
+      "parentId": "toki-toki-city"
     },
     {
       "id": "quarters-214",
@@ -621,7 +615,8 @@
           "label": "Position",
           "value": "Reached by the shallow steps to the residential building; its named district has not been established."
         }
-      ]
+      ],
+      "parentId": "toki-toki-city"
     },
     {
       "id": "dining-hall",
@@ -638,7 +633,8 @@
           "label": "Position",
           "value": "Within walking distance of the residential buildings; the exact building and district are not named."
         }
-      ]
+      ],
+      "parentId": "toki-toki-city"
     },
     {
       "id": "medical-ward",
@@ -655,7 +651,8 @@
           "label": "Position",
           "value": "Across the square from the reception building containing assessment room three; ordinary training rooms are nearby."
         }
-      ]
+      ],
+      "parentId": "toki-toki-city"
     },
     {
       "id": "assessment-room",
@@ -672,7 +669,8 @@
           "label": "Position",
           "value": "Across the square from the medical ward."
         }
-      ]
+      ],
+      "parentId": "toki-toki-city"
     },
     {
       "id": "capsule-frontage",
@@ -689,7 +687,8 @@
           "label": "Position",
           "value": "The street and paving outside Capsule Corp where Zero first appeared."
         }
-      ]
+      ],
+      "parentId": "west-city-tl218"
     },
     {
       "id": "maintenance-bay",
@@ -706,7 +705,8 @@
           "label": "Position",
           "value": "Adjoins the training facilities; the specific room Bulma was repairing was out of service when last seen."
         }
-      ]
+      ],
+      "parentId": "toki-toki-city"
     },
     {
       "id": "gravity-hall",
@@ -723,7 +723,8 @@
           "label": "Position",
           "value": "The hall Vegeta led Zero into from the open court on Day 30."
         }
-      ]
+      ],
+      "parentId": "toki-toki-city"
     },
     {
       "id": "practice-hall",
@@ -740,7 +741,8 @@
           "label": "Position",
           "value": "Includes the rooms used for Krillin’s instruction and the nearby room used after the medical-ward visit; individual room numbers are not established."
         }
-      ]
+      ],
+      "parentId": "toki-toki-city"
     },
     {
       "id": "dispatch-office",
@@ -757,7 +759,8 @@
           "label": "Position",
           "value": "The office where chamber bookings and the first paired mission were arranged; a named district has not been established."
         }
-      ]
+      ],
+      "parentId": "toki-toki-city"
     },
     {
       "id": "chamber-three",
@@ -774,7 +777,8 @@
           "label": "Position",
           "value": "Separate chamber facility reached from the practice hall; equipment services is nearby."
         }
-      ]
+      ],
+      "parentId": "toki-toki-city"
     },
     {
       "id": "equipment-services",
@@ -791,7 +795,8 @@
           "label": "Position",
           "value": "Windows display boots, gloves and uniforms; repair stations and curtained changing cubicles are inside."
         }
-      ]
+      ],
+      "parentId": "toki-toki-city"
     },
     {
       "id": "tl218-supply-site",
@@ -808,6 +813,57 @@
         {
           "label": "Position",
           "value": "A western ridge overlooks the fenced compound; the city seen on the horizon has not been identified."
+        }
+      ],
+      "parentId": "earth-tl218"
+    },
+    {
+      "id": "timeline-218",
+      "title": "TL-218",
+      "summary": "The timeline where Zero arrived and later returned on his first paired mission.",
+      "details": "Locations visited within this history are grouped below. Timeline identity is separate from the local date.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Timeline TL-218"
+        },
+        {
+          "label": "Position",
+          "value": "Contains the recorded Earth locations below."
+        }
+      ]
+    },
+    {
+      "id": "earth-tl218",
+      "parentId": "timeline-218",
+      "title": "Earth",
+      "summary": "Earth in TL-218.",
+      "details": "Contains West City and the later supply-operation site. The city on the horizon at the supply site is not identified.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "TL-218 · Earth"
+        },
+        {
+          "label": "Position",
+          "value": "West City and the supply-site valley are both on this Earth; their distance apart is not established."
+        }
+      ]
+    },
+    {
+      "id": "west-city-tl218",
+      "parentId": "earth-tl218",
+      "title": "West City",
+      "summary": "The city where Zero first appeared outside Capsule Corp.",
+      "details": "The initial encounter with Nappa took place outside Capsule Corp.",
+      "facts": [
+        {
+          "label": "Location",
+          "value": "TL-218 · Earth · West City"
+        },
+        {
+          "label": "Position",
+          "value": "Capsule Corp frontage is the recorded arrival site within this city."
         }
       ]
     }

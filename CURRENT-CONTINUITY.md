@@ -15,7 +15,7 @@ Generated from campaign.json. Edit that authoritative source, then run build.py.
 - Pending choice: Krillin has asked Zero to bring the output down. The channel is still active; Zero’s response is pending.
 - Latest recorded event: s098.
 - Ability records: 8.
-- Possession records: 5.
+- Possession records: 4.
 - Account records: 1.
 - Relationship records: 12.
 - Journal entries: 98.

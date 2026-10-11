@@ -1,0 +1,13 @@
+/* Location hierarchy: bounded indentation stays readable on narrow phones. */
+.place-node{border:1px solid #b2c9bd;border-radius:6px;margin:14px 0;background:#fff9e9;overflow:hidden}
+.place-node>summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px;font-weight:800;list-style:none;color:#153c43}
+.place-node>summary::-webkit-details-marker{display:none}
+.place-node>summary::after{content:'+';font-size:24px;font-weight:400;flex:none}
+.place-node[open]>summary::after{content:'−'}
+.place-node[open]>summary{border-bottom:1px solid #b2c9bd;background:#edf0df}
+.place-content{padding:4px 16px 16px;min-width:0}
+.place-content>p{line-height:1.6}
+.place-children .place-node{background:#fffdf5}
+.place-children .place-children .place-content{padding-left:10px;padding-right:10px}
+.place-node:focus-visible{outline:3px solid #e5a32c;outline-offset:3px}
+@media(max-width:600px){.place-node .definition-grid{grid-template-columns:1fr}.place-content{padding-left:12px;padding-right:12px}.place-node>summary{padding:14px 12px}.place-children .place-children .place-node{border-left:0;border-right:0}}
