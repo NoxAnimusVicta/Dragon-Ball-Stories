@@ -332,14 +332,16 @@
         ],
         "forms": [
           {
-            "name": "Wrathful · OOC name",
+            "name": "Wrathful",
             "date": "16 February, Age 854 · Day 47 · TL-218 mission, Age 763",
             "portrait": "vegeta-wrathful.jpg",
             "portraitAlt": "Vegeta in original armour with flared black hair, gold eyes and golden Wrathful aura; tail retained.",
-            "unlocked": true
+            "unlocked": true,
+            "multiplier": 10
           }
         ]
-      }
+      },
+      "battlePower": 3015000
     },
     {
       "id": "krillin",

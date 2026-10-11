@@ -160,19 +160,21 @@
     const appearance = artItems(art.appearance);
     const forms = record.canTransform === true ? artItems(art.forms).filter(a => a.unlocked === true) : [];
     return {appearance, ...(record.canTransform === true && (appearance.length || forms.length) ?
-      {forms:appearance.length ? [{...appearance.at(-1),name:'Base'}, ...forms] : forms} : {})};
+      {forms:appearance.length ? [{...appearance.at(-1),name:'Base',multiplier:1}, ...forms] : forms} : {})};
   }
   function recordGallery(record, kind) {
     const collections = galleryCollections(record,kind);
     const modes = Object.keys(collections).filter(k => collections[k].length);
     if (!modes.length) return '';
-    const state = artSelections.get(record.id) || {mode:modes[0],index:0};
+    const state = artSelections.get(record.id) || {mode:modes.includes('forms')?'forms':modes[0],index:0};
     if (!modes.includes(state.mode)) { state.mode=modes[0]; state.index=0; }
     const items = collections[state.mode]; state.index %= items.length;
     artSelections.set(record.id,state);
     const item = items[state.index], multiple=items.length>1;
+    const power = kind==='people' && state.mode==='forms' && present(record.battlePower) && present(item.multiplier) ? multiplyPower(record.battlePower,item.multiplier) : null;
+    const powerCaption = power !== null ? `<div class="gallery-power" aria-live="polite"><span>Power Level</span><strong>${escape(exactPower(power))}</strong></div>` : '';
     const image = `<img class="record-art-image" src="${escape(item.portrait)}" alt="${escape(item.portraitAlt || item.name)}" loading="lazy" width="${kind==='places'?1200:853}" height="${kind==='places'?750:1280}"><span class="record-art-error" hidden>Artwork temporarily unavailable</span>`;
-    return `<section class="record-gallery ${kind==='places'?'place-gallery':'person-gallery'}" data-gallery="${escape(record.id)}" data-gallery-kind="${kind}" aria-label="${escape(record.title)} artwork"><div class="gallery-heading"><span class="eyebrow">${kind==='places'?'ART ARCHIVE':'APPEARANCE ARCHIVE'}</span>${modes.length>1 ? `<div class="gallery-modes" role="group" aria-label="Art collection">${['forms','appearance'].filter(k=>modes.includes(k)).map(k=>`<button data-gallery-mode="${k}" aria-pressed="${state.mode===k}">${k==='forms'?'Forms':'Appearance'}</button>`).join('')}</div>` : ''}</div>${multiple ? `<button class="record-art-frame" data-gallery-cycle="0" aria-label="${escape(item.name)}. Left: previous image; right: next image. Arrow keys also navigate.">${image}</button>` : `<div class="record-art-frame">${image}</div>`}<div class="gallery-caption"><div aria-live="polite"><strong>${escape(item.name)}</strong><span class="art-date">${escape(item.date)}</span></div>${multiple ? `<div class="gallery-navigation"><button data-gallery-cycle="-1" aria-label="Previous artwork">‹</button><span aria-label="Image ${state.index+1} of ${items.length}">${state.index+1} / ${items.length}</span><button data-gallery-cycle="1" aria-label="Next artwork">›</button></div>` : ''}</div></section>`;
+    return `<section class="record-gallery ${kind==='places'?'place-gallery':'person-gallery'}" data-gallery="${escape(record.id)}" data-gallery-kind="${kind}" aria-label="${escape(record.title)} artwork"><div class="gallery-heading"><span class="eyebrow">${kind==='places'?'ART ARCHIVE':'APPEARANCE ARCHIVE'}</span>${modes.length>1 ? `<div class="gallery-modes" role="group" aria-label="Art collection">${['forms','appearance'].filter(k=>modes.includes(k)).map(k=>`<button data-gallery-mode="${k}" aria-pressed="${state.mode===k}">${k==='forms'?'Forms':'Appearance'}</button>`).join('')}</div>` : ''}</div>${multiple ? `<button class="record-art-frame" data-gallery-cycle="0" aria-label="${escape(item.name)}. Left: previous image; right: next image. Arrow keys also navigate.">${image}</button>` : `<div class="record-art-frame">${image}</div>`}<div class="gallery-caption"><div aria-live="polite"><strong>${escape(item.name)}</strong><span class="art-date">${escape(item.date)}</span></div>${kind==='people' ? powerCaption : multiple ? `<div class="gallery-navigation"><button data-gallery-cycle="-1" aria-label="Previous artwork">‹</button><span aria-label="Image ${state.index+1} of ${items.length}">${state.index+1} / ${items.length}</span><button data-gallery-cycle="1" aria-label="Next artwork">›</button></div>` : ''}</div></section>`;
   }
   function changeGallery(element, direction, mode) {
     const gallery = element.closest('[data-gallery]');
