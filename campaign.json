@@ -15,17 +15,17 @@
     "portraitAlt": "Zero after a year of chamber training: muscular human with auburn curls, beard, green iris and red scouter, in a black outfit and burgundy cape. Capsule Corp illustration backdrop.",
     "race": "Human",
     "origin": "From a world where Dragon Ball is fiction. The cause of the crossing is still unknown.",
-    "appearance": "Muscular post-chamber build, long curly auburn hair, full auburn beard and normally green irises. Pale violet aura and red irises while Sealed Channel is active; no other transformation changes. Black-and-burgundy outfit with matching cape, boots and recovered red scouter. Clothing and equipment carry new mission damage. A permanent black circle with four inward-curving hooks marks the upper abdomen below the sternum. The portrait remains a standard-outfit reference, not a record of current damage.",
+    "appearance": "Muscular post-chamber build, long curly auburn hair, full auburn beard and normally green irises. Pale violet aura and red irises while Dark Factor Sealed Channel is active; no other transformation changes. Black-and-burgundy outfit with matching cape, boots and recovered red scouter. Clothing and equipment carry new mission damage. A permanent black circle with four inward-curving hooks marks the upper abdomen below the sternum. The portrait remains a standard-outfit reference, not a record of current damage.",
     "personality": "Expressed through your choices and dialogue.",
     "backstory": "Familiar with Dragon Ball through anime, manga, films and games before the crossing. No further personal background is recorded.",
     "arrival": "Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness.",
     "motivation": "Develop controlled strength and continue supervised Patrol work.",
     "knowledge": "Retains referential knowledge of Z, Super, the films, manga, GT and the first two Xenoverse main stories. Chronoa confirmed that the two Xenoverse stories correspond to this Patrol’s past, with distinct hero partners; the second occurred about two hub years ago. This particular Vegeta’s home history remains unknown. On his first paired mission he encountered Nappa and Turles in TL-218. He remembers losing control of his body; Chronoa identified the attachment as Dark Factor and explained the seal’s failure conditions. Its identity and the cause of the crossing remain unknown.",
-    "limitations": "No independent timeline access or rescinded city escort restriction. Uncontrolled is not voluntarily mastered. Sealed Channel has reached full output briefly, but maintaining it is difficult; no sustained mastery or combat test. No named attack, stable ki blade or precise ki-sensing mastery.",
+    "limitations": "No independent timeline access or rescinded city escort restriction. Uncontrolled Dark Factor is not voluntarily mastered. Dark Factor Sealed Channel has reached full output briefly, but maintaining it is difficult; no sustained mastery or combat test. No named attack, stable ki blade or precise ki-sensing mastery.",
     "battlePower": 3720,
     "powerReading": "OOC recovered-base assessment · Last measured base 3,075 · No new scan; form totals are calculations",
     "role": "Supervised Time Patrol trainee",
-    "condition": "Sealed Channel active; conscious and in control, with rapidly rising exertional strain after roughly thirty seconds at full output. Seal intact. Prior battle injuries healed; clothing still battle-damaged. Cape and scouter are on the hall bench; no personal senzu held.",
+    "condition": "Dark Factor Sealed Channel active; conscious and in control, with rapidly rising exertional strain after roughly thirty seconds at full output. Seal intact. Prior battle injuries healed; clothing still battle-damaged. Cape and scouter are on the hall bench; no personal senzu held.",
     "ageMonths": 6,
     "appearanceHistory": [
       {
@@ -50,7 +50,7 @@
     "forms": [
       {
         "id": "uncontrolled",
-        "name": "Uncontrolled",
+        "name": "Uncontrolled Dark Factor",
         "unlocked": true,
         "multiplier": 15,
         "date": "16 February, Age 854 · Day 47 · First manifestation in TL-218, Age 763",
@@ -60,7 +60,7 @@
       },
       {
         "id": "sealed-channel",
-        "name": "Sealed Channel",
+        "name": "Dark Factor Sealed Channel",
         "unlocked": true,
         "multiplier": 10,
         "date": "16 February, Age 854 · Day 47 · First full manifestation",
@@ -74,7 +74,7 @@
     "era": "Conton City · Age 854",
     "date": "Day 47 · 16 February, Age 854 · 11:53",
     "location": "Conton City · Training hall",
-    "situation": "After a successful small draw and voluntary release, Zero has reached full Sealed Channel under Chronoa and Krillin’s supervision at normal gravity. He remains conscious and in control, but strain is rising quickly.",
+    "situation": "After a successful small draw and voluntary release, Zero has reached full Dark Factor Sealed Channel under Chronoa and Krillin’s supervision at normal gravity. He remains conscious and in control, but strain is rising quickly.",
     "pendingChoice": "Krillin has asked Zero to bring the output down. The channel is still active; Zero’s response is pending."
   },
   "abilities": [
@@ -119,7 +119,7 @@
       "title": "Ki control",
       "summary": "Supports loaded movement, flight and repeated blasts while managing available output.",
       "status": "Developing control",
-      "details": "Combined practice improved bracing, energy gathering and switching between movement and attacks. Zero can deliberately lower and restore his output, but control still takes work under unfamiliar pressure. Precise ki sensing and effortless full-strength defence while suppressed are not established. During the outbreak Zero briefly felt two enormous nearby signatures; that does not establish precise or general-purpose sensing. In the supervised seal test, Zero drew a small amount and closed it without disrupting his own ki, then reached full Sealed Channel briefly. Sustaining the stronger flow rapidly became difficult."
+      "details": "Combined practice improved bracing, energy gathering and switching between movement and attacks. Zero can deliberately lower and restore his output, but control still takes work under unfamiliar pressure. Precise ki sensing and effortless full-strength defence while suppressed are not established. During the outbreak Zero briefly felt two enormous nearby signatures; that does not establish precise or general-purpose sensing. In the supervised seal test, Zero drew a small amount and closed it without disrupting his own ki, then reached full Dark Factor Sealed Channel briefly. Sustaining the stronger flow rapidly became difficult."
     },
     {
       "id": "flight",
@@ -168,7 +168,7 @@
     },
     {
       "id": "uncontrolled-form",
-      "title": "Uncontrolled",
+      "title": "Uncontrolled Dark Factor",
       "summary": "A black-and-violet ki mantle first manifested while fighting Nappa.",
       "status": "Manifested · Unmastered",
       "abilityType": "transformation",
@@ -188,7 +188,7 @@
     },
     {
       "id": "sealed-channel-form",
-      "title": "Sealed Channel",
+      "title": "Dark Factor Sealed Channel",
       "summary": "A controlled flow through Chronoa’s seal, first brought to full output in supervised practice.",
       "status": "Active · First full manifestation",
       "abilityType": "transformation",
@@ -210,7 +210,7 @@
           "value": "Roughly thirty seconds at full output so far; strain rising rapidly"
         }
       ],
-      "details": "A small voluntary draw and release succeeded before Zero gradually increased the flow to full output. The first full manifestation produced gusts and shockwaves without damaging the hall. He remains conscious and in control, but sweat, deeper breathing, trembling legs and an uneven aura show how difficult it is to sustain. Krillin has asked him to reduce the flow; he has not done so yet. If Zero loses consciousness or approaches death while channeling, Uncontrolled takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; it has not removed it. The supplied art illustrates the form, not a new location, clothing repair or decision to put his cape and scouter back on.",
+      "details": "A small voluntary draw and release succeeded before Zero gradually increased the flow to full output. The first full manifestation produced gusts and shockwaves without damaging the hall. He remains conscious and in control, but sweat, deeper breathing, trembling legs and an uneven aura show how difficult it is to sustain. Krillin has asked him to reduce the flow; he has not done so yet. If Zero loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; it has not removed it. The supplied art illustrates the form, not a new location, clothing repair or decision to put his cape and scouter back on.",
       "artwork": "zero-sealed-channel.jpg",
       "artworkAlt": "Zero with red irises and a pale violet aura, his ordinary auburn hair lifted by the power-up. Black outfit, burgundy cape and red scouter are illustrative standard equipment."
     }
@@ -672,7 +672,7 @@
     {
       "id": "channel-test-hall",
       "title": "Supervised channel-test hall",
-      "summary": "Normal-gravity hall for the first supervised Sealed Channel trial.",
+      "summary": "Normal-gravity hall for the first supervised Dark Factor Sealed Channel trial.",
       "status": "Current",
       "details": "Chronoa and Krillin supervise at 1× gravity with the drones off. A small draw and release succeeded; Zero is now holding the first full manifestation with rapidly rising strain. The hall has not been damaged. Cape and scouter remain on the bench."
     }
@@ -690,7 +690,7 @@
         },
         {
           "label": "Current work",
-          "value": "First full Sealed Channel trial; control and endurance still developing"
+          "value": "First full Dark Factor Sealed Channel trial; control and endurance still developing"
         }
       ],
       "details": "Vegeta accepted Zero for lesser opponents after the assessment. The first mission demonstrated effective basic attacks but also dangerous limitations against Nappa. Supervised trainee status continues; no independent travel clearance is granted."
@@ -1426,7 +1426,7 @@
     },
     {
       "id": "s088",
-      "title": "Uncontrolled awakening",
+      "title": "Uncontrolled Dark Factor awakening",
       "summary": "At the brink, a voice that feels like Zero’s own thoughts coaxes a request for strength.",
       "status": "Recorded",
       "date": "Day 47",
@@ -1506,12 +1506,12 @@
     },
     {
       "id": "s098",
-      "title": "Full Sealed Channel",
-      "summary": "Zero reaches full Sealed Channel with a pale violet aura and red irises.",
+      "title": "Full Dark Factor Sealed Channel",
+      "summary": "Zero reaches full Dark Factor Sealed Channel with a pale violet aura and red irises.",
       "status": "Recorded",
       "date": "Day 47 · 11:53",
       "details": "The onset sends shockwaves and gusts across the undamaged hall. Roughly thirty seconds into full output, strain rises quickly. Zero remains conscious and in control; Krillin asks him to reduce the flow. The form is still active. OOC corrected peak: ×10, 37,200; no scan."
     }
   ],
-  "recordedThrough": "S098 · First full Sealed Channel and accepted power correction · 11 October 2026"
+  "recordedThrough": "S098 · First full Dark Factor Sealed Channel and accepted power correction · 11 October 2026"
 }
