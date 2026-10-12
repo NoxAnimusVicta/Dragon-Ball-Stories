@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-11-S098-vessel-adaptation",
+  "revision": "2026-10-13-S112",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
-  "phase": "After the first mission",
+  "phase": "Developing the sealed channel",
   "started": true,
   "character": {
     "name": "Zero",
@@ -20,12 +20,12 @@
     "backstory": "Familiar with Dragon Ball through anime, manga, films and games before the crossing. No further personal background is recorded.",
     "arrival": "Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness.",
     "motivation": "Develop controlled strength and continue supervised Patrol work.",
-    "knowledge": "Retains referential knowledge of Z, Super, the films, manga, GT and the first two Xenoverse main stories. Chronoa confirmed that the two Xenoverse stories correspond to this Patrol’s past, with distinct hero partners; the second occurred about two hub years ago. This particular Vegeta’s home history remains unknown. On his first paired mission he encountered Nappa and Turles in TL-218. He remembers losing control of his body; Chronoa identified the attachment as Dark Factor and explained the seal’s failure conditions. Its identity and the cause of the crossing remain unknown.",
-    "limitations": "No independent timeline access or rescinded city escort restriction. Uncontrolled Dark Factor is not voluntarily mastered. Dark Factor Sealed Channel has reached full output briefly, but maintaining it is difficult; no sustained mastery or combat test. No named attack, stable ki blade or precise ki-sensing mastery.",
-    "battlePower": 3720,
-    "powerReading": "Recovered-base assessment · Last measured base 3,075 · No new scan; form totals are calculations",
+    "knowledge": "Retains referential knowledge of Z, Super, the films, manga, GT and the first two Xenoverse main stories. Chronoa confirmed that the two Xenoverse stories correspond to this Patrol’s past, with distinct hero partners; the second occurred about two hub years ago. This particular Vegeta’s home history remains unknown. On his first paired mission he encountered Nappa and Turles in TL-218. He remembers losing control of his body; Chronoa identified the attachment as Dark Factor and explained the seal’s failure conditions. Its identity and the cause of the crossing remain unknown. Krillin has said that Eighteen and Marron live with him in Conton and that he never used his home timeline’s Lookout chamber. Duplication, absorption and potential unlocking have been discussed, but no new technique or arrangement resulted.",
+    "limitations": "Supervised trainee; no independent timeline access or rescinded city escort restriction. Uncontrolled Dark Factor is not voluntarily mastered. Full Dark Factor Sealed Channel has lasted two strenuous minutes in controlled moving sparring, not sustained mastery. No named attack, stable ki blade or precise ki-sensing mastery.",
+    "battlePower": 3874,
+    "powerReading": "Measured twice · 24 February, Age 854 · Form totals calculated from the recorded base",
     "role": "Supervised Time Patrol trainee",
-    "condition": "Dark Factor Sealed Channel active; conscious and in control, with rapidly rising exertional strain after roughly thirty seconds at full output. Seal intact. Prior battle injuries healed; clothing still battle-damaged. Cape and scouter are on the hall bench; no personal senzu held.",
+    "condition": "Base; both forms inactive and the seal closed. Showered and cooled down, with residual muscle soreness and settled breathing. Cape on the room desk, scouter worn. Clothing and equipment remain battle-worn; no personal senzu held.",
     "ageMonths": 6,
     "appearanceHistory": [
       {
@@ -64,7 +64,7 @@
         "unlocked": true,
         "multiplier": 10,
         "date": "16 February, Age 854 · Day 47 · First full manifestation",
-        "status": "First full manifestation · Briefly sustained · Not mastered",
+        "status": "Practising · Two minutes demonstrated in controlled sparring · Not mastered",
         "portrait": "zero-sealed-channel.jpg",
         "portraitAlt": "Zero with red irises and a pale violet aura, his ordinary auburn hair lifted by the power-up. Black outfit, burgundy cape and red scouter are illustrative standard equipment."
       }
@@ -72,54 +72,50 @@
   },
   "story": {
     "era": "Conton City · Age 854",
-    "date": "Day 47 · 16 February, Age 854 · 11:53",
-    "location": "Conton City · Training hall",
-    "situation": "After a successful small draw and voluntary release, Zero has reached full Dark Factor Sealed Channel under Chronoa and Krillin’s supervision at normal gravity. He remains conscious and in control, but strain is rising quickly.",
-    "pendingChoice": "Krillin has asked Zero to bring the output down. The channel is still active; Zero’s response is pending."
+    "date": "24 February, Age 854 · 20:35",
+    "location": "Conton City · Room 214",
+    "situation": "After another day training with Krillin, Zero returned to his room, showered and checked his ordinary unsuppressed power twice: 3,874. The seal is closed and both forms are inactive.",
+    "pendingChoice": "Zero is in his room after the check. His next action is unchosen; he has not yet eaten dinner or gone to sleep."
   },
   "abilities": [
     {
       "id": "power",
-      "title": "Battle power · 3,720",
-      "summary": "Recovered base after the first mission, including the accepted vessel-adaptation increase; not yet scanned.",
-      "status": "Assessment",
+      "title": "Battle power · 3,874",
+      "summary": "Ordinary base confirmed twice after the evening shower and cooldown.",
+      "status": "Measured",
       "facts": [
         {
           "label": "First reading",
-          "value": "50 · Day 1"
+          "value": "50 · Arrival assessment"
         },
         {
-          "label": "Last measured base",
-          "value": "3,075 · End of chamber year"
-        },
-        {
-          "label": "Current base",
-          "value": "3,720 · Recovered-base assessment"
+          "label": "Current measured base",
+          "value": "3,874 · 24 February, Age 854 · 20:35"
         },
         {
           "label": "Half-output target",
-          "value": "1,860 calculated · Last suppression check approximately 1,538"
+          "value": "1,937 calculated; not a new suppression measurement"
         },
         {
           "label": "Change since arrival",
-          "value": "+3,670 · 74.4 times the initial reading"
+          "value": "+3,824 · 77.48 times the initial reading"
         }
       ],
-      "details": "Rested readings reached 60 on Day 8 and 64 on Day 10. Later checks recorded 67 on Day 13, exhausted 58 on Day 15, partially recovered 68 on Day 16, and pre-training readings of 75 on Day 22 and 84 on Day 29. Rested 85 was confirmed on Day 30 before Vegeta’s first session; after that day’s training and healing, two scans read 89. Continued training reached 124 at the end of Day 37 and 168 at the end of Day 44. Overnight rest confirmed the same 168 on Day 45; that day’s training increased it to 174, confirmed twice after the final senzu. Healing restores available output; it is not a separate human power boost. Field readiness was assessed separately after the chamber. The quarterly rested endpoints were 454, 920, 1,597 and 3,075. The final full reading returned to 3,075 after a suppression check near 1,538. The completed mission adds a modest combat gain to 3,100. This reflects adaptation during fighting, not healing, the seal or an injury reward. There has been no later scan; the earlier readings remain historical. The accepted correction adds one 20% vessel-adaptation increase to that already reconciled 3,100, giving 3,720 after recovery. It does not change the Nappa fight’s original output or grant another bonus for the current channel test."
+      "details": "The chamber year ended at a measured 3,075. The accepted post-mission assessment was 3,720 after combat growth and the one outbreak-related adjustment. Subsequent coached training reached 3,729, then a rested 3,856 after seven further days, and 3,874 after the next training day. The final value was confirmed twice in Room 214. These later gains are ordinary training progress: the sealed form’s borrowed power still leaves when it closes. Earlier readings and their conditions remain in the journal. Calculated form totals use the recorded integer base and are not separate scouter measurements."
     },
     {
       "id": "combat-basics",
       "title": "Combat fundamentals",
       "summary": "Integrated footwork, compact strikes and aerial rotations after a year of drone practice.",
       "status": "Developing",
-      "details": "Earlier sparring and weighted work developed into sustained solo practice with progressively stronger gravity and armed drones. Full-output ground rounds reached 75× gravity; deliberate heavy conditioning reached 150×. Short punches, guard recovery, flight-assisted kicks and changes of direction now flow together. These are different training loads, not interchangeable combat tolerances. Suppressed work uses lower settings. In the subsequent live assessment, Vegeta allowed several hits without taking damage. Against Nappa, feints and vulnerable targets earned real injuries, but did not overcome his greater strength and endurance. No Yamcha rematch has occurred."
+      "details": "Earlier sparring and weighted work developed into sustained solo practice with progressively stronger gravity and armed drones. Full-output ground rounds reached 75× gravity; deliberate heavy conditioning reached 150×. Short punches, guard recovery, flight-assisted kicks and changes of direction now flow together. These are different training loads, not interchangeable combat tolerances. Suppressed work uses lower settings. In the subsequent live assessment, Vegeta allowed several hits without taking damage. Against Nappa, feints and vulnerable targets earned real injuries, but did not overcome his greater strength and endurance. No Yamcha rematch has occurred. Subsequent work with Krillin practised movement and exchanges while opening and closing the sealed channel; no higher gravity benchmark was established."
     },
     {
       "id": "ki-control",
       "title": "Ki control",
       "summary": "Supports loaded movement, flight and repeated blasts while managing available output.",
       "status": "Developing control",
-      "details": "Combined practice improved bracing, energy gathering and switching between movement and attacks. Zero can deliberately lower and restore his output, but control still takes work under unfamiliar pressure. Precise ki sensing and effortless full-strength defence while suppressed are not established. During the outbreak Zero briefly felt two enormous nearby signatures; that does not establish precise or general-purpose sensing. In the supervised seal test, Zero drew a small amount and closed it without disrupting his own ki, then reached full Dark Factor Sealed Channel briefly. Sustaining the stronger flow rapidly became difficult."
+      "details": "Combined practice improved bracing, energy gathering and switching between movement and attacks. Zero can deliberately lower and restore his output, but control still takes work under unfamiliar pressure. Precise ki sensing and effortless full-strength defence while suppressed are not established. During the outbreak Zero briefly felt two enormous nearby signatures; that does not establish precise or general-purpose sensing. Repeated supervised practice has made lower-flow channeling and voluntary closure steadier during ground and aerial movement. Full output reached two minutes in controlled moving sparring, with strain at the end. The following training day improved transitions without establishing a longer timed record."
     },
     {
       "id": "flight",
@@ -164,7 +160,7 @@
       "title": "Power suppression",
       "summary": "Usually holds output near half during ordinary waking activity and familiar drills.",
       "status": "Demonstrated in the field",
-      "details": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains. The opening soldier engagement demonstrated a deliberate full-power striking burst followed by a return to half output."
+      "details": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains. The opening soldier engagement demonstrated a deliberate full-power striking burst followed by a return to half output. At the current recorded base, half output would be 1,937; that calculation is not a new suppression check."
     },
     {
       "id": "uncontrolled-form",
@@ -177,7 +173,7 @@
       "facts": [
         {
           "label": "Campaign factor",
-          "value": "×15 · 55,800 at the current base"
+          "value": "×15 · 58,110 calculated from the recorded base"
         },
         {
           "label": "Current state",
@@ -190,12 +186,12 @@
       "id": "sealed-channel-form",
       "title": "Dark Factor Sealed Channel",
       "summary": "A controlled flow through Chronoa’s seal, first brought to full output in supervised practice.",
-      "status": "Active · First full manifestation",
+      "status": "Inactive · Practising",
       "abilityType": "transformation",
       "facts": [
         {
           "label": "Campaign ceiling",
-          "value": "×10 · 37,200 peak in the first full test; unscanned"
+          "value": "×10 · 38,740 calculated from the recorded base"
         },
         {
           "label": "Seal",
@@ -206,11 +202,11 @@
           "value": "Pale violet aura and red irises; ordinary physique and hair colour"
         },
         {
-          "label": "First-use endurance",
-          "value": "Roughly thirty seconds at full output so far; strain rising rapidly"
+          "label": "Demonstrated endurance",
+          "value": "Two minutes at full output in controlled moving sparring; strenuous, not a fixed limit or mastery"
         }
       ],
-      "details": "A small voluntary draw and release succeeded before Zero gradually increased the flow to full output. The first full manifestation produced gusts and shockwaves without damaging the hall. He remains conscious and in control, but sweat, deeper breathing, trembling legs and an uneven aura show how difficult it is to sustain. Krillin has asked him to reduce the flow; he has not done so yet. If Zero loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; it has not removed it. The ability icon is symbolic; the character gallery retains the full appearance reference.",
+      "details": "The first full manifestation was closed voluntarily with Zero’s own ki steady. Practice with Krillin developed steadier low output and full-power moving sparring, reaching two minutes before voluntary closure on 23 February. The following day brought smoother releases, not a new timed record. No permanent absorption of the channel’s multiplier has been established. If Zero loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; it has not removed it. The ability icon is symbolic; the character gallery retains the full appearance reference.",
       "artwork": "ability-sealed-channel.webp",
       "artworkAlt": "A circular four-hook seal containing pale violet energy, symbolising Dark Factor Sealed Channel."
     }
@@ -227,17 +223,17 @@
           "value": "Wrap-front top, loose trousers, sash, wrist wraps, boots and burgundy cape with gold clasps"
         }
       ],
-      "details": "S064 repairs remain part of its history. New combat wear includes a scorched shoulder and other battle damage. The Senzu healed Zero, not his clothing. Original style retained; no armour rating or bonus. The cape is part of this outfit: its arrival tear was repaired after the chamber, but the rematch singed and frayed an edge. It is currently removed on the training-hall bench; no second repair has occurred."
+      "details": "S064 repairs remain part of its history. New combat wear includes a scorched shoulder and other battle damage. The Senzu healed Zero, not his clothing. Original style retained; no armour rating or bonus. The cape is part of this outfit: its arrival tear was repaired after the chamber, but the rematch singed and frayed an edge. It is currently on the desk in Room 214; no second repair has occurred."
     },
     {
       "id": "scouter",
       "title": "Recovered red scouter",
-      "summary": "Recovered red scouter; retained after the mission, not retested after combat.",
-      "status": "On training-hall bench",
+      "summary": "Recovered red scouter, checked and used again after the mission.",
+      "status": "Worn",
       "facts": [
         {
           "label": "Condition",
-          "value": "Battle-scuffed; post-mission function untested"
+          "value": "Battle-scuffed but functional"
         },
         {
           "label": "Known use",
@@ -248,7 +244,7 @@
           "value": "Regular self-checks"
         }
       ],
-      "details": "Last self-check confirmed 3,075 after the chamber. During reconnaissance it read the four soldiers and Nappa at 6,000. It endured dust and scuffs; post-battle function has not been retested. Communications, maximum range and upper capacity remain untested."
+      "details": "The equipment counter checked its function before the week’s routine self-scans; no cosmetic repair was recorded. After training on 24 February, two unsuppressed self-checks in Room 214 read 3,874. Earlier soldier and Nappa readings remain historical. Communications, maximum range and upper capacity remain untested."
     },
     {
       "id": "room-card",
@@ -262,7 +258,7 @@
       "title": "Collar communicator",
       "summary": "Issued by Mr. Satan before the first paired mission.",
       "status": "Carried",
-      "details": "Clipped beneath the collar, concealed but usable. Press its side to speak to dispatch. Separate from the recovered scouter; retained after evacuation."
+      "details": "Issued for the first paired mission and retained. Press its side to speak to dispatch. Worn concealed beneath the collar during the mission; its exact placement after the current shower is not specified. Separate from the recovered scouter."
     }
   ],
   "accounts": [
@@ -300,8 +296,8 @@
           "value": "TL-398 · Frieza on Earth"
         },
         {
-          "label": "Current base",
-          "value": "3,015,000 · Post-fight campaign assessment"
+          "label": "Latest assessed base",
+          "value": "3,015,000 · 16 February post-mission benchmark"
         },
         {
           "label": "Wrathful / Great Ape",
@@ -309,10 +305,10 @@
         },
         {
           "label": "Last seen",
-          "value": "Day 47 · Leaving the medical ward"
+          "value": "16 February · Leaving the medical ward"
         }
       ],
-      "details": "Original white-and-gold Saiyan armour with extended shoulder and waist panels over a blue suit; retained tail. Proud, impatient and contemptuous, with early-Z temperament. He allowed harmless hits during assessment and accepted Zero’s usefulness against lesser fighters. During the mission Turles intercepted him; he later broke away to stop Zero’s rampage with one strike. Last seen leaving the ward, angry that the enemies escaped, with a bloodied lip and cracked shoulder plate. No later repair or healing is established. Elapsed training and service raised his initial 2,000,000 base to a pre-mission 3,000,000. Combat adaptation during the mission adds 15,000, bringing his assessed base to 3,015,000. This is no new scan, healing award or increased transformation multiplier. Zero saw his gold-eyed form but has not learned its name in dialogue.",
+      "details": "Original white-and-gold Saiyan armour with extended shoulder and waist panels over a blue suit; retained tail. Proud, impatient and contemptuous, with early-Z temperament. He allowed harmless hits during assessment and accepted Zero’s usefulness against lesser fighters. During the mission Turles intercepted him; he later broke away to stop Zero’s rampage with one strike. Last seen leaving the ward, angry that the enemies escaped, with a bloodied lip and cracked shoulder plate. Those injuries describe that sighting, not his condition eight days later. No subsequent power assessment is recorded. Elapsed training and service raised his initial 2,000,000 base to a pre-mission 3,000,000. Combat adaptation during the mission adds 15,000, bringing his then-assessed base to 3,015,000. This is no new scan, healing award or increased transformation multiplier. Zero saw his gold-eyed form but has not learned its name in dialogue.",
       "canTransform": true,
       "art": {
         "appearance": [
@@ -348,14 +344,14 @@
         },
         {
           "label": "Last seen",
-          "value": "Day 47 · Training hall with Zero and Chronoa"
+          "value": "24 February · 20:00 · Leaving training for home"
         },
         {
           "label": "Power benchmark",
           "value": "100,000,000 · Campaign estimate"
         }
       ],
-      "details": "Compact muscular build, bald with six forehead dots, orange gi and blue wristbands. Lively, informal, wry and experienced. Instructor for Mr. Satan’s roster, not an active field Patroller. He observed the post-chamber assessment, attended Zero after the mission, arranged a ward Senzu and accompanied him to the first supervised channel test. Exact age and personal service duration remain unassigned."
+      "details": "Compact muscular build, bald with six forehead dots, orange gi and blue wristbands. Lively, informal, wry and experienced. Instructor for Mr. Satan’s roster, not an active field Patroller. He observed the post-chamber assessment, attended Zero after the mission, arranged a ward Senzu and accompanied him to the first supervised channel test. Exact age and personal service duration remain unassigned. Coached Zero through the subsequent week and the next training day. He lives locally with Eighteen and Marron and offered an informal family visit, not yet arranged. He never used his home timeline’s Lookout chamber. He offered to teach Tri-Form, which divides power between bodies; instruction has not begun. Zero declined his offer to make inquiries about other power-development options. No search or meeting was delegated. Exact family ages and address remain unestablished."
     },
     {
       "id": "mr-satan",
@@ -386,8 +382,8 @@
       "id": "chronoa",
       "title": "Chronoa",
       "summary": "Supreme Kai of Time; identified and sealed Zero’s Dark Factor.",
-      "status": "Supervising channel test",
-      "details": "Small, pink-skinned, pointed ears, swept orange hair, gold earrings and purple-and-gold clothing. Brisk, curious and authoritative. Her post-outbreak examination identified Dark Factor that was undetected while dormant. She sealed it while Zero was awake, leaving the four-hook abdominal mark, and explained the danger of losing consciousness or nearing death with the channel open. She is investigating whether safe removal is possible; no answer or deadline is established. Present for the first test alongside Krillin.",
+      "status": "Seal monitoring",
+      "details": "Small, pink-skinned, pointed ears, swept orange hair, gold earrings and purple-and-gold clothing. Brisk, curious and authoritative. Her post-outbreak examination identified Dark Factor that was undetected while dormant. She sealed it while Zero was awake, leaving the four-hook abdominal mark, and explained the danger of losing consciousness or nearing death with the channel open. She is investigating whether safe removal is possible; no answer or deadline is established. She attended the first test and reviewed the unchanged seal early in the following training week, allowing practice to continue. No later removal result has been reported; she is not present in Room 214.",
       "facts": [
         {
           "label": "Home timeline",
@@ -519,7 +515,7 @@
           "value": "200,000,000"
         }
       ],
-      "details": "Hercule’s granddaughter and Gohan and Videl’s daughter. Joined at 22 with a 50,000,000 base; two years of matched missions, training, recovery and ordinary life brought it to 200,000,000. No Super Saiyan or Wrathful acquired. These are campaign choices, not official GT measurements. The separate early-GT reference is 20,000,000; no end-GT measurement is claimed. Shared family arrival was two Conton years before the current scene; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
+      "details": "Hercule’s granddaughter and Gohan and Videl’s daughter. Joined at 22 with a 50,000,000 base; two years of matched missions, training, recovery and ordinary life brought it to 200,000,000. No Super Saiyan or Wrathful acquired. These are campaign choices, not official GT measurements. The separate early-GT reference is 20,000,000; no end-GT measurement is claimed. Shared family arrival was two Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
     },
     {
       "id": "gohan",
@@ -540,7 +536,7 @@
           "value": "16 February, Age 852"
         }
       ],
-      "details": "Pursued a superhero career across time instead of the Prime counterpart’s scholarly path. Joined at 44 with Videl, Pan and Hercule. Precise combat rating and techniques have not been assigned for this version. Shared family arrival was two Conton years before the current scene; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
+      "details": "Pursued a superhero career across time instead of the Prime counterpart’s scholarly path. Joined at 44 with Videl, Pan and Hercule. Precise combat rating and techniques have not been assigned for this version. Shared family arrival was two Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
     },
     {
       "id": "videl",
@@ -561,7 +557,33 @@
           "value": "16 February, Age 852"
         }
       ],
-      "details": "Joined at 45 with Gohan, Pan and her father Hercule. Precise specialism and combat rating remain to be established before a field appearance. Shared family arrival was two Conton years before the current scene; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
+      "details": "Joined at 45 with Gohan, Pan and her father Hercule. Precise specialism and combat rating remain to be established before a field appearance. Shared family arrival was two Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
+    },
+    {
+      "id": "android-18",
+      "title": "Android 18 · Eighteen",
+      "summary": "Krillin’s wife; lives with him and Marron in Conton City.",
+      "status": "Mentioned · Not met",
+      "facts": [
+        {
+          "label": "Known through",
+          "value": "Krillin · Dinner conversation, 16 February"
+        }
+      ],
+      "details": "Krillin confirmed her local family residence. Zero has not met this version; her current age, work, address and appearance have not been established in the story."
+    },
+    {
+      "id": "marron",
+      "title": "Marron",
+      "summary": "Krillin and Eighteen’s daughter, living with them in Conton City.",
+      "status": "Mentioned · Not met",
+      "facts": [
+        {
+          "label": "Known through",
+          "value": "Krillin · Dinner conversation, 16 February"
+        }
+      ],
+      "details": "An informal visit was offered, but none is scheduled. This version’s present age and appearance remain unestablished; no encounter has occurred."
     }
   ],
   "places": [
@@ -605,7 +627,7 @@
       "title": "Room 214",
       "summary": "Assigned quarters and overnight recovery space.",
       "status": "Accommodation",
-      "details": "Single bed, desk, wardrobe, bathroom, clean towels, window, schedule terminal and a fridge with supplied cola. Zero slept here between training days; on Day 45 before dawn he confirmed 168 twice before leaving. The access card does not lift his escort restriction.",
+      "details": "Single bed, desk, wardrobe, bathroom, clean towels, window, schedule terminal and a fridge with supplied cola. Zero returned here after training on 24 February, showered and confirmed a base reading of 3,874 twice at 20:35. His cape is on the desk and his scouter is worn. Dinner and sleep have not yet occurred. The access card does not lift his escort restriction.",
       "facts": [
         {
           "label": "Location",
@@ -623,7 +645,7 @@
       "title": "Dining hall",
       "summary": "Covered meals and communal seating for patrollers.",
       "status": "Visited",
-      "details": "Visited after receiving room 214 and used for covered meals during training. After Day 44 Zero ate a large meal of meat and rice with additional helpings before returning to sleep. No cash purchase was recorded.",
+      "details": "Visited after receiving room 214 and used for covered meals during training. After Day 44 Zero ate a large meal of meat and rice with additional helpings before returning to sleep. No cash purchase was recorded. On 16 February, Zero ate with Krillin and discussed chamber solitude and Krillin’s family before returning to his room.",
       "facts": [
         {
           "label": "Location",
@@ -731,7 +753,7 @@
       "title": "Training rooms",
       "summary": "Ordinary indoor rooms for instruction, sparring and ki practice.",
       "status": "Visited",
-      "details": "Krillin was finishing instruction here when Zero asked about a chamber booking after Day 45 training. An ordinary nearby training room was used after the first mission for the supervised Dark Factor Sealed Channel test, with gravity set to 1× and drones off. These are standard Patrol facilities used by fighters far stronger than Zero, not a purpose-built containment hall. Chronoa supervised the seal itself. Individual bookings do not establish a new location or imply that every session used the same numbered room.",
+      "details": "Krillin was finishing instruction here when Zero asked about a chamber booking after Day 45 training. An ordinary nearby training room was used after the first mission for the supervised Dark Factor Sealed Channel test, with gravity set to 1× and drones off. These are standard Patrol facilities used by fighters far stronger than Zero, not a purpose-built containment hall. Chronoa supervised the seal itself. Individual bookings do not establish a new location or imply that every session used the same numbered room. The following week included supervised channel practice and moving sparring; the first test is complete, not still underway.",
       "facts": [
         {
           "label": "Location",
@@ -785,7 +807,7 @@
       "title": "Equipment services",
       "summary": "Automated clothing repairs and fitting adjustments near the training facilities.",
       "status": "Visited",
-      "details": "Krillin brought Zero here after the chamber. A repair station cleaned, mended and fitted the original outfit and cape, including the arrival tear from Nappa. The temporary robe was left behind. Those repairs preceded the first mission; subsequent battle damage has not been repaired.",
+      "details": "Krillin brought Zero here after the chamber. A repair station cleaned, mended and fitted the original outfit and cape, including the arrival tear from Nappa. The temporary robe was left behind. Those repairs preceded the first mission; subsequent battle damage has not been repaired. A later equipment-counter check confirmed the scouter’s function; it did not repair its cosmetic battle wear.",
       "facts": [
         {
           "label": "Location",
@@ -877,14 +899,14 @@
       "facts": [
         {
           "label": "Base",
-          "value": "3,720 recovered-base assessment; no new scan"
+          "value": "3,874 · Measured twice, 24 February"
         },
         {
           "label": "Current work",
-          "value": "First full Dark Factor Sealed Channel trial; control and endurance still developing"
+          "value": "Channel control during movement and sparring; full output demonstrated for two minutes"
         }
       ],
-      "details": "Vegeta accepted Zero for lesser opponents after the assessment. The first mission demonstrated effective basic attacks but also dangerous limitations against Nappa. Supervised trainee status continues; no independent travel clearance is granted."
+      "details": "Vegeta accepted Zero for lesser opponents after the assessment. The first mission demonstrated effective basic attacks but also dangerous limitations against Nappa. Supervised trainee status continues; no independent travel clearance is granted. The latest training day is complete. Duplication, absorption and potential unlocking remain discussion topics, not acquired abilities or arranged rewards."
     },
     {
       "id": "partner-assignment",
@@ -901,7 +923,7 @@
           "value": "Patroller Vegeta"
         }
       ],
-      "details": "Vegeta’s temporary solo waiver covered the pre-field training period. Paired deployment resumed with the TL-218 supply investigation. The operation was stopped and operators identified, but they escaped when Vegeta broke away to contain Zero. This did not make Vegeta gentle or end his resentment."
+      "details": "Vegeta’s temporary solo waiver covered the pre-field training period. Paired deployment resumed with the TL-218 supply investigation. The operation was stopped and operators identified, but they escaped when Vegeta broke away to contain Zero. This did not make Vegeta gentle or end his resentment. During the subsequent week Zero trained with Krillin; no new paired mission or reassignment occurred."
     },
     {
       "id": "origin-review",
@@ -913,9 +935,9 @@
     {
       "id": "dark-factor-containment",
       "title": "Dark Factor containment",
-      "summary": "Seal intact through a small draw, voluntary release and first full manifestation.",
-      "status": "Supervised trial in progress",
-      "details": "Chronoa is investigating safe removal while supervising the channel with Krillin. Zero can open and close a small flow and has reached full output briefly; holding it is rapidly tiring him. The attachment’s identity remains unknown to Zero. No removal, sustained mastery or further transformation has occurred."
+      "summary": "Seal intact; voluntary channel closure demonstrated throughout supervised practice.",
+      "status": "Developing control",
+      "details": "Chronoa’s early-week review found the mark unchanged and practice continued. Lower output is steadier and full output has lasted two strenuous minutes in controlled sparring. Both forms are currently inactive. Safe removal remains unresolved; no new research result, permanent multiplier absorption or further transformation has been established."
     }
   ],
   "events": [
@@ -1702,7 +1724,119 @@
       "status": "Recorded",
       "date": "Day 47 · 11:53",
       "details": "The onset sends shockwaves and gusts across the undamaged hall. Roughly thirty seconds into full output, strain rises quickly. Zero remains conscious and in control; Krillin asks him to reduce the flow. The form is still active. Corrected peak: ×10, 37,200; no scan."
+    },
+    {
+      "id": "s099",
+      "title": "Closing the full channel",
+      "summary": "Zero lets the borrowed power fade while keeping his own ki steady.",
+      "status": "Recorded",
+      "date": "16 February, Age 854 · 11:54",
+      "details": "The full channel closes voluntarily. Fatigue remains, but nothing resists the release."
+    },
+    {
+      "id": "s100",
+      "title": "Learning to move with it",
+      "summary": "A day of supervised practice develops movement with the sealed channel.",
+      "status": "Recorded",
+      "date": "16 February, Age 854 · 20:00",
+      "details": "Lower flow becomes easier to sustain through movement; stronger bursts remain tiring. The day’s training brings the base assessment to 3,729, without a new scan or additional outbreak adjustment."
+    },
+    {
+      "id": "s101",
+      "title": "Dinner with Krillin",
+      "summary": "Zero collects his cape and scouter and joins Krillin for dinner.",
+      "status": "Recorded",
+      "date": "16 February, Age 854 · 20:15",
+      "details": "The training day is finished. Both forms are inactive."
+    },
+    {
+      "id": "s102",
+      "title": "Peace and quiet",
+      "summary": "Zero explains that he enjoyed the chamber’s solitude.",
+      "status": "Recorded",
+      "date": "16 February, Age 854 · 20:16",
+      "details": "Krillin confirms that his home timeline had a Room of Spirit and Time, used by Goku, Gohan, Vegeta and Trunks before Cell."
+    },
+    {
+      "id": "s103",
+      "title": "A chamber left unused",
+      "summary": "Krillin says he never trained in the Lookout chamber himself.",
+      "status": "Recorded",
+      "date": "16 February, Age 854 · 20:17",
+      "details": "Their conversation remains over dinner; no chamber booking is made."
+    },
+    {
+      "id": "s104",
+      "title": "Family in Conton",
+      "summary": "Krillin mentions Eighteen and Marron living with him in the city.",
+      "status": "Recorded",
+      "date": "16 February, Age 854 · 20:18",
+      "details": "He offers an informal visit. Zero has not met them, and no appointment is set."
+    },
+    {
+      "id": "s105",
+      "title": "A night’s rest",
+      "summary": "Zero returns to Room 214 and sleeps before the next morning’s training.",
+      "status": "Recorded",
+      "date": "17 February, Age 854 · 07:00",
+      "details": "He leaves the family visit for another time. Breakfast and a seal review precede further practice; neither a visit nor another chamber stay is booked."
+    },
+    {
+      "id": "s106",
+      "title": "A week of channel practice",
+      "summary": "Seven training days improve control and bring a rested reading of 3,856.",
+      "status": "Recorded",
+      "date": "24 February, Age 854 · 07:00",
+      "details": "The scouter was checked and confirmed functional. Chronoa’s early review found the mark unchanged. Full output reached two strenuous minutes in controlled moving sparring, followed by voluntary closure. Lower flow is steadier; the hoped-for permanent absorption has not appeared. Two morning scans confirm 3,856. No senzu or new technique was used."
+    },
+    {
+      "id": "s107",
+      "title": "Other techniques",
+      "summary": "Zero pauses before sparring to ask Krillin about different kinds of training.",
+      "status": "Recorded",
+      "date": "24 February, Age 854 · 07:00",
+      "details": "The conversation begins with both forms inactive; no new instruction is completed."
+    },
+    {
+      "id": "s108",
+      "title": "Duplication and energy transfer",
+      "summary": "Zero asks about Spirit Control, Tri-Form and transferring ki.",
+      "status": "Recorded",
+      "date": "24 February, Age 854 · 07:00",
+      "details": "Krillin offers his version of duplication, warning that the bodies divide the user’s power. It is not a claim to Yardrat mastery, and no duplicate is made. He asks whether Zero means giving energy or taking it."
+    },
+    {
+      "id": "s109",
+      "title": "Considering absorption",
+      "summary": "Zero is interested in taking an opponent’s energy.",
+      "status": "Recorded",
+      "date": "24 February, Age 854 · 07:02",
+      "details": "Moro and Super 17 are discussed as examples; cooperative local versions of Moro or Gero are speculation, not confirmed residents. The corrected reference is Ultra Instinct Goku and Blue Evolution Vegeta in the Moro fight. No absorption method is learned."
+    },
+    {
+      "id": "s110",
+      "title": "Ways to grow",
+      "summary": "Zero weighs more chamber training, new techniques and potential unlocking.",
+      "status": "Recorded",
+      "date": "24 February, Age 854 · 07:04",
+      "details": "Guru’s help to Krillin and Gohan is raised as an example, not an arranged reward. Krillin offers inquiries and a discussion with Hercule; neither has happened."
+    },
+    {
+      "id": "s111",
+      "title": "On his own merits",
+      "summary": "Zero declines the offered advocacy and spends the day training with Krillin.",
+      "status": "Recorded",
+      "date": "24 February, Age 854 · 20:00",
+      "details": "Moving releases become smoother, without a new timed endurance record or named technique. The training assessment reaches 3,874. Krillin leaves for home; no inquiry or meeting is delegated."
+    },
+    {
+      "id": "s112",
+      "title": "The evening reading",
+      "summary": "After a shower and cooldown, Zero reads 3,874 twice on his scouter.",
+      "status": "Recorded",
+      "date": "24 February, Age 854 · 20:35",
+      "details": "In Room 214, both forms are inactive and the seal is closed. His cape lies on the desk; the scouter is worn. Residual muscle soreness remains. No extra gain occurs during the return, shower or checks; dinner and sleep are still ahead."
     }
   ],
-  "recordedThrough": "S098 · First full Dark Factor Sealed Channel and accepted power correction · 11 October 2026"
+  "recordedThrough": "S112 · Evening self-check · 24 February, Age 854, 20:35"
 }

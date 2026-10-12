@@ -1,12 +1,12 @@
 # Corrections and operative continuity
 
-Reviewed 11 October 2026 through S098. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
+Reviewed 13 October 2026 through S112. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
 
 | Record | Effective point | Correction |
 | --- | --- | --- |
 | Location clarification · 12 October | S095 onward | The channel test used an ordinary Patrol training room. The duplicate channel-test-hall listing is merged into Training rooms; no dedicated containment facility or scene relocation. |
-| Vessel adaptation | Recovered state by S095; accepted after S098 | One20% increase on the already reconciled3,100 gives3,720. Current Uncontrolled55,800; first full Sealed Channel37,200. Historical Nappa-fight3,075/46,125 unchanged; no new scan or repeat award for the channel test. |
-| Post-fight combat growth | S095 current assessment, no new scene | The ordinary combat component raised Zero to3,100; its then-calculated46,500/31,000 form totals are superseded by the recovered-state correction above. Vegeta3,015,000 base /30,150,000 Wrathful orGreatApe. Modest combat adaptation; no scan, healing reward or changed historical readings. |
+| Vessel adaptation | Recovered state by S095; accepted after S098 | One20% increase on the already reconciled3,100 gives3,720. Then-calculated Uncontrolled55,800; first full Sealed Channel37,200. Subsequent training and measurements are separate. Historical Nappa-fight3,075/46,125 unchanged; no new scan or repeat award for the channel test. |
+| Post-fight combat growth | S095 post-mission assessment, no new scene | The ordinary combat component raised Zero to3,100; its then-calculated46,500/31,000 form totals are superseded by the recovered-state correction above. Vegeta3,015,000 base /30,150,000 Wrathful orGreatApe. Modest combat adaptation; no scan, healing reward or changed historical readings. |
 | 11 October reconciliation | Publication through S095 | First assessment/mission, outbreak, containment, healing and pending channel test recorded. Initial publication retained3,075,46,125 and30,750; current capacities are superseded by the post-fight correction above. |
 | NPC progression | Day47 pre-mission calibration | Vegeta3,000,000 base and30,000,000 Wrathful/GreatApe supersede stale current2m/20m; initial values remain historical. TL782 family and NPC power references are reader references. |
 | S070 | Assessment ending | Accepted ending grants supervised field participation; rejected anger/pride lecture and renewed attack are withdrawn. |
@@ -31,3 +31,9 @@ Reviewed 11 October 2026 through S098. Dated publication rows describe their his
 | C020 | Publication only | Reconcile through S045: Day30 dawn, confirmed85, developed small ki shots, observed people/places and45 journal entries. Preserve earlier readings as dated observations and keep the first Vegeta attack pending. No story time advances. |
 
 Uncertain facts remain explicitly unknown. A correction to narration is not permission to invent unseen outcomes, private biography or later knowledge.
+
+## Later presentation and dialogue corrections
+
+- S110: the Moro-fight reference uses Ultra Instinct Goku and Blue Evolution Vegeta. The mistaken Ultra Ego reference is superseded without changing the conversation’s intent or granting a technique.
+- S112: current scene footers use calendar date/time, not arrival/exterior Day55. Personal age and elapsed experience include the chamber year. Earlier archive labels remain historical.
+- The enacted forms are named Uncontrolled Dark Factor and Dark Factor Sealed Channel. Renaming did not change their factors or access. Vegeta’s form is named Wrathful; reader references do not constitute an in-story explanation to Zero.
