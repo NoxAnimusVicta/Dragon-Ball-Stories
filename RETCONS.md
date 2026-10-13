@@ -4,6 +4,7 @@ Reviewed 14 October 2026 through S131. Dated publication rows describe their his
 
 | Record | Effective point | Correction |
 | --- | --- | --- |
+| Yamcha combat growth | After Raditz, S130; accepted after S131 | Assessed rested base 2,360 to 2,380 (+20, about 0.85%) from live combat adaptation. Last scan remains 2,360; no Zenkai, healing, replay or new measurement. |
 | S131 fixed-point correction | Current mission | Integrity 55%, replacing rejected 82%. Yamcha’s native original participation permits a major rewrite rather than instant branching; it does not make damage minor. Planned collection/revivals leave 50% at best, not yet enacted. No successful Raditz message; old occupation course overturned through that expedition. |
 | S127 briefing correction | Before departure | Withdraw invented six-week revival. Occupation pressure and secrecy obstructed gathering in the old prospective course. Both travellers return before revised-future review; current integrity telemetry is not future access. |
 | S113–S114 progression | Two cleanup weeks | Zero 4,058 then 4,249 measured; Yamcha 2,250 first scan,2,360 by second week. Earlier readings remain dated history. Three-minute channel drill milestone, no new named technique or passive absorption. |

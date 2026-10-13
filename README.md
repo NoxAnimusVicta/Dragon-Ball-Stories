@@ -8,7 +8,7 @@ A game-style home for Zero's Dragon Ball Isekai, inspired by Capsule Corp equipm
 
 Records are current through **S131: 10 March, Age 854, 22:24 Conton time**. Zero and Yamcha are on Earth in TL-503, locally Age 761 and daylight, at Bulma’s temporary shelter. Raditz is dead, the fallen fighters’ bodies are secured, and Dragon Ball collection and revivals remain pending. Integrity is 55%; planned revivals would leave 50% at best. The revised future is still in flux.
 
-Zero’s latest measured base is 4,249, Yamcha’s 2,360. Both of Zero’s forms are inactive; three strenuous full-channel moving minutes have been demonstrated. [Current continuity](CURRENT-CONTINUITY.md) is generated from the app data.
+Zero’s latest measured base is 4,249. Yamcha’s post-Raditz assessed base is 2,380; his last scan was 2,360. Both of Zero’s forms are inactive; three strenuous full-channel moving minutes have been demonstrated. [Current continuity](CURRENT-CONTINUITY.md) is generated from the app data.
 
 The companion includes enacted character-known events and authorised timeline, current NPC power and TL-782 family references. Future plans and private causes remain outside the repository.
 

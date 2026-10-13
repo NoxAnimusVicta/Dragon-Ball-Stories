@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "2026-10-14-S131",
+  "revision": "2026-10-14-S131-yamcha-growth",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "Yamcha’s homecoming",
@@ -440,6 +440,10 @@
           "value": "TL-503 · A world without Goku"
         },
         {
+          "label": "Current assessed base",
+          "value": "2,380 · After Raditz; not a new scan"
+        },
+        {
           "label": "Latest measured base",
           "value": "2,360 · 10 March, Age 854"
         },
@@ -452,8 +456,8 @@
           "value": "Earth · Bulma’s temporary shelter"
         }
       ],
-      "details": "Lean and broad-shouldered, long black hair and familiar scars, faded orange gi and blue wraps; relaxed, slightly rough voice with dry humour. He joined Bulma and Puar after desert banditry and later led Earth’s defenders. Raditz killed his teammates; he was extracted alive and arrived in Conton in December. He never met Kami and has no acquired forms or chamber visit. After training and cleanup with Zero, his measured power reached 2,360. His 210 reading belongs to their first spar. He offered Wolf Fang Fist; Zero preferred other studies. On this first return Yamcha killed Raditz and secured his friends’ bodies. He has a bruised cheek and thigh, split lip and scorched sleeve, but remains mobile. He has not seen the revised future.",
-      "battlePower": 2360,
+      "details": "Lean and broad-shouldered, long black hair and familiar scars, faded orange gi and blue wraps; relaxed, slightly rough voice with dry humour. He joined Bulma and Puar after desert banditry and later led Earth’s defenders. Raditz killed his teammates; he was extracted alive and arrived in Conton in December. He never met Kami and has no acquired forms or chamber visit. After training and cleanup with Zero, his measured power reached 2,360. His 210 reading belongs to their first spar. He offered Wolf Fang Fist; Zero preferred other studies. On this first return Yamcha killed Raditz and secured his friends’ bodies. He has a bruised cheek and thigh, split lip and scorched sleeve, but remains mobile. He has not seen the revised future. The Raditz fight adds a modest 20 through combat adaptation, giving an assessed rested base of 2,380. His last scan remains 2,360; the gain does not remove his injuries or fatigue.",
+      "battlePower": 2380,
       "canTransform": false
     },
     {
