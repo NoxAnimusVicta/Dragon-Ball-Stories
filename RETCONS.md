@@ -1,11 +1,11 @@
 # Corrections and operative continuity
 
-Reviewed 14 October 2026 through S131. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
+Reviewed 16 October 2026 through S196. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
 
 | Record | Effective point | Correction |
 | --- | --- | --- |
 | Yamcha combat growth | After Raditz, S130; accepted after S131 | Assessed rested base 2,360 to 2,380 (+20, about 0.85%) from live combat adaptation. Last scan remains 2,360; no Zenkai, healing, replay or new measurement. |
-| S131 fixed-point correction | Current mission | Integrity 55%, replacing rejected 82%. Yamcha’s native original participation permits a major rewrite rather than instant branching; it does not make damage minor. Planned collection/revivals leave 50% at best, not yet enacted. No successful Raditz message; old occupation course overturned through that expedition. |
+| S131 fixed-point correction | S131 mission checkpoint | Integrity 55%, replacing rejected 82%. Yamcha’s native original participation permits a major rewrite rather than instant branching; it does not make damage minor. Planned collection/revivals leave 50% at best, not yet enacted at S131; completed S135. No successful Raditz message; old occupation course overturned through that expedition. |
 | S127 briefing correction | Before departure | Withdraw invented six-week revival. Occupation pressure and secrecy obstructed gathering in the old prospective course. Both travellers return before revised-future review; current integrity telemetry is not future access. |
 | S113–S114 progression | Two cleanup weeks | Zero 4,058 then 4,249 measured; Yamcha 2,250 first scan,2,360 by second week. Earlier readings remain dated history. Three-minute channel drill milestone, no new named technique or passive absorption. |
 | Location clarification · 12 October | S095 onward | The channel test used an ordinary Patrol training room. The duplicate channel-test-hall listing is merged into Training rooms; no dedicated containment facility or scene relocation. |
@@ -18,7 +18,7 @@ Reviewed 14 October 2026 through S131. Dated publication rows describe their his
 | S088 | Awakening | Coaxed request for strength precedes the eruption; the earlier automatic awakening is withdrawn. |
 | S091 | Ward dialogue | Corrected dialogue preserves interception, evacuation, escape and elapsed time. |
 | C089 | All hub scenes | The current hub is Conton City. Earlier Toki Toki City labels refer to the same enacted locations and are corrected; no relocation or time advance. The old city name remains appropriate to Xenoverse 1 history. |
-| C096 | Current age at S052 | Age is 26 years and 6 months at Day 45 evening. Track future subjective ageing from this anchor; no birthday inferred. |
+| C096 | Historical age ruling, superseded after S149 | Earlier S052 anchor is replaced by 26 years and 6 months at arrival. Preserve elapsed durations; use the adopted birthday ruling below. |
 | S052 / S057 | Instructor role | Krillin is the combat instructor for Mr. Satan’s roster, rather than an active field Patroller. |
 | 10 October audit | Publication only | Reconcile through S064: one chamber year completed, age 27years 6months, full output 3,075, usual suppression near 1,538, repaired clothing and 64 journal entries. Approved post-chamber portrait replaces the earlier art. No scene advancement. |
 | 9 October audit | Publication only | Synchronise records through S052: healed measured 174, Day 45 evening, gravity-training progress and 52 journal entries. Krillin’s invitation awaits a reply; no story time advances. |
@@ -41,3 +41,10 @@ Uncertain facts remain explicitly unknown. A correction to narration is not perm
 - S110: the Moro-fight reference uses Ultra Instinct Goku and Blue Evolution Vegeta. The mistaken Ultra Ego reference is superseded without changing the conversation’s intent or granting a technique.
 - S112: current scene footers use calendar date/time, not arrival/exterior Day 55. Personal age and elapsed experience include the chamber year. Earlier archive labels remain historical.
 - The enacted forms are named Uncontrolled Dark Factor and Dark Factor Sealed Channel. Renaming did not change their factors or access. Vegeta’s form is named Wrathful; reader references do not constitute an in-story explanation to Zero.
+
+## Corrections adopted after S131
+
+- S135: the complete revival roster is Krillin, Roshi, Tien and Chiaotzu; all four carried bodies were restored by the same single wish. Bulma/Puar were alive, Yamcha extracted alive. No extra wish.
+- S142: temporal transit persistently disconnects standard scouters from their original network while preserving local readings. Repair does not reconnect them. Untouched local scouters remain operational.
+- After S149: Zero adopts1January as his fictional birthday and26years6months at arrival as the biological-age anchor. The earlier S052 anchor is superseded; personal/chamber durations are unchanged.
+- S178: TL-619 is near-Prime with Z and later events one year later. The Namek mission is localAge763, superseding earlierAge762 annotations.
