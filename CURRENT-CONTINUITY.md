@@ -3,22 +3,22 @@
 Generated from campaign.json. Edit that authoritative source, then run build.py.
 
 - Status: Story in progress.
-- Coverage: S196 · Accommodation handovers and training proposal · 24 April, Age 854 · 09:55.
+- Coverage: S206 corrected · Guru potential release and scouter confirmation · 22 May, Age 854 · 15:47 Conton.
 - Role: Supervised Time Patrol trainee.
-- Current ordinary base (campaign record): 5213.
-- Power record status: Measured twice · 23 April, Age 854 · Form totals calculated from the recorded base.
-- Condition: Base; all forms and Kaioken inactive, seal closed. Rested with mild shoulder stiffness. Repaired original outfit and red scouter worn; communicator beneath the collar. Four-Star Dragon Ball stored in Room 214; no Senzu carried.
-- Protagonist: Zero, age 27 years, 9 months, height 5′6″ (167.64 cm).
-- Story date: 24 April, Age 854 · 09:55.
-- Location: Conton City · Hercule’s dispatch office.
-- Immediate situation: After breakfast and apartment viewings, Yamcha has received his new accommodation. Hercule confirms Vegeta’s dedicated training-room handover. TL-503 has recovered to 87%, freshly checked, with no new interference reported. A Namek-first visit followed by a separate Yardrat stay is under review.
-- Pending choice: Hercule asks how long Zero wants to stay on Namek: a few weeks or a few months. Departure awaits recovery and itinerary approval; Guru’s help is not promised. An Earth visit requested by Yamcha is also pending review.
-- Latest recorded event: s196.
+- Current ordinary base (campaign record): 69497.
+- Power record status: Measured · 22 May, Age 854 · Guru’s home, TL-503 · Form totals calculated.
+- Condition: Base; all forms and Kaioken inactive, seal closed and intact. Uninjured. Outfit, cape and red scouter worn; communicator beneath the collar. Both Dragon Balls stored in Room 214; travel bag aboard Kami’s ship. No Senzu carried.
+- Protagonist: Zero, age 27 years, 10 months, height 5′6″ (167.64 cm).
+- Story date: Age 761 · Namek daylight / 22 May, Age 854 · 15:47 Conton.
+- Location: TL-503 · Namek · Grand Elder’s home · Upper audience chamber.
+- Immediate situation: Guru has released Zero’s own potential while the seal remains closed. His scouter reads 69,497. Nail has brought Yamcha, Krillin, Tien, Chiaotzu and the village elder back inside; Bulma remains at the landing ship. The group sensed the increase but has not heard the numerical reading.
+- Pending choice: Yamcha asks what the scouter says. Guru has offered Chronoa’s cased scroll back and invited Yamcha forward; his potential has not yet been assessed or released.
+- Latest recorded event: s206.
 - Ability records: 12.
-- Possession records: 5.
+- Possession records: 8.
 - Account records: 1.
-- Relationship records: 25.
-- Journal entries: 196.
+- Relationship records: 28.
+- Journal entries: 206.
 - Active/recorded projects: 8.
 
 Empty collections mean no records yet, not zero resources or incapability. Details live in campaign.json. This public checkpoint does not replace the complete local transcript or private narrator state. Publication does not advance story time.

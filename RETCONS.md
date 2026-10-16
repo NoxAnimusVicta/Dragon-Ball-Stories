@@ -1,6 +1,6 @@
 # Corrections and operative continuity
 
-Reviewed 16 October 2026 through S196. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
+Reviewed 16 October 2026 through corrected S206. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
 
 | Record | Effective point | Correction |
 | --- | --- | --- |
@@ -48,3 +48,9 @@ Uncertain facts remain explicitly unknown. A correction to narration is not perm
 - S142: temporal transit persistently disconnects standard scouters from their original network while preserving local readings. Repair does not reconnect them. Untouched local scouters remain operational.
 - After S149: Zero adopts1January as his fictional birthday and26years6months at arrival as the biological-age anchor. The earlier S052 anchor is superseded; personal/chamber durations are unchanged.
 - S178: TL-619 is near-Prime with Z and later events one year later. The Namek mission is localAge763, superseding earlierAge762 annotations.
+
+## Guru release — accepted S206 correction
+
+The unsupported ×2 adjudication and 11,583 scan are replaced by the accepted individual ×12 result: exact pre-unlock 5,791.419000842535 becomes 69,497.028010110420, displayed **69,497**. This is one release at S205, measured in corrected S206; no second gain or time advance. Calculated inactive totals: Kaioken **138,994**, Dark Factor Sealed Channel **694,970**, Uncontrolled Dark Factor **1,042,455**. Seal, control and knowledge boundaries are unchanged.
+
+Krillin’s often-used ×8.7 comparison is approximate, not a verified immediate before/after measurement or a universal Guru constant. The earlier ×8.7 proposal for Zero was not enacted. Original exact scenes stay archived; corrected S206 controls. Yamcha and the other fighters have not yet received their releases.
