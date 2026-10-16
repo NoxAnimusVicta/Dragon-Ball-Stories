@@ -21,6 +21,8 @@ The interface itself is implemented in HTML, CSS and JavaScript. No game screens
 
 zero-uncontrolled.jpg, zero-sealed-channel.jpg, vegeta-base.jpg and vegeta-wrathful.jpg are user-supplied fictional references. Identifying metadata is removed without changing the JPEG image data. Uncontrolled, Sealed Channel and Wrathful are enacted appearances; the landscapes are illustrative. Clean standard-outfit art does not undo current battle damage. Future outfit and transformation concepts are not published.
 
+yamcha-base.jpg is the user-supplied current appearance reference for Yamcha of TL-503: long black hair, facial scars, worn sleeveless orange Turtle School gi, blue sash and wrist wraps, and blue shoes with white ankle wraps. The original remains private; the public JPEG retains identical pixels and dimensions with identifying metadata removed. It represents his existing outfit, not a new acquisition. The desert scenery and flag are illustrative and do not change his current Namek location. Appearance dates and initial power benchmarks remain in the private art ledger; the app uses his current recorded power.
+
 Unofficial personal fan project. Dragon Ball, Capsule Corporation and related characters belong to their respective rights holders. No affiliation or endorsement. The icon's license does not claim ownership of the underlying franchise.
 
 ## Launch screen

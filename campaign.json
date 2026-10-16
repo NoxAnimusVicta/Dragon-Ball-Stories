@@ -569,9 +569,19 @@
           "value": "TL-503 · Namek · Grand Elder’s home"
         }
       ],
-      "details": "Long black hair, familiar scars, faded orange gi and blue wraps; relaxed, slightly rough voice and dry humour. His return defeated Raditz and revived Krillin, Roshi, Tien and Chiaotzu. Both travellers reviewed the revised history after leaving. Six weeks with King Kai raised his assessed base through 2,383, 2,503 and 2,623 to 2,735 and developed Kaioken ×2. Earlier Raditz injuries healed during training. He rescued Zero from Namek and provided the Senzu Zero consumed. His commendation has now secured an apartment with a separate bedroom, small kitchen and courtyard view; the move is complete. No potential unlock, Yardrat training, chamber stay or additional form. Four further weeks of training and cleanup raised his assessed base to 3,038. His latest commendation is unspent. Guru read his memories and has now invited him forward; no potential assessment or release for Yamcha has occurred.",
+      "details": "Long shaggy black hair, familiar facial scars, worn sleeveless orange Turtle School gi, blue sash and wrist wraps, blue shoes and white ankle wraps; relaxed, slightly rough voice and dry humour. His return defeated Raditz and revived Krillin, Roshi, Tien and Chiaotzu. Both travellers reviewed the revised history after leaving. Six weeks with King Kai raised his assessed base through 2,383, 2,503 and 2,623 to 2,735 and developed Kaioken ×2. Earlier Raditz injuries healed during training. He rescued Zero from Namek and provided the Senzu Zero consumed. His commendation has now secured an apartment with a separate bedroom, small kitchen and courtyard view; the move is complete. No potential unlock, Yardrat training, chamber stay or additional form. Four further weeks of training and cleanup raised his assessed base to 3,038. His latest commendation is unspent. Guru read his memories and has now invited him forward; no potential assessment or release for Yamcha has occurred.",
       "battlePower": 3038,
-      "canTransform": true
+      "canTransform": true,
+      "art": {
+        "appearance": [
+          {
+            "name": "Turtle School gi",
+            "date": "22 May, Age 854 · Current appearance reference at the Namek visit",
+            "portrait": "yamcha-base.jpg",
+            "portraitAlt": "Yamcha with long shaggy black hair and facial scars, wearing a worn sleeveless orange Turtle School gi, blue sash and wrist wraps, and blue shoes with white ankle wraps. Illustrative desert backdrop."
+          }
+        ]
+      }
     },
     {
       "id": "bulma",
