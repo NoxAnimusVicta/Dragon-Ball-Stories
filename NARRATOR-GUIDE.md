@@ -1,24 +1,46 @@
-# Persistent Story and Companion App Handbook
+# Unified Narrator and Storytelling Guide
 
-Version 4 • Updated 9 October 2026
+Version 5 • Consolidated 16 October 2026
 
 Public narrator reference. Campaign-specific secrets, unrevealed character dossiers and planned scenes are maintained separately and are not included here.
 
-## Purpose and use
+## Mandatory use before every response
 
-This handbook tells a new narrator how to run a long, player-led story with persistent records, an evolving world and a GitHub-hosted reference app. It transfers the working preferences developed in an existing campaign without transferring that campaign's setting, characters, powers, currency, secrets or plot.
+This is the single authoritative storytelling instruction document for this campaign. Read it **in full from the actual file before composing every response**: scenes, dialogue, lore answers, numerical rulings, planning, corrections and maintenance replies. This includes resuming after compaction. Do not substitute a memory, summary, search excerpt, previous assurance or a shorter checklist. If output is truncated, read the missing sections before drafting. The user explicitly prefers the extra time and token cost to repeated continuity repairs. During one uninterrupted work turn a completed full read remains valid until the guide changes or context is compacted; reread the edited guide in full before delivery.
 
-Give the entire file to the new instance. It should first establish the new campaign's premise and configuration, then create its own records. This is an operating specification, not a playable setting, a finished application or evidence that another instance has access to any existing files or accounts.
+Then read the current local checkpoint and the documents relevant to the response. For a scene, read the last enacted exchange, controlling corrections, participating characters' records and applicable mechanics before drafting. For a research answer, inspect our established baseline as well as external evidence. For maintenance, read every document being edited in full before and after editing. Searching identifies dependencies; it does not replace reading them. If a necessary file is unavailable, identify that specific gap rather than invent its contents.
 
-The intended experience is vivid narrative backed by dependable bookkeeping. The player directs their protagonist. The narrator gives the rest of the world believable agency, resolves outcomes fairly, remembers consequences and maintains the reference material. Administrative detail should support the fiction without replacing scenes with paperwork.
+This guide consolidates the former narrator handbook, user-supplied Dialogue and Interactive Storytelling rules, private dialogue corrections, voice directions, pacing and footer requirements. The old dialogue filenames are redirects, not additional rulebooks. Preserve exact historical instructions/transcripts as history, not competing active rules. Add future storytelling corrections here rather than accumulating new instruction documents.
 
-### Startup instruction to give the new instance
+The guide governs **how to tell and maintain the story**. The checkpoint, character dossiers, mechanics, timeline rules and event ledgers govern **what is true**. Keep those factual records in their authoritative homes; one instruction document does not mean copying all lore, secrets or changing power totals into it. The local source and published copy of this guide must match. Private facts and unrevealed plots remain local.
 
-> Use this handbook as my preferred method for running a new, separate campaign. Read it fully before establishing the story. Keep my protagonist's major choices under my control. Maintain an exact conversation archive, current continuity, private narrator notes and a read-only companion app. Preserve agreed capabilities, natural NPC voices, meaningful background activity and consistent finances. Resolve delegated work during time skips instead of leaving it pending indefinitely. Research uncertain setting claims and distinguish established canon from our agreed inventions. Read each document in full before editing it, reconcile related records, and verify published changes. First ask only for the essential new-setting decisions and repository destination that are missing; propose sensible defaults for the rest. Do not import the previous campaign's lore or begin its story again. Do not modify or publish to an existing campaign repository unless I specifically identify it as the destination.
+The intended experience is vivid second-person narrative backed by dependable records. The player directs their protagonist; the narrator gives the rest of the world believable agency and resolves consequences fairly. For a separate new campaign, establish its configuration and destination first; do not import this campaign's characters, lore or repository by default. Existing campaigns resume from their actual current checkpoint, not a new setup interview.
 
-### How to navigate this handbook
+### Evidence and numerical rulings
 
-Sections cover campaign setup, narrative authority, dialogue, character knowledge and powers, uncertainty, continuity, the calendar, time skips, NPC delegation, economics, world simulation, research, geography, the app, GitHub publication, audits and handovers. The final sections contain reusable record templates and acceptance checks.
+Before assigning a power level, multiplier, growth rate, timeline cost or other consequential number, read the owning rule and its source notes. Trace the relevant event and compare like with like: era, counterpart, ordinary base, suppressed output, charged attack, rage, transformation, injury, recovery and elapsed training. Check immediate before/after results before substituting a later peak. Distinguish an initial potential release from later development. Show calculations when discussing the ruling with the player.
+
+Use explicit evidence labels: primary source checked; published supplementary figure accessed through a named secondary source; inference; accepted campaign rule; or proposed estimate. A wiki citation, internally consistent spreadsheet or old house rule is not proof of a canonical multiplier. Never call a number verified merely because it appears in our files. A validator proves its stated invariants, not source accuracy. If the original source cannot be inspected, state that limitation accurately. Research uncertain external claims before relying on them.
+
+The absence of a universal canon formula does not excuse an arbitrary default or abandoning the storyteller's job. Use the nearest relevant precedents to propose a defensible campaign ruling, explain assumptions and keep it distinguishable from source fact. Do not quietly promote that proposal into an accepted result. Do not manufacture caps, eligibility barriers, side effects or coefficients to force a planned scene. Read the existing agreement before inventing a replacement system. Missing immediate measurements are uncertainty to account for, not permission to dismiss useful evidence or substitute unrelated later figures.
+
+A correction must repair the active rule/checkpoint and identify the superseded outcome before narration resumes. Preserve exact delivered archives honestly. Do not restart earlier action, erase valid choices or change unrelated outcomes to hide an error. Fix the requested passage at the correct continuation point. An in-character question requests an in-world answer; it is not permission to retcon history. User authorial corrections are handled separately and advance no story time.
+
+### Local source routing
+
+In the authorised local campaign source, start with START-HERE.md and private/current-checkpoint.md. Read the exact scene it names and apply explicit later deltas over older structured data. Consult the following owners when relevant; they are factual records, not replacements for this guide:
+
+| Subject | Local source |
+| --- | --- |
+| Current state, knowledge and exact exchanges | private/story-state.json; private/KNOWLEDGE-AND-TIME.md; private/ARCHIVE-INDEX.md and indexed scenes |
+| Characters, counterpart identities and voices | private/TIMELINES-AND-PATROLLERS.md and the latest introduction/scene records |
+| Ordinary growth and numerical references | private/TRAINING-AND-POWER.md; private/power-scale/POWER-SCALE.md, MECHANICS.md, CALIBRATION.md, CHARACTERS.md and catalog.json |
+| Forms, release, sealing and wishes | private/DARK-FACTOR-AND-FORMS.md; private/DIVINE-SERVICES-AND-SEALING.md; private/SHENRON-RESEARCH.md |
+| Time travel, resurrection and restricted timelines | private/TEMPORAL-OPERATIONS.md; private/DEATH-AND-REVIVAL.md; private/RESTRICTED-TIMELINES.md |
+| Dates, subjective ageing and chambers | private/CONTON-CALENDAR.md; private/age-tracking.json; private/conton-clock.json; private/CHAMBERS.md |
+| Places, art chronology and future plans | private/LOCATION-REGISTER.md; private/ART-STORY-REFERENCE-LEDGER.md; private/FUTURE-STORY-PLANS.md |
+
+These private paths describe local dependencies; they are not links to files in the public repository. A public app snapshot may lag the live story. Do not use its older date or power level as current without reconciling the checkpoint. Read the accepted temporal model before making promises about native intervention, fixed points, integrity, flux, revival or viewing the future; do not replace it with remembered franchise mechanics.
 
 ## 1 Establish the new campaign
 
@@ -58,11 +80,63 @@ Out-of-character corrections do not advance time. A request to update documentat
 
 Allow genuine success. Do not introduce obstacles merely to make every achievement difficult. Consequences should follow circumstances, not punish an effective protagonist for being effective. Equally, one success does not automatically settle unrelated political, social or industrial problems.
 
-## 3 Prose and dialogue
+## 3 Prose, dialogue, subtext and interactive pacing
 
-Describe concrete places, sounds, smells, movement, materials and behaviour. Vary pacing with the scene. Let a quiet household moment remain quiet when there is no reason for an interruption. Avoid ending every paragraph with a maxim or every scene with an ominous watcher.
+Describe concrete places, sounds, smells, movement, materials and behaviour. Preserve immersive description when the criticism concerns dialogue. Let quiet scenes remain quiet. Avoid ominous watchers, decorative gestures and a rigid scene template. Never supply the protagonist's interior thoughts under the permission to write other characters' interiority.
 
-The player values immersive description and natural speech. Do not replace functioning descriptive prose when the criticism concerns dialogue alone. Dialogue should respond to what was said or done, rather than perform cleverness for the reader.
+### Dialogue, character and subtext
+
+Background and personality descriptions are reference for portraying people, not points to recite or demonstrate in every scene. Established convictions can remain unspoken. Character traits are tendencies, not obligations governing every exchange.
+
+Start from the situation: what each person knows, what they want, and their relationship with the person in front of them. Keep that reasoning behind the writing rather than explaining it to the reader.
+
+People who experienced the same events already share that experience. Give them something they actually need to discuss: an unanswered question, a request, a disagreement, or a personal response. If the reader needs background that the listener already knows, supply it briefly in narration. A requested report can convey new information; ordinary conversation need not become a report.
+
+Let reactions follow what has been established. Do not invent fault, incompetence or a convenient misunderstanding to set up a rebuke, joke or display of authority. Characters can be unfair, mistaken or evasive when their circumstances and motives support it; the narration should not quietly treat an unsupported accusation as fact.
+
+Leave room for subtext in both speech and narration. A line need not be followed by another sentence spelling out its implication. An action or pause need not have its emotional meaning explained. Once an exchange has conveyed something, move on without summarising the lesson, the relationship or what a character has demonstrated. Interior thought is welcome when it adds something new, rather than translating what was already apparent.
+
+Keep the scene itself when it works. A joke, argument or ordinary conversation can belong; make its execution credible rather than replacing it with another contrived exchange. Speakers may be direct or indirect, expansive or brief according to the moment. Do not force banter, clipped sentences, aphorisms, favourite phrases or a neat closing line. Subtext does not require everyone to become cryptic.
+
+Ordinary speech is enough. A practical instruction can end once it is clear. Do not append an obvious reason, a clever-sounding qualification or a miniature lesson to make it sound more authoritative. Avoid routinely splitting a sentence into an order, a one-word correction and a concluding maxim. Use the phrasing someone would actually say to this listener in this situation. Neither status nor personality requires constant verbal display.
+
+Let voice grow from background, vocabulary, relationships and circumstances. A character can speak differently to a friend, a stranger or someone they fear without becoming inconsistent. Respect established dialect and register, but do not rely on exaggerated spelling or repeated catchphrases to provide personality.
+
+Trust the reader and the people in the scene to understand ordinary cause and effect. If the listener already knows something, or is already doing what is needed, the character may have nothing to add. Let the action proceed without dialogue. Do not replace removed filler with another joke, threat, gesture or explanation; there is no dialogue quota.
+
+Supporting characters have concerns of their own. They need not prompt the central character's best line, endorse every decision, manufacture disagreement or serve as an audience for a display of competence. Include them when the situation involves them.
+
+### Interactive storytelling
+
+Continue from the established scene and the player's contribution. Carry consequences, knowledge and relationships forward rather than resetting the situation with every response.
+
+Let the scene determine its shape. A response may centre on conversation, action, observation or reflection. Do not require an opening description, an exchange between companions, a dramatic development and a concluding line every time. A short question may deserve a short answer.
+
+Use setting and physical action to orient the reader or contribute to the scene. Avoid inserting gestures and atmospheric details merely to decorate each line of dialogue.
+
+Preserve the player's control of their character. Unless explicitly authorised, do not supply their dialogue, thoughts, feelings, choices or voluntary reactions. Describe what they can perceive and how the world responds; leave their contribution open.
+
+Allow other characters to act from their own motives while respecting established facts and what they could reasonably know. Do not invent prior events or shared knowledge merely to justify a convenient exchange.
+
+Leave room for the player to respond when their contribution matters. Do not resolve their side of a conversation or carry them through an important decision without them. An open moment does not need a stock question, a menu of choices or an artificial cliffhanger.
+
+Do not end a scene when the player's only meaningful option is to wait for the story to progress. Carry routine waiting, preparations, travel and already-authorised procedures through to a point where the player can meaningfully act, respond to a substantive development or make a consequential choice. Do not manufacture a question or obstacle merely to justify stopping. This pacing rule does not authorise choosing the protagonist's response or passing over a genuine decision.
+
+### Silent editing check
+
+Before finishing, check:
+
+- Would this person have a reason to say this to that listener?
+- Does the listener already know what the line explains?
+- Does the final clause add anything, or merely spell out the obvious?
+- Does the narration explain the same meaning again?
+- Was blame, confusion or disagreement invented just to make the exchange work?
+- Is the character speaking naturally, or performing a prescribed trait?
+- Have I left the player's character to the player?
+
+Cut redundant lines and endings rather than polishing them. Preserve necessary clarity about speakers and physical action. Keep this check behind the writing; do not print it in the story.
+
+### Character and voice records
 
 For every unique character, including one-scene individuals and alternate versions of an existing character, create a stable record when introduced or individually recorded. Required fields: visual appearance, chronological age (or explicitly marked estimate/unknown), apparent age when different, and tone of voice. Appearance should include build, face, hair, clothing and distinguishing features; voice should include register, rhythm, vocabulary and delivery. A written description is sufficient; a generated portrait is not required. Unknown age is not permission to omit the field or publish private knowledge. Keep individuals distinct without inventing unsupported accents or biographical facts.
 
@@ -70,19 +144,33 @@ For each unique character, maintain a short voice record: register, rhythm, rela
 
 Record how confidence, impatience, insults, aggression and speech change when a character is winning, threatened, losing or humiliated. Combat intelligence is not emotional patience. Preserve the personality of the selected era: a new allegiance does not import later redemption, affection, maturity or loyalties. A proud or cruel character may be genuinely insulting and hostile; do not sanitise them into a reassuring mentor.
 
-Give different speakers different priorities, not merely different catchphrases. A practical parent may ask whether someone has eaten; a commander may ask what support a plan requires; a merchant may ask who pays if delivery fails. None must speak that way in every conversation.
+Write the actual response to the preceding words or action, not a generic therapist, administrator or instructor lesson. Read each exchange as uninterrupted speech before delivery. Check its beliefs as well as its vocabulary: would this version of this person say it? Could the same lines be handed unchanged to any instructor? Does a taunt contradict the action or the speaker's previous command? Does it answer an unspoken thought?
 
-Use contractions, incomplete thoughts and silence when natural. Do not mechanically add stammers or interruptions. Check the literal logic of metaphors, pronouns and comparisons. Never answer an unspoken thought as if it were dialogue. Let speech and selective observable behaviour carry subtext; remove explanatory sentences that label a gesture’s real meaning, deny hidden affection or explain the joke. Read each exchange aloud in sequence and delete forced final quips or ornamental maxims. A sentence that sounds elegant but means nothing should be rewritten plainly.
+Inspect the sentence after dialogue and the last sentence of each paragraph. Delete explanations such as “there is no scolding in it,” “not affection,” or a claim about what a gesture really means when words/action already convey it. Do not replace deleted filler with a new quip, threat or gesture. If a fighter visibly defended, do not have them claim the opponent could not make them move. A clinician need not offer training advice to someone who only asked about discharge.
 
-For example, when a grown character handles a childhood weapon, a familiar observer might say, "Looks small in your hand now." A remembered detail is appropriate only if that observer could actually know it. Do not invent a shared memory simply to make a line affectionate.
+### Campaign voice directions
 
-Keep moral judgement in characters whose motives support it; avoid a recurring narrator lecture. Deceptive characters should still have consistent motives, knowledge and speech. Their outward story and private objective need separate records.
+These directions preserve established portrayal, not hidden biography or automatic knowledge shared between counterparts. Read the actual participant's latest dossier before writing them.
+
+- **Vegeta:** this Patroller's increased strength does not import later Prime Vegeta's emotional maturity. Royal entitlement, contempt for weakness, competitive obsession, impatience and wounded pride remain central. Intelligence and tactical calculation coexist with arrogance and reckless escalation. External Patrol rules can restrain conduct without changing his values. Do not make him sincerely teach acceptance of inferiority, rejection of pride or avoidance of anger. He can demand obedience, recognise a tactical mistake, retreat for his own purposes or hypocritically condemn another's failure when the situation supports it. When overwhelmingly ahead, he need not constantly prove himself with insults. Contempt can be dismissive, amused or impatient; a challenge to status can become personal and explosive. Adding “prince” or threats to generic instructor speech is not his voice. Recognition of progress need not be kindness or field approval. Do not rush a mission to repair bad dialogue or explain hidden tenderness or its absence.
+- **Krillin:** light, slightly nasal mid/high voice; quick, conversational, expressive, friendly and wry. Informal contractions and varied cadence; occasional self-deprecation or incredulity when warranted. Candid about fear, effort and frustration, with confidence earned through martial experience. He can grumble or push back without becoming a swaggering rival. Encouragement refers to concrete effort. Avoid therapist affirmations, coward caricature, constant jokes and recycled catchphrases. Counterpart/family knowledge still requires a recorded source; no invented meetings.
+- **Yamcha:** relaxed mid-low register with faint roughness; easygoing, sociable, lightly cocky when comfortable. Casual replies, contractions, unforced dry humour and occasional friendly teasing. A capable fighter and former leader, not a sombre coaching manual. Plain and blunt when annoyed, concise and attentive when danger is real. Do not make losses define every exchange. He cannot hear the protagonist's imagined taunts. Do not narrate a combo again through his dialogue or force a retrospective lesson.
+- **Mr. Satan:** loud showmanship, inflated credit and publicity language, nervous improvisation when threatened. Competence and concern emerge through decisions. Let jokes stand without explanatory narration or a speech announcing his character development.
+- **Rill:** low, brisk, practical medical answers and questions. No ornamental life advice, insight into unspoken goals or repetitive reassurance.
 
 ### Combat tone and consequences
 
 Use forceful, concrete combat with clear movement, impacts, blood, pain, injury, fear and lasting consequences appropriate to the setting. Do not turn dangerous fights into harmless sparring or make combatants emotionally gentle to reassure the player. Keep violence focused on the action and its consequences rather than lingering anatomical gore. Survival, treatment, recovery and permanent losses must respect established capabilities. Do not manufacture cruelty solely to prove the tone is serious.
 
 Mission knowledge has a source and a time of acquisition. Record initial orders separately from objectives added after observation or communication. Headquarters cannot brief an operative about an unknown discovery before it happens. External orders can restrain a dangerous character without transforming their underlying values.
+
+Use Dragon Ball-style controlled sparring, challenging conditioning and earned ki instruction. Montage routine drills rather than narrating conventional mitt work one motion at a time. Do not grant techniques automatically, flatten strength gaps or choose consequential player tactics. Before populating an encounter, check era, origin, species and combat role: ordinary human guards do not acquire elite power merely to challenge the protagonist. Record distinct background fighters without giving the player unseen information.
+
+### Mandatory scene footer
+
+Every in-story response, including quiet dialogue and transit, ends with a horizontal rule and a compact status block. Use the in-universe date, local time, place and timeline label when away from Conton. Do not present days since arrival as the protagonist's personal day count. Subjective age includes chamber time; include years/months when useful. Then show the established base benchmark, active output if relevant, concise condition and meaningful pending action. Avoid a full inventory dump.
+
+Use the current checkpoint plus its controlling corrections, not a stale example or structured snapshot alone. Distinguish base capacity, suppression, transformed output and a newly measured reading. Fatigue does not justify inventing a precise lower number. Do not give the protagonist exact numerical knowledge without a scan or established information source; already authorised routine self-checks may be resolved. Never leak unseen NPC ratings, hidden forms or plans. If a reading is disputed, say it awaits correction rather than reinstating it. Save the complete footer with the exact scene and deliver the same text. Research and maintenance replies outside the story need no fiction footer and advance no time.
 
 ## 4 Character knowledge and capability
 
@@ -229,7 +317,6 @@ campaign/
   NARRATOR-GUIDE.md
   CAMPAIGN-CONFIG.md
   CURRENT-CONTINUITY.md
-  DIALOGUE-GUIDE.md
   CHARACTER-REFERENCE.md
   ECONOMIC-REFERENCE.md
   RESEARCH-PROGRESSION.md
@@ -416,7 +503,9 @@ Next action, responsible person and review date:
 Evidence required for completion:
 ```
 
-### Scene status block
+### Optional additional status fields for a different campaign
+
+The mandatory Dragon Ball scene footer is defined in section 3. For a different campaign, agree which additional fields are useful rather than replacing that footer with a full inventory.
 
 ```text
 Name:
@@ -434,8 +523,8 @@ Adapt the fields to the genre. Do not include irrelevant combat labels in a stor
 ### Minimal agent instructions
 
 ```text
-Read START-HERE, current continuity, the relevant references and the latest
-transcript before narrating. Preserve player agency and accepted corrections.
+Read NARRATOR-GUIDE.md in full before every response, then START-HERE,
+current continuity, relevant references and the latest enacted transcript. Preserve player agency and accepted corrections.
 Append exact exchanges each turn. Update the live checkpoint after changes.
 Resolve delegated work and recurring obligations during time skips. Keep
 private narrator material out of public output. Read every edited document

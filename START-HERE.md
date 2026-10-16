@@ -3,7 +3,7 @@
 This repository is the public companion for Dragon Ball Stories.
 
 1. Read [campaign.json](campaign.json) for the authoritative app record and [Current continuity](CURRENT-CONTINUITY.md) for the generated checkpoint.
-2. Read [Narrator guide](NARRATOR-GUIDE.md) and [Dialogue and Interactive Storytelling](DIALOGUE-AND-INTERACTIVE-STORYTELLING.md) before narration.
+2. Read the [Unified Narrator and Storytelling Guide](NARRATOR-GUIDE.md) in full before every response: scenes, research, planning, corrections and maintenance. It is the single instruction owner; the old dialogue guide redirects there.
 3. Read [Corrections](RETCONS.md), then consult the authorised local exact scene archive and private checkpoint. Public summaries do not replace them.
 
 Coverage is **S196:24 April Age854,09:55, Conton City, Hercule’s office**. TL-503 is87% on a fresh check. Namek-first training is under review, followed by return/recovery and a revised Yardrat itinerary. Hercule awaits Zero’s desired Namek duration; no departure, Guru consent or unlock yet.
