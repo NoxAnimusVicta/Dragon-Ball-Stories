@@ -30,6 +30,8 @@ Do not impose a food pun on every technique or rename already accepted names mer
 
 ## Authorship and attribution
 
+**Rivet and Brask are player-approved examples of successful assistant-proposed names.** They share an industrial theme, sound distinct from one another, and follow the requested approach without elaborate fantasy wording. Rivet uses an ordinary hardware word unchanged; Brask complements the pair's industrial sound. No specific source-word derivation for Brask is asserted here. Use this pair as a practical benchmark for future suggestions: a simple foundation, a coherent theme and only as much alteration as the name needs.
+
 **Auber, derived from aubergine, was created and named by the player before the assistant had any input.** It illustrates the player's naming approach, not an assistant naming success. Later assistant development does not transfer authorship of an existing character or name.
 
 Record who supplied a name and its intended wordplay when known. Do not present player-created work as an assistant invention. Keep unrevealed biography, powers and future plans out of this public naming reference.
