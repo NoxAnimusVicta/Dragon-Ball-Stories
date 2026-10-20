@@ -250,7 +250,7 @@
     return events.length ? `<details class="record-history"><summary>${escape(title)}</summary><ol>${events.map(e=>`<li><a href="#chronicle/${escape(e.id)}">${escape(e.title)}</a><small>${escape(e.date || '')}</small></li>`).join('')}</ol></details>` : '';
   }
   function worldRecord(r,kind) {
-    return `<article class="record world-record" id="record-${escape(r.id)}" tabindex="-1"><div class="record-meta">${escape(r.status || '')}</div><h3>${escape(r.title)}</h3>${r.context ? `<div class="record-context">${escape(r.context)}</div>`:''}<p>${escape(kind==='projects' ? r.nextStep : r.summary)}</p><div class="detail-list record-details"><details data-detail-key="${escape(r.id)}"><summary>Details</summary>${recordSections(r,kind)}</details></div></article>`;
+    return `<details class="world-record" id="record-${escape(r.id)}" data-detail-key="${escape(r.id)}"><summary class="world-record-heading"><span class="record-meta">${escape(r.status || '')}</span><h3>${escape(r.title)}</h3>${r.context ? `<span class="record-context">${escape(r.context)}</span>`:''}<span class="record-preview">${escape(kind==='projects' ? r.nextStep : r.summary)}</span></summary><div class="world-record-body">${recordSections(r,kind)}</div></details>`;
   }
   function overview() {
     const entries = [
@@ -269,7 +269,7 @@
   function abilities() {
     return pageHeader('03','Abilities','Strength. Control. Resolve.')+
       '<nav class="record-jumps"><a href="#character">Power Level & forms</a><a href="#scale">Approved power reference</a></nav>'+
-      `<div class="ability-grid">${data.abilities.map(r=>`<button class="ability-card" id="record-${escape(r.id)}" data-ability="${escape(r.id)}" aria-haspopup="dialog"><span class="ability-card-art">${safePortrait(r.artwork)?`<img class="ability-image" src="${escape(safePortrait(r.artwork))}" alt="${escape(r.artworkAlt || r.title)}" loading="lazy">`:''}</span><span class="ability-card-copy"><span class="ability-proficiency">${escape(r.status)}</span><strong>${escape(r.title)}</strong><span class="ability-card-description">${escape(r.summary)}</span><span class="ability-card-more" aria-hidden="true">View ability <b>›</b></span></span></button>`).join('')}</div>`;
+      `<div class="ability-grid">${data.abilities.map(r=>`<button class="ability-card" id="record-${escape(r.id)}" data-ability="${escape(r.id)}" aria-haspopup="dialog"><span class="ability-card-art">${safePortrait(r.artwork)?`<img class="ability-image" src="${escape(safePortrait(r.artwork))}" alt="" loading="lazy">`:''}</span><span class="ability-card-copy"><strong>${escape(r.title)}</strong><span class="ability-card-description">${escape(r.summary)}</span><span class="ability-proficiency">${escape(r.status)}</span></span></button>`).join('')}</div>`;
   }
   function showAbility(id) {
     const ability=data.abilities.find(r=>r.id===id);
@@ -285,7 +285,7 @@
     const forms=unlockedForms().filter(f=>(ability.formIds || []).includes(f.id));
     const block=(title,text)=>text?`<section class="content-section"><h3>${title}</h3><p>${escape(text)}</p></section>`:'';
     const history=ability.trainingRecord;
-    dialog.innerHTML=`<div class="dialog-top"><span class="eyebrow">ABILITY / ${escape(ability.status)}</span><button class="icon-button close-dialog" aria-label="Close ability details" autofocus>×</button></div><div class="ability-detail-heading"><img src="${escape(safePortrait(ability.artwork))}" alt=""><h2 id="ability-dialog-title">${escape(ability.title)}</h2></div>${block('Effect',ability.effect)}${forms.length?`<section class="content-section"><h3>Stages & power</h3><dl class="power-level-list">${forms.map(f=>`<div><dt>${escape(f.name)}<span>×${escape(f.multiplier)}</span></dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl><p>Calculated from the current base of ${escape(exactPower(data.character.battlePower))}. Control is described below.</p></section>`:''}${block('Appearance',ability.appearance)}${block('Control & compatibility',ability.control)}<section class="content-section"><h3>Development</h3><p>${escape(ability.development)}</p>${historyLinks(ability.history)}${history?`<details class="record-history"><summary>Detailed training record · ${escape(history.asOf)}</summary><p>${escape(history.text)}</p>${history.facts?.length?`<dl class="definition-grid">${history.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>`:''}</details>`:''}</section>`;
+    dialog.innerHTML=`<header class="ability-detail-header"><div class="dialog-top"><span class="eyebrow">ABILITY · ${escape(ability.status)}</span><button class="icon-button close-dialog" aria-label="Close ability details" autofocus>×</button></div><div class="ability-detail-heading"><img src="${escape(safePortrait(ability.artwork))}" alt=""><h2 id="ability-dialog-title">${escape(ability.title)}</h2></div></header><div class="ability-detail-body" tabindex="0" role="region" aria-label="Ability information">${block('Effect',ability.effect)}${forms.length?`<section class="content-section"><h3>Stages & power</h3><dl class="power-level-list">${forms.map(f=>`<div><dt>${escape(f.name)}<span>×${escape(f.multiplier)}</span></dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl><p>Calculated from the current base of ${escape(exactPower(data.character.battlePower))}. Control is described below.</p></section>`:''}${block('Appearance',ability.appearance)}${block('Control & compatibility',ability.control)}<section class="content-section"><h3>Development</h3><p>${escape(ability.development)}</p>${historyLinks(ability.history)}${history?`<details class="record-history"><summary>Detailed training record · ${escape(history.asOf)}</summary><p>${escape(history.text)}</p>${history.facts?.length?`<dl class="definition-grid">${history.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>`:''}</details>`:''}</section></div>`;
     dialog.showModal();
   }
   function scalePage() {
@@ -366,7 +366,7 @@
 
     if (recordId && !worldCategory && /^[a-z0-9-]+$/.test(recordId)) {
       const record = $('record-'+recordId);
-      if (record) { for(let ancestor=record.parentElement;ancestor;ancestor=ancestor.parentElement) if(ancestor.matches('details')) { ancestor.open=true; if(ancestor.dataset.placeId) openPlaces.add(ancestor.dataset.placeId); } if(record.matches('details')) record.open=true; record.scrollIntoView({block:'center'}); record.focus({preventScroll:true}); }
+      if (record) { for(let ancestor=record.parentElement;ancestor;ancestor=ancestor.parentElement) if(ancestor.matches('details')) { ancestor.open=true; if(ancestor.dataset.placeId) openPlaces.add(ancestor.dataset.placeId); } if(record.matches('details')) record.open=true; record.scrollIntoView({block:'start'}); (record.querySelector(':scope > summary') || record).focus({preventScroll:true}); }
     }
     if(route==='abilities' && data.abilities.some(a=>a.id===recordId)) showAbility(recordId);
     if(preserveView) window.scrollTo({left:scroll.x,top:scroll.y,behavior:'instant'});

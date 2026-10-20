@@ -54,3 +54,7 @@ ability-sealed-channel.webp and ability-uncontrolled.webp were created with Open
 ## Complete ability set
 
 The combat fundamentals, ki control, flight, ki blasts, suppression, sensing, Spirit Bomb and revised Spirit Spear illustrations were generated with the built-in OpenAI image tool on 20 October 2026. Published copies are optimised 640-pixel PNGs; originals and prompts remain private. Kaioken and the two Dark Factor icons are retained. Symbolic silhouettes represent techniques, not new character appearances. The tool exposes no model selector; no “Pro 6” model claim is made.
+
+## Turles appearance reference
+
+`turles-black-red.jpg` is user-supplied and explicitly approved for his existing People record. Identifying JPEG metadata is removed without recompressing the image. The black-and-red outfit is a reference, not a newly witnessed encounter or a retroactive replacement of his earlier armour. Its backdrop establishes no location. The original remains private.

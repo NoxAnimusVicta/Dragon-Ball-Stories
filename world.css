@@ -1,13 +1,45 @@
-/* Location hierarchy: bounded indentation stays readable on narrow phones. */
-.place-node{border:1px solid #b2c9bd;border-radius:6px;margin:14px 0;background:#fff9e9;overflow:hidden}
-.place-node>summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px;font-weight:800;list-style:none;color:#153c43}
-.place-node>summary::-webkit-details-marker{display:none}
-.place-node>summary::after{content:'+';font-size:24px;font-weight:400;flex:none}
-.place-node[open]>summary::after{content:'−'}
-.place-node[open]>summary{border-bottom:1px solid #b2c9bd;background:#edf0df}
-.place-content{padding:4px 16px 16px;min-width:0}
-.place-content>p{line-height:1.6}
-.place-children .place-node{background:#fffdf5}
-.place-children .place-children .place-content{padding-left:10px;padding-right:10px}
-.place-node:focus-visible{outline:3px solid #e5a32c;outline-offset:3px}
-@media(max-width:600px){.place-node .definition-grid{grid-template-columns:1fr}.place-content{padding-left:12px;padding-right:12px}.place-node>summary{padding:14px 12px}.place-children .place-children .place-node{border-left:0;border-right:0}}
+/* World records share one disclosure treatment; content.css owns their inner sections. */
+.world-groups{max-width:960px}
+.world-groups>.panel{display:block;padding:12px 28px 20px;border:1px solid #b6cdc0;border-radius:16px;box-shadow:0 12px 34px #04263224}
+.world-groups>.panel>h2{font-size:30px;margin:12px 0 2px;padding-bottom:14px;border-bottom:1px solid #264f4333}
+.world-record{border-bottom:1px solid #264f4326;scroll-margin-top:24px}
+.world-record:last-child{border-bottom:0}
+.world-record-heading,.place-node>summary{position:relative;display:block;list-style:none;cursor:pointer;padding:21px 34px 21px 0;color:var(--ink)}
+.world-record-heading::-webkit-details-marker,.place-node>summary::-webkit-details-marker{display:none}
+.world-record-heading:after,.place-node>summary:after{content:'';position:absolute;right:7px;top:29px;width:8px;height:8px;border-right:1.5px solid #557c70;border-bottom:1.5px solid #557c70;transform:rotate(45deg)}
+.world-record[open]>.world-record-heading:after,.place-node[open]>summary:after{transform:rotate(225deg);top:33px}
+.world-record-heading h3{font:28px/1.15 Bangers,sans-serif;letter-spacing:.5px;margin:5px 0 6px}
+.world-record-heading .record-meta{display:block;font-size:9px;line-height:1.5;letter-spacing:.8px;color:#547366}
+.record-context{display:block;font-size:11px;color:#597769;line-height:1.5;margin:0 0 8px}
+.record-preview{display:block;font-size:13px;line-height:1.65;color:#456259;max-width:68ch}
+.world-record-body{padding:0 0 18px 20px;border-left:2px solid #d3ab4f66;margin:0 0 20px}
+.world-record-body>.content-section:first-child{padding-top:2px}
+.world-record-body .record-history{max-width:68ch}
+.world-record-heading:focus-visible,.place-node>summary:focus-visible{outline:2px solid #b8700b;outline-offset:3px;border-radius:4px}
+.world-record[open]>.world-record-heading h3,.place-node[open]>summary strong{color:#156456}
+.place-node{border:0;border-bottom:1px solid #264f4326;margin:0;background:transparent;scroll-margin-top:24px}
+.place-node:last-child{border-bottom:0}
+.place-node>summary>span{display:block;min-width:0}
+.place-node>summary strong{display:block;font:25px/1.2 Bangers,sans-serif;letter-spacing:.4px}
+.place-node>summary small{display:block;font-size:11px;line-height:1.6;font-weight:400;color:#597769;margin-top:6px}
+.place-purpose{display:block;font-size:13px;line-height:1.65;font-weight:400;margin-top:8px;max-width:68ch}
+.place-content{padding:0 0 18px 20px;border-left:2px solid #d3ab4f66;margin-bottom:20px;min-width:0}
+.place-content>.record-meta{font-size:10px;line-height:1.6;margin-bottom:14px}
+.place-content>.content-section:first-of-type{padding-top:0}
+.place-children{border-top:1px solid #264f4333;margin-top:20px}
+.place-children .place-node>summary strong{font:700 15px/1.4 'Segoe UI',sans-serif;letter-spacing:0}
+.place-children .place-children .place-content{padding-left:12px}
+@media(hover:hover) and (pointer:fine){
+ .world-record-heading:hover h3,.place-node>summary:hover strong{color:#157564}
+ .world-record-heading:hover:after,.place-node>summary:hover:after{border-color:#157564}
+}
+@media(max-width:600px){
+ .world-groups>.panel{padding:9px 18px 14px;border-radius:13px}
+ .world-groups>.panel>h2{font-size:28px}
+ .world-record-heading,.place-node>summary{padding:19px 26px 19px 0}
+ .world-record-heading h3{font-size:25px}
+ .world-record-body,.place-content{padding-left:13px}
+ .place-children .place-children .place-content{padding-left:8px}
+ .place-children .place-children .place-children .place-content{padding-left:0;border-left:0}
+ .place-node .definition-grid{grid-template-columns:1fr}
+}

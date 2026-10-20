@@ -805,12 +805,12 @@
       "title": "Turles",
       "summary": "Attacked Zero on Namek, fought Vegeta and escaped with Nappa.",
       "status": "Escaped enemy",
-      "battlePower": 1800000,
+      "battlePower": 3400000,
       "context": "TL-864",
       "sections": [
         {
           "title": "Identity & appearance",
-          "text": "Goku-like black hair, dark complexion, charcoal armour with white edging and wrapped tail; smooth, sneering and calculating.",
+          "text": "Goku-like spiked black hair, dark complexion and retained tail; smooth, sneering and calculating. Approved reference: black-and-red armour, long black coat with red lining and red scouter. His earlier encounter outfit was charcoal armour with white edging; the new illustration is an appearance reference, not a newly witnessed meeting.",
           "facts": [
             {
               "label": "Age",
@@ -822,21 +822,44 @@
           "title": "Power & known forms",
           "facts": [
             {
-              "label": "Latest assessed base",
-              "value": "1,800,000 · 22 April"
+              "label": "Current assessed base",
+              "value": "3.4 million · S240 authorial update; not a scan"
             },
             {
-              "label": "Consumed fruit",
-              "value": "×10 · 18,000,000 ceiling"
+              "label": "Current fruit supply",
+              "value": "×20 · 68 million in humanoid base"
+            },
+            {
+              "label": "Great Ape",
+              "value": "×10 · 34 million; with ×20 fruit, 680 million"
+            },
+            {
+              "label": "Previous encounter",
+              "value": "22 April · 1.8 million base; ×10 fruit, 18 million"
             }
           ]
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "His sudden ambush badly injured Zero and broke the scouter. Vegeta intercepted him; their powered clash risked drawing Frieza. Turles carried the unconscious Nappa out after the Patrollers withdrew. Jeice and Burter did not join him. Earlier 1.6 million/16 million figures belong to the first encounter. Current ratings are campaign assessments, not Zero’s scans; escape destination remains unknown."
+          "text": "His sudden ambush badly injured Zero and broke the scouter. Vegeta intercepted him; their powered clash risked drawing Frieza. Turles carried the unconscious Nappa out after the Patrollers withdrew. Jeice and Burter did not join him. Continued training and improved fruit supply underlie the current reader reference, not a new encounter or scan by Zero. Earlier 1.6 million/16 million figures belong to the first encounter; 1.8 million/18 million belong to Namek. Escape destination remains unknown to Zero."
         }
       ],
-      "history": []
+      "history": [
+        "s083",
+        "s178",
+        "s180",
+        "s185"
+      ],
+      "art": {
+        "appearance": [
+          {
+            "name": "Black-and-red outfit",
+            "date": "S240 · Approved appearance reference; outfit change not witnessed",
+            "portrait": "turles-black-red.jpg",
+            "portraitAlt": "Turles with spiked black hair, red scouter and retained tail, wearing black-and-red Saiyan armour beneath a long black coat with red lining."
+          }
+        ]
+      }
     },
     {
       "id": "pan",

@@ -10,7 +10,7 @@ Kaioken is one ability. Keep every learned stage in `character.forms` and refere
 
 ## Abilities
 
-Every established ability, including fundamentals, has exactly one compact icon-led row in a single vertical list. The whole row opens its dialog. Use small square icons (48 pixels on phone, 60 on desktop), subtle separators and no large artwork panels or individual card shadows. Detail headings also keep the icon small. No separate training list, icon sidebar, empty future slots or second record.
+Every established ability, including fundamentals, has exactly one compact icon-led row in a single vertical list. The whole row opens its dialog. Use small square icons (48 pixels on phone, 60 on desktop), subtle separators and no large artwork panels or individual card shadows. Detail headings also keep the icon small. The rounded dialog keeps its heading and 44-pixel close control visible while only its reading area scrolls; keyboard users can focus that area. Use restrained separators, readable line spacing and no nested section boxes. No separate training list, icon sidebar, empty future slots or second record.
 
 At a glance: small icon, name, one short effect sentence, proficiency. Use **Developing**, **Practised** or **Uncontrolled** when supported. Practised means demonstrated usable skill, not mastery. Current activation belongs on Character; “Inactive” is not proficiency.
 
@@ -30,7 +30,7 @@ Artwork: `artwork`, `artworkAlt`, local manifest-listed asset. Cel-shaded illust
 
 ## World
 
-All records retain stable IDs and existing search/deep links. `sections` contains ordered `{title, text?, facts?}` groups. Keep text escaped and readable. Put substantial detail inside the disclosure.
+All records retain stable IDs and existing search/deep links. `sections` contains ordered `{title, text?, facts?}` groups. Keep text escaped and readable. Put substantial detail inside the disclosure. People and Ongoing use the whole record heading as the native disclosure control, matching Places; do not restore a second boxed Details button. Show one reading column with a subtle left rule inside open records. Use drawn chevrons, comfortable tap targets and keyboard focus; hover emphasis belongs only on devices with real hover. Keep nested places bounded on small screens. Existing artwork stays within the appearance section, at a comfortable portrait width; never promote private art automatically.
 
 **People**
 

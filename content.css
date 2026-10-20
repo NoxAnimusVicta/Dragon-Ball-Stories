@@ -1,59 +1,67 @@
 /* Presentation contract: APP-CONTENT-STANDARD.md */
-.ability-grid{display:flex;flex-direction:column;max-width:920px;background:#fff9e9;border:1px solid #a5c5b6;border-radius:8px;overflow:hidden}
-.ability-card{display:flex;flex-direction:row;align-items:center;gap:16px;position:relative;width:100%;min-width:0;padding:16px 48px 16px 18px;border:0;border-bottom:1px solid #c9d8ca;border-radius:0;background:transparent;text-align:left;box-shadow:none;color:#11343d;cursor:pointer}
-.ability-card:last-child{border-bottom:0}
-.ability-card:after{content:'';position:absolute;right:22px;width:8px;height:8px;border-top:2px solid #537b70;border-right:2px solid #537b70;transform:rotate(45deg)}
-.ability-card-art{display:block;width:60px;height:60px;flex:none;border-radius:8px;background:#0c2536;overflow:hidden}
+.ability-grid{display:flex;flex-direction:column;max-width:920px;background:var(--paper);border:1px solid #b6cdc0;border-radius:16px;overflow:hidden;box-shadow:0 12px 34px #04263224}
+.ability-card{display:flex;align-items:center;gap:18px;position:relative;width:100%;min-width:0;padding:18px 52px 18px 22px;border:0;border-radius:0;background:transparent;text-align:left;box-shadow:none;color:var(--ink);cursor:pointer}
+.ability-card+.ability-card:before{content:'';position:absolute;top:0;left:100px;right:22px;height:1px;background:#264f431c}
+.ability-card:after{content:'';position:absolute;right:25px;width:7px;height:7px;border-top:1.5px solid #537b70;border-right:1.5px solid #537b70;transform:rotate(45deg)}
+.ability-card-art{display:block;width:60px;height:60px;flex:none;border-radius:12px;background:#0c2536;overflow:hidden}
 .ability-card-art img{display:block;width:100%;height:100%;object-fit:cover}
-.ability-card-copy{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-width:0;padding:0;flex:1}
-.ability-proficiency{order:3;font-size:10px;line-height:1.4;color:#577568;font-weight:650}
-.ability-card-copy>strong{font:24px/1.15 Bangers,sans-serif;letter-spacing:.5px}
-.ability-card-description{font-size:13px;line-height:1.45;color:#4f6a61}
-.ability-card-more{display:none}
-.ability-card:focus-visible{outline:3px solid #b8700b;outline-offset:-3px}
-@media(hover:hover) and (pointer:fine){.ability-card:hover{background:#f2edda}}
-.ability-dialog{max-width:650px;max-height:88svh}
-.ability-detail-heading{display:flex;gap:20px;align-items:center;margin:16px 0 24px}
-.ability-detail-heading img{width:56px;height:56px;object-fit:cover;border-radius:6px;flex:none;background:#0c2536}
-.ability-detail-heading h2{margin:0;font-size:38px}
-.content-section{border-top:1px solid #b8cfc2;padding:18px 0}
-.content-section h3,.content-section h4{font:800 12px/1.5 'Segoe UI',sans-serif;letter-spacing:.6px;margin:0 0 9px;color:#244f4b}
-.content-section p{white-space:pre-wrap;margin:0;font-size:14px;line-height:1.7}
-.content-section .definition-grid{border:0;padding:0;margin:12px 0}
-.content-section .record-gallery{margin:16px 0 0}
-.content-section .power-level-list{margin:0}
+.ability-card-copy{display:flex;flex-direction:column;align-items:flex-start;gap:5px;min-width:0;padding:0;flex:1}
+.ability-card-copy>strong{font:24px/1.15 Bangers,sans-serif;letter-spacing:.45px}
+.ability-card-description{font-size:13px;line-height:1.5;color:#4f6a61}
+.ability-proficiency{font-size:10px;line-height:1.4;color:#547366;font-weight:650;letter-spacing:.2px}
+.ability-card:focus-visible{outline:3px solid #b8700b;outline-offset:-4px}
+@media(hover:hover) and (pointer:fine){.ability-card:hover{background:#e8eddf}.ability-card:hover:after{border-color:#173e40}}
+/* A fixed heading keeps the close control reachable while the content scrolls. */
+dialog.ability-dialog{max-width:660px;max-height:88svh;padding:0;border:1px solid #c3d3c4;border-radius:18px;overflow:hidden;box-shadow:0 24px 90px #021e3280}
+.ability-dialog[open]{display:flex;flex-direction:column}
+.ability-detail-header{flex:none;padding:18px 28px 22px;border-bottom:1px solid #264f4326;background:#f5f2e3}
+.ability-detail-header .dialog-top{margin:0 0 12px}
+.ability-detail-header .eyebrow{font-size:10px;letter-spacing:1.1px}
+.ability-detail-header .close-dialog{width:44px;height:44px;border:0;border-radius:50%;background:#183f4110;font-size:27px}
+.ability-detail-heading{display:flex;gap:16px;align-items:center;margin:0}
+.ability-detail-heading img{width:56px;height:56px;object-fit:cover;border-radius:11px;flex:none;background:#0c2536}
+.ability-detail-heading h2{margin:0;font-size:36px;line-height:1.08}
+.ability-detail-body{padding:4px 28px 20px;overflow-y:auto;overscroll-behavior:contain;min-height:0;scrollbar-width:thin;scrollbar-color:#91afa3 transparent}
+.ability-detail-body:focus-visible{outline:2px solid #b8700b;outline-offset:-4px}
+.content-section{padding:21px 0;border:0}
+.content-section+.content-section{border-top:1px solid #264f431c}
+.content-section h3,.content-section h4{font:750 12px/1.5 'Segoe UI',sans-serif;letter-spacing:.2px;margin:0 0 9px;color:#244f4b}
+.content-section p{white-space:pre-wrap;margin:0;font-size:14px;line-height:1.75;color:#456259;max-width:68ch}
+.content-section .definition-grid{border:0;padding:0;margin:15px 0 0;gap:16px 24px}
+.content-section .definition-grid dt{font-size:10px;text-transform:none;letter-spacing:.2px;color:#547366}
+.content-section .definition-grid dd{font-size:14px;line-height:1.6;font-weight:650}
+.content-section .record-gallery{margin:20px 0 0;max-width:350px;border-radius:12px;border:0}
+.content-section .place-gallery{max-width:680px}
+.content-section .power-level-list{margin:0 0 12px}
 .content-section .power-level-list>div:first-child{border:0}
-.record-history{margin-top:15px;border-top:1px solid #b8cfc2}
-.record-history>summary,.completed-projects>summary{cursor:pointer;min-height:48px;padding:14px 28px 14px 0;position:relative;font-size:12px;font-weight:750;list-style:none}
+.record-history{margin-top:12px;border-top:1px solid #264f4326}
+.record-history>summary,.completed-projects>summary{display:block;cursor:pointer;min-height:48px;padding:15px 30px 15px 0;position:relative;font-size:12px;font-weight:650;list-style:none;color:#365f53}
 .record-history>summary::-webkit-details-marker,.completed-projects>summary::-webkit-details-marker{display:none}
-.record-history>summary:after,.completed-projects>summary:after{content:'+';position:absolute;right:3px;top:8px;font-size:24px}
-.record-history[open]>summary:after,.completed-projects[open]>summary:after{content:'−'}
-.record-history ol{padding-left:20px;margin:0}
+.record-history>summary:after,.completed-projects>summary:after{content:'';position:absolute;right:6px;top:19px;width:7px;height:7px;border-bottom:1.5px solid currentColor;border-right:1.5px solid currentColor;transform:rotate(45deg)}
+.record-history[open]>summary:after,.completed-projects[open]>summary:after{transform:rotate(225deg);top:23px}
+.record-history>summary:focus-visible,.completed-projects>summary:focus-visible{outline:2px solid #b8700b;outline-offset:2px}
+.record-history ol{padding-left:20px;margin:0 0 12px}
 .record-history li{padding:8px 0;font-size:13px;line-height:1.6}
 .record-history li a{text-decoration:underline;text-underline-offset:3px}
 .record-history small{display:block;color:#557568}
-.record-context{font-size:11px;color:#577b6d;line-height:1.5;margin:0 0 10px}
-.world-record .record-meta{line-height:1.6}
-.world-record .content-section{padding:16px 0}
-.record-details .record-history>summary{display:block;box-shadow:none;border:0;border-top:1px solid #b8cfc2;background:none;padding:14px 28px 14px 0;min-width:0}
-.record-details .record-history[open]>summary{background:none;margin-bottom:0}
-.completed-projects{grid-column:1/-1;border-top:1px solid #b8cfc2;margin-top:20px}
-.completed-projects>summary{font-size:16px}
-.place-node>summary>span{display:block;min-width:0}
-.place-node>summary strong{display:block;font-size:16px}
-.place-node>summary small{display:block;font-size:11px;line-height:1.6;font-weight:400;color:#577b6d;margin-top:5px}
-.place-purpose{display:block;font-size:13px;line-height:1.6;font-weight:400;margin-top:7px}
-.place-content>.record-meta{padding:16px 0 4px;line-height:1.6}
-.place-content .content-section:first-of-type{border-top:0}
+.record-history>p{font-size:13px;line-height:1.75;white-space:pre-wrap;padding-bottom:16px;color:#456259}
+.completed-projects{border-top:1px solid #264f4333;margin-top:18px}
+.completed-projects>summary{font-size:15px}
 @media(max-width:600px){
- .ability-card{gap:12px;padding:13px 32px 13px 12px}
- .ability-card:after{right:14px;width:6px;height:6px}
- .ability-card-art{width:48px;height:48px;border-radius:6px}
- .ability-card-copy>strong{font-size:21px}
- .ability-card-description{font-size:12px}
- .ability-proficiency{font-size:10px}
+ .ability-grid{border-radius:13px}
+ .ability-card{gap:13px;padding:16px 34px 16px 14px}
+ .ability-card+.ability-card:before{left:75px;right:15px}
+ .ability-card:after{right:16px;width:6px;height:6px}
+ .ability-card-art{width:48px;height:48px;border-radius:10px}
+ .ability-card-copy>strong{font-size:22px}
+ .ability-card-description{font-size:12px;line-height:1.55}
+ dialog.ability-dialog{width:calc(100% - 20px);max-height:92svh;border-radius:18px}
+ .ability-detail-header{padding:12px 20px 18px}
+ .ability-detail-header .dialog-top{margin-bottom:10px}
  .ability-detail-heading{gap:12px}
  .ability-detail-heading img{width:48px;height:48px}
- .ability-detail-heading h2{font-size:30px}
+ .ability-detail-heading h2{font-size:29px}
+ .ability-detail-body{padding:0 20px max(16px,env(safe-area-inset-bottom))}
+ .content-section{padding:19px 0}
  .content-section .definition-grid{grid-template-columns:1fr}
 }
