@@ -50,3 +50,7 @@ ability-sealed-channel.webp and ability-uncontrolled.webp were created with Open
 ## Newly published established references
 
 `brask-base.jpg`, `brask-transformed.jpg`, `rivet-base.jpg` and `room-214.jpg` are user-supplied fictional artwork. JPEG identifying metadata is removed while encoded image pixels are retained. Brask’s transformed reference is the approved witnessed white-haired appearance, not the superseded armour concept. The app describes only the witnessed transformation, without disclosing its private origin. Room 214’s daylight art establishes layout rather than the current clock. Illustrated backgrounds do not establish visits.
+
+## Complete ability set
+
+The combat fundamentals, ki control, flight, ki blasts, suppression, sensing, Spirit Bomb and revised Spirit Spear illustrations were generated with the built-in OpenAI image tool on 20 October 2026. Published copies are optimised 640-pixel PNGs; originals and prompts remain private. Kaioken and the two Dark Factor icons are retained. Symbolic silhouettes represent techniques, not new character appearances. The tool exposes no model selector; no “Pro 6” model claim is made.

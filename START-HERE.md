@@ -11,3 +11,5 @@ Coverage: **S240 · 28 June, Age 854 · 11:30 · Hercule’s office, Conton City
 The numerical reference is out of character. It does not unlock forms, expose private plans or replace the live custom-character assessments. Current NPC powers are labelled as measured or assessed; dated old readings remain history. Artwork is an appearance reference, not proof of current location or pristine clothing. Future designs remain private.
 
 Update the public data, rebuild generated summaries, validate calculations and privacy, inspect desktop/phone views, then publish only manifest-listed files. Read every edited file fully before and after. Verify the live release before claiming publication. No maintenance operation advances the story.
+
+For app edits, read [APP-CONTENT-STANDARD.md](APP-CONTENT-STANDARD.md) and [MAINTENANCE.md](MAINTENANCE.md).

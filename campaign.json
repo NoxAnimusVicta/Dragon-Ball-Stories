@@ -79,7 +79,9 @@
         "status": "Technique · ×2 only · 60-second moving demonstration; separate from the sealed channel",
         "formGroup": "Kaioken"
       }
-    ]
+    ],
+    "powerHistory": "Guru’s individual ×12 release produced 69,497 on 22 May. Four weeks with Nail brought the base to 77,000; the Brask engagement and subsequent training led to the current 79,807. Earlier readings remain dated in the journal. No repeated potential release, human Zenkai or automatic absorption of channel power. Form totals use the recorded integer base; they are not new transformed scans.",
+    "initialPower": 50
   },
   "story": {
     "era": "Conton City · Age 854",
@@ -90,171 +92,305 @@
   },
   "abilities": [
     {
-      "id": "power",
-      "title": "Battle power · 79,807",
-      "summary": "Ordinary base confirmed after morning training with Vegeta.",
-      "status": "Measured",
-      "facts": [
-        {
-          "label": "First reading",
-          "value": "50 · Arrival assessment"
-        },
-        {
-          "label": "Current measured base",
-          "value": "79,807 · 28 June, Age 854"
-        },
-        {
-          "label": "Half output target",
-          "value": "About 39,904 calculated; not a fresh suppression reading"
-        },
-        {
-          "label": "Change since arrival",
-          "value": "+79,757 · 1,596.14 times the initial reading"
-        }
-      ],
-      "details": "Guru’s individual ×12 release produced 69,497 on 22 May. Four weeks with Nail brought the base to 77,000; the Brask engagement and subsequent training led to the current 79,807. Earlier readings remain dated in the journal. No repeated potential release, human Zenkai or automatic absorption of channel power. Form totals use the recorded integer base; they are not new transformed scans."
-    },
-    {
       "id": "combat-basics",
       "title": "Combat fundamentals",
-      "summary": "Compact counters, aerial combat and recovery under live pressure.",
+      "summary": "Footwork, guards, counters and combinations on the ground and in the air.",
       "status": "Developing",
-      "details": "Chamber benchmarks remain 75× gravity for ground rounds, 25× for aerial rounds and 150× for slow conditioning; no higher maximum has been established. Peer sparring and cleanup work developed group awareness. In TL-619, tight counters, accumulated damage and sustained pressure let Zero defeat a stronger Nappa while using the sealed channel. Vegeta remained far beyond him; their following training day focused on recovering after interrupted attacks, using separate channel bouts, closure and rest. Four weeks with Nail and the quarry fight developed aerial reversals, guarded combinations and sustained pressure against injured Brask. Subsequent Vegeta rounds improved close-range defence; he still controls their exchanges."
+      "effect": "Compact movement and close-range defence; training includes weighted and gravity-loaded rounds.",
+      "control": "Ground rounds at 75× gravity, aerial rounds at 25× and slow conditioning at 150× are distinct demonstrations. Vegeta still controls their exchanges.",
+      "development": "Close-range defence and recovery after interrupted attacks are the current focus.",
+      "history": [
+        "s063",
+        "s177",
+        "s223",
+        "s237",
+        "s240"
+      ],
+      "artwork": "ability-combat-basics.png",
+      "artworkAlt": "Footwork, guards, counters and combinations on the ground and in the air. Symbolic technique illustration.",
+      "abilityType": "fundamental",
+      "trainingRecord": {
+        "asOf": "28 June, Age 854",
+        "text": "Chamber benchmarks remain 75× gravity for ground rounds, 25× for aerial rounds and 150× for slow conditioning; no higher maximum has been established. Peer sparring and cleanup work developed group awareness. In TL-619, tight counters, accumulated damage and sustained pressure let Zero defeat a stronger Nappa while using the sealed channel. Vegeta remained far beyond him; their following training day focused on recovering after interrupted attacks, using separate channel bouts, closure and rest. Four weeks with Nail and the quarry fight developed aerial reversals, guarded combinations and sustained pressure against injured Brask. Subsequent Vegeta rounds improved close-range defence; he still controls their exchanges.",
+        "facts": []
+      }
     },
     {
       "id": "ki-control",
       "title": "Ki control",
-      "summary": "Supports loaded movement, flight and repeated blasts while managing available output.",
-      "status": "Developing control",
-      "details": "Deliberate suppression, loaded movement, flight and moving releases are established. King Kai’s instruction improves whole-body transitions and control under strain. Lower-flow channeling is steadier; full output remains strenuous. Ki sensing is now trained separately, with limited relative-output tracking. Neither the channel nor cooperative spirit-energy gathering has permanently absorbed another power into the base. Nail’s month of instruction and the latest King Kai sessions improved movement, transitions and recovery; no new gravity or endurance maximum was established."
+      "summary": "Directs ki through movement, flight and energy release.",
+      "status": "Developing",
+      "effect": "Deliberate regulation of personal output supports loaded movement and transitions between techniques.",
+      "control": "Lower-flow channeling is steadier; full channel output remains strenuous. Control practice does not permanently absorb channel or donated spirit energy.",
+      "development": "Recent King Kai and Nail instruction improved transitions and recovery.",
+      "history": [
+        "s020",
+        "s063",
+        "s149",
+        "s212",
+        "s237"
+      ],
+      "artwork": "ability-ki-control.png",
+      "artworkAlt": "Directs ki through movement, flight and energy release. Symbolic technique illustration.",
+      "abilityType": "fundamental",
+      "trainingRecord": {
+        "asOf": "28 June, Age 854",
+        "text": "Deliberate suppression, loaded movement, flight and moving releases are established. King Kai’s instruction improves whole-body transitions and control under strain. Lower-flow channeling is steadier; full output remains strenuous. Ki sensing is now trained separately, with limited relative-output tracking. Neither the channel nor cooperative spirit-energy gathering has permanently absorbed another power into the base. Nail’s month of instruction and the latest King Kai sessions improved movement, transitions and recovery; no new gravity or endurance maximum was established.",
+        "facts": []
+      }
     },
     {
       "id": "flight",
       "title": "Flight",
-      "summary": "Sustained aerial combat drills with turns, bracing and controlled rotations.",
-      "status": "Used in the field",
-      "facts": [
-        {
-          "label": "Demonstrated",
-          "value": "Aerial combat against armed drones"
-        },
-        {
-          "label": "Training load",
-          "value": "25× gravity at full output"
-        },
-        {
-          "label": "Field use",
-          "value": "Aerial exchanges against Nappa"
-        }
+      "summary": "Uses ki to stay airborne, manoeuvre and fight.",
+      "status": "Practised",
+      "effect": "Sustained aerial movement includes turns, bracing, controlled rotations and flight-assisted attacks.",
+      "control": "Aerial rounds reached 25× gravity. Long-range endurance remains unmeasured; gravity practice does not erase an opponent’s power advantage.",
+      "development": "Flight is integrated into live combat and evasive combinations.",
+      "history": [
+        "s022",
+        "s062",
+        "s063",
+        "s223"
       ],
-      "details": "Flight is integrated with evasions, compact strikes and spinning kicks against drones. Full-output aerial rounds reached 25× gravity, distinct from 75× ground rounds and 150× slow conditioning. Flight has now been used in the assessment and both Nappa encounters. Long-range endurance remains unmeasured; greater training gravity did not make Zero faster than a much stronger opponent. Flight-assisted reversals and aerial pressure were also used against Brask."
+      "artwork": "ability-flight.png",
+      "artworkAlt": "Uses ki to stay airborne, manoeuvre and fight. Symbolic technique illustration.",
+      "abilityType": "fundamental",
+      "trainingRecord": {
+        "asOf": "28 June, Age 854",
+        "text": "Flight is integrated with evasions, compact strikes and spinning kicks against drones. Full-output aerial rounds reached 25× gravity, distinct from 75× ground rounds and 150× slow conditioning. Flight has now been used in the assessment and both Nappa encounters. Long-range endurance remains unmeasured; greater training gravity did not make Zero faster than a much stronger opponent. Flight-assisted reversals and aerial pressure were also used against Brask.",
+        "facts": [
+          {
+            "label": "Demonstrated",
+            "value": "Aerial combat against armed drones"
+          },
+          {
+            "label": "Training load",
+            "value": "25× gravity at full output"
+          },
+          {
+            "label": "Field use",
+            "value": "Aerial exchanges against Nappa"
+          }
+        ]
+      }
     },
     {
       "id": "ki-blast",
       "title": "Ki blasts",
-      "summary": "Tighter moving volleys and larger charged shots with faster, cleaner gathering.",
+      "summary": "Fires ki projectiles, volleys and charged shots.",
       "status": "Developing",
-      "facts": [
-        {
-          "label": "First success",
-          "value": "Day 22 · Shallow chip in a practice wall"
-        },
-        {
-          "label": "Current control",
-          "value": "Moving volleys and larger charged shots; finite accuracy and stamina"
-        }
+      "effect": "Ordinary ki attacks can be released while moving or charged for a larger shot. Limited preset curves have been demonstrated.",
+      "control": "Accuracy and stamina remain finite. Larger shots need an opening. Curved fire is not homing; no stable blade or named beam has been learned.",
+      "development": "Practising cleaner gathering and tighter moving volleys.",
+      "history": [
+        "s039",
+        "s063",
+        "s081",
+        "s086",
+        "s130",
+        "s160"
       ],
-      "details": "Started with one small shot on Day 22. Chamber practice developed step-release, moving-target fire and short volleys while manoeuvring. Larger shots require an opening and consume more stamina; accuracy remains imperfect. These are ordinary ki attacks, not an acquired named beam or signature technique. In the mission he destroyed the warehouse with an outward release and used contact blasts and concentrated ki at his fingertips. No stable blade was acquired in that fight. During Yamcha’s Raditz fight, a precise shot destroyed the scouter with only superficial burns to Raditz, leaving Yamcha to win his own fight. On Namek, twenty ordinary shots followed preset wide curves; three hit Nappa from behind. This was limited curved fire, not homing or Yamcha’s Spirit Ball. Spirit Spear is recorded separately."
+      "appearance": "Yellow-white energy shots; the first shot chipped a practice wall.",
+      "artwork": "ability-ki-blast.png",
+      "artworkAlt": "Fires ki projectiles, volleys and charged shots. Symbolic technique illustration.",
+      "abilityType": "fundamental",
+      "trainingRecord": {
+        "asOf": "28 June, Age 854",
+        "text": "Started with one small shot on Day 22. Chamber practice developed step-release, moving-target fire and short volleys while manoeuvring. Larger shots require an opening and consume more stamina; accuracy remains imperfect. These are ordinary ki attacks, not an acquired named beam or signature technique. In the mission he destroyed the warehouse with an outward release and used contact blasts and concentrated ki at his fingertips. No stable blade was acquired in that fight. During Yamcha’s Raditz fight, a precise shot destroyed the scouter with only superficial burns to Raditz, leaving Yamcha to win his own fight. On Namek, twenty ordinary shots followed preset wide curves; three hit Nappa from behind. This was limited curved fire, not homing or Yamcha’s Spirit Ball. Spirit Spear is recorded separately.",
+        "facts": [
+          {
+            "label": "First success",
+            "value": "Day 22 · Shallow chip in a practice wall"
+          },
+          {
+            "label": "Current control",
+            "value": "Moving volleys and larger charged shots; finite accuracy and stamina"
+          }
+        ]
+      }
     },
     {
       "id": "ki-suppression",
       "title": "Power suppression",
-      "summary": "Usually holds output near half during ordinary waking activity and familiar drills.",
-      "status": "Demonstrated in the field",
-      "details": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains. The opening soldier engagement demonstrated a deliberate full-power striking burst followed by a return to half output. At the current recorded base, half output would be about 39,904; that calculation is not a new suppression check. Difficulty sensing a deeply suppressed opponent does not undo Zero’s own suppression skill."
+      "summary": "Lowers emitted power and deliberately releases it for action.",
+      "status": "Practised",
+      "effect": "Usually holds near half output during ordinary waking activity and familiar drills.",
+      "control": "Hard surprises can cause spikes. Sleep maintenance, perfect concealment and instant expert switching are unestablished. Suppression increases effort under a load; it does not multiply training gains.",
+      "development": "Deliberate full-power striking bursts followed by renewed suppression have been used in the field.",
+      "history": [
+        "s061",
+        "s063",
+        "s076",
+        "s077"
+      ],
+      "artwork": "ability-ki-suppression.png",
+      "artworkAlt": "Lowers emitted power and deliberately releases it for action. Symbolic technique illustration.",
+      "abilityType": "fundamental",
+      "trainingRecord": {
+        "asOf": "28 June, Age 854",
+        "text": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains. The opening soldier engagement demonstrated a deliberate full-power striking burst followed by a return to half output. At the current recorded base, half output would be about 39,904; that calculation is not a new suppression check. Difficulty sensing a deeply suppressed opponent does not undo Zero’s own suppression skill.",
+        "facts": []
+      }
     },
     {
       "id": "uncontrolled-form",
       "title": "Uncontrolled Dark Factor",
-      "summary": "A black-and-violet ki mantle first manifested while fighting Nappa.",
-      "status": "Manifested · Unmastered",
+      "summary": "Releases the Dark Factor through an involuntary, dangerous manifestation.",
+      "status": "Uncontrolled",
       "abilityType": "transformation",
       "artwork": "ability-uncontrolled.webp",
       "artworkAlt": "Symbolic black-and-violet horned energy eruption for Uncontrolled Dark Factor.",
-      "facts": [
-        {
-          "label": "Campaign factor",
-          "value": "×15 · 1,197,105 calculated from the recorded base"
-        },
-        {
-          "label": "Current state",
-          "value": "Inactive; contained by Chronoa’s seal"
-        }
+      "effect": "The attachment can take control of Zero’s body; this is a witnessed manifestation, not a safe voluntary transformation.",
+      "control": "Chronoa’s seal contains it. Losing consciousness or nearing death with the channel open can trigger takeover. The failed Kaioken/channel test also triggered it while conscious: Kaioken collapsed and ×15 replaced ×10, without stacking.",
+      "development": "Containment remains intact; voluntary mastery has not been achieved.",
+      "history": [
+        "s088",
+        "s090",
+        "s091",
+        "s094",
+        "s152"
       ],
-      "details": "Power erupted after a voice that felt like Zero’s own thoughts offered strength. Fighting Nappa felt dreamlike and apparently voluntary until the body turned toward a city against his wishes. Vegeta stopped him before he reached it. The dense mantle encloses his body, hair and clothes and slightly enlarges his silhouette; reversion reveals what was underneath without repairing battle damage. Its layered growling laugh is not a new technique. This is a recorded manifestation, not a safe transformation he can freely activate. A brief second takeover occurred during the 15 April Kaioken/channel test; Krillin stopped it immediately. Kaioken dropped out, so ×15 replaced the channel without stacking. Chronoa checked and settled the intact seal."
+      "appearance": "A dense black-and-violet mantle encloses body, hair and clothes, slightly enlarging the silhouette, with horn-like projections and pale claws. Reversion exposes the underlying clothes and injuries without repairing damage. The layered growling laugh is not a separate technique.",
+      "formIds": [
+        "uncontrolled"
+      ],
+      "trainingRecord": {
+        "asOf": "28 June, Age 854",
+        "text": "Power erupted after a voice that felt like Zero’s own thoughts offered strength. Fighting Nappa felt dreamlike and apparently voluntary until the body turned toward a city against his wishes. Vegeta stopped him before he reached it. The dense mantle encloses his body, hair and clothes and slightly enlarges his silhouette; reversion reveals what was underneath without repairing battle damage. Its layered growling laugh is not a new technique. This is a recorded manifestation, not a safe transformation he can freely activate. A brief second takeover occurred during the 15 April Kaioken/channel test; Krillin stopped it immediately. Kaioken dropped out, so ×15 replaced the channel without stacking. Chronoa checked and settled the intact seal.",
+        "facts": []
+      }
     },
     {
       "id": "sealed-channel-form",
       "title": "Dark Factor Sealed Channel",
-      "summary": "A controlled flow through Chronoa’s seal, first brought to full output in supervised practice.",
-      "status": "Inactive · Practising",
+      "summary": "Draws Dark Factor power through Chronoa’s seal while retaining control.",
+      "status": "Developing",
       "abilityType": "transformation",
-      "facts": [
-        {
-          "label": "Campaign ceiling",
-          "value": "×10 · 798,070 calculated from the recorded base"
-        },
-        {
-          "label": "Seal",
-          "value": "Black circle and four inward hooks beneath the sternum"
-        },
-        {
-          "label": "Appearance",
-          "value": "Pale violet aura and red irises; ordinary physique and hair colour"
-        },
-        {
-          "label": "Demonstrated endurance",
-          "value": "Three minutes at full output in moving drills; strenuous, not a fixed limit or mastery"
-        }
-      ],
-      "details": "Voluntary opening and closure developed through supervised practice. Full output reached three moving minutes during the first cleanup week; by 10 March the sequence ended without immediate leg trembling, but still left Zero winded and repeated attempts were tiring. No permanent absorption of the multiplier is established. If he loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; safe removal remains unresolved. The ability icon is symbolic; the character gallery retains the full appearance reference. Attempting Kaioken on top of the channel caused loss of control even while conscious. The seal itself remained intact after Chronoa’s check; separate channel use resumed. On Namek, Zero defeated Nappa while retaining control, then closed the flow before losing consciousness after Turles’s ambush. Later practice with Vegeta improved recovery without a new timed maximum.",
       "artwork": "ability-sealed-channel.webp",
-      "artworkAlt": "A circular four-hook seal containing pale violet energy, symbolising Dark Factor Sealed Channel."
+      "artworkAlt": "A circular four-hook seal containing pale violet energy, symbolising Dark Factor Sealed Channel.",
+      "effect": "Voluntary opening, regulation and closure of the flow developed through supervised practice.",
+      "control": "Three strenuous minutes at full output in moving drills are demonstrated, not a fixed timer or mastery. Repeated attempts remain tiring. Kaioken stacking is unsafe. Loss of consciousness or near-death while channeling can trigger the uncontrolled state; closed-channel sleep is safe. Safe removal remains unresolved.",
+      "development": "Recent practice improved recovery without a new timed maximum; no permanent absorption of the multiplier.",
+      "history": [
+        "s094",
+        "s096",
+        "s097",
+        "s098",
+        "s106",
+        "s113",
+        "s114",
+        "s152",
+        "s177",
+        "s178",
+        "s235"
+      ],
+      "appearance": "Pale violet aura and red irises, with ordinary physique and hair colour. The permanent seal is a black circle with four inward-curving hooks below the sternum. The icon is symbolic; the Character gallery carries the full appearance.",
+      "formIds": [
+        "sealed-channel"
+      ],
+      "trainingRecord": {
+        "asOf": "28 June, Age 854",
+        "text": "Voluntary opening and closure developed through supervised practice. Full output reached three moving minutes during the first cleanup week; by 10 March the sequence ended without immediate leg trembling, but still left Zero winded and repeated attempts were tiring. No permanent absorption of the multiplier is established. If he loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; safe removal remains unresolved. The ability icon is symbolic; the character gallery retains the full appearance reference. Attempting Kaioken on top of the channel caused loss of control even while conscious. The seal itself remained intact after Chronoa’s check; separate channel use resumed. On Namek, Zero defeated Nappa while retaining control, then closed the flow before losing consciousness after Turles’s ambush. Later practice with Vegeta improved recovery without a new timed maximum.",
+        "facts": []
+      }
     },
     {
       "id": "kaioken-technique",
       "title": "Kaioken",
-      "summary": "King Kai’s technique amplifies Zero’s own output for short periods.",
-      "status": "Developing · Used against Brask",
+      "summary": "Amplifies Zero’s own output for short periods.",
+      "status": "Developing",
       "abilityType": "signature-technique",
-      "details": "Unlocked stages\n×2 — 159,614 power (79,807 base × 2). Currently the only unlocked stage.\n\nEach learned multiplier remains available as a lower-output option when higher stages are unlocked. Stage power levels are calculated from the current base; dated readings remain historical.\n\nFirst achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release does not itself establish longer endurance. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling.\n\nDemonstration: 60 seconds in controlled moving practice before the potential unlock; not a universal limit.\nCompatibility: use separately from Dark Factor Sealed Channel.",
       "artwork": "ability-kaioken.png",
-      "artworkAlt": "A crimson Kaioken aura around a symbolic fighter silhouette."
+      "artworkAlt": "A crimson Kaioken aura around a symbolic fighter silhouette.",
+      "effect": "King Kai’s technique raises personal output. Every learned stage remains available when a higher stage is unlocked.",
+      "control": "×2 is the only unlocked stage. A 60-second moving demonstration is recorded, not a universal limit. Guru’s release grants no automatic endurance increase. Use separately from the sealed channel; their failed combination is not an available ×20 form.",
+      "development": "Latest practice improved activation and release while moving.",
+      "history": [
+        "s150",
+        "s151",
+        "s152",
+        "s197",
+        "s220",
+        "s237"
+      ],
+      "appearance": "A crimson aura surrounds the fighter during activation.",
+      "formIds": [
+        "kaioken"
+      ],
+      "trainingRecord": {
+        "asOf": "28 June, Age 854",
+        "text": "First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release does not itself establish longer endurance. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling.",
+        "facts": []
+      }
     },
     {
       "id": "ki-sensing",
       "title": "Ki sensing",
-      "summary": "Tracks nearby familiar signatures and compares current output approximately.",
+      "summary": "Locates familiar ki and estimates relative current output.",
       "status": "Developing",
-      "details": "King Kai’s exercises developed direction and short-range tracking during movement. Zero cannot read exact numbers, hidden reserves or deeply suppressed targets reliably. Familiarity and concentration matter; the scouter still supplies numerical readings. Later practice improved tracking familiar moving signatures without stopping to concentrate. Against Brask, close-range ki tracking helped counter a flash. Recent practice follows familiar and partially suppressed moving signatures; exact values still require the scouter."
+      "effect": "Direction and short-range tracking can be followed during movement, including familiar partially suppressed signatures.",
+      "control": "Exact numbers, hidden reserves and deeply suppressed targets cannot be read reliably. Familiarity and concentration matter; the scouter still supplies numerical readings.",
+      "development": "Close-range tracking helped counter Brask’s flash; moving tracking continues to improve.",
+      "history": [
+        "s151",
+        "s212",
+        "s222",
+        "s237"
+      ],
+      "artwork": "ability-ki-sensing.png",
+      "artworkAlt": "Locates familiar ki and estimates relative current output. Symbolic technique illustration.",
+      "abilityType": "fundamental",
+      "trainingRecord": {
+        "asOf": "28 June, Age 854",
+        "text": "King Kai’s exercises developed direction and short-range tracking during movement. Zero cannot read exact numbers, hidden reserves or deeply suppressed targets reliably. Familiarity and concentration matter; the scouter still supplies numerical readings. Later practice improved tracking familiar moving signatures without stopping to concentrate. Against Brask, close-range ki tracking helped counter a flash. Recent practice follows familiar and partially suppressed moving signatures; exact values still require the scouter.",
+        "facts": []
+      }
     },
     {
       "id": "spirit-bomb",
       "title": "Spirit Bomb",
-      "summary": "A small cooperative charge has been gathered and released in training.",
-      "status": "Early practice",
+      "summary": "Gathers voluntarily offered spirit energy into a charge.",
+      "status": "Developing",
       "abilityType": "signature-technique",
-      "details": "Voluntarily offered energy supported the first small successful exercise. Gathering takes concentration and time. No large battlefield-ready Spirit Bomb, unlimited environmental draw or permanent absorption is established."
+      "effect": "A small cooperative charge has been gathered and released in training.",
+      "control": "Gathering takes time and concentration. A large battlefield-ready Spirit Bomb, unlimited environmental draw and permanent absorption are not established.",
+      "development": "Early supervised practice under King Kai.",
+      "history": [
+        "s152",
+        "s163"
+      ],
+      "appearance": "Blue-white spirit energy gathers into a distinct sphere above raised hands. The icon represents the technique, not an established maximum size.",
+      "artwork": "ability-spirit-bomb.png",
+      "artworkAlt": "Symbolic fighter gathering a blue-white sphere above raised hands.",
+      "trainingRecord": {
+        "asOf": "28 June, Age 854",
+        "text": "Voluntarily offered energy supported the first small successful exercise. Gathering takes concentration and time. No large battlefield-ready Spirit Bomb, unlimited environmental draw or permanent absorption is established.",
+        "facts": []
+      }
     },
     {
       "id": "spirit-spear",
       "title": "Spirit Spear",
-      "summary": "A developing palm strike that releases gathered spirit energy at contact.",
-      "status": "Field-tested · Developing",
+      "summary": "Releases gathered spirit energy through a palm strike on contact.",
+      "status": "Developing",
       "abilityType": "signature-technique",
-      "details": "Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. No assigned multiplier, permanent power gain, hostile energy theft or full mastery. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. A sustained beam, fixed multiplier and large reliable combat charge remain unestablished.",
       "artwork": "ability-spirit-spear.png",
-      "artworkAlt": "An open palm releasing a concentrated blue-white spirit-energy contact pulse."
+      "artworkAlt": "An open hand glowing blue-white through palm and fingers, ready for a contact strike.",
+      "effect": "A gathered charge is concentrated through the hand and spent when released into the target.",
+      "control": "A modest contact charge repeats in moving practice. No sustained beam, fixed multiplier, permanent gain, hostile energy theft or full mastery is established.",
+      "development": "Practising a repeatable approach and contact release with a modest charge.",
+      "history": [
+        "s164",
+        "s173",
+        "s237"
+      ],
+      "appearance": "The whole hand glows blue-white, with energy concentrated through the palm and fingers before release on contact. No separate floating ball or literal spear.",
+      "trainingRecord": {
+        "asOf": "28 June, Age 854",
+        "text": "Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. No assigned multiplier, permanent power gain, hostile energy theft or full mastery. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. A sustained beam, fixed multiplier and large reliable combat charge remain unestablished.",
+        "facts": []
+      }
     }
   ],
   "inventory": [
@@ -357,25 +493,6 @@
       "title": "Vegeta · Time Patroller",
       "summary": "Assigned partner and morning instructor; still comfortably stronger than Zero.",
       "status": "Partner",
-      "facts": [
-        {
-          "label": "Home timeline",
-          "value": "TL-398 · Frieza on Earth"
-        },
-        {
-          "label": "Current assessed base",
-          "value": "4,508,000 · 28 June assessment, not a scan"
-        },
-        {
-          "label": "Wrathful and Great Ape",
-          "value": "×10 each · 45,080,000; separate forms"
-        },
-        {
-          "label": "Reward",
-          "value": "Dedicated gravity-training room · Handover complete"
-        }
-      ],
-      "details": "White-and-gold Saiyan armour over blue combat clothes; retained tail. Proud, impatient and contemptuous, with early-Z temperament. His independent training and missions continued while Zero was on Namek. He now conducts longer technical rounds against Zero’s Sealed Channel while remaining in base, but still easily controls the fight. His dedicated gravity room has persistent settings and guest controls with maintenance access. Current output is an authorised reader assessment, not a new reading or disclosure by Vegeta.",
       "canTransform": true,
       "art": {
         "appearance": [
@@ -397,65 +514,144 @@
           }
         ]
       },
-      "battlePower": 4508000
+      "battlePower": 4508000,
+      "context": "TL-398 · Frieza on Earth",
+      "sections": [
+        {
+          "title": "Identity & appearance",
+          "text": "White-and-gold Saiyan armour over blue combat clothes; retained tail. Proud, impatient and contemptuous, with early-Z temperament."
+        },
+        {
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Current assessed base",
+              "value": "4,508,000 · 28 June assessment, not a scan"
+            },
+            {
+              "label": "Wrathful and Great Ape",
+              "value": "×10 each · 45,080,000; separate forms"
+            }
+          ]
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "His independent training and missions continued while Zero was on Namek. He now conducts longer technical rounds against Zero’s Sealed Channel while remaining in base, but still easily controls the fight. His dedicated gravity room has persistent settings and guest controls with maintenance access. Current output is an authorised reader assessment, not a new reading or disclosure by Vegeta.",
+          "facts": [
+            {
+              "label": "Reward",
+              "value": "Dedicated gravity-training room · Handover complete"
+            }
+          ]
+        }
+      ],
+      "history": [
+        "s014",
+        "s042",
+        "s070",
+        "s193",
+        "s240"
+      ]
     },
     {
       "id": "krillin",
       "title": "Krillin",
       "summary": "Combat instructor for Mr. Satan’s roster; Zero’s first combat and ki teacher.",
       "status": "Instructor",
-      "facts": [
+      "context": "TL-657 · Post-Tournament of Power",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-657 · Post-Tournament of Power"
+          "title": "Identity & appearance",
+          "text": "Compact muscular build, bald with six forehead dots, orange gi and blue wristbands; lively, informal and wry.",
+          "facts": [
+            {
+              "label": "Role",
+              "value": "Conton combat instructor"
+            }
+          ]
         },
         {
-          "label": "Power benchmark",
-          "value": "100,000,000 · Campaign estimate"
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Power benchmark",
+              "value": "100,000,000 · Campaign estimate"
+            }
+          ]
         },
         {
-          "label": "Role",
-          "value": "Conton combat instructor"
+          "title": "Relationship & current circumstances",
+          "text": "He introduced Zero and Yamcha to a resident King Kai on 11 March. He does not teach or claim to know Kaioken himself. On 15 April he immediately contained the failed Kaioken/channel takeover; Chronoa checked the seal. His earlier offer of Tri-Form remains unlearned. He lives with Eighteen and Marron; their informal visit is still unscheduled. This instructor is distinct from the Krillin revived in TL-503."
         }
       ],
-      "details": "Compact muscular build, bald with six forehead dots, orange gi and blue wristbands; lively, informal and wry. He introduced Zero and Yamcha to a resident King Kai on 11 March. He does not teach or claim to know Kaioken himself. On 15 April he immediately contained the failed Kaioken/channel takeover; Chronoa checked the seal. His earlier offer of Tri-Form remains unlearned. He lives with Eighteen and Marron; their informal visit is still unscheduled. This instructor is distinct from the Krillin revived in TL-503."
+      "history": [
+        "s016",
+        "s147",
+        "s152"
+      ]
     },
     {
       "id": "mr-satan",
       "title": "Mr. Satan · Hercule",
       "summary": "Dispatcher and routine supervisor of the “Temporal Super Stars.”",
       "status": "Supervisor",
-      "facts": [
+      "context": "TL-782 · Post-GT family branch",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-782 · Post-GT family branch"
+          "title": "Identity & appearance",
+          "text": "Boisterous showman with a thick moustache, curly hair, burgundy outfit, white cape, championship belt and dispatch headset.",
+          "facts": [
+            {
+              "label": "Service",
+              "value": "Joined with family four Conton years ago"
+            },
+            {
+              "label": "Role",
+              "value": "Temporal Super Stars dispatcher"
+            }
+          ]
         },
         {
-          "label": "Age / base",
-          "value": "67 years · 10, campaign benchmark"
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Age / base",
+              "value": "69 years · 10, campaign benchmark"
+            }
+          ]
         },
         {
-          "label": "Service",
-          "value": "Joined with family two Conton years ago"
-        },
-        {
-          "label": "Role",
-          "value": "Temporal Super Stars dispatcher"
+          "title": "Relationship & current circumstances",
+          "text": "He briefed and oversaw the TL-218 supply investigation and issued Zero’s communicator. Family background: Pan is his actual granddaughter; he joined Conton with Pan, Gohan and Videl on 16 February Age 850. His authority comes from dispatch, not high combat power. This family history and exact age are reference information, not a conversation Zero has had. Coordinated the TL-503 homecoming and later TL-619 extraction and reviews. He presented the commendations and confirmed Yamcha’s apartment and Vegeta’s training-room handovers. On 22 May he confirmed full restoration to 100% and approved a Namek-only visit of up to four weeks, with a two-week check-in. Earth requires separate review. The Namek visit is now complete; he has confirmed TL-503’s recovery and is arranging the proposed Yardrat itinerary."
         }
       ],
-      "details": "Boisterous showman with a thick moustache, curly hair, burgundy outfit, white cape, championship belt and dispatch headset. He briefed and oversaw the TL-218 supply investigation and issued Zero’s communicator. Family background: Pan is his actual granddaughter; he joined Conton with Pan, Gohan and Videl on 16 February Age 852. His authority comes from dispatch, not high combat power. This family history and exact age are reference information, not a conversation Zero has had. Coordinated the TL-503 homecoming and later TL-619 extraction and reviews. He presented the commendations and confirmed Yamcha’s apartment and Vegeta’s training-room handovers. On 22 May he confirmed full restoration to 100% and approved a Namek-only visit of up to four weeks, with a two-week check-in. Earth requires separate review. The Namek visit is now complete; he has confirmed TL-503’s recovery and is arranging the proposed Yardrat itinerary."
+      "history": [
+        "s011",
+        "s191",
+        "s240"
+      ]
     },
     {
       "id": "chronoa",
       "title": "Chronoa",
       "summary": "Supreme Kai of Time; identified and sealed Zero’s Dark Factor.",
       "status": "Seal monitoring",
-      "details": "Small, pink-skinned, pointed ears, swept orange hair, gold earrings and purple-and-gold clothing. Brisk, curious and authoritative. Her post-outbreak examination identified Dark Factor that was undetected while dormant. She sealed it while Zero was awake, leaving the four-hook abdominal mark, and explained the danger of losing consciousness or nearing death with the channel open. She is investigating whether safe removal is possible; no answer or deadline is established. After the 15 April stacking failure, she checked the intact binding and settled it closed. At the commendation meeting she heard Zero’s integration-wish intention, considered bodily integration viable and offered help with wording. No wish or removal has occurred. Before the Namek departure she supplied a briefing for Guru and explained that Zero’s own potential can be released with the channel closed.",
-      "facts": [
+      "context": "Time Patrol hub",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "Time Patrol hub"
+          "title": "Identity & appearance",
+          "text": "Small, pink-skinned, pointed ears, swept orange hair, gold earrings and purple-and-gold clothing. Brisk, curious and authoritative."
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Her post-outbreak examination identified Dark Factor that was undetected while dormant. She sealed it while Zero was awake, leaving the four-hook abdominal mark, and explained the danger of losing consciousness or nearing death with the channel open. She is investigating whether safe removal is possible; no answer or deadline is established. After the 15 April stacking failure, she checked the intact binding and settled it closed. At the commendation meeting she heard Zero’s integration-wish intention, considered bodily integration viable and offered help with wording. No wish or removal has occurred. Before the Namek departure she supplied a briefing for Guru and explained that Zero’s own potential can be released with the channel closed."
         }
+      ],
+      "history": [
+        "s012",
+        "s094",
+        "s152",
+        "s192"
       ]
     },
     {
@@ -463,72 +659,62 @@
       "title": "Dr. Rill",
       "summary": "Time Patrol clinician who treated and medically cleared Zero.",
       "status": "Medical contact",
-      "details": "Appears in her forties, brown skin, square face, close-cropped black hair grey at the temples, white medical jacket over teal clothing. Low, brisk voice and concrete clinical answers. Reported completed treatment and clear scans, heard Zero’s account, forwarded it to coordination and measured his power at 50. Last seen in the medical ward; present whereabouts unknown.",
-      "facts": [
+      "context": "Home timeline not recorded",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "Unassigned"
+          "title": "Identity & appearance",
+          "text": "Appears in her forties, brown skin, square face, close-cropped black hair grey at the temples, white medical jacket over teal clothing. Low, brisk voice and concrete clinical answers."
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Reported completed treatment and clear scans, heard Zero’s account, forwarded it to coordination and measured his power at 50. Last seen in the medical ward; present whereabouts unknown."
         }
-      ]
+      ],
+      "history": []
     },
     {
       "id": "nappa",
       "title": "Nappa",
       "summary": "Defeated by Zero on Namek; escaped alive with Turles.",
       "status": "Escaped enemy",
-      "details": "Massive bald Saiyan with black moustache, armour and retained tail. The right eye injured in the earlier fight is functional again but scarred. On TL-619 Namek he tried to recruit Jeice and Burter, then consumed a stronger fruit. Zero beat him while retaining sealed-channel control. Turles intervened before capture and escaped with him. The earlier 6,000 base and ×5 fruit belong to the TL-218 battle. No new recovery, post-escape power or fruit duration is established.",
-      "facts": [
+      "battlePower": 7200,
+      "context": "TL-218",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-218"
+          "title": "Identity & appearance",
+          "text": "Massive bald Saiyan with black moustache, armour and retained tail. The right eye injured in the earlier fight is functional again but scarred."
         },
         {
-          "label": "Latest measured base",
-          "value": "7,200 · 22 April encounter"
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Latest measured base",
+              "value": "7,200 · 22 April encounter"
+            },
+            {
+              "label": "Fruit state",
+              "value": "×10 · 72,000 measured during that fight"
+            }
+          ]
         },
         {
-          "label": "Fruit state",
-          "value": "×10 · 72,000 measured during that fight"
-        },
-        {
-          "label": "Last report",
-          "value": "Unconscious and alive when Turles carried him away"
+          "title": "Relationship & current circumstances",
+          "text": "On TL-619 Namek he tried to recruit Jeice and Burter, then consumed a stronger fruit. Zero beat him while retaining sealed-channel control. Turles intervened before capture and escaped with him. The earlier 6,000 base and ×5 fruit belong to the TL-218 battle. No new recovery, post-escape power or fruit duration is established.",
+          "facts": [
+            {
+              "label": "Last report",
+              "value": "Unconscious and alive when Turles carried him away"
+            }
+          ]
         }
       ],
-      "battlePower": 7200
+      "history": []
     },
     {
       "id": "yamcha",
       "title": "Yamcha",
       "summary": "Training partner; with Zero at Hercule’s office to arrange Yardrat.",
       "status": "Current companion",
-      "facts": [
-        {
-          "label": "Home timeline",
-          "value": "TL-503 · A world without Goku"
-        },
-        {
-          "label": "Current assessed base",
-          "value": "30,051 · 28 June reference; latest training assessment"
-        },
-        {
-          "label": "Latest scan",
-          "value": "26,431 · S208 after Guru’s release; historical"
-        },
-        {
-          "label": "Kaioken",
-          "value": "×2 · 60,103 rounded from assessed capacity; not a scan"
-        },
-        {
-          "label": "Age",
-          "value": "28 at extraction in Age 761; arrived in Conton in December Age 853"
-        },
-        {
-          "label": "Current location",
-          "value": "Conton City · Hercule’s office"
-        }
-      ],
-      "details": "Long shaggy black hair, one cross-shaped cheek scar and no eye scar. Worn sleeveless orange Turtle School gi, blue sash and wrist wraps, blue shoes with white ankle wraps. Relaxed, slightly rough voice and dry humour. Defeated Raditz and helped revive his four friends; later rescued Zero from Turles and provided the Senzu. Guru’s release was measured at 26,431, followed by four weeks with Nail and continued Conton training. Kaioken ×2 helped him disarm and defeat Rivet. His recent focus is Kaioken economy and investigating Alpha after hearing about other versions of himself; no higher Kaioken or Alpha unlock. Krillin has passed the inquiry to instructor contacts, with no appointment confirmed. His apartment move is complete and one separate commendation remains unspent. The 60,103 Kaioken figure rounds the carried assessment of 60,102.9191575; it is not a new measurement.",
       "battlePower": 30051,
       "canTransform": true,
       "art": {
@@ -540,143 +726,247 @@
             "portraitAlt": "Yamcha with long shaggy black hair and a cross-shaped cheek scar, with no eye scar, wearing a worn sleeveless orange Turtle School gi, blue sash and wrist wraps, and blue shoes with white ankle wraps. Illustrative desert backdrop."
           }
         ]
-      }
+      },
+      "context": "TL-503 · A world without Goku",
+      "sections": [
+        {
+          "title": "Identity & appearance",
+          "text": "Long shaggy black hair, one cross-shaped cheek scar and no eye scar. Worn sleeveless orange Turtle School gi, blue sash and wrist wraps, blue shoes with white ankle wraps. Relaxed, slightly rough voice and dry humour.",
+          "facts": [
+            {
+              "label": "Age",
+              "value": "28 at extraction in Age 761; arrived in Conton in December Age 853"
+            }
+          ]
+        },
+        {
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Current assessed base",
+              "value": "30,051 · 28 June reference; latest training assessment"
+            },
+            {
+              "label": "Latest scan",
+              "value": "26,431 · S208 after Guru’s release; historical"
+            },
+            {
+              "label": "Kaioken",
+              "value": "×2 · 60,103 rounded from assessed capacity; not a scan"
+            }
+          ]
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Defeated Raditz and helped revive his four friends; later rescued Zero from Turles and provided the Senzu. Guru’s release was measured at 26,431, followed by four weeks with Nail and continued Conton training. Kaioken ×2 helped him disarm and defeat Rivet. His recent focus is Kaioken economy and investigating Alpha after hearing about other versions of himself; no higher Kaioken or Alpha unlock. Krillin has passed the inquiry to instructor contacts, with no appointment confirmed. His apartment move is complete and one separate commendation remains unspent. The 60,103 Kaioken figure rounds the carried assessment of 60,102.9191575; it is not a new measurement.",
+          "facts": [
+            {
+              "label": "Current location",
+              "value": "Conton City · Hercule’s office"
+            }
+          ]
+        }
+      ],
+      "history": [
+        "s025",
+        "s130",
+        "s135",
+        "s208",
+        "s227",
+        "s238"
+      ]
     },
     {
       "id": "bulma",
       "title": "Bulma · TL-398",
       "summary": "Technical-maintenance specialist at the training complex.",
       "status": "Technical contact",
-      "facts": [
+      "context": "TL-398 · Frieza on Earth",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-398 · Frieza on Earth"
+          "title": "Identity & appearance",
+          "text": "Appears in her thirties; jaw-length turquoise hair, blue work jacket with rolled sleeves, dark trousers and tool belt. Bright, brisk voice and dry sarcasm when rushed."
         },
         {
-          "label": "Last seen",
-          "value": "Day 29 evening · Maintenance bay"
+          "title": "Relationship & current circumstances",
+          "text": "Zero has noticed Vegeta frequently nearby, but their relationship is unknown. She warned him against switching on exposed machinery, demanded he release Zero and said he should train Zero. The training room she was repairing was out of service when last discussed; completion is unconfirmed.",
+          "facts": [
+            {
+              "label": "Last seen",
+              "value": "Day 29 evening · Maintenance bay"
+            }
+          ]
         }
       ],
-      "details": "Appears in her thirties; jaw-length turquoise hair, blue work jacket with rolled sleeves, dark trousers and tool belt. Bright, brisk voice and dry sarcasm when rushed. Zero has noticed Vegeta frequently nearby, but their relationship is unknown. She warned him against switching on exposed machinery, demanded he release Zero and said he should train Zero. The training room she was repairing was out of service when last discussed; completion is unconfirmed."
+      "history": []
     },
     {
       "id": "turles",
       "title": "Turles",
       "summary": "Attacked Zero on Namek, fought Vegeta and escaped with Nappa.",
       "status": "Escaped enemy",
-      "facts": [
+      "battlePower": 1800000,
+      "context": "TL-864",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-864"
+          "title": "Identity & appearance",
+          "text": "Goku-like black hair, dark complexion, charcoal armour with white edging and wrapped tail; smooth, sneering and calculating.",
+          "facts": [
+            {
+              "label": "Age",
+              "value": "35"
+            }
+          ]
         },
         {
-          "label": "Age",
-          "value": "35"
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Latest assessed base",
+              "value": "1,800,000 · 22 April"
+            },
+            {
+              "label": "Consumed fruit",
+              "value": "×10 · 18,000,000 ceiling"
+            }
+          ]
         },
         {
-          "label": "Latest assessed base",
-          "value": "1,800,000 · 22 April"
-        },
-        {
-          "label": "Consumed fruit",
-          "value": "×10 · 18,000,000 ceiling"
+          "title": "Relationship & current circumstances",
+          "text": "His sudden ambush badly injured Zero and broke the scouter. Vegeta intercepted him; their powered clash risked drawing Frieza. Turles carried the unconscious Nappa out after the Patrollers withdrew. Jeice and Burter did not join him. Earlier 1.6 million/16 million figures belong to the first encounter. Current ratings are campaign assessments, not Zero’s scans; escape destination remains unknown."
         }
       ],
-      "details": "Goku-like black hair, dark complexion, charcoal armour with white edging and wrapped tail; smooth, sneering and calculating. His sudden ambush badly injured Zero and broke the scouter. Vegeta intercepted him; their powered clash risked drawing Frieza. Turles carried the unconscious Nappa out after the Patrollers withdrew. Jeice and Burter did not join him. Earlier 1.6 million/16 million figures belong to the first encounter. Current ratings are campaign assessments, not Zero’s scans; escape destination remains unknown.",
-      "battlePower": 1800000
+      "history": []
     },
     {
       "id": "pan",
       "title": "Pan · TL-782",
       "summary": "Active Time Patroller; established family background, not yet encountered by Zero.",
       "status": "Not yet met",
-      "facts": [
+      "context": "TL-782 · Post-GT family branch",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-782 · Post-GT family branch"
+          "title": "Identity & appearance",
+          "facts": [
+            {
+              "label": "Age",
+              "value": "26 years"
+            },
+            {
+              "label": "Joined Conton",
+              "value": "16 February, Age 850"
+            }
+          ]
         },
         {
-          "label": "Age",
-          "value": "24 years"
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Current base",
+              "value": "400,000,000 · Campaign assessment"
+            }
+          ]
         },
         {
-          "label": "Joined Conton",
-          "value": "16 February, Age 852"
-        },
-        {
-          "label": "Current base",
-          "value": "200,000,000"
+          "title": "Relationship & current circumstances",
+          "text": "Hercule’s granddaughter and Gohan and Videl’s daughter. Joined at 22 with a 50,000,000 base; two years of matched missions, training, recovery and ordinary life brought it to 200,000,000; two further years brought it to 400,000,000. No Super Saiyan or Wrathful acquired. These are campaign choices, not official GT measurements. The separate early-GT reference is 20,000,000; no end-GT measurement is claimed. Shared family arrival was four Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
         }
       ],
-      "details": "Hercule’s granddaughter and Gohan and Videl’s daughter. Joined at 22 with a 50,000,000 base; two years of matched missions, training, recovery and ordinary life brought it to 200,000,000. No Super Saiyan or Wrathful acquired. These are campaign choices, not official GT measurements. The separate early-GT reference is 20,000,000; no end-GT measurement is claimed. Shared family arrival was two Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
+      "history": []
     },
     {
       "id": "gohan",
       "title": "Gohan · TL-782",
       "summary": "Active Time Patroller; established family background, not yet encountered by Zero.",
       "status": "Not yet met",
-      "facts": [
+      "context": "TL-782 · Post-GT family branch",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-782 · Post-GT family branch"
+          "title": "Identity & appearance",
+          "facts": [
+            {
+              "label": "Age",
+              "value": "48 years"
+            },
+            {
+              "label": "Joined Conton",
+              "value": "16 February, Age 850"
+            }
+          ]
         },
         {
-          "label": "Age",
-          "value": "46 years"
-        },
-        {
-          "label": "Joined Conton",
-          "value": "16 February, Age 852"
+          "title": "Relationship & current circumstances",
+          "text": "Pursued a superhero career across time instead of the Prime counterpart’s scholarly path. Joined at 44 with Videl, Pan and Hercule. Precise combat rating and techniques have not been assigned for this version. Shared family arrival was four Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
         }
       ],
-      "details": "Pursued a superhero career across time instead of the Prime counterpart’s scholarly path. Joined at 44 with Videl, Pan and Hercule. Precise combat rating and techniques have not been assigned for this version. Shared family arrival was two Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
+      "history": []
     },
     {
       "id": "videl",
       "title": "Videl · TL-782",
       "summary": "Time Patrol member; established family background, not yet encountered by Zero.",
       "status": "Not yet met",
-      "facts": [
+      "context": "TL-782 · Post-GT family branch",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-782 · Post-GT family branch"
+          "title": "Identity & appearance",
+          "facts": [
+            {
+              "label": "Age",
+              "value": "49 years"
+            },
+            {
+              "label": "Joined Conton",
+              "value": "16 February, Age 850"
+            }
+          ]
         },
         {
-          "label": "Age",
-          "value": "47 years"
-        },
-        {
-          "label": "Joined Conton",
-          "value": "16 February, Age 852"
+          "title": "Relationship & current circumstances",
+          "text": "Joined at 45 with Gohan, Pan and her father Hercule. Precise specialism and combat rating remain to be established before a field appearance. Shared family arrival was four Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
         }
       ],
-      "details": "Joined at 45 with Gohan, Pan and her father Hercule. Precise specialism and combat rating remain to be established before a field appearance. Shared family arrival was two Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
+      "history": []
     },
     {
       "id": "android-18",
       "title": "Android 18 · Eighteen",
       "summary": "Krillin’s wife; lives with him and Marron in Conton City.",
       "status": "Mentioned · Not met",
-      "facts": [
+      "context": "Timeline not recorded",
+      "sections": [
         {
-          "label": "Known through",
-          "value": "Krillin · Dinner conversation, 16 February"
+          "title": "Relationship & current circumstances",
+          "text": "Krillin confirmed her local family residence. Zero has not met this version; her current age, work, address and appearance have not been established in the story.",
+          "facts": [
+            {
+              "label": "Known through",
+              "value": "Krillin · Dinner conversation, 16 February"
+            }
+          ]
         }
       ],
-      "details": "Krillin confirmed her local family residence. Zero has not met this version; her current age, work, address and appearance have not been established in the story."
+      "history": []
     },
     {
       "id": "marron",
       "title": "Marron",
       "summary": "Krillin and Eighteen’s daughter, living with them in Conton City.",
       "status": "Mentioned · Not met",
-      "facts": [
+      "context": "Timeline not recorded",
+      "sections": [
         {
-          "label": "Known through",
-          "value": "Krillin · Dinner conversation, 16 February"
+          "title": "Relationship & current circumstances",
+          "text": "An informal visit was offered, but none is scheduled. This version’s present age and appearance remain unestablished; no encounter has occurred.",
+          "facts": [
+            {
+              "label": "Known through",
+              "value": "Krillin · Dinner conversation, 16 February"
+            }
+          ]
         }
       ],
-      "details": "An informal visit was offered, but none is scheduled. This version’s present age and appearance remain unestablished; no encounter has occurred."
+      "history": []
     },
     {
       "id": "bulma-tl503",
@@ -684,17 +974,24 @@
       "summary": "Helped gather the Dragon Balls; central to her Earth’s revised future.",
       "status": "Met · TL-503",
       "canTransform": false,
-      "facts": [
+      "context": "TL-503",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-503"
+          "title": "Identity & appearance",
+          "text": "Turquoise hair tied back, practical travel clothes; quick and direct."
         },
         {
-          "label": "Last physically seen",
-          "value": "TL-503 · Namek · Expedition landing ship"
+          "title": "Relationship & current circumstances",
+          "text": "Her radar guided the completed Dragon Ball search. She witnessed the four revivals and heard the time-travel explanation and spacecraft leads. Refitted Kami’s ship and accompanied the Namek expedition. Last physically seen at the expedition landing site before Zero and Yamcha returned to Conton. The outside review confirms the native Yardrat journey; the earlier guaranteed Android shutdown victory is withdrawn. Distinct from Conton’s Bulma.",
+          "facts": [
+            {
+              "label": "Last physically seen",
+              "value": "TL-503 · Namek · Expedition landing ship"
+            }
+          ]
         }
       ],
-      "details": "Turquoise hair tied back, practical travel clothes; quick and direct. Her radar guided the completed Dragon Ball search. She witnessed the four revivals and heard the time-travel explanation and spacecraft leads. Refitted Kami’s ship and accompanied the Namek expedition. Last physically seen at the expedition landing site before Zero and Yamcha returned to Conton. The outside review confirms the native Yardrat journey; the earlier guaranteed Android shutdown victory is withdrawn. Distinct from Conton’s Bulma."
+      "history": []
     },
     {
       "id": "puar-tl503",
@@ -702,171 +999,271 @@
       "summary": "Yamcha’s companion, reunited with all four revived teammates.",
       "status": "Met · TL-503",
       "canTransform": false,
-      "facts": [
+      "context": "TL-503",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-503"
+          "title": "Identity & appearance",
+          "text": "Small floating blue companion with cream face and belly, large ears and long tail."
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Puar was alive throughout, helped on the Dragon Ball search and greeted the revived friends. In the reviewed course Puar stays on Earth with Roshi while the others travel. No permanent knowledge of Zero after timeline repair is assumed."
         }
       ],
-      "details": "Small floating blue companion with cream face and belly, large ears and long tail. Puar was alive throughout, helped on the Dragon Ball search and greeted the revived friends. In the reviewed course Puar stays on Earth with Roshi while the others travel. No permanent knowledge of Zero after timeline repair is assumed."
+      "history": []
     },
     {
       "id": "raditz-tl503",
       "title": "Raditz · TL-503",
       "summary": "Frieza Force invader defeated and killed by Yamcha.",
       "status": "Dead",
-      "facts": [
+      "context": "TL-503",
+      "sections": [
         {
-          "label": "Dated ordinary assessment",
-          "value": "1,500 · Age 761 briefing"
+          "title": "Identity & appearance",
+          "text": "Long black hair, Saiyan armour and tail."
         },
         {
-          "label": "Great Ape potential",
-          "value": "15,000 · Not used"
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Dated ordinary assessment",
+              "value": "1,500 · Age 761 briefing"
+            },
+            {
+              "label": "Great Ape potential",
+              "value": "15,000 · Not used"
+            }
+          ]
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Came to assess and conquer Earth, not to retrieve Goku. Killed Yamcha’s fellow defenders before the extraction. On Yamcha’s return, Zero destroyed his scouter with a precise blast and Yamcha won the fight. No successful call for help and no Great Ape transformation. His body remains at the battlefield."
         }
       ],
-      "details": "Long black hair, Saiyan armour and tail. Came to assess and conquer Earth, not to retrieve Goku. Killed Yamcha’s fellow defenders before the extraction. On Yamcha’s return, Zero destroyed his scouter with a precise blast and Yamcha won the fight. No successful call for help and no Great Ape transformation. His body remains at the battlefield."
+      "history": []
     },
     {
       "id": "krillin-tl503",
       "title": "Krillin · TL-503",
       "summary": "Yamcha’s teammate, revived with the others.",
       "status": "Met · Potential released",
-      "facts": [
+      "battlePower": 15650,
+      "context": "TL-503",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-503"
+          "title": "Identity & appearance",
+          "text": "Short bald human martial artist in a damaged orange gi; lively, incredulous at the reunion."
         },
         {
-          "label": "Revival",
-          "value": "Age 761 · Conton 11 March, Age 854"
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Namek-end assessment",
+              "value": "15,650 · Unscanned; authorised reader reference"
+            }
+          ]
         },
         {
-          "label": "Namek-end assessment",
-          "value": "15,650 · Unscanned; authorised reader reference"
+          "title": "Relationship & current circumstances",
+          "text": "Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Last physically seen on Namek. The outside review now confirms the native expedition to Yardrat remains; specific later techniques and Android outcomes have not been newly resolved. This is Yamcha’s native teammate, distinct from other timeline versions.",
+          "facts": [
+            {
+              "label": "Revival",
+              "value": "Age 761 · Conton 11 March, Age 854"
+            }
+          ]
         }
       ],
-      "details": "Short bald human martial artist in a damaged orange gi; lively, incredulous at the reunion. Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Last physically seen on Namek. The outside review now confirms the native expedition to Yardrat remains; specific later techniques and Android outcomes have not been newly resolved. This is Yamcha’s native teammate, distinct from other timeline versions.",
-      "battlePower": 15650
+      "history": []
     },
     {
       "id": "roshi-tl503",
       "title": "Master Roshi · TL-503",
       "summary": "Earth’s veteran teacher, revived after Raditz’s attack.",
       "status": "Met · Revived",
-      "facts": [
+      "context": "TL-503",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-503"
+          "title": "Identity & appearance",
+          "text": "Elderly bald human with white beard and glasses; gruff, warm and observant."
         },
         {
-          "label": "Revival",
-          "value": "Age 761 · Conton 11 March, Age 854"
+          "title": "Relationship & current circumstances",
+          "text": "Revived by the single S135 wish and met by Zero before departure. Remained on Earth with Puar while the expedition travelled offworld. Earlier predictions of his Android-war death and later revival are not settled current outcomes. A distinct native counterpart, not a Conton instructor or a Prime-history individual.",
+          "facts": [
+            {
+              "label": "Revival",
+              "value": "Age 761 · Conton 11 March, Age 854"
+            }
+          ]
         }
       ],
-      "details": "Elderly bald human with white beard and glasses; gruff, warm and observant. Revived by the single S135 wish and met by Zero before departure. Remained on Earth with Puar while the expedition travelled offworld. Earlier predictions of his Android-war death and later revival are not settled current outcomes. A distinct native counterpart, not a Conton instructor or a Prime-history individual."
+      "history": []
     },
     {
       "id": "tien-tl503",
       "title": "Tien · TL-503",
       "summary": "Yamcha’s teammate and Chiaotzu’s close companion.",
       "status": "Met · Potential released",
-      "facts": [
+      "battlePower": 18300,
+      "context": "TL-503",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-503"
+          "title": "Identity & appearance",
+          "text": "Tall muscular bald human with three eyes, green trousers and battle-damaged clothing; steady, direct voice."
         },
         {
-          "label": "Revival",
-          "value": "Age 761 · Conton 11 March, Age 854"
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Namek-end assessment",
+              "value": "18,300 · Unscanned; authorised reader reference"
+            }
+          ]
         },
         {
-          "label": "Namek-end assessment",
-          "value": "18,300 · Unscanned; authorised reader reference"
+          "title": "Relationship & current circumstances",
+          "text": "Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Last physically seen on Namek. The outside review now confirms the native expedition to Yardrat remains; specific later techniques and Android outcomes have not been newly resolved. This is Yamcha’s native teammate, distinct from other timeline versions.",
+          "facts": [
+            {
+              "label": "Revival",
+              "value": "Age 761 · Conton 11 March, Age 854"
+            }
+          ]
         }
       ],
-      "details": "Tall muscular bald human with three eyes, green trousers and battle-damaged clothing; steady, direct voice. Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Last physically seen on Namek. The outside review now confirms the native expedition to Yardrat remains; specific later techniques and Android outcomes have not been newly resolved. This is Yamcha’s native teammate, distinct from other timeline versions.",
-      "battlePower": 18300
+      "history": []
     },
     {
       "id": "chiaotzu-tl503",
       "title": "Chiaotzu · TL-503",
       "summary": "Yamcha’s teammate, revived alongside Tien.",
       "status": "Met · Potential released",
-      "facts": [
+      "battlePower": 7020,
+      "context": "TL-503",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-503"
+          "title": "Identity & appearance",
+          "text": "Small pale martial artist with red cheek marks, dark cap and green Crane-style clothes; high, light voice."
         },
         {
-          "label": "Revival",
-          "value": "Age 761 · Conton 11 March, Age 854"
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Namek-end assessment",
+              "value": "7,020 · Unscanned; authorised reader reference"
+            }
+          ]
         },
         {
-          "label": "Namek-end assessment",
-          "value": "7,020 · Unscanned; authorised reader reference"
+          "title": "Relationship & current circumstances",
+          "text": "Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Last physically seen on Namek. The outside review now confirms the native expedition to Yardrat remains; specific later techniques and Android outcomes have not been newly resolved. This is Yamcha’s native teammate, distinct from other timeline versions.",
+          "facts": [
+            {
+              "label": "Revival",
+              "value": "Age 761 · Conton 11 March, Age 854"
+            }
+          ]
         }
       ],
-      "details": "Small pale martial artist with red cheek marks, dark cap and green Crane-style clothes; high, light voice. Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Last physically seen on Namek. The outside review now confirms the native expedition to Yardrat remains; specific later techniques and Android outcomes have not been newly resolved. This is Yamcha’s native teammate, distinct from other timeline versions.",
-      "battlePower": 7020
+      "history": []
     },
     {
       "id": "king-kai-resident",
       "title": "King Kai · Conton resident",
       "summary": "Teacher of Zero and Yamcha’s Kaioken and spirit-energy exercises.",
       "status": "Instructor",
-      "facts": [
+      "context": "Home timeline not recorded",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "Unassigned"
+          "title": "Identity & appearance",
+          "text": "Alive, without a halo. Short and round, blue skin, antennae, dark glasses and black robe with gold-orange trim. Deep nasal voice, brisk and fussy with practical teaching beneath the humour."
         },
         {
-          "label": "Location",
-          "value": "Conton City · Quiet residential area"
+          "title": "Relationship & current circumstances",
+          "text": "Krillin introduced both students on 11 March. He supervised six weeks of training and the failed stacking test. His home is in Conton, not an assumed ten-times-gravity planet; no prior student history or personal maximum is established.",
+          "facts": [
+            {
+              "label": "Location",
+              "value": "Conton City · Quiet residential area"
+            }
+          ]
         }
       ],
-      "details": "Alive, without a halo. Short and round, blue skin, antennae, dark glasses and black robe with gold-orange trim. Deep nasal voice, brisk and fussy with practical teaching beneath the humour. Krillin introduced both students on 11 March. He supervised six weeks of training and the failed stacking test. His home is in Conton, not an assumed ten-times-gravity planet; no prior student history or personal maximum is established."
+      "history": []
     },
     {
       "id": "jeice-tl619",
       "title": "Jeice · TL-619",
       "summary": "Ginyu Force member approached by Nappa on Namek.",
       "status": "Encountered · Not recruited",
-      "facts": [
+      "context": "TL-619",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-619"
+          "title": "Identity & appearance",
+          "text": "Red-skinned alien with long white hair, Frieza Force armour and a functioning local scouter."
         },
         {
-          "label": "Scanned power",
-          "value": "40,000 · 22 April encounter"
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Scanned power",
+              "value": "40,000 · 22 April encounter"
+            }
+          ]
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Watched the fight without joining Nappa. His and Burter’s network report reached Frieza; he remained in the timeline after Turles left."
         }
       ],
-      "details": "Red-skinned alien with long white hair, Frieza Force armour and a functioning local scouter. Watched the fight without joining Nappa. His and Burter’s network report reached Frieza; he remained in the timeline after Turles left."
+      "history": []
     },
     {
       "id": "burter-tl619",
       "title": "Burter · TL-619",
       "summary": "Ginyu Force member present during the Nappa encounter.",
       "status": "Encountered · Not recruited",
-      "facts": [
+      "context": "TL-619",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-619"
+          "title": "Identity & appearance",
+          "text": "Tall blue alien in Frieza Force armour with a functioning local scouter."
         },
         {
-          "label": "Scanned power",
-          "value": "43,000 · 22 April encounter"
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Scanned power",
+              "value": "43,000 · 22 April encounter"
+            }
+          ]
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Did not join the fight or leave with Turles. The reported clash prompted Frieza’s search, but the reviewed fixed-point sequence survived."
         }
       ],
-      "details": "Tall blue alien in Frieza Force armour with a functioning local scouter. Did not join the fight or leave with Turles. The reported clash prompted Frieza’s search, but the reviewed fixed-point sequence survived."
+      "history": []
     },
     {
       "id": "equipment-technician",
       "title": "Equipment-services technician",
       "summary": "Repaired Zero’s original scouter after Namek.",
       "status": "Technical contact",
-      "details": "Stocky human woman, apparently in her fifties, with cropped grey hair, magnifying lenses and blue work apron; practical, slightly gravelly voice. Replaced the lens/display and repaired the mount while retaining the sensor. No name, home timeline or power reading established."
+      "context": "Timeline not recorded",
+      "sections": [
+        {
+          "title": "Identity & appearance",
+          "text": "Stocky human woman, apparently in her fifties, with cropped grey hair, magnifying lenses and blue work apron; practical, slightly gravelly voice."
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Replaced the lens/display and repaired the mount while retaining the sensor. No name, home timeline or power reading established."
+        }
+      ],
+      "history": []
     },
     {
       "id": "guru-tl503",
@@ -874,13 +1271,18 @@
       "summary": "Released the visitors’ own potential before their month of training.",
       "status": "Met · TL-503",
       "canTransform": false,
-      "facts": [
+      "context": "TL-503",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-503"
+          "title": "Identity & appearance",
+          "text": "Enormous, ancient Namekian in pale robes, seated in the upper chamber; deep, weathered voice."
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Received news of Kami and examined Yamcha and Zero with consent. Read Chronoa’s briefing and promised to keep Zero’s origin confidential. Released Zero’s own potential without disturbing the seal, then helped Yamcha, Krillin, Tien and Chiaotzu. Returned the protected scroll, which Zero accepted. Exact age and personal combat rating remain unestablished."
         }
       ],
-      "details": "Enormous, ancient Namekian in pale robes, seated in the upper chamber; deep, weathered voice. Received news of Kami and examined Yamcha and Zero with consent. Read Chronoa’s briefing and promised to keep Zero’s origin confidential. Released Zero’s own potential without disturbing the seal, then helped Yamcha, Krillin, Tien and Chiaotzu. Returned the protected scroll, which Zero accepted. Exact age and personal combat rating remain unestablished."
+      "history": []
     },
     {
       "id": "nail-tl503",
@@ -888,14 +1290,23 @@
       "summary": "Guru’s guardian and the group’s instructor for four weeks.",
       "status": "Met · TL-503",
       "canTransform": false,
-      "facts": [
+      "battlePower": 44342,
+      "context": "TL-503",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-503"
+          "title": "Identity & appearance",
+          "text": "Tall muscular Namekian with white cape, blue sash and dark trousers; firm, practical voice."
+        },
+        {
+          "title": "Power & known forms",
+          "text": "Last Namek-end assessed base 44,342, an authorised reader reference rather than Zero’s scouter reading."
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Trained Zero, Yamcha and the visiting native fighters in control, sensing and sparring for four weeks. Exact age unknown."
         }
       ],
-      "details": "Tall muscular Namekian with white cape, blue sash and dark trousers; firm, practical voice. Trained Zero, Yamcha and the visiting native fighters in control, sensing and sparring for four weeks. Last Namek-end assessed base 44,342, an authorised reader reference rather than Zero’s scouter reading. Exact age unknown.",
-      "battlePower": 44342
+      "history": []
     },
     {
       "id": "village-elder-tl503",
@@ -903,35 +1314,25 @@
       "summary": "Introduced the Earth visitors to Guru.",
       "status": "Met · TL-503",
       "canTransform": false,
-      "facts": [
+      "context": "TL-503",
+      "sections": [
         {
-          "label": "Home timeline",
-          "value": "TL-503"
+          "title": "Identity & appearance",
+          "text": "Elderly, lean and slightly stooped Namekian in a dark blue robe and pale sash; low, rough voice."
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Heard about Kami, Raditz and the revived defenders, then escorted the fighters inland to Guru. Personal name and exact age are unknown."
         }
       ],
-      "details": "Elderly, lean and slightly stooped Namekian in a dark blue robe and pale sash; low, rough voice. Heard about Kami, Raditz and the revived defenders, then escorted the fighters inland to Guru. Personal name and exact age are unknown."
+      "history": []
     },
     {
       "id": "brask",
       "title": "Brask",
       "battlePower": 95000,
-      "summary": "Grey-skinned, horned arms dealer with long black hair and black-and-gold clothing.",
+      "summary": "Arms dealer defeated by Zero; held for transport questioning.",
       "status": "Guarded custody · Uncooperative",
-      "facts": [
-        {
-          "label": "Observed base",
-          "value": "95,000 · Dispatch scout reading"
-        },
-        {
-          "label": "Age",
-          "value": "Unknown"
-        },
-        {
-          "label": "Native timeline",
-          "value": "Not disclosed to Zero"
-        }
-      ],
-      "details": "Low, rough voice; cocky and threatening before the fight, furious under pressure. Refused surrender and threatened the Patrollers. Transformed to a measured 950,000 with white hair, larger horns, golden markings and aura; prior injuries persisted. Zero knocked him unconscious. Now awake under guarded treatment and refusing supplier or transport information. Biological origin and the form’s name have not been disclosed to Zero.",
       "canTransform": true,
       "art": {
         "appearance": [
@@ -952,29 +1353,46 @@
             "multiplier": 10
           }
         ]
-      }
+      },
+      "context": "Not disclosed to Zero",
+      "sections": [
+        {
+          "title": "Identity & appearance",
+          "text": "Grey-skinned, horned arms dealer with long black hair and black-and-gold clothing. Low, rough voice; cocky and threatening before the fight, furious under pressure.",
+          "facts": [
+            {
+              "label": "Age",
+              "value": "Unknown"
+            }
+          ]
+        },
+        {
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Observed base",
+              "value": "95,000 · Dispatch scout reading"
+            }
+          ]
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Refused surrender and threatened the Patrollers. Transformed to a measured 950,000 with white hair, larger horns, golden markings and aura; prior injuries persisted. Zero knocked him unconscious. Now awake under guarded treatment and refusing supplier or transport information. Biological origin and the form’s name have not been disclosed to Zero."
+        }
+      ],
+      "history": [
+        "s218",
+        "s221",
+        "s228",
+        "s234"
+      ]
     },
     {
       "id": "rivet",
       "title": "Rivet",
       "battlePower": 31000,
-      "summary": "Orange-skinned, four-armed arms dealer with goggles, blue clothing, tool harness and rifle.",
+      "summary": "Arms dealer defeated by Yamcha; held for transport questioning.",
       "status": "Guarded custody · Uncooperative",
-      "facts": [
-        {
-          "label": "Observed base",
-          "value": "31,000 · Dispatch scout reading"
-        },
-        {
-          "label": "Age",
-          "value": "Unknown"
-        },
-        {
-          "label": "Native timeline",
-          "value": "Not disclosed to Zero"
-        }
-      ],
-      "details": "Quick, smug and antagonistic; threatened to sell the Patrollers’ equipment. Yamcha disarmed and defeated him using a short Kaioken burst. Surrendered after Brask fell, but refuses transport questions. His harness and rifle are held as evidence; he remains under guard. Species and native history have not been disclosed to Zero.",
       "canTransform": false,
       "art": {
         "appearance": [
@@ -985,7 +1403,38 @@
             "portraitAlt": "Orange-skinned, four-armed arms dealer with goggles, blue clothing, tool harness and rifle."
           }
         ]
-      }
+      },
+      "context": "Not disclosed to Zero",
+      "sections": [
+        {
+          "title": "Identity & appearance",
+          "text": "Orange-skinned, four-armed arms dealer with goggles, blue clothing, tool harness and rifle. Quick, smug and antagonistic; threatened to sell the Patrollers’ equipment.",
+          "facts": [
+            {
+              "label": "Age",
+              "value": "Unknown"
+            }
+          ]
+        },
+        {
+          "title": "Power & known forms",
+          "facts": [
+            {
+              "label": "Observed base",
+              "value": "31,000 · Dispatch scout reading"
+            }
+          ]
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Yamcha disarmed and defeated him using a short Kaioken burst. Surrendered after Brask fell, but refuses transport questions. His harness and rifle are held as evidence; he remains under guard. Species and native history have not been disclosed to Zero."
+        }
+      ],
+      "history": [
+        "s218",
+        "s227",
+        "s234"
+      ]
     }
   ],
   "places": [
@@ -994,15 +1443,15 @@
       "title": "Conton City",
       "summary": "Time Patrol hub where Zero was treated, assessed and housed.",
       "status": "Home hub",
-      "details": "Time Patrol hub recognised from prior game knowledge and identified by Rill. Zero has visited the ward, assessment and dispatch offices, training facilities, quarters, dining hall and equipment services. Chamber time is counted separately from the city calendar.",
-      "facts": [
+      "context": "Time Patrol hub outside the ordinary timelines",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Time Patrol hub outside the ordinary timelines"
+          "title": "Description",
+          "text": "Time Patrol hub recognised from prior game knowledge and identified by Rill. Zero has visited the ward, assessment and dispatch offices, training facilities, quarters, dining hall and equipment services. Chamber time is counted separately from the city calendar."
         },
         {
-          "label": "Position",
-          "value": "The city contains Patrol medical, administrative, residential and training facilities."
+          "title": "Location & access",
+          "text": "The city contains Patrol medical, administrative, residential and training facilities."
         }
       ]
     },
@@ -1011,35 +1460,21 @@
       "title": "Training courtyard",
       "summary": "Open court used for sparring, weighted conditioning, ki practice and flight.",
       "status": "Training grounds",
-      "details": "Used for later Krillin and Yamcha practice and Zero’s first rush at Vegeta on Day 30. Vegeta then led him into an adjoining equipped hall. The open court and enclosed gravity hall are distinct spaces.",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Training complex · Open courtyard behind the training halls",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Training complex · Open courtyard behind the training halls"
-        },
-        {
-          "label": "Position",
-          "value": "Adjoins the gravity training hall used by Vegeta; connected to the indoor practice rooms."
+          "title": "Location & access",
+          "text": "Adjoins the gravity training hall used by Vegeta; connected to the indoor practice rooms."
         }
       ],
-      "parentId": "toki-toki-city"
+      "visitRecord": "Used for later Krillin and Yamcha practice and Zero’s first rush at Vegeta on Day 30. Vegeta then led him into an adjoining equipped hall. The open court and enclosed gravity hall are distinct spaces."
     },
     {
       "id": "quarters-214",
       "title": "Room 214",
       "summary": "Assigned quarters and overnight recovery space.",
       "status": "Accommodation",
-      "details": "Zero’s assigned home. Cream walls and tiled floor, blue bedding beneath a rounded window, desk and chair on the left with a small refrigerator, bedside drawers, tall wardrobe and bathroom door on the right. Cape hook and floor space for the travel bag. Two compatible Dragon Balls are in the bedside cabinet’s bottom drawer; the protected scroll remains in the bag. The supplied daylight illustration establishes the layout, not the current time.",
-      "facts": [
-        {
-          "label": "Location",
-          "value": "Conton City · Patroller residential building · Upstairs room 214"
-        },
-        {
-          "label": "Position",
-          "value": "Reached by the shallow steps to the residential building; its named district has not been established."
-        }
-      ],
       "parentId": "toki-toki-city",
       "art": {
         "images": [
@@ -1050,187 +1485,182 @@
             "portraitAlt": "Cream Conton quarters viewed from the doorway, blue bed beneath rounded window, desk left, wardrobe and bathroom right."
           }
         ]
-      }
+      },
+      "context": "Conton City · Patroller residential building · Upstairs room 214",
+      "sections": [
+        {
+          "title": "Description",
+          "text": "Zero’s assigned home. Cream walls and tiled floor, blue bedding beneath a rounded window, desk and chair on the left with a small refrigerator, bedside drawers, tall wardrobe and bathroom door on the right. Cape hook and floor space for the travel bag."
+        },
+        {
+          "title": "Location & access",
+          "text": "Reached by the shallow steps to the residential building; its named district has not been established."
+        },
+        {
+          "title": "Current circumstances",
+          "text": "Two compatible Dragon Balls are in the bedside cabinet’s bottom drawer; the protected scroll remains in the bag. The supplied daylight illustration establishes the layout, not the current time."
+        }
+      ]
     },
     {
       "id": "dining-hall",
       "title": "Dining hall",
       "summary": "Covered meals and communal seating for patrollers.",
       "status": "Visited",
-      "details": "Visited after receiving room 214 and used for covered meals during training. After Day 44 Zero ate a large meal of meat and rice with additional helpings before returning to sleep. No cash purchase was recorded. On 16 February, Zero ate with Krillin and discussed chamber solitude and Krillin’s family before returning to his room. On 10 March, conversation with Yamcha after cleanup work led to the homecoming proposal and discussions of Yardrat and Kaioken.",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Communal Patrol dining facilities",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Communal Patrol dining facilities"
-        },
-        {
-          "label": "Position",
-          "value": "Within walking distance of the residential buildings; the exact building and district are not named."
+          "title": "Location & access",
+          "text": "Within walking distance of the residential buildings; the exact building and district are not named."
         }
       ],
-      "parentId": "toki-toki-city"
+      "visitRecord": "Visited after receiving room 214 and used for covered meals during training. After Day 44 Zero ate a large meal of meat and rice with additional helpings before returning to sleep. No cash purchase was recorded. On 16 February, Zero ate with Krillin and discussed chamber solitude and Krillin’s family before returning to his room. On 10 March, conversation with Yamcha after cleanup work led to the homecoming proposal and discussions of Yardrat and Kaioken."
     },
     {
       "id": "medical-ward",
       "title": "Medical ward",
       "summary": "Where Zero woke after emergency evacuation and treatment.",
       "status": "Visited",
-      "details": "An empty glass treatment chamber stood opposite the bed. Rill reported that roughly an hour had passed since admission and that the latest scans were clear after treatment for internal bleeding, damaged ribs and a head injury. Original clothes and the scouter were kept nearby. Zero returned after the first mission, underwent Chronoa’s seal while awake and received a Senzu before moving to a nearby hall.",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Patrol medical facilities",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Patrol medical facilities"
-        },
-        {
-          "label": "Position",
-          "value": "Across the square from the reception building containing assessment room three; ordinary training rooms are nearby."
+          "title": "Location & access",
+          "text": "Across the square from the reception building containing assessment room three; ordinary training rooms are nearby."
         }
       ],
-      "parentId": "toki-toki-city"
+      "visitRecord": "An empty glass treatment chamber stood opposite the bed. Rill reported that roughly an hour had passed since admission and that the latest scans were clear after treatment for internal bleeding, damaged ribs and a head injury. Original clothes and the scouter were kept nearby. Zero returned after the first mission, underwent Chronoa’s seal while awake and received a Senzu before moving to a nearby hall."
     },
     {
       "id": "assessment-room",
       "title": "Reception · Room three",
       "summary": "Across the square from the ward; site of Chronoa’s assessment.",
       "status": "Visited",
-      "details": "Zero recounted his source-world knowledge in front of Chronoa, Vegeta and Mr. Satan, then accepted supervised trainee membership.",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Reception building · Room three",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Reception building · Room three"
-        },
-        {
-          "label": "Position",
-          "value": "Across the square from the medical ward."
+          "title": "Location & access",
+          "text": "Across the square from the medical ward."
         }
       ],
-      "parentId": "toki-toki-city"
+      "visitRecord": "Zero recounted his source-world knowledge in front of Chronoa, Vegeta and Mr. Satan, then accepted supervised trainee membership."
     },
     {
       "id": "capsule-frontage",
       "title": "Capsule Corp · West City",
       "summary": "Awakening site and the scene of Nappa’s attack.",
       "status": "Arrival location",
-      "details": "Capsule Corp signage and buildings, damaged streets, fleeing people and dead civilians. No Capsule Corp affiliation, property or vehicle ownership follows from awakening there. The exact local chronology was not confirmed to Zero.",
-      "facts": [
+      "parentId": "west-city-tl218",
+      "context": "TL-218 · Earth · West City · Capsule Corp frontage",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-218 · Earth · West City · Capsule Corp frontage"
+          "title": "Description",
+          "text": "Capsule Corp signage and buildings, damaged streets, fleeing people and dead civilians. No Capsule Corp affiliation, property or vehicle ownership follows from awakening there. The exact local chronology was not confirmed to Zero."
         },
         {
-          "label": "Position",
-          "value": "The street and paving outside Capsule Corp where Zero first appeared."
+          "title": "Location & access",
+          "text": "The street and paving outside Capsule Corp where Zero first appeared."
         }
-      ],
-      "parentId": "west-city-tl218"
+      ]
     },
     {
       "id": "maintenance-bay",
       "title": "Training complex · Maintenance bay",
       "summary": "Adjoining work area where Bulma repairs training equipment.",
       "status": "Visited",
-      "details": "Visited with Krillin on Day 29. Bulma worked beside an open equipment casing with a diagnostic tablet; Vegeta stood by a wall control panel. This was where Vegeta agreed to train Zero at dawn. No technical specifications or repaired-room access have been established.",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Training complex · Equipment-maintenance work area",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Training complex · Equipment-maintenance work area"
-        },
-        {
-          "label": "Position",
-          "value": "Adjoins the training facilities; the specific room Bulma was repairing was out of service when last seen."
+          "title": "Location & access",
+          "text": "Adjoins the training facilities; the specific room Bulma was repairing was out of service when last seen."
         }
       ],
-      "parentId": "toki-toki-city"
+      "visitRecord": "Visited with Krillin on Day 29. Bulma worked beside an open equipment casing with a diagnostic tablet; Vegeta stood by a wall control panel. This was where Vegeta agreed to train Zero at dawn. No technical specifications or repaired-room access have been established."
     },
     {
       "id": "gravity-hall",
       "title": "Gravity training hall",
       "summary": "Enclosed hall used for Vegeta’s punishing training sessions.",
       "status": "Training grounds",
-      "details": "Entered on Day 30; Zero set aside cape and scouter inside. Vegeta switched the hall to 50× gravity. Subsequent mornings include 25× warm-ups before his arrival and 50× sessions with senzu recoveries. Gravity is lowered when needed to prevent death and switched off when the session ends. This does not establish that the separate room Bulma was repairing is operational.",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Training complex · Enclosed hall adjoining the training courtyard",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Training complex · Enclosed hall adjoining the training courtyard"
-        },
-        {
-          "label": "Position",
-          "value": "The hall Vegeta led Zero into from the open court on Day 30."
+          "title": "Location & access",
+          "text": "The hall Vegeta led Zero into from the open court on Day 30."
         }
       ],
-      "parentId": "toki-toki-city"
+      "visitRecord": "Entered on Day 30; Zero set aside cape and scouter inside. Vegeta switched the hall to 50× gravity. Subsequent mornings include 25× warm-ups before his arrival and 50× sessions with senzu recoveries. Gravity is lowered when needed to prevent death and switched off when the session ends. This does not establish that the separate room Bulma was repairing is operational."
     },
     {
       "id": "practice-hall",
       "title": "Training rooms",
       "summary": "Ordinary indoor rooms for instruction, sparring and ki practice.",
       "status": "Visited",
-      "details": "Krillin was finishing instruction here when Zero asked about a chamber booking after Day 45 training. An ordinary nearby training room was used after the first mission for the supervised Dark Factor Sealed Channel test, with gravity set to 1× and drones off. These are standard Patrol facilities used by fighters far stronger than Zero, not a purpose-built containment hall. Chronoa supervised the seal itself. Individual bookings do not establish a new location or imply that every session used the same numbered room. The following week included supervised channel practice and moving sparring; the first test is complete, not still underway.",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Training complex · Ordinary indoor practice rooms",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Training complex · Ordinary indoor practice rooms"
-        },
-        {
-          "label": "Position",
-          "value": "Includes the rooms used for Krillin’s instruction and the nearby room used after the medical-ward visit; individual room numbers are not established."
+          "title": "Location & access",
+          "text": "Includes the rooms used for Krillin’s instruction and the nearby room used after the medical-ward visit; individual room numbers are not established."
         }
       ],
-      "parentId": "toki-toki-city"
+      "visitRecord": "Krillin was finishing instruction here when Zero asked about a chamber booking after Day 45 training. An ordinary nearby training room was used after the first mission for the supervised Dark Factor Sealed Channel test, with gravity set to 1× and drones off. These are standard Patrol facilities used by fighters far stronger than Zero, not a purpose-built containment hall. Chronoa supervised the seal itself. Individual bookings do not establish a new location or imply that every session used the same numbered room. The following week included supervised channel practice and moving sparring; the first test is complete, not still underway."
     },
     {
       "id": "dispatch-office",
       "title": "Dispatch office",
       "summary": "Mr. Satan’s scheduling and assignment desk.",
       "status": "Current location",
-      "details": "Hercule’s office handles briefings, debriefs and rewards. The four-week Namek visit and quarry debriefs are complete. Zero and Yamcha are now discussing Yardrat after TL-503’s fresh 100% recovery check; duration remains unconfirmed and departure unbooked.",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Time Patrol dispatch offices · Mr. Satan’s desk",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Time Patrol dispatch offices · Mr. Satan’s desk"
+          "title": "Description",
+          "text": "Hercule’s office handles briefings, debriefs and rewards."
         },
         {
-          "label": "Position",
-          "value": "The office where chamber bookings and the first paired mission were arranged; a named district has not been established."
+          "title": "Location & access",
+          "text": "The office where chamber bookings and the first paired mission were arranged; a named district has not been established."
+        },
+        {
+          "title": "Current circumstances",
+          "text": "The four-week Namek visit and quarry debriefs are complete. Zero and Yamcha are now discussing Yardrat after TL-503’s fresh 100% recovery check; duration remains unconfirmed and departure unbooked."
         }
-      ],
-      "parentId": "toki-toki-city"
+      ]
     },
     {
       "id": "chamber-three",
       "title": "Hyperbolic Time Chamber · Three",
       "summary": "One year of solo training completed during one day in Conton.",
       "status": "Visit complete",
-      "details": "Booked 15 February at 09:00 to 16 February at 09:00, Age 854. At 365:1, the visit contained 365 subjective days, including initial rest and four training quarters. Independent gravity controls, a normal-gravity living area, recorded drills, four drones and finite food, medical and maintenance supplies supported the visit. All six senzu were used. Zero exited at checkout; no extension or new reservation.",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Hyperbolic Time Chamber facility · Chamber Three",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Hyperbolic Time Chamber facility · Chamber Three"
-        },
-        {
-          "label": "Position",
-          "value": "Separate chamber facility reached from the practice hall; equipment services is nearby."
+          "title": "Location & access",
+          "text": "Separate chamber facility reached from the practice hall; equipment services is nearby."
         }
       ],
-      "parentId": "toki-toki-city"
+      "visitRecord": "Booked 15 February at 09:00 to 16 February at 09:00, Age 854. At 365:1, the visit contained 365 subjective days, including initial rest and four training quarters. Independent gravity controls, a normal-gravity living area, recorded drills, four drones and finite food, medical and maintenance supplies supported the visit. All six senzu were used. Zero exited at checkout; no extension or new reservation."
     },
     {
       "id": "equipment-services",
       "title": "Equipment services",
       "summary": "Equipment and clothing repairs near the training facilities.",
       "status": "Visited",
-      "details": "The original outfit was fitted after the chamber. After Namek, a technician repaired the same scouter and confirmed its local readings; the network remained disconnected. Zero also had his original clothing and cape repaired without changing outfits.",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Near the training and chamber facilities · Ground floor of a rounded white building",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Near the training and chamber facilities · Ground floor of a rounded white building"
-        },
-        {
-          "label": "Position",
-          "value": "Windows display boots, gloves and uniforms; repair stations and curtained changing cubicles are inside."
+          "title": "Location & access",
+          "text": "Windows display boots, gloves and uniforms; repair stations and curtained changing cubicles are inside."
         }
       ],
-      "parentId": "toki-toki-city"
+      "visitRecord": "The original outfit was fitted after the chamber. After Namek, a technician repaired the same scouter and confirmed its local readings; the network remained disconnected. Zero also had his original clothing and cape repaired without changing outfits."
     },
     {
       "id": "tl218-supply-site",
@@ -1238,32 +1668,29 @@
       "summary": "Off-world weapons and armour operation on Earth, dismantled during the first paired mission.",
       "status": "Visited · Warehouse destroyed",
       "date": "16 February, Age 763 · TL-218",
-      "details": "Scrubland valley with a western ridge, fenced yard, truck, warehouse and landed spacecraft. The warehouse and powered console were destroyed or buried during the fight; data recovery is unassessed. The ship and operators escaped. No city attack occurred.",
-      "facts": [
+      "parentId": "earth-tl218",
+      "context": "TL-218 · Earth · Scrubland valley outside an unnamed city",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-218 · Earth · Scrubland valley outside an unnamed city"
-        },
-        {
-          "label": "Position",
-          "value": "A western ridge overlooks the fenced compound; the city seen on the horizon has not been identified."
+          "title": "Location & access",
+          "text": "A western ridge overlooks the fenced compound; the city seen on the horizon has not been identified."
         }
       ],
-      "parentId": "earth-tl218"
+      "visitRecord": "Scrubland valley with a western ridge, fenced yard, truck, warehouse and landed spacecraft. The warehouse and powered console were destroyed or buried during the fight; data recovery is unassessed. The ship and operators escaped. No city attack occurred."
     },
     {
       "id": "timeline-218",
       "title": "TL-218",
       "summary": "The timeline where Zero arrived and later returned on his first paired mission.",
-      "details": "Locations visited within this history are grouped below. Timeline identity is separate from the local date.",
-      "facts": [
+      "context": "Timeline TL-218",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Timeline TL-218"
+          "title": "Description",
+          "text": "Locations visited within this history are grouped below. Timeline identity is separate from the local date."
         },
         {
-          "label": "Position",
-          "value": "Contains the recorded Earth locations below."
+          "title": "Location & access",
+          "text": "Contains the recorded Earth locations below."
         }
       ]
     },
@@ -1272,15 +1699,15 @@
       "parentId": "timeline-218",
       "title": "Earth",
       "summary": "Earth in TL-218.",
-      "details": "Contains West City and the later supply-operation site. The city on the horizon at the supply site is not identified.",
-      "facts": [
+      "context": "TL-218 · Earth",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-218 · Earth"
+          "title": "Description",
+          "text": "Contains West City and the later supply-operation site. The city on the horizon at the supply site is not identified."
         },
         {
-          "label": "Position",
-          "value": "West City and the supply-site valley are both on this Earth; their distance apart is not established."
+          "title": "Location & access",
+          "text": "West City and the supply-site valley are both on this Earth; their distance apart is not established."
         }
       ]
     },
@@ -1289,15 +1716,15 @@
       "parentId": "earth-tl218",
       "title": "West City",
       "summary": "The city where Zero first appeared outside Capsule Corp.",
-      "details": "The initial encounter with Nappa took place outside Capsule Corp.",
-      "facts": [
+      "context": "TL-218 · Earth · West City",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-218 · Earth · West City"
+          "title": "Description",
+          "text": "The initial encounter with Nappa took place outside Capsule Corp."
         },
         {
-          "label": "Position",
-          "value": "Capsule Corp frontage is the recorded arrival site within this city."
+          "title": "Location & access",
+          "text": "Capsule Corp frontage is the recorded arrival site within this city."
         }
       ]
     },
@@ -1306,284 +1733,230 @@
       "title": "TL-503 · Yamcha’s home",
       "summary": "Yamcha’s native timeline; fresh recovery check complete.",
       "status": "Recovered · 100% at S240",
-      "details": "After the Raditz/revival rewrite, the Namek training visit ended at 92% integrity on 19 June. A fresh check on 28 June at 11:30 reports 100%, with no new interference. The native Yardrat expedition remains in the outside review. Zero and Yamcha are outside the timeline; a new visit is proposed, not active. No universal daily restoration rate or newly settled Android/Buu outcome.",
-      "facts": [
+      "context": "Timeline TL-503",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Timeline TL-503"
-        },
-        {
-          "label": "Position",
-          "value": "See the nested locations below; exact coordinates unassigned."
+          "title": "Current circumstances",
+          "text": "After the Raditz/revival rewrite, the Namek training visit ended at 92% integrity on 19 June. A fresh check on 28 June at 11:30 reports 100%, with no new interference. The native Yardrat expedition remains in the outside review. Zero and Yamcha are outside the timeline; a new visit is proposed, not active. No universal daily restoration rate or newly settled Android/Buu outcome."
         }
       ]
     },
     {
       "id": "earth-tl503",
       "title": "Earth",
-      "summary": "TL-503 · Earth · Age 761",
+      "summary": "The Age 761 visit ended after reviving Krillin, Roshi, Tien and Chiaotzu and discussing offworld training.",
       "status": "Recorded",
-      "details": "The Age 761 visit ended after reviving Krillin, Roshi, Tien and Chiaotzu and discussing offworld training. Earth avoids the old Raditz occupation. Gero remains a later threat; the earlier guaranteed Android-war resolution is withdrawn. The latest outside review confirms the native Yardrat expedition, without newly resolving the later Android or Buu eras.",
-      "facts": [
+      "parentId": "timeline-503",
+      "context": "TL-503 · Earth · Age 761",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-503 · Earth · Age 761"
-        },
-        {
-          "label": "Position",
-          "value": "Exact coordinates unassigned; the recorded location identifies the containing region."
+          "title": "Current circumstances",
+          "text": "The Age 761 visit ended after reviving Krillin, Roshi, Tien and Chiaotzu and discussing offworld training. Earth avoids the old Raditz occupation. Gero remains a later threat; the earlier guaranteed Android-war resolution is withdrawn. The latest outside review confirms the native Yardrat expedition, without newly resolving the later Android or Buu eras."
         }
-      ],
-      "parentId": "timeline-503"
+      ]
     },
     {
       "id": "battle-site-tl503",
       "title": "Raditz battle site",
-      "summary": "TL-503 · Earth · Rocky hills; exact region unnamed",
+      "summary": "Yamcha’s extraction and return point.",
       "status": "Recorded",
-      "details": "Yamcha’s extraction and return point. Raditz was killed here; his corpse remains. Friends’ bodies were moved to the nearby building. No coordinates or exact local day/hour assigned.",
-      "facts": [
-        {
-          "label": "Location",
-          "value": "TL-503 · Earth · Rocky hills; exact region unnamed"
-        },
-        {
-          "label": "Position",
-          "value": "Exact coordinates unassigned; the recorded location identifies the containing region."
-        }
-      ],
-      "parentId": "earth-tl503"
+      "parentId": "earth-tl503",
+      "context": "TL-503 · Earth · Rocky hills; exact region unnamed",
+      "sections": [],
+      "visitRecord": "Yamcha’s extraction and return point. Raditz was killed here; his corpse remains. Friends’ bodies were moved to the nearby building. No coordinates or exact local day/hour assigned."
     },
     {
       "id": "maintenance-tl503",
       "title": "Roadside maintenance building",
-      "summary": "TL-503 · Earth · Disused road near the battle site",
+      "summary": "Intact roadside concrete building where the four fallen teammates were secured and revived.",
       "status": "Visited · Revival site",
-      "details": "Intact roadside concrete building where the four fallen teammates were secured and revived. Shenron was summoned outside; the reunion and travel discussion took place here. Both Patrollers have left. It no longer holds their bodies.",
-      "facts": [
-        {
-          "label": "Location",
-          "value": "TL-503 · Earth · Disused road near the battle site"
-        },
-        {
-          "label": "Position",
-          "value": "Exact coordinates unassigned; the recorded location identifies the containing region."
-        }
-      ],
-      "parentId": "earth-tl503"
+      "parentId": "earth-tl503",
+      "context": "TL-503 · Earth · Disused road near the battle site",
+      "sections": [],
+      "visitRecord": "Intact roadside concrete building where the four fallen teammates were secured and revived. Shenron was summoned outside; the reunion and travel discussion took place here. Both Patrollers have left. It no longer holds their bodies."
     },
     {
       "id": "shelter-tl503",
       "title": "Bulma’s temporary shelter",
-      "summary": "TL-503 · Earth · Beyond the next ridge from the battle site",
+      "summary": "Capsule house beneath a rock overhang, Bulma and Puar’s pre-battle waiting place.",
       "status": "Visited",
-      "details": "Capsule house beneath a rock overhang, Bulma and Puar’s pre-battle waiting place. Their radar guided the completed Dragon Ball search. This is not a years-later resistance base or Zero’s current location.",
-      "facts": [
-        {
-          "label": "Location",
-          "value": "TL-503 · Earth · Beyond the next ridge from the battle site"
-        },
-        {
-          "label": "Position",
-          "value": "Exact coordinates unassigned; the recorded location identifies the containing region."
-        }
-      ],
-      "parentId": "earth-tl503"
+      "parentId": "earth-tl503",
+      "context": "TL-503 · Earth · Beyond the next ridge from the battle site",
+      "sections": [],
+      "visitRecord": "Capsule house beneath a rock overhang, Bulma and Puar’s pre-battle waiting place. Their radar guided the completed Dragon Ball search. This is not a years-later resistance base or Zero’s current location."
     },
     {
       "id": "king-kai-residence",
       "title": "King Kai’s residence",
       "summary": "Rounded house with a low garden wall and flowering plants.",
       "status": "Visited",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Quiet residential stretch",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Quiet residential stretch"
-        },
-        {
-          "label": "Position",
-          "value": "Walking distance from training grounds; exact street unset"
+          "title": "Location & access",
+          "text": "Walking distance from training grounds; exact street unset"
         }
       ],
-      "details": "First meeting and initial instruction took place in the front garden. Ordinary Conton residence, not King Kai’s otherworld planet.",
-      "parentId": "toki-toki-city"
+      "visitRecord": "First meeting and initial instruction took place in the front garden. Ordinary Conton residence, not King Kai’s otherworld planet."
     },
     {
       "id": "yamcha-apartment",
       "title": "Yamcha’s apartment",
       "summary": "New accommodation received through his commendation.",
       "status": "Visited · Assigned to Yamcha",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Residential buildings",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Residential buildings"
-        },
-        {
-          "label": "Position",
-          "value": "Overlooks a planted courtyard; address and door number unset"
+          "title": "Location & access",
+          "text": "Overlooks a planted courtyard; address and door number unset"
         }
       ],
-      "details": "Separate bedroom, small kitchen and living area. Yamcha selected it on 24 April and access was registered. Zero visited; Yamcha completed his move during the following four weeks.",
-      "parentId": "toki-toki-city"
+      "visitRecord": "Separate bedroom, small kitchen and living area. Yamcha selected it on 24 April and access was registered. Zero visited; Yamcha completed his move during the following four weeks."
     },
     {
       "id": "vegeta-dedicated-room",
       "title": "Vegeta’s dedicated training room",
       "summary": "Dedicated gravity room confirmed handed over on 24 April.",
       "status": "Reported · Assigned to Vegeta",
-      "facts": [
+      "parentId": "toki-toki-city",
+      "context": "Conton City · Training facilities",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Conton City · Training facilities"
+          "title": "Current circumstances",
+          "text": "Commendation reward with persistent settings, guest control and maintenance access. No new gravity maximum or Zero visit established."
         },
         {
-          "label": "Position",
-          "value": "Exact room number and building unset"
+          "title": "Location & access",
+          "text": "Exact room number and building unset"
         }
-      ],
-      "details": "Commendation reward with persistent settings, guest control and maintenance access. No new gravity maximum or Zero visit established.",
-      "parentId": "toki-toki-city"
+      ]
     },
     {
       "id": "namek-tl503",
       "title": "Namek",
       "summary": "Potential releases and four weeks of training with Nail completed.",
       "status": "Four-week visit complete",
-      "facts": [
+      "parentId": "timeline-503",
+      "context": "TL-503 · Planet Namek",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-503 · Planet Namek"
+          "title": "Current circumstances",
+          "text": "Zero and Yamcha returned to Conton on 19 June. Native friends remained for their own expedition. Last local setting was Namek daylight in Age 761; no new native calendar date has been assigned."
         },
         {
-          "label": "Position",
-          "value": "Native party’s landing area; exact coordinates unset"
+          "title": "Location & access",
+          "text": "Native party’s landing area; exact coordinates unset"
         }
-      ],
-      "details": "Zero and Yamcha returned to Conton on 19 June. Native friends remained for their own expedition. Last local setting was Namek daylight in Age 761; no new native calendar date has been assigned.",
-      "parentId": "timeline-503"
+      ]
     },
     {
       "id": "yardrat-tl503",
       "title": "Yardrat",
       "summary": "Hercule confirmed the native journey after timeline recovery.",
       "status": "Native expedition confirmed · Visit proposed",
-      "facts": [
+      "parentId": "timeline-503",
+      "context": "TL-503 · Planet Yardrat",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-503 · Planet Yardrat"
+          "title": "Current circumstances",
+          "text": "Zero and Yamcha intend to study Spirit Control from the source. Hercule can arrange entry after their friends arrive; duration still awaits confirmation. No booked departure, acquired technique or completed visit."
         },
         {
-          "label": "Position",
-          "value": "Training destination; precise school location not assigned"
+          "title": "Location & access",
+          "text": "Training destination; precise school location not assigned"
         }
-      ],
-      "details": "Zero and Yamcha intend to study Spirit Control from the source. Hercule can arrange entry after their friends arrive; duration still awaits confirmation. No booked departure, acquired technique or completed visit.",
-      "parentId": "timeline-503"
+      ]
     },
     {
       "id": "timeline-619",
       "title": "TL-619",
       "summary": "Near-Prime history with Z and later events one year later.",
       "status": "Restoration monitored",
-      "facts": [
+      "context": "Timeline TL-619",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Timeline TL-619"
+          "title": "Current circumstances",
+          "text": "The Namek encounter occurred in Age 763. Foreign arrivals threatened the native course but withdrawal preserved the major fixed points. Last integrity was 68% at the 22 April debrief; no forced branch."
         },
         {
-          "label": "Position",
-          "value": "Contains the Namek sites below"
+          "title": "Location & access",
+          "text": "Contains the Namek sites below"
         }
-      ],
-      "details": "The Namek encounter occurred in Age 763. Foreign arrivals threatened the native course but withdrawal preserved the major fixed points. Last integrity was 68% at the 22 April debrief; no forced branch."
+      ]
     },
     {
       "id": "namek-tl619",
       "title": "Namek",
       "summary": "Site of the second Nappa fight and rescue.",
       "status": "Visited",
-      "facts": [
+      "parentId": "timeline-619",
+      "context": "TL-619 · Planet Namek · Age 763",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-619 · Planet Namek · Age 763"
-        },
-        {
-          "label": "Position",
-          "value": "Rocky shoreline and offshore island; exact coordinates unset"
+          "title": "Location & access",
+          "text": "Rocky shoreline and offshore island; exact coordinates unset"
         }
       ],
-      "details": "Daylight during the visit. Zero fought beside a ridge and underwater, then Turles hurled him offshore. Yamcha rescued him to an island and the Patrollers extracted. This is distinct from the completed TL-503 Namek training visit.",
-      "parentId": "timeline-619"
+      "visitRecord": "Daylight during the visit. Zero fought beside a ridge and underwater, then Turles hurled him offshore. Yamcha rescued him to an island and the Patrollers extracted. This is distinct from the completed TL-503 Namek training visit."
     },
     {
       "id": "shore-tl619",
       "title": "Shoreline ridge",
       "summary": "Nappa’s recruitment meeting and defeat.",
       "status": "Visited",
-      "facts": [
+      "parentId": "namek-tl619",
+      "context": "TL-619 · Namek",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-619 · Namek"
-        },
-        {
-          "label": "Position",
-          "value": "Ridge above the water where Nappa met Jeice and Burter"
+          "title": "Location & access",
+          "text": "Ridge above the water where Nappa met Jeice and Burter"
         }
       ],
-      "details": "The ridge and nearby water were damaged during the fight. Nappa was unconscious and alive before Turles intervened.",
-      "parentId": "namek-tl619"
+      "visitRecord": "The ridge and nearby water were damaged during the fight. Nappa was unconscious and alive before Turles intervened."
     },
     {
       "id": "island-tl619",
       "title": "Offshore island",
       "summary": "Yamcha’s rescue and the extraction site.",
       "status": "Visited",
-      "facts": [
+      "parentId": "namek-tl619",
+      "context": "TL-619 · Namek",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-619 · Namek"
-        },
-        {
-          "label": "Position",
-          "value": "Offshore from the combat area; exact distance unset"
+          "title": "Location & access",
+          "text": "Offshore from the combat area; exact distance unset"
         }
       ],
-      "details": "Zero consumed the rescue Senzu here. Vegeta held Turles off while the passage opened; all three Patrollers returned.",
-      "parentId": "namek-tl619"
+      "visitRecord": "Zero consumed the rescue Senzu here. Vegeta held Turles off while the passage opened; all three Patrollers returned."
     },
     {
       "id": "landing-tl503",
       "parentId": "namek-tl503",
       "title": "Expedition landing site",
       "summary": "Kami’s refitted ship in the Namek valley.",
-      "details": "Bulma stayed with the ship while the fighters met Guru. The visitors later retrieved their bags and returned to Conton; Zero’s belongings are no longer aboard.",
       "status": "Visited",
-      "facts": [
+      "context": "TL-503 · Namek",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-503 · Namek"
-        },
-        {
-          "label": "Position",
-          "value": "Near the water opposite the village; Zero and Yamcha have retrieved their bags and departed."
+          "title": "Location & access",
+          "text": "Near the water opposite the village; Zero and Yamcha have retrieved their bags and departed."
         }
-      ]
+      ],
+      "visitRecord": "Bulma stayed with the ship while the fighters met Guru. The visitors later retrieved their bags and returned to Conton; Zero’s belongings are no longer aboard."
     },
     {
       "id": "village-tl503",
       "parentId": "namek-tl503",
       "title": "Village near the landing site",
       "summary": "White rounded houses beside a rocky shore.",
-      "details": "Across the water from the ship, with tree plots beyond the houses. Its elder introduced the visitors to Guru.",
       "status": "Visited",
-      "facts": [
+      "context": "TL-503 · Namek",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-503 · Namek"
-        },
-        {
-          "label": "Position",
-          "value": "Across the water from the ship, with tree plots beyond the houses. Its elder introduced the visitors to Guru."
+          "title": "Description",
+          "text": "Across the water from the ship, with tree plots beyond the houses. Its elder introduced the visitors to Guru."
         }
       ]
     },
@@ -1592,35 +1965,32 @@
       "parentId": "namek-tl503",
       "title": "Grand Elder’s home",
       "summary": "Guru’s home atop an inland pillar; site of the group’s potential releases.",
-      "details": "Upper audience chamber with Guru’s enormous chair. Reached from the village across open water and broken country; exact coordinates unassigned. The audience and potential releases are complete.",
       "status": "Visited",
-      "facts": [
+      "context": "TL-503 · Namek",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-503 · Namek"
-        },
-        {
-          "label": "Position",
-          "value": "Atop an inland pillar, reached from the village across open water and broken country."
+          "title": "Location & access",
+          "text": "Atop an inland pillar, reached from the village across open water and broken country."
         }
-      ]
+      ],
+      "visitRecord": "Upper audience chamber with Guru’s enormous chair. Reached from the village across open water and broken country; exact coordinates unassigned. The audience and potential releases are complete."
     },
     {
       "id": "timeline-846",
       "title": "Timeline TL-846",
       "summary": "Earth, Age 750; off-world arms sale intercepted before Red Ribbon buyers arrived.",
       "status": "Mission nexus closed",
-      "facts": [
+      "context": "TL-846",
+      "sections": [
         {
-          "label": "Location",
-          "value": "TL-846"
+          "title": "Current circumstances",
+          "text": "Zero and Yamcha captured both foreign dealers. Recovery crews removed the ship and cargo. Later recovery completed; no numerical integrity reading was supplied."
         },
         {
-          "label": "Position",
-          "value": "Separate history"
+          "title": "Location & access",
+          "text": "Separate history"
         }
-      ],
-      "details": "Zero and Yamcha captured both foreign dealers. Recovery crews removed the ship and cargo. Later recovery completed; no numerical integrity reading was supplied."
+      ]
     },
     {
       "id": "quarry-tl846",
@@ -1628,17 +1998,14 @@
       "parentId": "timeline-846",
       "summary": "Terraced pale-stone quarry where Brask and Rivet prepared their sale.",
       "status": "Visited · Shipment removed",
-      "facts": [
+      "context": "Earth · TL-846 · Age 750",
+      "sections": [
         {
-          "label": "Location",
-          "value": "Earth · TL-846 · Age 750"
-        },
-        {
-          "label": "Position",
-          "value": "Western ridge overlooks the loading area"
+          "title": "Location & access",
+          "text": "Western ridge overlooks the loading area"
         }
       ],
-      "details": "Shuttle and crates occupied the quarry floor. The fight damaged empty ground away from the shipment. No native buyer met the Patrollers."
+      "visitRecord": "Shuttle and crates occupied the quarry floor. The fight damaged empty ground away from the shipment. No native buyer met the Patrollers."
     }
   ],
   "projects": [
@@ -1647,104 +2014,345 @@
       "title": "Field service and training",
       "summary": "Namek training and quarry mission complete; regular Conton training continues.",
       "status": "Supervised field trainee",
-      "facts": [
+      "nextStep": "Continue supervised practice and field service.",
+      "completed": false,
+      "sections": [
         {
-          "label": "Base",
-          "value": "79,807 measured · 28 June"
+          "title": "Purpose",
+          "text": "Namek training and quarry mission complete; regular Conton training continues."
         },
         {
-          "label": "Skills",
-          "value": "Kaioken ×2, developing sensing and Spirit Spear"
+          "title": "People involved",
+          "text": "Zero, Vegeta, King Kai and Yamcha"
+        },
+        {
+          "title": "Progress",
+          "text": "Four weeks with Nail, the Brask/Rivet capture and a further week of Vegeta mornings, King Kai afternoons and partner practice are complete. Two routine cleanup assignments were completed during that week. No new commendation, promotion or independent travel clearance.",
+          "facts": [
+            {
+              "label": "Base",
+              "value": "79,807 measured · 28 June"
+            },
+            {
+              "label": "Skills",
+              "value": "Kaioken ×2, developing sensing and Spirit Spear"
+            }
+          ]
+        },
+        {
+          "title": "Dependencies",
+          "text": "Dispatch approval remains required for visits."
         }
       ],
-      "details": "Four weeks with Nail, the Brask/Rivet capture and a further week of Vegeta mornings, King Kai afternoons and partner practice are complete. Two routine cleanup assignments were completed during that week. No new commendation, promotion or independent travel clearance."
+      "history": [
+        "s070",
+        "s212",
+        "s228",
+        "s237",
+        "s240"
+      ]
     },
     {
       "id": "partner-assignment",
       "title": "Vegeta partnership",
       "summary": "Zero accepted the supervised trainee assignment.",
       "status": "Active",
-      "facts": [
+      "nextStep": "Continue the assigned partnership and morning sessions.",
+      "completed": false,
+      "sections": [
         {
-          "label": "Dispatcher",
-          "value": "Mr. Satan"
+          "title": "Purpose",
+          "text": "Zero accepted the supervised trainee assignment."
         },
         {
-          "label": "Partner",
-          "value": "Patroller Vegeta"
+          "title": "People involved",
+          "text": "Zero, Vegeta and Mr. Satan"
+        },
+        {
+          "title": "Progress",
+          "text": "Vegeta remains the assigned partner. He and Yamcha rescued Zero from Turles on Namek and returned for the debrief. After hearing how Zero beat Nappa, Vegeta called him to the courtyard and spent the following day training him. His commendation now provides a dedicated gravity-training room. Morning sessions now use Zero’s full channel against Vegeta’s base; Vegeta remains comfortably superior.",
+          "facts": [
+            {
+              "label": "Dispatcher",
+              "value": "Mr. Satan"
+            },
+            {
+              "label": "Partner",
+              "value": "Patroller Vegeta"
+            }
+          ]
+        },
+        {
+          "title": "Dependencies",
+          "text": "Supervised trainee assignment."
         }
       ],
-      "details": "Vegeta remains the assigned partner. He and Yamcha rescued Zero from Turles on Namek and returned for the debrief. After hearing how Zero beat Nappa, Vegeta called him to the courtyard and spent the following day training him. His commendation now provides a dedicated gravity-training room. Morning sessions now use Zero’s full channel against Vegeta’s base; Vegeta remains comfortably superior."
+      "history": [
+        "s015",
+        "s193"
+      ]
     },
     {
       "id": "origin-review",
       "title": "Origin assessment",
       "summary": "Zero’s account and unusual arrival remain under investigation.",
       "status": "Unresolved",
-      "details": "Rill forwarded his report; Chronoa tested and confirmed his knowledge of past events. No explanation for the crossing or independent timeline clearance has been given."
+      "nextStep": "Await a supported explanation for the crossing.",
+      "completed": false,
+      "sections": [
+        {
+          "title": "Purpose",
+          "text": "Zero’s account and unusual arrival remain under investigation."
+        },
+        {
+          "title": "People involved",
+          "text": "Zero, Rill and Chronoa"
+        },
+        {
+          "title": "Progress",
+          "text": "Rill forwarded his report; Chronoa tested and confirmed his knowledge of past events. No explanation for the crossing or independent timeline clearance has been given."
+        },
+        {
+          "title": "Dependencies",
+          "text": "No answer or deadline is established."
+        }
+      ],
+      "history": [
+        "s008",
+        "s013"
+      ]
     },
     {
       "id": "dark-factor-containment",
       "title": "Dark Factor containment",
       "summary": "Seal intact; separate channel use works, Kaioken stacking does not.",
       "status": "Developing control",
-      "details": "The 15 April stacking test triggered a brief takeover, contained by Krillin. Chronoa checked the intact binding and settled it closed. Zero subsequently used the channel against Nappa and closed it before losing consciousness. He intends to stabilise the power through a wish; Chronoa considers integration viable and offered wording help, not a guaranteed completed wish."
+      "nextStep": "Continue separate channel practice and prepare the integration wish.",
+      "completed": false,
+      "sections": [
+        {
+          "title": "Purpose",
+          "text": "Seal intact; separate channel use works, Kaioken stacking does not."
+        },
+        {
+          "title": "People involved",
+          "text": "Zero, Chronoa, King Kai and Krillin"
+        },
+        {
+          "title": "Progress",
+          "text": "The 15 April stacking test triggered a brief takeover, contained by Krillin. Chronoa checked the intact binding and settled it closed. Zero subsequently used the channel against Nappa and closed it before losing consciousness. He intends to stabilise the power through a wish; Chronoa considers integration viable and offered wording help, not a guaranteed completed wish."
+        },
+        {
+          "title": "Dependencies",
+          "text": "Kaioken/channel stacking remains unsafe."
+        }
+      ],
+      "history": [
+        "s094",
+        "s152",
+        "s192"
+      ]
     },
     {
       "id": "yamcha-homecoming",
       "title": "Yamcha’s homecoming",
       "summary": "Friends revived; timeline recovered after the completed Namek visit.",
       "status": "Recovered · Next visit pending",
-      "facts": [
+      "nextStep": "Arrange the next visit after confirming its duration.",
+      "completed": false,
+      "sections": [
         {
-          "label": "Latest reading",
-          "value": "100% · 28 June, 11:30 · Fresh check"
+          "title": "Purpose",
+          "text": "Friends revived; timeline recovered after the completed Namek visit."
         },
         {
-          "label": "Namek exit",
-          "value": "92% · 19 June"
+          "title": "People involved",
+          "text": "Zero, Yamcha and Hercule"
         },
         {
-          "label": "Revived",
-          "value": "Krillin, Roshi, Tien and Chiaotzu"
+          "title": "Progress",
+          "text": "Yamcha’s native participation allowed the Raditz fixed-point rewrite without an immediate forced branch. Initial integrity readings were 55% after Raditz, 50% after revival and 48% after further advice. A later Namek visit ended at 92%; current recovery is 100% with no new interference. Their friends’ Yardrat expedition persists. Earlier assurances of guaranteed Android victory or permanent Buu absence are withdrawn; later outcomes require their own causal review.",
+          "facts": [
+            {
+              "label": "Latest reading",
+              "value": "100% · 28 June, 11:30 · Fresh check"
+            },
+            {
+              "label": "Namek exit",
+              "value": "92% · 19 June"
+            },
+            {
+              "label": "Revived",
+              "value": "Krillin, Roshi, Tien and Chiaotzu"
+            }
+          ]
+        },
+        {
+          "title": "Dependencies",
+          "text": "Departure remains unbooked."
         }
       ],
-      "details": "Yamcha’s native participation allowed the Raditz fixed-point rewrite without an immediate forced branch. Initial integrity readings were 55% after Raditz, 50% after revival and 48% after further advice. A later Namek visit ended at 92%; current recovery is 100% with no new interference. Their friends’ Yardrat expedition persists. Earlier assurances of guaranteed Android victory or permanent Buu absence are withdrawn; later outcomes require their own causal review."
+      "history": [
+        "s130",
+        "s135",
+        "s141",
+        "s240"
+      ]
     },
     {
       "id": "future-training",
       "title": "Namek and Yardrat training",
       "summary": "Namek complete; Yardrat visit duration awaits confirmation.",
       "status": "Yardrat planning",
-      "details": "Both travellers received Guru’s help and completed four weeks with Nail. Back in Conton, they waited for restoration and continued service and training. Hercule now offers entry after their friends arrive on Yardrat; a stay of a few months is under discussion. No portal, booking or lessons enacted."
+      "nextStep": "Confirm how many months to spend on Yardrat.",
+      "completed": false,
+      "sections": [
+        {
+          "title": "Purpose",
+          "text": "Namek complete; Yardrat visit duration awaits confirmation."
+        },
+        {
+          "title": "People involved",
+          "text": "Zero, Yamcha and Hercule"
+        },
+        {
+          "title": "Progress",
+          "text": "Both travellers received Guru’s help and completed four weeks with Nail. Back in Conton, they waited for restoration and continued service and training. Hercule now offers entry after their friends arrive on Yardrat; a stay of a few months is under discussion. No portal, booking or lessons enacted."
+        },
+        {
+          "title": "Dependencies",
+          "text": "Entry is proposed after the native friends arrive."
+        }
+      ],
+      "history": [
+        "s212",
+        "s214",
+        "s240"
+      ]
     },
     {
       "id": "namek-recruitment-incident",
       "title": "TL-619 · Recruitment interrupted",
       "summary": "Nappa defeated; all three Patrollers returned, but Turles and Nappa escaped.",
       "status": "Complete · Restoration monitored",
-      "details": "Jeice and Burter did not join them. Their local scouters did report the powerful outsiders; Frieza ordered a search but did not personally leave his protected course. Ginyu/Goku, Frieza/Goku, evacuation and Namek’s destruction remained intact in the reviewed history. Integrity was 68% at the 22 April debrief, not a fresh current reading. No forced branch."
+      "nextStep": "Mission complete; later restoration remains monitored.",
+      "completed": true,
+      "sections": [
+        {
+          "title": "Purpose",
+          "text": "Nappa defeated; all three Patrollers returned, but Turles and Nappa escaped."
+        },
+        {
+          "title": "People involved",
+          "text": "Zero, Vegeta, Yamcha and dispatch"
+        },
+        {
+          "title": "Progress",
+          "text": "Jeice and Burter did not join them. Their local scouters did report the powerful outsiders; Frieza ordered a search but did not personally leave his protected course. Ginyu/Goku, Frieza/Goku, evacuation and Namek’s destruction remained intact in the reviewed history. Integrity was 68% at the 22 April debrief, not a fresh current reading. No forced branch."
+        },
+        {
+          "title": "Dependencies",
+          "text": "The 68% integrity reading is historical."
+        }
+      ],
+      "history": [
+        "s156",
+        "s177",
+        "s181",
+        "s185"
+      ]
     },
     {
       "id": "integration-wish",
       "title": "A compatible set",
       "summary": "Two compatible Dragon Balls secured toward the intended integration wish.",
       "status": "2 of 7",
-      "details": "The Four-Star and Two-Star Balls of TP-RS-001 are stored in Room 214. The other five are not reserved. Chronoa offered help with wording; no wish or completed integration. Guru’s release leaves the attachment and seal unchanged."
+      "nextStep": "Collect the five remaining compatible balls.",
+      "completed": false,
+      "sections": [
+        {
+          "title": "Purpose",
+          "text": "Two compatible Dragon Balls secured toward the intended integration wish."
+        },
+        {
+          "title": "People involved",
+          "text": "Zero and Chronoa"
+        },
+        {
+          "title": "Progress",
+          "text": "The Four-Star and Two-Star Balls of TP-RS-001 are stored in Room 214. The other five are not reserved. Chronoa offered help with wording; no wish or completed integration. Guru’s release leaves the attachment and seal unchanged."
+        },
+        {
+          "title": "Dependencies",
+          "text": "The set is incomplete; wording help is offered, no wish enacted."
+        }
+      ],
+      "history": [
+        "s191",
+        "s192",
+        "s197"
+      ]
     },
     {
       "id": "quarry-investigation",
       "title": "Brask and Rivet · Transport investigation",
       "summary": "Prisoners and cargo secured; transport operator remains unidentified.",
       "status": "Open investigation",
-      "details": "Their shuttle is an ordinary freight vessel. Logs identify a rendezvous 50,000 kilometres beyond the Moon and a five-minute return booking that expired unused. The transponder identifies a customer; it does not create a passage. Initial comparison with other seizures found no confirmed operator. Both prisoners refuse cooperation; further evidence is needed."
+      "nextStep": "Find independent evidence identifying the passage operator.",
+      "completed": false,
+      "sections": [
+        {
+          "title": "Purpose",
+          "text": "Prisoners and cargo secured; transport operator remains unidentified."
+        },
+        {
+          "title": "People involved",
+          "text": "Patrol investigators, Brask and Rivet"
+        },
+        {
+          "title": "Progress",
+          "text": "Their shuttle is an ordinary freight vessel. Logs identify a rendezvous 50,000 kilometres beyond the Moon and a five-minute return booking that expired unused. The transponder identifies a customer; it does not create a passage. Initial comparison with other seizures found no confirmed operator. Both prisoners refuse cooperation; further evidence is needed."
+        },
+        {
+          "title": "Dependencies",
+          "text": "Both prisoners refuse cooperation."
+        }
+      ],
+      "history": [
+        "s231",
+        "s233",
+        "s234"
+      ]
     },
     {
       "id": "yamcha-alpha-project",
       "title": "Yamcha · Alpha training",
       "summary": "Investigating a form achieved by other Yamchas.",
       "status": "Training project · Not unlocked",
-      "details": "Yamcha is pursuing control and his own Kaioken practice while seeking an Alpha-capable instructor. Krillin passed the inquiry to his contacts; no teacher or appointment is confirmed."
+      "nextStep": "Find an Alpha-capable instructor.",
+      "completed": false,
+      "sections": [
+        {
+          "title": "Purpose",
+          "text": "Investigating a form achieved by other Yamchas."
+        },
+        {
+          "title": "People involved",
+          "text": "Yamcha and Krillin"
+        },
+        {
+          "title": "Progress",
+          "text": "Yamcha is pursuing control and his own Kaioken practice while seeking an Alpha-capable instructor. Krillin passed the inquiry to his contacts; no teacher or appointment is confirmed."
+        },
+        {
+          "title": "Dependencies",
+          "text": "No teacher, appointment or Alpha unlock is confirmed."
+        }
+      ],
+      "history": [
+        "s237",
+        "s238"
+      ]
     }
   ],
   "events": [

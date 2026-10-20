@@ -163,7 +163,7 @@
       dialog.addEventListener('close', () => document.querySelector('[data-power-details]')?.focus({preventScroll:true}));
     }
     const rows = [{name:'Base',multiplier:'1'},...unlockedForms()];
-    dialog.innerHTML = `<div class="dialog-top"><span class="eyebrow">${escape(data.character.name)} / POWER</span><button class="icon-button close-dialog" aria-label="Close power details" autofocus>×</button></div><h2 id="power-dialog-title">Power levels</h2><p>Calculated ceilings from your recorded base; availability and control are listed separately.</p><dl class="power-level-list">${rows.map(f=>`<div><dt>${escape(f.name)} <span>×${escape(f.multiplier)}</span>${f.status ? `<small class="form-status">${escape(f.status)}</small>` : ''}</dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl>${rows.length===1 ? '<p>No transformations unlocked yet.</p>' : ''}<p class="power-reading-note">${escape(data.character.powerReading || '')}</p>`;
+    dialog.innerHTML = `<div class="dialog-top"><span class="eyebrow">${escape(data.character.name)} / POWER</span><button class="icon-button close-dialog" aria-label="Close power details" autofocus>×</button></div><h2 id="power-dialog-title">Power levels</h2><p>Calculated ceilings from your recorded base; availability and control are listed separately.</p><dl class="power-level-list">${rows.map(f=>`<div><dt>${escape(f.name)} <span>×${escape(f.multiplier)}</span>${f.status ? `<small class="form-status">${escape(f.status)}</small>` : ''}</dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl>${rows.length===1 ? '<p>No transformations unlocked yet.</p>' : ''}<p class="power-reading-note">${escape(data.character.powerReading || '')}</p>${data.character.powerHistory ? `<details class="record-history"><summary>Power development</summary><p>First reading: ${escape(exactPower(data.character.initialPower))}.</p><p>${escape(data.character.powerHistory)}</p></details>` : ''}`;
     dialog.showModal();
   }
   function pageHeader(number, title, description) {
@@ -230,10 +230,27 @@
     event.preventDefault(); changeGallery(control,event.key==='ArrowLeft'?-1:1);
   });
   function records(items, kind='') {
+    if (kind === 'people' || kind === 'projects') return items.map(r => worldRecord(r,kind)).join('');
     return items.map(r => {
       const gallery = ['people','places'].includes(kind) ? recordGallery(r,kind) : '';
       return `<article class="record" id="record-${escape(r.id)}" tabindex="-1">${r.status || r.date ? `<div class="record-meta">${escape([r.status,r.date].filter(Boolean).join(' / '))}</div>` : ''}<h3>${escape(r.title)}</h3><p>${escape(r.summary || '')}</p>${Array.isArray(r.facts) && r.facts.length ? `<dl class="definition-grid">${r.facts.map(f => definition(f.label,f.value,f.note)).join('')}</dl>` : ''}${r.details || gallery ? `<div class="detail-list record-details"><details data-detail-key="${escape(r.id)}"><summary>Details</summary>${r.details ? `<p>${escape(r.details)}</p>` : ''}${gallery}</details></div>` : ''}</article>`;
     }).join('');
+  }
+  function recordSections(record, kind) {
+    const placeOrder=['Description','Location & access','Current circumstances'];
+    const ordered=kind==='places' ? (record.sections || []).slice().sort((a,b)=>placeOrder.indexOf(a.title)-placeOrder.indexOf(b.title)) : (record.sections || []);
+    const sections = ordered.map(s => {
+      const gallery = (kind==='people' && s.title==='Identity & appearance') || (kind==='places' && s.title.startsWith('Description')) ? recordGallery(record,kind) : '';
+      return `<section class="content-section"><h4>${escape(s.title)}</h4>${s.text ? `<p>${escape(s.text)}</p>` : ''}${s.facts?.length ? `<dl class="definition-grid">${s.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>` : ''}${gallery}</section>`;
+    }).join('');
+    return sections + (record.visitRecord ? `<details class="record-history"><summary>Visits</summary><p>${escape(record.visitRecord)}</p></details>` : '') + historyLinks(record.history,kind==='people'?'Encounters':kind==='places'?'Visits':'Milestones');
+  }
+  function historyLinks(ids, title='Training history') {
+    const events=(ids || []).map(id=>data.events.find(e=>e.id===id)).filter(Boolean);
+    return events.length ? `<details class="record-history"><summary>${escape(title)}</summary><ol>${events.map(e=>`<li><a href="#chronicle/${escape(e.id)}">${escape(e.title)}</a><small>${escape(e.date || '')}</small></li>`).join('')}</ol></details>` : '';
+  }
+  function worldRecord(r,kind) {
+    return `<article class="record world-record" id="record-${escape(r.id)}" tabindex="-1"><div class="record-meta">${escape(r.status || '')}</div><h3>${escape(r.title)}</h3>${r.context ? `<div class="record-context">${escape(r.context)}</div>`:''}<p>${escape(kind==='projects' ? r.nextStep : r.summary)}</p><div class="detail-list record-details"><details data-detail-key="${escape(r.id)}"><summary>Details</summary>${recordSections(r,kind)}</details></div></article>`;
   }
   function overview() {
     const entries = [
@@ -247,18 +264,29 @@
   }
   function character() {
     const c=data.character;
-    return pageHeader('01','Character','Your place in the story.')+`<div class="character-layout">${portraitPanel()}<div class="character-info"><div class="player-banner"><span class="eyebrow">${data.started ? 'YOUR PROTAGONIST' : 'CHARACTER SETUP'}</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'PATROL TRAINEE' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS${Number.isInteger(c.ageMonths) ? ` · ${escape(c.ageMonths)} MONTHS` : ''}</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div>${present(c.battlePower) ? `<section class="power-panel" aria-label="Current battle power"><div><button class="power-readout" data-power-details aria-haspopup="dialog" aria-label="Power level ${escape(exactPower(c.battlePower))}. View exact base and unlocked forms"><span class="eyebrow">POWER LEVEL</span><strong>${escape(compactPower(c.battlePower))}</strong></button><span>${escape(c.powerReading)}</span></div><div><span class="status-stamp">${escape(c.fieldStatus || 'SUPERVISED TRAINING')}</span><p>${escape(c.condition)}</p></div></section>` : ''}<section class="panel identity-panel"><h3>Identity & background</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Your discovered identity and appearance will be recorded here.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Your character record will grow with the story.')}${detail('Backstory',c.backstory,'No backstory has been recorded here.')}${detail('Arrival & new identity',c.arrival,'No arrival has been recorded yet.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'Known information and discovered limits will appear here.')}</div></section></div></div>`;
+    return pageHeader('01','Character','Your place in the story.')+`<div class="character-layout">${portraitPanel()}<div class="character-info"><div class="player-banner"><span class="eyebrow">${data.started ? 'YOUR PROTAGONIST' : 'CHARACTER SETUP'}</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'PATROL TRAINEE' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS${Number.isInteger(c.ageMonths) ? ` · ${escape(c.ageMonths)} MONTHS` : ''}</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div>${present(c.battlePower) ? `<section class="power-panel" aria-label="Current Power Level"><div><button class="power-readout" data-power-details aria-haspopup="dialog" aria-label="Power level ${escape(exactPower(c.battlePower))}. View exact base and unlocked forms"><span class="eyebrow">POWER LEVEL</span><strong>${escape(compactPower(c.battlePower))}</strong></button><span>${escape(c.powerReading)}</span></div><div><span class="status-stamp">${escape(c.fieldStatus || 'SUPERVISED TRAINING')}</span><p>${escape(c.condition)}</p></div></section>` : ''}<section class="panel identity-panel"><h3>Identity & background</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Your discovered identity and appearance will be recorded here.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Your character record will grow with the story.')}${detail('Backstory',c.backstory,'No backstory has been recorded here.')}${detail('Arrival & new identity',c.arrival,'No arrival has been recorded yet.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'Known information and discovered limits will appear here.')}</div></section></div></div>`;
   }
   function abilities() {
-    // Illustrated slots are opt-in for signature moves and transformations, not fundamentals.
-    const techniques = data.abilities.filter(r => ['signature-technique','transformation'].includes(r.abilityType) && safePortrait(r.artwork));
-    const slots = Array.from({length:Math.max(3,techniques.length)}, (_,i) => {
-      const r = techniques[i];
-      if (!r) return '<div class="ability-slot is-empty" role="img" aria-label="Empty ability slot"><span class="ability-slot-art" aria-hidden="true">✦</span></div>';
-      const art = safePortrait(r.artwork);
-      return `<button class="ability-slot" data-ability="${escape(r.id)}" aria-haspopup="dialog" aria-label="About ${escape(r.title)}"><span class="ability-slot-art"><span aria-hidden="true">✦</span>${art ? `<img class="ability-image" src="${escape(art)}" alt="${escape(r.artworkAlt || r.title)}" loading="lazy">` : ''}</span><span class="ability-slot-name">${escape(r.title)}</span></button>`;
-    }).join('');
-    return pageHeader('03','Abilities','Find your fighting spirit.')+'<nav class="record-jumps"><a href="#scale">Approved power reference</a></nav>'+`<div class="loadout-screen"><section class="panel main-panel">${data.abilities.length ? records(data.abilities) : empty('abilities','Discover what you can do.','Known abilities and demonstrated skills will appear here as you discover them.')}</section><aside class="side-note"><span class="giant-kanji" aria-hidden="true">気</span><span class="eyebrow">POWER IS ONLY THE BEGINNING</span><h2 class="ability-motto"><span>Strength</span> <span>Control</span> <span>Resolve</span></h2><p>${techniques.length ? 'Signature techniques & transformations.' : 'Signature techniques and transformations will appear here as you unlock them.'}</p><div class="ability-slots" role="group" aria-label="Signature techniques and transformations">${slots}</div></aside></div>`;
+    return pageHeader('03','Abilities','Strength. Control. Resolve.')+
+      '<nav class="record-jumps"><a href="#character">Power Level & forms</a><a href="#scale">Approved power reference</a></nav>'+
+      `<div class="ability-grid">${data.abilities.map(r=>`<button class="ability-card" id="record-${escape(r.id)}" data-ability="${escape(r.id)}" aria-haspopup="dialog"><span class="ability-card-art">${safePortrait(r.artwork)?`<img class="ability-image" src="${escape(safePortrait(r.artwork))}" alt="${escape(r.artworkAlt || r.title)}" loading="lazy">`:''}</span><span class="ability-card-copy"><span class="ability-proficiency">${escape(r.status)}</span><strong>${escape(r.title)}</strong><span class="ability-card-description">${escape(r.summary)}</span><span class="ability-card-more" aria-hidden="true">View ability <b>›</b></span></span></button>`).join('')}</div>`;
+  }
+  function showAbility(id) {
+    const ability=data.abilities.find(r=>r.id===id);
+    if(!ability) return;
+    let dialog=$('ability-dialog');
+    if(!dialog) {
+      dialog=document.createElement('dialog');dialog.id='ability-dialog';dialog.className='ability-dialog';
+      dialog.setAttribute('aria-labelledby','ability-dialog-title');document.body.append(dialog);
+      dialog.addEventListener('close',()=>document.querySelector(`[data-ability="${dialog.dataset.ability}"]`)?.focus({preventScroll:true}));
+      dialog.addEventListener('click',e=>{if(e.target.closest('a[href^="#"]')) dialog.close();});
+    }
+    dialog.dataset.ability=id;
+    const forms=unlockedForms().filter(f=>(ability.formIds || []).includes(f.id));
+    const block=(title,text)=>text?`<section class="content-section"><h3>${title}</h3><p>${escape(text)}</p></section>`:'';
+    const history=ability.trainingRecord;
+    dialog.innerHTML=`<div class="dialog-top"><span class="eyebrow">ABILITY / ${escape(ability.status)}</span><button class="icon-button close-dialog" aria-label="Close ability details" autofocus>×</button></div><div class="ability-detail-heading"><img src="${escape(safePortrait(ability.artwork))}" alt=""><h2 id="ability-dialog-title">${escape(ability.title)}</h2></div>${block('Effect',ability.effect)}${forms.length?`<section class="content-section"><h3>Stages & power</h3><dl class="power-level-list">${forms.map(f=>`<div><dt>${escape(f.name)}<span>×${escape(f.multiplier)}</span></dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl><p>Calculated from the current base of ${escape(exactPower(data.character.battlePower))}. Control is described below.</p></section>`:''}${block('Appearance',ability.appearance)}${block('Control & compatibility',ability.control)}<section class="content-section"><h3>Development</h3><p>${escape(ability.development)}</p>${historyLinks(ability.history)}${history?`<details class="record-history"><summary>Detailed training record · ${escape(history.asOf)}</summary><p>${escape(history.text)}</p>${history.facts?.length?`<dl class="definition-grid">${history.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>`:''}</details>`:''}</section>`;
+    dialog.showModal();
   }
   function scalePage() {
     if (!scale) return pageHeader('03','Power reference','Approved campaign calculations.')+'<section class="panel"><p>The reference could not be loaded.</p><a class="quick-link" href="./POWER-SCALE.md">Read the full reference</a></section>';
@@ -282,13 +310,17 @@
 
   function placeTree(parentId = null) {
     return data.places.filter(p => (p.parentId || null) === parentId).map(p => {
-      const children=placeTree(p.id), gallery=recordGallery(p,'places');
-      return `<details class="place-node" id="record-${escape(p.id)}" data-place-id="${escape(p.id)}" data-detail-key="${escape(p.id)}" tabindex="-1" ${openPlaces.has(p.id)?'open':''}><summary>${escape(p.title)}</summary><div class="place-content">${p.status || p.date ? `<div class="record-meta">${escape([p.status,p.date].filter(Boolean).join(' / '))}</div>` : ''}<p>${escape(p.summary || '')}</p>${p.facts?.length ? `<dl class="definition-grid">${p.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>` : ''}${p.details ? `<p>${escape(p.details)}</p>` : ''}${gallery}${children ? `<div class="place-children">${children}</div>` : ''}</div></details>`;
+      const children=placeTree(p.id);
+      return `<details class="place-node" id="record-${escape(p.id)}" data-place-id="${escape(p.id)}" data-detail-key="${escape(p.id)}" tabindex="-1" ${openPlaces.has(p.id)?'open':''}><summary><span><strong>${escape(p.title)}</strong><small>${escape(p.context || '')}</small><span class="place-purpose">${escape(p.summary || '')}</span></span></summary><div class="place-content">${p.status || p.date ? `<div class="record-meta">${escape([p.status,p.date].filter(Boolean).join(' / '))}</div>` : ''}${recordSections(p,'places')}${children ? `<div class="place-children">${children}</div>` : ''}</div></details>`;
     }).join('');
+  }
+  function projects() {
+    const active=data.projects.filter(r=>!r.completed),completed=data.projects.filter(r=>r.completed);
+    return records(active,'projects')+(completed.length?`<details class="completed-projects" data-detail-key="completed-projects"><summary>Completed · ${completed.length}</summary>${records(completed,'projects')}</details>`:'');
   }
 
   function world() {
-    return pageHeader('05','World','Follow your curiosity.')+`<section class="world-stage"><div class="world-intro"><span class="eyebrow">${data.started ? 'YOUR CURRENT LOCATION' : 'NEXT STOP / ANOTHER LIFE'}</span><h2>${escape(data.story.location || 'Somewhere extraordinary.')}</h2><p>${data.story.location ? 'Your discoveries, connections and ongoing projects are gathered below.' : 'Your surroundings and discoveries will take shape here as the adventure unfolds.'}</p><dl class="definition-grid">${definition('Era / continuity',data.story.era)}${definition('Current date',data.story.date)}</dl></div></section><nav class="record-jumps" aria-label="World categories"><a href="#world">All</a><a href="#world/people">People <span>${data.people.length}</span></a><a href="#world/places">Places <span>${data.places.length}</span></a><a href="#world/projects">Ongoing <span>${data.projects.length}</span></a></nav><div class="world-groups"><section class="panel" id="record-people" tabindex="-1"><h2>People</h2>${data.people.length ? records(data.people,'people') : '<p>Friends, rivals, strangers.<br>Your first encounter is still ahead.</p>'}</section><section class="panel" id="record-places" tabindex="-1"><h2>Places</h2>${data.places.length ? placeTree() : '<p>A world waiting to unfold.<br>No discoveries recorded yet.</p>'}</section><section class="panel" id="record-projects" tabindex="-1"><h2>Ongoing</h2>${data.projects.length ? records(data.projects) : '<p>Big ideas start somewhere.<br>No projects started yet.</p>'}</section></div>`;
+    return pageHeader('05','World','Follow your curiosity.')+`<section class="world-stage"><div class="world-intro"><span class="eyebrow">${data.started ? 'YOUR CURRENT LOCATION' : 'NEXT STOP / ANOTHER LIFE'}</span><h2>${escape(data.story.location || 'Somewhere extraordinary.')}</h2><p>${data.story.location ? 'Your discoveries, connections and ongoing projects are gathered below.' : 'Your surroundings and discoveries will take shape here as the adventure unfolds.'}</p><dl class="definition-grid">${definition('Era / continuity',data.story.era)}${definition('Current date',data.story.date)}</dl></div></section><nav class="record-jumps" aria-label="World categories"><a href="#world">All</a><a href="#world/people">People <span>${data.people.length}</span></a><a href="#world/places">Places <span>${data.places.length}</span></a><a href="#world/projects">Ongoing <span>${data.projects.length}</span></a></nav><div class="world-groups"><section class="panel" id="record-people" tabindex="-1"><h2>People</h2>${data.people.length ? records(data.people,'people') : '<p>Friends, rivals, strangers.<br>Your first encounter is still ahead.</p>'}</section><section class="panel" id="record-places" tabindex="-1"><h2>Places</h2>${data.places.length ? placeTree() : '<p>A world waiting to unfold.<br>No discoveries recorded yet.</p>'}</section><section class="panel" id="record-projects" tabindex="-1"><h2>Ongoing</h2>${data.projects.length ? projects() : '<p>Big ideas start somewhere.<br>No projects started yet.</p>'}</section></div>`;
   }
   function chronicle() {
     return pageHeader('02','Story','Your journey, from the latest moment to the first.')+`<div class="story-screen"><section class="chapter-cover"><span class="eyebrow">${data.started ? 'THE JOURNEY SO FAR' : 'YOUR FIRST SAGA'}</span><img src="./dragon-ball.svg?v=${release}" width="130" height="130" alt="One-star Dragon Ball"><h2>${data.started ? 'The story<br>continues.' : 'Beyond<br>the familiar.'}</h2><span class="chapter-tag">${data.started ? escape(data.phase) : 'CHAPTER ONE / NOT STARTED'}</span></section><section class="story-content">${data.started ? `<div class="pending-choice"><span class="eyebrow">CURRENT CHECKPOINT / ${escape(data.story.date)}</span><p>${escape(data.story.pendingChoice)}</p></div><nav class="record-jumps" aria-label="Journal navigation"><a href="#chronicle/${escape(data.events.at(-1)?.id || '')}">Latest entry</a><a href="#chronicle/${escape(data.events[0]?.id || '')}">The beginning</a><span>${data.events.length} entries · newest first</span></nav>` : ''}${data.events.length ? records([...data.events].reverse()) : `<span class="eyebrow">PROLOGUE / CHARACTER CREATION</span><h2>The first step<br>is yours.</h2><p>Your journey has yet to begin. This journal will follow what you experience and discover.</p><div class="story-progress"><span class="complete">Name, age & height</span><span>Character & artwork</span><span>Opening setting</span></div><a class="primary" href="#character">Meet Zero ${icon('arrow')}</a><p class="subtle-note">No opening scene has taken place yet.</p>`}</section></div>`;
@@ -336,6 +368,7 @@
       const record = $('record-'+recordId);
       if (record) { for(let ancestor=record.parentElement;ancestor;ancestor=ancestor.parentElement) if(ancestor.matches('details')) { ancestor.open=true; if(ancestor.dataset.placeId) openPlaces.add(ancestor.dataset.placeId); } if(record.matches('details')) record.open=true; record.scrollIntoView({block:'center'}); record.focus({preventScroll:true}); }
     }
+    if(route==='abilities' && data.abilities.some(a=>a.id===recordId)) showAbility(recordId);
     if(preserveView) window.scrollTo({left:scroll.x,top:scroll.y,behavior:'instant'});
   }
   function bindPortraitError() {
@@ -380,21 +413,8 @@
     if (event.target.closest('.close-dialog')) event.target.closest('dialog').close();
     const result = event.target.closest('.search-result');
     if (result) { $('search-dialog').close(); hideSearch(); $('search').value=''; if (result.hash === location.hash) render(true); }
-    const abilityButton = event.target.closest('[data-ability]');
-    if (abilityButton) {
-      const ability = data.abilities.find(r => r.id === abilityButton.dataset.ability);
-      if (!ability) return;
-      let dialog = $('ability-dialog');
-      if (!dialog) {
-        dialog = document.createElement('dialog');
-        dialog.id = 'ability-dialog';
-        dialog.className = 'ability-dialog';
-        dialog.setAttribute('aria-labelledby','ability-dialog-title');
-        document.body.append(dialog);
-      }
-      dialog.innerHTML = `<div class="dialog-top"><span class="eyebrow">ABILITY / ${escape(ability.status || 'KNOWN')}</span><button class="icon-button close-dialog" aria-label="Close ability details" autofocus>×</button></div><h2 id="ability-dialog-title">${escape(ability.title)}</h2><p class="ability-summary">${escape(ability.summary || '')}</p>${ability.details ? `<div class="ability-explanation"><h3>How it works</h3><p>${escape(ability.details)}</p></div>` : ''}${Array.isArray(ability.facts) && ability.facts.length ? `<dl class="definition-grid">${ability.facts.map(f => definition(f.label,f.value,f.note)).join('')}</dl>` : ''}`;
-      dialog.showModal();
-    }
+    const abilityButton = event.target.closest('button[data-ability]');
+    if (abilityButton) showAbility(abilityButton.dataset.ability);
     const galleryMode = event.target.closest('[data-gallery-mode]');
     if (galleryMode) changeGallery(galleryMode,0,galleryMode.dataset.galleryMode);
     const galleryCycle = event.target.closest('[data-gallery-cycle]');
