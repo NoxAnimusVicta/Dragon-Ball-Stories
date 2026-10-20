@@ -1,6 +1,6 @@
 # Corrections and operative continuity
 
-Reviewed 16 October 2026 through corrected S206. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
+Reviewed 20 October 2026 through S240 and the approved scale. Dated publication rows describe their historical snapshots. Corrections below affect already known events or narration; future plans and private causes are excluded. Original exchanges remain in the private exact archive, except an explicitly withdrawn scene replaced at the player’s request (C016). These corrections advance no story time.
 
 | Record | Effective point | Correction |
 | --- | --- | --- |
@@ -53,4 +53,8 @@ Uncertain facts remain explicitly unknown. A correction to narration is not perm
 
 The unsupported ×2 adjudication and 11,583 scan are replaced by the accepted individual ×12 result: exact pre-unlock 5,791.419000842535 becomes 69,497.028010110420, displayed **69,497**. This is one release at S205, measured in corrected S206; no second gain or time advance. Calculated inactive totals: Kaioken **138,994**, Dark Factor Sealed Channel **694,970**, Uncontrolled Dark Factor **1,042,455**. Seal, control and knowledge boundaries are unchanged.
 
-Krillin’s often-used ×8.7 comparison is approximate, not a verified immediate before/after measurement or a universal Guru constant. The earlier ×8.7 proposal for Zero was not enacted. Original exact scenes stay archived; corrected S206 controls. Yamcha and the other fighters have not yet received their releases.
+Krillin’s often-used ×8.7 comparison is approximate, not a verified immediate before/after measurement or a universal Guru constant. The earlier ×8.7 proposal for Zero was not enacted. Original exact scenes stay archived; corrected S206 controls. At the S206 endpoint, Yamcha and the other fighters had not yet received their releases; those subsequently occurred in S207–S209.
+
+## S240 publication reconciliation
+
+The approved scale in POWER-SCALE.md supersedes rejected numerical trials for its named cases. Its deliberate secondary-story adaptations are identified there; no live custom-character unlock occurs. S218 uses the hostile refusal replacement, not the withdrawn negotiated-departure offer. TL-503’s earlier guaranteed Android victory and permanent Buu absence are withdrawn; the current review confirms the Yardrat expedition without inventing later outcomes. Yamcha has only the cross-shaped cheek scar, never an eye scar. His assessed Kaioken output rounds to 60,103 from 60,102.9191575; 60,102 was truncation, not a separate reading.

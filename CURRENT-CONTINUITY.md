@@ -3,22 +3,22 @@
 Generated from campaign.json. Edit that authoritative source, then run build.py.
 
 - Status: Story in progress.
-- Coverage: S206 corrected · Guru potential release and scouter confirmation · 22 May, Age 854 · 15:47 Conton.
+- Coverage: S240 · 28 June, Age 854 · 11:30 · Morning training and fresh timeline review.
 - Role: Supervised Time Patrol trainee.
-- Current ordinary base (campaign record): 69497.
-- Power record status: Measured · 22 May, Age 854 · Guru’s home, TL-503 · Form totals calculated.
-- Condition: Base; all forms and Kaioken inactive, seal closed and intact. Uninjured. Outfit, cape and red scouter worn; communicator beneath the collar. Both Dragon Balls stored in Room 214; travel bag aboard Kami’s ship. No Senzu carried.
-- Protagonist: Zero, age 27 years, 10 months, height 5′6″ (167.64 cm).
-- Story date: Age 761 · Namek daylight / 22 May, Age 854 · 15:47 Conton.
-- Location: TL-503 · Namek · Grand Elder’s home · Upper audience chamber.
-- Immediate situation: Guru has released Zero’s own potential while the seal remains closed. His scouter reads 69,497. Nail has brought Yamcha, Krillin, Tien, Chiaotzu and the village elder back inside; Bulma remains at the landing ship. The group sensed the increase but has not heard the numerical reading.
-- Pending choice: Yamcha asks what the scouter says. Guru has offered Chronoa’s cased scroll back and invited Yamcha forward; his potential has not yet been assessed or released.
-- Latest recorded event: s206.
+- Current ordinary base (campaign record): 79807.
+- Power record status: Measured · 28 June, Age 854 · After morning training · Form totals calculated.
+- Condition: All forms and Kaioken inactive; seal closed and intact. Tired and mildly sore after morning training, no serious injury. Main outfit, cape and scouter worn; communicator under collar. Travel bag and protected scroll in Room 214; two Dragon Balls stored there. No Senzu carried.
+- Protagonist: Zero, age 27 years, 11 months, height 5′6″ (167.64 cm).
+- Story date: 28 June, Age 854 · 11:30.
+- Location: Conton City · Hercule’s office.
+- Immediate situation: Morning training with Vegeta is complete. Zero and Yamcha are reviewing their next visit with Hercule: TL-503 has recovered to 100%, and their friends’ Yardrat expedition remains in its history.
+- Pending choice: Hercule asks whether the Yardrat visit will still last a few months. Duration awaits confirmation; no departure is booked.
+- Latest recorded event: s240.
 - Ability records: 12.
 - Possession records: 8.
 - Account records: 1.
-- Relationship records: 28.
-- Journal entries: 206.
-- Active/recorded projects: 8.
+- Relationship records: 30.
+- Journal entries: 240.
+- Active/recorded projects: 10.
 
 Empty collections mean no records yet, not zero resources or incapability. Details live in campaign.json. This public checkpoint does not replace the complete local transcript or private narrator state. Publication does not advance story time.

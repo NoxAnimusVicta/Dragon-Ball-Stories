@@ -1,33 +1,25 @@
 # Dragon Ball Stories
 
-A game-style home for Zero's Dragon Ball Isekai, inspired by Capsule Corp equipment and Dragon Ball adventure menus.
-
 [Open the companion](https://noxanimusvicta.github.io/Dragon-Ball-Stories/)
 
-## Current state
+Zero’s read-only Dragon Ball Isekai companion is current through **S240 · 28 June, Age 854 · 11:30**. Morning training is complete; Zero and Yamcha are in Hercule’s office discussing a Yardrat visit after TL-503’s recovery. No departure is booked.
 
-Records are current through **S196:24 April, Age854,09:55**. Zero and Yamcha are in Hercule’s Conton office reviewing a Namek-first training visit, followed by a separate Yardrat trip. TL-503 is freshly87%; the requested Namek stay length and departure remain pending. Both earlier missions are complete; their dated outcomes remain in the journal.
+The [current continuity](CURRENT-CONTINUITY.md) is generated from [campaign.json](campaign.json), which owns the current readings, belongings, skills and 240-entry journal. Earlier numbers in dated events remain historical. The [approved power scale](POWER-SCALE.md) contains the shared forms, fusion formula, all 24 counterpart cases, source differences and accepted scene adaptations. It is a reader reference, not a list of Zero’s unlocked abilities.
 
-Zero’s latest measured base is **5,213**. Yamcha’s latest assessed base is2,735; Vegeta’s is4million. All forms/techniques are inactive. Kaioken×2 works separately; combining it with the sealed channel failed. Zero’s first Dragon Ball is stored in Room214; no wish has been made. [Current continuity](CURRENT-CONTINUITY.md) is generated from the app data.
+## App sections
 
-The companion includes enacted character-known events and authorised timeline, current NPC power and TL-782 family references. Future plans and private causes remain outside the repository.
+Character, Story, Abilities, Inventory and World are reached from the main menu. Search, expandable records and exact power details work on phone and desktop. Abilities includes the approved scale reference; Inventory shows collected Dragon Balls and unspent commendations. World includes the established artwork for Yamcha, Vegeta, Brask, Rivet and Room 214. Browsing art does not activate a form or advance the story.
 
-## The app
+The app checks for published updates when opened or resumed and while visible, preserving your place. Internet access is required; there is no offline service worker, analytics or local character editor. Existing audio and motion preferences remain on your device.
 
-Six screens: main menu, character, story, abilities, inventory and world. An illustrated world, animated selections, keyboard navigation and optional menu sounds make the adventure fun to explore. Includes search, expandable records, a 196-entry journal with the newest moment first, World filters that display only the selected category, a power-level display with exact values and a full-height portrait prepared to cycle through unlocked forms. Forms cycles through Base, Dark Factor Sealed Channel and Uncontrolled Dark Factor; the power dialog also includes Kaioken×2 and calculates totals from the recorded base. Browsing art does not activate a form. Switch to Appearance history to tap through earlier approved portraits and see the visual progression to the current build, without visible capture dates. Vegeta’s Base and Wrathful artwork is available in his expanded World record. NPC and place archives appear only when approved art exists; future designs remain hidden. Empty archives stay hidden. The one-star Dragon Ball is used for the favicon and home-screen icon. Motion can be paused, and reduced-motion preferences are respected.
-
-The app is a published reference. Send character details and artwork through the chat; there are no device-local character edits or uploads. It checks for new app and story releases automatically when opened or resumed, and every minute while visible. Updates preserve your place and wait for open panels to close. It requires an internet connection and does not install an offline service worker. Open the latest version once to activate automatic updates on an older installation.
-
-## Maintaining records
+## Records and maintenance
 
 - [Start here](START-HERE.md)
 - [Narrator guide](NARRATOR-GUIDE.md)
 - [Campaign configuration](CAMPAIGN-CONFIG.md)
-- [Current continuity](CURRENT-CONTINUITY.md)
 - [Corrections](RETCONS.md)
-- [Maintenance and data format](MAINTENANCE.md)
-- [Artwork and design credits](CREDITS.md)
+- [Naming reference](NAMING-REFERENCE.md)
+- [Maintenance](MAINTENANCE.md)
+- [Credits](CREDITS.md)
 
-`campaign.json` is the authoritative public app data. GitHub Pages publishes `main / (root)`. Only the files in `public-manifest.json` belong in the publication set.
-
-Complete transcripts, narrator secrets, hidden rolls, credentials and private handovers remain outside this public repository. Everything committed here is publicly readable. Publication does not advance the story.
+GitHub Pages publishes `main / (root)`. Only manifest-listed public files belong here. Exact transcripts, secrets and unrevealed plans remain local. Authorised assessed NPC powers and the scale are reader references and do not grant Zero knowledge. Publication advances no story time.

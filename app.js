@@ -22,6 +22,7 @@
   const value = (v, fallback = 'Not yet recorded') => present(v) ? escape(v) : `<span class="unknown">${fallback}</span>`;
   const release = document.querySelector('meta[name="app-release"]')?.content || '';
   let data;
+  let scale;
   const openPlaces = new Set();
   let searchIndex = [];
   let portraitUrl = null;
@@ -81,7 +82,7 @@
   function compactPower(power) {
     const n = decimal(power);
     if (!n) return '—';
-    const units = [[24,'Septillion'],[21,'Sextillion'],[18,'Quintillion'],[15,'Quadrillion'],[12,'Trillion'],[9,'Billion'],[6,'Million']];
+    const units = [[33,'Decillion'],[30,'Nonillion'],[27,'Octillion'],[24,'Septillion'],[21,'Sextillion'],[18,'Quintillion'],[15,'Quadrillion'],[12,'Trillion'],[9,'Billion'],[6,'Million']];
     for (const [exponent,name] of units) {
       const divisor = 10n ** BigInt(exponent + n.scale);
       if (n.digits >= divisor) {
@@ -257,10 +258,21 @@
       const art = safePortrait(r.artwork);
       return `<button class="ability-slot" data-ability="${escape(r.id)}" aria-haspopup="dialog" aria-label="About ${escape(r.title)}"><span class="ability-slot-art"><span aria-hidden="true">✦</span>${art ? `<img class="ability-image" src="${escape(art)}" alt="${escape(r.artworkAlt || r.title)}" loading="lazy">` : ''}</span><span class="ability-slot-name">${escape(r.title)}</span></button>`;
     }).join('');
-    return pageHeader('03','Abilities','Find your fighting spirit.')+`<div class="loadout-screen"><section class="panel main-panel">${data.abilities.length ? records(data.abilities) : empty('abilities','Discover what you can do.','Known abilities and demonstrated skills will appear here as you discover them.')}</section><aside class="side-note"><span class="giant-kanji" aria-hidden="true">気</span><span class="eyebrow">POWER IS ONLY THE BEGINNING</span><h2 class="ability-motto"><span>Strength</span> <span>Control</span> <span>Resolve</span></h2><p>${techniques.length ? 'Signature techniques & transformations.' : 'Signature techniques and transformations will appear here as you unlock them.'}</p><div class="ability-slots" role="group" aria-label="Signature techniques and transformations">${slots}</div></aside></div>`;
+    return pageHeader('03','Abilities','Find your fighting spirit.')+'<nav class="record-jumps"><a href="#scale">Approved power reference</a></nav>'+`<div class="loadout-screen"><section class="panel main-panel">${data.abilities.length ? records(data.abilities) : empty('abilities','Discover what you can do.','Known abilities and demonstrated skills will appear here as you discover them.')}</section><aside class="side-note"><span class="giant-kanji" aria-hidden="true">気</span><span class="eyebrow">POWER IS ONLY THE BEGINNING</span><h2 class="ability-motto"><span>Strength</span> <span>Control</span> <span>Resolve</span></h2><p>${techniques.length ? 'Signature techniques & transformations.' : 'Signature techniques and transformations will appear here as you unlock them.'}</p><div class="ability-slots" role="group" aria-label="Signature techniques and transformations">${slots}</div></aside></div>`;
   }
+  function scalePage() {
+    if (!scale) return pageHeader('03','Power reference','Approved campaign calculations.')+'<section class="panel"><p>The reference could not be loaded.</p><a class="quick-link" href="./POWER-SCALE.md">Read the full reference</a></section>';
+    const number = v => decimal(v) ? compactPower(v) : String(v);
+    return pageHeader('03','Power reference','Reader reference · Not acquired abilities.')+`<nav class="record-jumps"><a href="#abilities">Your abilities</a><a href="./POWER-SCALE.md">Full rulings & sources</a></nav><section class="panel scale-reference"><h2>Fusion</h2><p>Base = 2 × (A × eligible factor A + B × eligible factor B). Then apply the fusion’s form. Kaioken and actual external supply multiply separately. Fusion-only unlocks do not enter the participants retroactively.</p><p>Approved campaign estimates and explicit story adaptations; original anime, manga and alternate counterparts remain separate. This reference grants Zero no new form.</p><details><summary>Shared form multipliers</summary><dl class="definition-grid">${Object.entries(scale.forms).map(([name,factor])=>definition(name,'×'+number(factor))).join('')}</dl></details><h2>24 encounter cases</h2>${scale.cases.map(c=>`<details id="record-scale-${c.id}" data-detail-key="scale-${c.id}"><summary>${c.id}. ${escape(c.name)} · ${escape(c.medium)}</summary><dl class="definition-grid">${definition('Ordinary participant A',number(c.a))}${definition('Ordinary participant B',number(c.b))}${definition('Eligible A',c.input_a+' · ×'+number(c.factor_a))}${definition('Eligible B',c.input_b+' · ×'+number(c.factor_b))}${definition('Fusion base',number(c.base))}${Object.entries(c.states).map(([form,power])=>definition(form,number(power),decimal(power)?exactPower(power):'Exact rational value')).join('')}</dl><p>${escape(c.note)}</p><p><strong>Wiki comparison:</strong> ${escape(c.wiki_comparison)}</p></details>`).join('')}<p>All 24 cases and 175 declared checks passed. Full connected encounter tables and campaign adaptations are in the linked reference.</p></section>`;
+  }
+  function rewardsPanel() {
+    const r=data.rewards;
+    if(!r) return '';
+    return `<section class="panel reward-panel" aria-label="Dragon Balls and commendations"><div><span class="eyebrow">${escape(r.set)}</span><h2>Dragon Balls · ${r.heldStars.length} of 7</h2><div class="reward-balls">${Array.from({length:7},(_,i)=>`<span class="reward-ball ${r.heldStars.includes(i+1)?'held':'missing'}" aria-label="${i+1}-Star: ${r.heldStars.includes(i+1)?'collected':'missing'}"><span aria-hidden="true">${'★'.repeat(i+1)}</span><small>${i+1}</small></span>`).join('')}</div><p>${escape(r.storage)}. ${r.wishMade?'Wish recorded.':'No wish made.'}</p></div><div><span class="eyebrow">UNSPENT COMMENDATIONS</span><strong class="balance">${r.unspentCommendations}</strong><p>Future awards appear here when earned.</p></div></section>`;
+  }
+
   function inventory() {
-    return pageHeader('04','Inventory','Pack for a life beyond the ordinary.')+`<div class="loadout-screen"><section class="panel main-panel">${data.inventory.length ? records(data.inventory) : empty('inventory','What comes with you?','Your known possessions will appear here once they are established in the story.')}</section><aside class="panel funds-panel"><div class="capsule-object" aria-hidden="true"><span>CAPSULE</span><b>CC</b></div><h2>Resources</h2>${data.accounts.length ? records(data.accounts) : '<span class="balance">—</span><p>No known funds have been recorded yet.</p>'}<span class="eyebrow">CARRIED · STORED · OWNED</span></aside></div>`;
+    return pageHeader('04','Inventory','Pack for a life beyond the ordinary.')+rewardsPanel()+`<div class="loadout-screen"><section class="panel main-panel">${data.inventory.length ? records(data.inventory) : empty('inventory','What comes with you?','Your known possessions will appear here once they are established in the story.')}</section><aside class="panel funds-panel"><div class="capsule-object" aria-hidden="true"><span>CAPSULE</span><b>CC</b></div><h2>Resources</h2>${data.accounts.length ? records(data.accounts) : '<span class="balance">—</span><p>No known funds have been recorded yet.</p>'}<span class="eyebrow">CARRIED · STORED · OWNED</span></aside></div>`;
   }
 
   function placeTree(parentId = null) {
@@ -271,12 +283,12 @@
   }
 
   function world() {
-    return pageHeader('05','World','Follow your curiosity.')+`<section class="world-stage"><div class="world-intro"><span class="eyebrow">${data.started ? 'YOUR CURRENT LOCATION' : 'NEXT STOP / ANOTHER LIFE'}</span><h2>${escape(data.story.location || 'Somewhere extraordinary.')}</h2><p>${data.story.location ? 'Your discoveries, connections and ongoing projects are gathered below.' : 'Your surroundings and discoveries will take shape here as the adventure unfolds.'}</p><dl class="definition-grid">${definition('Era / continuity',data.story.era)}${definition('Time since arrival',data.story.date)}</dl></div></section><nav class="record-jumps" aria-label="World categories"><a href="#world">All</a><a href="#world/people">People <span>${data.people.length}</span></a><a href="#world/places">Places <span>${data.places.length}</span></a><a href="#world/projects">Ongoing <span>${data.projects.length}</span></a></nav><div class="world-groups"><section class="panel" id="record-people" tabindex="-1"><h2>People</h2>${data.people.length ? records(data.people,'people') : '<p>Friends, rivals, strangers.<br>Your first encounter is still ahead.</p>'}</section><section class="panel" id="record-places" tabindex="-1"><h2>Places</h2>${data.places.length ? placeTree() : '<p>A world waiting to unfold.<br>No discoveries recorded yet.</p>'}</section><section class="panel" id="record-projects" tabindex="-1"><h2>Ongoing</h2>${data.projects.length ? records(data.projects) : '<p>Big ideas start somewhere.<br>No projects started yet.</p>'}</section></div>`;
+    return pageHeader('05','World','Follow your curiosity.')+`<section class="world-stage"><div class="world-intro"><span class="eyebrow">${data.started ? 'YOUR CURRENT LOCATION' : 'NEXT STOP / ANOTHER LIFE'}</span><h2>${escape(data.story.location || 'Somewhere extraordinary.')}</h2><p>${data.story.location ? 'Your discoveries, connections and ongoing projects are gathered below.' : 'Your surroundings and discoveries will take shape here as the adventure unfolds.'}</p><dl class="definition-grid">${definition('Era / continuity',data.story.era)}${definition('Current date',data.story.date)}</dl></div></section><nav class="record-jumps" aria-label="World categories"><a href="#world">All</a><a href="#world/people">People <span>${data.people.length}</span></a><a href="#world/places">Places <span>${data.places.length}</span></a><a href="#world/projects">Ongoing <span>${data.projects.length}</span></a></nav><div class="world-groups"><section class="panel" id="record-people" tabindex="-1"><h2>People</h2>${data.people.length ? records(data.people,'people') : '<p>Friends, rivals, strangers.<br>Your first encounter is still ahead.</p>'}</section><section class="panel" id="record-places" tabindex="-1"><h2>Places</h2>${data.places.length ? placeTree() : '<p>A world waiting to unfold.<br>No discoveries recorded yet.</p>'}</section><section class="panel" id="record-projects" tabindex="-1"><h2>Ongoing</h2>${data.projects.length ? records(data.projects) : '<p>Big ideas start somewhere.<br>No projects started yet.</p>'}</section></div>`;
   }
   function chronicle() {
     return pageHeader('02','Story','Your journey, from the latest moment to the first.')+`<div class="story-screen"><section class="chapter-cover"><span class="eyebrow">${data.started ? 'THE JOURNEY SO FAR' : 'YOUR FIRST SAGA'}</span><img src="./dragon-ball.svg?v=${release}" width="130" height="130" alt="One-star Dragon Ball"><h2>${data.started ? 'The story<br>continues.' : 'Beyond<br>the familiar.'}</h2><span class="chapter-tag">${data.started ? escape(data.phase) : 'CHAPTER ONE / NOT STARTED'}</span></section><section class="story-content">${data.started ? `<div class="pending-choice"><span class="eyebrow">CURRENT CHECKPOINT / ${escape(data.story.date)}</span><p>${escape(data.story.pendingChoice)}</p></div><nav class="record-jumps" aria-label="Journal navigation"><a href="#chronicle/${escape(data.events.at(-1)?.id || '')}">Latest entry</a><a href="#chronicle/${escape(data.events[0]?.id || '')}">The beginning</a><span>${data.events.length} entries · newest first</span></nav>` : ''}${data.events.length ? records([...data.events].reverse()) : `<span class="eyebrow">PROLOGUE / CHARACTER CREATION</span><h2>The first step<br>is yours.</h2><p>Your journey has yet to begin. This journal will follow what you experience and discover.</p><div class="story-progress"><span class="complete">Name, age & height</span><span>Character & artwork</span><span>Opening setting</span></div><a class="primary" href="#character">Meet Zero ${icon('arrow')}</a><p class="subtle-note">No opening scene has taken place yet.</p>`}</section></div>`;
   }
-  const pages = {overview,character,abilities,inventory,world,chronicle};
+  const pages = {overview,character,abilities,inventory,world,chronicle,scale:scalePage};
   function hideSearch() { $('search-results').hidden = true; $('search').setAttribute('aria-expanded','false'); }
   function render(focus = false, preserveView = false) {
     const scroll={x:window.scrollX,y:window.scrollY};
@@ -293,7 +305,7 @@
     $('main').innerHTML = pages[route]();
     $('main').classList.remove('screen-enter');
     if (!preserveView) { void $('main').offsetWidth; $('main').classList.add('screen-enter'); }
-    $('breadcrumb').textContent = nav.find(n => n[0] === route)[1];
+    $('breadcrumb').textContent = (nav.find(n => n[0] === route)?.[1] || 'Power reference');
     document.title = `${$('breadcrumb').textContent} · Dragon Ball Stories`;
     document.querySelectorAll('.nav-link').forEach(a => {
       if (a.hash === '#'+route) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
@@ -331,6 +343,7 @@
   }
   function buildSearch() {
     searchIndex = nav.map(([route,title]) => ({route,title,summary:route === 'overview' ? 'Return to the adventure menu' : `Explore ${title.toLowerCase()}`,text:title}));
+    searchIndex.push({route:'scale',title:'Approved power scale',summary:'Shared multipliers, fusion and 24 encounter cases',text:'fusion scale multipliers Super Saiyan God Blue Cumber Baby Crimson'});
     const c = data.character;
     searchIndex.push({route:'character',title:c.name,summary:`Age ${ageLabel(c)}; ${c.height} (${c.heightMetric})`,text:Object.values(c).filter(v => typeof v === 'string' || typeof v === 'number').join(' ')});
     const mapping = {abilities:'abilities',inventory:'inventory',accounts:'inventory',people:'world',places:'world',projects:'world',events:'chronicle'};
@@ -455,6 +468,7 @@
       const response = await fetch('./campaign.json?v='+release, {cache:'no-store',signal:controller.signal});
       if (!response.ok) throw new Error('Campaign records are unavailable.');
       data = validate(await response.json());
+      try { const reference=await fetch('./power-scale.json?v='+release,{cache:'no-store',signal:controller.signal}); if(reference.ok) scale=await reference.json(); } catch { /* Main story remains available if reference fails. */ }
       portraitUrl = safePortrait(data.character.portrait);
       $('navigation').innerHTML=nav.map(([route,label]) => `<a class="nav-link" href="#${route}" aria-label="${label}">${icon(route)}<span>${label}</span></a>`).join('');
       document.querySelector('.user-chip').textContent=data.character.name;
