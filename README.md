@@ -8,7 +8,7 @@ The [current continuity](CURRENT-CONTINUITY.md) is generated from [campaign.json
 
 ## App sections
 
-Character, Story, Abilities, Inventory and World are reached from the main menu. Search, expandable records and exact power details work on phone and desktop. Abilities includes the approved scale reference; Inventory shows collected Dragon Balls and unspent commendations. World includes the established artwork for Yamcha, Vegeta, Brask, Rivet and Room 214. Browsing art does not activate a form or advance the story.
+Character, Story, Abilities, Inventory and World are reached from the main menu. Search, expandable records and exact power details work on phone and desktop. Character links to the approved scale reference; Abilities groups compact technique rows by use. Inventory shows collected Dragon Balls and unspent commendations. World includes the established artwork for Yamcha, Vegeta, Turles, Brask, Rivet and Room 214. Browsing art does not activate a form or advance the story.
 
 The app checks for published updates when opened or resumed and while visible, preserving your place. Internet access is required; there is no offline service worker, analytics or local character editor. Existing audio and motion preferences remain on your device.
 

@@ -34,7 +34,7 @@ Forms are grouped by optional `formGroup`, preserving first-listed family order,
 
 ## NPC and place artwork
 
-World records contain an optional art archive inside their existing Details disclosure. Until valid, approved art exists, the entire archive is absent: no empty frame, tabs or placeholder notice. Quick navigation links and disclosures use compact button styling. The power number remains a native accessible button without a visible tap instruction.
+World records contain an optional art archive inside their whole-heading disclosure. Until valid, approved art exists, the entire archive is absent: no empty frame, tabs or placeholder notice. Navigation links and record disclosures follow APP-CONTENT-STANDARD.md; disclosures must not become separate boxed Details buttons. The power number remains a native accessible button without a visible tap instruction.
 
 For a person, set `art.appearance` to an array in chronological story order. Only set `canTransform: true` when that capability is publishable. Such people also support `art.forms`, containing only established, publishable forms marked `unlocked: true`. The newest appearance supplies the Base image automatically; Forms and Appearance tabs appear when both collections have art. A person without transformation capability has only the appearance archive. Do not publish future forms, hidden capability flags or narrator-only descriptions just to prepare this interface.
 
@@ -46,7 +46,7 @@ Before publication, approve each image and date, strip identifying metadata, use
 
 ## Ability and World presentation
 
-[APP-CONTENT-STANDARD.md](APP-CONTENT-STANDARD.md) is the single presentation owner for abilities and World records. Read it before changing their fields or layouts. Every established ability has one compact icon-led list row and an ordered detail dialog; fundamentals use the same system. Power Level remains on Character. World uses short summaries and organised details; completed projects are collapsed. The prior separate training list, signature-only sidebar and empty slots are retired.
+[APP-CONTENT-STANDARD.md](APP-CONTENT-STANDARD.md) is the single presentation owner for abilities and World records. Read it in full before every round of app edits, including after compaction, and reread it whenever formatting is uncertain. It also owns Inventory, Resources and shared disclosures. Every established ability has one compact icon-led list row and an ordered detail dialog; fundamentals use the same system. Power Level remains on Character. World uses short summaries and organised details; completed projects are collapsed. The prior separate training list, signature-only sidebar and empty slots are retired.
 
 Use illustrated cel shading, legible silhouettes and correct anatomy. Keep labels and frames in code. The user requested “Pro 6 Image generation”; use it if selectable, otherwise disclose that the built-in tool does not expose or verify a model selector. Preserve original art privately and publish only reviewed, metadata-free assets. Unlearned demonstration techniques and future art remain private.
 

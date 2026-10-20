@@ -1,4 +1,8 @@
 /* Presentation contract: APP-CONTENT-STANDARD.md */
+.ability-collection{max-width:920px;display:grid;gap:28px}
+.ability-group>h2{font:700 13px/1.5 'Segoe UI',sans-serif;letter-spacing:.7px;color:#eef4df;margin:0 0 11px 4px;text-shadow:0 2px 5px #123a3c}
+.power-reference-link{display:flex;align-items:center;gap:12px;width:fit-content;min-height:44px;margin:0 0 18px;color:#e2efdd;font-size:12px;text-underline-offset:4px}
+.power-reference-link:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
 .ability-grid{display:flex;flex-direction:column;max-width:920px;background:var(--paper);border:1px solid #b6cdc0;border-radius:16px;overflow:hidden;box-shadow:0 12px 34px #04263224}
 .ability-card{display:flex;align-items:center;gap:18px;position:relative;width:100%;min-width:0;padding:18px 52px 18px 22px;border:0;border-radius:0;background:transparent;text-align:left;box-shadow:none;color:var(--ink);cursor:pointer}
 .ability-card+.ability-card:before{content:'';position:absolute;top:0;left:100px;right:22px;height:1px;background:#264f431c}
@@ -8,19 +12,17 @@
 .ability-card-copy{display:flex;flex-direction:column;align-items:flex-start;gap:5px;min-width:0;padding:0;flex:1}
 .ability-card-copy>strong{font:24px/1.15 Bangers,sans-serif;letter-spacing:.45px}
 .ability-card-description{font-size:13px;line-height:1.5;color:#4f6a61}
-.ability-proficiency{font-size:10px;line-height:1.4;color:#547366;font-weight:650;letter-spacing:.2px}
 .ability-card:focus-visible{outline:3px solid #b8700b;outline-offset:-4px}
 @media(hover:hover) and (pointer:fine){.ability-card:hover{background:#e8eddf}.ability-card:hover:after{border-color:#173e40}}
 /* A fixed heading keeps the close control reachable while the content scrolls. */
 dialog.ability-dialog{max-width:660px;max-height:88svh;padding:0;border:1px solid #c3d3c4;border-radius:18px;overflow:hidden;box-shadow:0 24px 90px #021e3280}
 .ability-dialog[open]{display:flex;flex-direction:column}
-.ability-detail-header{flex:none;padding:18px 28px 22px;border-bottom:1px solid #264f4326;background:#f5f2e3}
-.ability-detail-header .dialog-top{margin:0 0 12px}
-.ability-detail-header .eyebrow{font-size:10px;letter-spacing:1.1px}
+.ability-detail-header{flex:none;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:24px 28px;border-bottom:1px solid #264f4326;background:#f5f2e3}
+.ability-category{display:block;font-size:11px;line-height:1.5;color:#587469;margin-bottom:5px}
 .ability-detail-header .close-dialog{width:44px;height:44px;border:0;border-radius:50%;background:#183f4110;font-size:27px}
-.ability-detail-heading{display:flex;gap:16px;align-items:center;margin:0}
+.ability-detail-heading{display:flex;gap:16px;align-items:center;margin:0;min-width:0}.ability-detail-heading>div{min-width:0}
 .ability-detail-heading img{width:56px;height:56px;object-fit:cover;border-radius:11px;flex:none;background:#0c2536}
-.ability-detail-heading h2{margin:0;font-size:36px;line-height:1.08}
+.ability-detail-heading h2{margin:0;font-size:32px;line-height:1.12;overflow-wrap:anywhere}
 .ability-detail-body{padding:4px 28px 20px;overflow-y:auto;overscroll-behavior:contain;min-height:0;scrollbar-width:thin;scrollbar-color:#91afa3 transparent}
 .ability-detail-body:focus-visible{outline:2px solid #b8700b;outline-offset:-4px}
 .content-section{padding:21px 0;border:0}
@@ -56,12 +58,25 @@ dialog.ability-dialog{max-width:660px;max-height:88svh;padding:0;border:1px soli
  .ability-card-copy>strong{font-size:22px}
  .ability-card-description{font-size:12px;line-height:1.55}
  dialog.ability-dialog{width:calc(100% - 20px);max-height:92svh;border-radius:18px}
- .ability-detail-header{padding:12px 20px 18px}
- .ability-detail-header .dialog-top{margin-bottom:10px}
+ .ability-detail-header{padding:20px 16px;gap:10px}
  .ability-detail-heading{gap:12px}
  .ability-detail-heading img{width:48px;height:48px}
- .ability-detail-heading h2{font-size:29px}
+ .ability-detail-heading h2{font-size:26px}
  .ability-detail-body{padding:0 20px max(16px,env(safe-area-inset-bottom))}
  .content-section{padding:19px 0}
  .content-section .definition-grid{grid-template-columns:1fr}
 }
+
+/* Inventory and resources use the same heading disclosures as World. */
+.loadout-screen{align-items:start}
+.loadout-screen>.panel{border:1px solid #b6cdc0;border-radius:16px;box-shadow:0 12px 34px #04263224;padding:8px 26px 16px;min-height:0}
+.funds-panel{display:block;text-align:left;background:var(--paper)}
+.funds-panel>.capsule-object{display:none}
+.funds-panel>h2{font-size:28px;margin:16px 0 0}
+.funds-panel>.eyebrow{margin:18px 0 0;color:#587464}
+.funds-panel .world-record{width:100%;text-align:left}
+.funds-panel .world-record p{margin:0;font-size:13px}
+.loadout-screen .content-section .definition-grid{margin:0 0 18px;grid-template-columns:1fr}
+.loadout-screen .world-record-heading h3{font-size:26px}
+.loadout-screen .world-record-body{padding-left:15px}
+@media(max-width:600px){.loadout-screen>.panel{padding:5px 18px 12px;border-radius:13px}.ability-collection{gap:24px}.ability-group>h2{font-size:12px}}
