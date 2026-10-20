@@ -10,9 +10,9 @@ Kaioken is one ability. Keep every learned stage in `character.forms` and refere
 
 ## Abilities
 
-Every established ability, including fundamentals, has exactly one illustrated card. The whole card opens its dialog. No separate training list, icon sidebar, empty future slots or second record.
+Every established ability, including fundamentals, has exactly one compact icon-led row in a single vertical list. The whole row opens its dialog. Use small square icons (48 pixels on phone, 60 on desktop), subtle separators and no large artwork panels or individual card shadows. Detail headings also keep the icon small. No separate training list, icon sidebar, empty future slots or second record.
 
-At a glance: artwork, name, one short effect sentence, proficiency. Use **Developing**, **Practised** or **Uncontrolled** when supported. Practised means demonstrated usable skill, not mastery. Current activation belongs on Character; “Inactive” is not proficiency.
+At a glance: small icon, name, one short effect sentence, proficiency. Use **Developing**, **Practised** or **Uncontrolled** when supported. Practised means demonstrated usable skill, not mastery. Current activation belongs on Character; “Inactive” is not proficiency.
 
 Dialog order:
 
@@ -26,7 +26,7 @@ Omit sections that do not apply. Do not invent an appearance, multiplier or maxi
 
 `history` contains stable event IDs, not copied journal entries. `trainingRecord` preserves unique older observations in a collapsed dated record; it is historical, not a second current status. Update current fields when capability changes. Append a dated observation or link a new event; do not silently rewrite the old record as if it had always used the latest base.
 
-Artwork: `artwork`, `artworkAlt`, local manifest-listed asset. Cel-shaded illustration, clear silhouette, no baked-in labels or frames. Symbolic fundamentals are not character portraits or evidence of a new power. Spirit Bomb depicts a sphere above raised hands; Spirit Spear depicts energy suffusing the entire palm and fingers for contact release, not a floating orb or literal spear. Preserve originals privately and publish optimised, metadata-free copies.
+Artwork: `artwork`, `artworkAlt`, local manifest-listed asset. Cel-shaded illustration, clear silhouette, no baked-in labels or frames. Symbolic fundamentals are not character portraits or evidence of a new power. Spirit Bomb depicts a sphere above raised hands; Spirit Spear depicts spirit energy gathering into the hand and spreading over the front of the palm and fingers for contact release; the skin remains visible rather than the whole hand glowing, not a floating orb or literal spear. Preserve originals privately and publish optimised, metadata-free copies.
 
 ## World
 
@@ -58,6 +58,6 @@ All records retain stable IDs and existing search/deep links. `sections` contain
 
 Read every edited file in full before and after editing. Back up the current publication before restructuring. Preserve unique information and historical evidence; delete only redundant presentation or superseded current facts.
 
-Check all ability cards and dialogs, section order, stage totals, names, artwork loading, search/deep links, World filters, nested places, galleries and Completed. Test narrow phone and desktop layouts, long names, overflow, keyboard opening/Escape/focus return and pointer focus behaviour. Do not disable keyboard focus to remove iPhone tap highlights.
+Check all ability rows and dialogs, section order, stage totals, names, artwork loading, search/deep links, World filters, nested places, galleries and Completed. Test narrow phone and desktop layouts, long names, overflow, keyboard opening/Escape/focus return and pointer focus behaviour. Do not disable keyboard focus to remove iPhone tap highlights.
 
 Keep audio, launch, portraits, reward collection and automatic updates intact. No story advancement during maintenance. Review the public data fingerprint, build and validate, publish only manifest files, verify live bytes, and record any device-testing limits.

@@ -46,7 +46,7 @@ Before publication, approve each image and date, strip identifying metadata, use
 
 ## Ability and World presentation
 
-[APP-CONTENT-STANDARD.md](APP-CONTENT-STANDARD.md) is the single presentation owner for abilities and World records. Read it before changing their fields or layouts. Every established ability has one illustrated card and an ordered detail dialog; fundamentals use the same system. Power Level remains on Character. World uses short summaries and organised details; completed projects are collapsed. The prior separate training list, signature-only sidebar and empty slots are retired.
+[APP-CONTENT-STANDARD.md](APP-CONTENT-STANDARD.md) is the single presentation owner for abilities and World records. Read it before changing their fields or layouts. Every established ability has one compact icon-led list row and an ordered detail dialog; fundamentals use the same system. Power Level remains on Character. World uses short summaries and organised details; completed projects are collapsed. The prior separate training list, signature-only sidebar and empty slots are retired.
 
 Use illustrated cel shading, legible silhouettes and correct anatomy. Keep labels and frames in code. The user requested “Pro 6 Image generation”; use it if selectable, otherwise disclose that the built-in tool does not expose or verify a model selector. Preserve original art privately and publish only reviewed, metadata-free assets. Unlearned demonstration techniques and future art remain private.
 
