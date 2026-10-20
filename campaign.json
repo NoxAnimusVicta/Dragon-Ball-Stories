@@ -223,25 +223,11 @@
     },
     {
       "id": "kaioken-technique",
-      "title": "Kaioken ×2",
+      "title": "Kaioken",
       "summary": "King Kai’s technique amplifies Zero’s own output for short periods.",
       "status": "Developing · Used against Brask",
       "abilityType": "signature-technique",
-      "facts": [
-        {
-          "label": "Factor",
-          "value": "×2 · 159,614 calculated"
-        },
-        {
-          "label": "Demonstration",
-          "value": "60 seconds in controlled moving practice before the unlock; not a universal limit"
-        },
-        {
-          "label": "Compatibility",
-          "value": "Use separately from Dark Factor Sealed Channel"
-        }
-      ],
-      "details": "First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release does not itself establish longer endurance. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling.",
+      "details": "Unlocked stages\n×2 — 159,614 power (79,807 base × 2). Currently the only unlocked stage.\n\nEach learned multiplier remains available as a lower-output option when higher stages are unlocked. Stage power levels are calculated from the current base; dated readings remain historical.\n\nFirst achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release does not itself establish longer endurance. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling.\n\nDemonstration: 60 seconds in controlled moving practice before the potential unlock; not a universal limit.\nCompatibility: use separately from Dark Factor Sealed Channel.",
       "artwork": "ability-kaioken.png",
       "artworkAlt": "A crimson Kaioken aura around a symbolic fighter silhouette."
     },
