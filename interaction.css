@@ -1,0 +1,27 @@
+/* Dialog autofocus/restored focus may match :focus-visible after a touch.
+   Input modality overrides that heuristic without blurring the control. */
+html:is([data-input-mode="touch"],[data-input-mode="pointer"]) :focus {
+  outline: none !important;
+}
+html:is([data-input-mode="touch"],[data-input-mode="pointer"]) .wish-mark {
+  outline: none !important;
+}
+/* iOS can retain :hover after a tap. Preserve actual selected/open states. */
+html[data-input-mode="touch"] .icon-button:hover { background:transparent; }
+html[data-input-mode="touch"] .hud-button:hover { color:white;background:#113b456b; }
+html[data-input-mode="touch"] .nav-link:hover:not([aria-current]) { background:transparent;color:inherit;transform:none; }
+html[data-input-mode="touch"] .primary:hover { transform:none;filter:none; }
+html[data-input-mode="touch"] .launch-button:hover { transform:skew(-5deg); }
+html[data-input-mode="touch"] .preferences button:hover { color:inherit;border-bottom-color:transparent; }
+html[data-input-mode="touch"] .preferences :is(#music-toggle,#sound-toggle)[aria-pressed="false"],
+html[data-input-mode="touch"] .preferences #motion-toggle[aria-pressed="true"] { color:var(--yellow);border-bottom-color:currentColor; }
+html[data-input-mode="touch"] .small-action:hover { border-bottom-color:#b9dabe66; }
+html[data-input-mode="touch"] .search-result:hover { background:transparent; }
+html[data-input-mode="touch"] .ability-slot:focus-visible .ability-slot-art,
+html[data-input-mode="touch"] .ability-slot:hover .ability-slot-art { border-color:#a8dbbc80;background:linear-gradient(145deg,#b1edbc22,#08313970);transform:none; }
+html[data-input-mode="touch"] :is(.quick-link,dialog .text-link):hover { background:#123f47; }
+html[data-input-mode="touch"] .record-details details:not([open]) summary:hover { background:#ecf0df; }
+html[data-input-mode="touch"] .gallery-navigation button:hover { background:#173f48; }
+@media(max-width:600px) {
+  html[data-input-mode="touch"] .nav-link:hover:not([aria-current]) { background:#133e464f; }
+}
