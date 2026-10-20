@@ -8,14 +8,14 @@
   "character": {
     "name": "Zero",
     "age": 27,
-    "height": "5′6″",
-    "heightMetric": "167.64 cm",
-    "heightApproximate": false,
+    "height": "5′8″",
+    "heightMetric": "About 173 cm",
+    "heightApproximate": true,
     "portrait": "zero-portrait.jpg",
     "portraitAlt": "Zero after a year of chamber training: muscular human with auburn curls, beard, green iris and red scouter, in a black outfit and burgundy cape. Capsule Corp illustration backdrop.",
     "race": "Human",
     "origin": "From a world where Dragon Ball is fiction. The cause of the crossing is still unknown.",
-    "appearance": "Muscular post-chamber build, long curly auburn hair, full auburn beard and normally green irises. Pale violet aura and red irises while Dark Factor Sealed Channel is active; no other transformation changes. Black-and-burgundy outfit with matching cape, boots and recovered red scouter. The original outfit and scouter were repaired after the second Nappa encounter. A permanent black circle with four inward-curving hooks marks the upper abdomen below the sternum. The portrait remains a standard-outfit reference, not a literal snapshot of every scene.",
+    "appearance": "Approximately 5′8″ (173 cm), up from the original 5′6″ through gradual Dark Factor adaptation visible after the chamber. Muscular post-chamber build, long curly auburn hair, full auburn beard and normally green irises. Pale violet aura and red irises while Dark Factor Sealed Channel is active; no other transformation changes. Black-and-burgundy outfit with matching cape, boots and recovered red scouter. The original outfit and scouter were repaired after the second Nappa encounter. A permanent black circle with four inward-curving hooks marks the upper abdomen below the sternum. The portrait remains a standard-outfit reference, not a literal snapshot of every scene.",
     "personality": "Expressed through your choices and dialogue.",
     "backstory": "Familiar with Dragon Ball through anime, manga, films and games before the crossing. No further personal background is recorded.",
     "arrival": "Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness. Zero later chose 1 January, the Conton-calendar arrival anniversary, as his birthday. His adopted age anchor is 26 years and 6 months at arrival; personal ageing includes chamber time.",
@@ -241,7 +241,9 @@
           "value": "Use separately from Dark Factor Sealed Channel"
         }
       ],
-      "details": "First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release does not itself establish longer endurance. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling."
+      "details": "First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release does not itself establish longer endurance. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling.",
+      "artwork": "ability-kaioken.png",
+      "artworkAlt": "A crimson Kaioken aura around a symbolic fighter silhouette."
     },
     {
       "id": "ki-sensing",
@@ -264,7 +266,9 @@
       "summary": "A developing palm strike that releases gathered spirit energy at contact.",
       "status": "Field-tested · Developing",
       "abilityType": "signature-technique",
-      "details": "Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. No assigned multiplier, permanent power gain, hostile energy theft or full mastery. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. A sustained beam, fixed multiplier and large reliable combat charge remain unestablished."
+      "details": "Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. No assigned multiplier, permanent power gain, hostile energy theft or full mastery. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. A sustained beam, fixed multiplier and large reliable combat charge remain unestablished.",
+      "artwork": "ability-spirit-spear.png",
+      "artworkAlt": "An open palm releasing a concentrated blue-white spirit-energy contact pulse."
     }
   ],
   "inventory": [
@@ -311,48 +315,17 @@
     },
     {
       "id": "patrol-communicator",
-      "title": "Collar communicator",
-      "summary": "Issued by Mr. Satan before the first paired mission.",
+      "title": "Time Patrol communicator pin",
+      "summary": "Small Time Patrol badge pin, normally tucked beneath Zero’s collar.",
       "status": "Worn",
-      "details": "Concealed beneath the collar and functional. Used for integrity reports, extraction requests and local messages. Purpose-built Patrol communications remain usable across temporal travel; the original scouter’s disconnected network is separate."
+      "details": "The TP emblem pin is the communicator, not a separate decorative badge. Concealed beneath the collar and functional. Used for integrity reports, extraction requests and local messages. Purpose-built Patrol communications remain usable across temporal travel; the original scouter’s disconnected network is separate. Patrol apparel is provided and wearing its insignia is viewed favourably, but it is optional; many Patrollers conceal their communicator inside their own clothing."
     },
     {
-      "id": "four-star-dragon-ball",
-      "title": "Four-Star Dragon Ball",
-      "summary": "First ball of a compatible Patrol set; received for Zero’s commendation.",
-      "status": "Stored · Set 2 of 7",
-      "facts": [
-        {
-          "label": "Set",
-          "value": "TP-RS-001"
-        },
-        {
-          "label": "Storage",
-          "value": "Room 214 · Wrapped in clean cloth in the bottom drawer of the bedside cabinet"
-        },
-        {
-          "label": "Still needed",
-          "value": "One-, Three-, Five-, Six- and Seven-Star Balls"
-        }
-      ],
-      "details": "Received on 23 April and stored before sleep. The compatible Two-Star Ball joined it on 22 May. Both remain in Room 214 after the Namek visit; no wish, other reservations or completed integration. This set is distinct from the TL-503 Earth balls."
-    },
-    {
-      "id": "two-star-dragon-ball",
-      "title": "Two-Star Dragon Ball",
-      "summary": "Second compatible ball, awarded for four weeks of cleanup service.",
-      "status": "Stored · Set 2 of 7",
-      "facts": [
-        {
-          "label": "Set",
-          "value": "TP-RS-001"
-        },
-        {
-          "label": "Storage",
-          "value": "Room 214 · Padded case beside the Four-Star Ball in the bedside cabinet’s bottom drawer"
-        }
-      ],
-      "details": "Received on 22 May and stored before departure. Not carried into TL-503."
+      "id": "patrol-dragon-balls",
+      "title": "Conton City Dragon Balls",
+      "summary": "Two compatible reward balls collected toward one complete set.",
+      "status": "Stored",
+      "details": "Four-Star Ball: received on 23 April for Zero’s first commendation; wrapped in clean cloth. Two-Star Ball: received on 22 May for four weeks of cleanup service; kept in its padded case. Both are in the bottom drawer of the bedside cabinet in Room 214. The other five are not reserved. No wish has been made. This reward set is separate from the TL-503 Earth Dragon Balls."
     },
     {
       "id": "travel-bag",

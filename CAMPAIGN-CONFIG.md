@@ -6,14 +6,14 @@ Generated from campaign.json. Edit that authoritative source, then run build.py.
 - Phase: Preparing for Yardrat.
 - Protagonist: Zero.
 - Age: 27 years, 11 months.
-- Height: 5′6″ (167.64 cm).
+- Height: 5′8″ (About 173 cm) ; approximate.
 - Story identity: Zero. The former name is not recorded or used. Keep identifying real-world details outside public campaign records.
 - Race/species: Human.
 - Role: Supervised Time Patrol trainee.
 - Current ordinary base (campaign record): 79807.
 - Power record status: Measured · 28 June, Age 854 · After morning training · Form totals calculated.
 - Condition: All forms and Kaioken inactive; seal closed and intact. Tired and mildly sore after morning training, no serious injury. Main outfit, cape and scouter worn; communicator under collar. Travel bag and protected scroll in Room 214; two Dragon Balls stored there. No Senzu carried.
-- Character appearance: Muscular post-chamber build, long curly auburn hair, full auburn beard and normally green irises. Pale violet aura and red irises while Dark Factor Sealed Channel is active; no other transformation changes. Black-and-burgundy outfit with matching cape, boots and recovered red scouter. The original outfit and scouter were repaired after the second Nappa encounter. A permanent black circle with four inward-curving hooks marks the upper abdomen below the sternum. The portrait remains a standard-outfit reference, not a literal snapshot of every scene.
+- Character appearance: Approximately 5′8″ (173 cm), up from the original 5′6″ through gradual Dark Factor adaptation visible after the chamber. Muscular post-chamber build, long curly auburn hair, full auburn beard and normally green irises. Pale violet aura and red irises while Dark Factor Sealed Channel is active; no other transformation changes. Black-and-burgundy outfit with matching cape, boots and recovered red scouter. The original outfit and scouter were repaired after the second Nappa encounter. A permanent black circle with four inward-curving hooks marks the upper abdomen below the sternum. The portrait remains a standard-outfit reference, not a literal snapshot of every scene.
 - Canon, continuity and era: Conton City · Age 854.
 - Arrival: Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness. Zero later chose 1 January, the Conton-calendar arrival anniversary, as his birthday. His adopted age anchor is 26 years and 6 months at arrival; personal ageing includes chamber time.
 - Current location: Conton City · Hercule’s office.
