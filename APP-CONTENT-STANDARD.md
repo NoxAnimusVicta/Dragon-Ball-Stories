@@ -14,7 +14,15 @@ Kaioken is one ability. Keep every learned stage in `character.forms` and refere
 
 ## Abilities
 
-Every established ability, including fundamentals, has exactly one compact icon-led row in four ordered groups: Forms & amplification; Ki attacks; Ki control; Movement & combat. Each group is a single vertical list. Spirit Spear is a ki attack delivered by contact; do not duplicate it under physical combat. New abilities must be assigned deliberately; an Other techniques fallback prevents an unclassified record disappearing. The whole row opens its dialog. Use small square icons (48 pixels on phone, 60 on desktop), subtle separators and no large artwork panels or individual card shadows. Detail headings also keep the icon small. The rounded dialog keeps its heading and 44-pixel close control visible while only its reading area scrolls; keyboard users can focus that area. Use restrained separators, readable line spacing and no nested section boxes. No separate training list, icon sidebar, empty future slots or second record.
+Every established ability, including fundamentals, has exactly one compact icon-led row. Assign its `category` by how it is used, independently of energy source and mastery. The ordered groups are:
+
+- `forms` — **Transformation & Amplification**: transformations, channel states and output-amplifying techniques such as Kaioken.
+- `ki` — **Ki Techniques**: released energy attacks such as Ki Blasts, Spirit Bomb and a future Kamehameha.
+- `physical` — **Physical Techniques**: contact attacks, including Spirit Spear and future Wolf Fang Fist or Dragon Fist. Ki or spirit-energy use does not move a contact attack into a second group.
+- `discipline` — **Control & Discipline**: sensing, suppression, ki control, flight and Combat Fundamentals; advanced practices such as future divine-ki handling also fit here. This category does not imply beginner difficulty or low mastery.
+- `magic` — **Magical Techniques**: configured for future learned magic, hidden while empty. Do not add a spell or placeholder to reveal it.
+
+Each nonempty group is one vertical list. Keep every ability in exactly one category; the Other Techniques fallback keeps an unclassified record visible for correction. Group headings use Title Case, the existing Bangers typeface and a restrained gold dividing rule. Omit the Abilities tagline rather than adding decorative slogan text. The whole row opens its dialog. Use small square icons (48 pixels on phone, 60 on desktop), subtle separators and no large artwork panels or individual card shadows. Detail headings also keep the icon small. The rounded dialog keeps its heading and 44-pixel close control visible while only its reading area scrolls; keyboard users can focus that area. Use restrained separators, readable line spacing and no nested section boxes. No separate training list, icon sidebar, empty future slots or second record.
 
 At a glance: small icon, name and one short effect sentence. Remove power-reference/form-navigation buttons from this section; the campaign power-reference link belongs beside Character's power information. Do not display the old mixed Developing/Practised statuses as mastery ranks. Their historical data remains intact until the new numerical model and starting-tier migration are approved. Current capability and limits remain in the dialog.
 

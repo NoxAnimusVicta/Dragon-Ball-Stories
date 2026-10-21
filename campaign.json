@@ -29,6 +29,14 @@
     "ageMonths": 11,
     "appearanceHistory": [
       {
+        "id": "arrival",
+        "name": "Arrival",
+        "caption": "Before Nappa · No scouter",
+        "portrait": "zero-arrival.jpg",
+        "portraitAlt": "Zero on arrival, before the first Nappa fight: auburn curls and beard, green eyes, black outfit and burgundy cape, without a scouter. Capsule Corp illustration backdrop.",
+        "date": "Day 1 · Arrival in TL-218 · Before the first Nappa fight"
+      },
+      {
         "id": "iris",
         "name": "Before Chamber",
         "caption": "Earlier appearance",
@@ -77,7 +85,9 @@
         "multiplier": 2,
         "date": "24 March, Age 854 · First activation",
         "status": "Technique · ×2 only · 60-second moving demonstration; separate from the sealed channel",
-        "formGroup": "Kaioken"
+        "formGroup": "Kaioken",
+        "portrait": "zero-kaioken.jpg",
+        "portraitAlt": "Zero using Kaioken in his current black-and-burgundy outfit, cape and red scouter, with clenched fists and a crimson aura. Illustrative rocky backdrop."
       }
     ],
     "powerHistory": "Guru’s individual ×12 release produced 69,497 on 22 May. Four weeks with Nail brought the base to 77,000; the Brask engagement and subsequent training led to the current 79,807. Earlier readings remain dated in the journal. No repeated potential release, human Zenkai or automatic absorption of channel power. Form totals use the recorded integer base; they are not new transformed scans.",
@@ -113,7 +123,8 @@
         "asOf": "28 June, Age 854",
         "text": "Chamber benchmarks remain 75× gravity for ground rounds, 25× for aerial rounds and 150× for slow conditioning; no higher maximum has been established. Peer sparring and cleanup work developed group awareness. In TL-619, tight counters, accumulated damage and sustained pressure let Zero defeat a stronger Nappa while using the sealed channel. Vegeta remained far beyond him; their following training day focused on recovering after interrupted attacks, using separate channel bouts, closure and rest. Four weeks with Nail and the quarry fight developed aerial reversals, guarded combinations and sustained pressure against injured Brask. Subsequent Vegeta rounds improved close-range defence; he still controls their exchanges.",
         "facts": []
-      }
+      },
+      "category": "discipline"
     },
     {
       "id": "ki-control",
@@ -137,7 +148,8 @@
         "asOf": "28 June, Age 854",
         "text": "Deliberate suppression, loaded movement, flight and moving releases are established. King Kai’s instruction improves whole-body transitions and control under strain. Lower-flow channeling is steadier; full output remains strenuous. Ki sensing is now trained separately, with limited relative-output tracking. Neither the channel nor cooperative spirit-energy gathering has permanently absorbed another power into the base. Nail’s month of instruction and the latest King Kai sessions improved movement, transitions and recovery; no new gravity or endurance maximum was established.",
         "facts": []
-      }
+      },
+      "category": "discipline"
     },
     {
       "id": "flight",
@@ -173,7 +185,8 @@
             "value": "Aerial exchanges against Nappa"
           }
         ]
-      }
+      },
+      "category": "discipline"
     },
     {
       "id": "ki-blast",
@@ -208,7 +221,8 @@
             "value": "Moving volleys and larger charged shots; finite accuracy and stamina"
           }
         ]
-      }
+      },
+      "category": "ki"
     },
     {
       "id": "ki-suppression",
@@ -231,7 +245,8 @@
         "asOf": "28 June, Age 854",
         "text": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains. The opening soldier engagement demonstrated a deliberate full-power striking burst followed by a return to half output. At the current recorded base, half output would be about 39,904; that calculation is not a new suppression check. Difficulty sensing a deeply suppressed opponent does not undo Zero’s own suppression skill.",
         "facts": []
-      }
+      },
+      "category": "discipline"
     },
     {
       "id": "uncontrolled-form",
@@ -259,7 +274,8 @@
         "asOf": "28 June, Age 854",
         "text": "Power erupted after a voice that felt like Zero’s own thoughts offered strength. Fighting Nappa felt dreamlike and apparently voluntary until the body turned toward a city against his wishes. Vegeta stopped him before he reached it. The dense mantle encloses his body, hair and clothes and slightly enlarges his silhouette; reversion reveals what was underneath without repairing battle damage. Its layered growling laugh is not a new technique. This is a recorded manifestation, not a safe transformation he can freely activate. A brief second takeover occurred during the 15 April Kaioken/channel test; Krillin stopped it immediately. Kaioken dropped out, so ×15 replaced the channel without stacking. Chronoa checked and settled the intact seal.",
         "facts": []
-      }
+      },
+      "category": "forms"
     },
     {
       "id": "sealed-channel-form",
@@ -293,7 +309,8 @@
         "asOf": "28 June, Age 854",
         "text": "Voluntary opening and closure developed through supervised practice. Full output reached three moving minutes during the first cleanup week; by 10 March the sequence ended without immediate leg trembling, but still left Zero winded and repeated attempts were tiring. No permanent absorption of the multiplier is established. If he loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; safe removal remains unresolved. The ability icon is symbolic; the character gallery retains the full appearance reference. Attempting Kaioken on top of the channel caused loss of control even while conscious. The seal itself remained intact after Chronoa’s check; separate channel use resumed. On Namek, Zero defeated Nappa while retaining control, then closed the flow before losing consciousness after Turles’s ambush. Later practice with Vegeta improved recovery without a new timed maximum.",
         "facts": []
-      }
+      },
+      "category": "forms"
     },
     {
       "id": "kaioken-technique",
@@ -322,7 +339,8 @@
         "asOf": "28 June, Age 854",
         "text": "First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release does not itself establish longer endurance. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling.",
         "facts": []
-      }
+      },
+      "category": "forms"
     },
     {
       "id": "ki-sensing",
@@ -345,7 +363,8 @@
         "asOf": "28 June, Age 854",
         "text": "King Kai’s exercises developed direction and short-range tracking during movement. Zero cannot read exact numbers, hidden reserves or deeply suppressed targets reliably. Familiarity and concentration matter; the scouter still supplies numerical readings. Later practice improved tracking familiar moving signatures without stopping to concentrate. Against Brask, close-range ki tracking helped counter a flash. Recent practice follows familiar and partially suppressed moving signatures; exact values still require the scouter.",
         "facts": []
-      }
+      },
+      "category": "discipline"
     },
     {
       "id": "spirit-bomb",
@@ -367,7 +386,8 @@
         "asOf": "28 June, Age 854",
         "text": "Voluntarily offered energy supported the first small successful exercise. Gathering takes concentration and time. No large battlefield-ready Spirit Bomb, unlimited environmental draw or permanent absorption is established.",
         "facts": []
-      }
+      },
+      "category": "ki"
     },
     {
       "id": "spirit-spear",
@@ -390,7 +410,8 @@
         "asOf": "28 June, Age 854",
         "text": "Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. No assigned multiplier, permanent power gain, hostile energy theft or full mastery. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. A sustained beam, fixed multiplier and large reliable combat charge remain unestablished.",
         "facts": []
-      }
+      },
+      "category": "physical"
     }
   ],
   "inventory": [

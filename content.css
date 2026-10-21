@@ -1,6 +1,7 @@
 /* Presentation contract: APP-CONTENT-STANDARD.md */
 .ability-collection{max-width:920px;display:grid;gap:28px}
-.ability-group>h2{font:700 13px/1.5 'Segoe UI',sans-serif;letter-spacing:.7px;color:#eef4df;margin:0 0 11px 4px;text-shadow:0 2px 5px #123a3c}
+.ability-group>h2{display:flex;align-items:center;gap:14px;font:400 24px/1.25 Bangers,sans-serif;letter-spacing:1px;color:#ffe49a;margin:0 0 12px 4px;text-shadow:0 2px 5px #123a3c}
+.ability-group>h2:after{content:'';height:1px;flex:1;min-width:12px;background:linear-gradient(90deg,#e8d69b66,transparent)}
 .power-reference-link{display:flex;align-items:center;gap:12px;width:fit-content;min-height:44px;margin:0 0 18px;color:#e2efdd;font-size:12px;text-underline-offset:4px}
 .power-reference-link:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
 .ability-grid{display:flex;flex-direction:column;max-width:920px;background:var(--paper);border:1px solid #b6cdc0;border-radius:16px;overflow:hidden;box-shadow:0 12px 34px #04263224}
@@ -91,4 +92,4 @@ dialog.ability-dialog{max-width:660px;max-height:88svh;padding:0;border:1px soli
 .loadout-screen .content-section .definition-grid{margin:0 0 18px;grid-template-columns:1fr}
 .loadout-screen .world-record-heading h3{font-size:26px}
 .loadout-screen .world-record-body{padding-left:15px}
-@media(max-width:600px){.loadout-screen>.panel{padding:5px 18px 12px;border-radius:13px}.ability-collection{gap:24px}.ability-group>h2{font-size:12px}}
+@media(max-width:600px){.loadout-screen>.panel{padding:5px 18px 12px;border-radius:13px}.ability-collection{gap:24px}.ability-group>h2{font-size:21px;gap:10px}}

@@ -168,7 +168,7 @@
     dialog.showModal();
   }
   function pageHeader(number, title, description) {
-    return `<div class="page-heading"><div><span class="eyebrow">${number} / YOUR ADVENTURE</span><h1>${title}</h1></div><p>${description}</p></div>`;
+    return `<div class="page-heading"><div><span class="eyebrow">${number} / YOUR ADVENTURE</span><h1>${title}</h1></div>${description ? `<p>${description}</p>` : ''}</div>`;
   }
   const definition = (label, v, sub = '') => `<div><dt>${escape(label)}</dt><dd>${value(v)}${sub ? `<small>${escape(sub)}</small>` : ''}</dd></div>`;
   const detail = (title, text, fallback, key = title) => `<details data-detail-key="${escape(key)}"><summary>${escape(title)}</summary><p>${escape(text || fallback)}</p></details>`;
@@ -268,18 +268,21 @@
     const c=data.character;
     return pageHeader('01','Character','Your place in the story.')+`<div class="character-layout">${portraitPanel()}<div class="character-info"><div class="player-banner"><span class="eyebrow">${data.started ? 'YOUR PROTAGONIST' : 'CHARACTER SETUP'}</span><h2>${escape(c.name)}<span class="status-stamp">${data.started ? 'PATROL TRAINEE' : 'IN THE MAKING'}</span></h2></div><div class="stat-ribbon"><div><small>AGE</small><strong>${escape(c.age ?? '—')}</strong><span>YEARS${Number.isInteger(c.ageMonths) ? ` · ${escape(c.ageMonths)} MONTHS` : ''}</span></div><div><small>HEIGHT</small><strong>${escape(c.height || '—')}</strong><span>${escape(c.heightMetric || 'UNDECIDED')}</span></div></div>${present(c.battlePower) ? `<section class="power-panel" aria-label="Current Power Level"><div><button class="power-readout" data-power-details aria-haspopup="dialog" aria-label="Power level ${escape(exactPower(c.battlePower))}. View exact base and unlocked forms"><span class="eyebrow">POWER LEVEL</span><strong>${escape(compactPower(c.battlePower))}</strong></button><span>${escape(c.powerReading)}</span></div><div><span class="status-stamp">${escape(c.fieldStatus || 'SUPERVISED TRAINING')}</span><p>${escape(c.condition)}</p></div></section>` : ''}<a class="power-reference-link" href="#scale">Campaign power reference <span aria-hidden="true">→</span></a><section class="panel identity-panel"><h3>Identity & background</h3><div class="detail-list">${detail('Identity & appearance',[c.race,c.origin,c.appearance].filter(Boolean).join('\n'),'Your discovered identity and appearance will be recorded here.')}${detail('Personality & purpose',[c.personality,c.motivation].filter(Boolean).join('\n'),'Your character record will grow with the story.')}${detail('Backstory',c.backstory,'No backstory has been recorded here.')}${detail('Arrival & new identity',c.arrival,'No arrival has been recorded yet.')}${detail('Knowledge & limits',[c.knowledge,c.limitations].filter(Boolean).join('\n'),'Known information and discovered limits will appear here.')}</div></section></div></div>`;
   }
+  // Presentation categories are independent of energy source and mastery.
+  // Empty groups, including future magic, are omitted by the list renderer.
   const abilityGroups = [
-    {id:'forms',title:'Forms & amplification',ids:['sealed-channel-form','uncontrolled-form','kaioken-technique']},
-    {id:'ki-attacks',title:'Ki attacks',ids:['ki-blast','spirit-spear','spirit-bomb']},
-    {id:'ki-control',title:'Ki control',ids:['ki-control','ki-sensing','ki-suppression']},
-    {id:'movement',title:'Movement & combat',ids:['flight','combat-basics']}
+    {id:'forms',title:'Transformation & Amplification'},
+    {id:'ki',title:'Ki Techniques'},
+    {id:'physical',title:'Physical Techniques'},
+    {id:'discipline',title:'Control & Discipline'},
+    {id:'magic',title:'Magical Techniques'}
   ];
   function abilityGroup(ability) {
-    return abilityGroups.find(group=>group.ids.includes(ability.id)) || {id:'other',title:'Other techniques'};
+    return abilityGroups.find(group=>group.id===ability.category) || {id:'other',title:'Other Techniques'};
   }
   function abilities() {
-    const groups=[...abilityGroups,{id:'other',title:'Other techniques'}];
-    return pageHeader('03','Abilities','Strength. Control. Resolve.')+
+    const groups=[...abilityGroups,{id:'other',title:'Other Techniques'}];
+    return pageHeader('03','Abilities','')+
       `<div class="ability-collection">${groups.map(group=>{
         const items=data.abilities.filter(r=>abilityGroup(r).id===group.id);
         return items.length ? `<section class="ability-group" aria-labelledby="ability-group-${group.id}"><h2 id="ability-group-${group.id}">${group.title}</h2><div class="ability-grid">${items.map(r=>`<button class="ability-card" id="record-${escape(r.id)}" data-ability="${escape(r.id)}" aria-haspopup="dialog"><span class="ability-card-art">${safePortrait(r.artwork)?`<img class="ability-image" src="${escape(safePortrait(r.artwork))}" alt="" loading="lazy">`:''}</span><span class="ability-card-copy"><strong>${escape(r.title)}</strong><span class="ability-card-description">${escape(r.summary)}</span></span></button>`).join('')}</div></section>` : '';
