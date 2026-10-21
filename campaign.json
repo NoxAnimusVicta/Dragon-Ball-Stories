@@ -1760,7 +1760,7 @@
       "id": "timeline-218",
       "title": "TL-218",
       "summary": "The timeline where Zero arrived and later returned on his first paired mission.",
-      "context": "Timeline TL-218",
+      "context": "TL-218",
       "sections": [
         {
           "title": "Description",
@@ -1811,7 +1811,7 @@
       "title": "TL-503 · Yamcha’s home",
       "summary": "Yamcha’s native timeline; fresh recovery check complete.",
       "status": "Recovered · 100% at S240",
-      "context": "Timeline TL-503",
+      "context": "TL-503",
       "sections": [
         {
           "title": "Current circumstances",
@@ -1957,7 +1957,7 @@
       "title": "TL-619",
       "summary": "Near-Prime history with Z and later events one year later.",
       "status": "Restoration monitored",
-      "context": "Timeline TL-619",
+      "context": "TL-619",
       "sections": [
         {
           "title": "Current circumstances",
@@ -2060,7 +2060,7 @@
     },
     {
       "id": "timeline-846",
-      "title": "Timeline TL-846",
+      "title": "TL-846",
       "summary": "Earth, Age 750; off-world arms sale intercepted before Red Ribbon buyers arrived.",
       "status": "Mission nexus closed",
       "context": "TL-846",

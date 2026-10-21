@@ -58,6 +58,8 @@ All records retain stable IDs and existing search/deep links. `sections` contain
 
 ### Timeline browsing
 
+Numbered timelines use **TL-###** in titles and context labels; TL already means Timeline, so never prefix it with that word. Named hubs retain their names.
+
 People and Places use native expandable timeline headings, with the shared Bangers face, Title Case, a quiet count and drawn chevron. Keep these as flat rows inside the existing reading panel, not nested cards. Multiple groups may remain open. Preserve group/record expansion while switching World filters or returning from another screen; search and deep links open every containing disclosure. Retain keyboard focus and generous tap targets. Ongoing keeps its existing grouping.
 
 Each person has one explicit `worldGroup`: an existing root Place ID or `unknown-timelines`. Group Conton residents and Patrol staff/family under Conton City; retain their original home timeline in `context`. Native people stay under their own timeline, including native enemies. External hostile agents with unrevealed bases use **Unknown Timelines**; this does not claim a shared origin, organisation or current physical location. Captivity stays in the individual record. Never disclose an unrevealed hub through a label, source field or asset. New named groups require a reviewed root Place record; unassigned people remain visible in the Unknown fallback but must be corrected during maintenance.
