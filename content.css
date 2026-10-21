@@ -1,7 +1,11 @@
 /* Presentation contract: APP-CONTENT-STANDARD.md */
 .ability-collection{max-width:920px;display:grid;gap:28px}
-.ability-group>h2{display:flex;align-items:center;gap:14px;font:400 24px/1.25 Bangers,sans-serif;letter-spacing:1px;color:#ffe49a;margin:0 0 12px 4px;text-shadow:0 2px 5px #123a3c}
-.ability-group>h2:after{content:'';height:1px;flex:1;min-width:12px;background:linear-gradient(90deg,#e8d69b66,transparent)}
+/* One heading hierarchy across Techniques, Inventory, World and Character. */
+:is(.ability-group>h2,.world-groups>.panel>h2,.loadout-screen>.panel>h2,.identity-panel>h3,.scale-reference>h2,.collection-heading h2){display:flex;align-items:center;gap:14px;font:400 24px/1.25 Bangers,sans-serif;letter-spacing:1px;color:#244f4b;margin:12px 0;border:0;padding:0;overflow-wrap:anywhere}
+:is(.ability-group>h2,.world-groups>.panel>h2,.loadout-screen>.panel>h2,.identity-panel>h3,.scale-reference>h2,.collection-heading h2):after{content:'';height:1px;flex:1;min-width:12px;background:linear-gradient(90deg,#b7914666,transparent)}
+.ability-collection>.ability-group>h2{color:#ffe49a;margin:0 0 12px 4px;text-shadow:0 2px 5px #123a3c}
+.ability-collection>.ability-group>h2:after{background:linear-gradient(90deg,#e8d69b66,transparent)}
+.collection-heading>div{min-width:0;flex:1}
 .power-reference-link{display:flex;align-items:center;gap:12px;width:fit-content;min-height:44px;margin:0 0 18px;color:#e2efdd;font-size:12px;text-underline-offset:4px}
 .power-reference-link:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
 .ability-grid{display:flex;flex-direction:column;max-width:920px;background:var(--paper);border:1px solid #b6cdc0;border-radius:16px;overflow:hidden;box-shadow:0 12px 34px #04263224}
@@ -28,7 +32,7 @@ dialog.ability-dialog{max-width:660px;max-height:88svh;padding:0;border:1px soli
 .ability-detail-body:focus-visible{outline:2px solid #b8700b;outline-offset:-4px}
 .content-section{padding:21px 0;border:0}
 .content-section+.content-section{border-top:1px solid #264f431c}
-.content-section h3,.content-section h4{font:750 12px/1.5 'Segoe UI',sans-serif;letter-spacing:.2px;margin:0 0 9px;color:#244f4b}
+.content-section h3,.content-section h4{font:400 20px/1.35 Bangers,sans-serif;letter-spacing:.6px;margin:0 0 9px;color:#244f4b}
 .content-section p{white-space:pre-wrap;margin:0;font-size:14px;line-height:1.75;color:#456259;max-width:68ch}
 .content-section .definition-grid{border:0;padding:0;margin:15px 0 0;gap:16px 24px}
 .content-section .definition-grid dt{font-size:10px;text-transform:none;letter-spacing:.2px;color:#547366}
@@ -85,11 +89,14 @@ dialog.ability-dialog{max-width:660px;max-height:88svh;padding:0;border:1px soli
 .loadout-screen>.panel{border:1px solid #b6cdc0;border-radius:16px;box-shadow:0 12px 34px #04263224;padding:8px 26px 16px;min-height:0}
 .funds-panel{display:block;text-align:left;background:var(--paper)}
 .funds-panel>.capsule-object{display:none}
-.funds-panel>h2{font-size:28px;margin:16px 0 0}
 .funds-panel>.eyebrow{margin:18px 0 0;color:#587464}
 .funds-panel .world-record{width:100%;text-align:left}
 .funds-panel .world-record p{margin:0;font-size:13px}
 .loadout-screen .content-section .definition-grid{margin:0 0 18px;grid-template-columns:1fr}
 .loadout-screen .world-record-heading h3{font-size:26px}
 .loadout-screen .world-record-body{padding-left:15px}
-@media(max-width:600px){.loadout-screen>.panel{padding:5px 18px 12px;border-radius:13px}.ability-collection{gap:24px}.ability-group>h2{font-size:21px;gap:10px}}
+@media(max-width:600px){.loadout-screen>.panel{padding:5px 18px 12px;border-radius:13px}.ability-collection{gap:24px}:is(.ability-group>h2,.world-groups>.panel>h2,.loadout-screen>.panel>h2,.identity-panel>h3,.scale-reference>h2,.collection-heading h2){font-size:21px;gap:10px}}
+
+/* Disclosure labels stay smaller than record names; explanatory text stays plain. */
+:is(.detail-list summary,.record-history>summary,.completed-projects>summary,.training-reference>details>summary,.scale-reference summary,.place-children .place-node>summary strong,#about-dialog h3){font:400 20px/1.4 Bangers,sans-serif;letter-spacing:.5px}
+.training-reference summary span{font:400 12px/1.6 'Segoe UI',sans-serif;letter-spacing:0}
