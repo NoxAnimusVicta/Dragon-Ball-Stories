@@ -468,7 +468,7 @@
       "title": "Conton City Dragon Balls",
       "summary": "Two compatible reward balls collected toward one complete set.",
       "status": "Stored",
-      "details": "Four-Star Ball: received on 23 April for Zero’s first commendation; wrapped in clean cloth. Two-Star Ball: received on 22 May for four weeks of cleanup service; kept in its padded case. Both are in the bottom drawer of the bedside cabinet in Room 214. The other five are not reserved. No wish has been made. This reward set is separate from the TL-503 Earth Dragon Balls."
+      "details": "Four-Star Ball: received on 23 April for Zero’s first commendation; wrapped in clean cloth. Two-Star Ball: received on 22 May for four weeks of cleanup service; kept in its padded case. Both are in the bottom drawer of the bedside cabinet in Room 214. The other five are not reserved. No wish has been made. This is a standard Time Patrol reserve set, separate from the TL-503 Earth Dragon Balls. More powerful variants are reserved for senior Patrollers and exceptional Patrol matters."
     },
     {
       "id": "travel-bag",
@@ -2363,7 +2363,7 @@
         },
         {
           "title": "Progress",
-          "text": "The Four-Star and Two-Star Balls of TP-RS-001 are stored in Room 214. The other five are not reserved. Chronoa offered help with wording; no wish or completed integration. Guru’s release leaves the attachment and seal unchanged."
+          "text": "The Four-Star and Two-Star Balls of TP-RS-647 are stored in Room 214. The other five are not reserved. Chronoa offered help with wording; no wish or completed integration. Guru’s release leaves the attachment and seal unchanged."
         },
         {
           "title": "Dependencies",
@@ -3962,7 +3962,7 @@
     {
       "id": "s191",
       "title": "Training and commendations",
-      "summary": "Eight productive hours with Vegeta bring Zero’s base to 5,213, measured twice. That evening Zero, Vegeta and Yamcha receive commendations. Zero redeems his for the Four-Star Ball of set TP-RS-001; no other balls or wish are granted.",
+      "summary": "Eight productive hours with Vegeta bring Zero’s base to 5,213, measured twice. That evening Zero, Vegeta and Yamcha receive commendations. Zero redeems his for the Four-Star Ball of set TP-RS-647; no other balls or wish are granted.",
       "details": "",
       "date": "23 April, Age 854 · 20:00",
       "status": "Recorded"
@@ -4294,7 +4294,7 @@
   ],
   "recordedThrough": "S240 · 28 June, Age 854 · 11:30 · Morning training and fresh timeline review",
   "rewards": {
-    "set": "TP-RS-001",
+    "set": "TP-RS-647",
     "heldStars": [
       2,
       4
