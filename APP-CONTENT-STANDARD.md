@@ -14,6 +14,12 @@ Use the same Bangers heading family across all screens. Group headings (Techniqu
 
 Visible section headings, field labels and disclosure labels use Title Case, including Appearance History, Stages & Power, Identity & Appearance and Read More. The renderer capitalises structured display labels without changing source keys, stored prose, proper-name spelling, acronyms, or historical journal titles. Do not use a global CSS text-transform on all content. Apply this contract to new screens and nested Places as well as the top-level categories.
 
+### Canonical naming checks
+
+Use **Campaign Power Reference** for the Character link, reference page title, browser title and search result. Keep its route `scale` and Character section number01. **Power Level** names the metric and its detail dialog; NPC gallery captions spell it out too. **Appearance History** names both protagonist and NPC history tabs. Artwork captions receive the same Title Case treatment as other record names. Search must use the same displayed record name as its destination, including **TL-503 · Yamcha’s Home**.
+
+Before release, audit Main Menu, Character/forms/history, Techniques/dialogs, Inventory/Resources/collection, World/People/Places/Ongoing/Completed, Story, search, the power reference and About. Check headings, field labels, captions, accessible names and fallback labels together. Run the naming regression checks as well as normal publication validation. Keep **TP-RS-647**, **Conton City Dragon Balls**, **Time Patrol Communicator Pin**, **Supreme Kai of Time**, **Conton City**, **Unknown Timelines** and the established TL-### identifiers consistent. A hub description such as “Time Patrol hub” is valid prose, not an alternative place name. Preserve dated journal titles, counterpart qualifiers, proper-name spelling, internal routes/IDs, reference calculation aliases and exact historical transcripts. Never publish an unrevealed place or form merely to standardise its label. Generated continuity uses **Technique records**.
+
 ## One home per fact
 
 Power Level belongs on Character, not in the ability collection. Current base is `character.battlePower`; `character.forms` holds each revealed stage and its total multiplier. Ability `formIds` reference those records. Calculate stage output from the current base with exact decimal arithmetic; never copy a current total into several display strings. Historical readings retain their date, measurement conditions and original value.
