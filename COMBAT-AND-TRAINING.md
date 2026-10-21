@@ -1,12 +1,12 @@
-# Training & combat reference
+# Training & Combat reference
 
-Campaign rules · S240 · 21 October 2026. Reference rules do not award progress or unlock abilities. Timing and reserve calibrations remain distinct from demonstrated capability.
+Campaign rules · Revision 7, Combat Calibration Amendment · S240 · 22 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.
 
 Public reader summary. The authorised local TRAINING-AND-TECHNIQUE-PROPOSAL.md is the full operational owner; the narrator must read it, the form prerequisites and NPC combat register in full before every response involving combat, including after compaction. This summary cannot replace current private state or saved rolls.
 
-## Zero’s defensive rotations
+## Zero’s Defensive Rotations
 
-Zero’s current defensive handling: one-time S240 starting assessments, not newly earned training. Percentages describe the response after an attack has been stopped, against an unfamiliar opponent with all responses feasible. Familiarity and actual openings change them. No stance is active outside combat.
+Zero’s current defensive handling: one-time S240 starting assessments, not newly earned training. Percentages describe the response after a clean breakthrough has been denied or an interception opportunity selected, against an unfamiliar opponent with all responses feasible. Familiarity and actual openings change them. No stance is active outside combat.
 
 | Rotation | Tier | Credits | Guard | Dodge | Parry | Counter |
 |---|---|---:|---:|---:|---:|---:|
@@ -15,7 +15,7 @@ Zero’s current defensive handling: one-time S240 starting assessments, not new
 | Deflection | Learned | 10 | 43.75% | 22.5% | 23.75% | 10% |
 | Riposte | Learned | 10 | 43.75% | 22.5% | 16.25% | 17.5% |
 
-## Mastered rotation targets
+## Mastered Rotation Targets
 
 Against an unfamiliar opponent, before feasibility filtering.
 
@@ -27,7 +27,7 @@ Against an unfamiliar opponent, before feasibility filtering.
 | Deflection | 25% | 15% | 50% | 10% |
 | Riposte | 25% | 15% | 20% | 40% |
 
-## Learning & mastery
+## Learning & Mastery
 
 Credits = actual productive hours × training quality. Quality ranges from 0.25 to 25. A fully supported twelve-hour programme at quality 25 earns 300 credits; sixteen productive hours earn 400. There is no eight-hour credit cap. Sleep, meals and inactive breaks are not simultaneous practice.
 
@@ -42,13 +42,13 @@ Training does not raise a transformation’s fixed multiplier. It improves activ
 After mastery, refinement can continue more slowly. The proposed preparation/economy factor is R = 1 / (1 + 0.10 × log2(1 + extra credits / 10,000)). It never grants free energy, a stronger form factor or immunity to strain. Ordinary Power Level growth has a separate reviewed ledger; publishing this reference does not recalculate earlier gains.
 
 
-## Tolerance & recovery
+## Tolerance & Recovery
 
 Carry tolerance T, unrecovered strain D, highest attained tolerance H and maintenance gap N. T and H cannot exceed 20; passive tolerance loss stops at 5. Personal-best memory is retained. These are fictional campaign measures, not human sleep guidance.
 
 Light, normal, hard and intensive practice create 0.25, 0.50, 0.75 and 1.00 load per productive hour. Recovery capacity C = T × min(1, recovery hours / 8) × (0.75 + 0.125 × support), where support is 0–2. Closing D = max(0, opening D + load − C). The next session’s quality deduction is min(4, D / 2). Do not count the same fatigue twice or erase it at midnight.
 
-Use actual completed recovery, not a promised night’s sleep. Productive and recovery hours do not overlap. A mixed programme may be easier to sustain than continuous intensive work; no compulsory physical/mental activity split is imposed.
+Use actual completed recovery, not a promised night’s sleep. Ordinary productive and protected recovery hours do not overlap; an explicitly restorative body has the exception below. A mixed programme may be easier to sustain than continuous intensive work; no compulsory physical/mental activity split is imposed.
 
 Demanding effort E = sum(hours × intensity / 3), with intensity 0–3. Recovered adaptation budget a = 0.1 × E × min(1, C / (opening D + load)); no load or recovery gives no adaptation. First-time tolerance grows as sqrt(T² + a). Below the recorded personal best, only the portion rebuilding H gains four times that squared-growth budget; growth beyond H returns to the normal rate.
 
@@ -56,27 +56,63 @@ Maintenance anchors: T5 needs 0.5 effort per week with 30 unsupported grace days
 
 Use training effort plus only combat maintenance not already counted by its actual duration. Daily requirement M is weekly demand / 7. Coverage = activity / M. Update N = min(grace + 1, max(0, previous N + 1 − coverage)). Beyond grace, lose 0.05 × max(0, 1 − coverage) tolerance that day, with a floor of 5. Full maintenance stops loss; returning to a former peak is faster, not instant. Skills and base power are not removed by tolerance decay.
 
+An embodied-dead Other World body or explicitly equivalent restorative effect recovers training strain at 0.50 + T / 80 per actual hour, including practice. During protected rest use the greater ordinary/passive rate for overlapping hours, never both. At T12, twenty-four hours recover 15.6: Normal training creates 12 load, Hard 18, Intensive 24. Normal work can therefore clear old strain while harder work can accumulate it. Actual hours still earn credits; T stays capped at 20. A living visitor or sleep-removal-only wish does not automatically gain this recovery. It does not heal every wound or refill all combat energy.
 
-## Attacks, defence & counters
+
+## Attacks, Defence & Counters
 
 Meaningfully contested combat uses automatic private, saved rolls for everyone. Fix intent, actual capabilities, supply, timing, range, injuries and feasible outcomes first. Impossible and certain results need no random draw. No rerolls, lucky minimum chance, protagonist padding or retrospective bonuses.
 
 For an ordinary attack, w = bodily output ratio² × agility ratio² × independently justified skill × position × familiarity factor. Breakthrough chance = w / (1 + w). Default independent modifiers are 1. Bodily power already contributes: do not apply the power-derived movement-speed fallback again as an agility bonus. A charged attack’s power affects impact, not the caster’s movement speed.
 
-If the attack is stopped, a secondary draw chooses guard, dodge, parry or immediate counter. Neutral weights are 50/25/15/10. Trained rotations change that conditional distribution; they are not another chance to reverse a successful hit. Remove impossible responses before rolling and normalise the remaining weights.
+After a failed clean breakthrough, a secondary draw chooses guard, dodge, parry or a counter opportunity. An interception response remains pending until collision. Neutral weights are 50/25/15/10. Trained rotations change that conditional distribution; they are not another chance to reverse a successful hit. Remove impossible responses before rolling and normalise the remaining weights.
 
-A counter immediately lands a fitting reply from the defender’s own repertoire and current output. No further accuracy roll, recursive counter or pause to choose a routine counter. It does not copy an enemy technique or grant an unprepared charged attack, new transformation or consumable use. Contact, penetration and injury are separate; a weak counter may do little or no damage.
+A counter immediately attempts a fitting reply at ordinary accuracy, with no counter-only odds or power bonus. The opponent can defend or counter it in turn. Resolve feasible chains without an arbitrary length cap, charging every actual attempt. The latest countering fighter can press the attack if circumstances allow, not bank guaranteed future turns. Routine responses need no player pause; major voluntary escalation still does.
 
-Similar-strength clean hits can injure. A maintained guard may transmit impact or displacement. No universal health bar or guaranteed damage percentage is asserted. A roll cannot make an impossible block or harmless attack decisive. Consequences follow delivered output, protection, geometry, location and existing injury.
+Physical counters use a ready Physical signature or style-appropriate strikes; Ki counters use a suitable Ki signature or ordinary Ki Blast variation. A response never copies an unknown move or receives free charge. A feasible Ki interception can start a clash: test uncertain interception once, then compare actual delivered powers. Collision is not a free hit on the caster. A weaker response may be overrun.
+
+Working convention: one signature attack per active form/loadout, with optional form overrides referencing already learned moves. Physical and Ki attacks qualify; Transformation & Amplification and Discipline do not. It is a default preference, not a limit on choosing other attacks. Zero defaults to Spirit Spear when ready and in contact range; ordinary physical combinations or Ki Blast volleys/spheres cover other windows. Spirit Bomb is not a reliable emergency signature, and a maximum-power basic blast gains no invented multiplier.
+
+An exchange groups a tight combination or bounded rapid-blast volley, not damage per fist or pellet. One root combination and its immediate counter chain earns one readable familiarity/maintenance exposure; every actual attempted attack still costs endurance. Changed tactics, supply, positions or genuinely subsequent attacks create new windows.
 
 
-## Rotations & remembered opponents
+## Endurance & Exertion
+
+Use a fresh 100-point combat-endurance reference, tracking received wear and unrecovered offensive exertion separately. This is campaign bookkeeping, not a percentage of Power Level or a newly measured current reserve. Actual injuries and pre-existing fatigue remain relevant; transformation does not refresh it.
+
+Combat Fundamentals governs ordinary physical combinations; Ki Blast governs ordinary Ki combinations. At Learned/Proficient/Advanced/Mastered, complete clean body-parity damage is 3/4/5/6. Physical costs are 1.00/0.75/0.60/0.50; Ki costs are 1.50/1.25/1.00/0.85 per bounded attempt, including misses. Use the current tier row between thresholds. Scale damage by delivered output / defensive bodily output; a feasible guard transmits 20%, full evasion/parry none.
+
+Beyond mastery, ordinary damage stays at 6 while cost uses diminishing refinement R. There is no extra accuracy, Power Level, per-punch or per-pellet bonus. Do not add Ki Control or ordinary mastery again to a named technique. Unmigrated current credits preserve the earlier 4 damage / 0.75 physical / 1.25 Ki accounting baseline, explicitly not a Proficient assignment. Established feats remain valid; explicitly below-Learned execution needs its own recorded profile.
+
+Each named technique retains its own regular-impact value: damage = regular impact × delivered output / (regular technique factor × defensive bodily output). At equal bodies and complete clean delivery, Kamehameha deals 12–24, Galick Gun 18–36 and Spirit Spear 19–38 across their regular-to-full profiles. No double Kaioken, clash-power bonus or extra exit damage. Injury still follows the actual attack.
+
+Named techniques use coefficient × attack factor² × economy: coefficient 1.5 for Galick Gun, 2 for the other profiled self-powered beams/wave, 1 for Spirit Spear handling plus its actual donated energy. Economy anchors are 1/0.85/0.65/0.45 at Learned/Proficient/Advanced/Mastered; do not invent a tier to grant a discount. Mastered Galick Gun costs 6.075 at regular ×3 and 24.3 at full ×6, a 25% reduction; damage remains 18–36. Preparation and sustain use the same reduced expenditure profile.
+
+Accrue regular cost through preparation and add the actual overcharge cost; do not charge preparation again at release. Interrupted attempts retain spent effort. Sustained beams add one release cost per Learned full-extra-charge interval, scaled by reference/current throughput, without a second mastery speed penalty. A recorded replenishing source may override ordinary depletion within its limits.
+
+Twenty equal-output clean Proficient physical exchanges cause 80 wear and cost 15; Mastered equivalents cause 120 and cost 10. These totals do not guarantee twenty connections or survival. Track losses and actual restoration in order, retaining separate received-wear and expenditure entries. Lifetime damage subtracted from 100 alone is invalid after recovery. Zero is exhaustion, not automatic death or unconsciousness. No automatic refill on a new exchange or form.
+
+
+## Recovery & Lasting Damage
+
+At zero Endurance, use an available full regeneration first, otherwise a suitable partial recovery. Exact depletion also triggers recovery. Spend each use once; restoring Endurance never replenishes recovery allowances. Actual physiology and survival still govern what can recover.
+
+Any damage left after reaching zero continues through the restored reserve. At 35 Endurance, a 50-damage hit uses a full restore to 100, then the remaining 15 leaves 85. A strong enough attack can consume several finite recoveries. No damage is discarded at zero, and no new defence roll occurs inside the same impact.
+
+A devastating hit causes at least 75 damage after defence and applicable passive recovery, leaving 1–20 Endurance, and triggers an available full restore. A hit reaching zero instead uses the overflow procedure; do not repeat the original threshold against every new reserve. Separate attacks are not pooled. Offensive expenditure can trigger exhaustion recovery, but is not trauma.
+
+Apply any established passive injury refund once per original impact, never again to its overflow or to offensive costs. Track actual recovery uses across consecutive fights. The proposed 24 personally experienced hours per spent use and related Senzu cooldown treatment remain under review; a new scene or midnight cannot reset uses.
+
+Recovery is reflexive rather than a compulsory surrendered action. Reconstruction still has its actual duration and survival limits. Finite stamina depletion does not switch off genuine immortality; zero alone neither kills a fighter nor erases injuries.
+
+
+## Rotations & Remembered Opponents
 
 Each rotation has its own credits. Training blend is 0.25 Learned, 0.50 Proficient, 0.75 Advanced and 1.00 Mastered. Add familiarity / 500, up to a combined 1.20. Each conditional weight = neutral + blend × (Mastered target − neutral). Unlearned rotations gain no specialised distribution; Neutral stays unchanged.
 
-Familiarity is directional and ranges from 0 to 100. For each attacking pair, multiply ordinary odds by (200 + attacker familiarity) / (200 + defender familiarity). Equal familiarity cancels this primary advantage, while both retain their defensive rotation benefit. Complete familiarity against none changes an otherwise equal contest from 50% to 60%, not a guaranteed hit.
+Familiarity is directional and ranges from 0 to 100. For each attacking pair, multiply ordinary odds by (800 + attacker familiarity) / (800 + defender familiarity). Equal familiarity cancels this primary advantage, while both retain their defensive rotation benefit. Complete familiarity against none changes an otherwise equal contest from 50% to about 52.94%, not a guaranteed hit.
 
-A readable resolved exchange earns 2/3/4/5/6 points at Learning/Learned/Proficient/Advanced/Mastered reading proficiency. Use the highest recorded rotation tier as the initial proxy. Award once after resolution, only for what that observer could perceive. Rebuilding below the retained peak is twice as fast for that portion only.
+Each readable root exchange grants 0.10/0.15/0.20/0.25/0.30 familiarity points at Learning/Learned/Proficient/Advanced/Mastered reading proficiency. Use the highest recorded rotation tier as the initial proxy. Award once after resolution, only for what that observer could perceive. Rebuilding below the retained peak is twice as fast for that portion only. Forty readable roots at Mastered add 12 points to a new read; reaching 100 from zero takes 334 without rust or timing changes. Gains apply between roots, so adaptation occurs during combat while lasting familiarity develops across repeated encounters. Existing remembered scores are retained; counter chains do not multiply awards.
 
 Memory persists between encounters. After 30 personally experienced days without relevant contact, familiarity loses one point per seven further days, down to a quarter of its retained peak. Base growth scales the old timing read by min(1, saved ordinary base / current ordinary base), once from its saved anchor. Small growth causes a small adjustment; it does not erase remembered facts.
 
@@ -85,16 +121,16 @@ An unfamiliar form, technique or genuinely changed approach gets its own record.
 Intent selects a learned rotation: buying time or distance favours Evasive; holding a line Bulwark; redirecting Deflection; baiting a reply Riposte. Otherwise retain the compatible approach or Neutral. No compulsory menu or artificial action cost; actual repositioning still takes time. Mastered targets remain bounded even with full familiarity.
 
 
-## Allies & multiple attackers
+## Allies & Multiple Attackers
 
 For genuinely simultaneous attacks, calculate each attacker’s own weight and familiarity factor. First-breakthrough chance = sum(weights) / (1 + sum(weights)). Choose the first breakthrough in proportion to those weights, then reassess still-viable follow-ups. Sequential attacks do not automatically overload defence.
 
 Actual crossfire can multiply weights by 1.5 when it forces incompatible defensive movements. Headcount alone does not earn it. Two equal unfamiliar attackers have 66.67% first-breakthrough odds, or 75% with genuine crossfire. An 80%-power and 60%-power pair have 50%, or 60% coordinated, under otherwise equal conditions.
 
-Never pool familiarity or give everyone the best teammate’s read. The defender’s conditional rotation uses a separate joint-pattern record. One failed shared contest produces one defence draw; a feasible counter hits one reachable attacker, not the entire team. Remaining threats may make a counter impossible. Very weak crowds receive no artificial chance floor or guaranteed chip damage.
+Never pool familiarity or give everyone the best teammate’s read. The defender’s conditional rotation uses a separate joint-pattern record. One failed shared contest produces one defence draw; a feasible counter attempts a reply against one reachable attacker, not the entire team. Remaining threats may make a counter impossible. Very weak crowds receive no artificial chance floor or guaranteed chip damage.
 
 
-## Charge windows & beam clashes
+## Charge Windows & Beam Clashes
 
 Current attack output = ordinary base × total active-state factor × available fraction × technique factor. Count each effect once. A Kaioken combination uses its already-combined state factor; do not multiply Kaioken again. Transformation mastery does not increase that factor.
 
@@ -102,23 +138,25 @@ A counterbeam can protect the user or an ally if awareness, orientation, path an
 
 At collision compare actual delivered output and supply. Close clashes can allow response windows: a learned amplification, accessible fruit, ally transfer or established power-up may change newly supplied emission. The opponent may respond if time remains. No guaranteed turn before an overwhelming beam arrives. A mouth blast conflicts with eating; energy received is counted once.
 
-Detached attacks cannot retroactively gain a later transformation. Merged beams add contributions actually arriving at the same collision; separated attacks use the shared-defence model. A successful immediate counter and an intercepted beam are different outcomes.
+Detached attacks cannot retroactively gain a later transformation. Merged beams add contributions actually arriving at the same collision; separated attacks use the shared-defence model. A counter selection can lead to interception, but collision and a direct body hit are different outcomes; never award both from one roll.
 
 Technique-specific setup and extra-charge profiles use immutable reference output. The reviewed timing convention scales attack time by (reference active output / current active output)^0.25 and transformation time by pre-transformation base, with refinement R. Relative movement fallback is sqrt(bodily output ratio) × independent mobility. Neither is measured canon physics; established feats and exceptional gathering limits override generic calibration.
 
-The working residual-access rule allows the same already-used transformation or Kaioken stage to skip separate re-entry buildup within 30 minutes, if health and energy permit. It does not restore energy, remove strain, unlock stages or recharge attacks. First experimental access after actual preparation uses four times Learned setup at 1–under 5 target credits, twice at 5–under 10; access prerequisites still apply.
+The working residual-access rule allows the same already-used transformation or Kaioken stage to skip separate re-entry buildup within 30 minutes, if health and energy permit. It does not restore energy, remove strain, unlock stages or recharge attacks. First experimental access after actual preparation uses four times Learned setup at 0–under 5 eligible target credits, twice at 5–under 10; access prerequisites still apply.
 
 
-## Technique charge & sensing
+## Technique Charge & Sensing
 
-Regular Kamehameha is ×2; Galick Gun ×3; Spirit Spear ×2. Their full profile ceilings are ×4, ×6 and ×6 respectively. Additional charge accesses 25%, 50%, 75% or 100% of the gap above regular output at Learned, Proficient, Advanced or Mastered. These profiles do not assert that Zero has unlocked their peaks.
+Regular Kamehameha is ×2; Galick Gun ×3; Spirit Spear ×2. Their full profile ceilings are ×4, ×6 and ×4 respectively. Additional charge accesses 25%, 50%, 75% or 100% of the gap above regular output at Learned, Proficient, Advanced or Mastered. These profiles do not assert that Zero has unlocked their peaks.
 
-Kamehameha tier peaks are ×2.5/3/3.5/4; Galick Gun ×3.75/4.5/5.25/6; Spirit Spear ×3/4/5/6. Output rises linearly through the accessible extra-charge interval; do not multiply regular output by the total factor again. Timers require an established individual reference anchor and tier before use.
+Kamehameha tier peaks are ×2.5/3/3.5/4; Galick Gun ×3.75/4.5/5.25/6; Spirit Spear ×2.5/3/3.5/4. Output rises linearly through the accessible extra-charge interval; do not multiply regular output by the total factor again. Timers require an established individual reference anchor and tier before use.
 
 Reference extra-charge calibrations, Learned through Mastered: Kamehameha 120/60/30/10 seconds; Galick Gun 180/90/45/15; Spirit Spear 300/150/75/30. Spirit Spear’s regular gather/shape calibration is 5/1/0.1/0.005 seconds. These are authored reference timings, not newly measured Zero performance or fixed times at every power level.
 
 Spirit Spear needs contact and actual gathered spirit energy; the timer cannot create supply. Energy enters at contact, mixes violently with the target’s body and ki, and can erupt from the opposite side when properly coupled. A guarded or incomplete strike can leave a local burn. No automatic armour bypass, extra exit multiplier or retrospective wound. Spirit Bomb also requires actual donation.
 
-Kaioken remains one technique with retained lower stages; each learned form combination is one compatibility ability with its own stage range. Both Zero and Yamcha currently have ×2 only, and Zero’s Channel combination remains unsafe. The working mastery conditioning target is ×20, with proposed post-mastery target 20 + 10 × sqrt(extra credits / 2,500), usually capped at ×100. Training targets are not automatic safe unlocks; higher stages can still damage the body.
+Mastery improves movement and control within each method. Mobile beams can develop skilled evasive handling; committed gathering techniques retain concentration and supply limits. Spirit Spear can gather during its committed approach and strike, but cannot bank energy through unrelated fighting.
+
+Kaioken retains lower learned stages in one technique; each form pairing has separately trained compatibility. The sequential route is ×2, ×3, ×4, ×5, ×10, ×15, ×20, ×30, ×40, ×50, ×75, ×100. Complete predecessor conditioning before developing the next stage. Mastery targets fully conditioned ×20; later stages require additional specialisation and remain physically dangerous. Both Zero and Yamcha currently have ×2 only; Zero’s Channel pairing remains unsafe.
 
 Learned sensing gives familiar direction/signatures and broad relative strength; Proficient improves moving-signature tracking and estimates; Advanced estimates roughly one significant figure; Mastered reads precise accessible current output. Suppression, hidden reserve and unfamiliar divine/artificial energy still limit what can be read. Zero’s current sensing remains approximate.
