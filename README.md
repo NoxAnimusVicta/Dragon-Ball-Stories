@@ -16,6 +16,7 @@ The app checks for published updates when opened or resumed and while visible, p
 
 - [Start here](START-HERE.md)
 - [Narrator guide](NARRATOR-GUIDE.md)
+- [Training and combat](COMBAT-AND-TRAINING.md) — also available below the compact ability list; defensive rotations appear inside Combat Fundamentals.
 - [Campaign configuration](CAMPAIGN-CONFIG.md)
 - [Corrections](RETCONS.md)
 - [Naming reference](NAMING-REFERENCE.md)

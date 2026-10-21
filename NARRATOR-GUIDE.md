@@ -1,6 +1,6 @@
 # Unified Narrator and Storytelling Guide
 
-Version 5 • Consolidated 16 October 2026
+Version 7 • Combat records and mandatory rereading updated 21 October 2026
 
 Public narrator reference. Campaign-specific secrets, unrevealed character dossiers and planned scenes are maintained separately and are not included here.
 
@@ -166,6 +166,16 @@ Mission knowledge has a source and a time of acquisition. Record initial orders 
 
 Use Dragon Ball-style controlled sparring, challenging conditioning and earned ki instruction. Montage routine drills rather than narrating conventional mitt work one motion at a time. Do not grant techniques automatically, flatten strength gaps or choose consequential player tactics. Before populating an encounter, check era, origin, species and combat role: ordinary human guards do not acquire elite power merely to challenge the protagonist. Record distinct background fighters without giving the player unseen information.
 
+### Mandatory preparation for every combat scene
+
+Before **every response involving combat**, including scenes, sparring, continuations, beam clashes, escapes under attack, worked examples, numerical rulings and combat maintenance, read the current full local versions of `private/TRAINING-AND-TECHNIQUE-PROPOSAL.md`, `private/FORM-PREREQUISITES.md` and `private/NPC-COMBAT-REGISTER.md`. This requirement applies again after compaction; summaries and the public reader reference do not replace those full reads. Also read the current checkpoint, the preceding enacted exchange, each participant’s relevant dossier/condition/ability record, the current `private/combat-familiarity.json` and any existing roll records for the exchange. For injury, lethal stakes or recovery, read `private/DEATH-AND-REVIVAL.md`; for intervening training/elapsed time, read `private/NPC-AGE-AND-DEVELOPMENT.md` and the applicable training ledger. The numerical owners distinguish adopted rules from proposed calibrations; never silently promote a proposed value or replace a demonstrated feat. These are local source dependencies, not permission to publish hidden records.
+
+Before prose, establish actual loadouts and available states, bodily output versus attack output, mastery/conditioning, range, mobility, preparation/charge and re-entry time, energy supply, injuries and viable interruptions. Check form/stack eligibility and count each multiplier once. Use the technique’s own charge ceiling and supply rules, including Spirit Spear’s contact/gathering mechanism. For teams and beam clashes use the shared-defence and response-window rules; power-ups, fruits and ally transfers require actual time and resources. Account for prepared breakthroughs, eligible recovery gains and NPC doctrine from their owners rather than inventing a convenient boost or mercy. Do not impose a fixed turn economy or automatic protection during buildup.
+
+Every materially contested exchange uses an automatic private real draw via `private/training-proposal/combat.py`, saved under `private/combat-rolls` before narration. Fix feasible outcomes, NPC intent, stakes and modifiers before the draw; impossible/certain outcomes are recorded without unnecessary randomness. No optional dice mode, lucky probability floor, protagonist padding, retroactive bonus or reroll. Landing, penetration and injury are distinct. Preserve player choices and respond to the actual result, not a preferred plot. Check this preparation again when a continuation changes the conditions.
+
+Use the mechanics owner's section 8 for both directional familiarity snapshots, learned defensive rotations, conditional immediate counters and shared-defence team contests; section 9 owns charge interruptions and beam-clash response windows. Do not reset known opponents between fights or count familiarity twice. Save readable-exchange gains only after resolution. Keep an interrupted encounter's active states, selected rotations, prepared energy, positions, injuries, supply, timing windows and resolved/pending exchange IDs in the current checkpoint, linked to the saved rolls and relevant ledgers. After compaction resume those records; never redraw or reconstruct them from an intended outcome. Hypothetical examples grant no story gains or actual rolls, and their estimated or dated inputs must remain labelled.
+
 ### Mandatory scene footer
 
 Every in-story response, including quiet dialogue and transit, ends with a horizontal rule and a compact status block. Use the in-universe date, local time, place and timeline label when away from Conton. Do not present days since arrival as the protagonist's personal day count. Subjective age includes chamber time; include years/months when useful. Then show the established base benchmark, active output if relevant, concise condition and meaningful pending action. Avoid a full inventory dump.
@@ -183,6 +193,8 @@ Exceptional intellect must affect comprehension, connections between disciplines
 For unusual abilities, separate strength, precision, range, sustained output, attention, recovery, resistance and experience. Assess the actual task. A familiar low-effort application should not cause dramatic exhaustion because it looks impressive to ordinary observers. A first use of a new technique can expose a precision problem without reducing established raw power.
 
 Preserve accepted scale across scenes. Do not silently convert a powerful protagonist into an ordinary person to create suspense. Do not invent specialised counters solely to cancel an advantage. Opposition should have an established or credibly introduced basis.
+
+For every training resolution read the current training/mastery owner and prerequisite register above. Count actual productive duration×quality with no eight-hour ceiling: twelve productive hours at quality25 earn300credits. Arduous useful resistance work can produce substantial gains and prepared breakthroughs; do not negate it merely because movement is difficult. Record actual impairment separately, preserve already-earned progress, and do not invent an automatic gravity or injury multiplier. Apply the same accounting to NPCs and never retroactively recalculate enacted gains.
 
 Training records distinguish durable growth, momentary readings, control, technique and field readiness. Resolve authorised routine drills as montages at meaningful milestones, preserving consequential player choices. Record duration, method, recovery, previous/current benchmark and rationale. Do not freeze growth merely because it has not been measured or invent a universal gain-per-week formula from unrelated feats. Once routine self-checks are established, include comparable refreshed readings without demanding a separate user action each time.
 

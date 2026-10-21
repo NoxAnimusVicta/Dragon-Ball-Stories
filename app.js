@@ -23,6 +23,7 @@
   const release = document.querySelector('meta[name="app-release"]')?.content || '';
   let data;
   let scale;
+  let combatReference;
   const openPlaces = new Set();
   let searchIndex = [];
   let portraitUrl = null;
@@ -282,7 +283,15 @@
       `<div class="ability-collection">${groups.map(group=>{
         const items=data.abilities.filter(r=>abilityGroup(r).id===group.id);
         return items.length ? `<section class="ability-group" aria-labelledby="ability-group-${group.id}"><h2 id="ability-group-${group.id}">${group.title}</h2><div class="ability-grid">${items.map(r=>`<button class="ability-card" id="record-${escape(r.id)}" data-ability="${escape(r.id)}" aria-haspopup="dialog"><span class="ability-card-art">${safePortrait(r.artwork)?`<img class="ability-image" src="${escape(safePortrait(r.artwork))}" alt="" loading="lazy">`:''}</span><span class="ability-card-copy"><strong>${escape(r.title)}</strong><span class="ability-card-description">${escape(r.summary)}</span></span></button>`).join('')}</div></section>` : '';
-      }).join('')}</div>`;
+      }).join('')}${trainingReference()}</div>`;
+  }
+  function trainingReference() {
+    if (!combatReference) return '<p class="power-reference-link"><a href="./COMBAT-AND-TRAINING.md">Training & combat reference</a></p>';
+    return `<section class="panel training-reference"><details data-detail-key="training-combat" id="record-training-combat"><summary>Training & combat<span>Mastery, recovery and how fights resolve</span></summary><div class="training-reference-body"><p>${escape(combatReference.status)}</p>${combatReference.sections.map(s=>`<details class="record-history" id="record-rules-${escape(s.id)}" data-detail-key="rules-${escape(s.id)}"><summary>${escape(s.title)}<span>${escape(s.summary)}</span></summary>${s.paragraphs.map(p=>`<p>${escape(p)}</p>`).join('')}</details>`).join('')}<p><a href="./COMBAT-AND-TRAINING.md">Read the complete public reference</a></p></div></details></section>`;
+  }
+  function combatRotations() {
+    if (!combatReference) return '';
+    return `<section class="content-section"><h3>Defensive rotations</h3><p>${escape(combatReference.rotationNote)}</p><dl class="definition-grid">${combatReference.rotations.map(r=>definition(r.name,`${r.tier} · ${r.credits.toLocaleString('en')} credits`,Object.entries(r.baseline).map(([mode,weight])=>`${mode} ${weight}%`).join(' · '))).join('')}</dl><p><a href="#abilities/rules-familiarity">How familiarity changes your rotations</a></p></section>`;
   }
   function showAbility(id) {
     const ability=data.abilities.find(r=>r.id===id);
@@ -299,6 +308,10 @@
     const block=(title,text)=>text?`<section class="content-section"><h3>${title}</h3><p>${escape(text)}</p></section>`:'';
     const history=ability.trainingRecord;
     dialog.innerHTML=`<header class="ability-detail-header"><div class="ability-detail-heading"><img src="${escape(safePortrait(ability.artwork))}" alt=""><div><span class="ability-category">${escape(abilityGroup(ability).title)}</span><h2 id="ability-dialog-title">${escape(ability.title)}</h2></div></div><button class="icon-button close-dialog" aria-label="Close ability details" autofocus>×</button></header><div class="ability-detail-body" tabindex="0" role="region" aria-label="Ability information">${block('Effect',ability.effect)}${forms.length?`<section class="content-section"><h3>Stages & power</h3><dl class="power-level-list">${forms.map(f=>`<div><dt>${escape(f.name)}<span>×${escape(f.multiplier)}</span></dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl><p>Calculated from the current base of ${escape(exactPower(data.character.battlePower))}. Control is described below.</p></section>`:''}${block('Appearance',ability.appearance)}${block('Control & compatibility',ability.control)}<section class="content-section"><h3>Development</h3><p>${escape(ability.development)}</p>${historyLinks(ability.history)}${history?`<details class="record-history"><summary>Detailed training record · ${escape(history.asOf)}</summary><p>${escape(history.text)}</p>${history.facts?.length?`<dl class="definition-grid">${history.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>`:''}</details>`:''}</section></div>`;
+    const body=dialog.querySelector('.ability-detail-body');
+    if(id==='combat-basics') body.insertAdjacentHTML('beforeend',combatRotations());
+    const ruleNote=combatReference?.abilityNotes[id];
+    if(ruleNote) body.insertAdjacentHTML('beforeend',block('Technique rules',ruleNote));
     dialog.showModal();
   }
   function scalePage() {
@@ -396,6 +409,7 @@
   function buildSearch() {
     searchIndex = nav.map(([route,title]) => ({route,title,summary:route === 'overview' ? 'Return to the adventure menu' : `Explore ${title.toLowerCase()}`,text:title}));
     searchIndex.push({route:'scale',title:'Approved power scale',summary:'Shared multipliers, fusion and 24 encounter cases',text:'fusion scale multipliers Super Saiyan God Blue Cumber Baby Crimson'});
+    if(combatReference) for(const section of combatReference.sections) searchIndex.push({route:'abilities/rules-'+section.id,title:section.title,summary:section.summary,text:section.paragraphs.join(' ')});
     const c = data.character;
     searchIndex.push({route:'character',title:c.name,summary:`Age ${ageLabel(c)}; ${c.height} (${c.heightMetric})`,text:Object.values(c).filter(v => typeof v === 'string' || typeof v === 'number').join(' ')});
     const mapping = {abilities:'abilities',inventory:'inventory',accounts:'inventory',people:'world',places:'world',projects:'world',events:'chronicle'};
@@ -508,6 +522,7 @@
       if (!response.ok) throw new Error('Campaign records are unavailable.');
       data = validate(await response.json());
       try { const reference=await fetch('./power-scale.json?v='+release,{cache:'no-store',signal:controller.signal}); if(reference.ok) scale=await reference.json(); } catch { /* Main story remains available if reference fails. */ }
+      try { const response=await fetch('./combat-reference.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const reference=await response.json();if(reference.schemaVersion===1 && Array.isArray(reference.sections) && Array.isArray(reference.rotations) && reference.abilityNotes) combatReference=reference;} } catch { /* The static reference remains linked if its data is unavailable. */ }
       portraitUrl = safePortrait(data.character.portrait);
       $('navigation').innerHTML=nav.map(([route,label]) => `<a class="nav-link" href="#${route}" aria-label="${label}">${icon(route)}<span>${label}</span></a>`).join('');
       document.querySelector('.user-chip').textContent=data.character.name;

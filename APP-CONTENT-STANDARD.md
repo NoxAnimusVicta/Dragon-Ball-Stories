@@ -18,7 +18,7 @@ Every established ability, including fundamentals, has exactly one compact icon-
 
 At a glance: small icon, name and one short effect sentence. Remove power-reference/form-navigation buttons from this section; the campaign power-reference link belongs beside Character's power information. Do not display the old mixed Developing/Practised statuses as mastery ranks. Their historical data remains intact until the new numerical model and starting-tier migration are approved. Current capability and limits remain in the dialog.
 
-The dialog header contains the small icon, quiet category text, ability name and one44-pixel close button. No generic ABILITY label, status badge, white inset box or extra toolbar. The header stays fixed while the body scrolls. Once the mastery proposal is adopted, display one restrained plain tier label and a Mastery section with demonstrated benefits/next focus. Never publish draft coefficients or guessed progression percentages. Uncontrolled is an access condition, not a level on the mastery ladder.
+The dialog header contains the small icon, quiet category text, ability name and one44-pixel close button. No generic ABILITY label, status badge, white inset box or extra toolbar. The header stays fixed while the body scrolls. Display a plain tier label only where an actual numerical starting assessment or earned tier exists. General ability-credit migration remains incomplete; do not translate legacy Developing/Practised labels into ranks or guessed percentages. Uncontrolled is an access condition, not a level on the mastery ladder.
 
 Dialog order:
 
@@ -29,6 +29,8 @@ Dialog order:
 5. **Development** — `development`: concise current focus; collapsed linked `history` events and, where needed, a dated `trainingRecord`.
 
 Omit sections that do not apply. Do not invent an appearance, multiplier or maximum to fill a field. Both Dark Factor records receive the same appearance/control treatment.
+
+S240 combat reference: `combat-reference.json` is the reviewed public rules projection, generated alongside `COMBAT-AND-TRAINING.md` from the local exporter. Keep one collapsed Training & combat disclosure after the ability groups, with searchable topic disclosures and a static-reference link. Combat Fundamentals alone displays Zero's recorded defensive rotation tiers/credits and unfamiliar-opponent conditional weights. Do not create four duplicate ability rows or an active stance selector. Spirit Spear, Kaioken and Ki Sensing receive short Technique rules sections from the same projection. Reference ceilings are not acquired stages or newly demonstrated performance. Actual opponent familiarity, hidden NPC loadouts and saved rolls remain private. These additions do not restore power-navigation buttons to Abilities.
 
 `history` contains stable event IDs, not copied journal entries. `trainingRecord` preserves unique older observations in a collapsed dated record; it is historical, not a second current status. Update current fields when capability changes. Append a dated observation or link a new event; do not silently rewrite the old record as if it had always used the latest base.
 
