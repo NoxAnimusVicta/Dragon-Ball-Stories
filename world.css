@@ -43,3 +43,24 @@
  .place-children .place-children .place-children .place-content{padding-left:0;border-left:0}
  .place-node .definition-grid{grid-template-columns:1fr}
 }
+
+/* Timeline groups are separators, not another layer of cards. */
+.world-timeline{border-bottom:1px solid #264f4333;scroll-margin-top:24px}
+.world-timeline:last-child{border-bottom:0}
+.timeline-heading{display:flex;align-items:center;gap:14px;min-height:64px;padding:18px 0;list-style:none;cursor:pointer;color:#214f43}
+.timeline-heading::-webkit-details-marker,.timeline-about>summary::-webkit-details-marker{display:none}
+.timeline-name{font:24px/1.2 Bangers,sans-serif;letter-spacing:.5px;min-width:0}
+.timeline-heading:after{content:'';height:1px;background:#bd954e66;flex:1;order:1;min-width:10px}
+.timeline-count{font:11px/1.4 'Segoe UI',sans-serif;color:#597769;white-space:nowrap;order:2}
+.timeline-chevron{width:8px;height:8px;border-right:1.5px solid #557c70;border-bottom:1.5px solid #557c70;transform:rotate(45deg);margin:0 8px 4px 2px;flex-shrink:0;order:3}
+.world-timeline[open]>.timeline-heading .timeline-chevron{transform:rotate(225deg);margin-top:7px}
+.timeline-content{padding:0 0 6px;min-width:0}
+.timeline-content>.world-record:first-child>.world-record-heading,.timeline-content>.place-node:first-child>summary{padding-top:12px}
+.timeline-content>.world-record:first-child>.world-record-heading:after,.timeline-content>.place-node:first-child>summary:after{top:21px}
+.timeline-about>summary{position:relative;list-style:none;cursor:pointer;min-height:44px;padding:16px 30px 16px 0;font:20px/1.3 Bangers,sans-serif;letter-spacing:.4px;color:#547366}
+.timeline-about>summary:after{content:'';position:absolute;right:8px;top:22px;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg)}
+.timeline-about[open]>summary:after{transform:rotate(225deg);top:26px}
+.timeline-about .world-record-body>p{font-size:13px;line-height:1.65}
+.timeline-heading:focus-visible,.timeline-about>summary:focus-visible{outline:2px solid #b8700b;outline-offset:3px;border-radius:4px}
+@media(hover:hover) and (pointer:fine){.timeline-heading:hover,.timeline-about>summary:hover{color:#157564}}
+@media(max-width:600px){.timeline-heading{gap:10px;min-height:60px}.timeline-name{font-size:21px}.timeline-count{font-size:10px}.timeline-chevron{margin-right:7px}}

@@ -26,7 +26,8 @@
   let data;
   let scale;
   let combatReference;
-  const openPlaces = new Set();
+  const worldExpansion = new Map();
+  const worldOpen = key => worldExpansion.get(key) ? 'open' : '';
   let searchIndex = [];
   let portraitUrl = null;
   let selectedForm = 0;
@@ -254,7 +255,7 @@
     return events.length ? `<details class="record-history"><summary>${heading(title)}</summary><ol>${events.map(e=>`<li><a href="#chronicle/${escape(e.id)}">${escape(e.title)}</a><small>${escape(e.date || '')}</small></li>`).join('')}</ol></details>` : '';
   }
   function worldRecord(r,kind) {
-    return `<details class="world-record" id="record-${escape(r.id)}" data-detail-key="${escape(r.id)}"><summary class="world-record-heading"><span class="record-meta">${escape(r.status || '')}</span><h3>${heading(r.title)}</h3>${r.context ? `<span class="record-context">${escape(r.context)}</span>`:''}<span class="record-preview">${escape(kind==='projects' ? r.nextStep : r.summary)}</span></summary><div class="world-record-body">${recordSections(r,kind)}</div></details>`;
+    return `<details class="world-record" id="record-${escape(r.id)}" data-detail-key="${escape(r.id)}" ${kind==='people' ? worldOpen(r.id) : ''}><summary class="world-record-heading"><span class="record-meta">${escape(r.status || '')}</span><h3>${heading(r.title)}</h3>${r.context ? `<span class="record-context">${escape(r.context)}</span>`:''}<span class="record-preview">${escape(kind==='projects' ? r.nextStep : r.summary)}</span></summary><div class="world-record-body">${recordSections(r,kind)}</div></details>`;
   }
   function overview() {
     const entries = [
@@ -339,10 +340,34 @@
     return pageHeader('04','Inventory','Pack for a life beyond the ordinary.')+rewardsPanel()+`<div class="loadout-screen"><section class="panel main-panel"><h2>Possessions</h2>${data.inventory.length ? records(data.inventory.filter(r=>r.id!=='patrol-dragon-balls'),'inventory') : empty('inventory','What comes with you?','Your known possessions will appear here once they are established in the story.')}</section><aside class="panel funds-panel"><div class="capsule-object" aria-hidden="true"><span>CAPSULE</span><b>CC</b></div><h2>Resources</h2>${data.accounts.length ? records(data.accounts,'accounts') : '<span class="balance">—</span><p>No known funds have been recorded yet.</p>'}<span class="eyebrow">CARRIED · STORED · OWNED</span></aside></div>`;
   }
 
+  function timelineTitle(place) {
+    return place.id === 'timeline-503' ? 'TL-503 · Yamcha’s Home' : place.title;
+  }
+  function timelineHeading(title,count,noun) {
+    return `<summary class="timeline-heading"><span class="timeline-name">${heading(title)}</span><span class="timeline-count">${count} ${noun}</span><span class="timeline-chevron" aria-hidden="true"></span></summary>`;
+  }
+  function peopleGroups() {
+    const roots=data.places.filter(p=>!p.parentId);
+    const groups=[...roots.map(p=>({id:p.id,title:timelineTitle(p)})),{id:'unknown-timelines',title:'Unknown Timelines'}];
+    const known=new Set(groups.map(g=>g.id));
+    return groups.map(group=>{
+      const people=data.people.filter(p=>(known.has(p.worldGroup)?p.worldGroup:'unknown-timelines')===group.id);
+      const key='people-'+group.id;
+      return people.length ? `<details class="world-timeline" data-detail-key="${escape(key)}" ${worldOpen(key)}>${timelineHeading(group.title,people.length,people.length===1?'Person':'People')}<div class="timeline-content">${records(people,'people')}</div></details>` : '';
+    }).join('');
+  }
+  function placeCount(id) {
+    return data.places.filter(p=>p.parentId===id).reduce((total,p)=>total+1+placeCount(p.id),0);
+  }
   function placeTree(parentId = null) {
     return data.places.filter(p => (p.parentId || null) === parentId).map(p => {
       const children=placeTree(p.id);
-      return `<details class="place-node" id="record-${escape(p.id)}" data-place-id="${escape(p.id)}" data-detail-key="${escape(p.id)}" tabindex="-1" ${openPlaces.has(p.id)?'open':''}><summary><span><strong>${heading(p.title)}</strong><small>${escape(p.context || '')}</small><span class="place-purpose">${escape(p.summary || '')}</span></span></summary><div class="place-content">${p.status || p.date ? `<div class="record-meta">${escape([p.status,p.date].filter(Boolean).join(' / '))}</div>` : ''}${recordSections(p,'places')}${children ? `<div class="place-children">${children}</div>` : ''}</div></details>`;
+      const detail=`${p.status || p.date ? `<div class="record-meta">${escape([p.status,p.date].filter(Boolean).join(' / '))}</div>` : ''}${recordSections(p,'places')}`;
+      if(!parentId) {
+        const count=placeCount(p.id),aboutKey='about-'+p.id;
+        return `<details class="world-timeline" id="record-${escape(p.id)}" data-place-id="${escape(p.id)}" data-detail-key="${escape(p.id)}" ${worldOpen(p.id)}>${timelineHeading(timelineTitle(p),count,count===1?'Place':'Places')}<div class="timeline-content">${children}<details class="timeline-about" data-detail-key="${escape(aboutKey)}" ${worldOpen(aboutKey)}><summary>${heading(p.id==='toki-toki-city'?'About Conton City':'About This Timeline')}</summary><div class="world-record-body"><p>${escape(p.summary || '')}</p>${detail}</div></details></div></details>`;
+      }
+      return `<details class="place-node" id="record-${escape(p.id)}" data-place-id="${escape(p.id)}" data-detail-key="${escape(p.id)}" tabindex="-1" ${worldOpen(p.id)}><summary><span><strong>${heading(p.title)}</strong><small>${escape(p.context || '')}</small><span class="place-purpose">${escape(p.summary || '')}</span></span></summary><div class="place-content">${detail}${children ? `<div class="place-children">${children}</div>` : ''}</div></details>`;
     }).join('');
   }
   function projects() {
@@ -351,7 +376,7 @@
   }
 
   function world() {
-    return pageHeader('05','World','Follow your curiosity.')+`<section class="world-stage"><div class="world-intro"><span class="eyebrow">${data.started ? 'YOUR CURRENT LOCATION' : 'NEXT STOP / ANOTHER LIFE'}</span><h2>${escape(data.story.location || 'Somewhere extraordinary.')}</h2><p>${data.story.location ? 'Your discoveries, connections and ongoing projects are gathered below.' : 'Your surroundings and discoveries will take shape here as the adventure unfolds.'}</p><dl class="definition-grid">${definition('Era / continuity',data.story.era)}${definition('Current date',data.story.date)}</dl></div></section><nav class="record-jumps" aria-label="World categories"><a href="#world">All</a><a href="#world/people">People <span>${data.people.length}</span></a><a href="#world/places">Places <span>${data.places.length}</span></a><a href="#world/projects">Ongoing <span>${data.projects.length}</span></a></nav><div class="world-groups"><section class="panel" id="record-people" tabindex="-1"><h2>People</h2>${data.people.length ? records(data.people,'people') : '<p>Friends, rivals, strangers.<br>Your first encounter is still ahead.</p>'}</section><section class="panel" id="record-places" tabindex="-1"><h2>Places</h2>${data.places.length ? placeTree() : '<p>A world waiting to unfold.<br>No discoveries recorded yet.</p>'}</section><section class="panel" id="record-projects" tabindex="-1"><h2>Ongoing</h2>${data.projects.length ? projects() : '<p>Big ideas start somewhere.<br>No projects started yet.</p>'}</section></div>`;
+    return pageHeader('05','World','Follow your curiosity.')+`<section class="world-stage"><div class="world-intro"><span class="eyebrow">${data.started ? 'YOUR CURRENT LOCATION' : 'NEXT STOP / ANOTHER LIFE'}</span><h2>${escape(data.story.location || 'Somewhere extraordinary.')}</h2><p>${data.story.location ? 'Your discoveries, connections and ongoing projects are gathered below.' : 'Your surroundings and discoveries will take shape here as the adventure unfolds.'}</p><dl class="definition-grid">${definition('Era / continuity',data.story.era)}${definition('Current date',data.story.date)}</dl></div></section><nav class="record-jumps" aria-label="World categories"><a href="#world">All</a><a href="#world/people">People <span>${data.people.length}</span></a><a href="#world/places">Places <span>${data.places.length}</span></a><a href="#world/projects">Ongoing <span>${data.projects.length}</span></a></nav><div class="world-groups"><section class="panel" id="record-people" tabindex="-1"><h2>People</h2>${data.people.length ? peopleGroups() : '<p>Friends, rivals, strangers.<br>Your first encounter is still ahead.</p>'}</section><section class="panel" id="record-places" tabindex="-1"><h2>Places</h2>${data.places.length ? placeTree() : '<p>A world waiting to unfold.<br>No discoveries recorded yet.</p>'}</section><section class="panel" id="record-projects" tabindex="-1"><h2>Ongoing</h2>${data.projects.length ? projects() : '<p>Big ideas start somewhere.<br>No projects started yet.</p>'}</section></div>`;
   }
   function chronicle() {
     return pageHeader('02','Story','Your journey, from the latest moment to the first.')+`<div class="story-screen"><section class="chapter-cover"><span class="eyebrow">${data.started ? 'THE JOURNEY SO FAR' : 'YOUR FIRST SAGA'}</span><img src="./dragon-ball.svg?v=${release}" width="130" height="130" alt="One-star Dragon Ball"><h2>${data.started ? 'The story<br>continues.' : 'Beyond<br>the familiar.'}</h2><span class="chapter-tag">${data.started ? escape(data.phase) : 'CHAPTER ONE / NOT STARTED'}</span></section><section class="story-content">${data.started ? `<div class="pending-choice"><span class="eyebrow">CURRENT CHECKPOINT / ${escape(data.story.date)}</span><p>${escape(data.story.pendingChoice)}</p></div><nav class="record-jumps" aria-label="Journal navigation"><a href="#chronicle/${escape(data.events.at(-1)?.id || '')}">Latest Entry</a><a href="#chronicle/${escape(data.events[0]?.id || '')}">The Beginning</a><span>${data.events.length} entries · newest first</span></nav>` : ''}${data.events.length ? records([...data.events].reverse()) : `<span class="eyebrow">PROLOGUE / CHARACTER CREATION</span><h2>The first step<br>is yours.</h2><p>Your journey has yet to begin. This journal will follow what you experience and discover.</p><div class="story-progress"><span class="complete">Name, age & height</span><span>Character & artwork</span><span>Opening setting</span></div><a class="primary" href="#character">Meet Zero ${icon('arrow')}</a><p class="subtle-note">No opening scene has taken place yet.</p>`}</section></div>`;
@@ -360,8 +385,8 @@
   function hideSearch() { $('search-results').hidden = true; $('search').setAttribute('aria-expanded','false'); }
   function render(focus = false, preserveView = false) {
     const scroll={x:window.scrollX,y:window.scrollY};
-    document.querySelectorAll('[data-place-id]').forEach(node=>{
-      if(node.open) openPlaces.add(node.dataset.placeId); else openPlaces.delete(node.dataset.placeId);
+    document.querySelectorAll('.world-groups details[data-detail-key]').forEach(node=>{
+      worldExpansion.set(node.dataset.detailKey,node.open);
     });
     // Keep enough document height for the existing viewport while switching filters.
     $('main').style.minHeight=preserveView ? Math.max(0,scroll.y+innerHeight-$('main').offsetTop)+'px' : '';
@@ -397,7 +422,7 @@
 
     if (recordId && !worldCategory && /^[a-z0-9-]+$/.test(recordId)) {
       const record = $('record-'+recordId);
-      if (record) { for(let ancestor=record.parentElement;ancestor;ancestor=ancestor.parentElement) if(ancestor.matches('details')) { ancestor.open=true; if(ancestor.dataset.placeId) openPlaces.add(ancestor.dataset.placeId); } if(record.matches('details')) record.open=true; record.scrollIntoView({block:'start'}); (record.querySelector(':scope > summary') || record).focus({preventScroll:true}); }
+      if (record) { for(let ancestor=record.parentElement;ancestor;ancestor=ancestor.parentElement) if(ancestor.matches('details')) { ancestor.open=true; } if(record.matches('details')) record.open=true; record.scrollIntoView({block:'start'}); (record.querySelector(':scope > summary') || record).focus({preventScroll:true}); }
     }
     if(route==='abilities' && data.abilities.some(a=>a.id===recordId)) showAbility(recordId);
     if(preserveView) window.scrollTo({left:scroll.x,top:scroll.y,behavior:'instant'});

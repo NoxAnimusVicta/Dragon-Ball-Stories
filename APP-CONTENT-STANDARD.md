@@ -56,6 +56,14 @@ Artwork: `artwork`, `artworkAlt`, local manifest-listed asset. Cel-shaded illust
 
 All records retain stable IDs and existing search/deep links. `sections` contains ordered `{title, text?, facts?}` groups. Keep text escaped and readable. Put substantial detail inside the disclosure. People and Ongoing use the whole record heading as the native disclosure control, matching Places; do not restore a second boxed Details button. Show one reading column with a subtle left rule inside open records. Use drawn chevrons, comfortable tap targets and keyboard focus; hover emphasis belongs only on devices with real hover. Keep nested places bounded on small screens. Existing artwork stays within the appearance section, at a comfortable portrait width; never promote private art automatically.
 
+### Timeline browsing
+
+People and Places use native expandable timeline headings, with the shared Bangers face, Title Case, a quiet count and drawn chevron. Keep these as flat rows inside the existing reading panel, not nested cards. Multiple groups may remain open. Preserve group/record expansion while switching World filters or returning from another screen; search and deep links open every containing disclosure. Retain keyboard focus and generous tap targets. Ongoing keeps its existing grouping.
+
+Each person has one explicit `worldGroup`: an existing root Place ID or `unknown-timelines`. Group Conton residents and Patrol staff/family under Conton City; retain their original home timeline in `context`. Native people stay under their own timeline, including native enemies. External hostile agents with unrevealed bases use **Unknown Timelines**; this does not claim a shared origin, organisation or current physical location. Captivity stays in the individual record. Never disclose an unrevealed hub through a label, source field or asset. New named groups require a reviewed root Place record; unassigned people remain visible in the Unknown fallback but must be corrected during maintenance.
+
+Places reuse their root `parentId` hierarchy as the group itself, with no duplicate wrapper or record. The count is the number of contained places, excluding the root. Opening a group shows the locations first; the root’s summary, circumstances, access, artwork and history remain in **About Conton City** or **About This Timeline** beneath them. Omit empty groups. People counts include each person once. Group labels describe a hub or timeline; they are independent of temporary whereabouts or allegiance changes. `timeline-503` displays **TL-503 · Yamcha’s Home** in both views without renaming the underlying timeline record.
+
 **People**
 
 - At a glance: name, `context` (timeline), role/relationship summary, status.

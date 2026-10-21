@@ -572,7 +572,8 @@
         "s070",
         "s193",
         "s240"
-      ]
+      ],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "krillin",
@@ -602,14 +603,16 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "He introduced Zero and Yamcha to a resident King Kai on 11 March. He does not teach or claim to know Kaioken himself. On 15 April he immediately contained the failed Kaioken/channel takeover; Chronoa checked the seal. His earlier offer of Tri-Form remains unlearned. He lives with Eighteen and Marron; their informal visit is still unscheduled. This instructor is distinct from the Krillin revived in TL-503."
+          "text": "He introduced Zero and Yamcha to a resident King Kai on 11 March. He does not teach or claim to know Kaioken himself. On 15 April he immediately contained the failed Kaioken/channel takeover; Chronoa checked the seal. His earlier offer of Tri-Form remains unlearned. He lives with Eighteen and Marron; their informal visit is still unscheduled. This instructor is distinct from the Krillin revived in TL-503. On 28 June he passed Yamcha’s Alpha-training inquiry to instructor contacts; no teacher or appointment is confirmed."
         }
       ],
       "history": [
         "s016",
         "s147",
-        "s152"
-      ]
+        "s152",
+        "s240"
+      ],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "mr-satan",
@@ -650,14 +653,15 @@
         "s011",
         "s191",
         "s240"
-      ]
+      ],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "chronoa",
       "title": "Chronoa",
-      "summary": "Supreme Kai of Time; identified and sealed Zero’s Dark Factor.",
-      "status": "Seal monitoring",
-      "context": "Time Patrol hub",
+      "summary": "Supreme Kai of Time and leader of the Time Patrol.",
+      "status": "Supreme Kai of Time",
+      "context": "Conton City",
       "sections": [
         {
           "title": "Identity & appearance",
@@ -673,7 +677,8 @@
         "s094",
         "s152",
         "s192"
-      ]
+      ],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "doctor-rill",
@@ -691,7 +696,8 @@
           "text": "Reported completed treatment and clear scans, heard Zero’s account, forwarded it to coordination and measured his power at 50. Last seen in the medical ward; present whereabouts unknown."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "nappa",
@@ -729,7 +735,8 @@
           ]
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "unknown-timelines"
     },
     {
       "id": "yamcha",
@@ -795,7 +802,8 @@
         "s208",
         "s227",
         "s238"
-      ]
+      ],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "bulma",
@@ -819,7 +827,8 @@
           ]
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "turles",
@@ -880,7 +889,8 @@
             "portraitAlt": "Turles with spiked black hair, red scouter and retained tail, wearing black-and-red Saiyan armour beneath a long black coat with red lining."
           }
         ]
-      }
+      },
+      "worldGroup": "unknown-timelines"
     },
     {
       "id": "pan",
@@ -916,7 +926,8 @@
           "text": "Hercule’s granddaughter and Gohan and Videl’s daughter. Joined at 22 with a 50,000,000 base; two years of matched missions, training, recovery and ordinary life brought it to 200,000,000; two further years brought it to 400,000,000. No Super Saiyan or Wrathful acquired. These are campaign choices, not official GT measurements. The separate early-GT reference is 20,000,000; no end-GT measurement is claimed. Shared family arrival was four Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "gohan",
@@ -943,7 +954,8 @@
           "text": "Pursued a superhero career across time instead of the Prime counterpart’s scholarly path. Joined at 44 with Videl, Pan and Hercule. Precise combat rating and techniques have not been assigned for this version. Shared family arrival was four Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "videl",
@@ -970,14 +982,15 @@
           "text": "Joined at 45 with Gohan, Pan and her father Hercule. Precise specialism and combat rating remain to be established before a field appearance. Shared family arrival was four Conton years before the 16 February, Age 854 calibration; no chamber-age offset is assigned. This record grants Zero no personal acquaintance or private knowledge."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "android-18",
       "title": "Android 18 · Eighteen",
       "summary": "Krillin’s wife; lives with him and Marron in Conton City.",
       "status": "Mentioned · Not met",
-      "context": "Timeline not recorded",
+      "context": "TL-657 · Post-Tournament of Power",
       "sections": [
         {
           "title": "Relationship & current circumstances",
@@ -990,14 +1003,15 @@
           ]
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "marron",
       "title": "Marron",
       "summary": "Krillin and Eighteen’s daughter, living with them in Conton City.",
       "status": "Mentioned · Not met",
-      "context": "Timeline not recorded",
+      "context": "TL-657 · Post-Tournament of Power",
       "sections": [
         {
           "title": "Relationship & current circumstances",
@@ -1010,7 +1024,8 @@
           ]
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "bulma-tl503",
@@ -1035,7 +1050,8 @@
           ]
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-503"
     },
     {
       "id": "puar-tl503",
@@ -1054,7 +1070,8 @@
           "text": "Puar was alive throughout, helped on the Dragon Ball search and greeted the revived friends. In the reviewed course Puar stays on Earth with Roshi while the others travel. No permanent knowledge of Zero after timeline repair is assumed."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-503"
     },
     {
       "id": "raditz-tl503",
@@ -1085,7 +1102,8 @@
           "text": "Came to assess and conquer Earth, not to retrieve Goku. Killed Yamcha’s fellow defenders before the extraction. On Yamcha’s return, Zero destroyed his scouter with a precise blast and Yamcha won the fight. No successful call for help and no Great Ape transformation. His body remains at the battlefield."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-503"
     },
     {
       "id": "krillin-tl503",
@@ -1119,7 +1137,8 @@
           ]
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-503"
     },
     {
       "id": "roshi-tl503",
@@ -1143,7 +1162,8 @@
           ]
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-503"
     },
     {
       "id": "tien-tl503",
@@ -1177,7 +1197,8 @@
           ]
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-503"
     },
     {
       "id": "chiaotzu-tl503",
@@ -1211,7 +1232,8 @@
           ]
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-503"
     },
     {
       "id": "king-kai-resident",
@@ -1226,7 +1248,7 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Krillin introduced both students on 11 March. He supervised six weeks of training and the failed stacking test. His home is in Conton, not an assumed ten-times-gravity planet; no prior student history or personal maximum is established.",
+          "text": "Krillin introduced both students on 11 March. He supervised their initial six-week training block and the failed stacking test. His afternoon instruction continues after the Namek visit, in Conton’s ordinary training rooms. His home is in Conton, not an assumed ten-times-gravity planet; no prior student history or personal maximum is established.",
           "facts": [
             {
               "label": "Location",
@@ -1235,7 +1257,11 @@
           ]
         }
       ],
-      "history": []
+      "history": [
+        "s147",
+        "s237"
+      ],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "jeice-tl619",
@@ -1262,7 +1288,8 @@
           "text": "Watched the fight without joining Nappa. His and Burter’s network report reached Frieza; he remained in the timeline after Turles left."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-619"
     },
     {
       "id": "burter-tl619",
@@ -1289,7 +1316,8 @@
           "text": "Did not join the fight or leave with Turles. The reported clash prompted Frieza’s search, but the reviewed fixed-point sequence survived."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-619"
     },
     {
       "id": "equipment-technician",
@@ -1307,7 +1335,8 @@
           "text": "Replaced the lens/display and repaired the mount while retaining the sensor. No name, home timeline or power reading established."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "toki-toki-city"
     },
     {
       "id": "guru-tl503",
@@ -1326,7 +1355,8 @@
           "text": "Received news of Kami and examined Yamcha and Zero with consent. Read Chronoa’s briefing and promised to keep Zero’s origin confidential. Released Zero’s own potential without disturbing the seal, then helped Yamcha, Krillin, Tien and Chiaotzu. Returned the protected scroll, which Zero accepted. Exact age and personal combat rating remain unestablished."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-503"
     },
     {
       "id": "nail-tl503",
@@ -1350,7 +1380,8 @@
           "text": "Trained Zero, Yamcha and the visiting native fighters in control, sensing and sparring for four weeks. Exact age unknown."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-503"
     },
     {
       "id": "village-elder-tl503",
@@ -1369,7 +1400,8 @@
           "text": "Heard about Kami, Raditz and the revived defenders, then escorted the fighters inland to Guru. Personal name and exact age are unknown."
         }
       ],
-      "history": []
+      "history": [],
+      "worldGroup": "timeline-503"
     },
     {
       "id": "brask",
@@ -1429,7 +1461,8 @@
         "s221",
         "s228",
         "s234"
-      ]
+      ],
+      "worldGroup": "unknown-timelines"
     },
     {
       "id": "rivet",
@@ -1478,7 +1511,8 @@
         "s218",
         "s227",
         "s234"
-      ]
+      ],
+      "worldGroup": "unknown-timelines"
     }
   ],
   "places": [
@@ -1863,18 +1897,23 @@
       "id": "vegeta-dedicated-room",
       "title": "Vegeta’s dedicated training room",
       "summary": "Dedicated gravity room confirmed handed over on 24 April.",
-      "status": "Reported · Assigned to Vegeta",
+      "status": "Visited · Assigned to Vegeta",
       "parentId": "toki-toki-city",
       "context": "Conton City · Training facilities",
       "sections": [
         {
           "title": "Current circumstances",
-          "text": "Commendation reward with persistent settings, guest control and maintenance access. No new gravity maximum or Zero visit established."
+          "text": "Commendation reward with persistent settings, guest control and maintenance access. Zero trained here with Vegeta after returning from Namek, including the 20 June session. No higher gravity maximum is established."
         },
         {
           "title": "Location & access",
           "text": "Exact room number and building unset"
         }
+      ],
+      "history": [
+        "s193",
+        "s196",
+        "s235"
       ]
     },
     {
