@@ -356,7 +356,8 @@
             0.25
           ]
         }
-      }
+      },
+      "artwork": "./ability-kiai.png"
     },
     "second-wind": {
       "credits": 650,
@@ -402,7 +403,8 @@
           ],
           "cooldownHours": 24
         }
-      }
+      },
+      "artwork": "./ability-second-wind.png"
     }
   }
 }

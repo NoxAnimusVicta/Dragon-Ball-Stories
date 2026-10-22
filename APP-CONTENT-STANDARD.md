@@ -61,7 +61,7 @@ Every training update reconciles the public credit record with its private evide
 Dialog order:
 
 0. **Mastery** — overall rank and numeric progress bar; applicable Kaioken Phases or Defensive Rotations immediately beneath it; collapsed Path to Mastery last within this section.
-1. **Current Capability** — prominent regular output and current charge ceiling for chargeable techniques; useful per-use impact/expenditure, Kiai boost/buildup/upkeep or recovery allowance where applicable. Derive the current row from cumulative progress and the acquired method profile. Spirit Bomb shows actual donated supply as its source, not an invented personal multiplier.
+1. **Current Capability** — prominent regular output and current charge ceiling for chargeable techniques; useful per-use impact/expenditure, Kiai boost/buildup/upkeep or recovery allowance where applicable. Derive the current row from cumulative progress and the acquired method profile. Spirit Bomb shows actual donated supply as its source, not an invented personal multiplier. Below Learned, title the preview Learned Capability and show the established Learned handling alongside the actual current failure risk and preparation factor. At10 the heading switches automatically to Current Capability and experimental-only rows disappear. Explicitly mark unsettled damage/cost calibration; never present an unapproved proposal as an acquired statistic.
 2. **Effect** — `effect`: what it does and how it is used.
 3. **Stages & Power** — `formIds`: learned stages from the Character calculation source.
 4. **Appearance** — `appearance`: body, aura, hand gesture and energy changes.
@@ -84,7 +84,7 @@ S240 combat reference: `combat-reference.json` is the reviewed public rules proj
 
 `history` contains stable event IDs, not copied journal entries. `trainingRecord` preserves unique older observations in a collapsed dated record; it is historical, not a second current status. Update current fields when capability changes. Append a dated observation or link a new event; do not silently rewrite the old record as if it had always used the latest base.
 
-Artwork: `artwork`, `artworkAlt`, local manifest-listed asset. Cel-shaded illustration, clear silhouette, no baked-in labels or frames. Symbolic fundamentals are not character portraits or evidence of a new power. Spirit Bomb depicts a sphere above raised hands; Spirit Spear depicts spirit energy gathering into the hand and spreading over the front of the palm and fingers for contact release; the skin remains visible rather than the whole hand glowing, not a floating orb or literal spear. Preserve originals privately and publish optimised, metadata-free copies.
+Artwork: `artwork`, `artworkAlt`, local manifest-listed asset. A technique-progress record may supply its reviewed technique-specific artwork override; both list and dialog use the shared techniqueArt resolver, falling back to campaign artwork if the optional progress file is unavailable. Kiai and Second Wind have distinct symbolic icons, not portraits or new forms. Cel-shaded illustration, clear silhouette, no baked-in labels or frames. Symbolic fundamentals are not character portraits or evidence of a new power. Spirit Bomb depicts a sphere above raised hands; Spirit Spear depicts spirit energy gathering into the hand and spreading over the front of the palm and fingers for contact release; the skin remains visible rather than the whole hand glowing, not a floating orb or literal spear. Preserve originals privately and publish optimised, metadata-free copies.
 
 ## World
 

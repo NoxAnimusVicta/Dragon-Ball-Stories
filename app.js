@@ -301,6 +301,9 @@
     return {record,credits,label:current.name,next,percent,remaining:next?next.credits-credits:0};
   }
   const creditText=n=>n.toLocaleString('en',{maximumFractionDigits:1});
+  function techniqueArt(ability) {
+    return safePortrait(techniqueProgress?.records?.[ability.id]?.artwork) || safePortrait(ability.artwork);
+  }
   function learningMeter(ability) {
     return progressMeter(ability.title,progressState(ability));
   }
@@ -346,17 +349,23 @@
       note='Triggers reflexively at zero Endurance when the body can still recover. Each use has its own recharge clock.';
     } else if(profile.kind==='supplied') {
       add('Power Source','Gathered Spirit Energy');add('Charge Limit','Available Donation & Control');
-      note='Output grows with the usable energy gathered from willing donors. Your current practice is a small, supervised charge; a larger Spirit Bomb depends on its actual supply.';
+      add('Learned Handling','Small Gathering & Release');
+      if(p.label==='Learning') {
+        add('Current Failure Risk',stat(40*(1-p.credits/10))+'%');
+        add('Current Preparation',(p.credits<5?'4':'2')+'× Learned Buildup');
+        add('Combat Learning','+1 Per Execution Attempt');
+      }
+      note='Release the usable energy gathered from willing donors. Large gathering requires sustained concentration and protection. Collection time follows the actual supply; damage, expenditure and collection-rate figures are awaiting calibration.';
     }
     if(!rows.length) return '';
-    return `<section class="content-section technique-output"><h3>Current Capability</h3><dl>${rows.map(([label,value])=>`<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl><p>${escape(note)}</p></section>`;
+    return `<section class="content-section technique-output"><h3>${p.label==='Learning'?'Learned Capability':'Current Capability'}</h3><dl>${rows.map(([label,value])=>`<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl><p>${escape(note)}</p></section>`;
   }
   function abilities() {
     const groups=[...abilityGroups,{id:'other',title:'Other Techniques'}];
     return pageHeader('03','Techniques','')+
       `<div class="ability-collection">${groups.map(group=>{
         const items=data.abilities.filter(r=>abilityGroup(r).id===group.id);
-        return items.length ? `<section class="ability-group" aria-labelledby="ability-group-${group.id}"><h2 id="ability-group-${group.id}">${group.title}</h2><div class="ability-grid">${items.map(r=>`<button class="ability-card" id="record-${escape(r.id)}" data-ability="${escape(r.id)}" aria-haspopup="dialog"><span class="ability-card-art">${safePortrait(r.artwork)?`<img class="ability-image" src="${escape(safePortrait(r.artwork))}" alt="" loading="lazy">`:''}</span><span class="ability-card-copy"><strong>${heading(r.title)}</strong><span class="ability-card-description">${escape(r.summary)}</span>${learningMeter(r)}</span></button>`).join('')}</div></section>` : '';
+        return items.length ? `<section class="ability-group" aria-labelledby="ability-group-${group.id}"><h2 id="ability-group-${group.id}">${group.title}</h2><div class="ability-grid">${items.map(r=>`<button class="ability-card" id="record-${escape(r.id)}" data-ability="${escape(r.id)}" aria-haspopup="dialog"><span class="ability-card-art">${techniqueArt(r)?`<img class="ability-image" src="${escape(techniqueArt(r))}" alt="" loading="lazy">`:''}</span><span class="ability-card-copy"><strong>${heading(r.title)}</strong><span class="ability-card-description">${escape(r.summary)}</span>${learningMeter(r)}</span></button>`).join('')}</div></section>` : '';
       }).join('')}</div>`;
   }
   function progressItem(title,state) {
@@ -386,7 +395,7 @@
     const forms=unlockedForms().filter(f=>(ability.formIds || []).includes(f.id));
     const block=(title,text)=>text?`<section class="content-section"><h3>${heading(title)}</h3><p>${escape(text)}</p></section>`:'';
     const history=ability.trainingRecord;
-    dialog.innerHTML=`<header class="ability-detail-header"><div class="ability-detail-heading"><img src="${escape(safePortrait(ability.artwork))}" alt=""><div><span class="ability-category">${escape(abilityGroup(ability).title)}</span><h2 id="ability-dialog-title">${heading(ability.title)}</h2></div></div><button class="icon-button close-dialog" aria-label="Close technique details" autofocus>×</button></header><div class="ability-detail-body" tabindex="0" role="region" aria-label="Technique information">${learningDetails(ability)}${techniqueCapabilities(ability)}${block('Effect',ability.effect)}${forms.length?`<section class="content-section"><h3>Stages & Power</h3><dl class="power-level-list">${forms.map(f=>`<div><dt>${escape(f.name)}<span>×${escape(f.multiplier)}</span></dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl><p>Calculated from the current base of ${escape(exactPower(data.character.battlePower))}. Control is described below.</p></section>`:''}${block('Appearance',ability.appearance)}${block('Control & compatibility',ability.control)}<section class="content-section"><h3>Development</h3><p>${escape(ability.development)}</p>${historyLinks(ability.history)}${history?`<details class="record-history"><summary>Detailed Training Record · ${escape(history.asOf)}</summary><p>${escape(history.text)}</p>${history.facts?.length?`<dl class="definition-grid">${history.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>`:''}</details>`:''}</section></div>`;
+    dialog.innerHTML=`<header class="ability-detail-header"><div class="ability-detail-heading"><img src="${escape(techniqueArt(ability))}" alt=""><div><span class="ability-category">${escape(abilityGroup(ability).title)}</span><h2 id="ability-dialog-title">${heading(ability.title)}</h2></div></div><button class="icon-button close-dialog" aria-label="Close technique details" autofocus>×</button></header><div class="ability-detail-body" tabindex="0" role="region" aria-label="Technique information">${learningDetails(ability)}${techniqueCapabilities(ability)}${block('Effect',ability.effect)}${forms.length?`<section class="content-section"><h3>Stages & Power</h3><dl class="power-level-list">${forms.map(f=>`<div><dt>${escape(f.name)}<span>×${escape(f.multiplier)}</span></dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl><p>Calculated from the current base of ${escape(exactPower(data.character.battlePower))}. Control is described below.</p></section>`:''}${block('Appearance',ability.appearance)}${block('Control & compatibility',ability.control)}<section class="content-section"><h3>Development</h3><p>${escape(ability.development)}</p>${historyLinks(ability.history)}${history?`<details class="record-history"><summary>Detailed Training Record · ${escape(history.asOf)}</summary><p>${escape(history.text)}</p>${history.facts?.length?`<dl class="definition-grid">${history.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>`:''}</details>`:''}</section></div>`;
     dialog.showModal();
   }
   function scalePage() {
