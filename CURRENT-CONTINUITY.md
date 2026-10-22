@@ -14,7 +14,7 @@ Generated from campaign.json. Edit that authoritative source, then run build.py.
 - Immediate situation: Morning training with Vegeta is complete. Zero and Yamcha are reviewing their next visit with Hercule: TL-503 has recovered to 100%, and their friends’ Yardrat expedition remains in its history.
 - Pending choice: Hercule asks whether the Yardrat visit will still last a few months. Duration awaits confirmation; no departure is booked.
 - Latest recorded event: s240.
-- Technique records: 11.
+- Technique records: 13.
 - Possession records: 7.
 - Account records: 1.
 - Relationship records: 30.

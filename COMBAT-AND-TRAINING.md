@@ -1,6 +1,6 @@
 # Training & Combat reference
 
-Campaign rules · Revision 7, Combat Calibration & Transformation Response Amendments · S240 · 22 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.
+Campaign rules · Revision 7, Combat Calibration, Transformation Response & Technique Capability Amendments · S245 · 23 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.
 
 Public reader summary. The authorised local TRAINING-AND-TECHNIQUE-PROPOSAL.md is the full operational owner; the narrator must read it, the form prerequisites and NPC combat register in full before every response involving combat, including after compaction. This summary cannot replace current private state or saved rolls.
 
@@ -40,6 +40,17 @@ Primary practice earns hours × quality. Supporting skills can receive 50%, 25% 
 Training does not raise a transformation’s fixed multiplier. It improves activation, control, energy use and duration. Learning a new state still requires its recorded prerequisites. Reliable deliberate transformation combinations require mastery of the underlying methods and separate compatibility training; established feats and involuntary external access remain exceptions.
 
 After mastery, refinement can continue more slowly. The proposed preparation/economy factor is R = 1 / (1 + 0.10 × log2(1 + extra credits / 10,000)). It never grants free energy, a stronger form factor or immunity to strain. Ordinary Power Level growth has a separate reviewed ledger; publishing this reference does not recalculate earlier gains.
+
+
+## Kiai & Second Wind
+
+Kiai is a Discipline. Learned/Proficient/Advanced/Mastered caps add 25/50/75/100 percent of unamplified form power, with full gathering times180/120/90/60 seconds. Current output is base × form × (compatible amplifier + gathered bonus) × availability; count each layer once. Form or bodily-amplifier changes reset the gathered bonus.
+
+At elapsed gathering time t, bonus = tier cap × (t / full time)^(2/3), capped at the tier limit. Upkeep is coefficient × bonus² per minute, with coefficients4/2/1/0.25 by tier, also accruing during gathering. Partial boosts are useful; competing attack preparation requires its own opening.
+
+Ordinary Second Wind develops from one8–12 recovery, to one12–18, then two12–18, then two16–24. One private saved uniform draw determines the amount at actual use. It triggers reflexively at zero when recovery is possible, preserves damage overflow and spends a reserve for24personally experienced hours. Regenerative biology uses its own replacement profile.
+
+Zero has existing Proficient Kiai750 and Second Wind650, assessed from the player correction and recorded training. These are starting assessments, not new elapsed training. Guru’s potential release improves strength, speed, resilience and absolute endurance; technique proficiency remains separately trained. The fresh100-point endurance scale is relative to that stronger body.
 
 
 ## Tolerance & Recovery
@@ -101,7 +112,7 @@ Any damage left after reaching zero continues through the restored reserve. At 3
 
 A devastating hit causes at least 75 damage after defence and applicable passive recovery, leaving 1–20 Endurance, and triggers an available full restore. A hit reaching zero instead uses the overflow procedure; do not repeat the original threshold against every new reserve. Separate attacks are not pooled. Offensive expenditure can trigger exhaustion recovery, but is not trauma.
 
-Apply any established passive injury refund once per original impact, never again to its overflow or to offensive costs. Track actual recovery uses across consecutive fights. The proposed 24 personally experienced hours per spent use and related Senzu cooldown treatment remain under review; a new scene or midnight cannot reset uses.
+Apply any established passive injury refund once per original impact, never again to its overflow or to offensive costs. Track actual recovery uses across consecutive fights. Ordinary Second Wind now uses 24 personally experienced hours per spent reserve. Each use keeps its own timestamp; a new fight, midnight, form change or ordinary Senzu does not replenish that reserve. Biology-specific cooldown proposals retain their individual status.
 
 Recovery is reflexive rather than a compulsory surrendered action. Reconstruction still has its actual duration and survival limits. Finite stamina depletion does not switch off genuine immortality; zero alone neither kills a fighter nor erases injuries.
 

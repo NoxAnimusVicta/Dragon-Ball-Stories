@@ -61,11 +61,20 @@ Every training update reconciles the public credit record with its private evide
 Dialog order:
 
 0. **Mastery** — overall rank and numeric progress bar; applicable Kaioken Phases or Defensive Rotations immediately beneath it; collapsed Path to Mastery last within this section.
-1. **Effect** — `effect`: what it does and how it is used.
-2. **Stages & Power** — `formIds`: learned stages from the Character calculation source.
-3. **Appearance** — `appearance`: body, aura, hand gesture and energy changes.
-4. **Control & Compatibility** — `control`: demonstrated endurance, activation conditions and stacking.
-5. **Development** — `development`: concise current focus; collapsed linked `history` events and, where needed, a dated `trainingRecord`.
+1. **Current Capability** — prominent regular output and current charge ceiling for chargeable techniques; useful per-use impact/expenditure, Kiai boost/buildup/upkeep or recovery allowance where applicable. Derive the current row from cumulative progress and the acquired method profile. Spirit Bomb shows actual donated supply as its source, not an invented personal multiplier.
+2. **Effect** — `effect`: what it does and how it is used.
+3. **Stages & Power** — `formIds`: learned stages from the Character calculation source.
+4. **Appearance** — `appearance`: body, aura, hand gesture and energy changes.
+5. **Control & Compatibility** — `control`: demonstrated endurance, activation conditions and stacking.
+6. **Development** — `development`: concise current focus; collapsed linked `history` events and, where needed, a dated `trainingRecord`.
+
+Keep current capability near the top, after mastery and before Effect. Use flat aligned figures with the same heading family; no rules appendix or nested cards. Unassessed ranks must not receive guessed numbers. Current multipliers/charge ceilings update from the recorded tier automatically; distinguish a learned ceiling from the acquired method’s mastered potential. Keep individual form factors in character.forms.
+
+The private mastery profile is the detailed stage owner; build.py projects only explicitly allowlisted fields for acquired player methods. Before changing progression, reconcile that profile, the current progress record and public milestone text together. NPC records and future prerequisites stay private. Detailed stage descriptions must state handling, supply, timing, costs and any genuine unresolved calibration explicitly. Never silently convert a proposal to a settled number.
+
+Describe what techniques do in positive, concrete language. Retain material safety, compatibility, supply and reliability limits once where they help a decision; remove obvious denials and duplicate negative boilerplate. Potential release increases overall fighting capacity, including endurance, while technique mastery is separately trained.
+
+Use anti-aliased angled separators on untransformed progress tracks; avoid skewing the entire rasterised bar. Preserve gold/navy colour and raw numeric progress.
 
 Omit sections that do not apply. Do not invent an appearance, multiplier or maximum to fill a field. Both Dark Factor records receive the same appearance/control treatment.
 

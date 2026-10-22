@@ -22,7 +22,25 @@
           "tier": "Mastered",
           "benefit": "Best standard combination efficiency; defensive rotations keep their own progress."
         }
-      ]
+      ],
+      "capability": {
+        "kind": "ordinary",
+        "mechanics": {
+          "factor": 1,
+          "damage": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "cost": [
+            1,
+            0.75,
+            0.6,
+            0.5
+          ]
+        }
+      }
     },
     "ki-control": {
       "credits": 4800,
@@ -44,7 +62,11 @@
           "tier": "Mastered",
           "benefit": "Refined regulation and efficiency; separate techniques still require their own practice."
         }
-      ]
+      ],
+      "capability": {
+        "kind": "discipline",
+        "mechanics": {}
+      }
     },
     "flight": {
       "credits": 6000,
@@ -66,7 +88,11 @@
           "tier": "Mastered",
           "benefit": "Refined aerial control and economy; speed still depends on available power."
         }
-      ]
+      ],
+      "capability": {
+        "kind": "discipline",
+        "mechanics": {}
+      }
     },
     "ki-blast": {
       "credits": 3000,
@@ -88,7 +114,25 @@
           "tier": "Mastered",
           "benefit": "Best standard volley impact and economy; charged shots still require preparation."
         }
-      ]
+      ],
+      "capability": {
+        "kind": "ordinary",
+        "mechanics": {
+          "factor": 1,
+          "damage": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "cost": [
+            1.5,
+            1.25,
+            1,
+            0.85
+          ]
+        }
+      }
     },
     "ki-suppression": {
       "credits": 3500,
@@ -110,12 +154,20 @@
           "tier": "Mastered",
           "benefit": "Refined suppression and switching; concealment still depends on the observer."
         }
-      ]
+      ],
+      "capability": {
+        "kind": "discipline",
+        "mechanics": {}
+      }
     },
     "uncontrolled-form": {
       "mode": "involuntary",
       "credits": null,
-      "note": "Involuntary manifestation. No voluntary mastery track is established."
+      "note": "Involuntary manifestation. No voluntary mastery track is established.",
+      "capability": {
+        "kind": "involuntary",
+        "mechanics": {}
+      }
     },
     "sealed-channel-form": {
       "credits": 1200,
@@ -137,7 +189,11 @@
           "tier": "Mastered",
           "benefit": "Best trained economy and control; the multiplier and takeover conditions do not change."
         }
-      ]
+      ],
+      "capability": {
+        "kind": "form",
+        "mechanics": {}
+      }
     },
     "kaioken-technique": {
       "credits": 650,
@@ -165,6 +221,10 @@
         "credits": 650,
         "target": 1000,
         "benefit": "Complete ×2 conditioning before attempting the next eligible stage; this does not unlock it automatically."
+      },
+      "capability": {
+        "kind": "kaioken",
+        "mechanics": {}
       }
     },
     "ki-sensing": {
@@ -187,7 +247,11 @@
           "tier": "Mastered",
           "benefit": "Read exact detectable output; hidden reserves remain hidden."
         }
-      ]
+      ],
+      "capability": {
+        "kind": "discipline",
+        "mechanics": {}
+      }
     },
     "spirit-bomb": {
       "credits": 6,
@@ -209,7 +273,11 @@
           "tier": "Mastered",
           "benefit": "Best trained gathering and control; actual donors, supply and preparation still limit the attack."
         }
-      ]
+      ],
+      "capability": {
+        "kind": "supplied",
+        "mechanics": {}
+      }
     },
     "spirit-spear": {
       "credits": 90,
@@ -231,7 +299,110 @@
           "tier": "Mastered",
           "benefit": "Charge ceiling ×4; movement during gathering remains possible, but unrelated fighting interrupts preparation."
         }
-      ]
+      ],
+      "capability": {
+        "kind": "contact",
+        "mechanics": {
+          "regular": 2,
+          "ceiling": [
+            2.5,
+            3,
+            3.5,
+            4
+          ]
+        }
+      }
+    },
+    "kiai": {
+      "credits": 750,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Build up to ×1.25 output with a sustained gathering opening."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Build up to ×1.5 output with improved gathering and economy."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Build up to ×1.75 output with finer sustained control."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Build up to ×2 output; smaller boosts gather faster and cost less to maintain."
+        }
+      ],
+      "capability": {
+        "kind": "kiai",
+        "mechanics": {
+          "bonus": [
+            0.25,
+            0.5,
+            0.75,
+            1
+          ],
+          "fullCharge": [
+            180,
+            120,
+            90,
+            60
+          ],
+          "upkeepCoefficient": [
+            4,
+            2,
+            1,
+            0.25
+          ]
+        }
+      }
+    },
+    "second-wind": {
+      "credits": 650,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "One reserve restores 8–12 Endurance."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "A deeper reserve restores 12–18 Endurance."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Two reserves, each restoring 12–18 Endurance."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Two deeper reserves, each restoring 16–24 Endurance."
+        }
+      ],
+      "capability": {
+        "kind": "recovery",
+        "mechanics": {
+          "uses": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "restoreMin": [
+            8,
+            12,
+            12,
+            16
+          ],
+          "restoreMax": [
+            12,
+            18,
+            18,
+            24
+          ],
+          "cooldownHours": 24
+        }
+      }
     }
   }
 }

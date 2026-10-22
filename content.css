@@ -106,8 +106,8 @@ dialog.ability-dialog{max-width:660px;max-height:88svh;padding:0;border:1px soli
 .technique-progress-label{display:flex;align-items:baseline;justify-content:space-between;gap:12px;color:#173e55}
 .technique-rank{font:400 18px/1.25 Bangers,sans-serif;letter-spacing:.7px}
 .technique-progress-total{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.3px;white-space:nowrap;color:#29485c}
-.technique-progress-track{position:relative;display:block;height:9px;width:100%;overflow:hidden;transform:skewX(-12deg);background:#15364c;border:1px solid #15364c;box-shadow:0 1px 0 #fff9}
-.technique-progress-track:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(10% - 2px),#15364c99 calc(10% - 2px),#15364c99 10%);pointer-events:none}
+.technique-progress-track{position:relative;display:block;height:9px;width:100%;overflow:hidden;clip-path:polygon(2px 0,100% 0,calc(100% - 2px) 100%,0 100%);background:#15364c;border:1px solid #15364c;box-shadow:0 1px 0 #fff9}
+.technique-progress-track:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(102deg,transparent 0,transparent calc(10% - 2.5px),#15364c99 calc(10% - 2px),#15364c99 calc(10% - .5px),transparent 10%);pointer-events:none}
 .technique-progress-fill{display:block;height:100%;background:linear-gradient(0deg,#e9aa26,#ffde65 65%,#fff1af);box-shadow:2px 0 5px #ffe68899}
 .technique-progress-next{font-size:10px;font-weight:600;letter-spacing:.35px;color:#526779;text-align:right}
 .is-unassessed .technique-rank{font-size:15px;color:#607181}
@@ -134,3 +134,8 @@ dialog.ability-dialog{max-width:660px;max-height:88svh;padding:0;border:1px soli
 .technique-milestones li p{font-size:13px;line-height:1.65}
 .player-chip strong{font-family:Bangers,sans-serif;font-weight:400;font-size:25px;letter-spacing:1px}
 @media(max-width:600px){.technique-rank{font-size:16px}.technique-progress-total{font-size:11px}.technique-progress-label{gap:6px}.technique-progress-next{font-size:10px}.technique-milestones li{grid-template-columns:82px 1fr;gap:10px;padding-left:14px}.technique-milestones li>strong{font-size:18px}.technique-learning .technique-rank{font-size:25px}.technique-learning .technique-progress-total{font-size:14px}.player-chip strong{font-size:22px}}
+
+/* Current technique figures share one flat, readable treatment. */
+.technique-output dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:18px;margin:0 0 14px}
+.technique-output dt{font-size:11px;color:#526779;margin-bottom:5px;text-transform:none;letter-spacing:.2px}
+.technique-output dd{margin:0;font:400 24px/1.25 Bangers,sans-serif;color:#173e55;letter-spacing:.5px}

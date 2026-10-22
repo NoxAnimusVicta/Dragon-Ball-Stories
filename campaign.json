@@ -132,7 +132,7 @@
       "summary": "Directs ki through movement, flight and energy release.",
       "status": "Developing",
       "effect": "Deliberate regulation of personal output supports loaded movement and transitions between techniques.",
-      "control": "Lower-flow channeling is steadier; full channel output remains strenuous. Control practice does not permanently absorb channel or donated spirit energy.",
+      "control": "Lower-flow channeling is steady through familiar movement; full channel output demands sustained regulation.",
       "development": "Recent King Kai and Nail instruction improved transitions and recovery.",
       "history": [
         "s020",
@@ -157,7 +157,7 @@
       "summary": "Uses ki to stay airborne, manoeuvre and fight.",
       "status": "Practised",
       "effect": "Sustained aerial movement includes turns, bracing, controlled rotations and flight-assisted attacks.",
-      "control": "Aerial rounds reached 25× gravity. Long-range endurance remains unmeasured; gravity practice does not erase an opponent’s power advantage.",
+      "control": "Established aerial combat at 25× gravity, with evasions and controlled changes of direction.",
       "development": "Flight is integrated into live combat and evasive combinations.",
       "history": [
         "s022",
@@ -193,8 +193,8 @@
       "title": "Ki blasts",
       "summary": "Fires ki projectiles, volleys and charged shots.",
       "status": "Developing",
-      "effect": "Ordinary ki attacks can be released while moving or charged for a larger shot. Limited preset curves have been demonstrated.",
-      "control": "Accuracy and stamina remain finite. Larger shots need an opening. Curved fire is not homing; no stable blade or named beam has been learned.",
+      "effect": "Shapes personal ki into shots, compact volleys or a larger concentrated release. Preset curved trajectories can attack from another angle.",
+      "control": "Moving releases and short volleys are established. Larger shots require preparation; preset curves follow the chosen path rather than tracking a target.",
       "development": "Practising cleaner gathering and tighter moving volleys.",
       "history": [
         "s039",
@@ -229,8 +229,8 @@
       "title": "Power suppression",
       "summary": "Lowers emitted power and deliberately releases it for action.",
       "status": "Practised",
-      "effect": "Usually holds near half output during ordinary waking activity and familiar drills.",
-      "control": "Hard surprises can cause spikes. Sleep maintenance, perfect concealment and instant expert switching are unestablished. Suppression increases effort under a load; it does not multiply training gains.",
+      "effect": "Regulates emitted power, commonly holding near half output during ordinary waking activity and familiar drills.",
+      "control": "Deliberate full-power bursts can be followed by renewed suppression. Hard surprises can disrupt the chosen level.",
       "development": "Deliberate full-power striking bursts followed by renewed suppression have been used in the field.",
       "history": [
         "s061",
@@ -266,7 +266,7 @@
         "s094",
         "s152"
       ],
-      "appearance": "A dense black-and-violet mantle encloses body, hair and clothes, slightly enlarging the silhouette, with horn-like projections and pale claws. Reversion exposes the underlying clothes and injuries without repairing damage. The layered growling laugh is not a separate technique.",
+      "appearance": "A dense black-and-violet mantle encloses body, hair and clothes, enlarging the silhouette with horn-like projections and pale claws. Reversion exposes the underlying clothes and injuries.",
       "formIds": [
         "uncontrolled"
       ],
@@ -285,9 +285,9 @@
       "abilityType": "transformation",
       "artwork": "ability-sealed-channel.webp",
       "artworkAlt": "A circular four-hook seal containing pale violet energy, symbolising Dark Factor Sealed Channel.",
-      "effect": "Voluntary opening, regulation and closure of the flow developed through supervised practice.",
-      "control": "Three strenuous minutes at full output in moving drills are demonstrated, not a fixed timer or mastery. Repeated attempts remain tiring. Kaioken stacking is unsafe. Loss of consciousness or near-death while channeling can trigger the uncontrolled state; closed-channel sleep is safe. Safe removal remains unresolved.",
-      "development": "Recent practice improved recovery without a new timed maximum; no permanent absorption of the multiplier.",
+      "effect": "Opens, regulates and closes the flow through Chronoa’s seal while retaining conscious control.",
+      "control": "Three strenuous minutes at full output in moving drills are demonstrated. Loss of consciousness or near-death while channeling can trigger takeover. Kaioken stacking remains unsafe; the channel can be closed voluntarily.",
+      "development": "Refining activation, sustained regulation and recovery between bouts.",
       "history": [
         "s094",
         "s096",
@@ -320,8 +320,8 @@
       "abilityType": "signature-technique",
       "artwork": "ability-kaioken.png",
       "artworkAlt": "A crimson Kaioken aura around a symbolic fighter silhouette.",
-      "effect": "King Kai’s technique raises personal output. Every learned stage remains available when a higher stage is unlocked.",
-      "control": "×2 is the only unlocked stage. A 60-second moving demonstration is recorded, not a universal limit. Guru’s release grants no automatic endurance increase. Use separately from the sealed channel; their failed combination is not an available ×20 form.",
+      "effect": "King Kai’s technique increases strength, speed and resilience together. Lower learned stages remain available as conditioning improves.",
+      "control": "×2 is available, with a 60-second moving demonstration and rapid combat bursts. Higher output places greater demands on endurance and the body. Use separately from Sealed Channel; combining them triggered takeover.",
       "development": "Latest practice improved activation and release while moving.",
       "history": [
         "s150",
@@ -337,7 +337,7 @@
       ],
       "trainingRecord": {
         "asOf": "28 June, Age 854",
-        "text": "First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release does not itself establish longer endurance. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling.",
+        "text": "First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release strengthened overall battle capacity, including resilience and endurance. Kaioken proficiency continued to develop through practice. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling.",
         "facts": []
       },
       "category": "forms"
@@ -347,8 +347,8 @@
       "title": "Ki sensing",
       "summary": "Locates familiar ki and estimates relative current output.",
       "status": "Developing",
-      "effect": "Direction and short-range tracking can be followed during movement, including familiar partially suppressed signatures.",
-      "control": "Exact numbers, hidden reserves and deeply suppressed targets cannot be read reliably. Familiarity and concentration matter; the scouter still supplies numerical readings.",
+      "effect": "Locates familiar ki and follows moving signatures, including familiar partially suppressed opponents.",
+      "control": "Current readings are relative estimates. Concentration and familiarity improve tracking; the scouter supplies exact numbers.",
       "development": "Close-range tracking helped counter Brask’s flash; moving tracking continues to improve.",
       "history": [
         "s151",
@@ -372,8 +372,8 @@
       "summary": "Gathers voluntarily offered spirit energy into a charge.",
       "status": "Developing",
       "abilityType": "signature-technique",
-      "effect": "A small cooperative charge has been gathered and released in training.",
-      "control": "Gathering takes time and concentration. A large battlefield-ready Spirit Bomb, unlimited environmental draw and permanent absorption are not established.",
+      "effect": "Receives voluntarily offered spirit energy, gathers it into a sphere and releases the accumulated charge. More available energy supports a larger attack.",
+      "control": "Small cooperative gathering and release have succeeded in supervised practice. Sustained gathering needs concentration, willing supply and protection; independent execution is still developing.",
       "development": "Early supervised practice under King Kai.",
       "history": [
         "s152",
@@ -397,21 +397,49 @@
       "abilityType": "signature-technique",
       "artwork": "ability-spirit-spear.png",
       "artworkAlt": "Spirit energy gathering into an open hand and spreading across the front of its palm and fingers.",
-      "effect": "A gathered charge is concentrated through the hand and spent when released into the target.",
-      "control": "A modest contact charge repeats in moving practice. No sustained beam, fixed multiplier, permanent gain, hostile energy theft or full mastery is established.",
+      "effect": "Gathers spirit energy across the heel and front of the palm, then delivers it on contact. A clean, coupled strike drives energy through the target and erupts from the opposite side.",
+      "control": "Gathering can continue during the committed approach. Other attacks interrupt preparation, and the charge is spent on contact. Available spirit energy and successful coupling determine the delivered effect.",
       "development": "Practising a repeatable approach and contact release with a modest charge.",
       "history": [
         "s164",
         "s173",
         "s237"
       ],
-      "appearance": "Blue-white spirit energy gathers into the hand and spreads over the front of the palm and fingers before release on contact. The skin remains visible beneath the gathered energy; the whole hand does not glow. No separate floating ball or literal spear.",
+      "appearance": "Blue-white spirit energy gathers across the heel of the palm and spreads softly over the front of the hand and fingers, with the skin visible beneath it.",
       "trainingRecord": {
         "asOf": "28 June, Age 854",
-        "text": "Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. No assigned multiplier, permanent power gain, hostile energy theft or full mastery. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. A sustained beam, fixed multiplier and large reliable combat charge remain unestablished.",
+        "text": "Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. The current technique profile records its ×2 regular release and mastery-dependent charge ceiling; those calibrations do not rewrite the earlier partial contacts.",
         "facts": []
       },
       "category": "physical"
+    },
+    {
+      "id": "kiai",
+      "title": "Kiai",
+      "summary": "Gathers power into a sustained boost for the current fighting state.",
+      "status": "Proficient",
+      "abilityType": "fundamental",
+      "category": "discipline",
+      "effect": "Builds whole-body output gradually. The gathered bonus increases strength, speed and resilience, and powers subsequent attacks.",
+      "control": "Partial buildup can be retained while control holds. Changing form or bodily amplifier starts a fresh buildup. Gathering competes with attack preparation.",
+      "development": "Refining sustained output and efficient gathering.",
+      "artwork": "ability-ki-control.png",
+      "artworkAlt": "Gathers power into a sustained boost for the current fighting state.",
+      "history": []
+    },
+    {
+      "id": "second-wind",
+      "title": "Second Wind",
+      "summary": "Draws on a reserve of endurance when exhaustion brings you down.",
+      "status": "Proficient",
+      "abilityType": "fundamental",
+      "category": "discipline",
+      "effect": "A reflexive rally restores fighting endurance when it reaches zero. Training develops a deeper and more repeatable reserve.",
+      "control": "Recovery follows the body’s surviving condition. Incoming damage continues through the restored endurance; serious wounds still need treatment.",
+      "development": "Developing recovery under pressure through demanding practice and experience.",
+      "artwork": "ability-combat-basics.png",
+      "artworkAlt": "Draws on a reserve of endurance when exhaustion brings you down.",
+      "history": []
     }
   ],
   "inventory": [
