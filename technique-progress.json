@@ -166,7 +166,9 @@
       "note": "Involuntary manifestation. No voluntary mastery track is established.",
       "capability": {
         "kind": "involuntary",
-        "mechanics": {}
+        "mechanics": {
+          "factor": 15
+        }
       }
     },
     "sealed-channel-form": {
@@ -192,7 +194,16 @@
       ],
       "capability": {
         "kind": "form",
-        "mechanics": {}
+        "timingAnchor": 79807,
+        "mechanics": {
+          "factor": 10,
+          "setup": [
+            2,
+            0.5,
+            0.1,
+            0
+          ]
+        }
       }
     },
     "kaioken-technique": {
@@ -201,7 +212,7 @@
       "milestones": [
         {
           "tier": "Learned",
-          "benefit": "Reliable use of an eligible output stage."
+          "benefit": "Reliable ×2 activation, brief bursts and deliberate release."
         },
         {
           "tier": "Proficient",
@@ -209,23 +220,27 @@
         },
         {
           "tier": "Advanced",
-          "benefit": "Greater control and economy through conditioned stages."
+          "benefit": "Greater ×2 control and endurance economy."
         },
         {
           "tier": "Mastered",
-          "benefit": "Core mastery culminates in conditioned ×20; later conditioning remains separate and bodily damage remains possible."
+          "benefit": "Instant familiar ×2 bursts and refined endurance economy; bodily strain still matters."
         }
       ],
-      "stage": {
-        "label": "×2 Conditioning",
-        "credits": 650,
-        "target": 1000,
-        "benefit": "Complete ×2 conditioning before attempting the next eligible stage; this does not unlock it automatically."
-      },
       "capability": {
         "kind": "kaioken",
-        "mechanics": {}
-      }
+        "timingAnchor": 79807,
+        "mechanics": {
+          "factor": 2,
+          "setup": [
+            0.25,
+            0.1,
+            0.03,
+            0
+          ]
+        }
+      },
+      "title": "Kaioken — Phase 2"
     },
     "ki-sensing": {
       "credits": 650,
@@ -302,6 +317,7 @@
       ],
       "capability": {
         "kind": "contact",
+        "timingAnchor": 79807,
         "mechanics": {
           "regular": 2,
           "ceiling": [
@@ -309,6 +325,26 @@
             3,
             3.5,
             4
+          ],
+          "setup": [
+            5,
+            1,
+            0.1,
+            0.005
+          ],
+          "extraCharge": [
+            300,
+            150,
+            75,
+            30
+          ],
+          "damage": 19,
+          "costCoefficient": 1,
+          "economy": [
+            1,
+            0.85,
+            0.65,
+            0.45
           ]
         }
       }
