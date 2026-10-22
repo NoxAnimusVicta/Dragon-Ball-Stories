@@ -106,8 +106,10 @@ dialog.ability-dialog{max-width:660px;max-height:88svh;padding:0;border:1px soli
 .technique-progress-label{display:flex;align-items:baseline;justify-content:space-between;gap:12px;color:#173e55}
 .technique-rank{font:400 18px/1.25 Bangers,sans-serif;letter-spacing:.7px}
 .technique-progress-total{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.3px;white-space:nowrap;color:#29485c}
-.technique-progress-track{position:relative;display:block;height:9px;width:100%;overflow:hidden;clip-path:polygon(2px 0,100% 0,calc(100% - 2px) 100%,0 100%);background:#15364c;border:1px solid #15364c;box-shadow:0 1px 0 #fff9}
-.technique-progress-track:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(102deg,transparent 0,transparent calc(10% - 2.5px),#15364c99 calc(10% - 2px),#15364c99 calc(10% - .5px),transparent 10%);pointer-events:none}
+.technique-progress-track{position:relative;display:block;height:9px;width:100%;overflow:hidden;clip-path:polygon(2px 0,100% 0,calc(100% - 2px) 100%,0 100%);background:#15364c;border:0}
+/* Two inset silhouettes preserve the diagonal outline, even at full fill. */
+.technique-progress-interior{position:absolute;display:block;inset:1px 1.25px;overflow:hidden;clip-path:polygon(2px 0,100% 0,calc(100% - 2px) 100%,0 100%)}
+.technique-progress-interior:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(102deg,transparent 0,transparent calc(10% - 2.5px),#15364c99 calc(10% - 2px),#15364c99 calc(10% - .5px),transparent 10%);pointer-events:none}
 .technique-progress-fill{display:block;height:100%;background:linear-gradient(0deg,#e9aa26,#ffde65 65%,#fff1af);box-shadow:2px 0 5px #ffe68899}
 .technique-progress-next{font-size:10px;font-weight:600;letter-spacing:.35px;color:#526779;text-align:right}
 .is-unassessed .technique-rank{font-size:15px;color:#607181}

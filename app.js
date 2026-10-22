@@ -102,10 +102,10 @@
   }
   // Presentation order is independent of the chronological acquisition records.
   // Assign formGroup to future families; groups retain their first-listed order.
-  function orderedForms(forms) {
+  function orderedForms(forms, acrossFamilies = false) {
     const families = new Map();
     for (const form of forms) {
-      const family = form.formGroup || 'default';
+      const family = acrossFamilies ? 'all' : form.formGroup || 'default';
       if (!families.has(family)) families.set(family, []);
       families.get(family).push(form);
     }
@@ -126,7 +126,10 @@
   }
   function portraitForms() {
     return [{id:'base', name:'Base', portrait:portraitUrl, alt:data.character.portraitAlt, multiplier:'1', date:data.character.portraitDate},
-      ...unlockedForms().filter(f => safePortrait(f.portrait)).map(f => ({...f, portrait:safePortrait(f.portrait), alt:f.portraitAlt || f.name}))];
+      ...orderedForms(unlockedForms(),true).filter(f => safePortrait(f.portrait)).map(f => ({...f, name:formArtName(f), portrait:safePortrait(f.portrait), alt:f.portraitAlt || f.name}))];
+  }
+  function formArtName(form) {
+    return /^kaioken$/i.test(form.name.trim()) ? `Kaioken ×${form.multiplier}` : form.name;
   }
   function portraitHistory() {
     return (Array.isArray(data.character.appearanceHistory) ? data.character.appearanceHistory : [])
@@ -190,7 +193,7 @@
     const art = record.art || {};
     if (kind === 'places') return {images:artItems(art.images)};
     const appearance = artItems(art.appearance);
-    const forms = record.canTransform === true ? orderedForms(artItems(art.forms).filter(a => a.unlocked === true)) : [];
+    const forms = record.canTransform === true ? orderedForms(artItems(art.forms).filter(a => a.unlocked === true),true).map(f=>({...f,name:formArtName(f)})) : [];
     return {appearance, ...(record.canTransform === true && (appearance.length || forms.length) ?
       {forms:appearance.length ? [{...appearance.at(-1),name:'Base',multiplier:1}, ...forms] : forms} : {})};
   }
@@ -313,7 +316,7 @@
     const target=assessed ? (p.next?.name ? `Next · ${p.next.name}` : '') : '';
     const numbers=assessed ? `${creditText(p.credits)}${p.next?' / '+creditText(p.next.credits):''}` : '';
     const accessible=assessed ? `${p.label}; ${numbers}${p.next?.name?`; next ${p.next.name}`:''}` : p.label;
-    const fill=assessed?`<span class="technique-progress-fill" style="width:${p.percent}%"></span>`:'';
+    const fill=assessed?`<span class="technique-progress-interior"><span class="technique-progress-fill" style="width:${p.percent}%"></span></span>`:'';
     return `<span class="technique-progress${assessed?'':' is-unassessed'}"><span class="technique-progress-label"><span class="technique-rank">${escape(p.label)}</span>${assessed?`<span class="technique-progress-total">${numbers}</span>`:''}</span>${assessed?`<span class="technique-progress-track" role="progressbar" aria-label="${escape(title)} learning progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(p.percent)}" aria-valuetext="${escape(accessible)}">${fill}</span>${target?`<span class="technique-progress-next">${escape(target)}</span>`:''}`:''}</span>`;
   }
   function learningDetails(ability) {
@@ -346,11 +349,11 @@
     if(profile.kind==='contact' && index>=0) {
       const peak=m.ceiling[index],setup=timer(m.setup),extra=timer(m.extraCharge);
       add('Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
-      add('Endurance Damage',`${stat(m.damage)} → ${stat(m.damage*peak/m.regular)}`);
+      add('Damage · Equal Power',`${stat(m.damage)} → ${stat(m.damage*peak/m.regular)}`);
       add('Endurance Cost',`${stat(m.costCoefficient*m.regular**2*m.economy[index]*refinement)} → ${stat(m.costCoefficient*peak**2*m.economy[index]*refinement)}`);
       add('Regular Preparation',duration(setup));add('Full Charge · Total',duration(setup+extra));
       add('Mastered Charge Limit',factor(m.ceiling.at(-1)));
-      note='Figures run from regular release to your current charge limit. Damage assumes equal active bodily power and a clean, fully coupled hit. Times use your current base; higher active output shortens preparation. Full charge includes regular preparation. Gathering permits a committed approach, with sufficient spirit energy; unrelated attacks interrupt it.';
+      note=`Regular → current maximum. Damage compares equal active bodily power and full contact: ${stat(m.damage/m.regular)} × your delivered attack power ÷ the target’s bodily power. The technique multiplier is already included in attack power. Times use your current base and include preparation. Gathering permits a committed approach with sufficient spirit energy; unrelated attacks interrupt it.`;
     } else if(['kaioken','form','involuntary'].includes(profile.kind)) {
       add('Power Multiplier',factor(m.factor));
       if(index>=0 && m.setup) add('Cold Activation',duration(timer(m.setup)));
@@ -358,7 +361,7 @@
       else if(profile.kind==='form') note='Activation is shown at current base. Conscious regulation and current bodily condition govern sustained use; exact drain coefficients remain under calibration.';
       else note='An involuntary manifestation governed by its established takeover conditions.';
     } else if(profile.kind==='ordinary' && index>=0) {
-      add('Attack Output',factor(m.factor));add('Endurance Damage',creditText(m.damage[index]));
+      add('Attack Output',factor(m.factor));add('Damage · Equal Power',creditText(m.damage[index]));
       add('Endurance Cost',stat(m.cost[index]*refinement));
       note='Per ordinary combination or bounded volley. Impact assumes equal active bodily power and a clean hit; power differences and defence change the result.';
     } else if(profile.kind==='kiai' && index>=0) {

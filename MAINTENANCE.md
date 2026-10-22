@@ -30,7 +30,7 @@ Store future large powers as unsigned decimal strings, particularly beyond JavaS
 
 Check repeated portrait → landscape → portrait resizing, including the Patrol Trainee badge and safe-area insets. Verify Base-only behaviour, multi-form wraparound, keyboard operation, failed images, long names, exact large/decimal arithmetic, popup dismissal/focus return and no overflow. Use local fictional fixtures only; never publish test unlocks or hidden story artwork.
 
-Forms are grouped by optional `formGroup`, preserving first-listed family order, then increasing exact multiplier within each family. Base stays first. Appearance history remains chronological. Character and NPC artwork has no visible capture date. Keep reference dates in metadata and the private art ledger alongside the base and form output at the depicted debut; current totals must calculate from current base, not these historical values. Place-art dates remain visible.
+Forms artwork sorts by increasing exact total multiplier across all families; optional `formGroup` does not override gallery power order. Base stays first and equal factors retain source order. Kaioken artwork captions include the actual multiplier, currently Kaioken ×2. Appearance history remains chronological. Character and NPC artwork has no visible capture date. Keep reference dates in metadata and the private art ledger alongside the base and form output at the depicted debut; current totals must calculate from current base, not these historical values. Place-art dates remain visible.
 
 ## NPC and place artwork
 
