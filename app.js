@@ -279,7 +279,7 @@
     {id:'forms',title:'Transformation & Amplification'},
     {id:'ki',title:'Ki Techniques'},
     {id:'physical',title:'Physical Techniques'},
-    {id:'discipline',title:'Control & Discipline'},
+    {id:'discipline',title:'Discipline'},
     {id:'magic',title:'Magical Techniques'}
   ];
   function abilityGroup(ability) {
@@ -291,28 +291,27 @@
     const tiers=combatReference?.tiers;
     const credits=record?.credits;
     if(!Array.isArray(tiers) || tiers.length<2 || !Number.isFinite(credits) || credits<0)
-      return {record, label:'Not Yet Assessed', note:'Training history is recorded; a credit assessment is pending.'};
+      return {record, label:'Not Yet Assessed', note:'Progress Not Yet Assessed'};
     const index=tiers.findLastIndex(t=>credits>=t.credits);
     const current=tiers[index], next=tiers[index+1];
-    if(!current) return {record, label:'Not Yet Assessed', note:'Credit assessment unavailable.'};
+    if(!current) return {record, label:'Not Yet Assessed', note:'Progress Unavailable'};
     const percent=next ? 100*(credits-current.credits)/(next.credits-current.credits) : 100;
     return {record,credits,label:current.name,next,percent,remaining:next?next.credits-credits:0};
   }
   const creditText=n=>n.toLocaleString('en',{maximumFractionDigits:1});
   function learningMeter(ability, detail=false) {
-    const p=progressState(ability);
-    const assessed=Number.isFinite(p.credits);
-    const target=assessed ? (p.next ? `Next: ${p.next.name}` : 'Continued Refinement') : (p.label==='Involuntary'?'Not Voluntarily Controlled':'Progress Pending');
+    const p=progressState(ability), assessed=Number.isFinite(p.credits);
+    const target=assessed ? (p.next ? `Next · ${p.next.name}` : 'Mastered') : '';
+    const numbers=assessed ? `${creditText(p.credits)}${p.next?' / '+creditText(p.next.credits):''}` : '';
+    const accessible=assessed ? `${p.label}; ${numbers}${p.next?`; next ${p.next.name}`:''}` : p.label;
     const fill=assessed?`<span class="technique-progress-fill" style="width:${p.percent}%"></span>`:'';
-    const accessible=assessed?`${p.label}; ${creditText(p.credits)} total credits${p.next?`; ${creditText(p.remaining)} credits to ${p.next.name}`:'; mastery reached'}`:p.label;
-    return `<span class="technique-progress${assessed?'':' is-unassessed'}"><span class="technique-progress-label"><span>${escape(p.label)}</span>${detail?'':`<span>${escape(target)}</span>`}</span><span class="technique-progress-track" ${assessed?`role="progressbar" aria-label="${escape(ability.title)} learning progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(p.percent)}" aria-valuetext="${escape(accessible)}"`:'aria-hidden="true"'}>${fill}</span>${detail?`<span class="technique-progress-total">${assessed?`${creditText(p.credits)}${p.next?' / '+creditText(p.next.credits):''} Total Credits${p.next?' · '+creditText(p.remaining)+' to '+escape(p.next.name):' · Continued Refinement'}`:escape(p.note)}</span>`:''}</span>`;
+    return `<span class="technique-progress${assessed?'':' is-unassessed'}"><span class="technique-progress-label"><span class="technique-rank">${escape(p.label)}</span>${assessed?`<span class="technique-progress-total">${numbers}</span>`:''}</span>${assessed?`<span class="technique-progress-track" role="progressbar" aria-label="${escape(ability.title)} learning progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(p.percent)}" aria-valuetext="${escape(accessible)}">${fill}</span>${p.next?`<span class="technique-progress-next">${escape(target)}</span>`:''}`:''}</span>`;
   }
   function learningDetails(ability) {
-    const p=progressState(ability), record=p.record;
-    const stage=record?.stage;
-    const stageCredits=Number.isFinite(stage?.credits) && stage.credits>=0;
-    const milestones=record?.milestones || [];
-    return `<section class="content-section technique-learning"><h3>Learning Progress</h3>${learningMeter(ability,true)}${record?.assessment==='Assessed'?'<p class="progress-assessment">Starting assessment from recorded training.</p>':''}${stage?`<div class="technique-stage"><strong>${escape(stage.label)}</strong><span>${stageCredits?creditText(stage.credits)+' / '+creditText(stage.target)+' Credits':'Conditioning Credits Not Yet Assessed'}</span><p>${escape(stage.benefit)}</p></div>`:''}${milestones.length?`<details class="record-history"><summary>Progression & Benefits</summary><ol class="technique-milestones">${milestones.map(m=>{const tier=combatReference?.tiers?.find(t=>t.name===m.tier);return `<li${p.label===m.tier?' class="is-current"':''}><strong>${escape(m.tier)}${tier?`<small>${creditText(tier.credits)} Credits</small>`:''}</strong><p>${escape(m.benefit)}</p></li>`;}).join('')}</ol></details>`:''}</section>`;
+    const p=progressState(ability), record=p.record, stage=record?.stage;
+    const stageAssessed=Number.isFinite(stage?.credits) && stage.credits>=0 && Number.isFinite(stage?.target) && stage.target>0;
+    const milestones=record?.milestones || [], tierIndex=combatReference?.tiers?.findIndex(t=>t.name===p.label) ?? -1;
+    return `<section class="content-section technique-learning"><h3>Mastery</h3>${learningMeter(ability,true)}${stage?`<div class="technique-stage"><strong>${escape(stage.label)}</strong><span>${stageAssessed?creditText(stage.credits)+' / '+creditText(stage.target):'Not Yet Assessed'}</span><p>${escape(stage.benefit)}</p></div>`:''}${milestones.length?`<details class="record-history"><summary>Path to Mastery</summary><ol class="technique-milestones">${milestones.map(m=>{const i=combatReference?.tiers?.findIndex(t=>t.name===m.tier) ?? -1;return `<li${p.label===m.tier?' class="is-current"':i>=0 && i<tierIndex?' class="is-reached"':''}><strong>${escape(m.tier)}${p.label===m.tier?'<small>Current</small>':''}</strong><p>${escape(m.benefit)}</p></li>`;}).join('')}</ol></details>`:''}</section>`;
   }
   function abilities() {
     const groups=[...abilityGroups,{id:'other',title:'Other Techniques'}];
@@ -324,7 +323,7 @@
   }
   function combatRotations() {
     if (!combatReference) return '';
-    return `<section class="content-section"><h3>Defensive Rotations</h3><p>${escape(combatReference.rotationNote)}</p><dl class="definition-grid">${combatReference.rotations.map(r=>definition(r.name,`${r.tier} · ${r.credits.toLocaleString('en')} credits`,Object.entries(r.baseline).map(([mode,weight])=>`${mode} ${weight}%`).join(' · '))).join('')}</dl></section>`;
+    return `<section class="content-section"><h3>Defensive Rotations</h3><p>${escape(combatReference.rotationNote)}</p><dl class="definition-grid">${combatReference.rotations.map(r=>definition(r.name,`${r.tier} · ${r.credits.toLocaleString('en')}`,Object.entries(r.baseline).map(([mode,weight])=>`${mode} ${weight}%`).join(' · '))).join('')}</dl></section>`;
   }
   function showAbility(id) {
     const ability=data.abilities.find(r=>r.id===id);
