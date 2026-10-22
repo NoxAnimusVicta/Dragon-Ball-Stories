@@ -27,6 +27,7 @@
   let data;
   let scale;
   let combatReference;
+  let techniqueProgress;
   const worldExpansion = new Map();
   const worldOpen = key => worldExpansion.get(key) ? 'open' : '';
   let searchIndex = [];
@@ -284,12 +285,41 @@
   function abilityGroup(ability) {
     return abilityGroups.find(group=>group.id===ability.category) || {id:'other',title:'Other Techniques'};
   }
+  function progressState(ability) {
+    const record=techniqueProgress?.records?.[ability.id];
+    if(record?.mode==='involuntary') return {record, label:'Involuntary', note:record.note};
+    const tiers=combatReference?.tiers;
+    const credits=record?.credits;
+    if(!Array.isArray(tiers) || tiers.length<2 || !Number.isFinite(credits) || credits<0)
+      return {record, label:'Not Yet Assessed', note:'Training history is recorded; a credit assessment is pending.'};
+    const index=tiers.findLastIndex(t=>credits>=t.credits);
+    const current=tiers[index], next=tiers[index+1];
+    if(!current) return {record, label:'Not Yet Assessed', note:'Credit assessment unavailable.'};
+    const percent=next ? 100*(credits-current.credits)/(next.credits-current.credits) : 100;
+    return {record,credits,label:current.name,next,percent,remaining:next?next.credits-credits:0};
+  }
+  const creditText=n=>n.toLocaleString('en',{maximumFractionDigits:1});
+  function learningMeter(ability, detail=false) {
+    const p=progressState(ability);
+    const assessed=Number.isFinite(p.credits);
+    const target=assessed ? (p.next ? `Next: ${p.next.name}` : 'Continued Refinement') : (p.label==='Involuntary'?'Not Voluntarily Controlled':'Progress Pending');
+    const fill=assessed?`<span class="technique-progress-fill" style="width:${p.percent}%"></span>`:'';
+    const accessible=assessed?`${p.label}; ${creditText(p.credits)} total credits${p.next?`; ${creditText(p.remaining)} credits to ${p.next.name}`:'; mastery reached'}`:p.label;
+    return `<span class="technique-progress${assessed?'':' is-unassessed'}"><span class="technique-progress-label"><span>${escape(p.label)}</span>${detail?'':`<span>${escape(target)}</span>`}</span><span class="technique-progress-track" ${assessed?`role="progressbar" aria-label="${escape(ability.title)} learning progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(p.percent)}" aria-valuetext="${escape(accessible)}"`:'aria-hidden="true"'}>${fill}</span>${detail?`<span class="technique-progress-total">${assessed?`${creditText(p.credits)}${p.next?' / '+creditText(p.next.credits):''} Total Credits${p.next?' · '+creditText(p.remaining)+' to '+escape(p.next.name):' · Continued Refinement'}`:escape(p.note)}</span>`:''}</span>`;
+  }
+  function learningDetails(ability) {
+    const p=progressState(ability), record=p.record;
+    const stage=record?.stage;
+    const stageCredits=Number.isFinite(stage?.credits) && stage.credits>=0;
+    const milestones=record?.milestones || [];
+    return `<section class="content-section technique-learning"><h3>Learning Progress</h3>${learningMeter(ability,true)}${record?.assessment==='Assessed'?'<p class="progress-assessment">Starting assessment from recorded training.</p>':''}${stage?`<div class="technique-stage"><strong>${escape(stage.label)}</strong><span>${stageCredits?creditText(stage.credits)+' / '+creditText(stage.target)+' Credits':'Conditioning Credits Not Yet Assessed'}</span><p>${escape(stage.benefit)}</p></div>`:''}${milestones.length?`<details class="record-history"><summary>Progression & Benefits</summary><ol class="technique-milestones">${milestones.map(m=>{const tier=combatReference?.tiers?.find(t=>t.name===m.tier);return `<li${p.label===m.tier?' class="is-current"':''}><strong>${escape(m.tier)}${tier?`<small>${creditText(tier.credits)} Credits</small>`:''}</strong><p>${escape(m.benefit)}</p></li>`;}).join('')}</ol></details>`:''}</section>`;
+  }
   function abilities() {
     const groups=[...abilityGroups,{id:'other',title:'Other Techniques'}];
     return pageHeader('03','Techniques','')+
       `<div class="ability-collection">${groups.map(group=>{
         const items=data.abilities.filter(r=>abilityGroup(r).id===group.id);
-        return items.length ? `<section class="ability-group" aria-labelledby="ability-group-${group.id}"><h2 id="ability-group-${group.id}">${group.title}</h2><div class="ability-grid">${items.map(r=>`<button class="ability-card" id="record-${escape(r.id)}" data-ability="${escape(r.id)}" aria-haspopup="dialog"><span class="ability-card-art">${safePortrait(r.artwork)?`<img class="ability-image" src="${escape(safePortrait(r.artwork))}" alt="" loading="lazy">`:''}</span><span class="ability-card-copy"><strong>${heading(r.title)}</strong><span class="ability-card-description">${escape(r.summary)}</span></span></button>`).join('')}</div></section>` : '';
+        return items.length ? `<section class="ability-group" aria-labelledby="ability-group-${group.id}"><h2 id="ability-group-${group.id}">${group.title}</h2><div class="ability-grid">${items.map(r=>`<button class="ability-card" id="record-${escape(r.id)}" data-ability="${escape(r.id)}" aria-haspopup="dialog"><span class="ability-card-art">${safePortrait(r.artwork)?`<img class="ability-image" src="${escape(safePortrait(r.artwork))}" alt="" loading="lazy">`:''}</span><span class="ability-card-copy"><strong>${heading(r.title)}</strong><span class="ability-card-description">${escape(r.summary)}</span>${learningMeter(r)}</span></button>`).join('')}</div></section>` : '';
       }).join('')}</div>`;
   }
   function combatRotations() {
@@ -310,7 +340,7 @@
     const forms=unlockedForms().filter(f=>(ability.formIds || []).includes(f.id));
     const block=(title,text)=>text?`<section class="content-section"><h3>${heading(title)}</h3><p>${escape(text)}</p></section>`:'';
     const history=ability.trainingRecord;
-    dialog.innerHTML=`<header class="ability-detail-header"><div class="ability-detail-heading"><img src="${escape(safePortrait(ability.artwork))}" alt=""><div><span class="ability-category">${escape(abilityGroup(ability).title)}</span><h2 id="ability-dialog-title">${heading(ability.title)}</h2></div></div><button class="icon-button close-dialog" aria-label="Close technique details" autofocus>×</button></header><div class="ability-detail-body" tabindex="0" role="region" aria-label="Technique information">${block('Effect',ability.effect)}${forms.length?`<section class="content-section"><h3>Stages & Power</h3><dl class="power-level-list">${forms.map(f=>`<div><dt>${escape(f.name)}<span>×${escape(f.multiplier)}</span></dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl><p>Calculated from the current base of ${escape(exactPower(data.character.battlePower))}. Control is described below.</p></section>`:''}${block('Appearance',ability.appearance)}${block('Control & compatibility',ability.control)}<section class="content-section"><h3>Development</h3><p>${escape(ability.development)}</p>${historyLinks(ability.history)}${history?`<details class="record-history"><summary>Detailed Training Record · ${escape(history.asOf)}</summary><p>${escape(history.text)}</p>${history.facts?.length?`<dl class="definition-grid">${history.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>`:''}</details>`:''}</section></div>`;
+    dialog.innerHTML=`<header class="ability-detail-header"><div class="ability-detail-heading"><img src="${escape(safePortrait(ability.artwork))}" alt=""><div><span class="ability-category">${escape(abilityGroup(ability).title)}</span><h2 id="ability-dialog-title">${heading(ability.title)}</h2></div></div><button class="icon-button close-dialog" aria-label="Close technique details" autofocus>×</button></header><div class="ability-detail-body" tabindex="0" role="region" aria-label="Technique information">${learningDetails(ability)}${block('Effect',ability.effect)}${forms.length?`<section class="content-section"><h3>Stages & Power</h3><dl class="power-level-list">${forms.map(f=>`<div><dt>${escape(f.name)}<span>×${escape(f.multiplier)}</span></dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl><p>Calculated from the current base of ${escape(exactPower(data.character.battlePower))}. Control is described below.</p></section>`:''}${block('Appearance',ability.appearance)}${block('Control & compatibility',ability.control)}<section class="content-section"><h3>Development</h3><p>${escape(ability.development)}</p>${historyLinks(ability.history)}${history?`<details class="record-history"><summary>Detailed Training Record · ${escape(history.asOf)}</summary><p>${escape(history.text)}</p>${history.facts?.length?`<dl class="definition-grid">${history.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>`:''}</details>`:''}</section></div>`;
     const body=dialog.querySelector('.ability-detail-body');
     if(id==='combat-basics') body.insertAdjacentHTML('beforeend',combatRotations());
     const ruleNote=combatReference?.abilityNotes[id];
@@ -553,6 +583,7 @@
       data = validate(await response.json());
       try { const reference=await fetch('./power-scale.json?v='+release,{cache:'no-store',signal:controller.signal}); if(reference.ok) scale=await reference.json(); } catch { /* Main story remains available if reference fails. */ }
       try { const response=await fetch('./combat-reference.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const reference=await response.json();if(reference.schemaVersion===1 && Array.isArray(reference.sections) && Array.isArray(reference.rotations) && reference.abilityNotes) combatReference=reference;} } catch { /* Optional technique details remain absent if their data is unavailable. */ }
+      try { const response=await fetch('./technique-progress.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const progress=await response.json();if(progress.schemaVersion===1 && progress.records) techniqueProgress=progress;} } catch { /* Unknown progress is never displayed as zero. */ }
       portraitUrl = safePortrait(data.character.portrait);
       $('navigation').innerHTML=nav.map(([route,label]) => `<a class="nav-link" href="#${route}" aria-label="${label}">${icon(route)}<span>${label}</span></a>`).join('');
       document.querySelector('.user-chip').textContent=data.character.name;

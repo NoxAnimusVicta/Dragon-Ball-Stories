@@ -100,3 +100,26 @@ dialog.ability-dialog{max-width:660px;max-height:88svh;padding:0;border:1px soli
 /* Disclosure labels stay smaller than record names; explanatory text stays plain. */
 :is(.detail-list summary,.record-history>summary,.completed-projects>summary,.training-reference>details>summary,.scale-reference summary,.place-children .place-node>summary strong,#about-dialog h3){font:400 20px/1.4 Bangers,sans-serif;letter-spacing:.5px}
 .training-reference summary span{font:400 12px/1.6 'Segoe UI',sans-serif;letter-spacing:0}
+
+/* Quiet learning telemetry belongs inside the existing compact technique row. */
+.technique-progress{display:flex;flex-direction:column;gap:6px;width:100%;max-width:440px;margin-top:4px}
+.technique-progress-label{display:flex;justify-content:space-between;gap:10px;font-size:11px;line-height:1.45;color:#365e55}
+.technique-progress-label>span:first-child{font-weight:750}
+.technique-progress-label>span:last-child:not(:first-child){color:#5b7064;text-align:right}
+.technique-progress-track{display:block;width:100%;height:5px;overflow:hidden;border-radius:4px;background:#234b421c;box-shadow:inset 0 0 0 1px #21473c12}
+.technique-progress-fill{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#197367,#389487 70%,#c29b38)}
+.is-unassessed .technique-progress-track{background:repeating-linear-gradient(120deg,#315f4d12 0 5px,#315f4d25 5px 7px)}
+.technique-learning .technique-progress{max-width:none;margin:0}
+.technique-learning .technique-progress-label{font-size:14px}
+.technique-progress-total{font-size:12px;line-height:1.6;color:#456259;margin-top:3px}
+.technique-stage{display:grid;gap:5px;margin-top:16px;padding-left:12px;border-left:2px solid #c29b38}
+.technique-stage strong{font-size:13px}.technique-stage>span{font-size:12px;color:#456259}
+.technique-stage p,.content-section .progress-assessment{font-size:12px}
+.content-section .progress-assessment{margin-top:8px}
+.record-history .technique-milestones{list-style:none;padding:0;margin:0}
+.technique-milestones li{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:12px 0;border-top:1px solid #264f4317}
+.technique-milestones li>strong{font-size:13px;color:#335a4d}
+.technique-milestones li.is-current>strong{color:#13695d}
+.technique-milestones li small{font-size:11px;font-weight:400;margin-top:4px}
+.technique-milestones li p{font-size:13px;line-height:1.65}
+@media(max-width:600px){.technique-progress-label{font-size:10px;gap:6px}.technique-milestones li{grid-template-columns:88px 1fr;gap:10px}}

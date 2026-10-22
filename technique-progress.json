@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "asOf": "28 June, Age 854",
+  "records": {
+    "combat-basics": {
+      "credits": 4500,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Reliable combinations, footwork and basic defence."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Cleaner combinations with less wasted effort."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Stronger ordinary combinations and better endurance economy."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Best standard combination efficiency; defensive rotations keep their own progress."
+        }
+      ]
+    },
+    "ki-control": {
+      "credits": 4800,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Deliberate regulation of personal ki."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Steadier flow through movement and technique transitions."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Finer control while managing demanding techniques."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Refined regulation and efficiency; separate techniques still require their own practice."
+        }
+      ]
+    },
+    "flight": {
+      "credits": 6000,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Reliable takeoff, flight and landing."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "More controlled aerial manoeuvres."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Smoother evasions and transitions during flight."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Refined aerial control and economy; speed still depends on available power."
+        }
+      ]
+    },
+    "ki-blast": {
+      "credits": 3000,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Reliable ordinary shots and short volleys."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Improved volley control and endurance economy."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "More effective ordinary volleys with less wasted energy."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Best standard volley impact and economy; charged shots still require preparation."
+        }
+      ]
+    },
+    "ki-suppression": {
+      "credits": 3500,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Deliberately reduce and release emitted output."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Steadier suppression through familiar movement."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Finer regulation during demanding activity."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Refined suppression and switching; concealment still depends on the observer."
+        }
+      ]
+    },
+    "uncontrolled-form": {
+      "mode": "involuntary",
+      "credits": null,
+      "note": "Involuntary manifestation. No voluntary mastery track is established."
+    },
+    "sealed-channel-form": {
+      "credits": 1200,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Open, regulate and close the channel voluntarily."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Steadier use with improved recovery."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Better endurance and activation control."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Best trained economy and control; the multiplier and takeover conditions do not change."
+        }
+      ]
+    },
+    "kaioken-technique": {
+      "credits": 650,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Reliable use of an eligible output stage."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Improved activation, release and endurance economy."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Greater control and economy through conditioned stages."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Core mastery culminates in conditioned ×20; later conditioning remains separate and bodily damage remains possible."
+        }
+      ],
+      "stage": {
+        "label": "×2 Conditioning",
+        "credits": 650,
+        "target": 1000,
+        "benefit": "Complete ×2 conditioning before attempting the next eligible stage; this does not unlock it automatically."
+      }
+    },
+    "ki-sensing": {
+      "credits": 650,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Sense nearby ki and broad relative strength."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Track moving signatures more reliably."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Estimate readable output using appropriately rounded numbers."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Read exact detectable output; hidden reserves remain hidden."
+        }
+      ]
+    },
+    "spirit-bomb": {
+      "credits": 6,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Reliable small cooperative gathering and release."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "More consistent gathering and control of donated energy."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Improved handling of larger supported charges."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Best trained gathering and control; actual donors, supply and preparation still limit the attack."
+        }
+      ]
+    },
+    "spirit-spear": {
+      "credits": 90,
+      "assessment": "Assessed",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Repeatable contact release; charge ceiling ×2.5."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Charge ceiling ×3 with improved handling and economy."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Charge ceiling ×3.5 with improved handling and economy."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Charge ceiling ×4; movement during gathering remains possible, but unrelated fighting interrupts preparation."
+        }
+      ]
+    }
+  }
+}
