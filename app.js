@@ -349,11 +349,11 @@
     if(profile.kind==='contact' && index>=0) {
       const peak=m.ceiling[index],setup=timer(m.setup),extra=timer(m.extraCharge);
       add('Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
-      add('Damage · Equal Power',`${stat(m.damage)} → ${stat(m.damage*peak/m.regular)}`);
+      add('Base Endurance Damage',stat(m.damage));
       add('Endurance Cost',`${stat(m.costCoefficient*m.regular**2*m.economy[index]*refinement)} → ${stat(m.costCoefficient*peak**2*m.economy[index]*refinement)}`);
       add('Regular Preparation',duration(setup));add('Full Charge · Total',duration(setup+extra));
       add('Mastered Charge Limit',factor(m.ceiling.at(-1)));
-      note=`Regular → current maximum. Damage compares equal active bodily power and full contact: ${stat(m.damage/m.regular)} × your delivered attack power ÷ the target’s bodily power. The technique multiplier is already included in attack power. Times use your current base and include preparation. Gathering permits a committed approach with sufficient spirit energy; unrelated attacks interrupt it.`;
+      note='Charge raises attack Power Level; final damage follows the power gap and defence. Cost runs from regular to current maximum. Times use your current base and include preparation. Gathering permits a committed approach with sufficient spirit energy; unrelated attacks interrupt it.';
     } else if(['kaioken','form','involuntary'].includes(profile.kind)) {
       add('Power Multiplier',factor(m.factor));
       if(index>=0 && m.setup) add('Cold Activation',duration(timer(m.setup)));
@@ -361,7 +361,7 @@
       else if(profile.kind==='form') note='Activation is shown at current base. Conscious regulation and current bodily condition govern sustained use; exact drain coefficients remain under calibration.';
       else note='An involuntary manifestation governed by its established takeover conditions.';
     } else if(profile.kind==='ordinary' && index>=0) {
-      add('Attack Output',factor(m.factor));add('Damage · Equal Power',creditText(m.damage[index]));
+      add('Attack Output',factor(m.factor));add('Base Endurance Damage',creditText(m.damage[index]));
       add('Endurance Cost',stat(m.cost[index]*refinement));
       note='Per ordinary combination or bounded volley. Impact assumes equal active bodily power and a clean hit; power differences and defence change the result.';
     } else if(profile.kind==='kiai' && index>=0) {
