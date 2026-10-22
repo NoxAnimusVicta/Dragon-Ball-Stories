@@ -194,13 +194,12 @@
       ],
       "capability": {
         "kind": "form",
-        "timingAnchor": 79807,
         "mechanics": {
           "factor": 10,
           "setup": [
-            2,
-            0.5,
-            0.1,
+            10,
+            3,
+            1,
             0
           ]
         }
@@ -229,18 +228,17 @@
       ],
       "capability": {
         "kind": "kaioken",
-        "timingAnchor": 79807,
         "mechanics": {
           "factor": 2,
           "setup": [
-            0.25,
-            0.1,
-            0.03,
+            30,
+            10,
+            3,
             0
           ]
         }
       },
-      "title": "Kaioken — Phase 2"
+      "title": "Kaioken x2"
     },
     "ki-sensing": {
       "credits": 650,
@@ -274,24 +272,54 @@
       "milestones": [
         {
           "tier": "Learned",
-          "benefit": "Reliable small cooperative gathering and release."
+          "benefit": "Reliable small cooperative gathering and release. Containment ceiling ×3."
         },
         {
           "tier": "Proficient",
-          "benefit": "More consistent gathering and control of donated energy."
+          "benefit": "More consistent gathering and control of donated energy. Containment ceiling ×5."
         },
         {
           "tier": "Advanced",
-          "benefit": "Improved handling of larger supported charges."
+          "benefit": "Improved handling of larger supported charges. Containment ceiling ×7.5."
         },
         {
           "tier": "Mastered",
-          "benefit": "Best trained gathering and control; actual donors, supply and preparation still limit the attack."
+          "benefit": "Best trained gathering and control; actual donors, supply and preparation still limit the attack. Containment ceiling ×10."
         }
       ],
       "capability": {
         "kind": "supplied",
-        "mechanics": {}
+        "mechanics": {
+          "regular": 1,
+          "ceiling": [
+            3,
+            5,
+            7.5,
+            10
+          ],
+          "damage": 8,
+          "setup": [
+            30,
+            15,
+            5,
+            1
+          ],
+          "collectionPerMinute": [
+            1,
+            2,
+            4,
+            8
+          ],
+          "economy": [
+            1,
+            0.85,
+            0.65,
+            0.45
+          ],
+          "setupCost": 4,
+          "containmentCost": 2,
+          "gatheringCostPerMinute": 2
+        }
       }
     },
     "spirit-spear": {
@@ -317,7 +345,6 @@
       ],
       "capability": {
         "kind": "contact",
-        "timingAnchor": 79807,
         "mechanics": {
           "regular": 2,
           "ceiling": [
@@ -327,15 +354,15 @@
             4
           ],
           "setup": [
+            60,
+            20,
             5,
-            1,
-            0.1,
-            0.005
+            2
           ],
           "extraCharge": [
-            300,
-            150,
-            75,
+            240,
+            120,
+            60,
             30
           ],
           "damage": 9.5,
@@ -393,7 +420,8 @@
           ]
         }
       },
-      "artwork": "./ability-kiai.png"
+      "artwork": "./ability-kiai.png",
+      "category": "forms"
     },
     "second-wind": {
       "credits": 650,
@@ -437,7 +465,8 @@
             18,
             24
           ],
-          "cooldownHours": 24
+          "cooldownHours": 24,
+          "cost": 0
         }
       },
       "artwork": "./ability-second-wind.png"

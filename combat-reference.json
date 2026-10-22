@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "Training & Combat",
-  "status": "Campaign rules · Revision 7, Combat Calibration, Transformation Response & Technique Capability Amendments · S245 · 23 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.",
+  "status": "Campaign rules · Revision 9, Reconciled Combat Rules · S245 · 23 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.",
   "tiers": [
     {
       "name": "Learning",
@@ -30,10 +30,10 @@
       "credits": 250,
       "tier": "Proficient",
       "baseline": {
-        "guard": 32.5,
-        "dodge": 45.0,
-        "parry": 15.0,
-        "counter": 7.5
+        "guard": 40.0,
+        "dodge": 40.0,
+        "parry": 12.0,
+        "counter": 8.0
       }
     },
     {
@@ -41,10 +41,10 @@
       "credits": 250,
       "tier": "Proficient",
       "baseline": {
-        "guard": 62.5,
-        "dodge": 15.0,
-        "parry": 15.0,
-        "counter": 7.5
+        "guard": 66.66666666666667,
+        "dodge": 16.666666666666668,
+        "parry": 10.0,
+        "counter": 6.666666666666667
       }
     },
     {
@@ -52,10 +52,10 @@
       "credits": 10,
       "tier": "Learned",
       "baseline": {
-        "guard": 43.75,
-        "dodge": 22.5,
-        "parry": 23.75,
-        "counter": 10.0
+        "guard": 46.51162790697674,
+        "dodge": 23.25581395348837,
+        "parry": 20.930232558139537,
+        "counter": 9.30232558139535
       }
     },
     {
@@ -63,10 +63,10 @@
       "credits": 10,
       "tier": "Learned",
       "baseline": {
-        "guard": 43.75,
-        "dodge": 22.5,
-        "parry": 16.25,
-        "counter": 17.5
+        "guard": 47.61904761904762,
+        "dodge": 23.80952380952381,
+        "parry": 14.285714285714286,
+        "counter": 14.285714285714286
       }
     }
   ],
@@ -75,46 +75,46 @@
     {
       "name": "Neutral",
       "weights": {
-        "guard": 50,
-        "dodge": 25,
-        "parry": 15,
-        "counter": 10
+        "guard": 50.0,
+        "dodge": 25.0,
+        "parry": 15.0,
+        "counter": 10.0
       }
     },
     {
       "name": "Evasive",
       "weights": {
-        "guard": 15,
-        "dodge": 65,
-        "parry": 15,
-        "counter": 5
+        "guard": 28.571428571428573,
+        "dodge": 57.142857142857146,
+        "parry": 8.571428571428571,
+        "counter": 5.714285714285714
       }
     },
     {
       "name": "Bulwark",
       "weights": {
-        "guard": 75,
-        "dodge": 5,
-        "parry": 15,
-        "counter": 5
+        "guard": 80.0,
+        "dodge": 10.0,
+        "parry": 6.0,
+        "counter": 4.0
       }
     },
     {
       "name": "Deflection",
       "weights": {
-        "guard": 25,
-        "dodge": 15,
-        "parry": 50,
-        "counter": 10
+        "guard": 34.48275862068966,
+        "dodge": 17.24137931034483,
+        "parry": 41.37931034482759,
+        "counter": 6.896551724137931
       }
     },
     {
       "name": "Riposte",
       "weights": {
-        "guard": 25,
-        "dodge": 15,
-        "parry": 20,
-        "counter": 40
+        "guard": 38.46153846153846,
+        "dodge": 19.23076923076923,
+        "parry": 11.538461538461538,
+        "counter": 30.76923076923077
       }
     }
   ],
@@ -138,9 +138,9 @@
       "title": "Kiai & Second Wind",
       "summary": "Basic trained power gathering and recovery have their own progress.",
       "paragraphs": [
-        "Kiai is a Discipline. Learned/Proficient/Advanced/Mastered caps add 25/50/75/100 percent of unamplified form power, with full gathering times180/120/90/60 seconds. Current output is base × form × (compatible amplifier + gathered bonus) × availability; count each layer once. Form or bodily-amplifier changes reset the gathered bonus.",
+        "Kiai belongs to Transformation & Amplification. Learned/Proficient/Advanced/Mastered caps add 25/50/75/100 percent of unamplified form power, with full gathering times180/120/90/60 seconds. Current output is base × form × (compatible amplifier + gathered bonus) × availability; count each layer once. Form or bodily-amplifier changes reset the gathered bonus.",
         "At elapsed gathering time t, bonus = tier cap × (t / full time)^(2/3), capped at the tier limit. Upkeep is coefficient × bonus² per minute, with coefficients4/2/1/0.25 by tier, also accruing during gathering. Partial boosts are useful; competing attack preparation requires its own opening.",
-        "Ordinary Second Wind develops from one8–12 recovery, to one12–18, then two12–18, then two16–24. One private saved uniform draw determines the amount at actual use. It triggers reflexively at zero when recovery is possible, preserves damage overflow and spends a reserve for24personally experienced hours. Regenerative biology uses its own replacement profile.",
+        "Ordinary Second Wind costs zero Endurance. It develops from one8–12 recovery, to one12–18, then two12–18, then two16–24. One private saved uniform draw determines the amount at actual use. It triggers reflexively at zero when recovery is possible, preserves damage overflow and spends a reserve for24personally experienced hours. Regenerative biology uses its own replacement profile.",
         "Zero has existing Proficient Kiai750 and Second Wind650, assessed from the player correction and recorded training. These are starting assessments, not new elapsed training. Guru’s potential release improves strength, speed, resilience and absolute endurance; technique proficiency remains separately trained. The fresh100-point endurance scale is relative to that stronger body."
       ]
     },
@@ -164,7 +164,7 @@
       "summary": "One breakthrough check, then a defence response when needed.",
       "paragraphs": [
         "Meaningfully contested combat uses automatic private, saved rolls for everyone. Fix intent, actual capabilities, supply, timing, range, injuries and feasible outcomes first. Impossible and certain results need no random draw. No rerolls, lucky minimum chance, protagonist padding or retrospective bonuses.",
-        "For an ordinary attack, w = bodily output ratio² × agility ratio² × independently justified skill × position × familiarity factor. Breakthrough chance = w / (1 + w). Default independent modifiers are 1. Bodily power already contributes: do not apply the power-derived movement-speed fallback again as an agility bonus. A charged attack’s power affects impact, not the caster’s movement speed.",
+        "For aiming and movement, use the Power Level available for that action, excluding a technique-bound bonus. With r the ratio, t=min(1,abs(ln r)/ln4), w=r^(0.5+1.5t²); r0 gives0. Apply independent agility², skill, position and directional familiarity once. Chance=w/(1+w). This retained close-gap curve reaches the squared curve at fourfold gaps. Damage still scales linearly with the Power Level during the technique.",
         "After a failed clean breakthrough, a secondary draw chooses guard, dodge, parry or a counter opportunity. An interception response remains pending until collision. Neutral weights are 50/25/15/10. Trained rotations change that conditional distribution; they are not another chance to reverse a successful hit. Remove impossible responses before rolling and normalise the remaining weights.",
         "A counter immediately attempts a fitting reply at ordinary accuracy, with no counter-only odds or power bonus. The opponent can defend or counter it in turn. Resolve feasible chains without an arbitrary length cap, charging every actual attempt. The latest countering fighter can press the attack if circumstances allow, not bank guaranteed future turns. Routine responses need no player pause; major voluntary escalation still does.",
         "Physical counters use a ready Physical signature or style-appropriate strikes; Ki counters use a suitable Ki signature or ordinary Ki Blast variation. A response never copies an unknown move or receives free charge. A feasible Ki interception can start a clash: test uncertain interception once, then compare actual delivered powers. Collision is not a free hit on the caster. A weaker response may be overrun.",
@@ -177,12 +177,12 @@
       "title": "Endurance & Exertion",
       "summary": "Ordinary exchanges accumulate wear; heavy techniques spend more energy.",
       "paragraphs": [
-        "Use a fresh 100-point combat-endurance reference, tracking received wear and unrecovered offensive exertion separately. This is campaign bookkeeping, not a percentage of Power Level or a newly measured current reserve. Actual injuries and pre-existing fatigue remain relevant; transformation does not refresh it.",
+        "At positive Endurance E, availability=1-0.4*((100-E)/90)^2; at10 it is60%, at50 about87.65%. At0 effective combat awaits a valid recovery. Apply this once; a technique multiplier never becomes a defensive buff. Use a fresh 100-point combat-endurance reference, tracking received wear and unrecovered offensive exertion separately. This is campaign bookkeeping, not a percentage of Power Level or a newly measured current reserve. Actual injuries and pre-existing fatigue remain relevant; transformation does not refresh it.",
         "Combat Fundamentals governs ordinary physical combinations; Ki Blast governs ordinary Ki combinations. At Learned/Proficient/Advanced/Mastered, complete clean body-parity damage is 3/4/5/6. Physical costs are 1.00/0.75/0.60/0.50; Ki costs are 1.50/1.25/1.00/0.85 per bounded attempt, including misses. Use the current tier row between thresholds. Scale damage by delivered output / defensive bodily output; a feasible guard transmits 20%, full evasion/parry none.",
         "Beyond mastery, ordinary damage stays at 6 while cost uses diminishing refinement R. There is no extra accuracy, Power Level, per-punch or per-pellet bonus. Do not add Ki Control or ordinary mastery again to a named technique. Unmigrated current credits preserve the earlier 4 damage / 0.75 physical / 1.25 Ki accounting baseline, explicitly not a Proficient assignment. Established feats remain valid; explicitly below-Learned execution needs its own recorded profile.",
-        "Technique multipliers change attack Power Level, never intrinsic technique damage. Calculate delivered attack output first, compare it with defensive bodily output through the power-gap scaling rule, then apply that scaling to fixed intrinsic damage and resolve defence. Current intrinsic values are Kamehameha6, Galick Gun6, Spirit Spear9.5 and Super Kamehameha7; the former regular-body-parity numbers already included attack amplification. Current operational scaling is delivered output / defensive bodily output. Never add another charge multiplier to damage. Endurance expenditure is calculated separately.",
-        "Named techniques use coefficient × attack factor² × economy: coefficient 1.5 for Galick Gun, 2 for the other profiled self-powered beams/wave, 1 for Spirit Spear handling plus its actual donated energy. Economy anchors are 1/0.85/0.65/0.45 at Learned/Proficient/Advanced/Mastered; do not invent a tier to grant a discount. Mastered Galick Gun costs 6.075 at regular ×3 and 24.3 at full ×6, a 25% reduction; fixed intrinsic damage remains6 before power-gap scaling. Preparation and sustain use the same reduced expenditure profile.",
-        "Accrue regular cost through preparation and add the actual overcharge cost; do not charge preparation again at release. Interrupted attempts retain spent effort. Sustained beams add one release cost per Learned full-extra-charge interval, scaled by reference/current throughput, without a second mastery speed penalty. A recorded replenishing source may override ordinary depletion within its limits.",
+        "A technique temporarily raises the user’s one Power Level for its duration. Compare that Power Level with the defender through power-gap scaling, then apply fixed intrinsic damage and actual defence. The technique-bound increase ends with the technique and cannot enhance unrelated punches, movement or defence. Current intrinsic values are Kamehameha6, Galick Gun6, Spirit Spear9.5 and Super Kamehameha7; the former regular-body-parity numbers already included attack amplification. Current operational scaling is delivered output / defensive bodily output. Never add another charge multiplier to damage. Endurance expenditure is calculated separately.",
+        "Ordinary profiled beams/wave and Spirit Spear use coefficient × technique factor² × economy (Cannon and Spirit Bomb use their distinct profiles below): coefficient 1.5 for Galick Gun, 2 for the other profiled self-powered beams/wave, 1 for Spirit Spear handling plus its actual donated energy. Economy anchors are 1/0.85/0.65/0.45 at Learned/Proficient/Advanced/Mastered; do not invent a tier to grant a discount. Mastered Galick Gun costs 6.075 at regular ×3 and 24.3 at full ×6, a 25% reduction; fixed intrinsic damage remains6 before power-gap scaling. Preparation and sustain use the same reduced expenditure profile.",
+        "Accrue regular cost through preparation and add the actual overcharge cost; do not charge preparation again at release. Interrupted attempts retain spent effort. Sustained beams add one release cost per Learned full-extra-charge interval, measured in actual elapsed seconds, without a second mastery speed penalty. A recorded replenishing source may override ordinary depletion within its limits.",
         "Twenty equal-output clean Proficient physical exchanges cause 80 wear and cost 15; Mastered equivalents cause 120 and cost 10. These totals do not guarantee twenty connections or survival. Track losses and actual restoration in order, retaining separate received-wear and expenditure entries. Lifetime damage subtracted from 100 alone is invalid after recovery. Zero is exhaustion, not automatic death or unconsciousness. No automatic refill on a new exchange or form."
       ]
     },
@@ -203,7 +203,7 @@
       "title": "Rotations & Remembered Opponents",
       "summary": "Training shapes your response; experience with an opponent improves your read.",
       "paragraphs": [
-        "Each rotation has its own credits. Training blend is 0.25 Learned, 0.50 Proficient, 0.75 Advanced and 1.00 Mastered. Add familiarity / 500, up to a combined 1.20. Each conditional weight = neutral + blend × (Mastered target − neutral). Unlearned rotations gain no specialised distribution; Neutral stays unchanged.",
+        "Each rotation retains its own cumulative progress. Neutral weights are50/25/15/10. Multiply its preferred baseline by1.5/2/3/4 at Learned/Proficient/Advanced/Mastered, then by1+F/500 for applicable familiarity. Filter impossible modes and normalise. Guard specialists remain more reliable than equally trained Dodge, Parry and Counter specialists. Old target-blending is replay-only.",
         "Familiarity is directional and ranges from 0 to 100. For each attacking pair, multiply ordinary odds by (800 + attacker familiarity) / (800 + defender familiarity). Equal familiarity cancels this primary advantage, while both retain their defensive rotation benefit. Complete familiarity against none changes an otherwise equal contest from 50% to about 52.94%, not a guaranteed hit.",
         "Each readable root exchange grants 0.10/0.15/0.20/0.25/0.30 familiarity points at Learning/Learned/Proficient/Advanced/Mastered reading proficiency. Use the highest recorded rotation tier as the initial proxy. Award once after resolution, only for what that observer could perceive. Rebuilding below the retained peak is twice as fast for that portion only. Forty readable roots at Mastered add 12 points to a new read; reaching 100 from zero takes 334 without rust or timing changes. Gains apply between roots, so adaptation occurs during combat while lasting familiarity develops across repeated encounters. Existing remembered scores are retained; counter chains do not multiply awards.",
         "Memory persists between encounters. After 30 personally experienced days without relevant contact, familiarity loses one point per seven further days, down to a quarter of its retained peak. Base growth scales the old timing read by min(1, saved ordinary base / current ordinary base), once from its saved anchor. Small growth causes a small adjustment; it does not erase remembered facts.",
@@ -217,7 +217,7 @@
       "summary": "Coordination divides attention without adding bodies into one power level.",
       "paragraphs": [
         "For genuinely simultaneous attacks, calculate each attacker’s own weight and familiarity factor. First-breakthrough chance = sum(weights) / (1 + sum(weights)). Choose the first breakthrough in proportion to those weights, then reassess still-viable follow-ups. Sequential attacks do not automatically overload defence.",
-        "Actual crossfire can multiply weights by 1.5 when it forces incompatible defensive movements. Headcount alone does not earn it. Two equal unfamiliar attackers have 66.67% first-breakthrough odds, or 75% with genuine crossfire. An 80%-power and 60%-power pair have 50%, or 60% coordinated, under otherwise equal conditions.",
+        "Actual crossfire can multiply weights by 1.5 when it forces incompatible defensive movements. Headcount alone does not earn it. Two equal unfamiliar attackers have 66.67% first-breakthrough odds, or 75% with genuine crossfire. Other ratios use the current close-gap curve, not old squared-curve examples.",
         "Never pool familiarity or give everyone the best teammate’s read. The defender’s conditional rotation uses a separate joint-pattern record. One failed shared contest produces one defence draw; a feasible counter attempts a reply against one reachable attacker, not the entire team. Remaining threats may make a counter impossible. Very weak crowds receive no artificial chance floor or guaranteed chip damage."
       ]
     },
@@ -227,11 +227,12 @@
       "summary": "Preparing more power creates an opening an opponent can contest.",
       "paragraphs": [
         "An observed opposing transformation prompts tactical reassessment outside beam clashes as well as within them. A fighter may answer with an actually available form, using real reaction and activation time, existing costs and a workable opening. Ongoing incompatible tasks, interruption and insufficient time still matter; entering a new form is not protected and does not refill Endurance. A committed activation remains tracked if its prompting clash ends. This neither grants a matching form nor forces every fighter to transform; player-controlled escalation remains the player’s choice. Kiai, power scaling and positioning are unchanged.",
-        "Current attack output = ordinary base × total active-state factor × available fraction × technique factor. Count each effect once. A Kaioken combination uses its already-combined state factor; do not multiply Kaioken again. Transformation mastery does not increase that factor.",
+        "Power Level during the technique = ordinary base × total active-state factor × available fraction × technique factor. Count each effect once. A Kaioken combination uses its already-combined state factor; do not multiply Kaioken again. Transformation mastery does not increase that factor.",
+        "Protection requires actual target access, positions and intercept time. Ordinary projectiles retain a release bearing/observed lead rather than automatically tracking targets. A mobile-compatible dodge preserves charge; stationary preparation cannot. Parry can redirect toward another enemy, never its originator, with ordinary defence for the new recipient. A counter can use its one window for an ordinary-accuracy attack or actual movement, not both. No arbitrary team-size penalty or free teleport.",
         "A counterbeam can protect the user or an ally if awareness, orientation, path and preparation fit the incoming attack’s remaining buildup and travel. Faster fighters can interrupt an activation or charge; allies can buy time. There is no fixed action economy or automatic cinematic protection.",
         "At collision compare actual delivered output and supply. Close clashes can allow response windows: a learned amplification, accessible fruit, ally transfer or established power-up may change newly supplied emission. The opponent may respond if time remains. No guaranteed turn before an overwhelming beam arrives. A mouth blast conflicts with eating; energy received is counted once.",
         "Detached attacks cannot retroactively gain a later transformation. Merged beams add contributions actually arriving at the same collision; separated attacks use the shared-defence model. A counter selection can lead to interception, but collision and a direct body hit are different outcomes; never award both from one roll.",
-        "Technique-specific setup and extra-charge profiles use immutable reference output. The reviewed timing convention scales attack time by (reference active output / current active output)^0.25 and transformation time by pre-transformation base, with refinement R. Relative movement fallback is sqrt(bodily output ratio) × independent mobility. Neither is measured canon physics; established feats and exceptional gathering limits override generic calibration.",
+        "Preparation and transformation times depend on mastery, not Power Level or movement speed. Positive mastery anchors interpolate geometrically; ending-zero intervals interpolate linearly. Movement uses the separate square-root Power Level ratio and real distance. Faster movement can interrupt a charge, but cannot shorten the charge itself.",
         "The working residual-access rule allows the same already-used transformation or Kaioken stage to skip separate re-entry buildup within 30 minutes, if health and energy permit. It does not restore energy, remove strain, unlock stages or recharge attacks. First experimental access after actual preparation uses four times Learned setup at 0–under 5 eligible target credits, twice at 5–under 10; access prerequisites still apply."
       ]
     },
@@ -241,18 +242,19 @@
       "summary": "Attack factors belong to each technique; mastery controls accessible extra charge.",
       "paragraphs": [
         "Regular Kamehameha is ×2; Galick Gun ×3; Spirit Spear ×2. Their full profile ceilings are ×4, ×6 and ×4 respectively. Additional charge accesses 25%, 50%, 75% or 100% of the gap above regular output at Learned, Proficient, Advanced or Mastered. These profiles do not assert that Zero has unlocked their peaks.",
-        "Kamehameha tier peaks are ×2.5/3/3.5/4; Galick Gun ×3.75/4.5/5.25/6; Spirit Spear ×2.5/3/3.5/4. Output rises linearly through the accessible extra-charge interval; do not multiply regular output by the total factor again. Timers require an established individual reference anchor and tier before use.",
-        "Reference extra-charge calibrations, Learned through Mastered: Kamehameha 120/60/30/10 seconds; Galick Gun 180/90/45/15; Spirit Spear 300/150/75/30. Spirit Spear’s regular gather/shape calibration is 5/1/0.1/0.005 seconds. These are authored reference timings, not newly measured Zero performance or fixed times at every power level.",
+        "Kamehameha tier peaks are ×2.5/3/3.5/4; Galick Gun ×3.75/4.5/5.25/6; Spirit Spear ×2.5/3/3.5/4. Output rises linearly through the accessible extra-charge interval; do not multiply regular output by the total factor again. Timers require the recorded mastery tier and any evidenced individual exception before use.",
+        "Regular preparation in seconds, Learned/Proficient/Advanced/Mastered: Kamehameha60/20/5/0.01; Galick Gun90/30/8/0.01; Special Beam Cannon300/60/5/0.1; Spirit Spear60/20/5/2. Additional charge: Kamehameha120/60/30/10; Galick Gun180/90/45/15; Cannon180/90/45/15; Spear240/120/60/30. These are forward campaign calibrations, not measured canonical timers. Total charge includes both stages.",
+        "Cannon has fixed intrinsic damage15; its cost is40/32/24/18 times attained multiplier/3 by tier. Piercing is represented by that intrinsic profile, without another damage multiplier. Spirit Bomb has fixed intrinsic8, regular×1 and finite tier ceilings3/5/7.5/10. Setup30/15/5/1seconds precedes collection at1/2/4/8 times pre-technique Power Level per minute, subject to donation. Cost=economy*(4*setup_fraction+2*sqrt(collected/pre-technique Power Level)+2*collection_minutes), paid once. More donors cannot bypass containment.",
         "Spirit Spear needs contact and actual gathered spirit energy; the timer cannot create supply. Energy enters at contact, mixes violently with the target’s body and ki, and can erupt from the opposite side when properly coupled. A guarded or incomplete strike can leave a local burn. No automatic armour bypass, extra exit multiplier or retrospective wound. Spirit Bomb also requires actual donation.",
         "Mastery improves movement and control within each method. Mobile beams can develop skilled evasive handling; committed gathering techniques retain concentration and supply limits. Spirit Spear can gather during its committed approach and strike, but cannot bank energy through unrelated fighting.",
-        "Ordinary Kaioken uses one technique per phase, each with its own cumulative10/250/2500/10000 progression. Master the preceding phase before attempting the next: ×2, ×3, ×4, ×5, ×10, ×15, ×20, ×30, ×40, ×50, ×75, ×100. Earlier phases remain usable. Eligible novice attempts retain the execution-failure rule; mastery never automatically unlocks the successor. Zero’s Phase2 retains650 progress and existing art; Phase3 is currently ineligible. Separately trained form compatibility remains required and Channel stacking remains unsafe.",
+        "Ordinary Kaioken uses one technique per phase, each with its own cumulative10/250/2500/10000 progression. Master the preceding phase before attempting the next: ×2, ×3, ×4, ×5, ×10, ×15, ×20, ×30, ×40, ×50, ×75, ×100. Earlier phases remain usable. Eligible novice attempts retain the execution-failure rule; mastery never automatically unlocks the successor. Zero’s Kaioken x2 retains650 progress and existing art; Kaioken x3 is currently ineligible. Separately trained form compatibility remains required and Channel stacking remains unsafe.",
         "Learned sensing gives familiar direction/signatures and broad relative strength; Proficient improves moving-signature tracking and estimates; Advanced estimates roughly one significant figure; Mastered reads precise accessible current output. Suppression, hidden reserve and unfamiliar divine/artificial energy still limit what can be read. Zero’s current sensing remains approximate."
       ]
     }
   ],
   "abilityNotes": {
     "spirit-spear": "Campaign profile: regular ×2; full-charge envelope ×4, limited by mastery and actual gathered supply. Contact and proper coupling are required for the opposite-side eruption; no automatic penetration. Full spirit gathering takes longer than comparable Kamehameha or Galick Gun charging. These are profile limits, not a new full-charge feat.",
-    "kaioken-technique": "Kaioken — Phase2 is the current ×2 technique. Each later phase requires mastery of its predecessor and has separate progress; mastery does not remove bodily damage. Combining with another form requires its own compatibility training. Sealed Channel stacking remains unsafe.",
+    "kaioken-technique": "Kaioken x2 is the current ×2 technique. Each later phase requires mastery of its predecessor and has separate progress; mastery does not remove bodily damage. Combining with another form requires its own compatibility training. Sealed Channel stacking remains unsafe.",
     "ki-sensing": "The mastery ladder distinguishes broad sensing, moving-signature tracking, Advanced rounded estimates and Mastered precise readable output. Current sensing remains approximate; the scouter still supplies exact readings."
   }
 }

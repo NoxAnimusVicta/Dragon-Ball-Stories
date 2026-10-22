@@ -17,7 +17,7 @@
   const nav = [['overview','Main Menu'],['character','Character'],['chronicle','Story'],['abilities','Techniques'],['inventory','Inventory'],['world','World']];
   const $ = id => document.getElementById(id);
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const titleCase = text => String(text ?? '').replace(/(^|[\s/–—-])([a-z])/g, (_, gap, letter) => gap + letter.toUpperCase());
+  const titleCase = text => String(text ?? '').replace(/(^|[\s/–—-])([a-z])/g, (_, gap, letter) => gap + letter.toUpperCase()).replace(/\bX(?=\d)/g,'x');
   const heading = text => escape(titleCase(text));
   const icon = name => `<svg viewBox="0 0 24 24" aria-hidden="true">${paths[name] || paths.overview}</svg>`;
   const present = value => value !== null && value !== undefined && value !== '';
@@ -286,7 +286,7 @@
     {id:'magic',title:'Magical Techniques'}
   ];
   function abilityGroup(ability) {
-    return abilityGroups.find(group=>group.id===ability.category) || {id:'other',title:'Other Techniques'};
+    return abilityGroups.find(group=>group.id===(techniqueProgress?.records?.[ability.id]?.category || ability.category)) || {id:'other',title:'Other Techniques'};
   }
   function progressState(ability) {
     return tierProgress(techniqueProgress?.records?.[ability.id]);
@@ -339,7 +339,7 @@
       let seconds=values.at(-1);
       if(c<10000){const i=levels.findLastIndex(n=>c>=n),f=(c-levels[i])/(levels[i+1]-levels[i]);
         seconds=values[i+1]===0?values[i]*(1-f):values[i]*(values[i+1]/values[i])**f;}
-      return seconds*(profile.timingAnchor/Number(data.character.battlePower))**0.25*refinement;
+      return seconds*refinement;
     };
     const duration=n=>{
       if(n===0) return 'No Separate Buildup';
@@ -353,12 +353,12 @@
       add('Endurance Cost',`${stat(m.costCoefficient*m.regular**2*m.economy[index]*refinement)} → ${stat(m.costCoefficient*peak**2*m.economy[index]*refinement)}`);
       add('Regular Preparation',duration(setup));add('Full Charge · Total',duration(setup+extra));
       add('Mastered Charge Limit',factor(m.ceiling.at(-1)));
-      note='Charge raises attack Power Level; final damage follows the power gap and defence. Cost runs from regular to current maximum. Times use your current base and include preparation. Gathering permits a committed approach with sufficient spirit energy; unrelated attacks interrupt it.';
+      note='The multiplier raises your Power Level during this technique; damage follows the resulting power gap and defence. Cost runs from regular to current maximum. Times include preparation and improve with mastery. Gathering permits a committed approach with sufficient spirit energy; unrelated attacks interrupt it.';
     } else if(['kaioken','form','involuntary'].includes(profile.kind)) {
       add('Power Multiplier',factor(m.factor));
       if(index>=0 && m.setup) add('Cold Activation',duration(timer(m.setup)));
-      if(profile.kind==='kaioken') {add('Demonstrated Sustained Use','60 sec at ×2');note='Activation is shown at current base. Brief bursts remain available. Sustained use consumes Endurance and strains the body; exact drain coefficients remain under calibration.';}
-      else if(profile.kind==='form') note='Activation is shown at current base. Conscious regulation and current bodily condition govern sustained use; exact drain coefficients remain under calibration.';
+      if(profile.kind==='kaioken') {add('Demonstrated Sustained Use','60 sec');note='Activation improves with mastery. Brief bursts remain available. Sustained use consumes Endurance and strains the body; exact drain coefficients remain under calibration.';}
+      else if(profile.kind==='form') note='Activation improves with mastery. Conscious regulation and current bodily condition govern sustained use; exact drain coefficients remain under calibration.';
       else note='An involuntary manifestation governed by its established takeover conditions.';
     } else if(profile.kind==='ordinary' && index>=0) {
       add('Attack Output',factor(m.factor));add('Base Endurance Damage',creditText(m.damage[index]));
@@ -373,16 +373,23 @@
       add('Available Reserves',String(m.uses[index]));
       add('Per Recovery',`${m.restoreMin[index]}–${m.restoreMax[index]} Endurance`);
       add('Recharge',`${m.cooldownHours} hours per spent reserve`);
+      add('Endurance Cost','0');
       note='Triggers reflexively at zero Endurance when the body can still recover. Each use has its own recharge clock.';
     } else if(profile.kind==='supplied') {
-      add('Power Source','Gathered Spirit Energy');add('Charge Limit','Available Donation & Control');
-      add('Learned Handling','Small Gathering & Release');
+      const i=Math.max(0,index),peak=m.ceiling[i],rate=m.collectionPerMinute[i];
+      const setup=index<0?m.setup[0]:timer(m.setup);
+      const cost=(mult)=>m.economy[i]*refinement*(m.setupCost+m.containmentCost*Math.sqrt(mult)+m.gatheringCostPerMinute*mult/rate);
+      add('Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
+      add('Base Endurance Damage',stat(m.damage));
+      add('Endurance Cost',`${stat(cost(m.regular))} → ${stat(cost(peak))}`);
+      add('Regular Preparation',duration(setup+60*m.regular/rate));
+      add('Full Charge · Total',duration(setup+60*peak/rate));
+      add('Mastered Charge Limit',factor(m.ceiling.at(-1)));
       if(p.label==='Learning') {
         add('Current Failure Risk',stat(40*(1-p.credits/10))+'%');
-        add('Current Preparation',(p.credits<5?'4':'2')+'× Learned Buildup');
-        add('Combat Learning','+1 Per Execution Attempt');
+        add('Current Experimental Preparation',duration(setup*(p.credits<5?4:2)+60*m.regular/rate));
       }
-      note='Release the usable energy gathered from willing donors. Large gathering requires sustained concentration and protection. Collection time follows the actual supply; damage, expenditure and collection-rate figures are awaiting calibration.';
+      note='Gathered spirit energy temporarily raises your Power Level for this release, within your containment limit. Times assume sufficient willing supply; scarce supply takes longer and adds gathering expenditure. Large gathering needs concentration and protection.';
     }
     if(!rows.length) return '';
     return `<section class="content-section technique-output"><h3>${p.label==='Learning'?'Learned Capability':'Current Capability'}</h3><dl>${rows.map(([label,value])=>`<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl><p>${escape(note)}</p></section>`;
