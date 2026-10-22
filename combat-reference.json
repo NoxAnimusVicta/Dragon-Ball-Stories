@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "Training & Combat",
-  "status": "Campaign rules · Revision 7, Combat Calibration Amendment · S240 · 22 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.",
+  "status": "Campaign rules · Revision 7, Combat Calibration & Transformation Response Amendments · S240 · 22 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.",
   "tiers": [
     {
       "name": "Learning",
@@ -214,6 +214,7 @@
       "title": "Charge Windows & Beam Clashes",
       "summary": "Preparing more power creates an opening an opponent can contest.",
       "paragraphs": [
+        "An observed opposing transformation prompts tactical reassessment outside beam clashes as well as within them. A fighter may answer with an actually available form, using real reaction and activation time, existing costs and a workable opening. Ongoing incompatible tasks, interruption and insufficient time still matter; entering a new form is not protected and does not refill Endurance. A committed activation remains tracked if its prompting clash ends. This neither grants a matching form nor forces every fighter to transform; player-controlled escalation remains the player’s choice. Kiai, power scaling and positioning are unchanged.",
         "Current attack output = ordinary base × total active-state factor × available fraction × technique factor. Count each effect once. A Kaioken combination uses its already-combined state factor; do not multiply Kaioken again. Transformation mastery does not increase that factor.",
         "A counterbeam can protect the user or an ally if awareness, orientation, path and preparation fit the incoming attack’s remaining buildup and travel. Faster fighters can interrupt an activation or charge; allies can buy time. There is no fixed action economy or automatic cinematic protection.",
         "At collision compare actual delivered output and supply. Close clashes can allow response windows: a learned amplification, accessible fruit, ally transfer or established power-up may change newly supplied emission. The opponent may respond if time remains. No guaranteed turn before an overwhelming beam arrives. A mouth blast conflicts with eating; energy received is counted once.",

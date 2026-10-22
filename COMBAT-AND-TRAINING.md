@@ -1,6 +1,6 @@
 # Training & Combat reference
 
-Campaign rules · Revision 7, Combat Calibration Amendment · S240 · 22 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.
+Campaign rules · Revision 7, Combat Calibration & Transformation Response Amendments · S240 · 22 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.
 
 Public reader summary. The authorised local TRAINING-AND-TECHNIQUE-PROPOSAL.md is the full operational owner; the narrator must read it, the form prerequisites and NPC combat register in full before every response involving combat, including after compaction. This summary cannot replace current private state or saved rolls.
 
@@ -131,6 +131,8 @@ Never pool familiarity or give everyone the best teammate’s read. The defender
 
 
 ## Charge Windows & Beam Clashes
+
+An observed opposing transformation prompts tactical reassessment outside beam clashes as well as within them. A fighter may answer with an actually available form, using real reaction and activation time, existing costs and a workable opening. Ongoing incompatible tasks, interruption and insufficient time still matter; entering a new form is not protected and does not refill Endurance. A committed activation remains tracked if its prompting clash ends. This neither grants a matching form nor forces every fighter to transform; player-controlled escalation remains the player’s choice. Kiai, power scaling and positioning are unchanged.
 
 Current attack output = ordinary base × total active-state factor × available fraction × technique factor. Count each effect once. A Kaioken combination uses its already-combined state factor; do not multiply Kaioken again. Transformation mastery does not increase that factor.
 

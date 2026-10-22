@@ -16,7 +16,7 @@ The app checks for published updates when opened or resumed and while visible, p
 
 - [Start here](START-HERE.md)
 - [Narrator guide](NARRATOR-GUIDE.md)
-- [Training and combat](COMBAT-AND-TRAINING.md) — also available below the compact technique list; defensive rotations appear inside Combat Fundamentals.
+- [Training and combat](COMBAT-AND-TRAINING.md) — background rules kept in the documentation; actual technique progress and defensive rotations remain in the app.
 - [Campaign configuration](CAMPAIGN-CONFIG.md)
 - [Corrections](RETCONS.md)
 - [Naming reference](NAMING-REFERENCE.md)

@@ -290,15 +290,11 @@
       `<div class="ability-collection">${groups.map(group=>{
         const items=data.abilities.filter(r=>abilityGroup(r).id===group.id);
         return items.length ? `<section class="ability-group" aria-labelledby="ability-group-${group.id}"><h2 id="ability-group-${group.id}">${group.title}</h2><div class="ability-grid">${items.map(r=>`<button class="ability-card" id="record-${escape(r.id)}" data-ability="${escape(r.id)}" aria-haspopup="dialog"><span class="ability-card-art">${safePortrait(r.artwork)?`<img class="ability-image" src="${escape(safePortrait(r.artwork))}" alt="" loading="lazy">`:''}</span><span class="ability-card-copy"><strong>${heading(r.title)}</strong><span class="ability-card-description">${escape(r.summary)}</span></span></button>`).join('')}</div></section>` : '';
-      }).join('')}${trainingReference()}</div>`;
-  }
-  function trainingReference() {
-    if (!combatReference) return '<p class="power-reference-link"><a href="./COMBAT-AND-TRAINING.md">Training & Combat Reference</a></p>';
-    return `<section class="panel training-reference"><details data-detail-key="training-combat" id="record-training-combat"><summary>Training & Combat<span>Mastery, recovery and how fights resolve</span></summary><div class="training-reference-body"><p>${escape(combatReference.status)}</p>${combatReference.sections.map(s=>`<details class="record-history" id="record-rules-${escape(s.id)}" data-detail-key="rules-${escape(s.id)}"><summary>${heading(s.title)}<span>${escape(s.summary)}</span></summary>${s.paragraphs.map(p=>`<p>${escape(p)}</p>`).join('')}</details>`).join('')}<p><a href="./COMBAT-AND-TRAINING.md">Read the complete public reference</a></p></div></details></section>`;
+      }).join('')}</div>`;
   }
   function combatRotations() {
     if (!combatReference) return '';
-    return `<section class="content-section"><h3>Defensive Rotations</h3><p>${escape(combatReference.rotationNote)}</p><dl class="definition-grid">${combatReference.rotations.map(r=>definition(r.name,`${r.tier} · ${r.credits.toLocaleString('en')} credits`,Object.entries(r.baseline).map(([mode,weight])=>`${mode} ${weight}%`).join(' · '))).join('')}</dl><p><a href="#abilities/rules-familiarity">How familiarity changes your rotations</a></p></section>`;
+    return `<section class="content-section"><h3>Defensive Rotations</h3><p>${escape(combatReference.rotationNote)}</p><dl class="definition-grid">${combatReference.rotations.map(r=>definition(r.name,`${r.tier} · ${r.credits.toLocaleString('en')} credits`,Object.entries(r.baseline).map(([mode,weight])=>`${mode} ${weight}%`).join(' · '))).join('')}</dl></section>`;
   }
   function showAbility(id) {
     const ability=data.abilities.find(r=>r.id===id);
@@ -444,7 +440,6 @@
   function buildSearch() {
     searchIndex = nav.map(([route,title]) => ({route,title,summary:route === 'overview' ? 'Return to the adventure menu' : `Explore ${title.toLowerCase()}`,text:title}));
     searchIndex.push({route:'scale',title:labels.powerReference,summary:'Shared multipliers, fusion and 24 Encounter Cases',text:'fusion scale multipliers Super Saiyan God Blue Cumber Baby Crimson'});
-    if(combatReference) for(const section of combatReference.sections) searchIndex.push({route:'abilities/rules-'+section.id,title:titleCase(section.title),summary:section.summary,text:section.paragraphs.join(' ')});
     const c = data.character;
     searchIndex.push({route:'character',title:c.name,summary:`Age ${ageLabel(c)}; ${c.height} (${c.heightMetric})`,text:Object.values(c).filter(v => typeof v === 'string' || typeof v === 'number').join(' ')});
     const mapping = {abilities:'abilities',inventory:'inventory',accounts:'inventory',people:'world',places:'world',projects:'world',events:'chronicle'};
@@ -557,7 +552,7 @@
       if (!response.ok) throw new Error('Campaign records are unavailable.');
       data = validate(await response.json());
       try { const reference=await fetch('./power-scale.json?v='+release,{cache:'no-store',signal:controller.signal}); if(reference.ok) scale=await reference.json(); } catch { /* Main story remains available if reference fails. */ }
-      try { const response=await fetch('./combat-reference.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const reference=await response.json();if(reference.schemaVersion===1 && Array.isArray(reference.sections) && Array.isArray(reference.rotations) && reference.abilityNotes) combatReference=reference;} } catch { /* The static reference remains linked if its data is unavailable. */ }
+      try { const response=await fetch('./combat-reference.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const reference=await response.json();if(reference.schemaVersion===1 && Array.isArray(reference.sections) && Array.isArray(reference.rotations) && reference.abilityNotes) combatReference=reference;} } catch { /* Optional technique details remain absent if their data is unavailable. */ }
       portraitUrl = safePortrait(data.character.portrait);
       $('navigation').innerHTML=nav.map(([route,label]) => `<a class="nav-link" href="#${route}" aria-label="${label}">${icon(route)}<span>${label}</span></a>`).join('');
       document.querySelector('.user-chip').textContent=data.character.name;
