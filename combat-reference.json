@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "Training & Combat",
-  "status": "Campaign rules · Revision 9, Reconciled Combat Rules · S245 · 23 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.",
+  "status": "Campaign rules · Revision 9, Adopted Allied Injury & Charge Coordination · S245 · 23 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.",
   "tiers": [
     {
       "name": "Learning",
@@ -219,6 +219,19 @@
         "For genuinely simultaneous attacks, calculate each attacker’s own weight and familiarity factor. First-breakthrough chance = sum(weights) / (1 + sum(weights)). Choose the first breakthrough in proportion to those weights, then reassess still-viable follow-ups. Sequential attacks do not automatically overload defence.",
         "Actual crossfire can multiply weights by 1.5 when it forces incompatible defensive movements. Headcount alone does not earn it. Two equal unfamiliar attackers have 66.67% first-breakthrough odds, or 75% with genuine crossfire. Other ratios use the current close-gap curve, not old squared-curve examples.",
         "Never pool familiarity or give everyone the best teammate’s read. The defender’s conditional rotation uses a separate joint-pattern record. One failed shared contest produces one defence draw; a feasible counter attempts a reply against one reachable attacker, not the entire team. Remaining threats may make a counter impossible. Very weak crowds receive no artificial chance floor or guaranteed chip damage."
+      ]
+    },
+    {
+      "id": "allied-impact",
+      "title": "Protected Charges & Allied Injury",
+      "summary": "Allies buy real time; a missed shot can still hit the protector.",
+      "paragraphs": [
+        "Adopted23October2026. Screen or contest the approach while an ally charges, then time any final restraint from actual reaction, travel, grip attempts, orientation and shot arrival. Each attempt and escape requires real time and expenditure. No mandatory pin, universal three-second hold, team penalty or compulsory idle time. Movement and reaction use fatigue-reduced bodily output; preparation remains mastery-timed.",
+        "Clear the actual firing lane after a perceptible cue, including the risk of a protector behind the target. A prepared Cannon may wait while stationary, vulnerable and paying its existing sustain rate; waiting grants no extra charge or second release bill. An enemy can flank, escape, counter or change target when actually able. A grip restricts only the motion it controls.",
+        "After evasion, follow the released projectile to its next actual body or obstacle, regardless of allegiance. A newly exposed protector has only the actual warning-to-arrival window to react and complete a feasible defence. With no time or route, contact is certain; otherwise use ordinary saved resolution for that recipient. Do not reuse the original target’s defence or automatically retaliate against the allied caster.",
+        "An allied hit uses the same fixed intrinsic damage, released Power Level, recipient output and resolved defence. Apply ordinary received wear, zero-cost recovery and all overflow; no friendly-fire discount, duplicate multiplier or second attack cost. Actual wounds and survival remain distinct from Endurance. A clean disruptive impact can interrupt preparation or break restraint, with spent effort retained; guarded or glancing contact need not cancel every action.",
+        "After available reflexive recovery and overflow, unrecovered zero ends effective fighting and maintained voluntary forms. Release unsupported holds and cancel preparation. Later healing does not automatically reactivate a form; existing residual access and actual involuntary triggers retain their own conditions. Accidental allied contact earns no extra familiarity. Save the original shot, contact, injury and recovery records through any interruption.",
+        "Learned Cannon remains situational:300seconds regular preparation,480seconds total maximum. All Cannon charge anchors and Kiai’s profile, gathering times and costs remain unchanged. The live procedure is adopted; synthetic grip coefficients, timestep sizes and reported win rates are not universal rules. Historical tests that harmlessly removed a shot on allied contact are superseded."
       ]
     },
     {
