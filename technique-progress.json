@@ -167,7 +167,10 @@
       "capability": {
         "kind": "involuntary",
         "mechanics": {
-          "factor": 15
+          "factor": 15,
+          "activationCost": 0,
+          "upkeepPerMinute": 0,
+          "attackCostFraction": 0
         }
       }
     },
@@ -177,19 +180,19 @@
       "milestones": [
         {
           "tier": "Learned",
-          "benefit": "Open, regulate and close the channel voluntarily."
+          "benefit": "Open, regulate and close the channel."
         },
         {
           "tier": "Proficient",
-          "benefit": "Steadier use with improved recovery."
+          "benefit": "Steadier flow while moving."
         },
         {
           "tier": "Advanced",
-          "benefit": "Better endurance and activation control."
+          "benefit": "Faster opening and finer conscious regulation."
         },
         {
           "tier": "Mastered",
-          "benefit": "Best trained economy and control; the multiplier and takeover conditions do not change."
+          "benefit": "Immediate familiar opening and refined flow control."
         }
       ],
       "capability": {
@@ -200,6 +203,24 @@
             10,
             3,
             1,
+            0
+          ],
+          "activationCost": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "upkeepPerMinute": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackCostFraction": [
+            0,
+            0,
+            0,
             0
           ]
         }
@@ -231,10 +252,28 @@
         "mechanics": {
           "factor": 2,
           "setup": [
-            30,
-            10,
-            3,
+            4,
+            0,
+            0,
             0
+          ],
+          "activationCost": [
+            2,
+            1.5,
+            1,
+            0.5
+          ],
+          "upkeepPerMinute": [
+            12,
+            6,
+            3,
+            1.5
+          ],
+          "exertionSurcharge": [
+            1,
+            0.5,
+            0.25,
+            0.1
           ]
         }
       },
@@ -272,19 +311,19 @@
       "milestones": [
         {
           "tier": "Learned",
-          "benefit": "Reliable small cooperative gathering and release. Containment ceiling ×3."
+          "benefit": "Containment up to ×10; reliable cooperative gathering and release."
         },
         {
           "tier": "Proficient",
-          "benefit": "More consistent gathering and control of donated energy. Containment ceiling ×5."
+          "benefit": "Containment up to ×20; steadier gathering and containment."
         },
         {
           "tier": "Advanced",
-          "benefit": "Improved handling of larger supported charges. Containment ceiling ×7.5."
+          "benefit": "Containment up to ×40; improved control of larger supported charges."
         },
         {
           "tier": "Mastered",
-          "benefit": "Best trained gathering and control; actual donors, supply and preparation still limit the attack. Containment ceiling ×10."
+          "benefit": "Containment up to ×80; refined collection and release; further specialisation can expand capacity."
         }
       ],
       "capability": {
@@ -292,23 +331,29 @@
         "mechanics": {
           "regular": 1,
           "ceiling": [
-            3,
-            5,
-            7.5,
-            10
+            10,
+            20,
+            40,
+            80
           ],
-          "damage": 8,
+          "damage": 20,
           "setup": [
             30,
             15,
             5,
             1
           ],
+          "fullTime": [
+            600,
+            480,
+            360,
+            300
+          ],
           "collectionPerMinute": [
-            1,
-            2,
-            4,
-            8
+            1.0526315789473684,
+            2.5806451612903225,
+            6.76056338028169,
+            16.05351170568562
           ],
           "economy": [
             1,
@@ -354,16 +399,16 @@
             4
           ],
           "setup": [
-            60,
-            20,
-            5,
-            2
+            4,
+            1,
+            0.25,
+            0
           ],
-          "extraCharge": [
-            240,
-            120,
+          "fullTime": [
             60,
-            30
+            40,
+            25,
+            18
           ],
           "damage": 9.5,
           "costCoefficient": 1,
@@ -470,6 +515,186 @@
         }
       },
       "artwork": "./ability-second-wind.png"
+    },
+    "rotation-evasive": {
+      "credits": 250,
+      "assessment": "Retained S240 assessment",
+      "category": "discipline",
+      "artwork": "./ability-evasive.webp",
+      "entry": {
+        "id": "rotation-evasive",
+        "title": "Evasive",
+        "category": "discipline",
+        "summary": "Slip past attacks and create space.",
+        "effect": "Use footwork and a viable escape route to evade incoming attacks. Compatible mobile preparation can continue through a successful dodge.",
+        "development": "Dedicated practice develops this defensive rotation independently of Combat Fundamentals.",
+        "history": []
+      },
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Dodge preference ×1.5; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Dodge preference ×2; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Dodge preference ×3; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Dodge preference ×4; refined handling under pressure."
+        }
+      ],
+      "capability": {
+        "kind": "rotation",
+        "mechanics": {
+          "preferred": "Dodge",
+          "weightFactor": [
+            1.5,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "rotation-bulwark": {
+      "credits": 250,
+      "assessment": "Retained S240 assessment",
+      "category": "discipline",
+      "artwork": "./ability-bulwark.webp",
+      "entry": {
+        "id": "rotation-bulwark",
+        "title": "Bulwark",
+        "category": "discipline",
+        "summary": "Brace against pressure and hold your ground.",
+        "effect": "Hold a defensive line with stable guards. A successful guard checks force but can transmit wear; available limbs and actual power determine what can be held.",
+        "development": "Dedicated practice develops this defensive rotation independently of Combat Fundamentals.",
+        "history": []
+      },
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Guard preference ×1.5; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Guard preference ×2; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Guard preference ×3; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Guard preference ×4; refined handling under pressure."
+        }
+      ],
+      "capability": {
+        "kind": "rotation",
+        "mechanics": {
+          "preferred": "Guard",
+          "weightFactor": [
+            1.5,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "rotation-deflection": {
+      "credits": 10,
+      "assessment": "Retained S240 assessment",
+      "category": "discipline",
+      "artwork": "./ability-deflection.webp",
+      "entry": {
+        "id": "rotation-deflection",
+        "title": "Deflection",
+        "category": "discipline",
+        "summary": "Turn incoming attacks away from their path.",
+        "effect": "Redirect a suitable incoming attack into the environment or another enemy. The redirected attack retains its energy and the next recipient can defend.",
+        "development": "Dedicated practice develops this defensive rotation independently of Combat Fundamentals.",
+        "history": []
+      },
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Parry preference ×1.5; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Parry preference ×2; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Parry preference ×3; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Parry preference ×4; refined handling under pressure."
+        }
+      ],
+      "capability": {
+        "kind": "rotation",
+        "mechanics": {
+          "preferred": "Parry",
+          "weightFactor": [
+            1.5,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "rotation-riposte": {
+      "credits": 10,
+      "assessment": "Retained S240 assessment",
+      "category": "discipline",
+      "artwork": "./ability-riposte.webp",
+      "entry": {
+        "id": "rotation-riposte",
+        "title": "Riposte",
+        "category": "discipline",
+        "summary": "Read an opening and answer immediately.",
+        "effect": "Use a counter opportunity for a fitting immediate attack or disengagement. A reply uses ordinary accuracy and actual preparation; movement still takes time.",
+        "development": "Dedicated practice develops this defensive rotation independently of Combat Fundamentals.",
+        "history": []
+      },
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Counter preference ×1.5; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Counter preference ×2; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Counter preference ×3; stronger emphasis within your defensive responses."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Counter preference ×4; refined handling under pressure."
+        }
+      ],
+      "capability": {
+        "kind": "rotation",
+        "mechanics": {
+          "preferred": "Counter",
+          "weightFactor": [
+            1.5,
+            2,
+            3,
+            4
+          ]
+        }
+      }
     }
   }
 }

@@ -13,6 +13,18 @@
     people: '<circle cx="9" cy="8" r="3"/><path d="M2 20v-2a7 7 0 0 1 14 0v2M16 5a3 3 0 0 1 0 6M19 14a6 6 0 0 1 3 5"/>',
     project: '<path d="m14 3 7 7-11 11H3v-7zM11 6l7 7M3 15l6 6"/>'
   };
+  // Catalogue labels change; saved record IDs and exact journal entries do not.
+  const timelineLabels = Object.freeze({"001":"TL-PR001-A0001","218":"TL-SI018-A0218","398":"TL-FE032-B0398","503":"TL-NG045-A0503","619":"TL-PR002-A0619","657":"TL-TP012-A0657","782":"TL-GT024-C0782","846":"TL-UX017-C0846","864":"TL-FM031-B0864"});
+  function catalogueText(text) {
+    return text.replace(/\bTL-?(\d{3})(?![\dA-Za-z-])/g, (old, id) => timelineLabels[id] || old);
+  }
+  function catalogueRecord(record, key='') {
+    if (key==='events' || ['id','parentId','worldGroup','history','formIds','portrait','artwork','url','href'].includes(key)) return record;
+    if (typeof record==='string') return catalogueText(record);
+    if (Array.isArray(record)) return record.map(item=>catalogueRecord(item));
+    if (record && typeof record==='object') return Object.fromEntries(Object.entries(record).map(([k,v])=>[k,catalogueRecord(v,k)]));
+    return record;
+  }
   const labels = Object.freeze({powerReference:'Campaign Power Reference', appearanceHistory:'Appearance History'});
   const nav = [['overview','Main Menu'],['character','Character'],['chronicle','Story'],['abilities','Techniques'],['inventory','Inventory'],['world','World']];
   const $ = id => document.getElementById(id);
@@ -322,7 +334,7 @@
   function learningDetails(ability) {
     const p=progressState(ability), record=p.record;
     const milestones=record?.milestones || [], tierIndex=combatReference?.tiers?.findIndex(t=>t.name===p.label) ?? -1;
-    return `<section class="content-section technique-learning"><h3>Mastery</h3>${learningMeter(ability)}${ability.id==='combat-basics'?combatRotations():''}${milestones.length?`<details class="record-history"><summary>Path to Mastery</summary><ol class="technique-milestones">${milestones.map(m=>{const i=combatReference?.tiers?.findIndex(t=>t.name===m.tier) ?? -1;return `<li${p.label===m.tier?' class="is-current"':i>=0 && i<tierIndex?' class="is-reached"':''}><strong>${escape(m.tier)}${p.label===m.tier?'<small>Current</small>':''}</strong><p>${escape(m.benefit)}</p></li>`;}).join('')}</ol></details>`:''}</section>`;
+    return `<section class="content-section technique-learning"><h3>Mastery</h3>${learningMeter(ability)}${milestones.length?`<details class="record-history"><summary>Path to Mastery</summary><ol class="technique-milestones">${milestones.map(m=>{const i=combatReference?.tiers?.findIndex(t=>t.name===m.tier) ?? -1;return `<li${p.label===m.tier?' class="is-current"':i>=0 && i<tierIndex?' class="is-reached"':''}><strong>${escape(m.tier)}${p.label===m.tier?'<small>Current</small>':''}</strong><p>${escape(m.benefit)}</p></li>`;}).join('')}</ol></details>`:''}</section>`;
   }
   function techniqueCapabilities(ability) {
     const p=progressState(ability), profile=p.record?.capability;
@@ -347,19 +359,25 @@
       return `${n.toLocaleString('en',{maximumFractionDigits:n<1?4:2})} sec`;
     };
     if(profile.kind==='contact' && index>=0) {
-      const peak=m.ceiling[index],setup=timer(m.setup),extra=timer(m.extraCharge);
+      const peak=m.ceiling[index],setup=timer(m.setup),total=timer(m.fullTime);
       add('Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
       add('Base Endurance Damage',stat(m.damage));
       add('Endurance Cost',`${stat(m.costCoefficient*m.regular**2*m.economy[index]*refinement)} → ${stat(m.costCoefficient*peak**2*m.economy[index]*refinement)}`);
-      add('Regular Preparation',duration(setup));add('Full Charge · Total',duration(setup+extra));
+      add('Regular Preparation',duration(setup));add('Full Charge · Total',duration(total));
       add('Mastered Charge Limit',factor(m.ceiling.at(-1)));
       note='The multiplier raises your Power Level during this technique; damage follows the resulting power gap and defence. Cost runs from regular to current maximum. Times include preparation and improve with mastery. Gathering permits a committed approach with sufficient spirit energy; unrelated attacks interrupt it.';
     } else if(['kaioken','form','involuntary'].includes(profile.kind)) {
       add('Power Multiplier',factor(m.factor));
-      if(index>=0 && m.setup) add('Cold Activation',duration(timer(m.setup)));
-      if(profile.kind==='kaioken') {add('Demonstrated Sustained Use','60 sec');note='Activation improves with mastery. Brief bursts remain available. Sustained use consumes Endurance and strains the body; exact drain coefficients remain under calibration.';}
-      else if(profile.kind==='form') note='Activation improves with mastery. Conscious regulation and current bodily condition govern sustained use; exact drain coefficients remain under calibration.';
-      else note='An involuntary manifestation governed by its established takeover conditions.';
+      if(index>=0 && m.setup) add('Activation Time',duration(timer(m.setup)));
+      const coefficient=v=>Array.isArray(v)?timer(v):v;
+      if(index>=0 || profile.kind==='involuntary') {
+        add('Activation Cost',stat(coefficient(m.activationCost))+' Endurance');
+        add('Upkeep',stat(coefficient(m.upkeepPerMinute))+' Endurance / min');
+        add('Exertion Cost', '+'+stat(100*coefficient(m.exertionSurcharge ?? m.attackCostFraction))+'%');
+      }
+      if(profile.kind==='kaioken') note='Extra exertion applies to attacks and strenuous movement while active. Sustained use also strains the body. Activation and upkeep are charged once; brief bursts pay only their actual active time.';
+      else if(profile.kind==='form') note='Borrowed power flows through the seal under conscious regulation. Ordinary attacks still spend Endurance; control and bodily condition govern safe use.';
+      else note='An involuntary manifestation governed by its established takeover conditions. Ordinary exertion and received injuries still apply.';
     } else if(profile.kind==='ordinary' && index>=0) {
       add('Attack Output',factor(m.factor));add('Base Endurance Damage',creditText(m.damage[index]));
       add('Endurance Cost',stat(m.cost[index]*refinement));
@@ -369,6 +387,10 @@
       add('Full Buildup',creditText(m.fullCharge[index])+' sec');
       add('Maximum Upkeep',stat(m.upkeepCoefficient[index]*m.bonus[index]**2)+' Endurance / min');
       note=`Without another amplifier, full Kiai gives ${factor(1+m.bonus[index])} your current form’s output. With Kaioken, its bonus adds alongside the Kaioken factor. Smaller boosts gather faster and cost less; changing form or amplifier resets the buildup.`;
+    } else if(profile.kind==='rotation' && index>=0) {
+      add('Preferred Response',m.preferred);
+      add('Preference Weight',factor(m.weightFactor[index]));
+      note='Emphasises this response within your defence. Available openings and familiarity with the opponent still matter.';
     } else if(profile.kind==='recovery' && index>=0) {
       add('Available Reserves',String(m.uses[index]));
       add('Per Recovery',`${m.restoreMin[index]}–${m.restoreMax[index]} Endurance`);
@@ -376,8 +398,10 @@
       add('Endurance Cost','0');
       note='Triggers reflexively at zero Endurance when the body can still recover. Each use has its own recharge clock.';
     } else if(profile.kind==='supplied') {
-      const i=Math.max(0,index),peak=m.ceiling[i],rate=m.collectionPerMinute[i];
+      const i=Math.max(0,index),growth=1+Math.log2(1+Math.max((p.credits||0)-10000,0)/10000),peak=m.ceiling[i]*growth;
+      const total=(index<0?m.fullTime[0]:timer(m.fullTime));
       const setup=index<0?m.setup[0]:timer(m.setup);
+      const rate=peak/((total-setup)/60);
       const cost=(mult)=>m.economy[i]*refinement*(m.setupCost+m.containmentCost*Math.sqrt(mult)+m.gatheringCostPerMinute*mult/rate);
       add('Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
       add('Base Endurance Damage',stat(m.damage));
@@ -387,7 +411,8 @@
       add('Mastered Charge Limit',factor(m.ceiling.at(-1)));
       if(p.label==='Learning') {
         add('Current Failure Risk',stat(40*(1-p.credits/10))+'%');
-        add('Current Experimental Preparation',duration(setup*(p.credits<5?4:2)+60*m.regular/rate));
+        add('Experimental Regular Preparation',duration(setup*(p.credits<5?4:2)+60*m.regular/rate));
+        add('Experimental Full Charge · Total',duration(setup*(p.credits<5?4:2)+60*peak/rate));
       }
       note='Gathered spirit energy temporarily raises your Power Level for this release, within your containment limit. Times assume sufficient willing supply; scarce supply takes longer and adds gathering expenditure. Large gathering needs concentration and protection.';
     }
@@ -401,13 +426,6 @@
         const items=data.abilities.filter(r=>abilityGroup(r).id===group.id);
         return items.length ? `<section class="ability-group" aria-labelledby="ability-group-${group.id}"><h2 id="ability-group-${group.id}">${group.title}</h2><div class="ability-grid">${items.map(r=>`<button class="ability-card" id="record-${escape(r.id)}" data-ability="${escape(r.id)}" aria-haspopup="dialog"><span class="ability-card-art">${techniqueArt(r)?`<img class="ability-image" src="${escape(techniqueArt(r))}" alt="" loading="lazy">`:''}</span><span class="ability-card-copy"><strong>${heading(techniqueTitle(r))}</strong><span class="ability-card-description">${escape(r.summary)}</span>${learningMeter(r)}</span></button>`).join('')}</div></section>` : '';
       }).join('')}</div>`;
-  }
-  function progressItem(title,state) {
-    return `<div class="technique-subprogress-item"><h4>${heading(title)}</h4>${progressMeter(title,state)}</div>`;
-  }
-  function combatRotations() {
-    if (!combatReference?.rotations?.length) return '';
-    return `<div class="technique-subprogress"><h3>Defensive Rotations</h3>${combatReference.rotations.map(r=>progressItem(r.name,tierProgress(r))).join('')}</div>`;
   }
   function showAbility(id) {
     const ability=data.abilities.find(r=>r.id===id);
@@ -452,7 +470,7 @@
     return titleCase(kind === 'places' && !record.parentId ? timelineTitle(record) : record.title);
   }
   function timelineTitle(place) {
-    return place.id === 'timeline-503' ? 'TL-503 · Yamcha’s Home' : place.title;
+    return place.id === 'timeline-503' ? timelineLabels['503']+' · Yamcha’s Home' : place.title;
   }
   function timelineHeading(title,count,noun) {
     return `<summary class="timeline-heading"><span class="timeline-name">${heading(title)}</span><span class="timeline-count">${count} ${noun}</span><span class="timeline-chevron" aria-hidden="true"></span></summary>`;
@@ -660,10 +678,14 @@
     try {
       const response = await fetch('./campaign.json?v='+release, {cache:'no-store',signal:controller.signal});
       if (!response.ok) throw new Error('Campaign records are unavailable.');
-      data = validate(await response.json());
+      data = catalogueRecord(validate(await response.json()));
       try { const reference=await fetch('./power-scale.json?v='+release,{cache:'no-store',signal:controller.signal}); if(reference.ok) scale=await reference.json(); } catch { /* Main story remains available if reference fails. */ }
       try { const response=await fetch('./combat-reference.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const reference=await response.json();if(reference.schemaVersion===1 && Array.isArray(reference.sections) && Array.isArray(reference.rotations) && reference.abilityNotes) combatReference=reference;} } catch { /* Optional technique details remain absent if their data is unavailable. */ }
       try { const response=await fetch('./technique-progress.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const progress=await response.json();if(progress.schemaVersion===1 && progress.records) techniqueProgress=progress;} } catch { /* Unknown progress is never displayed as zero. */ }
+      for(const [id,record] of Object.entries(techniqueProgress?.records || {})) {
+        if(record.entry && record.entry.id===id && !data.abilities.some(a=>a.id===id)) data.abilities.push(record.entry);
+      }
+      validate(data);
       portraitUrl = safePortrait(data.character.portrait);
       $('navigation').innerHTML=nav.map(([route,label]) => `<a class="nav-link" href="#${route}" aria-label="${label}">${icon(route)}<span>${label}</span></a>`).join('');
       document.querySelector('.user-chip').textContent=data.character.name;
