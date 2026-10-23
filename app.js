@@ -14,9 +14,10 @@
     project: '<path d="m14 3 7 7-11 11H3v-7zM11 6l7 7M3 15l6 6"/>'
   };
   // Catalogue labels change; saved record IDs and exact journal entries do not.
-  const timelineLabels = Object.freeze({"001":"TL-PR001-A0001","218":"TL-SI018-A0218","398":"TL-FE032-B0398","503":"TL-NG045-A0503","619":"TL-PR002-A0619","657":"TL-TP012-A0657","782":"TL-GT024-C0782","846":"TL-UX017-C0846","864":"TL-FM031-B0864"});
+  const timelineLabels = Object.freeze({"001":"TL-0001-001-A0001","218":"TL-0002-018-A0218","398":"TL-0003-032-B0398","503":"TL-0042-045-A0503","619":"TL-0001-002-A0619","657":"TL-0004-012-A0657","782":"TL-0005-024-C0782","846":"TL-0006-017-C0846","864":"TL-0007-031-B0864"});
+  const previousTimelineLabels = Object.freeze({"TL-PR001-A0001":"TL-0001-001-A0001","TL-SI018-A0218":"TL-0002-018-A0218","TL-FE032-B0398":"TL-0003-032-B0398","TL-NG045-A0503":"TL-0042-045-A0503","TL-PR002-A0619":"TL-0001-002-A0619","TL-TP012-A0657":"TL-0004-012-A0657","TL-GT024-C0782":"TL-0005-024-C0782","TL-UX017-C0846":"TL-0006-017-C0846","TL-FM031-B0864":"TL-0007-031-B0864"});
   function catalogueText(text) {
-    return text.replace(/\bTL-?(\d{3})(?![\dA-Za-z-])/g, (old, id) => timelineLabels[id] || old);
+    return text.replace(/\bTL-[A-Z]{2}\d{3}-[A-Z]\d{4}(?![\dA-Za-z-])/g, old => previousTimelineLabels[old] || old).replace(/\bTL-?(\d{3})(?![\dA-Za-z-])/g, (old, id) => timelineLabels[id] || old);
   }
   function catalogueRecord(record, key='') {
     if (key==='events' || ['id','parentId','worldGroup','history','formIds','portrait','artwork','url','href'].includes(key)) return record;
