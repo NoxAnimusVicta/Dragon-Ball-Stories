@@ -327,11 +327,12 @@
   }
   function progressMeter(title,p) {
     const assessed=Number.isFinite(p.credits);
+    const showNumbers=assessed && p.label!=='Mastered';
     const target=assessed ? (p.next?.name ? `Next · ${p.next.name}` : '') : '';
-    const numbers=assessed ? `${creditText(p.credits)}${p.next?' / '+creditText(p.next.credits):''}` : '';
-    const accessible=assessed ? `${p.label}; ${numbers}${p.next?.name?`; next ${p.next.name}`:''}` : p.label;
+    const numbers=showNumbers ? `${creditText(p.credits)}${p.next?' / '+creditText(p.next.credits):''}` : '';
+    const accessible=showNumbers ? `${p.label}; ${numbers}${p.next?.name?`; next ${p.next.name}`:''}` : p.label;
     const fill=assessed?`<span class="technique-progress-interior"><span class="technique-progress-fill" style="width:${p.percent}%"></span></span>`:'';
-    return `<span class="technique-progress${assessed?'':' is-unassessed'}"><span class="technique-progress-label"><span class="technique-rank">${escape(p.label)}</span>${assessed?`<span class="technique-progress-total">${numbers}</span>`:''}</span>${assessed?`<span class="technique-progress-track" role="progressbar" aria-label="${escape(title)} learning progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(p.percent)}" aria-valuetext="${escape(accessible)}">${fill}</span>${target?`<span class="technique-progress-next">${escape(target)}</span>`:''}`:''}</span>`;
+    return `<span class="technique-progress${assessed?'':' is-unassessed'}"><span class="technique-progress-label"><span class="technique-rank">${escape(p.label)}</span>${showNumbers?`<span class="technique-progress-total">${numbers}</span>`:''}</span>${assessed?`<span class="technique-progress-track" role="progressbar" aria-label="${escape(title)} learning progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(p.percent)}" aria-valuetext="${escape(accessible)}">${fill}</span>${target?`<span class="technique-progress-next">${escape(target)}</span>`:''}`:''}</span>`;
   }
   function learningDetails(ability) {
     const p=progressState(ability), record=p.record;
@@ -357,7 +358,8 @@
     };
     const factor=n=>'×'+stat(n);
     let note='';
-    const refinement=1/(1+0.1*Math.log2(1+Math.max((p.credits || 0)-10000,0)/10000));
+    // Mastered is terminal; extra recorded practice grants no hidden stat boost.
+    const refinement=1;
     const coefficient=values=>{
       const levels=[10,250,2500,10000], c=Math.max(10,p.credits);
       let seconds=values.at(-1);
@@ -430,7 +432,7 @@
       add('Recharge',`${m.cooldownHours} hours per spent reserve`);
 
     } else if(profile.kind==='supplied') {
-      const i=Math.max(0,index),growth=1+Math.log2(1+Math.max((p.credits||0)-10000,0)/10000),peak=m.ceiling[i]*growth;
+      const i=Math.max(0,index),peak=m.ceiling[i];
       const total=(index<0?m.fullTime[0]:timer(m.fullTime));
       const baselineSetup=index<0?m.setup[0]:timer(m.setup);
       const setup=p.label==='Learning'?baselineSetup*(p.credits<5?4:2):baselineSetup;
