@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "revision": "S240-approved-scale",
+  "revision": "S245-yardrat-assessment",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
-  "phase": "Preparing for Yardrat",
+  "phase": "First steps on Yardrat",
   "started": true,
   "character": {
     "name": "Zero",
@@ -20,12 +20,12 @@
     "backstory": "Familiar with Dragon Ball through anime, manga, films and games before the crossing. No further personal background is recorded.",
     "arrival": "Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness. Zero later chose 1 January, the Conton-calendar arrival anniversary, as his birthday. His adopted age anchor is 26 years and 6 months at arrival; personal ageing includes chamber time.",
     "motivation": "Build independent strength, study on Namek and Yardrat, and gather a compatible Dragon Ball set to stabilise the Dark Factor into usable bodily power.",
-    "knowledge": "Retains Dragon Ball media knowledge without knowing every alternate history. Chronoa confirmed the Xenoverse stories correspond to the Patrol’s past. Zero knows the Dark Factor can take bodily control and that Kaioken destabilises its opened seal; its identity and the cause of his crossing remain unknown. He and Yamcha revived Krillin, Roshi, Tien and Chiaotzu in TL-503, then returned for a full conditional-history review. That course includes Namek/Yardrat training and a destructive Android crisis in Ages 767–768. Six weeks under a resident King Kai developed Kaioken, sensing and a small Spirit Bomb exercise. Zero defeated fruit-enhanced Nappa on Namek in TL-619, was rescued from Turles by Vegeta and Yamcha, and heard the completed mission review. He has disclosed his integration-wish intention to Chronoa, who offered help with wording. Guru released Zero’s own potential with the seal closed; the first scan was 69,497. Yamcha and the three visiting native fighters also received releases. Four weeks of training with Nail brought Zero to 77,000 before returning to Conton. Zero and Yamcha captured Brask and Rivet on TL-846 and secured their weapons and shuttle. The ship used a booked external passage; its operator remains unidentified. Continued training with Vegeta, King Kai and Yamcha brought Zero to 79,807. Hercule has now confirmed TL-503 integrity at 100% and its native Yardrat expedition; the travellers’ own stay and departure are not yet booked.",
-    "limitations": "Supervised trainee; visits need dispatch approval. Kaioken ×2 has reached 60 seconds in controlled moving practice. Full sealed channel has reached three strenuous moving minutes; neither is a fixed timer or mastery. Combining them triggered a takeover and is not viable now. Ki sensing estimates relative current output, not exact numbers or hidden reserves. Spirit Spear now repeats a modest contact charge during moving practice but remains developing; no stable ki blade, absorption or Yardrat instruction.",
+    "knowledge": "Retains Dragon Ball media knowledge without knowing every alternate history. Chronoa confirmed the Xenoverse stories correspond to the Patrol’s past. Zero knows the Dark Factor can take bodily control and that Kaioken destabilises its opened seal; its identity and the cause of his crossing remain unknown. He and Yamcha revived Krillin, Roshi, Tien and Chiaotzu in TL-503, then returned for a full conditional-history review. That course includes Namek/Yardrat training and a destructive Android crisis in Ages 767–768. Six weeks under a resident King Kai developed Kaioken, sensing and a small Spirit Bomb exercise. Zero defeated fruit-enhanced Nappa on Namek in TL-619, was rescued from Turles by Vegeta and Yamcha, and heard the completed mission review. He has disclosed his integration-wish intention to Chronoa, who offered help with wording. Guru released Zero’s own potential with the seal closed; the first scan was 69,497. Yamcha and the three visiting native fighters also received releases. Four weeks of training with Nail brought Zero to 77,000 before returning to Conton. Zero and Yamcha captured Brask and Rivet on TL-846 and secured their weapons and shuttle. The ship used a booked external passage; its operator remains unidentified. Continued training with Vegeta, King Kai and Yamcha brought Zero to 79,807. Hercule confirmed 100% integrity before departure. Zero and Yamcha have since arrived on Yardrat, reunited with Bulma, Krillin, Tien and Chiaotzu, and met Pybara and his assistant. Their friends arrived four days before them. Pybara has begun an aura assessment for Spirit Control instruction; Instant Transmission is a study goal.",
+    "limitations": "Supervised trainee; visits need dispatch approval. Kaioken ×2 has reached 60 seconds in controlled moving practice. Full sealed channel has reached three strenuous moving minutes; neither is a fixed timer or mastery. Combining them triggered a takeover and is not viable now. Ki sensing estimates relative current output, not exact numbers or hidden reserves. Spirit Spear now repeats a modest contact charge during moving practice but remains developing; no stable ki blade or absorption. Yardrat instruction has begun with an aura assessment; no Spirit Control method has been learned yet.",
     "battlePower": 79807,
     "powerReading": "Measured · 28 June, Age 854 · After morning training · Form totals calculated",
     "role": "Supervised Time Patrol trainee",
-    "condition": "All forms and Kaioken inactive; seal closed and intact. Tired and mildly sore after morning training, no serious injury. Main outfit, cape and scouter worn; communicator under collar. Travel bag and protected scroll in Room 214; two Dragon Balls stored there. No Senzu carried.",
+    "condition": "Fed and rested after lunch, with mild soreness from morning training. Seal closed and intact; all forms and Kaioken inactive. Outfit, cape, scouter and concealed communicator worn. Travel bag and protected scroll aboard Kami’s ship on Yardrat; two Dragon Balls remain in Room 214. No Senzu carried.",
     "ageMonths": 11,
     "appearanceHistory": [
       {
@@ -80,7 +80,7 @@
       },
       {
         "id": "kaioken",
-        "name": "Kaioken",
+        "name": "Kaioken ×2",
         "unlocked": true,
         "multiplier": 2,
         "date": "24 March, Age 854 · First activation",
@@ -94,11 +94,11 @@
     "initialPower": 50
   },
   "story": {
-    "era": "Conton City · Age 854",
-    "date": "28 June, Age 854 · 11:30",
-    "location": "Conton City · Hercule’s office",
-    "situation": "Morning training with Vegeta is complete. Zero and Yamcha are reviewing their next visit with Hercule: TL-503 has recovered to 100%, and their friends’ Yardrat expedition remains in its history.",
-    "pendingChoice": "Hercule asks whether the Yardrat visit will still last a few months. Duration awaits confirmation; no departure is booked."
+    "era": "TL-0042-045-A0503 · Age 762",
+    "date": "Age 762 · Afternoon · Conton 28 June, Age 854 · 14:18",
+    "location": "Yardrat · Training terrace · TL-0042-045-A0503",
+    "situation": "Zero and Yamcha have arrived on Yardrat and met Pybara. Their first gentle aura exercise is complete; Pybara has demonstrated an even flow through the whole body and offered lower pillars for a seated assessment.",
+    "pendingChoice": "Pybara asks whether Zero and Yamcha studied under the same teacher. The answer and seated pillar exercise are still ahead."
   },
   "abilities": [
     {
@@ -314,13 +314,13 @@
     },
     {
       "id": "kaioken-technique",
-      "title": "Kaioken",
+      "title": "Kaioken ×2",
       "summary": "Amplifies Zero’s own output for short periods.",
       "status": "Developing",
       "abilityType": "signature-technique",
       "artwork": "ability-kaioken.png",
       "artworkAlt": "A crimson Kaioken aura around a symbolic fighter silhouette.",
-      "effect": "King Kai’s technique increases strength, speed and resilience together. Lower learned stages remain available as conditioning improves.",
+      "effect": "King Kai’s technique doubles Zero’s own output, increasing strength, speed and resilience together.",
       "control": "×2 is available, with a 60-second moving demonstration and rapid combat bursts. Higher output places greater demands on endurance and the body. Use separately from Sealed Channel; combining them triggered takeover.",
       "development": "Latest practice improved activation and release while moving.",
       "history": [
@@ -419,11 +419,11 @@
       "summary": "Gathers power into a sustained boost for the current fighting state.",
       "status": "Proficient",
       "abilityType": "fundamental",
-      "category": "discipline",
+      "category": "forms",
       "effect": "Builds whole-body output gradually. The gathered bonus increases strength, speed and resilience, and powers subsequent attacks.",
       "control": "Partial buildup can be retained while control holds. Changing form or bodily amplifier starts a fresh buildup. Gathering competes with attack preparation.",
       "development": "Refining sustained output and efficient gathering.",
-      "artwork": "ability-ki-control.png",
+      "artwork": "./ability-kiai.png",
       "artworkAlt": "Gathers power into a sustained boost for the current fighting state.",
       "history": []
     },
@@ -437,7 +437,7 @@
       "effect": "A reflexive rally restores fighting endurance when it reaches zero. Training develops a deeper and more repeatable reserve.",
       "control": "Recovery follows the body’s surviving condition. Incoming damage continues through the restored endurance; serious wounds still need treatment.",
       "development": "Developing recovery under pressure through demanding practice and experience.",
-      "artwork": "ability-combat-basics.png",
+      "artwork": "./ability-second-wind.png",
       "artworkAlt": "Draws on a reserve of endurance when exhaustion brings you down.",
       "history": []
     }
@@ -501,16 +501,16 @@
     {
       "id": "travel-bag",
       "title": "Travel bag",
-      "summary": "Ordinary supplies for the approved Namek stay.",
-      "status": "Stored · Room 214",
-      "details": "Spare clothes, toiletries and ordinary travel essentials. Retrieved from dispatch after the quarry mission and stored in Room 214 with Chronoa’s protected scroll. No unrecorded special equipment or Senzu."
+      "summary": "Packed supplies for the Yardrat stay.",
+      "status": "Stored · Kami’s ship",
+      "details": "Spare clothes, toiletries and ordinary travel essentials, still packed from Namek. Zero brought the bag from Room 214 and left it beside the spare bunks aboard Kami’s ship on Yardrat. Chronoa’s protected scroll is inside."
     },
     {
       "id": "chronoa-briefing",
       "title": "Chronoa’s seal briefing",
       "summary": "Written account of the seal, channel and failed Kaioken combination.",
-      "status": "Stored · Room 214",
-      "details": "Guru read it before examining Zero. Zero accepted the returned scroll before training with Nail and brought it home in its protective case. It remains inside the travel bag, not a removal spell."
+      "status": "Stored · Kami’s ship",
+      "details": "Guru read the briefing before examining Zero and returned it before the Namek training. The protected scroll is now inside Zero’s travel bag aboard Kami’s ship on Yardrat."
     }
   ],
   "accounts": [
@@ -531,6 +531,10 @@
         {
           "label": "Meals",
           "value": "Dining hall"
+        },
+        {
+          "label": "Current lodging",
+          "value": "Spare bunk aboard Kami’s ship · Yardrat"
         }
       ],
       "details": "Housing, meals and necessary treatment remain Patrol provision. Zero has consumed 36 Senzu: 28 before the chamber, six inside it, one in the ward and one carried by Yamcha during the Namek rescue. None remain in Zero’s inventory. Field repair covered the broken scouter; the outfit was also repaired. Borrowed training equipment remains facility property. The commendation was redeemed for the Four-Star Dragon Ball; it is not an outstanding credit or a complete wish. A second commendation for eight further cleanup assignments was redeemed for the Two-Star Ball; Zero has no unspent commendation. Yamcha’s separate new commendation is unspent."
@@ -674,13 +678,14 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "He briefed and oversaw the TL-218 supply investigation and issued Zero’s communicator. Family background: Pan is his actual granddaughter; he joined Conton with Pan, Gohan and Videl on 16 February Age 850. His authority comes from dispatch, not high combat power. This family history and exact age are reference information, not a conversation Zero has had. Coordinated the TL-503 homecoming and later TL-619 extraction and reviews. He presented the commendations and confirmed Yamcha’s apartment and Vegeta’s training-room handovers. On 22 May he confirmed full restoration to 100% and approved a Namek-only visit of up to four weeks, with a two-week check-in. Earth requires separate review. The Namek visit is now complete; he has confirmed TL-503’s recovery and is arranging the proposed Yardrat itinerary."
+          "text": "He briefed and oversaw the TL-218 supply investigation and issued Zero’s communicator. Family background: Pan is his actual granddaughter; he joined Conton with Pan, Gohan and Videl on 16 February Age 850. His authority comes from dispatch, not high combat power. This family history and exact age are reference information, not a conversation Zero has had. Coordinated the TL-503 homecoming and later TL-619 extraction and reviews. He presented the commendations and confirmed Yamcha’s apartment and Vegeta’s training-room handovers. On 22 May he confirmed full restoration to 100% and approved a Namek-only visit of up to four weeks, with a two-week check-in. Earth requires separate review. After the Namek visit and recovery review, he finalised the extended Yardrat visit. Zero and Yamcha departed at 14:00 on 28 June; their regular instructors were notified."
         }
       ],
       "history": [
         "s011",
         "s191",
-        "s240"
+        "s240",
+        "s242"
       ],
       "worldGroup": "toki-toki-city"
     },
@@ -769,7 +774,7 @@
     {
       "id": "yamcha",
       "title": "Yamcha",
-      "summary": "Training partner; with Zero at Hercule’s office to arrange Yardrat.",
+      "summary": "Training partner; studying with Zero on Yardrat.",
       "status": "Current companion",
       "battlePower": 30051,
       "canTransform": true,
@@ -814,11 +819,11 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Defeated Raditz and helped revive his four friends; later rescued Zero from Turles and provided the Senzu. Guru’s release was measured at 26,431, followed by four weeks with Nail and continued Conton training. Kaioken ×2 helped him disarm and defeat Rivet. His recent focus is Kaioken economy and investigating Alpha after hearing about other versions of himself; no higher Kaioken or Alpha unlock. Krillin has passed the inquiry to instructor contacts, with no appointment confirmed. His apartment move is complete and one separate commendation remains unspent. The 60,103 Kaioken figure rounds the carried assessment of 60,102.9191575; it is not a new measurement.",
+          "text": "Defeated Raditz and helped revive his four friends; later rescued Zero from Turles and provided the Senzu. Guru’s release was measured at 26,431, followed by four weeks with Nail and continued Conton training. Kaioken ×2 helped him disarm and defeat Rivet. His recent focus is Kaioken economy and investigating Alpha after hearing about other versions of himself; no higher Kaioken or Alpha unlock. Krillin has passed the inquiry to instructor contacts, with no appointment confirmed. His apartment move is complete and one separate commendation remains unspent. The 60,103 Kaioken figure rounds the carried assessment of 60,102.9191575; it is not a new measurement. He travelled with Zero for a planned stay of a few months, left his bag aboard Kami’s ship and completed the first gentle aura exercise beside him. Pybara’s seated assessment is next.",
           "facts": [
             {
               "label": "Current location",
-              "value": "Conton City · Hercule’s office"
+              "value": "Yardrat · Training terrace · TL-0042-045-A0503"
             }
           ]
         }
@@ -829,7 +834,10 @@
         "s135",
         "s208",
         "s227",
-        "s238"
+        "s238",
+        "s242",
+        "s244",
+        "s245"
       ],
       "worldGroup": "toki-toki-city"
     },
@@ -1069,16 +1077,19 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Her radar guided the completed Dragon Ball search. She witnessed the four revivals and heard the time-travel explanation and spacecraft leads. Refitted Kami’s ship and accompanied the Namek expedition. Last physically seen at the expedition landing site before Zero and Yamcha returned to Conton. The outside review confirms the native Yardrat journey; the earlier guaranteed Android shutdown victory is withdrawn. Distinct from Conton’s Bulma.",
+          "text": "Her radar guided the completed Dragon Ball search. She witnessed the four revivals and heard the time-travel explanation and spacecraft leads. Refitted Kami’s ship and accompanied the Namek expedition. Reunited with Zero and Yamcha at Kami’s ship on Yardrat. She cleared spare bunks for them; both travel bags are now aboard. The expedition arrived four days before their visit; the earlier guaranteed Android shutdown victory is withdrawn. Distinct from Conton’s Bulma.",
           "facts": [
             {
               "label": "Last physically seen",
-              "value": "TL-503 · Namek · Expedition landing ship"
+              "value": "TL-0042-045-A0503 · Yardrat · Kami’s ship"
             }
           ]
         }
       ],
-      "history": [],
+      "history": [
+        "s242",
+        "s244"
+      ],
       "worldGroup": "timeline-503"
     },
     {
@@ -1156,16 +1167,23 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Last physically seen on Namek. The outside review now confirms the native expedition to Yardrat remains; specific later techniques and Android outcomes have not been newly resolved. This is Yamcha’s native teammate, distinct from other timeline versions.",
+          "text": "Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Reunited with Zero and Yamcha on Yardrat, four days after the native expedition’s arrival. He began Spirit Control training the previous day and is practising at the pillar terrace. The Namek-end power assessment remains a dated reference; no new scan has been taken. This is Yamcha’s native teammate, distinct from other timeline versions. He led the visitors to Pybara and described the Yardratians’ demonstrations of teleportation, duplication and growth.",
           "facts": [
             {
               "label": "Revival",
               "value": "Age 761 · Conton 11 March, Age 854"
+            },
+            {
+              "label": "Current location",
+              "value": "Yardrat · Training terrace · TL-0042-045-A0503"
             }
           ]
         }
       ],
-      "history": [],
+      "history": [
+        "s243",
+        "s244"
+      ],
       "worldGroup": "timeline-503"
     },
     {
@@ -1216,16 +1234,23 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Last physically seen on Namek. The outside review now confirms the native expedition to Yardrat remains; specific later techniques and Android outcomes have not been newly resolved. This is Yamcha’s native teammate, distinct from other timeline versions.",
+          "text": "Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Reunited with Zero and Yamcha on Yardrat, four days after the native expedition’s arrival. He began Spirit Control training the previous day and is practising at the pillar terrace. The Namek-end power assessment remains a dated reference; no new scan has been taken. This is Yamcha’s native teammate, distinct from other timeline versions.",
           "facts": [
             {
               "label": "Revival",
               "value": "Age 761 · Conton 11 March, Age 854"
+            },
+            {
+              "label": "Current location",
+              "value": "Yardrat · Training terrace · TL-0042-045-A0503"
             }
           ]
         }
       ],
-      "history": [],
+      "history": [
+        "s243",
+        "s244"
+      ],
       "worldGroup": "timeline-503"
     },
     {
@@ -1251,16 +1276,23 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Last physically seen on Namek. The outside review now confirms the native expedition to Yardrat remains; specific later techniques and Android outcomes have not been newly resolved. This is Yamcha’s native teammate, distinct from other timeline versions.",
+          "text": "Revived in the single S135 wish. Guru released his potential during the visit; four weeks of training with Nail and the visitors followed. Reunited with Zero and Yamcha on Yardrat, four days after the native expedition’s arrival. He began Spirit Control training the previous day and is practising at the pillar terrace. The Namek-end power assessment remains a dated reference; no new scan has been taken. This is Yamcha’s native teammate, distinct from other timeline versions.",
           "facts": [
             {
               "label": "Revival",
               "value": "Age 761 · Conton 11 March, Age 854"
+            },
+            {
+              "label": "Current location",
+              "value": "Yardrat · Training terrace · TL-0042-045-A0503"
             }
           ]
         }
       ],
-      "history": [],
+      "history": [
+        "s243",
+        "s244"
+      ],
       "worldGroup": "timeline-503"
     },
     {
@@ -1276,7 +1308,7 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Krillin introduced both students on 11 March. He supervised their initial six-week training block and the failed stacking test. His afternoon instruction continues after the Namek visit, in Conton’s ordinary training rooms. His home is in Conton, not an assumed ten-times-gravity planet; no prior student history or personal maximum is established.",
+          "text": "Krillin introduced both students on 11 March. He supervised their initial six-week training block and the failed stacking test. After Namek he resumed afternoon instruction in Conton’s ordinary training rooms. Those regular sessions are paused during the approved Yardrat stay; the instructors were notified before departure. His home is in Conton, not an assumed ten-times-gravity planet; no prior student history or personal maximum is established.",
           "facts": [
             {
               "label": "Location",
@@ -1287,7 +1319,8 @@
       ],
       "history": [
         "s147",
-        "s237"
+        "s237",
+        "s242"
       ],
       "worldGroup": "toki-toki-city"
     },
@@ -1541,6 +1574,74 @@
         "s234"
       ],
       "worldGroup": "unknown-timelines"
+    },
+    {
+      "id": "pybara-tl503",
+      "title": "Pybara",
+      "summary": "Yardratian teacher assessing Zero and Yamcha.",
+      "status": "Met · Instructor",
+      "context": "TL-0042-045-A0503",
+      "worldGroup": "timeline-503",
+      "sections": [
+        {
+          "title": "Identity & appearance",
+          "text": "A short, elderly Yardratian with a rounded head and build, two long whiskers, loose clothing and boots. Soft, measured voice; welcoming and practical.",
+          "facts": [
+            {
+              "label": "Age",
+              "value": "Unknown · Appears elderly"
+            }
+          ]
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Introduced by Krillin at the training terrace. He asked both visitors to raise and draw in their auras, then demonstrated an even body-wide flow. He has offered lower pillars for a seated assessment and asked whether they share a teacher.",
+          "facts": [
+            {
+              "label": "Current location",
+              "value": "Yardrat · Training terrace"
+            }
+          ]
+        }
+      ],
+      "history": [
+        "s244",
+        "s245"
+      ]
+    },
+    {
+      "id": "yardrat-instructor-tl503",
+      "title": "Yardratian Assistant",
+      "summary": "Unnamed instructor assisting at the training terrace.",
+      "status": "Met · Instructor",
+      "context": "TL-0042-045-A0503",
+      "worldGroup": "timeline-503",
+      "sections": [
+        {
+          "title": "Identity & appearance",
+          "text": "A taller, slender Yardratian in loose local clothing. Observed silently during the introduction; voice not yet heard.",
+          "facts": [
+            {
+              "label": "Age",
+              "value": "Unknown · Appears adult"
+            }
+          ]
+        },
+        {
+          "title": "Relationship & current circumstances",
+          "text": "Present alongside Pybara while the visitors meet the teachers and begin the aura assessment.",
+          "facts": [
+            {
+              "label": "Current location",
+              "value": "Yardrat · Training terrace"
+            }
+          ]
+        }
+      ],
+      "history": [
+        "s244",
+        "s245"
+      ]
     }
   ],
   "places": [
@@ -1604,7 +1705,7 @@
         },
         {
           "title": "Current circumstances",
-          "text": "Two compatible Dragon Balls are in the bedside cabinet’s bottom drawer; the protected scroll remains in the bag. The supplied daylight illustration establishes the layout, not the current time."
+          "text": "The Two-Star and Four-Star Dragon Balls remain in the bedside cabinet’s bottom drawer. Zero took his travel bag and protected scroll to Yardrat. The supplied daylight illustration establishes the layout, not the current time."
         }
       ]
     },
@@ -1720,7 +1821,7 @@
       "id": "dispatch-office",
       "title": "Dispatch office",
       "summary": "Mr. Satan’s scheduling and assignment desk.",
-      "status": "Current location",
+      "status": "Visited",
       "parentId": "toki-toki-city",
       "context": "Conton City · Time Patrol dispatch offices · Mr. Satan’s desk",
       "sections": [
@@ -1734,7 +1835,7 @@
         },
         {
           "title": "Current circumstances",
-          "text": "The four-week Namek visit and quarry debriefs are complete. Zero and Yamcha are now discussing Yardrat after TL-503’s fresh 100% recovery check; duration remains unconfirmed and departure unbooked."
+          "text": "Hercule finalised the extended Yardrat visit after lunch on 28 June. Zero and Yamcha departed at 14:00, with their regular instructors notified."
         }
       ]
     },
@@ -1837,13 +1938,13 @@
     {
       "id": "timeline-503",
       "title": "TL-503 · Yamcha’s home",
-      "summary": "Yamcha’s native timeline; fresh recovery check complete.",
-      "status": "Recovered · 100% at S240",
+      "summary": "Yamcha’s native timeline; the Yardrat study visit is active.",
+      "status": "Visit active · Last check 100% before entry",
       "context": "TL-503",
       "sections": [
         {
           "title": "Current circumstances",
-          "text": "After the Raditz/revival rewrite, the Namek training visit ended at 92% integrity on 19 June. A fresh check on 28 June at 11:30 reports 100%, with no new interference. The native Yardrat expedition remains in the outside review. Zero and Yamcha are outside the timeline; a new visit is proposed, not active. No universal daily restoration rate or newly settled Android/Buu outcome."
+          "text": "After the Raditz/revival rewrite, the Namek visit ended at 92% integrity on 19 June. The pre-departure check on 28 June at 11:30 read 100%. Zero and Yamcha entered again that afternoon and are now on Yardrat in Age 762. No fresh integrity reading has been taken during this visit."
         }
       ]
     },
@@ -1965,18 +2066,22 @@
     {
       "id": "yardrat-tl503",
       "title": "Yardrat",
-      "summary": "Hercule confirmed the native journey after timeline recovery.",
-      "status": "Native expedition confirmed · Visit proposed",
+      "summary": "Spirit Control study destination; Zero and Yamcha have met the teachers.",
+      "status": "Visiting · Initial assessment",
       "parentId": "timeline-503",
       "context": "TL-503 · Planet Yardrat",
       "sections": [
         {
-          "title": "Current circumstances",
-          "text": "Zero and Yamcha intend to study Spirit Control from the source. Hercule can arrange entry after their friends arrive; duration still awaits confirmation. No booked departure, acquired technique or completed visit."
+          "title": "Description",
+          "text": "Rounded towers rise among the hills, connected by narrow bridges. A practice terrace holds staggered pillars used for training."
         },
         {
           "title": "Location & access",
-          "text": "Training destination; precise school location not assigned"
+          "text": "TL-0042-045-A0503 · Planet Yardrat. Kami’s ship is parked near the settlement; Krillin led the visitors through an arch to the training terrace."
+        },
+        {
+          "title": "Current circumstances",
+          "text": "The native expedition arrived four days before Zero and Yamcha. Pybara has welcomed their planned stay of a few months and begun assessing their control. The initial aura exercise is complete; the seated exercise is still ahead."
         }
       ]
     },
@@ -2055,7 +2160,7 @@
           "text": "Near the water opposite the village; Zero and Yamcha have retrieved their bags and departed."
         }
       ],
-      "visitRecord": "Bulma stayed with the ship while the fighters met Guru. The visitors later retrieved their bags and returned to Conton; Zero’s belongings are no longer aboard."
+      "visitRecord": "Bulma stayed with the ship while the fighters met Guru. At the end of that Namek visit, Zero and Yamcha retrieved their bags and returned to Conton. The ship later continued to Yardrat with the native expedition."
     },
     {
       "id": "village-tl503",
@@ -2117,28 +2222,80 @@
         }
       ],
       "visitRecord": "Shuttle and crates occupied the quarry floor. The fight damaged empty ground away from the shipment. No native buyer met the Patrollers."
+    },
+    {
+      "id": "yardrat-landing-tl503",
+      "title": "Kami’s Ship · Yardrat",
+      "summary": "Landing site and temporary accommodation.",
+      "status": "Accommodation",
+      "parentId": "yardrat-tl503",
+      "context": "TL-0042-045-A0503 · Yardrat",
+      "sections": [
+        {
+          "title": "Description",
+          "text": "Kami’s refitted ship stands near the Yardratian settlement. Bulma has cleared spare bunks for the visitors."
+        },
+        {
+          "title": "Location & access",
+          "text": "Near the Yardratian settlement and its practice terrace."
+        },
+        {
+          "title": "Current circumstances",
+          "text": "Zero and Yamcha left their travel bags beside the bunks before following Krillin. Chronoa’s protected scroll is inside Zero’s bag; Bulma was last seen here."
+        }
+      ],
+      "history": [
+        "s244",
+        "s245"
+      ]
+    },
+    {
+      "id": "yardrat-terrace-tl503",
+      "title": "Training Terrace",
+      "summary": "Pybara’s pillar practice area.",
+      "status": "Current location",
+      "parentId": "yardrat-tl503",
+      "context": "TL-0042-045-A0503 · Yardrat",
+      "sections": [
+        {
+          "title": "Description",
+          "text": "An open terrace reached through an arch, with staggered pillars and lower pillars available for seated practice."
+        },
+        {
+          "title": "Location & access",
+          "text": "Near the Yardratian settlement and its practice terrace."
+        },
+        {
+          "title": "Current circumstances",
+          "text": "Zero and Yamcha are with Pybara, his assistant and the native Krillin, Tien and Chiaotzu. The first aura exercise is complete. Pybara’s question and the proposed seated assessment await Zero’s response."
+        }
+      ],
+      "history": [
+        "s244",
+        "s245"
+      ]
     }
   ],
   "projects": [
     {
       "id": "field-training",
       "title": "Field service and training",
-      "summary": "Namek training and quarry mission complete; regular Conton training continues.",
+      "summary": "Namek and quarry work complete; specialist study has begun on Yardrat.",
       "status": "Supervised field trainee",
-      "nextStep": "Continue supervised practice and field service.",
+      "nextStep": "Continue Pybara’s initial assessment.",
       "completed": false,
       "sections": [
         {
           "title": "Purpose",
-          "text": "Namek training and quarry mission complete; regular Conton training continues."
+          "text": "Namek and quarry work complete; specialist study has begun on Yardrat."
         },
         {
           "title": "People involved",
-          "text": "Zero, Vegeta, King Kai and Yamcha"
+          "text": "Zero, Yamcha and the Yardratian teachers; regular Conton instructors notified."
         },
         {
           "title": "Progress",
-          "text": "Four weeks with Nail, the Brask/Rivet capture and a further week of Vegeta mornings, King Kai afternoons and partner practice are complete. Two routine cleanup assignments were completed during that week. No new commendation, promotion or independent travel clearance.",
+          "text": "Four weeks with Nail, the Brask/Rivet capture and a further week of Vegeta mornings, King Kai afternoons and partner practice are complete. Two routine cleanup assignments were completed during that week. No new commendation, promotion or independent travel clearance. The authorised Yardrat visit has now begun with Pybara’s initial aura assessment.",
           "facts": [
             {
               "label": "Base",
@@ -2160,7 +2317,8 @@
         "s212",
         "s228",
         "s237",
-        "s240"
+        "s240",
+        "s245"
       ]
     },
     {
@@ -2168,7 +2326,7 @@
       "title": "Vegeta partnership",
       "summary": "Zero accepted the supervised trainee assignment.",
       "status": "Active",
-      "nextStep": "Continue the assigned partnership and morning sessions.",
+      "nextStep": "Resume regular Conton sessions after the Yardrat stay.",
       "completed": false,
       "sections": [
         {
@@ -2181,7 +2339,7 @@
         },
         {
           "title": "Progress",
-          "text": "Vegeta remains the assigned partner. He and Yamcha rescued Zero from Turles on Namek and returned for the debrief. After hearing how Zero beat Nappa, Vegeta called him to the courtyard and spent the following day training him. His commendation now provides a dedicated gravity-training room. Morning sessions now use Zero’s full channel against Vegeta’s base; Vegeta remains comfortably superior.",
+          "text": "Vegeta remains the assigned partner. He and Yamcha rescued Zero from Turles on Namek and returned for the debrief. After hearing how Zero beat Nappa, Vegeta called him to the courtyard and spent the following day training him. His commendation now provides a dedicated gravity-training room. Morning sessions now use Zero’s full channel against Vegeta’s base; Vegeta remains comfortably superior. The partnership remains assigned while Zero studies on Yardrat; the regular instructors were notified before departure.",
           "facts": [
             {
               "label": "Dispatcher",
@@ -2200,7 +2358,8 @@
       ],
       "history": [
         "s015",
-        "s193"
+        "s193",
+        "s242"
       ]
     },
     {
@@ -2267,14 +2426,14 @@
     {
       "id": "yamcha-homecoming",
       "title": "Yamcha’s homecoming",
-      "summary": "Friends revived; timeline recovered after the completed Namek visit.",
-      "status": "Recovered · Next visit pending",
-      "nextStep": "Arrange the next visit after confirming its duration.",
+      "summary": "Friends revived; reunited again on Yardrat.",
+      "status": "Yardrat visit active",
+      "nextStep": "Continue the approved Yardrat stay.",
       "completed": false,
       "sections": [
         {
           "title": "Purpose",
-          "text": "Friends revived; timeline recovered after the completed Namek visit."
+          "text": "Friends revived; reunited again on Yardrat."
         },
         {
           "title": "People involved",
@@ -2282,11 +2441,11 @@
         },
         {
           "title": "Progress",
-          "text": "Yamcha’s native participation allowed the Raditz fixed-point rewrite without an immediate forced branch. Initial integrity readings were 55% after Raditz, 50% after revival and 48% after further advice. A later Namek visit ended at 92%; current recovery is 100% with no new interference. Their friends’ Yardrat expedition persists. Earlier assurances of guaranteed Android victory or permanent Buu absence are withdrawn; later outcomes require their own causal review.",
+          "text": "Yamcha’s native participation allowed the Raditz fixed-point rewrite without an immediate forced branch. Initial integrity readings were 55% after Raditz, 50% after revival and 48% after further advice. A later Namek visit ended at 92%; the pre-entry check read 100% with no new interference. Zero and Yamcha have now reunited with their friends on Yardrat; no new integrity reading has been taken. Earlier assurances of guaranteed Android victory or permanent Buu absence are withdrawn; later outcomes require their own causal review.",
           "facts": [
             {
               "label": "Latest reading",
-              "value": "100% · 28 June, 11:30 · Fresh check"
+              "value": "100% · 28 June, 11:30 · Before this visit"
             },
             {
               "label": "Namek exit",
@@ -2300,45 +2459,50 @@
         },
         {
           "title": "Dependencies",
-          "text": "Departure remains unbooked."
+          "text": "Visit active; dispatch coordination remains in place."
         }
       ],
       "history": [
         "s130",
         "s135",
         "s141",
-        "s240"
+        "s240",
+        "s242",
+        "s244"
       ]
     },
     {
       "id": "future-training",
       "title": "Namek and Yardrat training",
-      "summary": "Namek complete; Yardrat visit duration awaits confirmation.",
-      "status": "Yardrat planning",
-      "nextStep": "Confirm how many months to spend on Yardrat.",
+      "summary": "Namek complete; first Spirit Control assessment underway on Yardrat.",
+      "status": "Yardrat study",
+      "nextStep": "Answer Pybara and begin the seated pillar assessment.",
       "completed": false,
       "sections": [
         {
           "title": "Purpose",
-          "text": "Namek complete; Yardrat visit duration awaits confirmation."
+          "text": "Namek complete; first Spirit Control assessment underway on Yardrat."
         },
         {
           "title": "People involved",
-          "text": "Zero, Yamcha and Hercule"
+          "text": "Zero, Yamcha, Pybara, his assistant and the native expedition."
         },
         {
           "title": "Progress",
-          "text": "Both travellers received Guru’s help and completed four weeks with Nail. Back in Conton, they waited for restoration and continued service and training. Hercule now offers entry after their friends arrive on Yardrat; a stay of a few months is under discussion. No portal, booking or lessons enacted."
+          "text": "After four weeks with Nail and further training in Conton, Zero and Yamcha arranged a stay of a few months on Yardrat and departed on 28 June. Their bags are aboard Kami’s ship. Pybara has assessed gentle aura raising and retraction and demonstrated body-wide flow. Instant Transmission remains a goal; no new technique or training award has been earned yet."
         },
         {
           "title": "Dependencies",
-          "text": "Entry is proposed after the native friends arrive."
+          "text": "The seated assessment and Pybara’s question are the immediate next step."
         }
       ],
       "history": [
         "s212",
         "s214",
-        "s240"
+        "s240",
+        "s242",
+        "s244",
+        "s245"
       ]
     },
     {
@@ -4318,9 +4482,44 @@
       "title": "Morning rounds and a recovered timeline",
       "date": "28 June, Age 854 · 11:30 · Conton City, Hercule's office",
       "summary": "Morning training ends with a measured 79,807. At Hercule’s office, a fresh TL-503 check reads 100%; the native Yardrat expedition remains. Duration awaits confirmation, with no departure booked."
+    },
+    {
+      "id": "s241",
+      "title": "A few months on Yardrat",
+      "summary": "Zero agrees to a stay of a few months, especially to study Instant Transmission. Hercule holds a 14:00 departure slot; lunch and packing come first.",
+      "date": "28 June, Age 854 · 11:32 Conton · Hercule’s office",
+      "status": "Recorded"
+    },
+    {
+      "id": "s242",
+      "title": "Arrival on Yardrat",
+      "summary": "After lunch and collecting their packed bags, Zero and Yamcha finalise the visit with Hercule and depart at 14:00. They reunite with Bulma and Krillin near Kami’s ship on Yardrat; the native expedition arrived four days earlier.",
+      "date": "28 June, Age 854 · 14:05 Conton / Age 762 · Afternoon · Yardrat, TL-0042-045-A0503",
+      "status": "Recorded"
+    },
+    {
+      "id": "s243",
+      "title": "Spirit Control training",
+      "summary": "Zero greets Krillin, who explains that he, Tien and Chiaotzu began training the previous day. Their Yardratian teachers have demonstrated teleportation, duplication and growth. Bulma offers spare bunks aboard the ship.",
+      "date": "28 June, Age 854 · 14:07 Conton / Age 762 · Afternoon · Yardrat, TL-0042-045-A0503",
+      "status": "Recorded"
+    },
+    {
+      "id": "s244",
+      "title": "Meeting Pybara",
+      "summary": "Both bags are left aboard Kami’s ship. Krillin leads Zero and Yamcha to the pillar terrace, where they meet Pybara and his assistant alongside Tien and Chiaotzu. Pybara asks them to raise and draw in their auras.",
+      "date": "28 June, Age 854 · 14:16 Conton / Age 762 · Afternoon · Yardrat, TL-0042-045-A0503",
+      "status": "Recorded"
+    },
+    {
+      "id": "s245",
+      "title": "The first aura assessment",
+      "summary": "Zero and Yamcha complete the gentle aura exercise; Zero keeps the seal closed. Pybara demonstrates even body-wide flow, offers lower pillars for seated practice and asks whether they share a teacher. The answer and seated exercise remain pending.",
+      "date": "28 June, Age 854 · 14:18 Conton / Age 762 · Afternoon · Yardrat, TL-0042-045-A0503",
+      "status": "Recorded"
     }
   ],
-  "recordedThrough": "S240 · 28 June, Age 854 · 11:30 · Morning training and fresh timeline review",
+  "recordedThrough": "S245 · Conton 28 June, Age 854 · 14:18 · Yardrat aura assessment",
   "rewards": {
     "set": "TP-RS-647",
     "heldStars": [

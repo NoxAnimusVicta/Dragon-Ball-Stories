@@ -676,6 +676,8 @@
       const response = await fetch('./campaign.json?v='+release, {cache:'no-store',signal:controller.signal});
       if (!response.ok) throw new Error('Campaign records are unavailable.');
       data = catalogueRecord(validate(await response.json()));
+      // Display current catalogue aliases without rewriting the historical source.
+      data.events = data.events.map(event => ({...event, ...Object.fromEntries(['date','summary','details'].filter(key => typeof event[key] === 'string').map(key => [key,catalogueText(event[key])]))}));
       try { const reference=await fetch('./power-scale.json?v='+release,{cache:'no-store',signal:controller.signal}); if(reference.ok) scale=await reference.json(); } catch { /* Main story remains available if reference fails. */ }
       try { const response=await fetch('./combat-reference.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const reference=await response.json();if(reference.schemaVersion===1 && Array.isArray(reference.sections) && Array.isArray(reference.rotations) && reference.abilityNotes) combatReference=reference;} } catch { /* Optional technique details remain absent if their data is unavailable. */ }
       try { const response=await fetch('./technique-progress.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const progress=await response.json();if(progress.schemaVersion===1 && progress.records) techniqueProgress=progress;} } catch { /* Unknown progress is never displayed as zero. */ }
