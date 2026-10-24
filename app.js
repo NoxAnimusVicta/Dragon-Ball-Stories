@@ -336,12 +336,12 @@
   }
   function learningDetails(ability) {
     const p=progressState(ability), record=p.record;
-    const milestones=p.label==='Learning'?[]:record?.milestones || [], tierIndex=combatReference?.tiers?.findIndex(t=>t.name===p.label) ?? -1;
+    const milestones=p.label==='Learning' && ability.id!=='spirit-bomb'?[]:record?.milestones || [], tierIndex=combatReference?.tiers?.findIndex(t=>t.name===p.label) ?? -1;
     return `<section class="content-section technique-learning"><h3>Mastery</h3>${learningMeter(ability)}${milestones.length?`<details class="record-history"><summary>Path to Mastery</summary><ol class="technique-milestones">${milestones.map(m=>{const i=combatReference?.tiers?.findIndex(t=>t.name===m.tier) ?? -1;return `<li${p.label===m.tier?' class="is-current"':i>=0 && i<tierIndex?' class="is-reached"':''}><strong>${escape(m.tier)}${p.label===m.tier?'<small>Current</small>':''}</strong><p>${escape(m.benefit)}</p>${techniqueCapabilities(ability,m.tier)}</li>`;}).join('')}</ol></details>`:''}</section>`;
   }
   function techniqueCapabilities(ability, previewTier=null) {
     const current=progressState(ability);
-    if(previewTier && (!Number.isFinite(current.credits)||current.credits<10)) return "";
+    if(previewTier && (!Number.isFinite(current.credits)||(current.credits<10 && ability.id!=='spirit-bomb'))) return "";
     const threshold=combatReference?.tiers?.find(t=>t.name===previewTier);
     const p=threshold ? {...current,label:previewTier,credits:threshold.credits} : current;
     const profile=p.record?.capability;
