@@ -216,7 +216,8 @@
             4,
             2,
             1
-          ]
+          ],
+          "reactivationWindowSeconds": 900
         }
       }
     },
@@ -256,7 +257,8 @@
             6,
             3,
             1.5
-          ]
+          ],
+          "reactivationWindowSeconds": 900
         }
       },
       "title": "Kaioken x2"
@@ -451,6 +453,7 @@
       "category": "forms"
     },
     "second-wind": {
+      "effect": "Rally from exhaustion after 45 seconds, restoring a fixed reserve if you survive the recovery window.",
       "credits": 650,
       "assessment": "Assessed",
       "milestones": [
@@ -493,7 +496,9 @@
             20
           ],
           "cooldownHours": 24,
-          "cost": 0
+          "cost": 0,
+          "recoverySeconds": 45,
+          "terminalImpactDamage": 100
         }
       },
       "artwork": "./ability-second-wind.png"

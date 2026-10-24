@@ -370,6 +370,7 @@
     } else if(['kaioken','form','involuntary'].includes(profile.kind)) {
       add('Power Multiplier',factor(m.factor));
       if(index>=0 && m.setup) add('Activation Time',duration(timer(m.setup)));
+      if(m.reactivationWindowSeconds) add('Reactivation','Immediate · Within '+m.reactivationWindowSeconds/60+' min of leaving this form');
       const coefficient=v=>Array.isArray(v)?timer(v):v;
       if(index>=0 || profile.kind==='involuntary') {
         add('Endurance Drain',m.upkeepPerMinute == null ? 'Control Rate Pending' : stat(coefficient(m.upkeepPerMinute))+' / min');
@@ -393,8 +394,9 @@
     } else if(profile.kind==='recovery' && index>=0) {
       add('Available Reserves',String(m.uses[index]));
       add('Per Recovery',`${m.restoreMin[index]} Endurance`);
+      add('Recovery Time',duration(m.recoverySeconds));
       add('Recharge',`${m.cooldownHours} hours per spent reserve`);
-      note='Triggers reflexively at zero Endurance when the body can still recover. Each use has its own recharge clock.';
+      note='Recover from exhaustion if you survive the recovery window. A single hit dealing 100+ Endurance damage bypasses Second Wind.';
     } else if(profile.kind==='supplied') {
       const i=Math.max(0,index),growth=1+Math.log2(1+Math.max((p.credits||0)-10000,0)/10000),peak=m.ceiling[i]*growth;
       const total=(index<0?m.fullTime[0]:timer(m.fullTime));
