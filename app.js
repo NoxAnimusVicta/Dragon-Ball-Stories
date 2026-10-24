@@ -399,7 +399,7 @@
       const peak=m.ceiling[index],setup=timer(m.setup),total=timer(m.fullTime);
       add('Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
       add('Base Endurance Damage',endurance(m.damage+(index===3?(m.masteryDamageBonus||0):0)));
-      add('Endurance Cost',`${endurance(m.costCoefficient*m.regular**2*m.economy[index]*refinement)} → ${endurance(m.costCoefficient*peak**2*m.economy[index]*refinement)}`);
+      add('Endurance Cost',`${endurance(m.regularCost[index])} → ${endurance(m.regularCost[index]*(peak/m.regular)**2)}`);
       add('Regular Preparation',duration(setup));add('Full Charge · Total',duration(total));
 
     } else if(['kaioken','form','involuntary'].includes(profile.kind)) {
