@@ -168,9 +168,7 @@
         "kind": "involuntary",
         "mechanics": {
           "factor": 15,
-          "activationCost": 0,
-          "upkeepPerMinute": 0,
-          "attackCostFraction": 0
+          "upkeepPerMinute": 0
         }
       }
     },
@@ -205,19 +203,7 @@
             1,
             0
           ],
-          "activationCost": [
-            0,
-            0,
-            0,
-            0
-          ],
           "upkeepPerMinute": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "attackCostFraction": [
             0,
             0,
             0,
@@ -252,28 +238,16 @@
         "mechanics": {
           "factor": 2,
           "setup": [
-            4,
-            0,
-            0,
-            0
-          ],
-          "activationCost": [
+            8,
             2,
-            1.5,
-            1,
-            0.5
+            0.5,
+            0
           ],
           "upkeepPerMinute": [
             12,
             6,
             3,
             1.5
-          ],
-          "exertionSurcharge": [
-            1,
-            0.5,
-            0.25,
-            0.1
           ]
         }
       },

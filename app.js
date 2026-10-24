@@ -334,7 +334,7 @@
   }
   function learningDetails(ability) {
     const p=progressState(ability), record=p.record;
-    const milestones=record?.milestones || [], tierIndex=combatReference?.tiers?.findIndex(t=>t.name===p.label) ?? -1;
+    const milestones=p.label==='Learning'?[]:record?.milestones || [], tierIndex=combatReference?.tiers?.findIndex(t=>t.name===p.label) ?? -1;
     return `<section class="content-section technique-learning"><h3>Mastery</h3>${learningMeter(ability)}${milestones.length?`<details class="record-history"><summary>Path to Mastery</summary><ol class="technique-milestones">${milestones.map(m=>{const i=combatReference?.tiers?.findIndex(t=>t.name===m.tier) ?? -1;return `<li${p.label===m.tier?' class="is-current"':i>=0 && i<tierIndex?' class="is-reached"':''}><strong>${escape(m.tier)}${p.label===m.tier?'<small>Current</small>':''}</strong><p>${escape(m.benefit)}</p></li>`;}).join('')}</ol></details>`:''}</section>`;
   }
   function techniqueCapabilities(ability) {
@@ -366,28 +366,26 @@
       add('Endurance Cost',`${stat(m.costCoefficient*m.regular**2*m.economy[index]*refinement)} → ${stat(m.costCoefficient*peak**2*m.economy[index]*refinement)}`);
       add('Regular Preparation',duration(setup));add('Full Charge · Total',duration(total));
       add('Mastered Charge Limit',factor(m.ceiling.at(-1)));
-      note='The multiplier raises your Power Level during this technique; damage follows the resulting power gap and defence. Cost runs from regular to current maximum. Times include preparation and improve with mastery. Gathering permits a committed approach with sufficient spirit energy; unrelated attacks interrupt it.';
+      note='Gather while approaching your target. Other attacks interrupt preparation.';
     } else if(['kaioken','form','involuntary'].includes(profile.kind)) {
       add('Power Multiplier',factor(m.factor));
       if(index>=0 && m.setup) add('Activation Time',duration(timer(m.setup)));
       const coefficient=v=>Array.isArray(v)?timer(v):v;
       if(index>=0 || profile.kind==='involuntary') {
-        add('Activation Cost',stat(coefficient(m.activationCost))+' Endurance');
-        add('Upkeep',stat(coefficient(m.upkeepPerMinute))+' Endurance / min');
-        add('Exertion Cost', '+'+stat(100*coefficient(m.exertionSurcharge ?? m.attackCostFraction))+'%');
+        add('Endurance Drain',stat(coefficient(m.upkeepPerMinute))+' / min');
       }
-      if(profile.kind==='kaioken') note='Extra exertion applies to attacks and strenuous movement while active. Sustained use also strains the body. Activation and upkeep are charged once; brief bursts pay only their actual active time.';
-      else if(profile.kind==='form') note='Borrowed power flows through the seal under conscious regulation. Ordinary attacks still spend Endurance; control and bodily condition govern safe use.';
-      else note='An involuntary manifestation governed by its established takeover conditions. Ordinary exertion and received injuries still apply.';
+      if(profile.kind==='kaioken') note='Sustained use strains the body. Brief bursts drain Endurance only while active.';
+      else if(profile.kind==='form') note='Consciously regulate the borrowed power flowing through the seal.';
+      else note='An involuntary takeover by the Dark Factor.';
     } else if(profile.kind==='ordinary' && index>=0) {
       add('Attack Output',factor(m.factor));add('Base Endurance Damage',creditText(m.damage[index]));
       add('Endurance Cost',stat(m.cost[index]*refinement));
-      note='Per ordinary combination or bounded volley. Impact assumes equal active bodily power and a clean hit; power differences and defence change the result.';
+      note=ability.id==='combat-basics'?'Per physical combination: linked punches, kicks and close-range strikes.':'Per ki volley: a controlled sequence of energy shots.';
     } else if(profile.kind==='kiai' && index>=0) {
       add('Maximum Boost','+'+creditText(m.bonus[index]*100)+'% Form Power');
       add('Full Buildup',creditText(m.fullCharge[index])+' sec');
       add('Maximum Upkeep',stat(m.upkeepCoefficient[index]*m.bonus[index]**2)+' Endurance / min');
-      note=`Without another amplifier, full Kiai gives ${factor(1+m.bonus[index])} your current form’s output. With Kaioken, its bonus adds alongside the Kaioken factor. Smaller boosts gather faster and cost less; changing form or amplifier resets the buildup.`;
+      note='Smaller boosts gather faster and cost less. Changing form or amplifier resets the buildup.';
     } else if(profile.kind==='rotation' && index>=0) {
       add('Preferred Response',m.preferred);
       add('Preference Weight',factor(m.weightFactor[index]));
@@ -401,24 +399,22 @@
     } else if(profile.kind==='supplied') {
       const i=Math.max(0,index),growth=1+Math.log2(1+Math.max((p.credits||0)-10000,0)/10000),peak=m.ceiling[i]*growth;
       const total=(index<0?m.fullTime[0]:timer(m.fullTime));
-      const setup=index<0?m.setup[0]:timer(m.setup);
-      const rate=peak/((total-setup)/60);
+      const baselineSetup=index<0?m.setup[0]:timer(m.setup);
+      const setup=p.label==='Learning'?baselineSetup*(p.credits<5?4:2):baselineSetup;
+      const rate=peak/((total-baselineSetup)/60);
       const cost=(mult)=>m.economy[i]*refinement*(m.setupCost+m.containmentCost*Math.sqrt(mult)+m.gatheringCostPerMinute*mult/rate);
       add('Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
       add('Base Endurance Damage',stat(m.damage));
       add('Endurance Cost',`${stat(cost(m.regular))} → ${stat(cost(peak))}`);
       add('Regular Preparation',duration(setup+60*m.regular/rate));
       add('Full Charge · Total',duration(setup+60*peak/rate));
-      add('Mastered Charge Limit',factor(m.ceiling.at(-1)));
       if(p.label==='Learning') {
         add('Current Failure Risk',stat(40*(1-p.credits/10))+'%');
-        add('Experimental Regular Preparation',duration(setup*(p.credits<5?4:2)+60*m.regular/rate));
-        add('Experimental Full Charge · Total',duration(setup*(p.credits<5?4:2)+60*peak/rate));
       }
-      note='Gathered spirit energy temporarily raises your Power Level for this release, within your containment limit. Times assume sufficient willing supply; scarce supply takes longer and adds gathering expenditure. Large gathering needs concentration and protection.';
+      note='Gathering requires concentration, protection and willing spirit energy. Limited supply lengthens the charge.';
     }
     if(!rows.length) return '';
-    return `<section class="content-section technique-output"><h3>${p.label==='Learning'?'Learned Capability':'Current Capability'}</h3><dl>${rows.map(([label,value])=>`<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl><p>${escape(note)}</p></section>`;
+    return `<section class="content-section technique-output"><h3>${p.label==='Learning'?'Learning Capability':'Current Capability'}</h3><dl>${rows.map(([label,value])=>`<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl><p>${escape(note)}</p></section>`;
   }
   function abilities() {
     const groups=[...abilityGroups,{id:'other',title:'Other Techniques'}];
