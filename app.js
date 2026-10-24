@@ -403,10 +403,10 @@
       const setup=p.label==='Learning'?baselineSetup*(p.credits<5?4:2):baselineSetup;
       const rate=peak/((total-baselineSetup)/60);
       const cost=(mult)=>m.economy[i]*refinement*(m.setupCost+m.containmentCost*Math.sqrt(mult)+m.gatheringCostPerMinute*mult/rate);
-      add('Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
+      add(p.label==='Learning'?'Learning Release':'Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
       add('Base Endurance Damage',stat(m.damage));
       add('Endurance Cost',`${stat(cost(m.regular))} → ${stat(cost(peak))}`);
-      add('Regular Preparation',duration(setup+60*m.regular/rate));
+      add(p.label==='Learning'?'Learning Preparation':'Regular Preparation',duration(setup+60*m.regular/rate));
       add('Full Charge · Total',duration(setup+60*peak/rate));
       if(p.label==='Learning') {
         add('Current Failure Risk',stat(40*(1-p.credits/10))+'%');
