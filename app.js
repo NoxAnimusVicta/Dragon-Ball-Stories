@@ -412,7 +412,7 @@
       }
       note='Gathering requires concentration, protection and willing spirit energy. Limited supply lengthens the charge.';
     }
-    if(m.rangeMetres) {const reach=m.rangeMetres[Math.max(0,index)];add('Range',reach>=1000?stat(reach/1000)+' km':stat(reach)+' m');}
+    if(Array.isArray(m.rangeBands)&&m.rangeBands.length) add('Range',m.rangeBands.join(' · '));
     if(!rows.length) return '';
     return `<section class="content-section technique-output"><h3>${p.label==='Learning'?'Learning Capability':'Current Capability'}</h3><dl>${rows.map(([label,value])=>`<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl>${note?`<p>${escape(note)}</p>`:''}</section>`;
   }

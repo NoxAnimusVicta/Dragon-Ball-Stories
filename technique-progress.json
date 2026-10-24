@@ -40,11 +40,8 @@
             0.5
           ],
           "useSeconds": 30,
-          "rangeMetres": [
-            2,
-            2,
-            2,
-            2
+          "rangeBands": [
+            "Engaged"
           ]
         }
       },
@@ -144,11 +141,9 @@
             0.85
           ],
           "useSeconds": 30,
-          "rangeMetres": [
-            2000,
-            5000,
-            10000,
-            20000
+          "rangeBands": [
+            "Engaged",
+            "Short"
           ]
         }
       },
@@ -363,11 +358,9 @@
           "setupCost": 4,
           "containmentCost": 2,
           "gatheringCostPerMinute": 2,
-          "rangeMetres": [
-            5000,
-            10000,
-            25000,
-            50000
+          "rangeBands": [
+            "Short",
+            "Long"
           ]
         }
       }
@@ -423,11 +416,8 @@
             0.65,
             0.45
           ],
-          "rangeMetres": [
-            2,
-            2,
-            2,
-            2
+          "rangeBands": [
+            "Engaged"
           ]
         }
       }
