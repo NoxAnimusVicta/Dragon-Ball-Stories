@@ -38,13 +38,21 @@
             0.75,
             0.6,
             0.5
+          ],
+          "useSeconds": 30,
+          "rangeMetres": [
+            2,
+            2,
+            2,
+            2
           ]
         }
       },
       "title": "Physical Combat",
-      "category": "physical",
+      "category": "discipline",
       "summary": "Close-range strikes, from quick combinations to heavy blows.",
-      "effect": "Fight with punches, kicks and close-range strikes. A flurry of lighter blows, a few heavy hits or one committed heavy strike use the same damage and Endurance cost per attack."
+      "effect": "Close-range martial combat.",
+      "control": "Footwork, balance and physical conditioning."
     },
     "ki-control": {
       "credits": 4800,
@@ -134,13 +142,20 @@
             1.25,
             1,
             0.85
+          ],
+          "useSeconds": 30,
+          "rangeMetres": [
+            2000,
+            5000,
+            10000,
+            20000
           ]
         }
       },
       "title": "Ki Blasts",
-      "control": "Moving releases, concentrated shots and short volleys use the same ordinary attack profile. Preset curves follow the chosen path rather than tracking a target.",
+      "control": "Control the direction and spread of released ki.",
       "summary": "Energy shots, volleys and concentrated blasts or beams.",
-      "effect": "Release ordinary ki as a volley, a concentrated blast or an unnamed beam. Mouth-fired blasts also belong here when the user can perform them. These variations use the same damage and Endurance cost per attack; distinct techniques such as Kamehameha have their own profiles."
+      "effect": "Project and direct ordinary ki attacks."
     },
     "ki-suppression": {
       "credits": 3500,
@@ -206,9 +221,9 @@
         "mechanics": {
           "factor": 10,
           "setup": [
-            10,
-            3,
-            1,
+            30,
+            15,
+            15,
             0
           ],
           "upkeepPerMinute": [
@@ -216,10 +231,10 @@
             4,
             2,
             1
-          ],
-          "reactivationWindowSeconds": 900
+          ]
         }
-      }
+      },
+      "control": "Consciously regulate the borrowed power. Combining it with Kaioken remains unsafe."
     },
     "kaioken-technique": {
       "credits": 650,
@@ -247,9 +262,9 @@
         "mechanics": {
           "factor": 2,
           "setup": [
-            8,
-            2,
-            0.5,
+            45,
+            15,
+            15,
             0
           ],
           "upkeepPerMinute": [
@@ -257,11 +272,11 @@
             6,
             3,
             1.5
-          ],
-          "reactivationWindowSeconds": 900
+          ]
         }
       },
-      "title": "Kaioken x2"
+      "title": "Kaioken x2",
+      "control": "Use separately from Sealed Channel; combining them triggered takeover."
     },
     "ki-sensing": {
       "credits": 650,
@@ -324,8 +339,8 @@
           "setup": [
             30,
             15,
-            5,
-            1
+            15,
+            15
           ],
           "fullTime": [
             600,
@@ -336,8 +351,8 @@
           "collectionPerMinute": [
             1.0526315789473684,
             2.5806451612903225,
-            6.76056338028169,
-            16.05351170568562
+            6.956521739130435,
+            16.842105263157894
           ],
           "economy": [
             1,
@@ -347,7 +362,13 @@
           ],
           "setupCost": 4,
           "containmentCost": 2,
-          "gatheringCostPerMinute": 2
+          "gatheringCostPerMinute": 2,
+          "rangeMetres": [
+            5000,
+            10000,
+            25000,
+            50000
+          ]
         }
       }
     },
@@ -383,16 +404,16 @@
             4
           ],
           "setup": [
-            4,
-            1,
-            0.25,
-            0
+            45,
+            30,
+            15,
+            15
           ],
           "fullTime": [
-            60,
-            40,
-            25,
-            18
+            120,
+            90,
+            75,
+            60
           ],
           "damage": 9.5,
           "costCoefficient": 1,
@@ -401,6 +422,12 @@
             0.85,
             0.65,
             0.45
+          ],
+          "rangeMetres": [
+            2,
+            2,
+            2,
+            2
           ]
         }
       }
@@ -453,7 +480,7 @@
       "category": "forms"
     },
     "second-wind": {
-      "effect": "Rally from exhaustion after 45 seconds, restoring a fixed reserve if you survive the recovery window.",
+      "effect": "Regain the strength to keep fighting.",
       "credits": 650,
       "assessment": "Assessed",
       "milestones": [
@@ -501,7 +528,8 @@
           "terminalImpactDamage": 100
         }
       },
-      "artwork": "./ability-second-wind.png"
+      "artwork": "./ability-second-wind.png",
+      "control": "Draw on trained recovery reserves."
     },
     "rotation-evasive": {
       "credits": 250,
@@ -681,7 +709,9 @@
             4
           ]
         }
-      }
+      },
+      "effect": "Turn an opening in the opponent’s attack into time to respond.",
+      "control": "Timing and awareness create room for a response."
     }
   }
 }
