@@ -279,15 +279,17 @@ At equal bodily output/agility against50% effort, the four effort settings give3
 
 **Knockback.** A successful intentional launch retains15seconds of real stagger from impact, covering arresting momentum, normal rubble and regaining control. Record the consequent band and any real obstacle from the declared/resolved launch; do not invent a universal kilometre distance. Carry only the remaining stagger at a turn boundary. After it ends, return uses intent/range resolution with its ordinary effort cost; there is no added15second return manoeuvre. An actual additional obstacle can prevent access but the same rubble is never charged twice. Form drain continues during stagger.
 
-**Technique ranges.** The following bands replace numeric combat reach at every tier; mastery still controls the method's existing handling, charge and costs. A valid band does not bypass cover, line of fire, functional limbs or a method-specific restriction.
+**Technique ranges.** The following maximum ranges replace numeric combat reach at every tier; mastery still controls the method's existing handling, charge and costs.
 
-| Method | Permitted delivery bands |
+**Maximum range — adopted24October2026.** A technique records its furthest usable band: Long includes Short and Engaged; Short includes Engaged; Engaged requires contact. These are maximum reaches, not minimum-to-maximum intervals. The implication never works outward: a Short technique cannot attack at Long, and an Engaged technique cannot attack at Short. This applies to ordinary attacks, named techniques, Spirit Bomb and NPC signatures at every learning tier. Existing preparation, supply, cover, firing lanes and bodily handling still apply; proximity alone never invalidates a longer-range technique. No additional close-range penalty is introduced. Out of Combat Range remains outside these attack reaches. Display only the maximum band in the app; internal rangeBands arrays enumerate every permitted band from Engaged through that maximum.
+
+| Method | Maximum range |
 | --- | --- |
 |Physical Combat and contact Physical Techniques, including Spirit Spear and Wolf Fang Fist|Engaged|
-|Ki Blasts, including ordinary unnamed beams/volleys|Engaged, Short|
-|Dedicated Beam/Heavy Beam/Piercing Beam techniques, including Kamehameha, Galick Gun and Special Beam Cannon|Engaged, Short, Long|
-|Recorded named Projectile/Mouth Beam signature families|Engaged, Short, Long|
-|Spirit Bomb, including Learning attempts|Short, Long|
+|Ki Blasts, including ordinary unnamed beams/volleys|Short|
+|Dedicated Beam/Heavy Beam/Piercing Beam techniques, including Kamehameha, Galick Gun and Special Beam Cannon|Long|
+|Recorded named Projectile/Mouth Beam signature families|Long|
+|Spirit Bomb, including Learning attempts|Long|
 
 New methods need an explicit range-band entry before deployment. Existing projected signature families inherit their listed family, not an invented unique range; ordinary mouth-fired Ki Blasts remain in the ordinary Ki Blasts row. Giants/extended limbs require their actual recorded contact capability, not silent access to all bands. No attack here reaches Out of Combat Range. Release follows resolved range/access and existing preparation, without a separate speed-based projectile clock. Projectiles retain their bearing and released power; no automatic homing or harmless disappearance on allied contact. Resolve feasible defence/interception within the committed attack window before finalising impact. A protector needs established access and a viable lane, not a retroactive next-turn rescue. Continuing shots retain their original release ID and ordinary allied-injury rules.
 

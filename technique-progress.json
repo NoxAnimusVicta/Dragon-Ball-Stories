@@ -146,7 +146,6 @@
           ],
           "useSeconds": 30,
           "rangeBands": [
-            "Engaged",
             "Short"
           ]
         }
@@ -376,7 +375,6 @@
           "containmentCost": 2,
           "gatheringCostPerMinute": 2,
           "rangeBands": [
-            "Short",
             "Long"
           ]
         }

@@ -140,7 +140,7 @@ Character background, collection notes and Story's longer records use quiet full
 
 ### Range presentation
 
-Project the acquired method's `rangeBands` from its numerical profile through build.py into technique-progress.json. Render one Range row with Engaged, Short and/or Long, shared across tiers, including Learning previews. Never substitute legacy metre ranges or derive combat reach from Max Speed. Keep movement intent, effort costs and positioning calculations in the background combat reference. Verify the source projection and rendered row together whenever a method is added or changed.
+Project the acquired method's `rangeBands` from its numerical profile through build.py into technique-progress.json. Render one Range row showing only the maximum band: Engaged, Short or Long, shared across tiers, including Learning previews. Long includes Short and Engaged; Short includes Engaged. Do not list intervals or repeat the included shorter bands. Private rangeBands arrays retain the complete inward-inclusive set; build.py projects a one-item maximum-band list for the existing app renderer. Never substitute legacy metre ranges or derive combat reach from Max Speed. Keep movement intent, effort costs and positioning calculations in the background combat reference. Verify the source projection and rendered row together whenever a method is added or changed.
 
 ## Maintenance checks
 
