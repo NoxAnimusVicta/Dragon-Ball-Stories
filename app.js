@@ -335,15 +335,25 @@
   function learningDetails(ability) {
     const p=progressState(ability), record=p.record;
     const milestones=p.label==='Learning'?[]:record?.milestones || [], tierIndex=combatReference?.tiers?.findIndex(t=>t.name===p.label) ?? -1;
-    return `<section class="content-section technique-learning"><h3>Mastery</h3>${learningMeter(ability)}${milestones.length?`<details class="record-history"><summary>Path to Mastery</summary><ol class="technique-milestones">${milestones.map(m=>{const i=combatReference?.tiers?.findIndex(t=>t.name===m.tier) ?? -1;return `<li${p.label===m.tier?' class="is-current"':i>=0 && i<tierIndex?' class="is-reached"':''}><strong>${escape(m.tier)}${p.label===m.tier?'<small>Current</small>':''}</strong><p>${escape(m.benefit)}</p></li>`;}).join('')}</ol></details>`:''}</section>`;
+    return `<section class="content-section technique-learning"><h3>Mastery</h3>${learningMeter(ability)}${milestones.length?`<details class="record-history"><summary>Path to Mastery</summary><ol class="technique-milestones">${milestones.map(m=>{const i=combatReference?.tiers?.findIndex(t=>t.name===m.tier) ?? -1;return `<li${p.label===m.tier?' class="is-current"':i>=0 && i<tierIndex?' class="is-reached"':''}><strong>${escape(m.tier)}${p.label===m.tier?'<small>Current</small>':''}</strong><p>${escape(m.benefit)}</p>${techniqueCapabilities(ability,m.tier)}</li>`;}).join('')}</ol></details>`:''}</section>`;
   }
-  function techniqueCapabilities(ability) {
-    const p=progressState(ability), profile=p.record?.capability;
+  function techniqueCapabilities(ability, previewTier=null) {
+    const current=progressState(ability);
+    if(previewTier && (!Number.isFinite(current.credits)||current.credits<10)) return "";
+    const threshold=combatReference?.tiers?.find(t=>t.name===previewTier);
+    const p=threshold ? {...current,label:previewTier,credits:threshold.credits} : current;
+    const profile=p.record?.capability;
     if(!profile) return '';
     const m=profile.mechanics || {}, names=['Learned','Proficient','Advanced','Mastered'];
     const index=names.indexOf(p.label), rows=[];
     const add=(label,value)=>rows.push([label,value]);
     const stat=n=>n.toLocaleString('en',{maximumFractionDigits:4});
+    const endurance=n=>{
+      if(!Number.isFinite(n)||n<0) return 'Not Yet Assessed';
+      const d=decimal(n);
+      const tenth=d ? Number(d.digits*10n/(10n**BigInt(d.scale)))/10 : Math.floor(n*10)/10;
+      return tenth.toLocaleString('en',{minimumFractionDigits:1,maximumFractionDigits:1});
+    };
     const factor=n=>'×'+stat(n);
     let note='';
     const refinement=1/(1+0.1*Math.log2(1+Math.max((p.credits || 0)-10000,0)/10000));
@@ -363,8 +373,8 @@
     if(profile.kind==='contact' && index>=0) {
       const peak=m.ceiling[index],setup=timer(m.setup),total=timer(m.fullTime);
       add('Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
-      add('Base Endurance Damage',stat(m.damage));
-      add('Endurance Cost',`${stat(m.costCoefficient*m.regular**2*m.economy[index]*refinement)} → ${stat(m.costCoefficient*peak**2*m.economy[index]*refinement)}`);
+      add('Base Endurance Damage',endurance(m.damage+(index===3?(m.masteryDamageBonus||0):0)));
+      add('Endurance Cost',`${endurance(m.costCoefficient*m.regular**2*m.economy[index]*refinement)} → ${endurance(m.costCoefficient*peak**2*m.economy[index]*refinement)}`);
       add('Regular Preparation',duration(setup));add('Full Charge · Total',duration(total));
       add('Mastered Charge Limit',factor(m.ceiling.at(-1)));
 
@@ -373,17 +383,17 @@
       if(index>=0 && m.setup) add('Activation Time',duration(timer(m.setup)));
       const rate=v=>Array.isArray(v)?coefficient(v):v;
       if(index>=0 || profile.kind==='involuntary') {
-        add('Endurance Drain',m.upkeepPerMinute == null ? 'Control Rate Pending' : stat(rate(m.upkeepPerMinute))+' / min');
+        add('Endurance Drain',m.upkeepPerMinute == null ? 'Control Rate Pending' : endurance(rate(m.upkeepPerMinute))+' / min');
       }
       if(profile.kind==='involuntary') note='An involuntary takeover by the Dark Factor.';
     } else if(profile.kind==='ordinary' && index>=0) {
-      add('Attack Output',factor(m.factor));add('Base Endurance Damage',creditText(m.damage[index]));
-      add('Endurance Cost',stat(m.cost[index]*refinement));
+      add('Attack Output',factor(m.factor));add('Base Endurance Damage',endurance(m.damage[index]));
+      add('Endurance Cost',endurance(m.cost[index]*refinement));
       add('Use Time',duration(m.useSeconds));
     } else if(profile.kind==='kiai' && index>=0) {
       add('Maximum Boost','+'+creditText(m.bonus[index]*100)+'% Form Power');
       add('Full Buildup',creditText(m.fullCharge[index])+' sec');
-      add('Maximum Upkeep',stat(m.upkeepCoefficient[index]*m.bonus[index]**2)+' Endurance / min');
+      add('Maximum Upkeep',endurance(m.upkeepCoefficient[index]*m.bonus[index]**2)+' Endurance / min');
       note='Smaller boosts gather faster and cost less. Changing form or amplifier resets the buildup.';
     } else if(profile.kind==='rotation' && index>=0) {
       add('Preferred Response',m.preferred);
@@ -391,7 +401,7 @@
 
     } else if(profile.kind==='recovery' && index>=0) {
       add('Available Reserves',String(m.uses[index]));
-      add('Per Recovery',`${m.restoreMin[index]} Endurance`);
+      add('Per Recovery',`${endurance(m.restoreMin[index])} Endurance`);
       add('Recovery Time',duration(m.recoverySeconds));
       add('Recharge',`${m.cooldownHours} hours per spent reserve`);
 
@@ -403,8 +413,8 @@
       const rate=peak/((total-baselineSetup)/60);
       const cost=(mult)=>m.economy[i]*refinement*(m.setupCost+m.containmentCost*Math.sqrt(mult)+m.gatheringCostPerMinute*(Math.ceil((setup+60*mult/rate)/15)*15-setup)/60);
       add(p.label==='Learning'?'Learning Release':'Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
-      add('Base Endurance Damage',stat(m.damage));
-      add('Endurance Cost',`${stat(cost(m.regular))} → ${stat(cost(peak))}`);
+      add('Base Endurance Damage',endurance(m.damage+(index===3?(m.masteryDamageBonus||0):0)));
+      add('Endurance Cost',`${endurance(cost(m.regular))} → ${endurance(cost(peak))}`);
       add(p.label==='Learning'?'Learning Preparation':'Regular Preparation',duration(Math.ceil((setup+60*m.regular/rate)/15)*15));
       add('Full Charge · Total',duration(Math.ceil((setup+60*peak/rate)/15)*15));
       if(p.label==='Learning') {
@@ -414,6 +424,10 @@
     }
     if(Array.isArray(m.rangeBands)&&m.rangeBands.length) add('Range',m.rangeBands.join(' · '));
     if(!rows.length) return '';
+    if(previewTier) {
+      const changing=rows.filter(([label])=>!['Range','Power Multiplier','Attack Output','Regular Release','Mastered Charge Limit','Preferred Response'].includes(label));
+      return `<div class="technique-output"><dl>${changing.map(([label,value])=>`<div><dt>${escape(label==='Current Charge Limit'?'Charge Limit':label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl></div>`;
+    }
     return `<section class="content-section technique-output"><h3>${p.label==='Learning'?'Learning Capability':'Current Capability'}</h3><dl>${rows.map(([label,value])=>`<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl>${note?`<p>${escape(note)}</p>`:''}</section>`;
   }
   function abilities() {

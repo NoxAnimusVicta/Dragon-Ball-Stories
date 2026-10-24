@@ -176,13 +176,31 @@ Every materially contested exchange uses an automatic private real draw via `pri
 
 Use current rules_version9 and current_attack_weight for new contests; archived versions are replay only. Never infer adoption from a passing old test. Use the mechanics owner's section 8 for both directional familiarity snapshots, learned defensive rotations, conditional counter time transfers and shared-defence team contests; section 9 owns charge interruptions and beam-clash response windows. Do not reset known opponents between fights or count familiarity twice. Save readable-exchange gains only after resolution. Keep an interrupted encounter's active states, selected rotations, prepared energy, positions, injuries, supply, timing windows and resolved/pending exchange IDs in the current checkpoint, linked to the saved rolls and relevant ledgers. After compaction resume those records; never redraw or reconstruct them from an intended outcome. Hypothetical examples grant no story gains or actual rolls, and their estimated or dated inputs must remain labelled.
 
-During combat use the section9 footer contract: elapsed combat time, Endurance, active state and actual injuries. Add remaining work only for carryover or counter time. Never assume the player’s target or display an always-ready technique.
+During combat use the separate Character Info and Combat Info contract below. Section9 owns the clock and accounting; this guide owns their presentation. Never assume the player’s target or display an always-ready technique.
 
 ### Mandatory scene footer
 
 Every in-story response, including quiet dialogue and transit, ends with a horizontal rule and a compact status block. Use the in-universe date, local time, place and timeline label when away from Conton. Do not present days since arrival as the protagonist's personal day count. Subjective age includes chamber time; include years/months when useful. Then show the established base benchmark, active output if relevant, concise condition and meaningful pending action. Avoid a full inventory dump.
 
 Use the current checkpoint plus its controlling corrections, not a stale example or structured snapshot alone. Distinguish base capacity, suppression, transformed output and a newly measured reading. Fatigue does not justify inventing a precise lower number. Do not give the protagonist exact numerical knowledge without a scan or established information source; already authorised routine self-checks may be resolved. Never leak unseen NPC ratings, hidden forms or plans. If a reading is disputed, say it awaits correction rather than reinstating it. Save the complete footer with the exact scene and deliver the same text. Research and maintenance replies outside the story need no fiction footer and advance no time.
+
+### Character Info and Combat Info — adopted 24 October 2026
+
+Keep the usual **Character Info** block for local date/time, location/timeline, age, established power benchmark and concise condition. During combat place a separate **Combat Info** block immediately below it, using the same compact style. Do not fold combat bookkeeping into Character Info or narrative prose. Outside combat omit Combat Info entirely.
+
+Combat Info contains:
+- **Elapsed:** total time since this encounter began, as minutes:seconds (hours when needed). Preserve meaningful fractional seconds, such as a7.5-second counter transfer; never round away available time.
+- **Turn:** acting faction and the actual next/current response window. Show remaining preparation, recovery, stagger or counter time when pending; no invented target or empty commitment fields.
+- **Combatants:** each tracked participant by name, current Endurance/100, active state, and actual injuries with their functional effects. This explicitly permits opponent Endurance as a player-facing combat statistic, not in-world knowledge. Do not disclose hidden abilities, future forms or unobserved diagnoses.
+- **Range:** named pairs or engagements and their current Engaged/Short/Long/Out band. Never label an unspecified person as the player's target.
+- **Drain:** the current ongoing Endurance/minute rate, identifying state upkeep and actual movement separately where both apply. One-off attack costs are expenditure, not a fictitious permanent rate. Report a changed rate when an effect or effort changes.
+- **Changes:** since the previous Combat Info block, label damage dealt/received by source and recipient, attack/movement/upkeep expenditure, and recovery separately. Do not conflate incoming injury with self-expenditure or recover the same amount twice. Omit unchanged/no-event clutter.
+
+All displayed Endurance amounts, costs, damage and rates are rounded **down to one decimal place**:2.9851 becomes2.9. Retain full internal precision and calculate before formatting; never feed displayed values back into the ledger. Round positive loss magnitudes before attaching a minus sign. A positive sub-tenth value may display0.0; it remains a real internal cost. Independently truncated changes need not sum exactly to the displayed closing total. Timing, multipliers, progress and Power Level retain their own formats.
+
+Anchor combat's elapsed seconds to the actual local/timeline clock at encounter start. Advance local time, subjective time and any linked hub clock under the established temporal rules by each shared elapsed interval once. Keep residual seconds privately across turns and after combat; display regular local time only to the minute. Concurrent allies or split engagements do not multiply elapsed time. Counter transfers reallocate existing seconds. A reply does not reset a clock. If only an approximate local time was established, preserve that uncertainty rather than invent an exact earlier timestamp; record the combat offset precisely. Maintenance advances no clock.
+
+Narrative prose describes effort, wounds, positioning and consequences without mechanical Endurance totals, costs, tiers, roll results or odds. The footer carries the numerical changes. Save both blocks with the exact scene and persist the underlying encounter ledger/checkpoint so compaction cannot lose timing, injuries or payments. This replaces the earlier single-line combat addition to the character footer.
 
 ## 4 Character knowledge and capability
 
