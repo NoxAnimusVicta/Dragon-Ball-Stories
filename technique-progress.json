@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "28 June, Age 854",
+  "asOf": "28 July, Age 854",
   "records": {
     "combat-basics": {
       "credits": 4500,
@@ -52,7 +52,7 @@
       "control": "Footwork, balance and physical conditioning."
     },
     "ki-control": {
-      "credits": 4800,
+      "credits": 11777.318452380947,
       "assessment": "Assessed",
       "milestones": [
         {
@@ -75,7 +75,9 @@
       "capability": {
         "kind": "discipline",
         "mechanics": {}
-      }
+      },
+      "effect": "Precise regulation of ki through the whole body.",
+      "control": "Lower-flow channeling is steady through familiar movement; full channel output demands sustained regulation."
     },
     "flight": {
       "credits": 6000,
@@ -156,7 +158,7 @@
       "effect": "Project and direct ordinary ki attacks."
     },
     "ki-suppression": {
-      "credits": 3500,
+      "credits": 4610.263392857143,
       "assessment": "Assessed",
       "milestones": [
         {
@@ -179,7 +181,9 @@
       "capability": {
         "kind": "discipline",
         "mechanics": {}
-      }
+      },
+      "effect": "Regulates how much ki is expressed and detectable.",
+      "control": "Deliberate full-power bursts can be followed by renewed suppression. Hard surprises can disrupt the chosen level."
     },
     "uncontrolled-form": {
       "mode": "involuntary",
@@ -289,7 +293,7 @@
       "control": "Use separately from Sealed Channel; combining them triggered takeover."
     },
     "ki-sensing": {
-      "credits": 650,
+      "credits": 3028.395833333334,
       "assessment": "Assessed",
       "milestones": [
         {
@@ -312,7 +316,9 @@
       "capability": {
         "kind": "discipline",
         "mechanics": {}
-      }
+      },
+      "effect": "Tracks living ki signatures and relative output.",
+      "control": "Current readings are relative estimates. Concentration and familiarity improve tracking; the scouter supplies exact numbers."
     },
     "spirit-bomb": {
       "credits": 6,
@@ -724,6 +730,202 @@
       },
       "effect": "Turn an opening in the opponent’s attack into time to respond.",
       "control": "Timing and awareness create room for a response."
+    },
+    "instant-transmission": {
+      "credits": 2733.839285714286,
+      "assessment": "Recorded · S246 corrected month",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Settled signature from a stationary start."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Locks through ordinary movement."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Tracks a moving familiar signature with precise arrival."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Immediate transport to an already perceived anchor."
+        }
+      ],
+      "capability": {
+        "kind": "teleport",
+        "mechanics": {
+          "setup": [
+            45,
+            30,
+            15,
+            0
+          ],
+          "cost": [
+            6,
+            4,
+            2,
+            1
+          ],
+          "passengerFraction": 0.5
+        }
+      },
+      "artwork": "./ability-instant-transmission.webp",
+      "artworkAlt": "A shadow-faced fighter using Instant Transmission amid blue light."
+    },
+    "spirit-cloning": {
+      "credits": 761.6964285714287,
+      "assessment": "Recorded · S246 corrected month",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "One additional body for simple nearby actions."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Two additional bodies for distinct nearby tasks."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Three additional bodies with coordinated movement."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Four additional bodies for independent, mutually perceivable tasks."
+        }
+      ],
+      "capability": {
+        "kind": "duplication",
+        "mechanics": {
+          "copies": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "setup": [
+            45,
+            30,
+            15,
+            15
+          ],
+          "cost": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "upkeepPerCopy": [
+            1,
+            0.75,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      "artwork": "./ability-spirit-cloning.webp",
+      "artworkAlt": "Four matching shadow-faced fighters surrounded by blue energy."
+    },
+    "gigantification": {
+      "credits": 761.6964285714287,
+      "assessment": "Recorded · S246 corrected month",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Stationary expansion and balance."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Deliberate steps and turns."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Controlled movement while enlarged."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "Precise partial expansion."
+        }
+      ],
+      "capability": {
+        "kind": "growth",
+        "mechanics": {
+          "heightFactor": [
+            2,
+            3,
+            4,
+            6
+          ],
+          "setup": [
+            45,
+            30,
+            15,
+            15
+          ],
+          "cost": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "upkeepPerMinute": [
+            2,
+            1.5,
+            1,
+            0.5
+          ]
+        }
+      },
+      "artwork": "./ability-gigantification.webp",
+      "artworkAlt": "A shadow-faced fighter expanding to a towering size."
+    },
+    "spirit-healing": {
+      "credits": 815.2976190476192,
+      "assessment": "Recorded · S246 corrected month",
+      "milestones": [
+        {
+          "tier": "Learned",
+          "benefit": "Restores energy or repairs superficial wounds."
+        },
+        {
+          "tier": "Proficient",
+          "benefit": "Greater energy restoration with improved economy."
+        },
+        {
+          "tier": "Advanced",
+          "benefit": "Can repair one healable Major injury with viable tissue."
+        },
+        {
+          "tier": "Mastered",
+          "benefit": "More efficient healing and energy restoration."
+        }
+      ],
+      "capability": {
+        "kind": "healing",
+        "mechanics": {
+          "useSeconds": 45,
+          "restore": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "costPerRestored": [
+            1.5,
+            1.4,
+            1.2,
+            1
+          ],
+          "tissueCost": [
+            5,
+            4,
+            20,
+            10
+          ]
+        }
+      },
+      "artwork": "./ability-spirit-healing.webp",
+      "artworkAlt": "A shadow-faced healer directing green energy into a patient."
     }
   }
 }

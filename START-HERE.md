@@ -7,7 +7,7 @@ This repository is the public companion for Dragon Ball Stories.
 3. Read [Corrections](RETCONS.md) and the [approved scale](POWER-SCALE.md). The scale’s adaptations and calculations were approved together; older rejected fits are not active alternatives.
 4. For any response involving combat, follow the narrator guide's mandatory full reads of the authorised local operational rules, form prerequisites and NPC register, plus the current familiarity ledger and encounter records. This applies after compaction. The [public training and combat reference](COMBAT-AND-TRAINING.md) explains the system but cannot replace private operational records or saved rolls.
 
-Coverage: **S240 · 28 June, Age 854 · 11:30 · Hercule’s office, Conton City**. Namek training and the quarry mission are complete. TL-503 is freshly 100%; Yardrat duration awaits confirmation and departure is not booked. Current readings, calculated forms, resources and possession locations are maintained in the app data rather than duplicated here.
+Coverage: **S246 · Conton 28 July, Age 854 · 14:18 · Yardrat, TL-0042-045-A0503**. The first month of intensive training is complete. Current readings, calculated forms, resources and possession locations are maintained in the app data rather than duplicated here.
 
 The numerical reference is out of character. It does not unlock forms, expose private plans or replace the live custom-character assessments. Current NPC powers are labelled as measured or assessed; dated old readings remain history. Artwork is an appearance reference, not proof of current location or pristine clothing. Future designs remain private.
 

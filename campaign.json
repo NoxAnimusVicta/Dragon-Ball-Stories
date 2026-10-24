@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "revision": "S245-yardrat-assessment",
+  "revision": "S246-yardrat-month",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
-  "phase": "First steps on Yardrat",
+  "phase": "A month of Yardrat training",
   "started": true,
   "character": {
     "name": "Zero",
-    "age": 27,
+    "age": 28,
     "height": "5′8″",
     "heightMetric": "About 173 cm",
     "heightApproximate": true,
@@ -20,13 +20,13 @@
     "backstory": "Familiar with Dragon Ball through anime, manga, films and games before the crossing. No further personal background is recorded.",
     "arrival": "Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness. Zero later chose 1 January, the Conton-calendar arrival anniversary, as his birthday. His adopted age anchor is 26 years and 6 months at arrival; personal ageing includes chamber time.",
     "motivation": "Build independent strength, study on Namek and Yardrat, and gather a compatible Dragon Ball set to stabilise the Dark Factor into usable bodily power.",
-    "knowledge": "Retains Dragon Ball media knowledge without knowing every alternate history. Chronoa confirmed the Xenoverse stories correspond to the Patrol’s past. Zero knows the Dark Factor can take bodily control and that Kaioken destabilises its opened seal; its identity and the cause of his crossing remain unknown. He and Yamcha revived Krillin, Roshi, Tien and Chiaotzu in TL-503, then returned for a full conditional-history review. That course includes Namek/Yardrat training and a destructive Android crisis in Ages 767–768. Six weeks under a resident King Kai developed Kaioken, sensing and a small Spirit Bomb exercise. Zero defeated fruit-enhanced Nappa on Namek in TL-619, was rescued from Turles by Vegeta and Yamcha, and heard the completed mission review. He has disclosed his integration-wish intention to Chronoa, who offered help with wording. Guru released Zero’s own potential with the seal closed; the first scan was 69,497. Yamcha and the three visiting native fighters also received releases. Four weeks of training with Nail brought Zero to 77,000 before returning to Conton. Zero and Yamcha captured Brask and Rivet on TL-846 and secured their weapons and shuttle. The ship used a booked external passage; its operator remains unidentified. Continued training with Vegeta, King Kai and Yamcha brought Zero to 79,807. Hercule confirmed 100% integrity before departure. Zero and Yamcha have since arrived on Yardrat, reunited with Bulma, Krillin, Tien and Chiaotzu, and met Pybara and his assistant. Their friends arrived four days before them. Pybara has begun an aura assessment for Spirit Control instruction; Instant Transmission is a study goal.",
-    "limitations": "Supervised trainee; visits need dispatch approval. Kaioken ×2 has reached 60 seconds in controlled moving practice. Full sealed channel has reached three strenuous moving minutes; neither is a fixed timer or mastery. Combining them triggered a takeover and is not viable now. Ki sensing estimates relative current output, not exact numbers or hidden reserves. Spirit Spear now repeats a modest contact charge during moving practice but remains developing; no stable ki blade or absorption. Yardrat instruction has begun with an aura assessment; no Spirit Control method has been learned yet.",
-    "battlePower": 79807,
-    "powerReading": "Measured · 28 June, Age 854 · After morning training · Form totals calculated",
+    "knowledge": "Retains Dragon Ball media knowledge without knowing every alternate history. Chronoa confirmed the Xenoverse stories correspond to the Patrol’s past. Zero knows the Dark Factor can take bodily control and that Kaioken destabilises its opened seal; its identity and the cause of his crossing remain unknown. He and Yamcha revived Krillin, Roshi, Tien and Chiaotzu in TL-503, then returned for a full conditional-history review. That course includes Namek/Yardrat training and a destructive Android crisis in Ages 767–768. Six weeks under a resident King Kai developed Kaioken, sensing and a small Spirit Bomb exercise. Zero defeated fruit-enhanced Nappa on Namek in TL-619, was rescued from Turles by Vegeta and Yamcha, and heard the completed mission review. He has disclosed his integration-wish intention to Chronoa, who offered help with wording. Guru released Zero’s own potential with the seal closed; the first scan was 69,497. Yamcha and the three visiting native fighters also received releases. Four weeks of training with Nail brought Zero to 77,000 before returning to Conton. Zero and Yamcha captured Brask and Rivet on TL-846 and secured their weapons and shuttle. The ship used a booked external passage; its operator remains unidentified. Continued training with Vegeta, King Kai and Yamcha brought Zero to 79,807. Hercule confirmed 100% integrity before departure. Zero and Yamcha have since arrived on Yardrat, reunited with Bulma, Krillin, Tien and Chiaotzu, and met Pybara and his assistant. Their friends arrived four days before them. A month of intensive Yardrat instruction has developed Mastered Ki Control, Advanced Instant Transmission and sensing, and Proficient Cloning, Gigantification and Spirit Healing. Spirit Control is the Yardratian approach to Ki Control; each application is practised separately.",
+    "limitations": "Supervised trainee; visits need dispatch approval. Kaioken ×2 has reached 60 seconds in controlled moving practice. Full sealed channel has reached three strenuous moving minutes; neither is a fixed timer or mastery. Combining them triggered a takeover and is not viable now. Ki sensing tracks signatures and relative output with greater reach and precision. Spirit Spear now repeats a modest contact charge during moving practice but remains developing; no stable ki blade or absorption. Instant Transmission depends on a sensed living anchor. The four acquired Yardrat methods have distinct control demands.",
+    "battlePower": 97079,
+    "powerReading": "Measured · 28 July, Age 854 · After one month on Yardrat · Form totals calculated",
     "role": "Supervised Time Patrol trainee",
-    "condition": "Fed and rested after lunch, with mild soreness from morning training. Seal closed and intact; all forms and Kaioken inactive. Outfit, cape, scouter and concealed communicator worn. Travel bag and protected scroll aboard Kami’s ship on Yardrat; two Dragon Balls remain in Room 214. No Senzu carried.",
-    "ageMonths": 11,
+    "condition": "Tired from the final practice block of the first month on Yardrat; no lasting injury. Seal closed and intact; all forms and Kaioken inactive. Outfit, cape, scouter and concealed communicator worn. Travel bag and protected scroll aboard Kami’s ship; two Dragon Balls remain in Room 214. No Senzu carried.",
+    "ageMonths": 0,
     "appearanceHistory": [
       {
         "id": "arrival",
@@ -90,15 +90,15 @@
         "portraitAlt": "Zero using Kaioken in his current black-and-burgundy outfit, cape and red scouter, with clenched fists and a crimson aura. Illustrative rocky backdrop."
       }
     ],
-    "powerHistory": "Guru’s individual ×12 release produced 69,497 on 22 May. Four weeks with Nail brought the base to 77,000; the Brask engagement and subsequent training led to the current 79,807. Earlier readings remain dated in the journal. No repeated potential release, human Zenkai or automatic absorption of channel power. Form totals use the recorded integer base; they are not new transformed scans.",
+    "powerHistory": "Guru’s individual ×12 release produced 69,497 on 22 May. Four weeks with Nail brought the base to 77,000; the Brask engagement and subsequent training led to 79,807 on 28 June. The following month of intensive Yardrat training brought the measured base to 97,079 on 28 July. Earlier readings remain dated in the journal. No repeated potential release, human Zenkai or automatic absorption of channel power. Form totals use the recorded integer base; they are not new transformed scans.",
     "initialPower": 50
   },
   "story": {
     "era": "TL-0042-045-A0503 · Age 762",
-    "date": "Age 762 · Afternoon · Conton 28 June, Age 854 · 14:18",
+    "date": "Age 762 · Afternoon · Conton 28 July, Age 854 · 14:18",
     "location": "Yardrat · Training terrace · TL-0042-045-A0503",
-    "situation": "Zero and Yamcha have arrived on Yardrat and met Pybara. Their first gentle aura exercise is complete; Pybara has demonstrated an even flow through the whole body and offered lower pillars for a seated assessment.",
-    "pendingChoice": "Pybara asks whether Zero and Yamcha studied under the same teacher. The answer and seated pillar exercise are still ahead."
+    "situation": "Zero and Yamcha have completed their first month of intensive training on Yardrat. Zero has learned four Spirit Control applications and refined his Ki Control. Yamcha is resting on the terrace steps after practice.",
+    "pendingChoice": "Practice has ended for now; lunch is next."
   },
   "abilities": [
     {
@@ -130,16 +130,17 @@
       "id": "ki-control",
       "title": "Ki control",
       "summary": "Directs ki through movement, flight and energy release.",
-      "status": "Developing",
-      "effect": "Deliberate regulation of personal output supports loaded movement and transitions between techniques.",
+      "status": "Mastered",
+      "effect": "Precise regulation of ki through the whole body.",
       "control": "Lower-flow channeling is steady through familiar movement; full channel output demands sustained regulation.",
-      "development": "Recent King Kai and Nail instruction improved transitions and recovery.",
+      "development": "Yardrat practice refined energy flow, efficiency and transitions between separately learned applications.",
       "history": [
         "s020",
         "s063",
         "s149",
         "s212",
-        "s237"
+        "s237",
+        "s246"
       ],
       "artwork": "ability-ki-control.png",
       "artworkAlt": "Directs ki through movement, flight and energy release. Symbolic technique illustration.",
@@ -228,15 +229,16 @@
       "id": "ki-suppression",
       "title": "Power suppression",
       "summary": "Lowers emitted power and deliberately releases it for action.",
-      "status": "Practised",
-      "effect": "Regulates emitted power, commonly holding near half output during ordinary waking activity and familiar drills.",
+      "status": "Advanced",
+      "effect": "Regulates how much ki is expressed and detectable.",
       "control": "Deliberate full-power bursts can be followed by renewed suppression. Hard surprises can disrupt the chosen level.",
-      "development": "Deliberate full-power striking bursts followed by renewed suppression have been used in the field.",
+      "development": "Intensive control practice strengthened suppression alongside deliberate changes in output.",
       "history": [
         "s061",
         "s063",
         "s076",
-        "s077"
+        "s077",
+        "s246"
       ],
       "artwork": "ability-ki-suppression.png",
       "artworkAlt": "Lowers emitted power and deliberately releases it for action. Symbolic technique illustration.",
@@ -346,15 +348,16 @@
       "id": "ki-sensing",
       "title": "Ki sensing",
       "summary": "Locates familiar ki and estimates relative current output.",
-      "status": "Developing",
-      "effect": "Locates familiar ki and follows moving signatures, including familiar partially suppressed opponents.",
+      "status": "Advanced",
+      "effect": "Tracks living ki signatures and relative output.",
       "control": "Current readings are relative estimates. Concentration and familiarity improve tracking; the scouter supplies exact numbers.",
-      "development": "Close-range tracking helped counter Brask’s flash; moving tracking continues to improve.",
+      "development": "Yardrat practice developed greater reach and precision, supporting Instant Transmission locks.",
       "history": [
         "s151",
         "s212",
         "s222",
-        "s237"
+        "s237",
+        "s246"
       ],
       "artwork": "ability-ki-sensing.png",
       "artworkAlt": "Locates familiar ki and estimates relative current output. Symbolic technique illustration.",
@@ -440,6 +443,82 @@
       "artwork": "./ability-second-wind.png",
       "artworkAlt": "Draws on a reserve of endurance when exhaustion brings you down.",
       "history": []
+    },
+    {
+      "id": "instant-transmission",
+      "title": "Instant Transmission",
+      "category": "spirit-control",
+      "summary": "Locks onto a living ki signature and transports you beside it.",
+      "status": "Advanced",
+      "effect": "Locks onto a living ki signature and transports you beside it.",
+      "control": "Advanced control holds a moving familiar signature for precise repositioning.",
+      "development": "Learned during the first month of intensive Yardrat instruction.",
+      "history": [
+        "s246"
+      ],
+      "artwork": null,
+      "trainingRecord": {
+        "asOf": "28 July, Age 854",
+        "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+        "facts": []
+      }
+    },
+    {
+      "id": "spirit-cloning",
+      "title": "Cloning",
+      "category": "spirit-control",
+      "summary": "Divides your power among independently coordinated copies.",
+      "status": "Proficient",
+      "effect": "Divides your power among independently coordinated copies.",
+      "control": "Copies share your Endurance and divide your available power equally.",
+      "development": "Learned during the first month of intensive Yardrat instruction.",
+      "history": [
+        "s246"
+      ],
+      "artwork": null,
+      "trainingRecord": {
+        "asOf": "28 July, Age 854",
+        "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+        "facts": []
+      }
+    },
+    {
+      "id": "gigantification",
+      "title": "Gigantification",
+      "category": "spirit-control",
+      "summary": "Expands your body through controlled ki.",
+      "status": "Proficient",
+      "effect": "Expands your body through controlled ki.",
+      "control": "Deliberate steps and turns while enlarged; physical reach follows your body.",
+      "development": "Learned during the first month of intensive Yardrat instruction.",
+      "history": [
+        "s246"
+      ],
+      "artwork": null,
+      "trainingRecord": {
+        "asOf": "28 July, Age 854",
+        "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+        "facts": []
+      }
+    },
+    {
+      "id": "spirit-healing",
+      "title": "Spirit Healing",
+      "category": "spirit-control",
+      "summary": "Restores another person’s energy or repairs accessible wounds through touch.",
+      "status": "Proficient",
+      "effect": "Restores another person’s energy or repairs accessible wounds through touch.",
+      "control": "Choose energy restoration or tissue repair for each application.",
+      "development": "Learned during the first month of intensive Yardrat instruction.",
+      "history": [
+        "s246"
+      ],
+      "artwork": null,
+      "trainingRecord": {
+        "asOf": "28 July, Age 854",
+        "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+        "facts": []
+      }
     }
   ],
   "inventory": [
@@ -776,7 +855,7 @@
       "title": "Yamcha",
       "summary": "Training partner; studying with Zero on Yardrat.",
       "status": "Current companion",
-      "battlePower": 30051,
+      "battlePower": 34515,
       "canTransform": true,
       "art": {
         "appearance": [
@@ -805,7 +884,7 @@
           "facts": [
             {
               "label": "Current assessed base",
-              "value": "30,051 · 28 June reference; latest training assessment"
+              "value": "34,515 · 28 July assessment; unscanned"
             },
             {
               "label": "Latest scan",
@@ -813,13 +892,13 @@
             },
             {
               "label": "Kaioken",
-              "value": "×2 · 60,103 rounded from assessed capacity; not a scan"
+              "value": "×2 · Advanced"
             }
           ]
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Defeated Raditz and helped revive his four friends; later rescued Zero from Turles and provided the Senzu. Guru’s release was measured at 26,431, followed by four weeks with Nail and continued Conton training. Kaioken ×2 helped him disarm and defeat Rivet. His recent focus is Kaioken economy and investigating Alpha after hearing about other versions of himself; no higher Kaioken or Alpha unlock. Krillin has passed the inquiry to instructor contacts, with no appointment confirmed. His apartment move is complete and one separate commendation remains unspent. The 60,103 Kaioken figure rounds the carried assessment of 60,102.9191575; it is not a new measurement. He travelled with Zero for a planned stay of a few months, left his bag aboard Kami’s ship and completed the first gentle aura exercise beside him. Pybara’s seated assessment is next.",
+          "text": "Defeated Raditz, helped revive his friends and later rescued Zero from Turles. Guru’s release was measured at 26,431, followed by training with Nail and in Conton. His first month on Yardrat developed Mastered Ki Control, Advanced Kaioken ×2 and Proficient Instant Transmission, Cloning and Gigantification. He has also pursued Alpha research; an Alpha transformation has not occurred. Krillin’s instructor inquiry has no confirmed appointment. His apartment move is complete and one commendation remains unspent. He is resting on the terrace steps after practice with Zero.",
           "facts": [
             {
               "label": "Current location",
@@ -837,7 +916,8 @@
         "s238",
         "s242",
         "s244",
-        "s245"
+        "s245",
+        "s246"
       ],
       "worldGroup": "toki-toki-city"
     },
@@ -1578,7 +1658,7 @@
     {
       "id": "pybara-tl503",
       "title": "Pybara",
-      "summary": "Yardratian teacher assessing Zero and Yamcha.",
+      "summary": "Yardratian teacher guiding Zero and Yamcha’s Spirit Control studies.",
       "status": "Met · Instructor",
       "context": "TL-0042-045-A0503",
       "worldGroup": "timeline-503",
@@ -1595,7 +1675,7 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Introduced by Krillin at the training terrace. He asked both visitors to raise and draw in their auras, then demonstrated an even body-wide flow. He has offered lower pillars for a seated assessment and asked whether they share a teacher.",
+          "text": "Introduced by Krillin at the training terrace. Following the initial aura assessment, he has guided a month of intensive Ki Control and individual Yardrat technique practice.",
           "facts": [
             {
               "label": "Current location",
@@ -1606,7 +1686,8 @@
       ],
       "history": [
         "s244",
-        "s245"
+        "s245",
+        "s246"
       ]
     },
     {
@@ -2066,8 +2147,8 @@
     {
       "id": "yardrat-tl503",
       "title": "Yardrat",
-      "summary": "Spirit Control study destination; Zero and Yamcha have met the teachers.",
-      "status": "Visiting · Initial assessment",
+      "summary": "Spirit Control study destination; first month of training complete.",
+      "status": "Visiting · Training",
       "parentId": "timeline-503",
       "context": "TL-503 · Planet Yardrat",
       "sections": [
@@ -2081,7 +2162,7 @@
         },
         {
           "title": "Current circumstances",
-          "text": "The native expedition arrived four days before Zero and Yamcha. Pybara has welcomed their planned stay of a few months and begun assessing their control. The initial aura exercise is complete; the seated exercise is still ahead."
+          "text": "Zero and Yamcha have completed their first month of intensive study with the Yardratian teachers during their planned stay of a few months. Kami’s ship remains their accommodation."
         }
       ]
     },
@@ -2267,12 +2348,13 @@
         },
         {
           "title": "Current circumstances",
-          "text": "Zero and Yamcha are with Pybara, his assistant and the native Krillin, Tien and Chiaotzu. The first aura exercise is complete. Pybara’s question and the proposed seated assessment await Zero’s response."
+          "text": "Zero and Yamcha have finished the current practice block after a month of training. Yamcha is resting on the steps; lunch is next."
         }
       ],
       "history": [
         "s244",
-        "s245"
+        "s245",
+        "s246"
       ]
     }
   ],
@@ -2280,14 +2362,14 @@
     {
       "id": "field-training",
       "title": "Field service and training",
-      "summary": "Namek and quarry work complete; specialist study has begun on Yardrat.",
+      "summary": "First month of intensive Yardrat instruction complete.",
       "status": "Supervised field trainee",
-      "nextStep": "Continue Pybara’s initial assessment.",
+      "nextStep": "Rest after practice and decide how to spend the remaining visit.",
       "completed": false,
       "sections": [
         {
           "title": "Purpose",
-          "text": "Namek and quarry work complete; specialist study has begun on Yardrat."
+          "text": "First month of intensive Yardrat instruction complete."
         },
         {
           "title": "People involved",
@@ -2295,15 +2377,15 @@
         },
         {
           "title": "Progress",
-          "text": "Four weeks with Nail, the Brask/Rivet capture and a further week of Vegeta mornings, King Kai afternoons and partner practice are complete. Two routine cleanup assignments were completed during that week. No new commendation, promotion or independent travel clearance. The authorised Yardrat visit has now begun with Pybara’s initial aura assessment.",
+          "text": "Following Namek and Conton training, Zero and Yamcha completed a month of intensive instruction on Yardrat. Zero has Advanced Instant Transmission and Proficient Cloning, Gigantification and Spirit Healing; both have Mastered Ki Control.",
           "facts": [
             {
-              "label": "Base",
-              "value": "79,807 measured · 28 June"
+              "label": "Zero · Measured Base",
+              "value": "97,079 · 28 July"
             },
             {
-              "label": "Skills",
-              "value": "Kaioken ×2, developing sensing and Spirit Spear"
+              "label": "Yamcha · Assessed Base",
+              "value": "34,515 · Unscanned"
             }
           ]
         },
@@ -2318,7 +2400,8 @@
         "s228",
         "s237",
         "s240",
-        "s245"
+        "s245",
+        "s246"
       ]
     },
     {
@@ -2474,14 +2557,14 @@
     {
       "id": "future-training",
       "title": "Namek and Yardrat training",
-      "summary": "Namek complete; first Spirit Control assessment underway on Yardrat.",
+      "summary": "First month of intensive Yardrat instruction complete.",
       "status": "Yardrat study",
-      "nextStep": "Answer Pybara and begin the seated pillar assessment.",
+      "nextStep": "Rest after practice and decide how to spend the remaining visit.",
       "completed": false,
       "sections": [
         {
           "title": "Purpose",
-          "text": "Namek complete; first Spirit Control assessment underway on Yardrat."
+          "text": "First month of intensive Yardrat instruction complete."
         },
         {
           "title": "People involved",
@@ -2489,11 +2572,21 @@
         },
         {
           "title": "Progress",
-          "text": "After four weeks with Nail and further training in Conton, Zero and Yamcha arranged a stay of a few months on Yardrat and departed on 28 June. Their bags are aboard Kami’s ship. Pybara has assessed gentle aura raising and retraction and demonstrated body-wide flow. Instant Transmission remains a goal; no new technique or training award has been earned yet."
+          "text": "Following Namek and Conton training, Zero and Yamcha completed a month of intensive instruction on Yardrat. Zero has Advanced Instant Transmission and Proficient Cloning, Gigantification and Spirit Healing; both have Mastered Ki Control.",
+          "facts": [
+            {
+              "label": "Zero · Measured Base",
+              "value": "97,079 · 28 July"
+            },
+            {
+              "label": "Yamcha · Assessed Base",
+              "value": "34,515 · Unscanned"
+            }
+          ]
         },
         {
           "title": "Dependencies",
-          "text": "The seated assessment and Pybara’s question are the immediate next step."
+          "text": "The planned visit continues; the next training block has not yet begun."
         }
       ],
       "history": [
@@ -2502,7 +2595,8 @@
         "s240",
         "s242",
         "s244",
-        "s245"
+        "s245",
+        "s246"
       ]
     },
     {
@@ -2617,7 +2711,7 @@
         },
         {
           "title": "Progress",
-          "text": "Yamcha is pursuing control and his own Kaioken practice while seeking an Alpha-capable instructor. Krillin passed the inquiry to his contacts; no teacher or appointment is confirmed."
+          "text": "Yamcha’s month of Yardrat study brought his Ki Control to Mastered and Kaioken ×2 to Advanced. His Alpha work remains research and release preparation. Krillin’s inquiry has not produced a confirmed teacher appointment."
         },
         {
           "title": "Dependencies",
@@ -2626,7 +2720,8 @@
       ],
       "history": [
         "s237",
-        "s238"
+        "s238",
+        "s246"
       ]
     }
   ],
@@ -4517,9 +4612,16 @@
       "summary": "Zero and Yamcha complete the gentle aura exercise; Zero keeps the seal closed. Pybara demonstrates even body-wide flow, offers lower pillars for seated practice and asks whether they share a teacher. The answer and seated exercise remain pending.",
       "date": "28 June, Age 854 · 14:18 Conton / Age 762 · Afternoon · Yardrat, TL-0042-045-A0503",
       "status": "Recorded"
+    },
+    {
+      "id": "s246",
+      "title": "A month on Yardrat",
+      "summary": "Intensive instruction develops Zero’s Ki Control to Mastered, Instant Transmission to Advanced, and Cloning, Gigantification and Spirit Healing to Proficient. His measured base is 97,079; Yamcha’s current assessed base is 34,515. The month closes on the training terrace, with Yamcha resting and lunch next.",
+      "date": "Age 762 · Afternoon · Conton 28 July, Age 854 · 14:18 · Yardrat, TL-0042-045-A0503",
+      "status": "Recorded"
     }
   ],
-  "recordedThrough": "S245 · Conton 28 June, Age 854 · 14:18 · Yardrat aura assessment",
+  "recordedThrough": "S246 · First month on Yardrat · Corrected training record",
   "rewards": {
     "set": "TP-RS-647",
     "heldStars": [
@@ -4529,6 +4631,6 @@
     "unspentCommendations": 0,
     "wishMade": false,
     "storage": "Room 214 · Bottom drawer of bedside cabinet",
-    "asOf": "28 June, Age 854"
+    "asOf": "28 July, Age 854"
   }
 }

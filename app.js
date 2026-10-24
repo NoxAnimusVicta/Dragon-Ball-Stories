@@ -295,6 +295,7 @@
     {id:'forms',title:'Transformation & Amplification'},
     {id:'ki',title:'Ki Techniques'},
     {id:'physical',title:'Physical Techniques'},
+    {id:'spirit-control',title:'Spirit Control Techniques'},
     {id:'discipline',title:'Discipline'},
     {id:'magic',title:'Magical Techniques'}
   ];
@@ -370,7 +371,29 @@
       if(n>=60){const rounded=Math.round(n*10)/10;return `${Math.floor(rounded/60)} min ${creditText(rounded%60)} sec`;}
       return `${n.toLocaleString('en',{maximumFractionDigits:n<1?4:2})} sec`;
     };
-    if(profile.kind==='contact' && index>=0) {
+    if(profile.kind==='teleport' && index>=0) {
+      add('Activation Time',duration(timer(m.setup)));
+      add('Endurance Cost',endurance(coefficient(m.cost)));
+      add('Range','Senseable Living Ki');
+      add('Practised Passenger','+'+creditText(m.passengerFraction*100)+'% Cost Each');
+    } else if(profile.kind==='duplication' && index>=0) {
+      add('Additional Bodies',String(m.copies[index]));
+      add('Creation Time',duration(timer(m.setup)));
+      add('Endurance Cost',endurance(coefficient(m.cost)));
+      add('Drain Per Copy',endurance(coefficient(m.upkeepPerCopy))+' / min');
+    } else if(profile.kind==='growth' && index>=0) {
+      add('Maximum Height',factor(m.heightFactor[index]));
+      add('Activation Time',duration(timer(m.setup)));
+      add('Activation Cost',endurance(coefficient(m.cost)));
+      add('Endurance Drain',endurance(coefficient(m.upkeepPerMinute))+' / min');
+    } else if(profile.kind==='healing' && index>=0) {
+      add('Application Time',duration(m.useSeconds));
+      add('Energy Restored','Up to '+endurance(m.restore[index])+' Endurance');
+      add('Donation Cost',endurance(coefficient(m.costPerRestored))+' Per Endurance Restored');
+      add('Tissue Repair',index<2?'Superficial Wound':'One Healable Major Injury');
+      add('Repair Cost',endurance(m.tissueCost[index]*refinement));
+      add('Range','Touch');
+    } else if(profile.kind==='contact' && index>=0) {
       const peak=m.ceiling[index],setup=timer(m.setup),total=timer(m.fullTime);
       add('Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
       add('Base Endurance Damage',endurance(m.damage+(index===3?(m.masteryDamageBonus||0):0)));
@@ -457,7 +480,7 @@
     const forms=unlockedForms().filter(f=>(ability.formIds || []).includes(f.id));
     const block=(title,text)=>text?`<section class="content-section"><h3>${heading(title)}</h3><p>${escape(text)}</p></section>`:'';
     const history=ability.trainingRecord;
-    dialog.innerHTML=`<header class="ability-detail-header"><div class="ability-detail-heading"><img src="${escape(techniqueArt(ability))}" alt=""><div><span class="ability-category">${escape(abilityGroup(ability).title)}</span><h2 id="ability-dialog-title">${heading(techniqueTitle(ability))}</h2></div></div><button class="icon-button close-dialog" aria-label="Close technique details" autofocus>×</button></header><div class="ability-detail-body" tabindex="0" role="region" aria-label="Technique information">${learningDetails(ability)}${techniqueCapabilities(ability)}${block('Effect',ability.effect)}${forms.length?`<section class="content-section"><h3>Stages & Power</h3><dl class="power-level-list">${forms.map(f=>`<div><dt>${escape(f.name)}${/[×x]\s*\d/i.test(f.name)?'':`<span>×${escape(f.multiplier)}</span>`}</dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl></section>`:''}${block('Appearance',ability.appearance)}${block('Control & compatibility',ability.control)}<section class="content-section"><h3>Development</h3><p>${escape(ability.development)}</p>${historyLinks(ability.history)}${history?`<details class="record-history"><summary>Detailed Training Record · ${escape(history.asOf)}</summary><p>${escape(history.text)}</p>${history.facts?.length?`<dl class="definition-grid">${history.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>`:''}</details>`:''}</section></div>`;
+    dialog.innerHTML=`<header class="ability-detail-header"><div class="ability-detail-heading">${techniqueArt(ability)?`<img src="${escape(techniqueArt(ability))}" alt="">`:''}<div><span class="ability-category">${escape(abilityGroup(ability).title)}</span><h2 id="ability-dialog-title">${heading(techniqueTitle(ability))}</h2></div></div><button class="icon-button close-dialog" aria-label="Close technique details" autofocus>×</button></header><div class="ability-detail-body" tabindex="0" role="region" aria-label="Technique information">${learningDetails(ability)}${techniqueCapabilities(ability)}${block('Effect',ability.effect)}${forms.length?`<section class="content-section"><h3>Stages & Power</h3><dl class="power-level-list">${forms.map(f=>`<div><dt>${escape(f.name)}${/[×x]\s*\d/i.test(f.name)?'':`<span>×${escape(f.multiplier)}</span>`}</dt><dd>${escape(exactPower(multiplyPower(data.character.battlePower,f.multiplier)))}</dd></div>`).join('')}</dl></section>`:''}${block('Appearance',ability.appearance)}${block('Control & compatibility',ability.control)}<section class="content-section"><h3>Development</h3><p>${escape(ability.development)}</p>${historyLinks(ability.history)}${history?`<details class="record-history"><summary>Detailed Training Record · ${escape(history.asOf)}</summary><p>${escape(history.text)}</p>${history.facts?.length?`<dl class="definition-grid">${history.facts.map(f=>definition(f.label,f.value,f.note)).join('')}</dl>`:''}</details>`:''}</section></div>`;
     dialog.showModal();
   }
   function scalePage() {

@@ -2,9 +2,9 @@
 
 [Open the companion](https://noxanimusvicta.github.io/Dragon-Ball-Stories/)
 
-Zero’s read-only Dragon Ball Isekai companion is current through **S245 · Conton 28 June, Age 854 · 14:18**. Zero and Yamcha are at the training terrace on Yardrat, TL-0042-045-A0503, local Age 762 afternoon. Their first aura exercise with Pybara is complete; his question and the seated assessment remain pending.
+Zero’s read-only Dragon Ball Isekai companion is current through **S246 · Conton 28 July, Age 854 · 14:18**. Zero and Yamcha are at the training terrace on Yardrat, TL-0042-045-A0503, local Age 762 afternoon. Their first month of intensive Yardrat training is complete; all four acquired Spirit Control applications have individual progress and artwork.
 
-The [current continuity](CURRENT-CONTINUITY.md) is generated from [campaign.json](campaign.json), which owns the current readings, belongings, skills and 245-entry journal. Earlier numbers in dated events remain historical. The [approved power scale](POWER-SCALE.md) contains the shared forms, fusion formula, all 24 counterpart cases, source differences and accepted scene adaptations. It is a reader reference, not a list of Zero’s unlocked abilities.
+The [current continuity](CURRENT-CONTINUITY.md) is generated from [campaign.json](campaign.json), which owns the current readings, belongings, skills and 246-entry journal. Earlier numbers in dated events remain historical. The [approved power scale](POWER-SCALE.md) contains the shared forms, fusion formula, all 24 counterpart cases, source differences and accepted scene adaptations. It is a reader reference, not a list of Zero’s unlocked abilities.
 
 ## App sections
 

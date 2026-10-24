@@ -35,6 +35,7 @@ Every established ability, including fundamentals, has exactly one compact icon-
 - `forms` — **Transformation & Amplification**: transformations, channel states and output-amplifying techniques such as Kaioken and Kiai.
 - `ki` — **Ki Techniques**: released energy attacks such as Ki Blasts, Spirit Bomb and a future Kamehameha.
 - `physical` — **Physical Techniques**: named contact attacks, including Spirit Spear and future Wolf Fang Fist or Dragon Fist. Ki or spirit-energy use does not move a contact attack into a second group.
+- `spirit-control` — **Spirit Control Techniques**: individually learned Yardrat applications: Instant Transmission, Cloning, Gigantification and Spirit Healing. Ki Control remains in Discipline, with no parent Spirit Control skill.
 - `discipline` — **Discipline**: Physical Combat, sensing, suppression, ki control and flight; advanced practices such as future divine-ki handling also fit here. This category does not imply beginner difficulty or low mastery.
 - `magic` — **Magical Techniques**: configured for future learned magic, hidden while empty. Do not add a spell or placeholder to reveal it.
 
@@ -169,3 +170,9 @@ Path to Mastery retains its existing collapsed placement and technique-specific 
 Combat Info belongs beneath Character Info in story responses under NARRATOR-GUIDE.md, not a new generic rules panel in the app. Narrative formatting and app presentation use the same one-decimal Endurance convention.
 
 Flight shows Max Speed · Base in its current details, derived from current recorded base and the acquired travel profile. This is a base-state travel benchmark, not a live combat-speed claim or another mastery bonus. Keep formulas in the background reference. Audit tier progress at equal output as well as each tier’s maximum; a larger maximum may cost more without representing worse efficiency. Kiai full-output upkeep explicitly follows2.0/1.5/1.0/0.5; preserve buildup and power caps.
+
+## Yardrat applications — S246
+
+Spirit Control Techniques is a presentation group for Instant Transmission, Cloning, Gigantification and Spirit Healing. Spirit Control is the Yardratian approach to Ki Control, not a fifth skill or shared progress pool. Each acquired application has its own cumulative progress, current capabilities and Path to Mastery. Keep Ki Control in Discipline. The private YARDRAT-MASTERY-PROFILES.json projects the method numbers recorded in YARDRAT-TRAINING.md through build.py; do not invent stats in UI prose. Public output includes acquired capability fields only, never hidden access gates or the NPC skill register. Preserve the corrected S246 totals; do not rerun the retired training resolver.
+
+When artwork is pending, omit the image element rather than render a broken URL or reuse another technique’s illustration. The user is supplying the four S246 images. Add the final assets to the manifest and existing artwork fields when supplied; artwork does not change progress.
