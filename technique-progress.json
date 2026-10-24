@@ -204,10 +204,10 @@
             0
           ],
           "upkeepPerMinute": [
-            0,
-            0,
-            0,
-            0
+            8,
+            4,
+            2,
+            1
           ]
         }
       }
@@ -448,19 +448,19 @@
       "milestones": [
         {
           "tier": "Learned",
-          "benefit": "One reserve restores 8–12 Endurance."
+          "benefit": "1 reserve, each restoring 10 Endurance."
         },
         {
           "tier": "Proficient",
-          "benefit": "A deeper reserve restores 12–18 Endurance."
+          "benefit": "1 reserve, each restoring 15 Endurance."
         },
         {
           "tier": "Advanced",
-          "benefit": "Two reserves, each restoring 12–18 Endurance."
+          "benefit": "2 reserves, each restoring 15 Endurance."
         },
         {
           "tier": "Mastered",
-          "benefit": "Two deeper reserves, each restoring 16–24 Endurance."
+          "benefit": "2 reserves, each restoring 20 Endurance."
         }
       ],
       "capability": {
@@ -473,16 +473,16 @@
             2
           ],
           "restoreMin": [
-            8,
-            12,
-            12,
-            16
+            10,
+            15,
+            15,
+            20
           ],
           "restoreMax": [
-            12,
-            18,
-            18,
-            24
+            10,
+            15,
+            15,
+            20
           ],
           "cooldownHours": 24,
           "cost": 0

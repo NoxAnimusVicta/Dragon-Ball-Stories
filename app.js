@@ -372,7 +372,7 @@
       if(index>=0 && m.setup) add('Activation Time',duration(timer(m.setup)));
       const coefficient=v=>Array.isArray(v)?timer(v):v;
       if(index>=0 || profile.kind==='involuntary') {
-        add('Endurance Drain',stat(coefficient(m.upkeepPerMinute))+' / min');
+        add('Endurance Drain',m.upkeepPerMinute == null ? 'Control Rate Pending' : stat(coefficient(m.upkeepPerMinute))+' / min');
       }
       if(profile.kind==='kaioken') note='Sustained use strains the body. Brief bursts drain Endurance only while active.';
       else if(profile.kind==='form') note='Consciously regulate the borrowed power flowing through the seal.';
@@ -392,9 +392,8 @@
       note='Emphasises this response within your defence. Available openings and familiarity with the opponent still matter.';
     } else if(profile.kind==='recovery' && index>=0) {
       add('Available Reserves',String(m.uses[index]));
-      add('Per Recovery',`${m.restoreMin[index]}–${m.restoreMax[index]} Endurance`);
+      add('Per Recovery',`${m.restoreMin[index]} Endurance`);
       add('Recharge',`${m.cooldownHours} hours per spent reserve`);
-      add('Endurance Cost','0');
       note='Triggers reflexively at zero Endurance when the body can still recover. Each use has its own recharge clock.';
     } else if(profile.kind==='supplied') {
       const i=Math.max(0,index),growth=1+Math.log2(1+Math.max((p.credits||0)-10000,0)/10000),peak=m.ceiling[i]*growth;
