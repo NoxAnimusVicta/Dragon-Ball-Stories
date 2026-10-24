@@ -1,6 +1,6 @@
 # Training & Combat reference
 
-Campaign rules · Revision 9, Adopted Allied Injury & Charge Coordination · S245 · 23 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.
+Campaign rules · Revision 9 draw calibration · Narrative Timing Adopted · S245 · 24 October 2026. Reference rules do not award progress or unlock abilities. Timing calibrations and endurance accounting remain distinct from demonstrated capability.
 
 Public reader summary. The authorised local TRAINING-AND-TECHNIQUE-PROPOSAL.md is the full operational owner; the narrator must read it, the form prerequisites and NPC combat register in full before every response involving combat, including after compaction. This summary cannot replace current private state or saved rolls.
 
@@ -159,6 +159,14 @@ Learned Cannon remains situational:300seconds regular preparation,480seconds tot
 
 
 ## Charge Windows & Beam Clashes
+
+Adopted24October2026: actual fighting establishes elapsed time. Whole-fight simulator timing, fixed attack cadence and automatic elapsed-time damage fractions are outdated. No further simulations; existing private contested rolls and numerical profiles remain. No compulsory fight duration, pauses or ordinary combo before a technique.
+
+Preparation permits release, not guaranteed delivery. A quick prepared technique can exploit a real opening, while aim, approach, contact and a clear path remain contestable. Ordinary combinations use their bounded complete profile; reduced delivery requires actual interruption or glancing contact, not seconds divided by a fictional sequence duration. Count the same guard or lost contact once.
+
+Pursuit, feints, evasions, knockback, pressure and positioning determine the actual interval. Resolve meaningful attempted attacks with their existing rolls and costs; descriptive pressure cannot hide free attacks. Spirit Spear can be checked at the approach, wrist or palm when feasible, without automatic defence or a new repetition penalty. Repeated clean hits may end a fight quickly.
+
+Track one shared encounter clock and the reason for each consequential elapsed interval. Overlapping protection and charging consume the same time. Retain actual interruption points, remaining preparation and already-paid expenditure. Forms pay their single ongoing drain for actual active time; attacks keep their own costs, with no extra generic exertion surcharge. Kiai and Cannon remain unchanged. Save that timing basis through continuations rather than deriving time from exchange count.
 
 An observed opposing transformation prompts tactical reassessment outside beam clashes as well as within them. A fighter may answer with an actually available form, using real reaction and activation time, existing costs and a workable opening. Ongoing incompatible tasks, interruption and insufficient time still matter; entering a new form is not protected and does not refill Endurance. A committed activation remains tracked if its prompting clash ends. This neither grants a matching form nor forces every fighter to transform; player-controlled escalation remains the player’s choice. Kiai, power scaling and positioning are unchanged.
 
