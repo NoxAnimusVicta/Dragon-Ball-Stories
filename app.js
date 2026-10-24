@@ -380,7 +380,7 @@
     } else if(profile.kind==='ordinary' && index>=0) {
       add('Attack Output',factor(m.factor));add('Base Endurance Damage',creditText(m.damage[index]));
       add('Endurance Cost',stat(m.cost[index]*refinement));
-      note=ability.id==='combat-basics'?'Per physical combination: linked punches, kicks and close-range strikes.':'Per ki volley: a controlled sequence of energy shots.';
+      note=ability.id==='combat-basics'?'Per attack: a combination or a heavy strike.':'Per attack: a volley, concentrated blast or ordinary beam.';
     } else if(profile.kind==='kiai' && index>=0) {
       add('Maximum Boost','+'+creditText(m.bonus[index]*100)+'% Form Power');
       add('Full Buildup',creditText(m.fullCharge[index])+' sec');
@@ -682,6 +682,10 @@
       try { const response=await fetch('./technique-progress.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const progress=await response.json();if(progress.schemaVersion===1 && progress.records) techniqueProgress=progress;} } catch { /* Unknown progress is never displayed as zero. */ }
       for(const [id,record] of Object.entries(techniqueProgress?.records || {})) {
         if(record.entry && record.entry.id===id && !data.abilities.some(a=>a.id===id)) data.abilities.push(record.entry);
+        const ability=data.abilities.find(a=>a.id===id);
+        if(ability) for(const field of ['summary','effect','control']) {
+          if(typeof record[field]==='string') ability[field]=record[field];
+        }
       }
       validate(data);
       portraitUrl = safePortrait(data.character.portrait);

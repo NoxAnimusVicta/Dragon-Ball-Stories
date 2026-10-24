@@ -8,19 +8,19 @@
       "milestones": [
         {
           "tier": "Learned",
-          "benefit": "Reliable combinations, footwork and basic defence."
+          "benefit": "Reliable strikes, footwork and basic defence."
         },
         {
           "tier": "Proficient",
-          "benefit": "Cleaner combinations with less wasted effort."
+          "benefit": "Cleaner attacks with less wasted effort."
         },
         {
           "tier": "Advanced",
-          "benefit": "Stronger ordinary combinations and better endurance economy."
+          "benefit": "Stronger ordinary attacks and better Endurance economy."
         },
         {
           "tier": "Mastered",
-          "benefit": "Best standard combination efficiency; defensive rotations keep their own progress."
+          "benefit": "Refined ordinary striking and efficiency; defensive rotations retain their own progress."
         }
       ],
       "capability": {
@@ -40,7 +40,11 @@
             0.5
           ]
         }
-      }
+      },
+      "title": "Physical Combat",
+      "category": "physical",
+      "summary": "Close-range strikes, from quick combinations to heavy blows.",
+      "effect": "Fight with punches, kicks and close-range strikes. A flurry of lighter blows, a few heavy hits or one committed heavy strike use the same damage and Endurance cost per attack."
     },
     "ki-control": {
       "credits": 4800,
@@ -104,15 +108,15 @@
         },
         {
           "tier": "Proficient",
-          "benefit": "Improved volley control and endurance economy."
+          "benefit": "Improved placement and Endurance economy."
         },
         {
           "tier": "Advanced",
-          "benefit": "More effective ordinary volleys with less wasted energy."
+          "benefit": "More effective ordinary blasts with less wasted energy."
         },
         {
           "tier": "Mastered",
-          "benefit": "Best standard volley impact and economy; charged shots still require preparation."
+          "benefit": "Refined ordinary blast impact, placement and economy."
         }
       ],
       "capability": {
@@ -132,7 +136,11 @@
             0.85
           ]
         }
-      }
+      },
+      "title": "Ki Blasts",
+      "control": "Moving releases, concentrated shots and short volleys use the same ordinary attack profile. Preset curves follow the chosen path rather than tracking a target.",
+      "summary": "Energy shots, volleys and concentrated blasts or beams.",
+      "effect": "Release ordinary ki as a volley, a concentrated blast or an unnamed beam. Mouth-fired blasts also belong here when the user can perform them. These variations use the same damage and Endurance cost per attack; distinct techniques such as Kamehameha have their own profiles."
     },
     "ki-suppression": {
       "credits": 3500,
@@ -501,7 +509,7 @@
         "category": "discipline",
         "summary": "Slip past attacks and create space.",
         "effect": "Use footwork and a viable escape route to evade incoming attacks. Compatible mobile preparation can continue through a successful dodge.",
-        "development": "Dedicated practice develops this defensive rotation independently of Combat Fundamentals.",
+        "development": "Dedicated practice develops this defensive rotation independently of Physical Combat.",
         "history": []
       },
       "milestones": [
@@ -546,7 +554,7 @@
         "category": "discipline",
         "summary": "Brace against pressure and hold your ground.",
         "effect": "Hold a defensive line with stable guards. A successful guard checks force but can transmit wear; available limbs and actual power determine what can be held.",
-        "development": "Dedicated practice develops this defensive rotation independently of Combat Fundamentals.",
+        "development": "Dedicated practice develops this defensive rotation independently of Physical Combat.",
         "history": []
       },
       "milestones": [
@@ -591,7 +599,7 @@
         "category": "discipline",
         "summary": "Turn incoming attacks away from their path.",
         "effect": "Redirect a suitable incoming attack into the environment or another enemy. The redirected attack retains its energy and the next recipient can defend.",
-        "development": "Dedicated practice develops this defensive rotation independently of Combat Fundamentals.",
+        "development": "Dedicated practice develops this defensive rotation independently of Physical Combat.",
         "history": []
       },
       "milestones": [
@@ -636,7 +644,7 @@
         "category": "discipline",
         "summary": "Read an opening and answer immediately.",
         "effect": "Use a counter opportunity for a fitting immediate attack or disengagement. A reply uses ordinary accuracy and actual preparation; movement still takes time.",
-        "development": "Dedicated practice develops this defensive rotation independently of Combat Fundamentals.",
+        "development": "Dedicated practice develops this defensive rotation independently of Physical Combat.",
         "history": []
       },
       "milestones": [
