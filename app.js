@@ -376,12 +376,12 @@
       add('Base Endurance Damage',endurance(m.damage+(index===3?(m.masteryDamageBonus||0):0)));
       add('Endurance Cost',`${endurance(m.costCoefficient*m.regular**2*m.economy[index]*refinement)} → ${endurance(m.costCoefficient*peak**2*m.economy[index]*refinement)}`);
       add('Regular Preparation',duration(setup));add('Full Charge · Total',duration(total));
-      add('Mastered Charge Limit',factor(m.ceiling.at(-1)));
 
     } else if(['kaioken','form','involuntary'].includes(profile.kind)) {
       add('Power Multiplier',factor(m.factor));
       if(index>=0 && m.setup) add('Activation Time',duration(timer(m.setup)));
       const rate=v=>Array.isArray(v)?coefficient(v):v;
+      if(index>=0 && m.activationCost) add('Activation Cost',endurance(rate(m.activationCost))+' Endurance');
       if(index>=0 || profile.kind==='involuntary') {
         add('Endurance Drain',m.upkeepPerMinute == null ? 'Control Rate Pending' : endurance(rate(m.upkeepPerMinute))+' / min');
       }
@@ -393,7 +393,8 @@
     } else if(profile.kind==='kiai' && index>=0) {
       add('Maximum Boost','+'+creditText(m.bonus[index]*100)+'% Form Power');
       add('Full Buildup',creditText(m.fullCharge[index])+' sec');
-      add('Maximum Upkeep',endurance(m.upkeepCoefficient[index]*m.bonus[index]**2)+' Endurance / min');
+      add('Activation Cost',endurance(coefficient(m.activationCost))+' Endurance');
+      add('Maximum Upkeep',endurance(m.fullUpkeepPerMinute[index])+' Endurance / min');
       note='Smaller boosts gather faster and cost less. Changing form or amplifier resets the buildup.';
     } else if(profile.kind==='rotation' && index>=0) {
       add('Preferred Response',m.preferred);
@@ -421,6 +422,10 @@
         add('Current Failure Risk',stat(40*(1-p.credits/10))+'%');
       }
       note='Gathering requires concentration, protection and willing spirit energy. Limited supply lengthens the charge.';
+    }
+    if(ability.id==='flight' && !previewTier && Number.isFinite(Number(data.character.battlePower)) && m.travelReferencePower>0) {
+      const speed=m.travelAnchorMetresPerSecond*Math.sqrt(Number(data.character.battlePower)/m.travelReferencePower)*m.travelCoefficient/1000;
+      add('Max Speed · Base',(Math.floor(speed*10)/10).toLocaleString('en',{minimumFractionDigits:1,maximumFractionDigits:1})+' km/s');
     }
     if(Array.isArray(m.rangeBands)&&m.rangeBands.length) add('Range',m.rangeBands.join(' · '));
     if(!rows.length) return '';

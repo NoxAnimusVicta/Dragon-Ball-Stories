@@ -95,12 +95,16 @@
         },
         {
           "tier": "Mastered",
-          "benefit": "Refined aerial control and economy; speed still depends on available power."
+          "benefit": "Refined aerial control and coordination with learned techniques."
         }
       ],
       "capability": {
         "kind": "discipline",
-        "mechanics": {}
+        "mechanics": {
+          "travelAnchorMetresPerSecond": 24000,
+          "travelReferencePower": 8000,
+          "travelCoefficient": 1
+        }
       }
     },
     "ki-blast": {
@@ -204,7 +208,7 @@
         },
         {
           "tier": "Advanced",
-          "benefit": "Faster opening and finer conscious regulation."
+          "benefit": "Finer conscious regulation with less effort."
         },
         {
           "tier": "Mastered",
@@ -220,6 +224,12 @@
             15,
             15,
             0
+          ],
+          "activationCost": [
+            4,
+            2,
+            1,
+            0.5
           ],
           "upkeepPerMinute": [
             8,
@@ -261,6 +271,12 @@
             15,
             15,
             0
+          ],
+          "activationCost": [
+            6,
+            3,
+            1.5,
+            0.75
           ],
           "upkeepPerMinute": [
             12,
@@ -331,6 +347,7 @@
             80
           ],
           "damage": 19,
+          "masteryDamageBonus": 1,
           "setup": [
             30,
             15,
@@ -361,8 +378,7 @@
           "rangeBands": [
             "Short",
             "Long"
-          ],
-          "masteryDamageBonus": 1
+          ]
         }
       }
     },
@@ -410,6 +426,7 @@
             60
           ],
           "damage": 8.5,
+          "masteryDamageBonus": 1,
           "costCoefficient": 1,
           "economy": [
             1,
@@ -419,8 +436,7 @@
           ],
           "rangeBands": [
             "Engaged"
-          ],
-          "masteryDamageBonus": 1
+          ]
         }
       }
     },
@@ -430,19 +446,19 @@
       "milestones": [
         {
           "tier": "Learned",
-          "benefit": "Build up to ×1.25 output with a sustained gathering opening."
+          "benefit": "Gather up to +25% Form Power."
         },
         {
           "tier": "Proficient",
-          "benefit": "Build up to ×1.5 output with improved gathering and economy."
+          "benefit": "Gather up to +50% Form Power with improved economy."
         },
         {
           "tier": "Advanced",
-          "benefit": "Build up to ×1.75 output with finer sustained control."
+          "benefit": "Gather up to +75% Form Power with finer sustained control."
         },
         {
           "tier": "Mastered",
-          "benefit": "Build up to ×2 output; smaller boosts gather faster and cost less to maintain."
+          "benefit": "Gather up to +100% Form Power; smaller boosts gather faster and cost less."
         }
       ],
       "capability": {
@@ -460,10 +476,16 @@
             90,
             60
           ],
-          "upkeepCoefficient": [
-            4,
+          "fullUpkeepPerMinute": [
+            2,
+            1.5,
+            1,
+            0.5
+          ],
+          "activationCost": [
             2,
             1,
+            0.5,
             0.25
           ]
         }
