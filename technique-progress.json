@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "asOf": "28 July, Age 854",
+  "asOf": "27 August, Age 854 · S268",
   "records": {
     "combat-basics": {
-      "credits": 4500,
-      "assessment": "Assessed",
+      "credits": 5049.903508771929,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -52,8 +52,8 @@
       "control": "Footwork, balance and physical conditioning."
     },
     "ki-control": {
-      "credits": 11310.918859649122,
-      "assessment": "Recorded · S246 corrected month",
+      "credits": 13724.460526315788,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -80,8 +80,8 @@
       "control": "Lower-flow channeling is steady through familiar movement; full channel output demands sustained regulation."
     },
     "flight": {
-      "credits": 6000,
-      "assessment": "Assessed",
+      "credits": 6270.951754385965,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -110,8 +110,8 @@
       }
     },
     "ki-blast": {
-      "credits": 3000,
-      "assessment": "Assessed",
+      "credits": 3416.4276315789475,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -158,8 +158,8 @@
       "effect": "Project and direct ordinary ki attacks."
     },
     "ki-suppression": {
-      "credits": 4377.063596491228,
-      "assessment": "Recorded · S246 corrected month",
+      "credits": 4644.015350877193,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -198,8 +198,8 @@
       }
     },
     "sealed-channel-form": {
-      "credits": 1200,
-      "assessment": "Assessed",
+      "credits": 1466.951754385965,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -245,8 +245,8 @@
       "control": "Consciously regulate the borrowed power. Combining it with Kaioken remains unsafe."
     },
     "kaioken-technique": {
-      "credits": 650.0,
-      "assessment": "Recorded · S246 corrected month",
+      "credits": 1882.3684210526317,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -293,8 +293,8 @@
       "control": "Use separately from Sealed Channel; combining them triggered takeover."
     },
     "ki-sensing": {
-      "credits": 3028.3958333333335,
-      "assessment": "Recorded · S246 corrected month",
+      "credits": 4598.453947368421,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -321,8 +321,8 @@
       "control": "Current readings are relative estimates. Concentration and familiarity improve tracking; the scouter supplies exact numbers."
     },
     "spirit-bomb": {
-      "credits": 6,
-      "assessment": "Assessed",
+      "credits": 272.95175438596493,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -384,11 +384,12 @@
             "Long"
           ]
         }
-      }
+      },
+      "control": "Gather voluntary spirit energy while concentrating; adequate supply and protection are required."
     },
     "spirit-spear": {
-      "credits": 90,
-      "assessment": "Assessed",
+      "credits": 356.95175438596493,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -444,8 +445,8 @@
       }
     },
     "kiai": {
-      "credits": 750,
-      "assessment": "Assessed",
+      "credits": 1325.0438596491229,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -498,8 +499,8 @@
     },
     "second-wind": {
       "effect": "Regain the strength to keep fighting.",
-      "credits": 650,
-      "assessment": "Assessed",
+      "credits": 916.9517543859649,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -549,8 +550,8 @@
       "control": "Draw on trained recovery reserves."
     },
     "rotation-evasive": {
-      "credits": 250,
-      "assessment": "Retained S240 assessment",
+      "credits": 516.9517543859649,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "category": "discipline",
       "artwork": "./ability-evasive.webp",
       "entry": {
@@ -594,8 +595,8 @@
       }
     },
     "rotation-bulwark": {
-      "credits": 250,
-      "assessment": "Retained S240 assessment",
+      "credits": 516.9517543859649,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "category": "discipline",
       "artwork": "./ability-bulwark.webp",
       "entry": {
@@ -639,8 +640,8 @@
       }
     },
     "rotation-deflection": {
-      "credits": 10,
-      "assessment": "Retained S240 assessment",
+      "credits": 276.95175438596493,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "category": "discipline",
       "artwork": "./ability-deflection.webp",
       "entry": {
@@ -684,8 +685,8 @@
       }
     },
     "rotation-riposte": {
-      "credits": 10,
-      "assessment": "Retained S240 assessment",
+      "credits": 276.95175438596493,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "category": "discipline",
       "artwork": "./ability-riposte.webp",
       "entry": {
@@ -731,8 +732,8 @@
       "control": "Timing and awareness create room for a response."
     },
     "instant-transmission": {
-      "credits": 2967.0390820802004,
-      "assessment": "Recorded · S246 corrected month",
+      "credits": 4682.115836466165,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -773,8 +774,8 @@
       "artworkAlt": "A shadow-faced fighter using Instant Transmission amid blue light."
     },
     "spirit-cloning": {
-      "credits": 1012.7632884294069,
-      "assessment": "Recorded · S246 corrected month",
+      "credits": 2084.2289317042605,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -823,11 +824,12 @@
         }
       },
       "artwork": "./ability-spirit-cloning.webp",
-      "artworkAlt": "Four matching shadow-faced fighters surrounded by blue energy."
+      "artworkAlt": "Four matching shadow-faced fighters surrounded by blue energy.",
+      "control": "Power divides between the bodies. Their actions draw from one shared Endurance reserve."
     },
     "gigantification": {
-      "credits": 1012.7632884294069,
-      "assessment": "Recorded · S246 corrected month",
+      "credits": 2084.2289317042605,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",
@@ -879,8 +881,8 @@
       "artworkAlt": "A shadow-faced fighter expanding to a towering size."
     },
     "spirit-healing": {
-      "credits": 1012.7632884294069,
-      "assessment": "Recorded · S246 corrected month",
+      "credits": 2084.2289317042605,
+      "assessment": "Recorded · S268, including S247 and S257 training",
       "milestones": [
         {
           "tier": "Learned",

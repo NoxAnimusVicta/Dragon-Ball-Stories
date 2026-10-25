@@ -1,19 +1,19 @@
 # Training & Combat reference
 
-Adopted24October2026: faction clock v2, range-band movement amendment2. Engaged/Short/Long/Out ranges and persistent movement intents; effort costs0/0.25/0.50/1.00 Endurance per15seconds. Metric combat movement, numeric reach and simulator clocks are outdated. Max Speed is narrative travel only. Individual form activation costs and revised Kiai upkeep; no universal activation baseline. Major-injury and regenerative-repair amendment adopted24October2026; Full Recovery sets100 before overflow.
+Adopted24October2026: faction clock v2, range-band movement amendment2. Engaged/Short/Long/Out ranges and persistent movement intents; effort costs0/0.25/0.50/1.00 Endurance per15seconds. Metric combat movement, numeric reach and simulator clocks are outdated. Max Speed is narrative travel only. Individual form activation costs and revised Kiai upkeep; no universal activation baseline. Major-injury and regenerative-repair amendment adopted24October2026; Full Recovery sets100 before overflow. S268 signature, division and sealing amendment adopted25October2026.
 
 Public reader summary. The authorised local TRAINING-AND-TECHNIQUE-PROPOSAL.md is the full operational owner; the narrator must read it, the form prerequisites and NPC combat register in full before every response involving combat, including after compaction. This summary cannot replace current private state or saved rolls.
 
 ## Zero’s Defensive Rotations
 
-Zero’s current defensive handling: one-time S240 starting assessments, not newly earned training. Percentages describe the response after a clean breakthrough has been denied or an interception opportunity selected, against an unfamiliar opponent with all responses feasible. Familiarity and actual openings change them. No stance is active outside combat.
+Current recorded defensive progress, including Yardrat training. Percentages describe conditional responses against an unfamiliar opponent with all responses feasible; actual openings and familiarity still apply. No stance is active outside combat.
 
 | Rotation | Tier | Credits | Guard | Dodge | Parry | Counter |
 |---|---|---:|---:|---:|---:|---:|
-| Evasive | Proficient | 250 | 40% | 40% | 12% | 8% |
-| Bulwark | Proficient | 250 | 66.6667% | 16.6667% | 10% | 6.66667% |
-| Deflection | Learned | 10 | 46.5116% | 23.2558% | 20.9302% | 9.30233% |
-| Riposte | Learned | 10 | 47.619% | 23.8095% | 14.2857% | 14.2857% |
+| Evasive | Proficient | 516.9517543859649 | 40% | 40% | 12% | 8% |
+| Bulwark | Proficient | 516.9517543859649 | 66.6667% | 16.6667% | 10% | 6.66667% |
+| Deflection | Proficient | 276.95175438596493 | 43.4783% | 21.7391% | 26.087% | 8.69565% |
+| Riposte | Proficient | 276.95175438596493 | 45.4545% | 22.7273% | 13.6364% | 18.1818% |
 
 ## Mastered Rotation Targets
 
@@ -54,7 +54,7 @@ B*F*(A+q)*availability; q=cap*(t/fullTime)^(2/3), capped at cap. Full-boost upke
 
 Ordinary Second Wind costs zero Endurance. It develops from one10-point recovery, to one15-point recovery, then two15-point recoveries, then two20-point recoveries. Restoration is fixed, with no recovery-amount roll. At zero, recovery takes45actual seconds with restoration at completion, retaining overflow; a qualifying100-plus hit bypasses it. Each spent reserve recharges24personally experienced hours after completion. Regenerative biology uses its own replacement profile.
 
-Zero has existing Proficient Kiai750 and Second Wind650, assessed from the player correction and recorded training. These are starting assessments, not new elapsed training. Guru’s potential release improves strength, speed, resilience and absolute endurance; technique proficiency remains separately trained. The fresh100-point endurance scale is relative to that stronger body.
+Zero’s historical S245 starting assessments were Kiai750 and Second Wind650. Current earned progress is recorded in technique-progress.json. Guru’s potential release improves strength, speed, resilience and absolute endurance; technique proficiency remains separately trained. The fresh100-point endurance scale is relative to that stronger body.
 
 
 ## Tolerance & Recovery
@@ -88,7 +88,7 @@ A Counter transfers half the current attack segment under clock v2; ordinary Gua
 
 Physical counters use a ready Physical signature or style-appropriate strikes; Ki counters use a suitable Ki signature or ordinary Ki Blast variation. A response never copies an unknown move or receives free charge. A feasible Ki interception can start a clash: test uncertain interception once, then compare actual delivered powers. Collision is not a free hit on the caster. A weaker response may be overrun.
 
-Working convention: one signature attack per active form/loadout, with optional form overrides referencing already learned moves. Physical and Ki attacks qualify; Transformation & Amplification and Discipline do not. It is a default preference, not a limit on choosing other attacks. Zero defaults to Spirit Spear when ready and in contact range; ordinary physical combinations or Ki Blast volleys/spheres cover other windows. Spirit Bomb is not a reliable emergency signature, and a maximum-power basic blast gains no invented multiplier.
+Working convention: one signature attack per active form/loadout, with optional form overrides referencing already learned moves. Physical and Ki attacks qualify; Transformation & Amplification and Discipline do not. It is a default preference, not a limit on choosing other attacks. Zero defaults to Spirit Spear when ready and in contact range; ordinary physical combinations or Ki Blast volleys/spheres cover other windows. Spirit Bomb requires its actual collection time and supply rather than an automatic emergency response, and a maximum-power basic blast gains no invented multiplier.
 
 An exchange groups a tight combination or bounded rapid-blast volley, not damage per fist or pellet. One root combination and its immediate counter chain earns one readable familiarity/maintenance exposure; every actual attempted attack still costs endurance. Changed tactics, supply, positions or genuinely subsequent attacks create new windows.
 
@@ -236,7 +236,7 @@ Ordinary Physical Combat or Ki Blasts take30seconds per bounded attempt at every
 
 Activation and named-use times are15-second multiples fixed by the current tier. No fractional interpolation of these times. Zero is permitted only for expressly instant Mastered activation or residual reactivation. Mastered timings remain fixed at their recorded entries; a recorded instant activation stays zero. Costs retain their field-specific progression up to Mastered and stop there. Charges may carry across turns, with actual paid progress retained. Interrupted work retains expenditure and loses only preparation actually disrupted. A technique cannot be banked through unrelated attacks.
 
-At Zero's present progress Kaioken x2 activates in15seconds and Spirit Spear takes45seconds for regular use or120seconds total full charge. Activating Kaioken and then regular Spear takes60seconds, so cannot both finish in an ordinary45-second turn. Kaioken then an ordinary30-second attack can fit. Spirit Bomb remains Learning:120seconds minimum release and630seconds full with adequate supply. No ability, credits or story time are granted by this migration.
+Historical S245 timing example, not current progress: at the then-recorded progress Kaioken x2 activates in15seconds and Spirit Spear takes45seconds for regular use or120seconds total full charge. Activating Kaioken and then regular Spear takes60seconds, so cannot both finish in an ordinary45-second turn. Kaioken then an ordinary30-second attack can fit. In that S245 example Spirit Bomb was Learning:120seconds minimum release and630seconds full with adequate supply. No ability, credits or story time are granted by this migration.
 
 ## Counters transfer time
 
@@ -342,7 +342,7 @@ Spirit Spear needs contact and actual gathered spirit energy; the timer cannot c
 
 Mastery improves movement and control within each method. Mobile beams can develop skilled evasive handling; committed gathering techniques retain concentration and supply limits. Spirit Spear can gather during its committed approach and strike, but cannot bank energy through unrelated fighting.
 
-Ordinary Kaioken uses one technique per phase, each with its own cumulative10/250/2500/10000 progression. Master the preceding phase before attempting the next: ×2, ×3, ×4, ×5, ×10, ×15, ×20, ×30, ×40, ×50, ×75, ×100. Earlier phases remain usable. Eligible novice attempts retain the execution-failure rule; mastery never automatically unlocks the successor. Zero’s Kaioken x2 retains650 progress and existing art; Kaioken x3 is currently ineligible. Separately trained form compatibility remains required and Channel stacking remains unsafe.
+Ordinary Kaioken uses one technique per phase, each with its own cumulative10/250/2500/10000 progression. Master the preceding phase before attempting the next: ×2, ×3, ×4, ×5, ×10, ×15, ×20, ×30, ×40, ×50, ×75, ×100. Earlier phases remain usable. Eligible novice attempts retain the execution-failure rule; mastery never automatically unlocks the successor. Kaioken x2 began at the S245 assessment of650; use the current progress record for later earned totals and successor eligibility. Separately trained form compatibility remains required and Channel stacking remains unsafe.
 
 Learned sensing gives familiar direction/signatures and broad relative strength; Proficient improves moving-signature tracking and estimates; Advanced estimates roughly one significant figure; Mastered reads precise accessible current output. Suppression, hidden reserve and unfamiliar divine/artificial energy still limit what can be read. Zero’s current sensing remains approximate.
 
@@ -367,3 +367,12 @@ kaioken-technique: individual activation Endurance 6/3/1.5/0.75. Learned/Profici
 sealed-channel-form: individual activation Endurance 4/2/1/0.5. Learned/Proficient/Advanced/Mastered; geometric cost interpolation up to Mastered, then fixed values. The seal already contains the power. Entry pays for establishing conscious throttling and containment, not generating the entire tenfold supply. Handling improves with practice; takeover remains a separate risk.
 
 kiai: individual activation Endurance 2/1/0.5/0.25. Learned/Proficient/Advanced/Mastered; geometric cost interpolation up to Mastered, then fixed values. Gradual release of existing form power has a modest initial gathering/control commitment, below forced Kaioken activation. Charge time and achieved-boost upkeep provide its principal continuing costs.
+
+
+## Signature, Division & Sealing
+
+Destructo Disc uses discrete regular costs12/10/8/7 at Learned/Proficient/Advanced/Mastered, multiplied by (attained multiplier/2)². This replaces coefficient2.25 economy, not an additional fee. Intrinsic9 before Mastered/10 at Mastered, charge ceilings2.25/2.5/2.75/3, preparation60/45/30/15 and full90/75/60/45seconds are unchanged. Advanced regular/full costs8/15.125; Mastered7/15.75. More headroom can raise the maximum bill while equal-output efficiency improves. Cutting follows ordinary injury resolution; no automatic severance or sustained counterbeam.
+
+Each independently coordinated body has its own concurrent commitments within the same45-second faction window. Divide current bodily output equally among all extant bodies. Every actual attack, movement, activation and sustained method pays its own normal expenditure from one shared Endurance pool; split power never discounts those costs. Existing whole-owner form upkeep is paid once; a state independently activated on another body pays its own entry and upkeep and affects only that body’s allocated share. Copies share recovery reserves, injuries and real consumables; reunion/dismissal refunds nothing. A copy cannot heal or donate into its own shared pool. No nested division or extra faction turns. Separate bodies use their own actual range, concentration, preparation and feasible defence; crossfire requires real positioning. For four equal Advanced bodies, four ordinary clean hits against the unsplit bodily-power equivalent total5 damage before changing conditions, and four Ki attempts cost4. This is conditional arithmetic, not four guaranteed hits or an instruction to resolve simultaneous attacks independently.
+
+Stationary visible capture followed by steering into an accessible prepared sealing vessel. Ordinary aim/defence contest determines capture; then a separate steering contest uses W/(1+W), where W is the caster Ki Control tier weight divided by1. Missing/damaged vessel makes sealing impossible. No damage or automatic seal. Cost80/70/60/40 by tier accrues proportionally through preparation, including execution; no second release fee. Require available Endurance at least equal to the full cost before starting. Recheck affordability of the unpaid remainder after incoming damage or other expenditure; if it is no longer affordable, preparation fails with spent cost retained, without negative reserves or free completion. On a completed execution attempt, if payment of its final cost leaves zero Endurance, the life-consuming method kills the mortal caster whether capture/steering succeeds or fails; ordinary Second Wind cannot undo that death. If Endurance remains positive there is no automatic death or extra life-risk roll. Depletion before completion interrupts under ordinary rules; it does not itself count as this completed sacrifice. Cancellation retains accrued expenditure. No automatic reversal without a separately learned counter-method.
