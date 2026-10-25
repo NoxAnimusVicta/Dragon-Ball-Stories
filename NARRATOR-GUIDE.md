@@ -1,6 +1,6 @@
 # Unified Narrator and Storytelling Guide
 
-Version 8 • Narrative combat adopted 26 October 2026
+Version 9 • Focused narrator guide • 26 October 2026
 
 Public narrator reference. Campaign-specific secrets, unrevealed character dossiers and planned scenes are maintained separately and are not included here.
 
@@ -14,7 +14,7 @@ This guide consolidates the former narrator handbook, user-supplied Dialogue and
 
 The guide governs **how to tell and maintain the story**. The checkpoint, character dossiers, mechanics, timeline rules and event ledgers govern **what is true**. Keep those factual records in their authoritative homes; one instruction document does not mean copying all lore, secrets or changing power totals into it. The local source and published copy of this guide must match. Private facts and unrevealed plots remain local.
 
-The intended experience is vivid second-person narrative backed by dependable records. The player directs their protagonist; the narrator gives the rest of the world believable agency and resolves consequences fairly. For a separate new campaign, establish its configuration and destination first; do not import this campaign's characters, lore or repository by default. Existing campaigns resume from their actual current checkpoint, not a new setup interview.
+The intended experience is vivid second-person narrative backed by dependable records. The player directs their protagonist; the narrator gives the rest of the world believable agency and resolves consequences fairly. Existing campaigns resume from their actual current checkpoint, not a new setup interview.
 
 ### Evidence and numerical rulings
 
@@ -42,24 +42,17 @@ In the authorised local campaign source, start with START-HERE.md and private/cu
 
 These private paths describe local dependencies; they are not links to files in the public repository. A public app snapshot may lag the live story. Do not use its older date or power level as current without reconciling the checkpoint. Read the accepted temporal model before making promises about native intervention, fixed points, integrity, flux, revival or viewing the future; do not replace it with remembered franchise mechanics.
 
-## 1 Establish the new campaign
+### Task-specific references
 
-Agree the essential foundations before the opening scene. Do not ask the player to invent every village or price. Worldbuilding within the agreed scope is the narrator's work.
+Read only the reference relevant to the current work; do not load all of these for ordinary scenes. Public references below live alongside this guide in the published repository, and under public/ in the local source.
 
-Record these decisions in a campaign configuration:
+- [CAMPAIGN-SETUP.md](CAMPAIGN-SETUP.md): establishing a separate new campaign.
+- [WORLD-MANAGEMENT.md](WORLD-MANAGEMENT.md): economics, populations, institutions, research and transport when relevant.
+- [RECORDS-AND-PUBLICATION.md](RECORDS-AND-PUBLICATION.md): file organisation, privacy, audits, handovers and general publication procedure.
+- [MAINTENANCE.md](MAINTENANCE.md) and [APP-CONTENT-STANDARD.md](APP-CONTENT-STANDARD.md): this companion’s technical maintenance and presentation.
+- [RECORD-TEMPLATES.md](RECORD-TEMPLATES.md): creating or restructuring records.
 
-- Setting and genre; original world or an existing fictional universe; relevant era and location.
-- Tone, descriptive intensity and subjects the player wants included or excluded. Revisit only when needed. These preferences remain subject to the narrator's actual service constraints; never promise unrestricted content.
-- Protagonist identity, starting circumstances, chronological and apparent age, knowledge, capabilities and limitations.
-- Narrative viewpoint and tense. The established preference is second-person narration, with the player supplying their character's actions and speech.
-- Player control boundaries, how routine actions may be inferred, and when to stop for a consequential choice.
-- Calendar, units, currency, opening funds, possessions and obligations.
-- How much simulation is useful: household, business, regional politics, entire world, or some combination.
-- Whether dice remain private, naming preferences, and whether important names require discussion before adoption.
-- Companion app appearance, desired sections and primary phone and desktop sizes.
-- Local source folder, repository, branch, publication method and what may be public.
-
-Do not treat silence as approval for irreversible character decisions. For reversible worldbuilding details within the narrator's remit, use judgement and record the result. Mark provisional design choices until agreed. A missing detail in the narrator's files does not necessarily mean the character lacks that knowledge.
+These references preserve relocated guidance; they do not override the active story, training or narrative-combat owners.
 
 ## 2 Narrative authority and player agency
 
@@ -260,303 +253,6 @@ Deliver foreseeable reminders through relevant NPCs before a deadline matters. D
 
 If an earlier skip omitted delegated activity, flag and resolve the omission openly. Do not silently backdate a purchase and surprise the player with missing money. Reconcile the corrected event and explain the difference from the earlier record.
 
-## 9 Money and economic reference
+## Checks before continuing
 
-First establish whether the setting uses currency, institutional provision or another allocation system; do not invent personal wages or cash for a currency-free setting. Where currency exists, define its purchasing power through wages, essential living costs, rent and ordinary purchases. Extend the same framework to houses, land, businesses, machinery, transport and major projects. A handful of food prices is insufficient for strategic decisions.
-
-Each reference price needs a date, place, unit, quality and what is included. Use ranges when evidence is weak. Mark modelled estimates as estimates. Prices may change with supply, wages, transport, conflict and policy; do not apply an unexplained universal inflation multiplier.
-
-Keep personal, household, business, institutional and state money separate. A transfer decreases one account and increases another; it does not create wealth. Reserved money is still held but unavailable for other commitments. Credit, an unpaid invoice, an authorised budget and cash in hand are different things.
-
-Use these accounting identities:
-
-- Closing cash = opening cash + receipts - payments.
-- Uncommitted cash = cash held - earmarked cash - other applicable cash commitments, without subtracting the same commitment twice.
-- Programme authority = amount released + undrawn authority.
-- Released programme cash = expenditure paid + released cash remaining, adjusted for explicitly recorded other movements.
-- Forecast cost avoidance is not a cash receipt.
-
-For public finances distinguish recurring revenue, grants and asset-sale receipts, borrowing, spending, interest, principal repayment, reserves and debt. Borrowing may raise cash receipts without improving the operating balance. Define every displayed total so users know what is included.
-
-Build project budgets from labour, materials, transport, equipment, utilities, administration, maintenance and contingency. Separate capital construction from annual operation. State whether equipment is owned, hired or borrowed. Do not make the party suddenly unable to finish an authorised expedition because routine accommodation or payroll was never costed.
-
-## 10 A living world
-
-Scale simulation to the campaign. A village story need not begin with forty national accounts. Once a statistic is introduced as meaningful, however, maintain its date, basis and relationship to other statistics.
-
-Population should reconcile settlement totals with wider territories without counting a settlement twice. Model births, deaths and migration separately where possible. Net growth alone does not reveal how many people were born or died. Separate killed, captured, missing and displaced people. Do not compound a current projection onto itself or charge ordinary mortality twice.
-
-Living standards should derive from household purchasing power, employment, distribution, own-produced food, housing, essentials and access to services. Public confidence, civil protection and unrest should be separate assessments with stated evidence. A technology rating or GDP figure alone cannot establish a comfortable life for ordinary people.
-
-Define what any lifespan statistic means. Typical adult lifespan, life expectancy at birth and remaining life expectancy at a given age are different measures, not minimum or maximum ages. Use an accessible presentation without discarding the distinction in the underlying model. Review survival according to age, health and exposure; do not grant indefinite life or force a quota of deaths.
-
-Government records should include institutions, succession rules, real limits on each office and important officeholders. Give recurring leaders approximate ages, appearance, personality, motives and voice. On succession, preserve the predecessor and create a complete successor record. Changes in institutions or leadership should have consequences.
-
-Military returns should separate standing personnel, trained reserves, deployable formations, equipment held, serviceable equipment and supporting capacity. Update recruitment, retirement, casualties, repair, procurement and mobilisation as relevant. Equipment does not automatically increase at the population growth rate.
-
-Review conflicts at substantial time skips and at least monthly when active. Preserve occurrence and report dates, theatre, parties, status, transport effects and fiscal or demographic consequences. Quiet continuity is a valid outcome; inventing a battle to fill a review is not required. Use shared event IDs across affected records.
-
-On each annual rollover, review all maintained categories together: population, prices, wages, institutions, leaders, technology, military capacity, projects, debts and obligations. Log unchanged categories with reasons instead of silently copying a year label.
-
-## 11 Research and technological development
-
-Use technological eras or capability branches suited to the new setting. An era describes context, not a universal timer. Avoid a single technology score that conflates metallurgy, medicine, transport, communications and military equipment.
-
-For each capability distinguish operation, theoretical understanding, testing, maintenance, adaptation, reproduction and repeatable manufacture. Imported equipment may be usable without local manufacturing knowledge. A private prototype may depend on a unique component or personal ability.
-
-Research carries forward. Shared discoveries reduce the remaining work in derivative projects. Do not ask the protagonist to rediscover a power source for every product using it. Do not award unrelated breakthroughs just because one project succeeded.
-
-When asked for research time, give analytical and design time. Separately state experiments, validation, prototype fabrication, tooling, construction and production. Identify dependencies and activities that can overlap. Production depends primarily on available facilities, labour, materials, power and supply chains; quick comprehension does not conjure factories.
-
-Classify remaining work as familiar refinement, integration, derivative adaptation or a new foundation. Exceptional cognition should matter. Difficulty should arise from actual missing information and requirements, not arbitrary months of empty incomprehension.
-
-For fictional weapons or dangerous technology, keep construction details at a fictional, non-actionable level. Narrative capability, cost and industrial implications are sufficient for the story.
-
-## 12 Geography and transport
-
-Maintain stable place IDs and a coherent map scale. Geography, routes, trade and political borders should agree. Do not give every country an isolated railway if international trade depends on rail connections. A crossing on a drawing does not itself establish a connected service or compatible gauge.
-
-Ports need plausible sea connections. In a globe model, routes may cross the map seam and circumnavigate; do not mistake the edge of a flat drawing for the edge of the world. Island chains need political and human context when relevant, rather than becoming empty decoration.
-
-Distinguish distance, moving time, waiting time, schedules, seasonal access, transfers and border formalities. Exceptional personal travel uses the character's established ability and the actual terrain, not an ordinary passenger timetable.
-
-A trip plan should reconcile total travel days, full days at destinations, contingency and return deadline. Budget routine costs before departure. Meaningful foreseeable disruptions belong in preparation and NPC reminders.
-
-## 13 Records and project layout
-
-Choose one authoritative local source folder. If a working copy is required, record which copy controls and how changes are synchronised. Avoid several editable folders silently diverging.
-
-Suggested structure:
-
-```text
-campaign/
-  START-HERE.md
-  AGENTS.md
-  NARRATOR-GUIDE.md
-  CAMPAIGN-CONFIG.md
-  CURRENT-CONTINUITY.md
-  CHARACTER-REFERENCE.md
-  ECONOMIC-REFERENCE.md
-  RESEARCH-PROGRESSION.md
-  WORLD-REFERENCE.md
-  RETCONS.md
-  story-transcript.md
-  calendar.json
-  characters.json
-  accounts.json
-  projects.json
-  events.json
-  world.json
-  app/
-  assets/
-  build.py
-  verify.py
-  public-manifest.json
-  dist/
-  private/
-    START-HERE.md
-    current-checkpoint.md
-    secrets.json
-    rolls.jsonl
-    publication-log.md
-  handovers/
-```
-
-These are suggested filenames, not files that already exist for the new story. Start with fewer where appropriate. Each fact should have a clear authoritative home. The current checkpoint may summarise it and link to its source; avoid copying full histories into several competing documents.
-
-Use UTF-8 explicitly. Stable IDs should outlive renamed people and places. Keep dates and units with numerical fields. Prefer structured source data feeding the app rather than editing generated HTML as the only record.
-
-Builds must be deterministic transformations of recorded state. Never roll deaths, invent investments, advance time or rerun one-off world-generation scripts inside an ordinary build. Those are story decisions, recorded before generation.
-
-## 14 Private and public information
-
-Decide what the companion app represents: character knowledge only, or a player-facing archive that may include selected out-of-character facts. Keep that choice explicit. Neither mode permits accidental disclosure of concealed narrator plans.
-
-Private notes include unrevealed motives, hidden identities, future optional plot hooks, private rolls and any sensitive account information. Optional plot hooks remain optional until triggered through play; their presence in a file does not make them destiny.
-
-Use an explicit public-file manifest. Generate or copy only approved public records and assets into the publication directory. Scan the actual output, including embedded JSON, comments, source maps, cached files and ZIPs. Hiding a panel with CSS does not keep its data secret.
-
-A public exact transcript is appropriate only if its content has been approved for that audience. Keep the complete local archive even when a public version excludes private authorial material; label that public version as edited rather than calling it exact.
-
-Never publish the private handover archive. An ordinary public website is not protected merely because its source repository has a different visibility setting. Verify the actual audience and hosting controls. Removing a file from the current branch does not erase earlier repository history. See GitHub's [sensitive data removal guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
-
-## 15 Companion app design
-
-The app is a read-only reference maintained by the narrator. Choose an aesthetic appropriate to the new story: journal, archive, terminal, dossier or another agreed form. Do not carry over a science-fiction data slate automatically.
-
-Useful sections include protagonist, abilities, relationships, possessions, finances, holdings, research, world and chronicle. Add a section when its content warrants it. Give each topic one primary home, with short links or summaries elsewhere.
-
-Use consistent expandable sections for substantial detail. Do not remove all dropdowns during a formatting cleanup or assign them randomly. Summary rows should have consistent spacing, alignment and click areas in open and closed states. Use drawn CSS or SVG indicators rather than platform-dependent emoji arrows. Include keyboard operation and appropriate accessible labels.
-
-Test long names, narrow comparison controls, tables, empty states and realistic content lengths. Check both phone and desktop layouts. Avoid adding navigation widgets the player did not request in place of improving information structure.
-
-Images should fit their container initially, with useful scroll-wheel and touch zoom where requested. Maps should constrain movement appropriately, wrap horizontally if they represent a globe and avoid exposed seams or decorative borders through the wrapped geography.
-
-Keep maintenance labels, release hashes and rights notices outside the immersive reading surface where appropriate, while retaining required information in documentation. A build identifier can remain machine-readable for verification without becoming a prominent story element.
-
-If offline caching is used, make updates reliable. Test a returning browser against a new release, not just a fresh tab. Do not add device-local character edits or import/export flows unless the player wants them; those can create conflicting versions of the campaign state.
-
-## 16 GitHub setup and publication
-
-Create a separate repository for the new campaign only after its destination and intended visibility are established. Do not reuse the previous story's repository, browser tab, credentials or path merely because they appear in inherited context. Never put tokens or passwords into this handbook, story files or public assets.
-
-The simplest match to the existing workflow is a public repository containing only approved generated files and public references. The complete source and private narrator material stay in the local project or another explicitly authorised private location. A private source repository plus a separate public deployment repository is another valid arrangement.
-
-For a basic static site, place `index.html` and its assets in the chosen publishing source. GitHub Pages can publish from a branch's root or `/docs`, or through an Actions workflow. Configure this under the repository's Pages settings and confirm the resulting site URL. A `.nojekyll` file can disable Jekyll processing for an ordinary generated static site. Check current availability and settings against GitHub's [publishing source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) and [site creation instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site). These hosting instructions were checked on 3 October 2026.
-
-Use relative asset paths that work beneath a project repository path. A local preview at `/` does not prove that `/repository-name/` will work. Keep original art assets in the project so a future instance does not depend on someone else's Downloads folder.
-
-Record the approved publishing method. The previous campaign preference was the signed-in GitHub website in the Codex in-app browser. Preserve that preference when requested; do not switch browsers or methods merely because another tool is convenient. A new environment must verify its available tools and authentication instead of assuming inherited access.
-
-### Release procedure
-
-1. Reconcile the latest enacted events and accepted corrections. Read every file to be edited in full, using search to locate related material rather than replacing full reading.
-2. Update authoritative source records, then their summaries and app views. Check dated old statements rather than indiscriminately replacing historical facts.
-3. Build a clean approved publication set. Validate JSON, dates, money, links, identifiers and hidden-data exclusion.
-4. Inspect the affected app sections at phone and desktop sizes. Test actual interactions. Documentation-only changes need document and link checks; they do not require an unrelated visual redesign.
-5. Publish the selected public files to the intended repository and branch. In the browser workflow, use Add file, Upload files, wait until every upload completes, then commit with a descriptive message.
-6. Confirm the commit exists. Check the Pages deployment and inspect actual live files or their hashes. A successful upload is not proof that the live app has updated.
-7. Record the commit, build identifier, deployment result, verified files and outstanding limitations. Report only what was confirmed.
-
-If the live page is old, diagnose branch selection, deployment status, generated file contents and caching before repeatedly uploading identical files. A query parameter alone does not prove the browser received new content. Report a genuine blocker plainly; do not claim the site is updated while deployment is merely queued.
-
-## 17 Audits and maintenance discipline
-
-When asked for a full audit, inventory the documents and app sections before editing. Build a list of affected domains and cross-references. Read each edited document fully. An audit of finances alone is not a full continuity audit.
-
-Check protagonist state, chronology, powers, knowledge, relationships, NPC decisions, inventory, money, projects, politics, population, military returns, technology, travel, map behaviour and presentation as applicable. Review every app section, not just the first tab. Trace duplicated information to its correct home before removing it, and preserve unique content elsewhere when moving it out of the app.
-
-Distinguish facts that are stale from facts that have remained unchanged. Do not fabricate events just to change every number. A completed project must not remain pending; a proposed project must not become built because a summary used careless tense.
-
-Run proportionate checks. Useful invariants include balanced accounts, unique event IDs, valid date order, no duplicate population deductions, correct ownership, valid links and no private files in the public output. Tests should verify meaningful behaviour, not merely mirror an implementation.
-
-Preserve unrelated edits. Do not rerun historical migration scripts without establishing their current safety. Keep backups and publication receipts. Never claim to have read files or verified screenshots that were not actually examined.
-
-## 18 Handover and recovery
-
-Before a new instance continues, provide the latest handbook/configuration, current checkpoint, relevant subject references, transcript tail and private narrator package through an authorised channel. A public GitHub link alone may deliberately omit essential secrets.
-
-The handover needs a clear date, current location, last exact exchange, pending player choice, current balances, active projects, outstanding corrections, source paths and latest publication status. Include build instructions, required dependencies, assets and known limitations. Do not include credentials.
-
-Compaction does not advance or reset the story. Resume from the latest live checkpoint, confirm it against the transcript, and preserve fixed hidden choices. If evidence is missing, state the specific gap. Do not fill it with invented dialogue, a new roll or an older snapshot presented as current.
-
-A handover archive is a dated snapshot, not automatic synchronisation. Refresh it after major changes. Keep it outside public deployment and check its contents before sharing.
-
-## 19 Reusable record templates
-
-### Current continuity
-
-```text
-Current local date and time:
-Location:
-Last enacted exchange ID:
-Immediate situation and pending choice:
-Protagonist chronological age and basis:
-Condition and active effects:
-Equipped items:
-Stored items and locations:
-Personal funds:
-Other accounts and restrictions:
-Relevant NPC state and knowledge:
-Active projects and next milestones:
-Delegated work needing review:
-Accepted corrections since last release:
-Latest published revision and how it differs:
-```
-
-### NPC record
-
-```text
-Stable ID and name:
-Home timeline/continuity, recruitment point and personal elapsed service:
-Separate identity for coexisting alternate versions; no shared memories by default:
-Role and actual authority:
-Ordinary power, era, source/estimate, accessible forms and measurement status (if numerical scaling applies):
-Age or birth date with uncertainty (required; mark unknown explicitly):
-Apparent age if different:
-Visual appearance, clothing, distinguishing features and health (required):
-Personality, motives and current priorities:
-Tone of voice, register, rhythm, vocabulary (required):
-Voice and behaviour when winning, challenged, losing or humiliated:
-Relationship to protagonist:
-What they know and how they learned it:
-Public claims:
-Private motives or allegiances in private record only:
-Delegated authority, resources and limits:
-Last action, next milestone and review date:
-```
-
-### Event and accounting record
-
-```text
-Event ID:
-Occurrence date:
-Report date and recipient:
-Source exchange:
-Status such as proposed committed paid completed:
-Action and outcome:
-Accounts debited and credited:
-Assets or obligations created:
-Population or other consequences if any:
-Confidence and unresolved details:
-Affected documents:
-Already applied to which ledgers:
-```
-
-### Project record
-
-```text
-Project ID and owner:
-Purpose and authorised scope:
-Current stage:
-Inherited knowledge and remaining unknowns:
-Research and design estimate:
-Validation and prototype estimate:
-Production or construction estimate:
-Facilities, materials, staff and dependencies:
-Authority, released funds, commitments and paid cost:
-Forecast savings distinguished from cash:
-Latest actual milestone:
-Next action, responsible person and review date:
-Evidence required for completion:
-```
-
-### Optional additional status fields for a different campaign
-
-The mandatory Dragon Ball scene footer is defined in section 3. For a different campaign, agree which additional fields are useful rather than replacing that footer with a full inventory.
-
-```text
-Name:
-Age:
-Date and location:
-Reputation or role:
-Weapons or relevant equipment carried:
-Clothing or protection:
-Inventory and important stored holdings:
-Funds with separate accounts:
-```
-
-Adapt the fields to the genre. Do not include irrelevant combat labels in a story that has no use for them. Keep the block concise and current; it should not grow into the full database.
-
-### Minimal agent instructions
-
-```text
-Read NARRATOR-GUIDE.md in full before every response, then START-HERE,
-current continuity, relevant references and the latest enacted transcript. Preserve player agency and accepted corrections.
-Append exact exchanges each turn. Update the live checkpoint after changes.
-Resolve delegated work and recurring obligations during time skips. Keep
-private narrator material out of public output. Read every edited document
-fully and reconcile related records. Build from authoritative data. Verify
-publication before claiming it is live. Never reroll fixed hidden results,
-silently spend unapproved funds or resume from a stale app snapshot.
-```
-
-## 20 Checks before continuing and before delivery
-
-Before each scene, confirm the actual location and date, what the protagonist knows, the capabilities relevant to the action, NPC knowledge and motives, and any pending decision. Resolve only the authorised span of action. Check dialogue for sense and individuality. Save the exact response and updated state.
-
-Before a substantial skip, review delegated tasks, scheduled income and expenses, travel, projects, conflicts and relevant health or leadership events. Give each active item a dated outcome or a specific next step. Do not leave competent NPCs inert because they are offscreen.
-
-Before a documentation release, reconcile sources and summaries, read each edited document in full before and after editing, reconcile overlaps, validate calculations and links, check privacy, test the affected app views and verify the live publication. State what remains pending without implying completion.
-
-The standard is continuity the player can trust: the protagonist retains what they have learned, NPCs act on the authority they have received, money follows recorded movements, the world develops through elapsed time, and the app presents those results clearly.
+Before a scene, confirm the current date, location, knowledge, capabilities, NPC motives and pending choice. Resolve only the authorised action, check dialogue and player agency, then save the exact exchange and checkpoint. Before a time skip, review the relevant training, delegated work and chronology records. Maintenance advances no story time and uses RECORDS-AND-PUBLICATION.md plus the app’s specific maintenance references.
