@@ -16,30 +16,16 @@
         },
         {
           "tier": "Advanced",
-          "benefit": "Stronger ordinary attacks and better Endurance economy."
+          "benefit": "Stronger ordinary attacks and better efficiency."
         },
         {
           "tier": "Mastered",
-          "benefit": "Refined ordinary striking and efficiency; defensive rotations retain their own progress."
+          "benefit": "Refined ordinary striking and efficiency and adaptable defence."
         }
       ],
       "capability": {
         "kind": "ordinary",
         "mechanics": {
-          "factor": 1,
-          "damage": [
-            3,
-            4,
-            5,
-            6
-          ],
-          "cost": [
-            1,
-            0.75,
-            0.6,
-            0.5
-          ],
-          "useSeconds": 30,
           "rangeBands": [
             "Engaged"
           ]
@@ -49,7 +35,32 @@
       "category": "discipline",
       "summary": "Close-range strikes, from quick combinations to heavy blows.",
       "effect": "Close-range martial combat.",
-      "control": "Footwork, balance and physical conditioning."
+      "entry": {
+        "id": "combat-basics",
+        "title": "Physical Combat",
+        "summary": "Close-range strikes, from quick combinations to heavy blows.",
+        "status": "Developing",
+        "effect": "Close-range martial combat.",
+        "control": "Footwork, balance and physical conditioning.",
+        "development": "Close-range defence and recovery after interrupted attacks are the current focus.",
+        "history": [
+          "s063",
+          "s177",
+          "s223",
+          "s237",
+          "s240",
+          "s257"
+        ],
+        "artwork": "ability-combat-basics.png",
+        "artworkAlt": "Footwork, guards, counters and combinations on the ground and in the air. Symbolic technique illustration.",
+        "abilityType": "fundamental",
+        "trainingRecord": {
+          "asOf": "28 June, Age 854",
+          "text": "Chamber benchmarks remain 75× gravity for ground rounds, 25× for aerial rounds and 150× for slow conditioning; no higher maximum has been established. Peer sparring and cleanup work developed group awareness. In TL-619, tight counters, accumulated damage and sustained pressure let Zero defeat a stronger Nappa while using the sealed channel. Vegeta remained far beyond him; their following training day focused on recovering after interrupted attacks, using separate channel bouts, closure and rest. Four weeks with Nail and the quarry fight developed aerial reversals, guarded combinations and sustained pressure against injured Brask. Subsequent Vegeta rounds improved close-range defence; he still controls their exchanges.",
+          "facts": []
+        },
+        "category": "discipline"
+      }
     },
     "ki-control": {
       "credits": 13724.460526315788,
@@ -77,7 +88,33 @@
         "mechanics": {}
       },
       "effect": "Precise regulation of ki through the whole body.",
-      "control": "Lower-flow channeling is steady through familiar movement; full channel output demands sustained regulation."
+      "entry": {
+        "id": "ki-control",
+        "title": "Ki control",
+        "summary": "Directs ki through movement, flight and energy release.",
+        "status": "Mastered",
+        "effect": "Precise regulation of ki through the whole body.",
+        "control": "Lower-flow channeling is steady through familiar movement; full channel output demands sustained regulation.",
+        "development": "Yardrat practice refined energy flow, efficiency and transitions between separately learned applications.",
+        "history": [
+          "s020",
+          "s063",
+          "s149",
+          "s212",
+          "s237",
+          "s246",
+          "s257"
+        ],
+        "artwork": "ability-ki-control.png",
+        "artworkAlt": "Directs ki through movement, flight and energy release. Symbolic technique illustration.",
+        "abilityType": "fundamental",
+        "trainingRecord": {
+          "asOf": "28 June, Age 854",
+          "text": "Deliberate suppression, loaded movement, flight and moving releases are established. King Kai’s instruction improves whole-body transitions and control under strain. Lower-flow channeling is steadier; full output remains strenuous. Ki sensing is now trained separately, with limited relative-output tracking. Neither the channel nor cooperative spirit-energy gathering has permanently absorbed another power into the base. Nail’s month of instruction and the latest King Kai sessions improved movement, transitions and recovery; no new gravity or endurance maximum was established.",
+          "facts": []
+        },
+        "category": "discipline"
+      }
     },
     "flight": {
       "credits": 6270.951754385965,
@@ -107,6 +144,44 @@
           "travelReferencePower": 8000,
           "travelCoefficient": 1
         }
+      },
+      "entry": {
+        "id": "flight",
+        "title": "Flight",
+        "summary": "Uses ki to stay airborne, manoeuvre and fight.",
+        "status": "Practised",
+        "effect": "Sustained aerial movement includes turns, bracing, controlled rotations and flight-assisted attacks.",
+        "control": "Established aerial combat at 25× gravity, with evasions and controlled changes of direction.",
+        "development": "Flight is integrated into live combat and evasive combinations.",
+        "history": [
+          "s022",
+          "s062",
+          "s063",
+          "s223",
+          "s257"
+        ],
+        "artwork": "ability-flight.png",
+        "artworkAlt": "Uses ki to stay airborne, manoeuvre and fight. Symbolic technique illustration.",
+        "abilityType": "fundamental",
+        "trainingRecord": {
+          "asOf": "28 June, Age 854",
+          "text": "Flight is integrated with evasions, compact strikes and spinning kicks against drones. Full-output aerial rounds reached 25× gravity, distinct from 75× ground rounds and 150× slow conditioning. Flight has now been used in the assessment and both Nappa encounters. Long-range endurance remains unmeasured; greater training gravity did not make Zero faster than a much stronger opponent. Flight-assisted reversals and aerial pressure were also used against Brask.",
+          "facts": [
+            {
+              "label": "Demonstrated",
+              "value": "Aerial combat against armed drones"
+            },
+            {
+              "label": "Training load",
+              "value": "25× gravity at full output"
+            },
+            {
+              "label": "Field use",
+              "value": "Aerial exchanges against Nappa"
+            }
+          ]
+        },
+        "category": "discipline"
       }
     },
     "ki-blast": {
@@ -119,7 +194,7 @@
         },
         {
           "tier": "Proficient",
-          "benefit": "Improved placement and Endurance economy."
+          "benefit": "Improved placement and efficiency."
         },
         {
           "tier": "Advanced",
@@ -133,29 +208,51 @@
       "capability": {
         "kind": "ordinary",
         "mechanics": {
-          "factor": 1,
-          "damage": [
-            3,
-            4,
-            5,
-            6
-          ],
-          "cost": [
-            1.5,
-            1.25,
-            1,
-            0.85
-          ],
-          "useSeconds": 30,
           "rangeBands": [
             "Short"
           ]
         }
       },
       "title": "Ki Blasts",
-      "control": "Control the direction and spread of released ki.",
       "summary": "Energy shots, volleys and concentrated blasts or beams.",
-      "effect": "Project and direct ordinary ki attacks."
+      "effect": "Project and direct ordinary ki attacks.",
+      "entry": {
+        "id": "ki-blast",
+        "title": "Ki Blasts",
+        "summary": "Energy shots, volleys and concentrated blasts or beams.",
+        "status": "Developing",
+        "effect": "Project and direct ordinary ki attacks.",
+        "control": "Control the direction and spread of released ki.",
+        "development": "Practising cleaner gathering and tighter moving volleys.",
+        "history": [
+          "s039",
+          "s063",
+          "s081",
+          "s086",
+          "s130",
+          "s160",
+          "s257"
+        ],
+        "appearance": "Yellow-white energy shots; the first shot chipped a practice wall.",
+        "artwork": "ability-ki-blast.png",
+        "artworkAlt": "Fires ki projectiles, volleys and charged shots. Symbolic technique illustration.",
+        "abilityType": "fundamental",
+        "trainingRecord": {
+          "asOf": "28 June, Age 854",
+          "text": "Started with one small shot on Day 22. Chamber practice developed step-release, moving-target fire and short volleys while manoeuvring. Larger shots require an opening and consume more stamina; accuracy remains imperfect. These are ordinary ki attacks, not an acquired named beam or signature technique. In the mission he destroyed the warehouse with an outward release and used contact blasts and concentrated ki at his fingertips. No stable blade was acquired in that fight. During Yamcha’s Raditz fight, a precise shot destroyed the scouter with only superficial burns to Raditz, leaving Yamcha to win his own fight. On Namek, twenty ordinary shots followed preset wide curves; three hit Nappa from behind. This was limited curved fire, not homing or Yamcha’s Spirit Ball. Spirit Spear is recorded separately.",
+          "facts": [
+            {
+              "label": "First success",
+              "value": "Day 22 · Shallow chip in a practice wall"
+            },
+            {
+              "label": "Current control",
+              "value": "Moving volleys and larger charged shots; finite accuracy and stamina"
+            }
+          ]
+        },
+        "category": "ki"
+      }
     },
     "ki-suppression": {
       "credits": 4644.015350877193,
@@ -183,7 +280,32 @@
         "mechanics": {}
       },
       "effect": "Regulates how much ki is expressed and detectable.",
-      "control": "Deliberate full-power bursts can be followed by renewed suppression. Hard surprises can disrupt the chosen level."
+      "entry": {
+        "id": "ki-suppression",
+        "title": "Power suppression",
+        "summary": "Lowers emitted power and deliberately releases it for action.",
+        "status": "Advanced",
+        "effect": "Regulates how much ki is expressed and detectable.",
+        "control": "Deliberate full-power bursts can be followed by renewed suppression. Hard surprises can disrupt the chosen level.",
+        "development": "Intensive control practice strengthened suppression alongside deliberate changes in output.",
+        "history": [
+          "s061",
+          "s063",
+          "s076",
+          "s077",
+          "s246",
+          "s257"
+        ],
+        "artwork": "ability-ki-suppression.png",
+        "artworkAlt": "Lowers emitted power and deliberately releases it for action. Symbolic technique illustration.",
+        "abilityType": "fundamental",
+        "trainingRecord": {
+          "asOf": "28 June, Age 854",
+          "text": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains. The opening soldier engagement demonstrated a deliberate full-power striking burst followed by a return to half output. At the current recorded base, half output would be about 39,904; that calculation is not a new suppression check. Difficulty sensing a deeply suppressed opponent does not undo Zero’s own suppression skill.",
+          "facts": []
+        },
+        "category": "discipline"
+      }
     },
     "uncontrolled-form": {
       "mode": "involuntary",
@@ -192,9 +314,37 @@
       "capability": {
         "kind": "involuntary",
         "mechanics": {
-          "factor": 15,
-          "upkeepPerMinute": 0
+          "factor": 15
         }
+      },
+      "entry": {
+        "id": "uncontrolled-form",
+        "title": "Uncontrolled Dark Factor",
+        "summary": "Releases the Dark Factor through an involuntary, dangerous manifestation.",
+        "status": "Uncontrolled",
+        "abilityType": "transformation",
+        "artwork": "ability-uncontrolled.webp",
+        "artworkAlt": "Symbolic black-and-violet horned energy eruption for Uncontrolled Dark Factor.",
+        "effect": "The attachment can take control of Zero’s body; this is a witnessed manifestation, not a safe voluntary transformation.",
+        "control": "Chronoa’s seal contains it. Losing consciousness or nearing death with the channel open can trigger takeover. The failed Kaioken/channel test also triggered it while conscious: Kaioken collapsed and ×15 replaced ×10, without stacking.",
+        "development": "Containment remains intact; voluntary mastery has not been achieved.",
+        "history": [
+          "s088",
+          "s090",
+          "s091",
+          "s094",
+          "s152"
+        ],
+        "appearance": "A dense black-and-violet mantle encloses body, hair and clothes, enlarging the silhouette with horn-like projections and pale claws. Reversion exposes the underlying clothes and injuries.",
+        "formIds": [
+          "uncontrolled"
+        ],
+        "trainingRecord": {
+          "asOf": "28 June, Age 854",
+          "text": "Power erupted after a voice that felt like Zero’s own thoughts offered strength. Fighting Nappa felt dreamlike and apparently voluntary until the body turned toward a city against his wishes. Vegeta stopped him before he reached it. The dense mantle encloses his body, hair and clothes and slightly enlarges his silhouette; reversion reveals what was underneath without repairing battle damage. Its layered growling laugh is not a new technique. This is a recorded manifestation, not a safe transformation he can freely activate. A brief second takeover occurred during the 15 April Kaioken/channel test; Krillin stopped it immediately. Kaioken dropped out, so ×15 replaced the channel without stacking. Chronoa checked and settled the intact seal.",
+          "facts": []
+        },
+        "category": "forms"
       }
     },
     "sealed-channel-form": {
@@ -221,28 +371,45 @@
       "capability": {
         "kind": "form",
         "mechanics": {
-          "factor": 10,
-          "setup": [
-            30,
-            15,
-            15,
-            0
-          ],
-          "activationCost": [
-            4,
-            2,
-            1,
-            0.5
-          ],
-          "upkeepPerMinute": [
-            8,
-            4,
-            2,
-            1
-          ]
+          "factor": 10
         }
       },
-      "control": "Consciously regulate the borrowed power. Combining it with Kaioken remains unsafe."
+      "entry": {
+        "id": "sealed-channel-form",
+        "title": "Dark Factor Sealed Channel",
+        "summary": "Draws Dark Factor power through Chronoa’s seal while retaining control.",
+        "status": "Developing",
+        "abilityType": "transformation",
+        "artwork": "ability-sealed-channel.webp",
+        "artworkAlt": "A circular four-hook seal containing pale violet energy, symbolising Dark Factor Sealed Channel.",
+        "effect": "Opens, regulates and closes the flow through Chronoa’s seal while retaining conscious control.",
+        "control": "Consciously regulate the borrowed power. Combining it with Kaioken remains unsafe.",
+        "development": "Refining activation, sustained regulation and recovery between bouts.",
+        "history": [
+          "s094",
+          "s096",
+          "s097",
+          "s098",
+          "s106",
+          "s113",
+          "s114",
+          "s152",
+          "s177",
+          "s178",
+          "s235",
+          "s257"
+        ],
+        "appearance": "Pale violet aura and red irises, with ordinary physique and hair colour. The permanent seal is a black circle with four inward-curving hooks below the sternum. The icon is symbolic; the Character gallery carries the full appearance.",
+        "formIds": [
+          "sealed-channel"
+        ],
+        "trainingRecord": {
+          "asOf": "28 June, Age 854",
+          "text": "Voluntary opening and closure developed through supervised practice. Full output reached three moving minutes during the first cleanup week; by 10 March the sequence ended without immediate leg trembling, but still left Zero winded and repeated attempts were tiring. No permanent absorption of the multiplier is established. If he loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; safe removal remains unresolved. The ability icon is symbolic; the character gallery retains the full appearance reference. Attempting Kaioken on top of the channel caused loss of control even while conscious. The seal itself remained intact after Chronoa’s check; separate channel use resumed. On Namek, Zero defeated Nappa while retaining control, then closed the flow before losing consciousness after Turles’s ambush. Later practice with Vegeta improved recovery without a new timed maximum.",
+          "facts": []
+        },
+        "category": "forms"
+      }
     },
     "kaioken-technique": {
       "credits": 1882.3684210526317,
@@ -254,43 +421,55 @@
         },
         {
           "tier": "Proficient",
-          "benefit": "Improved activation, release and endurance economy."
+          "benefit": "Improved activation, release and efficiency."
         },
         {
           "tier": "Advanced",
-          "benefit": "Greater ×2 control and endurance economy."
+          "benefit": "Greater ×2 control and efficiency."
         },
         {
           "tier": "Mastered",
-          "benefit": "Instant familiar ×2 bursts and refined endurance economy; bodily strain still matters."
+          "benefit": "Instant familiar ×2 bursts and refined efficiency; bodily strain still matters."
         }
       ],
       "capability": {
         "kind": "kaioken",
         "mechanics": {
-          "factor": 2,
-          "setup": [
-            45,
-            15,
-            15,
-            0
-          ],
-          "activationCost": [
-            6,
-            3,
-            1.5,
-            0.75
-          ],
-          "upkeepPerMinute": [
-            12,
-            6,
-            3,
-            1.5
-          ]
+          "factor": 2
         }
       },
       "title": "Kaioken x2",
-      "control": "Use separately from Sealed Channel; combining them triggered takeover."
+      "entry": {
+        "id": "kaioken-technique",
+        "title": "Kaioken x2",
+        "summary": "Amplifies Zero’s own output for short periods.",
+        "status": "Developing",
+        "abilityType": "signature-technique",
+        "artwork": "ability-kaioken.png",
+        "artworkAlt": "A crimson Kaioken aura around a symbolic fighter silhouette.",
+        "effect": "King Kai’s technique doubles Zero’s own output, increasing strength, speed and resilience together.",
+        "control": "Use separately from Sealed Channel; combining them triggered takeover.",
+        "development": "Continue refining Kaioken x2.",
+        "history": [
+          "s150",
+          "s151",
+          "s152",
+          "s197",
+          "s220",
+          "s237",
+          "s257"
+        ],
+        "appearance": "A crimson aura surrounds the fighter during activation.",
+        "formIds": [
+          "kaioken"
+        ],
+        "trainingRecord": {
+          "asOf": "28 June, Age 854",
+          "text": "First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release strengthened overall battle capacity, including resilience and endurance. Kaioken proficiency continued to develop through practice. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling.",
+          "facts": []
+        },
+        "category": "forms"
+      }
     },
     "ki-sensing": {
       "credits": 4598.453947368421,
@@ -318,7 +497,32 @@
         "mechanics": {}
       },
       "effect": "Tracks living ki signatures and relative output.",
-      "control": "Current readings are relative estimates. Concentration and familiarity improve tracking; the scouter supplies exact numbers."
+      "entry": {
+        "id": "ki-sensing",
+        "title": "Ki sensing",
+        "summary": "Locates familiar ki and estimates relative current output.",
+        "status": "Advanced",
+        "effect": "Tracks living ki signatures and relative output.",
+        "control": "Advanced sensing estimates readable output and tracks familiar moving signatures; exact readings remain a Mastered capability or require a scouter.",
+        "development": "Yardrat practice developed greater reach and precision, supporting Instant Transmission locks.",
+        "history": [
+          "s151",
+          "s212",
+          "s222",
+          "s237",
+          "s246",
+          "s257"
+        ],
+        "artwork": "ability-ki-sensing.png",
+        "artworkAlt": "Locates familiar ki and estimates relative current output. Symbolic technique illustration.",
+        "abilityType": "fundamental",
+        "trainingRecord": {
+          "asOf": "28 June, Age 854",
+          "text": "King Kai’s exercises developed direction and short-range tracking during movement. Zero cannot read exact numbers, hidden reserves or deeply suppressed targets reliably. Familiarity and concentration matter; the scouter still supplies numerical readings. Later practice improved tracking familiar moving signatures without stopping to concentrate. Against Brask, close-range ki tracking helped counter a flash. Recent practice follows familiar and partially suppressed moving signatures; exact values still require the scouter.",
+          "facts": []
+        },
+        "category": "discipline"
+      }
     },
     "spirit-bomb": {
       "credits": 272.95175438596493,
@@ -351,41 +555,35 @@
             40,
             80
           ],
-          "damage": 19,
-          "masteryDamageBonus": 1,
-          "setup": [
-            30,
-            15,
-            15,
-            15
-          ],
-          "fullTime": [
-            600,
-            480,
-            360,
-            300
-          ],
-          "collectionPerMinute": [
-            1.0526315789473684,
-            2.5806451612903225,
-            6.956521739130435,
-            16.842105263157894
-          ],
-          "economy": [
-            1,
-            0.85,
-            0.65,
-            0.45
-          ],
-          "setupCost": 4,
-          "containmentCost": 2,
-          "gatheringCostPerMinute": 2,
           "rangeBands": [
             "Long"
           ]
         }
       },
-      "control": "Gather voluntary spirit energy while concentrating; adequate supply and protection are required."
+      "entry": {
+        "id": "spirit-bomb",
+        "title": "Spirit Bomb",
+        "summary": "Gather spirit energy into a powerful sphere.",
+        "status": "Proficient",
+        "abilityType": "signature-technique",
+        "effect": "Receives voluntarily offered spirit energy, gathers it into a sphere and releases the accumulated charge. More available energy supports a larger attack.",
+        "control": "Gather voluntary spirit energy while concentrating; adequate supply and protection are required.",
+        "development": "Refine collection, containment and release under Yardrat instruction.",
+        "history": [
+          "s152",
+          "s163",
+          "s257"
+        ],
+        "appearance": "Blue-white spirit energy gathers into a distinct sphere above raised hands. The icon represents the technique, not an established maximum size.",
+        "artwork": "ability-spirit-bomb.png",
+        "artworkAlt": "Symbolic fighter gathering a blue-white sphere above raised hands.",
+        "trainingRecord": {
+          "asOf": "28 June, Age 854",
+          "text": "Voluntarily offered energy supported the first small successful exercise. Gathering takes concentration and time. No large battlefield-ready Spirit Bomb, unlimited environmental draw or permanent absorption is established.",
+          "facts": []
+        },
+        "category": "ki"
+      }
     },
     "spirit-spear": {
       "credits": 356.95175438596493,
@@ -418,30 +616,35 @@
             3.5,
             4
           ],
-          "setup": [
-            45,
-            30,
-            15,
-            15
-          ],
-          "fullTime": [
-            120,
-            90,
-            75,
-            60
-          ],
-          "damage": 8.5,
-          "masteryDamageBonus": 1,
-          "regularCost": [
-            10,
-            9,
-            8.5,
-            8
-          ],
           "rangeBands": [
             "Engaged"
           ]
         }
+      },
+      "entry": {
+        "id": "spirit-spear",
+        "title": "Spirit Spear",
+        "summary": "Releases gathered spirit energy through a palm strike on contact.",
+        "status": "Proficient",
+        "abilityType": "signature-technique",
+        "artwork": "ability-spirit-spear.png",
+        "artworkAlt": "Spirit energy gathering into an open hand and spreading across the front of its palm and fingers.",
+        "effect": "Gathers spirit energy across the heel and front of the palm, then delivers it on contact. A clean, coupled strike drives energy through the target and erupts from the opposite side.",
+        "control": "Gather a palm charge during committed movement and deliver it through direct contact.",
+        "development": "Improve gathering stability and contact alignment.",
+        "history": [
+          "s164",
+          "s173",
+          "s237",
+          "s257"
+        ],
+        "appearance": "Blue-white spirit energy gathers across the heel of the palm and spreads softly over the front of the hand and fingers, with the skin visible beneath it.",
+        "trainingRecord": {
+          "asOf": "28 June, Age 854",
+          "text": "Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. The current technique profile records its ×2 regular release and mastery-dependent charge ceiling; those calibrations do not rewrite the earlier partial contacts.",
+          "facts": []
+        },
+        "category": "physical"
       }
     },
     "kiai": {
@@ -462,7 +665,7 @@
         },
         {
           "tier": "Mastered",
-          "benefit": "Gather up to +100% Form Power; smaller boosts gather faster and cost less."
+          "benefit": "Gather up to +100% Form Power; smaller boosts gather faster and require less effort."
         }
       ],
       "capability": {
@@ -473,263 +676,27 @@
             0.5,
             0.75,
             1
-          ],
-          "fullCharge": [
-            180,
-            120,
-            90,
-            60
-          ],
-          "fullUpkeepPerMinute": [
-            2,
-            1.5,
-            1,
-            0.5
-          ],
-          "activationCost": [
-            2,
-            1,
-            0.5,
-            0.25
           ]
         }
       },
       "artwork": "./ability-kiai.png",
-      "category": "forms"
-    },
-    "second-wind": {
-      "effect": "Regain the strength to keep fighting.",
-      "credits": 916.9517543859649,
-      "assessment": "Recorded · S268, including S247 and S257 training",
-      "milestones": [
-        {
-          "tier": "Learned",
-          "benefit": "1 reserve, each restoring 10 Endurance."
-        },
-        {
-          "tier": "Proficient",
-          "benefit": "1 reserve, each restoring 15 Endurance."
-        },
-        {
-          "tier": "Advanced",
-          "benefit": "2 reserves, each restoring 15 Endurance."
-        },
-        {
-          "tier": "Mastered",
-          "benefit": "2 reserves, each restoring 20 Endurance."
-        }
-      ],
-      "capability": {
-        "kind": "recovery",
-        "mechanics": {
-          "uses": [
-            1,
-            1,
-            2,
-            2
-          ],
-          "restoreMin": [
-            10,
-            15,
-            15,
-            20
-          ],
-          "restoreMax": [
-            10,
-            15,
-            15,
-            20
-          ],
-          "cooldownHours": 24,
-          "cost": 0,
-          "recoverySeconds": 45,
-          "terminalImpactDamage": 100
-        }
-      },
-      "artwork": "./ability-second-wind.png",
-      "control": "Draw on trained recovery reserves."
-    },
-    "rotation-evasive": {
-      "credits": 516.9517543859649,
-      "assessment": "Recorded · S268, including S247 and S257 training",
-      "category": "discipline",
-      "artwork": "./ability-evasive.webp",
+      "category": "forms",
       "entry": {
-        "id": "rotation-evasive",
-        "title": "Evasive",
-        "category": "discipline",
-        "summary": "Slip past attacks and create space.",
-        "effect": "Use footwork and a viable escape route to evade incoming attacks. Compatible mobile preparation can continue through a successful dodge.",
-        "development": "Dedicated practice develops this defensive rotation independently of Physical Combat.",
-        "history": []
-      },
-      "milestones": [
-        {
-          "tier": "Learned",
-          "benefit": "Dodge preference ×1.5; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Proficient",
-          "benefit": "Dodge preference ×2; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Advanced",
-          "benefit": "Dodge preference ×3; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Mastered",
-          "benefit": "Dodge preference ×4; refined handling under pressure."
-        }
-      ],
-      "capability": {
-        "kind": "rotation",
-        "mechanics": {
-          "preferred": "Dodge",
-          "weightFactor": [
-            1.5,
-            2,
-            3,
-            4
-          ]
-        }
+        "id": "kiai",
+        "title": "Kiai",
+        "summary": "Gathers power into a sustained boost for the current fighting state.",
+        "status": "Proficient",
+        "abilityType": "fundamental",
+        "category": "forms",
+        "effect": "Builds whole-body output gradually. The gathered bonus increases strength, speed and resilience, and powers subsequent attacks.",
+        "control": "Partial buildup can be retained while control holds. Changing form or bodily amplifier starts a fresh buildup. Gathering competes with attack preparation.",
+        "development": "Refining sustained output and efficient gathering.",
+        "artwork": "./ability-kiai.png",
+        "artworkAlt": "Gathers power into a sustained boost for the current fighting state.",
+        "history": [
+          "s257"
+        ]
       }
-    },
-    "rotation-bulwark": {
-      "credits": 516.9517543859649,
-      "assessment": "Recorded · S268, including S247 and S257 training",
-      "category": "discipline",
-      "artwork": "./ability-bulwark.webp",
-      "entry": {
-        "id": "rotation-bulwark",
-        "title": "Bulwark",
-        "category": "discipline",
-        "summary": "Brace against pressure and hold your ground.",
-        "effect": "Hold a defensive line with stable guards. A successful guard checks force but can transmit wear; available limbs and actual power determine what can be held.",
-        "development": "Dedicated practice develops this defensive rotation independently of Physical Combat.",
-        "history": []
-      },
-      "milestones": [
-        {
-          "tier": "Learned",
-          "benefit": "Guard preference ×1.5; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Proficient",
-          "benefit": "Guard preference ×2; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Advanced",
-          "benefit": "Guard preference ×3; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Mastered",
-          "benefit": "Guard preference ×4; refined handling under pressure."
-        }
-      ],
-      "capability": {
-        "kind": "rotation",
-        "mechanics": {
-          "preferred": "Guard",
-          "weightFactor": [
-            1.5,
-            2,
-            3,
-            4
-          ]
-        }
-      }
-    },
-    "rotation-deflection": {
-      "credits": 276.95175438596493,
-      "assessment": "Recorded · S268, including S247 and S257 training",
-      "category": "discipline",
-      "artwork": "./ability-deflection.webp",
-      "entry": {
-        "id": "rotation-deflection",
-        "title": "Deflection",
-        "category": "discipline",
-        "summary": "Turn incoming attacks away from their path.",
-        "effect": "Redirect a suitable incoming attack into the environment or another enemy. The redirected attack retains its energy and the next recipient can defend.",
-        "development": "Dedicated practice develops this defensive rotation independently of Physical Combat.",
-        "history": []
-      },
-      "milestones": [
-        {
-          "tier": "Learned",
-          "benefit": "Parry preference ×1.5; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Proficient",
-          "benefit": "Parry preference ×2; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Advanced",
-          "benefit": "Parry preference ×3; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Mastered",
-          "benefit": "Parry preference ×4; refined handling under pressure."
-        }
-      ],
-      "capability": {
-        "kind": "rotation",
-        "mechanics": {
-          "preferred": "Parry",
-          "weightFactor": [
-            1.5,
-            2,
-            3,
-            4
-          ]
-        }
-      }
-    },
-    "rotation-riposte": {
-      "credits": 276.95175438596493,
-      "assessment": "Recorded · S268, including S247 and S257 training",
-      "category": "discipline",
-      "artwork": "./ability-riposte.webp",
-      "entry": {
-        "id": "rotation-riposte",
-        "title": "Riposte",
-        "category": "discipline",
-        "summary": "Read an opening and answer immediately.",
-        "effect": "Use a counter opportunity for a fitting immediate attack or disengagement. A reply uses ordinary accuracy and actual preparation; movement still takes time.",
-        "development": "Dedicated practice develops this defensive rotation independently of Physical Combat.",
-        "history": []
-      },
-      "milestones": [
-        {
-          "tier": "Learned",
-          "benefit": "Counter preference ×1.5; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Proficient",
-          "benefit": "Counter preference ×2; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Advanced",
-          "benefit": "Counter preference ×3; stronger emphasis within your defensive responses."
-        },
-        {
-          "tier": "Mastered",
-          "benefit": "Counter preference ×4; refined handling under pressure."
-        }
-      ],
-      "capability": {
-        "kind": "rotation",
-        "mechanics": {
-          "preferred": "Counter",
-          "weightFactor": [
-            1.5,
-            2,
-            3,
-            4
-          ]
-        }
-      },
-      "effect": "Turn an opening in the opponent’s attack into time to respond.",
-      "control": "Timing and awareness create room for a response."
     },
     "instant-transmission": {
       "credits": 4682.115836466165,
@@ -754,24 +721,31 @@
       ],
       "capability": {
         "kind": "teleport",
-        "mechanics": {
-          "setup": [
-            45,
-            30,
-            15,
-            0
-          ],
-          "cost": [
-            6,
-            4,
-            2,
-            1
-          ],
-          "passengerFraction": 0.5
-        }
+        "mechanics": {}
       },
       "artwork": "./ability-instant-transmission.webp",
-      "artworkAlt": "A shadow-faced fighter using Instant Transmission amid blue light."
+      "artworkAlt": "A shadow-faced fighter using Instant Transmission amid blue light.",
+      "entry": {
+        "id": "instant-transmission",
+        "title": "Instant Transmission",
+        "category": "spirit-control",
+        "summary": "Locks onto a living ki signature and transports you beside it.",
+        "status": "Advanced",
+        "effect": "Locks onto a living ki signature and transports you beside it.",
+        "control": "Advanced control holds a moving familiar signature for precise repositioning.",
+        "development": "Learned during the first month of intensive Yardrat instruction.",
+        "history": [
+          "s246",
+          "s257"
+        ],
+        "artwork": "./ability-instant-transmission.webp",
+        "trainingRecord": {
+          "asOf": "28 July, Age 854",
+          "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+          "facts": []
+        },
+        "artworkAlt": "A shadow-faced fighter using Instant Transmission amid blue light."
+      }
     },
     "spirit-cloning": {
       "credits": 2084.2289317042605,
@@ -802,30 +776,32 @@
             2,
             3,
             4
-          ],
-          "setup": [
-            45,
-            30,
-            15,
-            15
-          ],
-          "cost": [
-            4,
-            3,
-            2,
-            1
-          ],
-          "upkeepPerCopy": [
-            1,
-            0.75,
-            0.5,
-            0.25
           ]
         }
       },
       "artwork": "./ability-spirit-cloning.webp",
       "artworkAlt": "Four matching shadow-faced fighters surrounded by blue energy.",
-      "control": "Power divides between the bodies. Their actions draw from one shared Endurance reserve."
+      "entry": {
+        "id": "spirit-cloning",
+        "title": "Cloning",
+        "category": "spirit-control",
+        "summary": "Divides your power among independently coordinated copies.",
+        "status": "Proficient",
+        "effect": "Divides your power among independently coordinated copies.",
+        "control": "Power is divided among the bodies. Coordinating more copies demands sustained concentration and shared effort.",
+        "development": "Learned during the first month of intensive Yardrat instruction.",
+        "history": [
+          "s246",
+          "s257"
+        ],
+        "artwork": "./ability-spirit-cloning.webp",
+        "trainingRecord": {
+          "asOf": "28 July, Age 854",
+          "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+          "facts": []
+        },
+        "artworkAlt": "Four matching shadow-faced fighters surrounded by blue energy."
+      }
     },
     "gigantification": {
       "credits": 2084.2289317042605,
@@ -856,29 +832,32 @@
             3,
             4,
             6
-          ],
-          "setup": [
-            45,
-            30,
-            15,
-            15
-          ],
-          "cost": [
-            4,
-            3,
-            2,
-            1
-          ],
-          "upkeepPerMinute": [
-            2,
-            1.5,
-            1,
-            0.5
           ]
         }
       },
       "artwork": "./ability-gigantification.webp",
-      "artworkAlt": "A shadow-faced fighter expanding to a towering size."
+      "artworkAlt": "A shadow-faced fighter expanding to a towering size.",
+      "entry": {
+        "id": "gigantification",
+        "title": "Gigantification",
+        "category": "spirit-control",
+        "summary": "Expands your body through controlled ki.",
+        "status": "Proficient",
+        "effect": "Expands your body through controlled ki.",
+        "control": "Deliberate steps and turns while enlarged; physical reach follows your body.",
+        "development": "Learned during the first month of intensive Yardrat instruction.",
+        "history": [
+          "s246",
+          "s257"
+        ],
+        "artwork": "./ability-gigantification.webp",
+        "trainingRecord": {
+          "asOf": "28 July, Age 854",
+          "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+          "facts": []
+        },
+        "artworkAlt": "A shadow-faced fighter expanding to a towering size."
+      }
     },
     "spirit-healing": {
       "credits": 2084.2289317042605,
@@ -894,7 +873,7 @@
         },
         {
           "tier": "Advanced",
-          "benefit": "Can repair one healable Major injury with viable tissue."
+          "benefit": "Can repair serious wounds with viable tissue."
         },
         {
           "tier": "Mastered",
@@ -903,30 +882,45 @@
       ],
       "capability": {
         "kind": "healing",
-        "mechanics": {
-          "useSeconds": 45,
-          "restore": [
-            5,
-            10,
-            15,
-            20
-          ],
-          "costPerRestored": [
-            1.5,
-            1.4,
-            1.2,
-            1
-          ],
-          "tissueCost": [
-            5,
-            4,
-            20,
-            10
-          ]
-        }
+        "mechanics": {}
       },
       "artwork": "./ability-spirit-healing.webp",
-      "artworkAlt": "A shadow-faced healer directing green energy into a patient."
+      "artworkAlt": "A shadow-faced healer directing green energy into a patient.",
+      "entry": {
+        "id": "spirit-healing",
+        "title": "Spirit Healing",
+        "category": "spirit-control",
+        "summary": "Restores another person’s energy or repairs accessible wounds through touch.",
+        "status": "Proficient",
+        "effect": "Restores another person’s energy or repairs accessible wounds through touch.",
+        "control": "Transfer personal energy or repair accessible wounds through touch; deeper injuries demand more developed healing control.",
+        "development": "Learned during the first month of intensive Yardrat instruction.",
+        "history": [
+          "s246",
+          "s257"
+        ],
+        "artwork": "./ability-spirit-healing.webp",
+        "trainingRecord": {
+          "asOf": "28 July, Age 854",
+          "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+          "facts": []
+        },
+        "artworkAlt": "A shadow-faced healer directing green energy into a patient."
+      }
     }
-  }
+  },
+  "mode": "narrative",
+  "retiredTechniqueIds": [
+    "bulwark",
+    "deflection",
+    "evasive",
+    "riposte",
+    "rotation-bulwark",
+    "rotation-deflection",
+    "rotation-evasive",
+    "rotation-riposte",
+    "second-wind"
+  ],
+  "sourcePolicy": "Current acquired technique presentation and cumulative progress. Historical campaign ability prose is superseded by these entries. No mechanical combat fields.",
+  "characterCondition": "Fully rested; no injuries. Seal closed and intact; all forms inactive. Yardrat outfit and concealed communicator worn. Travel bag, scroll and scouter in the capsule aircraft beside the desert basin. No Senzu carried."
 }

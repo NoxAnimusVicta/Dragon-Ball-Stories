@@ -1,16 +1,9 @@
 # Start here
 
-This repository is the public companion for Dragon Ball Stories.
+This is the public Dragon Ball Stories companion. Current published story: S268, the desert beacon and arriving expedition. The story has not advanced during maintenance.
 
-1. Read [campaign.json](campaign.json) and its generated [current continuity](CURRENT-CONTINUITY.md) for the published checkpoint.
-2. Read the [Unified Narrator and Storytelling Guide](NARRATOR-GUIDE.md) in full before every campaign response, then the authorised local checkpoint and exact scenes. Public summaries do not replace the private archive.
-3. Read [Corrections](RETCONS.md) and the [approved scale](POWER-SCALE.md). The scale’s adaptations and calculations were approved together; older rejected fits are not active alternatives.
-4. For any response involving combat, follow the narrator guide's mandatory full reads of the authorised local operational rules, form prerequisites and NPC register, plus the current familiarity ledger and encounter records. This applies after compaction. The [public training and combat reference](COMBAT-AND-TRAINING.md) explains the system but cannot replace private operational records or saved rolls.
+Read campaign.json and CURRENT-CONTINUITY.md for the published story, NARRATOR-GUIDE.md for narration, NARRATIVE-COMBAT.md for current combat guidance, and COMBAT-AND-TRAINING.md for the retained learning framework. The full private checkpoint and character records remain necessary to run the story.
 
-Coverage: **S246 · Conton 28 July, Age 854 · 14:18 · Yardrat, TL-0042-045-A0503**. The first month of intensive training is complete. Current readings, calculated forms, resources and possession locations are maintained in the app data rather than duplicated here.
+Numerical combat was retired26October2026. Its private archive is historical only. technique-progress.json supplies current acquired technique entries and overrides older ability snapshots in campaign.json. No Endurance or defensive-rotation system is active. Training and mastery remain.
 
-The numerical reference is out of character. It does not unlock forms, expose private plans or replace the live custom-character assessments. Current NPC powers are labelled as measured or assessed; dated old readings remain history. Artwork is an appearance reference, not proof of current location or pristine clothing. Future designs remain private.
-
-Update the public data, rebuild generated summaries, validate calculations and privacy, inspect desktop/phone views, then publish only manifest-listed files. Read every edited file fully before and after. Verify the live release before claiming publication. No maintenance operation advances the story.
-
-For app edits, read [APP-CONTENT-STANDARD.md](APP-CONTENT-STANDARD.md) and [MAINTENANCE.md](MAINTENANCE.md).
+Before app edits read APP-CONTENT-STANDARD.md and MAINTENANCE.md. Publish only manifest files and verify the deployed release. Private plans and NPC loadouts remain private.

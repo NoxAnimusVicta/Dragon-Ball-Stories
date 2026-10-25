@@ -340,125 +340,30 @@
     return `<section class="content-section technique-learning"><h3>Mastery</h3>${learningMeter(ability)}${milestones.length?`<details class="record-history"><summary>Path to Mastery</summary><ol class="technique-milestones">${milestones.map(m=>{const i=combatReference?.tiers?.findIndex(t=>t.name===m.tier) ?? -1;return `<li${p.label===m.tier?' class="is-current"':i>=0 && i<tierIndex?' class="is-reached"':''}><strong>${escape(m.tier)}${p.label===m.tier?'<small>Current</small>':''}</strong><p>${escape(m.benefit)}</p>${techniqueCapabilities(ability,m.tier)}</li>`;}).join('')}</ol></details>`:''}</section>`;
   }
   function techniqueCapabilities(ability, previewTier=null) {
-    const current=progressState(ability);
-    if(previewTier && (!Number.isFinite(current.credits)||(current.credits<10 && ability.id!=='spirit-bomb'))) return "";
-    const threshold=combatReference?.tiers?.find(t=>t.name===previewTier);
-    const p=threshold ? {...current,label:previewTier,credits:threshold.credits} : current;
-    const profile=p.record?.capability;
+    const p=progressState(ability), profile=p.record?.capability;
     if(!profile) return '';
-    const m=profile.mechanics || {}, names=['Learned','Proficient','Advanced','Mastered'];
-    const index=names.indexOf(p.label), rows=[];
+    const names=['Learned','Proficient','Advanced','Mastered'];
+    const index=Math.max(0,names.indexOf(previewTier || p.label));
+    const m=profile.mechanics || {}, rows=[];
     const add=(label,value)=>rows.push([label,value]);
-    const stat=n=>n.toLocaleString('en',{maximumFractionDigits:4});
-    const endurance=n=>{
-      if(!Number.isFinite(n)||n<0) return 'Not Yet Assessed';
-      const d=decimal(n);
-      const tenth=d ? Number(d.digits*10n/(10n**BigInt(d.scale)))/10 : Math.floor(n*10)/10;
-      return tenth.toLocaleString('en',{minimumFractionDigits:1,maximumFractionDigits:1});
-    };
-    const factor=n=>'×'+stat(n);
-    let note='';
-    // Mastered is terminal; extra recorded practice grants no hidden stat boost.
-    const refinement=1;
-    const coefficient=values=>{
-      const levels=[10,250,2500,10000], c=Math.max(10,p.credits);
-      let seconds=values.at(-1);
-      if(c<10000){const i=levels.findLastIndex(n=>c>=n),f=(c-levels[i])/(levels[i+1]-levels[i]);
-        seconds=values[i+1]===0?values[i]*(1-f):values[i]*(values[i+1]/values[i])**f;}
-      return seconds*refinement;
-    };
-    const timer=values=>{const n=values[Math.max(0,index)]*refinement;return n===0?0:Math.max(15,Math.ceil(n/15)*15);};
-    const duration=n=>{
-      if(n===0) return 'No Separate Buildup';
-      if(n>=60){const rounded=Math.round(n*10)/10;return `${Math.floor(rounded/60)} min ${creditText(rounded%60)} sec`;}
-      return `${n.toLocaleString('en',{maximumFractionDigits:n<1?4:2})} sec`;
-    };
-    if(profile.kind==='teleport' && index>=0) {
-      add('Activation Time',duration(timer(m.setup)));
-      add('Endurance Cost',endurance(coefficient(m.cost)));
-      add('Range','Senseable Living Ki');
-      add('Practised Passenger','+'+creditText(m.passengerFraction*100)+'% Cost Each');
-    } else if(profile.kind==='duplication' && index>=0) {
-      add('Additional Bodies',String(m.copies[index]));
-      add('Creation Time',duration(timer(m.setup)));
-      add('Endurance Cost',endurance(coefficient(m.cost)));
-      add('Drain Per Copy',endurance(coefficient(m.upkeepPerCopy))+' / min');
-    } else if(profile.kind==='growth' && index>=0) {
-      add('Maximum Height',factor(m.heightFactor[index]));
-      add('Activation Time',duration(timer(m.setup)));
-      add('Activation Cost',endurance(coefficient(m.cost)));
-      add('Endurance Drain',endurance(coefficient(m.upkeepPerMinute))+' / min');
-    } else if(profile.kind==='healing' && index>=0) {
-      add('Application Time',duration(m.useSeconds));
-      add('Energy Restored','Up to '+endurance(m.restore[index])+' Endurance');
-      add('Donation Cost',endurance(coefficient(m.costPerRestored))+' Per Endurance Restored');
-      add('Tissue Repair',index<2?'Superficial Wound':'One Healable Major Injury');
-      add('Repair Cost',endurance(m.tissueCost[index]*refinement));
-      add('Range','Touch');
-    } else if(profile.kind==='contact' && index>=0) {
-      const peak=m.ceiling[index],setup=timer(m.setup),total=timer(m.fullTime);
-      add('Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
-      add('Base Endurance Damage',endurance(m.damage+(index===3?(m.masteryDamageBonus||0):0)));
-      add('Endurance Cost',`${endurance(m.regularCost[index])} → ${endurance(m.regularCost[index]*(peak/m.regular)**2)}`);
-      add('Regular Preparation',duration(setup));add('Full Charge · Total',duration(total));
-
-    } else if(['kaioken','form','involuntary'].includes(profile.kind)) {
-      add('Power Multiplier',factor(m.factor));
-      if(index>=0 && m.setup) add('Activation Time',duration(timer(m.setup)));
-      const rate=v=>Array.isArray(v)?coefficient(v):v;
-      if(index>=0 && m.activationCost) add('Activation Cost',endurance(rate(m.activationCost))+' Endurance');
-      if(index>=0 || profile.kind==='involuntary') {
-        add('Endurance Drain',m.upkeepPerMinute == null ? 'Control Rate Pending' : endurance(rate(m.upkeepPerMinute))+' / min');
-      }
-      if(profile.kind==='involuntary') note='An involuntary takeover by the Dark Factor.';
-    } else if(profile.kind==='ordinary' && index>=0) {
-      add('Attack Output',factor(m.factor));add('Base Endurance Damage',endurance(m.damage[index]));
-      add('Endurance Cost',endurance(m.cost[index]*refinement));
-      add('Use Time',duration(m.useSeconds));
-    } else if(profile.kind==='kiai' && index>=0) {
-      add('Maximum Boost','+'+creditText(m.bonus[index]*100)+'% Form Power');
-      add('Full Buildup',creditText(m.fullCharge[index])+' sec');
-      add('Activation Cost',endurance(coefficient(m.activationCost))+' Endurance');
-      add('Maximum Upkeep',endurance(m.fullUpkeepPerMinute[index])+' Endurance / min');
-      note='Smaller boosts gather faster and cost less. Changing form or amplifier resets the buildup.';
-    } else if(profile.kind==='rotation' && index>=0) {
-      add('Preferred Response',m.preferred);
-      add('Preference Weight',factor(m.weightFactor[index]));
-
-    } else if(profile.kind==='recovery' && index>=0) {
-      add('Available Reserves',String(m.uses[index]));
-      add('Per Recovery',`${endurance(m.restoreMin[index])} Endurance`);
-      add('Recovery Time',duration(m.recoverySeconds));
-      add('Recharge',`${m.cooldownHours} hours per spent reserve`);
-
-    } else if(profile.kind==='supplied') {
-      const i=Math.max(0,index),peak=m.ceiling[i];
-      const total=(index<0?m.fullTime[0]:timer(m.fullTime));
-      const baselineSetup=index<0?m.setup[0]:timer(m.setup);
-      const setup=p.label==='Learning'?baselineSetup*(p.credits<5?4:2):baselineSetup;
-      const rate=peak/((total-baselineSetup)/60);
-      const cost=(mult)=>m.economy[i]*refinement*(m.setupCost+m.containmentCost*Math.sqrt(mult)+m.gatheringCostPerMinute*(Math.ceil((setup+60*mult/rate)/15)*15-setup)/60);
-      add(p.label==='Learning'?'Learning Release':'Regular Release',factor(m.regular));add('Current Charge Limit',factor(peak));
-      add('Base Endurance Damage',endurance(m.damage+(index===3?(m.masteryDamageBonus||0):0)));
-      add('Endurance Cost',`${endurance(cost(m.regular))} → ${endurance(cost(peak))}`);
-      add(p.label==='Learning'?'Learning Preparation':'Regular Preparation',duration(Math.ceil((setup+60*m.regular/rate)/15)*15));
-      add('Full Charge · Total',duration(Math.ceil((setup+60*peak/rate)/15)*15));
-      if(p.label==='Learning') {
-        add('Current Failure Risk',stat(40*(1-p.credits/10))+'%');
-      }
-      note='Gathering requires concentration, protection and willing spirit energy. Limited supply lengthens the charge.';
+    if(['form','kaioken','involuntary'].includes(profile.kind) && !previewTier) add('Power Multiplier','×'+m.factor);
+    if(['contact','supplied'].includes(profile.kind)) {
+      if(!previewTier) add('Regular Release','×'+m.regular);
+      add(previewTier?'Charge Limit':'Current Charge Limit','×'+m.ceiling[index]);
     }
-    if(ability.id==='flight' && !previewTier && Number.isFinite(Number(data.character.battlePower)) && m.travelReferencePower>0) {
+    if(profile.kind==='kiai') add('Maximum Boost','+'+(m.bonus[index]*100)+'% Form Power');
+    if(profile.kind==='duplication') add('Additional Bodies',String(m.copies[index]));
+    if(profile.kind==='growth') add('Maximum Height','×'+m.heightFactor[index]);
+    if(profile.kind==='teleport' && !previewTier) add('Destination','Senseable Living Ki');
+    if(profile.kind==='healing') add('Tissue Repair',index<2?'Superficial Wounds':'Serious Wounds With Viable Tissue');
+    if(!previewTier && m.rangeBands?.length) add('Reach',m.rangeBands[0]==='Engaged'?'Contact':m.rangeBands[0]==='Short'?'Nearby':'Distant');
+    if(ability.id==='flight' && !previewTier && m.travelReferencePower>0) {
       const speed=m.travelAnchorMetresPerSecond*Math.sqrt(Number(data.character.battlePower)/m.travelReferencePower)*m.travelCoefficient/1000;
       add('Max Speed · Base',(Math.floor(speed*10)/10).toLocaleString('en',{minimumFractionDigits:1,maximumFractionDigits:1})+' km/s');
     }
-    if(Array.isArray(m.rangeBands)&&m.rangeBands.length) add('Range',m.rangeBands.join(' · '));
     if(!rows.length) return '';
-    if(previewTier) {
-      const changing=rows.filter(([label])=>!['Range','Power Multiplier','Attack Output','Regular Release','Mastered Charge Limit','Preferred Response'].includes(label));
-      return `<div class="technique-output"><dl>${changing.map(([label,value])=>`<div><dt>${escape(label==='Current Charge Limit'?'Charge Limit':label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl></div>`;
-    }
-    return `<section class="content-section technique-output"><h3>${p.label==='Learning'?'Learning Capability':'Current Capability'}</h3><dl>${rows.map(([label,value])=>`<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl>${note?`<p>${escape(note)}</p>`:''}</section>`;
+    const list=`<dl>${rows.map(([label,value])=>`<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl>`;
+    return previewTier ? `<div class="technique-output">${list}</div>` : `<section class="content-section technique-output"><h3>${p.label==='Learning'?'Learning Capability':'Current Capability'}</h3>${list}</section>`;
   }
   function abilities() {
     const groups=[...abilityGroups,{id:'other',title:'Other Techniques'}];
@@ -723,14 +628,14 @@
       // Display current catalogue aliases without rewriting the historical source.
       data.events = data.events.map(event => ({...event, ...Object.fromEntries(['date','summary','details'].filter(key => typeof event[key] === 'string').map(key => [key,catalogueText(event[key])]))}));
       try { const reference=await fetch('./power-scale.json?v='+release,{cache:'no-store',signal:controller.signal}); if(reference.ok) scale=await reference.json(); } catch { /* Main story remains available if reference fails. */ }
-      try { const response=await fetch('./combat-reference.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const reference=await response.json();if(reference.schemaVersion===1 && Array.isArray(reference.sections) && Array.isArray(reference.rotations) && reference.abilityNotes) combatReference=reference;} } catch { /* Optional technique details remain absent if their data is unavailable. */ }
+      try { const response=await fetch('./combat-reference.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const reference=await response.json();if(reference.schemaVersion===1 && Array.isArray(reference.tiers)) combatReference=reference;} } catch { /* Optional technique details remain absent if their data is unavailable. */ }
       try { const response=await fetch('./technique-progress.json?v='+release,{cache:'no-store',signal:controller.signal}); if(response.ok) {const progress=await response.json();if(progress.schemaVersion===1 && progress.records) techniqueProgress=progress;} } catch { /* Unknown progress is never displayed as zero. */ }
-      for(const [id,record] of Object.entries(techniqueProgress?.records || {})) {
-        if(record.entry && record.entry.id===id && !data.abilities.some(a=>a.id===id)) data.abilities.push(record.entry);
-        const ability=data.abilities.find(a=>a.id===id);
-        if(ability) for(const field of ['summary','effect','control']) {
-          if(typeof record[field]==='string') ability[field]=record[field];
-        }
+      const retired=new Set(['second-wind','rotation-evasive','rotation-bulwark','rotation-deflection','rotation-riposte']);
+      if(techniqueProgress?.mode==='narrative') {
+        data.character.condition=techniqueProgress.characterCondition;
+        data.abilities=Object.values(techniqueProgress.records).map(r=>r.entry).filter(Boolean);
+      } else {
+        data.abilities=data.abilities.filter(a=>!retired.has(a.id));
       }
       validate(data);
       portraitUrl = safePortrait(data.character.portrait);

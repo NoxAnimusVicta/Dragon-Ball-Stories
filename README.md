@@ -2,9 +2,9 @@
 
 [Open the companion](https://noxanimusvicta.github.io/Dragon-Ball-Stories/)
 
-Zero’s read-only Dragon Ball Isekai companion is current through **S246 · Conton 28 July, Age 854 · 14:18**. Zero and Yamcha are at the training terrace on Yardrat, TL-0042-045-A0503, local Age 762 afternoon. Their first month of intensive Yardrat training is complete; all four acquired Spirit Control applications have individual progress and artwork.
+Zero’s read-only Dragon Ball Isekai companion is current through **S268 · Conton 27 August, Age 854 · 14:20**. The party is in a remote desert on Earth, TL-0042-045-A0503, facing the arriving expedition. The story is paused before Zero answers the first soldier.
 
-The [current continuity](CURRENT-CONTINUITY.md) is generated from [campaign.json](campaign.json), which owns the current readings, belongings, skills and 246-entry journal. Earlier numbers in dated events remain historical. The [approved power scale](POWER-SCALE.md) contains the shared forms, fusion formula, all 24 counterpart cases, source differences and accepted scene adaptations. It is a reader reference, not a list of Zero’s unlocked abilities.
+The [current continuity](CURRENT-CONTINUITY.md) is generated from [campaign.json](campaign.json) with the current narrative condition and acquired techniques in [technique-progress.json](technique-progress.json). Earlier numbers in dated events remain historical. The [approved power scale](POWER-SCALE.md) contains the shared forms, fusion formula, all 24 counterpart cases, source differences and accepted scene adaptations. It is a reader reference, not a list of Zero’s unlocked abilities.
 
 ## App sections
 
@@ -16,7 +16,8 @@ The app checks for published updates when opened or resumed and while visible, p
 
 - [Start here](START-HERE.md)
 - [Narrator guide](NARRATOR-GUIDE.md)
-- [Training and combat](COMBAT-AND-TRAINING.md) — background rules kept in the documentation; actual technique progress and defensive rotations remain in the app.
+- [Training and combat](COMBAT-AND-TRAINING.md) — training and mastery remain; the mechanical combat system is archived and inactive.
+- [Narrative combat](NARRATIVE-COMBAT.md) — broad power-gap guidance and meaningful opposition, without Endurance accounting or defensive-rotation techniques.
 - [Campaign configuration](CAMPAIGN-CONFIG.md)
 - [Corrections](RETCONS.md)
 - [Naming reference](NAMING-REFERENCE.md)
