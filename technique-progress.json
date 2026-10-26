@@ -551,7 +551,7 @@
       "capability": {
         "kind": "supplied",
         "mechanics": {
-          "regular": 1,
+          "regular": 2,
           "ceiling": [
             10,
             20,
