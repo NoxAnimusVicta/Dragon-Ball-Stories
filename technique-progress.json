@@ -656,47 +656,39 @@
       "milestones": [
         {
           "tier": "Learned",
-          "benefit": "Gather up to +25% Form Power."
+          "benefit": "Directed pressure pulses for straightforward pushes and invisible strikes."
         },
         {
           "tier": "Proficient",
-          "benefit": "Gather up to +50% Form Power with improved economy."
+          "benefit": "Accurately aimed pulses while moving; stagger opponents and repel weaker incoming blasts."
         },
         {
           "tier": "Advanced",
-          "benefit": "Gather up to +75% Form Power with finer sustained control."
+          "benefit": "Finer control of spread and direction, with coordinated successive pulses."
         },
         {
           "tier": "Mastered",
-          "benefit": "Gather up to +100% Form Power; smaller boosts gather faster and require less effort."
+          "benefit": "Precise focused impacts or broad shockwaves, refined deflection and economical release."
         }
       ],
       "capability": {
-        "kind": "kiai",
-        "mechanics": {
-          "bonus": [
-            0.25,
-            0.5,
-            0.75,
-            1
-          ]
-        },
-        "sustainEstimate": "About 10 minutes at the current full boost"
+        "kind": "pressure",
+        "mechanics": {}
       },
       "artwork": "./ability-kiai.png",
-      "category": "forms",
+      "category": "ki",
       "entry": {
         "id": "kiai",
         "title": "Kiai",
-        "summary": "Gathers power into a sustained boost for the current fighting state.",
+        "summary": "Projects invisible ki-driven shockwaves to strike, push or repel.",
         "status": "Proficient",
         "abilityType": "fundamental",
-        "category": "forms",
-        "effect": "Builds whole-body output gradually. The gathered bonus increases strength, speed and resilience, and powers subsequent attacks.",
-        "control": "Partial buildup can be retained while control holds. Changing form or bodily amplifier starts a fresh buildup. Gathering competes with attack preparation.",
-        "development": "Refining sustained output and efficient gathering.",
+        "category": "ki",
+        "effect": "Releases directed pressure through ki: invisible impacts, forceful shoves and outward bursts that can scatter debris or repel incoming attacks.",
+        "control": "At Proficient, aim pulses while moving and use well-timed bursts to stagger an opponent or repel weaker blasts. Stronger opposition requires sufficient force and a suitable opening.",
+        "development": "Refining the direction, spread and economy of pressure releases.",
         "artwork": "./ability-kiai.png",
-        "artworkAlt": "Gathers power into a sustained boost for the current fighting state.",
+        "artworkAlt": "Symbolic fighter releasing outward ki pressure.",
         "history": [
           "s257"
         ]

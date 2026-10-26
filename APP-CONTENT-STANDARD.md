@@ -32,8 +32,8 @@ Forms artwork is ordered by increasing exact total multiplier across all familie
 
 Every established ability, including fundamentals, has exactly one compact icon-led row. Assign its `category` by how it is used, independently of energy source and mastery. The ordered groups are:
 
-- `forms` — **Transformation & Amplification**: transformations, channel states and output-amplifying techniques such as Kaioken and Kiai.
-- `ki` — **Ki Techniques**: released energy attacks such as Ki Blasts, Spirit Bomb and a future Kamehameha.
+- `forms` — **Transformation & Amplification**: transformations, channel states and output-amplifying techniques such as Kaioken.
+- `ki` — **Ki Techniques**: released energy attacks such as Ki Blasts, Kiai pressure releases, Spirit Bomb and a future Kamehameha.
 - `physical` — **Physical Techniques**: named contact attacks, including Spirit Spear and future Wolf Fang Fist or Dragon Fist. Ki or spirit-energy use does not move a contact attack into a second group.
 - `spirit-control` — **Spirit Control Techniques**: individually learned Yardrat applications: Instant Transmission, Cloning, Gigantification and Spirit Healing. Ki Control remains in Discipline, with no parent Spirit Control skill.
 - `discipline` — **Discipline**: Physical Combat, sensing, suppression, ki control and flight; advanced practices such as future divine-ki handling also fit here. This category does not imply beginner difficulty or low mastery.
