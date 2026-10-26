@@ -4,21 +4,20 @@ Adopted 26 October 2026. This replaces the mechanical combat system. It is a cam
 
 ## Compare the fighters who are actually fighting
 
-Divide the protagonist's currently usable Power Level by the opponent's currently usable Power Level. Apply the same guide when assessing an NPC. Compare actual active states, not a locked form or a theoretical maximum. Use established fatigue, injury, mastery, tactics and special abilities when judging what can be sustained; there is no Endurance pool or numerical fatigue-to-power conversion.
+Compare the two fighters' currently usable Power Levels. Apply the same guide to the protagonist and NPCs. Compare actual active states, not a locked form or a theoretical maximum. Use established fatigue, injury, mastery, tactics and special abilities when judging what can be sustained; there is no Endurance pool or numerical fatigue-to-power conversion.
 
-| Your power / opponent's power | Expected direct fight between comparably skilled, fit fighters |
-| --- | --- |
-| 3 or more | Overwhelming advantage. A clean sweep is plausible against ordinary resistance. A dangerous special ability, surprise or protecting someone can still matter. |
-| 2 to under 3 | Decisive advantage. You should usually win, with clean or lightly marked victories plausible. The opponent can still defend, evade, counter or force effort; invulnerability is not assumed. |
-| 1.5 to under 2 | Clear advantage. Expect a convincing win after real resistance, normally with fatigue and minor injury if the opponent fights seriously. A spotless win needs a concrete tactical explanation. |
-| 1.2 to under 1.5 | Moderate advantage. Favoured, but meaningful exchanges and minor injuries are the normal price. Serious mistakes, a signature technique or better tactics can reverse the fight. |
-| 1/1.2 to under 1.2 | Contested parity. Either can win. A committed victory should normally leave meaningful fatigue and injury; major injury is plausible in a prolonged lethal fight. No routine clean sweep. |
-| 1/1.5 to under 1/1.2 | Disadvantaged. A win is credible through better execution, tactics or exploiting a real weakness, usually at substantial cost; major injury is a plausible consequence. Straight attack trading favours the enemy. |
-| 1/2 to under 1/1.5 | Severe disadvantage. Do not award a direct slugging-match win on determination alone. A victory needs a material advantage that changes the encounter; serious injury or defeat is the ordinary risk. |
-| 1/3 to under 1/2 | Outmatched. No credible conventional solo victory while these conditions remain. Surviving, escaping, buying time or creating a specific finishing opening are different, achievable objectives. |
-| Below 1/3 | Overwhelmed. A serious opponent can end ordinary direct exchanges decisively. Victory requires changing the premise: real escalation, outside help, or an established bypass with a feasible opening. |
+Use the player's supplied domination chart as the campaign reference, not as a verified canonical formula. The ratio below is the stronger fighter divided by the weaker fighter; read both sides of the same row. These expectations supersede the initial 26 October broad power-gap table.
 
-Boundary examples: exactly twice as strong uses the decisive band; exactly half as strong uses severe disadvantage. Fractions, not rounded displays, define boundaries. These are broad expectations, not injury quotas, automatic wins or mandatory casualties. Do not wound someone merely to satisfy a row. Conversely, do not invent perfect execution, hidden power or enemy incompetence to waive the expected cost. Exceptional clean victories need an explanation in the action that was actually resolved.
+| Stronger / weaker | Stronger fighter | Weaker fighter |
+| --- | --- | --- |
+| 1 to under 1.25 | Contested. A small edge helps, but comparable skill allows either fighter to win. Serious resistance normally leaves fatigue and minor injuries; major injuries are possible in a lethal fight. | A direct win remains credible through execution and tactics. No routine clean sweep on either side. |
+| 1.25 to under 1.5 | Starts to overwhelm. Sustained pressure increasingly controls exchanges, but mistakes and effective counters can cause injury. | Can still win by exploiting real openings, usually at substantial cost. Trading ordinary blows is unfavourable. |
+| 1.5 to under 1.75 | Easily overwhelms ordinary resistance. A convincing victory is expected; a clean one is possible with disciplined defence. | An ordinary head-on win is unlikely. Needs superior technique, tactics or a meaningful opening; serious injury is a real risk. |
+| 1.75 to under 2 | High-end domination. Can repeatedly beat ordinary attacks and control the fight. A clean victory is plausible. | Cannot credibly win an unchanged conventional slugging match. Escape, delay, teamwork or a stronger committed technique can still matter. |
+| 2 to under 2.25 | Can take ordinary attacks without meaningful injury while alert and braced. A clean victory is the normal expectation when fighting seriously. | Ordinary attacks are insufficient to win directly. Must change the effective matchup or objective. |
+| 2.25 or more | Overwhelming raw-power control: can physically overpower ordinary attacks, grips and pressure. Larger gaps make conventional resistance progressively less effective. | No conventional direct victory without changing the conditions. Established bypasses still require a feasible delivery opportunity. |
+
+The image's “raw power manipulation” is interpreted here as overwhelming physical/ki control of an exchange, not newly acquired telekinesis or another ability. Exactly 1.25 enters the first overwhelming band, exactly 2 enters the ordinary-hit tanking band, and exactly 2.25 enters overwhelming control. No injury quotas, automatic wins or immunity to surprise, a vulnerable state, specialised effects or a sufficiently amplified technique. Do not invent an exception merely to cancel a deserved advantage, or make an enemy incompetent to protect the protagonist. Apply the same expectations to both sides.
 
 ## Meaningful resistance and choices
 
@@ -35,6 +34,16 @@ Mastery describes reliability, speed of execution, control, mobility, precision 
 Ordinary physical attacks and unnamed ki attacks remain useful for pressure, positioning, interruption, probing and creating openings. Named techniques have specific methods and vulnerabilities; neither always lands nor automatically invalidates ordinary combat. Forms can be tiring or physically dangerous according to their lore and mastery. Kaioken's bodily strain and the channel's control/takeover risk remain real narrative limits. Exhaustion can prevent transformation; a restorative item helps according to its established effect, not numerical entry fees.
 
 Do not add team Power Levels into a fictional single fighter. Compare individual threats and actual coordination. Allies can split attention, rescue someone, hold an opening or protect a charge, but cannot occupy impossible positions or make an attack automatically connect. A stronger enemy fights back against the team, targets exposed members and uses its own mobility. Splitting the group changes who can help whom; no simultaneous faction accounting is needed.
+
+## Rough sustained form use
+
+Technique preparation and transformation buildup remain narrative, guided by mastery, the method and an actual opening. No fixed activation or attack timetable returns. Rough sustainable form durations are a separate stamina reference, not countdowns or maximum lifespans.
+
+The current player estimates are owned by PLAYER-TECHNIQUES.json and displayed in Current Capability. As of S268 the proposed working estimates are: Kaioken x2 about 3 minutes; Dark Factor Sealed Channel about 5 minutes; Kiai about 10 minutes at its current +50% boost. These are narrator assessments for a rested fighter sustaining ordinary combat effort, not newly enacted demonstrations or a universal tier formula. They may be revised through play or player review. Uncontrolled has no demonstrated sustainable duration and is not voluntarily managed.
+
+Basis: Kaioken previously demonstrated one moving minute before Yardrat; later dedicated practice brings it to 1882.4 progress, still Proficient, with Mastered Ki Control. A modest few-minute estimate recognises that progress without granting effortless long-term use. Channel previously demonstrated three strenuous moving minutes; later regulation practice and Mastered Ki Control justify a cautious five-minute estimate, limited by conscious containment. Kiai's moderate current boost has no Kaioken-like bodily damage and warrants longer sustain, but no ten-minute trial has been enacted. No duration is derived by dividing a retired Endurance pool by its old upkeep.
+
+Heavy charged attacks, injury, accumulated fatigue and maintaining compatible boosts together shorten useful sustain. Quiet maintenance or lower output may last longer. Brief release and re-entry do not erase accumulated strain. A restorative treatment changes the actual condition; there is no expiry that defeats restored stamina. Signal mounting strain in the narrative before ordinary voluntary control fails when circumstances permit. Preserve the Channel's existing takeover triggers and unsafe Kaioken pairing. Estimate each NPC/form individually from its own lore, mastery and feats when needed; do not assign Zero's times to everyone.
 
 ## Injuries, healing and uncertainty
 

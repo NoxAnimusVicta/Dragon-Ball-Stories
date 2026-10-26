@@ -20,7 +20,7 @@
         },
         {
           "tier": "Mastered",
-          "benefit": "Refined ordinary striking and efficiency and adaptable defence."
+          "benefit": "Refined striking, efficient movement and adaptable defence."
         }
       ],
       "capability": {
@@ -301,7 +301,7 @@
         "abilityType": "fundamental",
         "trainingRecord": {
           "asOf": "28 June, Age 854",
-          "text": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains. The opening soldier engagement demonstrated a deliberate full-power striking burst followed by a return to half output. At the current recorded base, half output would be about 39,904; that calculation is not a new suppression check. Difficulty sensing a deeply suppressed opponent does not undo Zero’s own suppression skill.",
+          "text": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains. The opening soldier engagement demonstrated a deliberate full-power striking burst followed by a return to half output. At that historical base, half output was about 39,904; that calculation was not a new suppression check. Difficulty sensing a deeply suppressed opponent does not undo Zero’s own suppression skill.",
           "facts": []
         },
         "category": "discipline"
@@ -315,7 +315,8 @@
         "kind": "involuntary",
         "mechanics": {
           "factor": 15
-        }
+        },
+        "sustainEstimate": "Unknown; involuntary takeover"
       },
       "entry": {
         "id": "uncontrolled-form",
@@ -372,7 +373,8 @@
         "kind": "form",
         "mechanics": {
           "factor": 10
-        }
+        },
+        "sustainEstimate": "About 5 minutes"
       },
       "entry": {
         "id": "sealed-channel-form",
@@ -436,7 +438,8 @@
         "kind": "kaioken",
         "mechanics": {
           "factor": 2
-        }
+        },
+        "sustainEstimate": "About 3 minutes"
       },
       "title": "Kaioken x2",
       "entry": {
@@ -677,7 +680,8 @@
             0.75,
             1
           ]
-        }
+        },
+        "sustainEstimate": "About 10 minutes at the current full boost"
       },
       "artwork": "./ability-kiai.png",
       "category": "forms",

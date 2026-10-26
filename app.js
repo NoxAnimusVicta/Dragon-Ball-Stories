@@ -361,6 +361,7 @@
       const speed=m.travelAnchorMetresPerSecond*Math.sqrt(Number(data.character.battlePower)/m.travelReferencePower)*m.travelCoefficient/1000;
       add('Max Speed · Base',(Math.floor(speed*10)/10).toLocaleString('en',{minimumFractionDigits:1,maximumFractionDigits:1})+' km/s');
     }
+    if(!previewTier && profile.sustainEstimate) add('Sustained Use · Estimate',profile.sustainEstimate);
     if(!rows.length) return '';
     const list=`<dl>${rows.map(([label,value])=>`<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl>`;
     return previewTier ? `<div class="technique-output">${list}</div>` : `<section class="content-section technique-output"><h3>${p.label==='Learning'?'Learning Capability':'Current Capability'}</h3>${list}</section>`;
