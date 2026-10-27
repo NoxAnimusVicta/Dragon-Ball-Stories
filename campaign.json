@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "S307-rewards-sync",
+  "revision": "S307-king-kai-correction",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "The set is complete",
@@ -680,7 +680,7 @@
           "value": "Conton City · Hercule’s office"
         }
       ],
-      "details": "Housing, meals and necessary treatment remain Patrol provision. Zero has consumed 36 Senzu in the recorded campaign; none are carried. Borrowed training equipment remains facility property. Seven commendations have now been redeemed for the complete compatible TP-RS-647 set, with no unspent commendations and no wish made. Yamcha and Vegeta have separately spent their remaining four and two commendations on training support, recorded in their profiles."
+      "details": "Housing, meals and necessary treatment remain Patrol provision. Zero has consumed 36 Senzu in the recorded campaign; none are carried. Borrowed training equipment remains facility property. Seven commendations have now been redeemed for the complete compatible TP-RS-647 set, with no unspent commendations and no wish made. Yamcha spent two commendations on his practice room and retains two. Vegeta spent his two on the gravity-room retrofit."
     }
   ],
   "people": [
@@ -1043,11 +1043,7 @@
           "facts": [
             {
               "label": "Commendations",
-              "value": "0 remaining · 4 redeemed"
-            },
-            {
-              "label": "Specialist instruction",
-              "value": "2 commendations · 16 hours with resident King Kai reserved; sessions unused"
+              "value": "2 remaining · 2 redeemed for the practice room"
             },
             {
               "label": "Dedicated practice room",
@@ -1566,7 +1562,7 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Krillin introduced both students on 11 March. He taught Kaioken and cooperative spirit-energy exercises and supervised the initial six-week block. Regular Conton instruction paused for their Yardrat visit. He lives in Conton, not an assumed ten-times-gravity planet. Yamcha has redeemed two commendations for sixteen hours of individual Kaioken x2 instruction with the resident King Kai. The allocation is accepted; session dates are not booked and no lesson has yet been completed.",
+          "text": "Krillin introduced both students on 11 March. He taught Kaioken and cooperative spirit-energy exercises and supervised the initial six-week block. He remains willing to train Zero and Yamcha without a commendation. Future sessions can be arranged with him. He lives in Conton, not an assumed ten-times-gravity planet.",
           "facts": [
             {
               "label": "Location",
@@ -3111,9 +3107,9 @@
     {
       "id": "companion-training-rewards",
       "title": "Companion Training Arrangements",
-      "summary": "Yamcha’s tuition and Vegeta’s room retrofit are paid for.",
+      "summary": "Yamcha’s dedicated room is allocated; Vegeta’s retrofit is paid for.",
       "status": "Arrangements pending",
-      "nextStep": "Book Yamcha’s first lesson and schedule Vegeta’s retrofit.",
+      "nextStep": "Schedule and commission Vegeta’s retrofit.",
       "sections": [
         {
           "title": "Purpose",
@@ -3121,15 +3117,15 @@
         },
         {
           "title": "People Involved",
-          "text": "Yamcha, resident King Kai, Vegeta and equipment services."
+          "text": "Yamcha, Vegeta and equipment services."
         },
         {
           "title": "Progress",
-          "text": "Sixteen instruction hours remain unused. Yamcha’s dedicated practice room is allocated. Vegeta’s custom equipment commission is accepted and awaiting installation."
+          "text": "Yamcha’s dedicated practice room is allocated. Vegeta’s custom equipment commission is accepted and awaiting installation."
         },
         {
           "title": "Dependencies",
-          "text": "Actual lessons and commissioning must occur before their benefits are recorded."
+          "text": "Installation and safety commissioning must occur before the retrofit’s benefits are recorded."
         }
       ],
       "history": [
@@ -5352,7 +5348,7 @@
       "title": "Training rewards redeemed",
       "date": "6 October, Age 854 · 09:15",
       "status": "Recorded",
-      "summary": "Yamcha spends four commendations: two for sixteen reserved hours of individual Kaioken instruction and two for a dedicated practice room. Vegeta spends two on a custom retrofit of his existing gravity room. Both balances are now zero. Lessons remain unused and the retrofit awaits installation."
+      "summary": "Yamcha spends two commendations on a dedicated practice room and retains two. Vegeta spends two on a custom retrofit of his existing gravity room and retains none. The room is allocated; the retrofit awaits installation. King Kai remains willing to train both students without a commendation."
     }
   ],
   "recordedThrough": "S307 · Final Dragon Ball and companion reward redemptions",
