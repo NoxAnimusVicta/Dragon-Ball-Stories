@@ -694,7 +694,7 @@
           }
         ]
       },
-      "battlePower": 5000000,
+      "battlePower": 5002500,
       "context": "TL-398 · Frieza on Earth",
       "sections": [
         {
@@ -706,7 +706,7 @@
           "facts": [
             {
               "label": "Current assessed base",
-              "value": "5,000,000 · Post-home-training assessment, retained 29 August; not a scan"
+              "value": "5,002,500 · After 28 August training; assessment, not a scan"
             },
             {
               "label": "Wrathful",
@@ -728,7 +728,7 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Returned from training with his own Goku and intervened on Yamcha’s Earth. Wrathful overwhelmed Frieza’s restrained final form; full-power Frieza reversed the fight until Vegeta revealed True Wrathful and finished him with Galick Gun. Back in Conton, medical treatment healed his injuries. He coached Zero on 28 August; his ordinary base remains the five-million assessment.",
+          "text": "Returned from training with his own Goku and intervened on Yamcha’s Earth. Wrathful overwhelmed Frieza’s restrained final form; full-power Frieza reversed the fight until Vegeta revealed True Wrathful and finished him with Galick Gun. Back in Conton, medical treatment healed his injuries. Training with Zero on 28 August added 2,500 to his assessed ordinary base.",
           "facts": [
             {
               "label": "Reward",
@@ -5219,7 +5219,7 @@
     {
       "id": "s305",
       "title": "Training and returned belongings",
-      "summary": "Eight productive Normal training hours with Vegeta at quality 18 improve Zero’s base to 118,834, confirmed after rest. Physical Combat gains 72; Ki Blasts, Instant Transmission, Flight and Ki Sensing gain 36 each, all remaining Advanced. Yamcha visits Bulma, then returns both bags. Zero stores his in Room 214.",
+      "summary": "Eight productive Normal training hours with Vegeta at quality 18 improve Zero’s base to 118,834, confirmed after rest. Physical Combat gains 72; Ki Blasts, Instant Transmission, Flight and Ki Sensing gain 36 each, all remaining Advanced. Yamcha visits Bulma, then returns both bags. Zero stores his in Room 214. Vegeta’s shared practice adds 2,500 base power, bringing his assessment to 5,002,500.",
       "date": "29 August, Age 854 · 09:15",
       "status": "Recorded"
     }
