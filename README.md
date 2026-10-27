@@ -2,7 +2,7 @@
 
 [Open the companion](https://noxanimusvicta.github.io/Dragon-Ball-Stories/)
 
-Zero’s read-only Dragon Ball Isekai companion is current through **S268 · Conton 27 August, Age 854 · 14:20**. The party is in a remote desert on Earth, TL-0042-045-A0503, facing the arriving expedition. The story is paused before Zero answers the first soldier.
+Zero’s read-only Dragon Ball Isekai companion is current through **S305 · 29 August, Age 854 · 09:15**. Zero is back in Room 214, healed and rested after training with Vegeta. Yamcha has returned from visiting Bulma and brought the travel bags back to Conton.
 
 The [current continuity](CURRENT-CONTINUITY.md) is generated from [campaign.json](campaign.json) with the current narrative condition and acquired techniques in [technique-progress.json](technique-progress.json). Earlier numbers in dated events remain historical. The [approved power scale](POWER-SCALE.md) contains the shared forms, fusion formula, all 24 counterpart cases, source differences and accepted scene adaptations. It is a reader reference, not a list of Zero’s unlocked abilities.
 

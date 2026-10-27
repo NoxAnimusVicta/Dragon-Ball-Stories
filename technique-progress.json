@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "asOf": "27 August, Age 854 · S268",
+  "asOf": "29 August, Age 854 · S305",
   "records": {
     "combat-basics": {
-      "credits": 5049.903508771929,
-      "assessment": "Recorded · S268, including S247 and S257 training",
+      "credits": 5121.903508771929,
+      "assessment": "Recorded · S305 training, applied once over S268",
       "milestones": [
         {
           "tier": "Learned",
@@ -39,24 +39,25 @@
         "id": "combat-basics",
         "title": "Physical Combat",
         "summary": "Close-range strikes, from quick combinations to heavy blows.",
-        "status": "Developing",
+        "status": "Advanced",
         "effect": "Close-range martial combat.",
         "control": "Footwork, balance and physical conditioning.",
-        "development": "Close-range defence and recovery after interrupted attacks are the current focus.",
+        "development": "Close-range defence, recovery under pressure and varied approaches developed in the latest Vegeta session.",
         "history": [
           "s063",
           "s177",
           "s223",
           "s237",
           "s240",
-          "s257"
+          "s257",
+          "s305"
         ],
         "artwork": "ability-combat-basics.png",
         "artworkAlt": "Footwork, guards, counters and combinations on the ground and in the air. Symbolic technique illustration.",
         "abilityType": "fundamental",
         "trainingRecord": {
-          "asOf": "28 June, Age 854",
-          "text": "Chamber benchmarks remain 75× gravity for ground rounds, 25× for aerial rounds and 150× for slow conditioning; no higher maximum has been established. Peer sparring and cleanup work developed group awareness. In TL-619, tight counters, accumulated damage and sustained pressure let Zero defeat a stronger Nappa while using the sealed channel. Vegeta remained far beyond him; their following training day focused on recovering after interrupted attacks, using separate channel bouts, closure and rest. Four weeks with Nail and the quarry fight developed aerial reversals, guarded combinations and sustained pressure against injured Brask. Subsequent Vegeta rounds improved close-range defence; he still controls their exchanges.",
+          "asOf": "29 August, Age 854",
+          "text": "Earlier practice through 28 June, Age 854: Chamber benchmarks remain 75× gravity for ground rounds, 25× for aerial rounds and 150× for slow conditioning; no higher maximum has been established. Peer sparring and cleanup work developed group awareness. In TL-619, tight counters, accumulated damage and sustained pressure let Zero defeat a stronger Nappa while using the sealed channel. Vegeta remained far beyond him; their following training day focused on recovering after interrupted attacks, using separate channel bouts, closure and rest. Four weeks with Nail and the quarry fight developed aerial reversals, guarded combinations and sustained pressure against injured Brask. Subsequent Vegeta rounds improved close-range defence; he still controls their exchanges. Latest practice: 28 August, eight productive hours shared across physical combat, blasts and teleportation; physical work earned 72, with no tier change.",
           "facts": []
         },
         "category": "discipline"
@@ -95,7 +96,7 @@
         "status": "Mastered",
         "effect": "Precise regulation of ki through the whole body.",
         "control": "Lower-flow channeling is steady through familiar movement; full channel output demands sustained regulation.",
-        "development": "Yardrat practice refined energy flow, efficiency and transitions between separately learned applications.",
+        "development": "Mastered during Yardrat study; maintained through later practice.",
         "history": [
           "s020",
           "s063",
@@ -117,8 +118,8 @@
       }
     },
     "flight": {
-      "credits": 6270.951754385965,
-      "assessment": "Recorded · S268, including S247 and S257 training",
+      "credits": 6306.951754385965,
+      "assessment": "Recorded · S305 training, applied once over S268",
       "milestones": [
         {
           "tier": "Learned",
@@ -149,23 +150,24 @@
         "id": "flight",
         "title": "Flight",
         "summary": "Uses ki to stay airborne, manoeuvre and fight.",
-        "status": "Practised",
+        "status": "Advanced",
         "effect": "Sustained aerial movement includes turns, bracing, controlled rotations and flight-assisted attacks.",
         "control": "Established aerial combat at 25× gravity, with evasions and controlled changes of direction.",
-        "development": "Flight is integrated into live combat and evasive combinations.",
+        "development": "Aerial control supports moving attacks, evasions and teleport follow-ups.",
         "history": [
           "s022",
           "s062",
           "s063",
           "s223",
-          "s257"
+          "s257",
+          "s305"
         ],
         "artwork": "ability-flight.png",
         "artworkAlt": "Uses ki to stay airborne, manoeuvre and fight. Symbolic technique illustration.",
         "abilityType": "fundamental",
         "trainingRecord": {
-          "asOf": "28 June, Age 854",
-          "text": "Flight is integrated with evasions, compact strikes and spinning kicks against drones. Full-output aerial rounds reached 25× gravity, distinct from 75× ground rounds and 150× slow conditioning. Flight has now been used in the assessment and both Nappa encounters. Long-range endurance remains unmeasured; greater training gravity did not make Zero faster than a much stronger opponent. Flight-assisted reversals and aerial pressure were also used against Brask.",
+          "asOf": "29 August, Age 854",
+          "text": "Earlier practice through 28 June, Age 854: Flight is integrated with evasions, compact strikes and spinning kicks against drones. Full-output aerial rounds reached 25× gravity, distinct from 75× ground rounds and 150× slow conditioning. Flight has now been used in the assessment and both Nappa encounters. Long-range endurance remains unmeasured; greater training gravity did not make Zero faster than a much stronger opponent. Flight-assisted reversals and aerial pressure were also used against Brask. The 28 August Vegeta session added 36 through supporting aerial practice. No higher gravity maximum was established.",
           "facts": [
             {
               "label": "Demonstrated",
@@ -185,8 +187,8 @@
       }
     },
     "ki-blast": {
-      "credits": 3416.4276315789475,
-      "assessment": "Recorded · S268, including S247 and S257 training",
+      "credits": 3452.4276315789475,
+      "assessment": "Recorded · S305 training, applied once over S268",
       "milestones": [
         {
           "tier": "Learned",
@@ -220,10 +222,10 @@
         "id": "ki-blast",
         "title": "Ki Blasts",
         "summary": "Energy shots, volleys and concentrated blasts or beams.",
-        "status": "Developing",
+        "status": "Advanced",
         "effect": "Project and direct ordinary ki attacks.",
         "control": "Control the direction and spread of released ki.",
-        "development": "Practising cleaner gathering and tighter moving volleys.",
+        "development": "Refining moving volleys and their transitions into close-range fighting.",
         "history": [
           "s039",
           "s063",
@@ -231,15 +233,16 @@
           "s086",
           "s130",
           "s160",
-          "s257"
+          "s257",
+          "s305"
         ],
         "appearance": "Yellow-white energy shots; the first shot chipped a practice wall.",
         "artwork": "ability-ki-blast.png",
         "artworkAlt": "Fires ki projectiles, volleys and charged shots. Symbolic technique illustration.",
         "abilityType": "fundamental",
         "trainingRecord": {
-          "asOf": "28 June, Age 854",
-          "text": "Started with one small shot on Day 22. Chamber practice developed step-release, moving-target fire and short volleys while manoeuvring. Larger shots require an opening and consume more stamina; accuracy remains imperfect. These are ordinary ki attacks, not an acquired named beam or signature technique. In the mission he destroyed the warehouse with an outward release and used contact blasts and concentrated ki at his fingertips. No stable blade was acquired in that fight. During Yamcha’s Raditz fight, a precise shot destroyed the scouter with only superficial burns to Raditz, leaving Yamcha to win his own fight. On Namek, twenty ordinary shots followed preset wide curves; three hit Nappa from behind. This was limited curved fire, not homing or Yamcha’s Spirit Ball. Spirit Spear is recorded separately.",
+          "asOf": "29 August, Age 854",
+          "text": "Earlier practice through 28 June, Age 854: Started with one small shot on Day 22. Chamber practice developed step-release, moving-target fire and short volleys while manoeuvring. Larger shots require an opening and consume more stamina; accuracy remains imperfect. These are ordinary ki attacks, not an acquired named beam or signature technique. In the mission he destroyed the warehouse with an outward release and used contact blasts and concentrated ki at his fingertips. No stable blade was acquired in that fight. During Yamcha’s Raditz fight, a precise shot destroyed the scouter with only superficial burns to Raditz, leaving Yamcha to win his own fight. On Namek, twenty ordinary shots followed preset wide curves; three hit Nappa from behind. This was limited curved fire, not homing or Yamcha’s Spirit Ball. Spirit Spear is recorded separately. Ordinary yellow beams destroyed the invasion craft on Earth. The 28 August Vegeta session added 36; these attacks remain ordinary Ki Blasts.",
           "facts": [
             {
               "label": "First success",
@@ -380,13 +383,13 @@
         "id": "sealed-channel-form",
         "title": "Dark Factor Sealed Channel",
         "summary": "Draws Dark Factor power through Chronoa’s seal while retaining control.",
-        "status": "Developing",
+        "status": "Proficient",
         "abilityType": "transformation",
         "artwork": "ability-sealed-channel.webp",
         "artworkAlt": "A circular four-hook seal containing pale violet energy, symbolising Dark Factor Sealed Channel.",
         "effect": "Opens, regulates and closes the flow through Chronoa’s seal while retaining conscious control.",
         "control": "Consciously regulate the borrowed power. Combining it with Kaioken remains unsafe.",
-        "development": "Refining activation, sustained regulation and recovery between bouts.",
+        "development": "Refining conscious regulation through demanding movement.",
         "history": [
           "s094",
           "s096",
@@ -406,8 +409,8 @@
           "sealed-channel"
         ],
         "trainingRecord": {
-          "asOf": "28 June, Age 854",
-          "text": "Voluntary opening and closure developed through supervised practice. Full output reached three moving minutes during the first cleanup week; by 10 March the sequence ended without immediate leg trembling, but still left Zero winded and repeated attempts were tiring. No permanent absorption of the multiplier is established. If he loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; safe removal remains unresolved. The ability icon is symbolic; the character gallery retains the full appearance reference. Attempting Kaioken on top of the channel caused loss of control even while conscious. The seal itself remained intact after Chronoa’s check; separate channel use resumed. On Namek, Zero defeated Nappa while retaining control, then closed the flow before losing consciousness after Turles’s ambush. Later practice with Vegeta improved recovery without a new timed maximum.",
+          "asOf": "29 August, Age 854",
+          "text": "Earlier practice through 28 June, Age 854: Voluntary opening and closure developed through supervised practice. Full output reached three moving minutes during the first cleanup week; by 10 March the sequence ended without immediate leg trembling, but still left Zero winded and repeated attempts were tiring. No permanent absorption of the multiplier is established. If he loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; safe removal remains unresolved. The ability icon is symbolic; the character gallery retains the full appearance reference. Attempting Kaioken on top of the channel caused loss of control even while conscious. The seal itself remained intact after Chronoa’s check; separate channel use resumed. On Namek, Zero defeated Nappa while retaining control, then closed the flow before losing consciousness after Turles’s ambush. Later practice with Vegeta improved recovery without a new timed maximum. Used through the Ginyu Force engagement and confrontation with Frieza. The channel closed while Zero remained conscious; treatment later healed the battle injuries.",
           "facts": []
         },
         "category": "forms"
@@ -446,13 +449,13 @@
         "id": "kaioken-technique",
         "title": "Kaioken x2",
         "summary": "Amplifies Zero’s own output for short periods.",
-        "status": "Developing",
+        "status": "Proficient",
         "abilityType": "signature-technique",
         "artwork": "ability-kaioken.png",
         "artworkAlt": "A crimson Kaioken aura around a symbolic fighter silhouette.",
         "effect": "King Kai’s technique doubles Zero’s own output, increasing strength, speed and resilience together.",
         "control": "Use separately from Sealed Channel; combining them triggered takeover.",
-        "development": "Continue refining Kaioken x2.",
+        "development": "Refining familiar x2 bursts, release and sustainable control.",
         "history": [
           "s150",
           "s151",
@@ -467,16 +470,16 @@
           "kaioken"
         ],
         "trainingRecord": {
-          "asOf": "28 June, Age 854",
-          "text": "First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release strengthened overall battle capacity, including resilience and endurance. Kaioken proficiency continued to develop through practice. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling.",
+          "asOf": "29 August, Age 854",
+          "text": "Earlier practice through 28 June, Age 854: First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release strengthened overall battle capacity, including resilience and endurance. Kaioken proficiency continued to develop through practice. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling. Yardrat training improved familiar x2 use. A brief impact burst destroyed the third forward craft; the technique was released immediately afterwards.",
           "facts": []
         },
         "category": "forms"
       }
     },
     "ki-sensing": {
-      "credits": 4598.453947368421,
-      "assessment": "Recorded · S268, including S247 and S257 training",
+      "credits": 4634.453947368421,
+      "assessment": "Recorded · S305 training, applied once over S268",
       "milestones": [
         {
           "tier": "Learned",
@@ -507,21 +510,22 @@
         "status": "Advanced",
         "effect": "Tracks living ki signatures and relative output.",
         "control": "Advanced sensing estimates readable output and tracks familiar moving signatures; exact readings remain a Mastered capability or require a scouter.",
-        "development": "Yardrat practice developed greater reach and precision, supporting Instant Transmission locks.",
+        "development": "Tracking familiar moving signatures supports precise Instant Transmission arrivals.",
         "history": [
           "s151",
           "s212",
           "s222",
           "s237",
           "s246",
-          "s257"
+          "s257",
+          "s305"
         ],
         "artwork": "ability-ki-sensing.png",
         "artworkAlt": "Locates familiar ki and estimates relative current output. Symbolic technique illustration.",
         "abilityType": "fundamental",
         "trainingRecord": {
-          "asOf": "28 June, Age 854",
-          "text": "King Kai’s exercises developed direction and short-range tracking during movement. Zero cannot read exact numbers, hidden reserves or deeply suppressed targets reliably. Familiarity and concentration matter; the scouter still supplies numerical readings. Later practice improved tracking familiar moving signatures without stopping to concentrate. Against Brask, close-range ki tracking helped counter a flash. Recent practice follows familiar and partially suppressed moving signatures; exact values still require the scouter.",
+          "asOf": "29 August, Age 854",
+          "text": "Earlier practice through 28 June, Age 854: King Kai’s exercises developed direction and short-range tracking during movement. Zero cannot read exact numbers, hidden reserves or deeply suppressed targets reliably. Familiarity and concentration matter; the scouter still supplies numerical readings. Later practice improved tracking familiar moving signatures without stopping to concentrate. Against Brask, close-range ki tracking helped counter a flash. Recent practice follows familiar and partially suppressed moving signatures; exact values still require the scouter. The 28 August Vegeta session added 36 through supporting sensing practice; no mastery threshold was crossed.",
           "facts": []
         },
         "category": "discipline"
@@ -571,7 +575,7 @@
         "abilityType": "signature-technique",
         "effect": "Receives voluntarily offered spirit energy, gathers it into a sphere and releases the accumulated charge. More available energy supports a larger attack.",
         "control": "Gather voluntary spirit energy while concentrating; adequate supply and protection are required.",
-        "development": "Refine collection, containment and release under Yardrat instruction.",
+        "development": "Refining cooperative collection, containment and release.",
         "history": [
           "s152",
           "s163",
@@ -581,8 +585,8 @@
         "artwork": "ability-spirit-bomb.png",
         "artworkAlt": "Symbolic fighter gathering a blue-white sphere above raised hands.",
         "trainingRecord": {
-          "asOf": "28 June, Age 854",
-          "text": "Voluntarily offered energy supported the first small successful exercise. Gathering takes concentration and time. No large battlefield-ready Spirit Bomb, unlimited environmental draw or permanent absorption is established.",
+          "asOf": "29 August, Age 854",
+          "text": "Earlier practice through 28 June, Age 854: Voluntarily offered energy supported the first small successful exercise. Gathering takes concentration and time. No large battlefield-ready Spirit Bomb, unlimited environmental draw or permanent absorption is established. Reached Proficient during the final Yardrat fortnight. No large Spirit Bomb was used in the Earth battle.",
           "facts": []
         },
         "category": "ki"
@@ -634,7 +638,7 @@
         "artworkAlt": "Spirit energy gathering into an open hand and spreading across the front of its palm and fingers.",
         "effect": "Gathers spirit energy across the heel and front of the palm, then delivers it on contact. A clean, coupled strike drives energy through the target and erupts from the opposite side.",
         "control": "Gather a palm charge during committed movement and deliver it through direct contact.",
-        "development": "Improve gathering stability and contact alignment.",
+        "development": "Refining gathering stability and contact alignment.",
         "history": [
           "s164",
           "s173",
@@ -643,8 +647,8 @@
         ],
         "appearance": "Blue-white spirit energy gathers across the heel of the palm and spreads softly over the front of the hand and fingers, with the skin visible beneath it.",
         "trainingRecord": {
-          "asOf": "28 June, Age 854",
-          "text": "Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. The current technique profile records its ×2 regular release and mastery-dependent charge ceiling; those calibrations do not rewrite the earlier partial contacts.",
+          "asOf": "29 August, Age 854",
+          "text": "Earlier practice through 28 June, Age 854: Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. The current technique profile records its ×2 regular release and mastery-dependent charge ceiling; those calibrations do not rewrite the earlier partial contacts. Reached Proficient during the final Yardrat fortnight. Used against Frieza: a point-blank clash injured his restricted form, while later contact releases could not overcome his final-form strength.",
           "facts": []
         },
         "category": "physical"
@@ -695,8 +699,8 @@
       }
     },
     "instant-transmission": {
-      "credits": 4682.115836466165,
-      "assessment": "Recorded · S268, including S247 and S257 training",
+      "credits": 4718.115836466165,
+      "assessment": "Recorded · S305 training, applied once over S268",
       "milestones": [
         {
           "tier": "Learned",
@@ -729,15 +733,16 @@
         "status": "Advanced",
         "effect": "Locks onto a living ki signature and transports you beside it.",
         "control": "Advanced control holds a moving familiar signature for precise repositioning.",
-        "development": "Learned during the first month of intensive Yardrat instruction.",
+        "development": "Refining arrival angles and follow-up movement under live pressure.",
         "history": [
           "s246",
-          "s257"
+          "s257",
+          "s305"
         ],
         "artwork": "./ability-instant-transmission.webp",
         "trainingRecord": {
-          "asOf": "28 July, Age 854",
-          "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+          "asOf": "29 August, Age 854",
+          "text": "Earlier practice through 28 July, Age 854: Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises. Used for the return to Earth, close-range repositioning during the invasion and withdrawal to Roshi. The 28 August Vegeta session added 36 while varying predictable arrival angles.",
           "facts": []
         },
         "artworkAlt": "A shadow-faced fighter using Instant Transmission amid blue light."
@@ -785,15 +790,15 @@
         "status": "Proficient",
         "effect": "Divides your power among independently coordinated copies.",
         "control": "Power is divided among the bodies. Coordinating more copies demands sustained concentration and shared effort.",
-        "development": "Learned during the first month of intensive Yardrat instruction.",
+        "development": "Established during 58 days of Yardrat instruction; current handling remains Proficient.",
         "history": [
           "s246",
           "s257"
         ],
         "artwork": "./ability-spirit-cloning.webp",
         "trainingRecord": {
-          "asOf": "28 July, Age 854",
-          "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+          "asOf": "25 August, Age 854",
+          "text": "Individually practised throughout the 58-day Yardrat stay alongside shared Ki Control exercises. The final fortnight broadened practice across unmastered techniques; no later progress has been awarded for this application.",
           "facts": []
         },
         "artworkAlt": "Four matching shadow-faced fighters surrounded by blue energy."
@@ -841,15 +846,15 @@
         "status": "Proficient",
         "effect": "Expands your body through controlled ki.",
         "control": "Deliberate steps and turns while enlarged; physical reach follows your body.",
-        "development": "Learned during the first month of intensive Yardrat instruction.",
+        "development": "Established during 58 days of Yardrat instruction; current handling remains Proficient.",
         "history": [
           "s246",
           "s257"
         ],
         "artwork": "./ability-gigantification.webp",
         "trainingRecord": {
-          "asOf": "28 July, Age 854",
-          "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+          "asOf": "25 August, Age 854",
+          "text": "Individually practised throughout the 58-day Yardrat stay alongside shared Ki Control exercises. The final fortnight broadened practice across unmastered techniques; no later progress has been awarded for this application.",
           "facts": []
         },
         "artworkAlt": "A shadow-faced fighter expanding to a towering size."
@@ -890,15 +895,15 @@
         "status": "Proficient",
         "effect": "Restores another person’s energy or repairs accessible wounds through touch.",
         "control": "Transfer personal energy or repair accessible wounds through touch; deeper injuries demand more developed healing control.",
-        "development": "Learned during the first month of intensive Yardrat instruction.",
+        "development": "Established during 58 days of Yardrat instruction; current handling remains Proficient.",
         "history": [
           "s246",
           "s257"
         ],
         "artwork": "./ability-spirit-healing.webp",
         "trainingRecord": {
-          "asOf": "28 July, Age 854",
-          "text": "Individual application practice with the Yardratian teachers, alongside shared Ki Control exercises.",
+          "asOf": "25 August, Age 854",
+          "text": "Individually practised throughout the 58-day Yardrat stay alongside shared Ki Control exercises. The final fortnight broadened practice across unmastered techniques; no later progress has been awarded for this application.",
           "facts": []
         },
         "artworkAlt": "A shadow-faced healer directing green energy into a patient."
@@ -917,6 +922,6 @@
     "rotation-riposte",
     "second-wind"
   ],
-  "sourcePolicy": "Current acquired technique presentation and cumulative progress. Historical campaign ability prose is superseded by these entries. No mechanical combat fields.",
-  "characterCondition": "Fully rested; no injuries. Seal closed and intact; all forms inactive. Yardrat outfit and concealed communicator worn. Travel bag, scroll and scouter in the capsule aircraft beside the desert basin. No Senzu carried."
+  "sourcePolicy": "Authoritative acquired technique presentation and cumulative progress. build.py generates matching campaign ability entries and technique-progress.json from this owner. No mechanical combat accounting.",
+  "characterCondition": "Rested, with mild muscle stiffness from training; no injuries. Seal closed and intact; all forms inactive. Restored Yardrat outfit and concealed communicator worn. Travel bag, scouter and seal briefing stored in Room 214. No Senzu carried."
 }

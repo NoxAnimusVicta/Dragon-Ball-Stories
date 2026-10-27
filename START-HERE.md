@@ -1,10 +1,10 @@
 # Start here
 
-This is the public Dragon Ball Stories companion. Current published story: S268, the desert beacon and arriving expedition. The story has not advanced during maintenance.
+This is the public Dragon Ball Stories companion. Current published story: S305, returned to Room 214 after training and bag retrieval, 29 August Age 854 at 09:15. The story has not advanced during maintenance.
 
 Read campaign.json and CURRENT-CONTINUITY.md for the published story, NARRATOR-GUIDE.md for narration, NARRATIVE-COMBAT.md for current combat guidance, and COMBAT-AND-TRAINING.md for the retained learning framework. The full private checkpoint and character records remain necessary to run the story.
 
-Numerical combat was retired26October2026. Its private archive is historical only. technique-progress.json supplies current acquired technique entries and overrides older ability snapshots in campaign.json. No Endurance or defensive-rotation system is active. Training and mastery remain.
+Numerical combat was retired26October2026. Its private archive is historical only. technique-progress.json supplies current acquired technique entries and also generates matching fallback entries in campaign.json. No Endurance or defensive-rotation system is active. Training and mastery remain.
 
 Before app edits read APP-CONTENT-STANDARD.md and MAINTENANCE.md. Publish only manifest files and verify the deployed release. Private plans and NPC loadouts remain private.
 
