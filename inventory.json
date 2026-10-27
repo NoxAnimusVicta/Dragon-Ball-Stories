@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedThrough": "S305 · 29 August, Age 854 · 09:15",
+  "recordedThrough": "S307 · 6 October, Age 854 · 09:15",
   "records": [
     {
       "id": "yardrat-outfit",
@@ -23,7 +23,7 @@
       "title": "Room 214 access card",
       "summary": "Issued by Mr. Satan during the first evening’s room visit.",
       "status": "Carried",
-      "details": "Opens the assigned room. It does not grant independent timeline travel or cancel the escort restriction.",
+      "details": "Opens Room 214. Timeline deployments require separate dispatch approval.",
       "location": "carried"
     },
     {
@@ -81,10 +81,24 @@
     {
       "id": "patrol-dragon-balls",
       "title": "Conton City Dragon Balls",
-      "summary": "Two compatible reward balls collected toward one complete set.",
-      "status": "Stored in Room 214",
-      "details": "Four-Star Ball: received on 23 April for Zero’s first commendation; wrapped in clean cloth. Two-Star Ball: received on 22 May for four weeks of cleanup service; kept in its padded case. Both are in the bottom drawer of the bedside cabinet in Room 214. The other five are not reserved. No wish has been made. This is a standard Time Patrol reserve set, separate from the TL-503 Earth Dragon Balls. More powerful variants are reserved for senior Patrollers and exceptional Patrol matters.",
-      "location": "room-214"
+      "summary": "Complete compatible set: seven of seven collected.",
+      "status": "Six stored · Seven-Star carried",
+      "details": "TP-RS-647: Four-Star received 23 April after TL-619, wrapped in clean cloth; Two-Star received 22 May for eight later cleanup assignments, in its padded case. One-, Three-, Five- and Six-Star Balls redeemed on 5, 12, 19 and 26 September. Seven-Star issued 6 October. One through Six are stored in Room 214; Seven-Star remains in its case with Zero. No wish made.",
+      "location": "carried",
+      "facts": [
+        {
+          "label": "Collection",
+          "value": "7 / 7 · TP-RS-647"
+        },
+        {
+          "label": "Stored",
+          "value": "One–Six-Star Balls · Bottom bedside drawer, Room 214"
+        },
+        {
+          "label": "Carried",
+          "value": "Seven-Star Ball · Issued case"
+        }
+      ]
     }
   ]
 }
