@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "S307-king-kai-correction",
+  "revision": "S307-yamcha-replacement-rewards",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
   "phase": "The set is complete",
@@ -680,7 +680,7 @@
           "value": "Conton City · Hercule’s office"
         }
       ],
-      "details": "Housing, meals and necessary treatment remain Patrol provision. Zero has consumed 36 Senzu in the recorded campaign; none are carried. Borrowed training equipment remains facility property. Seven commendations have now been redeemed for the complete compatible TP-RS-647 set, with no unspent commendations and no wish made. Yamcha spent two commendations on his practice room and retains two. Vegeta spent his two on the gravity-room retrofit."
+      "details": "Housing, meals and necessary treatment remain Patrol provision. Zero has consumed 36 Senzu in the recorded campaign; none are carried. Borrowed training equipment remains facility property. Seven commendations have now been redeemed for the complete compatible TP-RS-647 set, with no unspent commendations and no wish made. Yamcha spent four commendations: two on his practice room and two on the first balls of his own compatible set, TP-RS-812. He retains no commendations. Vegeta spent his two on the gravity-room retrofit."
     }
   ],
   "people": [
@@ -1043,11 +1043,16 @@
           "facts": [
             {
               "label": "Commendations",
-              "value": "2 remaining · 2 redeemed for the practice room"
+              "value": "0 remaining · 4 redeemed: practice room and two Dragon Balls"
             },
             {
               "label": "Dedicated practice room",
               "value": "2 commendations · Allocated with aerial targets, saved layouts and guest access"
+            },
+            {
+              "label": "Conton City Dragon Balls",
+              "value": "2/7 · One-Star and Two-Star · TP-RS-812",
+              "note": "His own compatible set; carried in their issue case. No wish made."
             }
           ]
         }
@@ -3113,7 +3118,7 @@
       "sections": [
         {
           "title": "Purpose",
-          "text": "Support each companion’s continuing training with specialist time and suitable facilities."
+          "text": "Provide dedicated practice space and maintained training equipment for the companions."
         },
         {
           "title": "People Involved",
@@ -5345,10 +5350,10 @@
     },
     {
       "id": "s307-rewards",
-      "title": "Training rewards redeemed",
+      "title": "Companion rewards redeemed",
       "date": "6 October, Age 854 · 09:15",
       "status": "Recorded",
-      "summary": "Yamcha spends two commendations on a dedicated practice room and retains two. Vegeta spends two on a custom retrofit of his existing gravity room and retains none. The room is allocated; the retrofit awaits installation. King Kai remains willing to train both students without a commendation."
+      "summary": "Yamcha spends four commendations: two on a dedicated practice room and two on the One-Star and Two-Star balls of his own compatible Conton set, TP-RS-812. Vegeta spends two on a custom retrofit of his existing gravity room. Both retain no commendations. Yamcha’s room is allocated and his balls issued; Vegeta’s retrofit awaits installation. King Kai remains willing to train both students without a commendation."
     }
   ],
   "recordedThrough": "S307 · Final Dragon Ball and companion reward redemptions",
