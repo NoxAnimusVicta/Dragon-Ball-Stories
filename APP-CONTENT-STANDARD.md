@@ -1,6 +1,6 @@
 # App content standard
 
-Approved 20 October 2026. This document owns presentation and field placement for the companion. MAINTENANCE.md owns publication, privacy and platform behaviour. Campaign facts remain in campaign.json and the authorised local factual records.
+Approved 20 October 2026. This document owns presentation and field placement for the companion. MAINTENANCE.md owns publication, privacy and platform behaviour. Campaign facts remain in their declared owners: campaign.json, inventory.json for current possessions, and the authorised local factual records.
 
 ## Mandatory before editing
 
@@ -98,6 +98,8 @@ Places reuse their root `parentId` hierarchy as the group itself, with no duplic
 - No invented deadlines, appointments, rewards or outcomes to fill fields.
 
 ## Inventory, resources and other disclosures
+
+Current possession records are owned by inventory.json, with schemaVersion, recordedThrough and records. It replaces the dated inventory snapshot in campaign.json at runtime and in generated summaries; never maintain both as current. Each item has location `carried` or `room-214`. Show **On You** and **Stored in Room 214** as two ordinary panels, then Resources alongside on desktop and below on phone. Worn items belong On You. Contents retain their own stable records and can name their container in details. The Dragon Ball tracker remains separate and shows its existing storage, without duplicating the collection in either list. Moving an item updates its location, status and any current-location prose together, preserving provenance.
 
 Inventory and Resources use the same whole-heading native disclosure as World: status, name and a concise summary when closed; facts and provenance in one reading column when open. Preserve stable record IDs and expansion keys, storage states and every acquisition fact. The Dragon Ball collection remains one entry with its seven-ball tracker. Do not add a second Details button or a decorative capsule above Resources.
 

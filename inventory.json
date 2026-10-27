@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "recordedThrough": "S305 · 29 August, Age 854 · 09:15",
+  "records": [
+    {
+      "id": "yardrat-outfit",
+      "title": "Yardrat training outfit",
+      "summary": "Navy-and-gold tunic, white sleeves and trousers, lavender sash and matching boots.",
+      "status": "Worn",
+      "details": "Given during the Yardrat stay; worn with the concealed Time Patrol communicator. Equipment services restored the battle damage while retaining its original design and colours.",
+      "location": "carried"
+    },
+    {
+      "id": "patrol-communicator",
+      "title": "Time Patrol communicator pin",
+      "summary": "Small Time Patrol badge pin, normally tucked beneath Zero’s collar.",
+      "status": "Worn",
+      "details": "The TP emblem pin is the communicator, not a separate decorative badge. Concealed beneath the collar and functional. Used for integrity reports, extraction requests and local messages. Purpose-built Patrol communications remain usable across temporal travel; the original scouter’s disconnected network is separate. Patrol apparel is provided and wearing its insignia is viewed favourably, but it is optional; many Patrollers conceal their communicator inside their own clothing.",
+      "location": "carried"
+    },
+    {
+      "id": "room-card",
+      "title": "Room 214 access card",
+      "summary": "Issued by Mr. Satan during the first evening’s room visit.",
+      "status": "Carried",
+      "details": "Opens the assigned room. It does not grant independent timeline travel or cancel the escort restriction.",
+      "location": "carried"
+    },
+    {
+      "id": "travel-bag",
+      "title": "Travel bag",
+      "summary": "Travel essentials, back in Room 214.",
+      "status": "Stored in Room 214",
+      "details": "Spare clothes, toiletries and ordinary travel essentials, packed from Namek and used during the Yardrat stay. Yamcha retrieved the bag from Bulma’s ship and returned it; Zero put it away in Room 214. The original outfit, repaired scouter and Chronoa’s protected scroll are packed inside.",
+      "location": "room-214"
+    },
+    {
+      "id": "outfit",
+      "title": "Black-and-burgundy outfit",
+      "summary": "Original black-and-burgundy outfit and cape, repaired after Namek.",
+      "status": "Stored in Room 214",
+      "facts": [
+        {
+          "label": "Pieces",
+          "value": "Wrap-front top, loose trousers, sash, wrist wraps, boots and burgundy cape with gold clasps"
+        }
+      ],
+      "details": "The chamber-exit repairs removed the old arrival tear. Subsequent battle damage was repaired on 22 April after the TL-619 mission, retaining the same style and muscular fit. The cape remains part of the outfit. A clean set of the same design replaced dusty quarry clothing after the mission. Stored in the travel bag after receiving Yardrat clothing. The bag is now in Room 214.",
+      "location": "room-214"
+    },
+    {
+      "id": "scouter",
+      "title": "Recovered red scouter",
+      "summary": "Repaired original scouter, available for readings.",
+      "status": "Stored in Room 214",
+      "facts": [
+        {
+          "label": "Condition",
+          "value": "Lens, display and mount repaired; original sensor retained"
+        },
+        {
+          "label": "Known use",
+          "value": "Local target acquisition and power readings"
+        },
+        {
+          "label": "Network",
+          "value": "Disconnected from Frieza’s network by temporal transit"
+        }
+      ],
+      "details": "Turles’s ambush broke the scouter; equipment services repaired and returned the same device on 22 April. Two post-fight readings were 5,190; the next evening’s readings were 5,213. Temporal transit persistently scrambles standard scouter networking, not local scans. Return travel, rebooting and this repair do not reconnect it or upload stored recordings. Untouched local scouters still work: Jeice and Burter’s report reached Frieza. The Patrol communicator is separate. Stored in the travel bag in Room 214. Used for the rested checks after Yamcha returned the bag, then put away.",
+      "location": "room-214"
+    },
+    {
+      "id": "chronoa-briefing",
+      "title": "Chronoa’s seal briefing",
+      "summary": "Written account of the seal, channel and failed Kaioken combination.",
+      "status": "Stored in Room 214",
+      "details": "Guru read the briefing before examining Zero and returned it before the Namek training. The protected scroll is inside Zero’s travel bag, now stored in Room 214.",
+      "location": "room-214"
+    },
+    {
+      "id": "patrol-dragon-balls",
+      "title": "Conton City Dragon Balls",
+      "summary": "Two compatible reward balls collected toward one complete set.",
+      "status": "Stored in Room 214",
+      "details": "Four-Star Ball: received on 23 April for Zero’s first commendation; wrapped in clean cloth. Two-Star Ball: received on 22 May for four weeks of cleanup service; kept in its padded case. Both are in the bottom drawer of the bedside cabinet in Room 214. The other five are not reserved. No wish has been made. This is a standard Time Patrol reserve set, separate from the TL-503 Earth Dragon Balls. More powerful variants are reserved for senior Patrollers and exceptional Patrol matters.",
+      "location": "room-214"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Campaign configuration
 
-Generated from campaign.json with the current narrative condition and technique projection from PLAYER-TECHNIQUES.json. Run build.py after updating those owners.
+Generated from campaign.json with the current narrative condition and technique projection from PLAYER-TECHNIQUES.json. Current possessions come from inventory.json. Run build.py after updating those owners.
 
 - Premise: Dragon Ball Isekai.
 - Phase: Defending Yamcha’s Earth.

@@ -280,7 +280,7 @@
       ['character','Character','The hero of your next life','01'],
       ['chronicle','Story','Your journey, chapter by chapter','02'],
       ['abilities','Techniques','Find your fighting spirit','03'],
-      ['inventory','Inventory','Everything you take with you','04'],
+      ['inventory','Inventory','Your gear, carried and stored','04'],
       ['world','World','Your people, places and next steps','05']
     ];
     return `<section class="title-screen"><div class="menu-column"><div class="title-logo"><span class="logo-kicker">AN ISEKAI ADVENTURE</span><h1><span>DRAGON <em>BALL</em></span><strong>STORIES</strong></h1><span class="logo-rule">YOUR NEXT LIFE STARTS HERE</span></div><nav class="game-menu" aria-label="Adventure menu">${entries.map(([key,label,desc,n])=>`<a class="menu-choice" href="#${key}" data-menu><span class="menu-number">${n}</span>${icon(key)}<span class="menu-title">${label}</span><span class="menu-arrow">›</span><span class="menu-description">${desc}</span></a>`).join('')}</nav></div><div class="home-feature"><span class="chapter-tag">${data.started ? 'YOUR ADVENTURE' : 'BEFORE CHAPTER ONE'}</span><h2>${data.started ? 'What happens<br><em>next?</em>' : 'A new world.<br><em>A new you.</em>'}</h2><p>${escape(data.story.situation || `The next chapter belongs to you, ${data.character.name}.`)}</p><a class="primary launch-button" href="${data.started ? '#chronicle' : '#character'}">${data.started ? 'Return to your story' : 'Meet Zero'} ${icon('arrow')}</a></div><div class="scene-caption">${data.started ? 'DECORATIVE MENU SCENERY' : 'DECORATIVE MENU SCENERY'}</div></section>`;
@@ -408,7 +408,9 @@
   }
 
   function inventory() {
-    return pageHeader('04','Inventory','Pack for a life beyond the ordinary.')+rewardsPanel()+`<div class="loadout-screen"><section class="panel main-panel"><h2>Possessions</h2>${data.inventory.length ? records(data.inventory.filter(r=>r.id!=='patrol-dragon-balls'),'inventory') : empty('inventory','What comes with you?','Your known possessions will appear here once they are established in the story.')}</section><aside class="panel funds-panel"><div class="capsule-object" aria-hidden="true"><span>CAPSULE</span><b>CC</b></div><h2>Resources</h2>${data.accounts.length ? records(data.accounts,'accounts') : '<span class="balance">—</span><p>No known funds have been recorded yet.</p>'}<span class="eyebrow">CARRIED · STORED · OWNED</span></aside></div>`;
+    const possessions=data.inventory.filter(r=>r.id!=='patrol-dragon-balls');
+    const section=(location,title)=>`<section class="panel"><h2>${title}</h2>${records(possessions.filter(r=>r.location===location),'inventory') || '<p>No items recorded here.</p>'}</section>`;
+    return pageHeader('04','Inventory','')+rewardsPanel()+`<div class="loadout-screen"><div class="loadout-screen inventory-groups">${section('carried','On You')}${section('room-214','Stored in Room 214')}</div><aside class="panel funds-panel"><h2>Resources</h2>${data.accounts.length ? records(data.accounts,'accounts') : '<p>No resources recorded.</p>'}</aside></div>`;
   }
 
   function recordTitle(record, kind) {
@@ -626,6 +628,11 @@
       const response = await fetch('./campaign.json?v='+release, {cache:'no-store',signal:controller.signal});
       if (!response.ok) throw new Error('Campaign records are unavailable.');
       data = catalogueRecord(validate(await response.json()));
+      const inventoryResponse=await fetch('./inventory.json?v='+release,{cache:'no-store',signal:controller.signal});
+      if(!inventoryResponse.ok) throw new Error('Inventory records are unavailable.');
+      const inventoryData=await inventoryResponse.json();
+      if(inventoryData.schemaVersion!==1 || !Array.isArray(inventoryData.records) || inventoryData.records.some(r=>!['carried','room-214'].includes(r.location))) throw new Error('Invalid inventory records.');
+      data.inventory=catalogueRecord(inventoryData.records);
       // Display current catalogue aliases without rewriting the historical source.
       data.events = data.events.map(event => ({...event, ...Object.fromEntries(['date','summary','details'].filter(key => typeof event[key] === 'string').map(key => [key,catalogueText(event[key])]))}));
       try { const reference=await fetch('./power-scale.json?v='+release,{cache:'no-store',signal:controller.signal}); if(reference.ok) scale=await reference.json(); } catch { /* Main story remains available if reference fails. */ }

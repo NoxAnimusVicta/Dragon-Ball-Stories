@@ -1,6 +1,6 @@
 # Current continuity
 
-Generated from campaign.json with the current narrative condition and technique projection from PLAYER-TECHNIQUES.json. Run build.py after updating those owners.
+Generated from campaign.json with the current narrative condition and technique projection from PLAYER-TECHNIQUES.json. Current possessions come from inventory.json. Run build.py after updating those owners.
 
 - Status: Story in progress.
 - Coverage: S268 · Desert beacon and first contact.
@@ -16,6 +16,7 @@ Generated from campaign.json with the current narrative condition and technique 
 - Latest recorded event: s268.
 - Technique records: 16.
 - Possession records: 8.
+- Inventory coverage: S305 · 29 August, Age 854 · 09:15; current locations in inventory.json override the older story snapshot.
 - Account records: 1.
 - Relationship records: 32.
 - Journal entries: 252.
