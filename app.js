@@ -631,7 +631,7 @@
       const inventoryResponse=await fetch('./inventory.json?v='+release,{cache:'no-store',signal:controller.signal});
       if(!inventoryResponse.ok) throw new Error('Inventory records are unavailable.');
       const inventoryData=await inventoryResponse.json();
-      if(inventoryData.schemaVersion!==1 || !Array.isArray(inventoryData.records) || inventoryData.records.some(r=>!['carried','room-214'].includes(r.location))) throw new Error('Invalid inventory records.');
+      if(inventoryData.schemaVersion!==1 || !Array.isArray(inventoryData.records) || inventoryData.records.some(r=>!['carried','room-214'].includes(r.location) && !(r.id==='patrol-dragon-balls' && r.location==='none' && data.rewards?.heldStars?.length===0))) throw new Error('Invalid inventory records.');
       data.inventory=catalogueRecord(inventoryData.records);
       // Display current catalogue aliases without rewriting the historical source.
       data.events = data.events.map(event => ({...event, ...Object.fromEntries(['date','summary','details'].filter(key => typeof event[key] === 'string').map(key => [key,catalogueText(event[key])]))}));

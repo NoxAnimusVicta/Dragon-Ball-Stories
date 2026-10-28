@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "revision": "S307-yamcha-replacement-rewards",
+  "revision": "S328-reconciliation",
   "title": "Dragon Ball Stories",
   "premise": "Dragon Ball Isekai",
-  "phase": "The set is complete",
+  "phase": "Developing his own power",
   "started": true,
   "character": {
     "name": "Zero",
@@ -13,20 +13,20 @@
     "heightApproximate": true,
     "portrait": "zero-yardrat-base.jpg",
     "portraitAlt": "Zero with shortened auburn hair and trimmed beard in navy, gold and white Yardrat clothing with a lavender sash.",
-    "race": "Human",
+    "race": "Human · D-Cells",
     "origin": "From a world where Dragon Ball is fiction. The cause of the crossing is still unknown.",
-    "appearance": "Approximately 5′8″ (173 cm), muscular build, shortened copper-auburn waves, trimmed beard and normally green irises. Navy-and-gold asymmetric Yardrat tunic, white sleeves and trousers, lavender sash and matching boots. The black seal with four inward-curving hooks remains below the sternum. Sealed Channel gives red irises and a pale violet aura.",
+    "appearance": "Approximately 5′8″ (173 cm), muscular build, shortened copper-auburn waves, trimmed beard and normally green irises. Navy-and-gold asymmetric Yardrat tunic, white sleeves and trousers, lavender sash and matching boots. The former seal mark is gone.",
     "personality": "Expressed through your choices and dialogue.",
     "backstory": "Familiar with Dragon Ball through anime, manga, films and games before the crossing. No further personal background is recorded.",
     "arrival": "Woke outside Capsule Corp in West City with an unfamiliar athletic body and new clothes. Nappa’s attack left him critically injured. Vegeta intervened, arranged evacuation and later proved to be a Time Patroller. Zero gave his name before losing consciousness. Zero later chose 1 January, the Conton-calendar arrival anniversary, as his birthday. His adopted age anchor is 26 years and 6 months at arrival; personal ageing includes chamber time.",
-    "motivation": "Continue developing independent strength and prepare the integration wish using the completed compatible Dragon Ball set.",
-    "knowledge": "Retains Dragon Ball media knowledge without knowing every alternate history. Chronoa confirmed the Xenoverse stories correspond to the Patrol’s past. Zero knows the Dark Factor can take bodily control and that Kaioken destabilises its opened seal; its identity and the cause of his crossing remain unknown. He and Yamcha revived Krillin, Roshi, Tien and Chiaotzu in TL-503, then returned for a full conditional-history review. That course includes Namek/Yardrat training and a destructive Android crisis in Ages 767–768. Six weeks under a resident King Kai developed Kaioken, sensing and a small Spirit Bomb exercise. Zero defeated fruit-enhanced Nappa on Namek in TL-619, was rescued from Turles by Vegeta and Yamcha, and heard the completed mission review. He has disclosed his integration-wish intention to Chronoa, who offered help with wording. Guru released Zero’s own potential with the seal closed; the first scan was 69,497. Yamcha and the three visiting native fighters also received releases. Four weeks of training with Nail brought Zero to 77,000 before returning to Conton. Zero and Yamcha captured Brask and Rivet on TL-846 and secured their weapons and shuttle. The ship used a booked external passage; its operator remains unidentified. Continued training with Vegeta, King Kai and Yamcha brought Zero to 79,807. Hercule confirmed 100% integrity before departure. Zero and Yamcha have since arrived on Yardrat, reunited with Bulma, Krillin, Tien and Chiaotzu, and met Pybara and his assistant. Their friends arrived four days before them. A month of intensive Yardrat instruction has developed Mastered Ki Control, Advanced Instant Transmission and sensing, and Proficient Cloning, Gigantification and Spirit Healing. Spirit Control is the Yardratian approach to Ki Control; each application is practised separately. Two further fortnights completed the Yardrat stay. Yamcha achieved Alpha, and both refined all four Yardrat applications. Hercule traced Nappa and Turles to an expedition after they directed native Frieza toward Earth’s Dragon Balls. Integrity last read 86%. The fighters returned to Earth by Instant Transmission; Frieza’s fleet arrived shortly afterwards. Zero defeated the native Ginyu Force and destroyed the flagship, then was badly injured by final-form Frieza. Vegeta arrived, revealed True Wrathful and killed Frieza; surviving mobile forces fled. After returning to Conton and receiving medical care, Zero reviewed the changed Cold and Android course with Hercule. That review predates Yamcha’s subsequent visit to Bulma; no fresh future review or integrity reading has followed. Yamcha transferred into Vegeta’s team on 30 August. During the following month and week, Zero completed assigned team, duo and solo cleanup work and collected the remaining five compatible Dragon Balls. All seven are now owned; no wish has been made.",
-    "limitations": "Assigned team and solo cleanup duties require dispatch approval; Vegeta leads the team. Kaioken x2 and Sealed Channel are separately usable; combining them remains unsafe. Advanced sensing gives approximate readable output. Instant Transmission needs a perceived living anchor. Spirit Spear requires contact and committed gathering; Spirit Bomb needs actual spirit-energy supply and concentration.",
-    "battlePower": 121802,
-    "powerReading": "Measured · 6 October, Age 854 · Rested ordinary-base check · Form totals calculated",
+    "motivation": "Develop his own transformation and independent strength alongside Yamcha and Vegeta.",
+    "knowledge": "Retains Dragon Ball media knowledge without knowing every alternate history. Chronoa confirmed the Xenoverse stories correspond to the Patrol’s past. Before the wish, Zero learned that the Dark Factor could take bodily control and Kaioken destabilised its opened seal; its identity and the cause of his crossing remain unknown. He and Yamcha revived Krillin, Roshi, Tien and Chiaotzu in TL-503, then returned for a full conditional-history review. That course includes Namek/Yardrat training and a destructive Android crisis in Ages 767–768. Six weeks under a resident King Kai developed Kaioken, sensing and a small Spirit Bomb exercise. Zero defeated fruit-enhanced Nappa on Namek in TL-619, was rescued from Turles by Vegeta and Yamcha, and heard the completed mission review. He has disclosed his integration-wish intention to Chronoa, who offered help with wording. Guru released Zero’s own potential with the seal closed; the first scan was 69,497. Yamcha and the three visiting native fighters also received releases. Four weeks of training with Nail brought Zero to 77,000 before returning to Conton. Zero and Yamcha captured Brask and Rivet on TL-846 and secured their weapons and shuttle. The ship used a booked external passage; its operator remains unidentified. Continued training with Vegeta, King Kai and Yamcha brought Zero to 79,807. Hercule confirmed 100% integrity before departure. Zero and Yamcha have since arrived on Yardrat, reunited with Bulma, Krillin, Tien and Chiaotzu, and met Pybara and his assistant. Their friends arrived four days before them. A month of intensive Yardrat instruction has developed Mastered Ki Control, Advanced Instant Transmission and sensing, and Proficient Cloning, Gigantification and Spirit Healing. Spirit Control is the Yardratian approach to Ki Control; each application is practised separately. Two further fortnights completed the Yardrat stay. Yamcha achieved Alpha, and both refined all four Yardrat applications. Hercule traced Nappa and Turles to an expedition after they directed native Frieza toward Earth’s Dragon Balls. Integrity last read 86%. The fighters returned to Earth by Instant Transmission; Frieza’s fleet arrived shortly afterwards. Zero defeated the native Ginyu Force and destroyed the flagship, then was badly injured by final-form Frieza. Vegeta arrived, revealed True Wrathful and killed Frieza; surviving mobile forces fled. After returning to Conton and receiving medical care, Zero reviewed the changed Cold and Android course with Hercule. That review predates Yamcha’s subsequent visit to Bulma; no fresh future review or integrity reading has followed. Yamcha transferred into Vegeta’s team on 30 August. During the following month and week, Zero completed assigned team, duo and solo cleanup work and collected the remaining five compatible Dragon Balls. The complete set was used on 6 October. Shenron incorporated the Dark Factor and seal into Zero’s biology. Chronoa named the resulting cells D-Cells; Rill confirmed stable integration. The former channel and uncontrolled forms are gone. Two weeks of intensive training followed. On the next assigned mission, Reed and a blue fighter each used a ×10 Fruit of Might and escaped after critically injuring Zero. Yamcha recovered four native Dragon Balls, which were left within their timeline. Medical treatment and a Senzu completed Zero’s recovery; a new scan confirmed the first lasting D-Cell recovery increase.",
+    "limitations": "Vegeta leads the team; assignments require dispatch approval. Kaioken ×2 remains the acquired amplification. Instant Transmission needs a perceived living anchor. Spirit Spear requires contact and committed gathering; Spirit Bomb needs spirit-energy supply and concentration.",
+    "battlePower": 657709,
+    "powerReading": "Measured · 20 October, Age 854 · Medical recovery · Ordinary base",
     "role": "Time Patrol trainee · Vegeta’s team",
-    "condition": "Rested and uninjured. Base form; seal closed and intact. Restored Yardrat outfit, communicator pin and room access card worn or carried. Seven-Star Ball in its case carried; the other six are stored in Room 214. No Senzu carried.",
-    "ageMonths": 2,
+    "condition": "Fully healed after Medical treatment and a mission-funded Senzu. Base form. Repaired Yardrat outfit worn; matching spare carried in its package. Communicator pin and room access card retained. No Senzu carried.",
+    "ageMonths": 3,
     "appearanceHistory": [
       {
         "id": "arrival",
@@ -65,48 +65,26 @@
     "fieldStatus": "TIME PATROL · VEGETA’S TEAM",
     "forms": [
       {
-        "id": "uncontrolled",
-        "name": "Uncontrolled Dark Factor",
-        "unlocked": true,
-        "multiplier": 15,
-        "date": "16 February, Age 854 · Day 47 · First manifestation in TL-218, Age 763",
-        "portrait": "zero-uncontrolled.jpg",
-        "portraitAlt": "Zero enclosed in a slightly enlarged black ki mantle with violet flames, horn-like projections and pale claws.",
-        "status": "Manifested · Not voluntarily controlled",
-        "formGroup": "Dark Factor"
-      },
-      {
-        "id": "sealed-channel",
-        "name": "Dark Factor Sealed Channel",
-        "unlocked": true,
-        "multiplier": 10,
-        "date": "16 February, Age 854 · Day 47 · First full manifestation",
-        "status": "Proficient · Conscious regulation",
-        "portrait": "zero-yardrat-unsealed-channel.jpg",
-        "portraitAlt": "Zero using Sealed Channel in his Yardrat outfit, with red irises and a violet aura.",
-        "formGroup": "Dark Factor"
-      },
-      {
         "id": "kaioken",
         "name": "Kaioken ×2",
         "unlocked": true,
         "multiplier": 2,
         "date": "24 March, Age 854 · First activation",
-        "status": "Kaioken x2 · Proficient",
+        "status": "Kaioken x2 · Advanced",
         "formGroup": "Kaioken",
         "portrait": "zero-yardrat-kaioken.jpg",
         "portraitAlt": "Zero using Kaioken x2 in his Yardrat outfit."
       }
     ],
-    "powerHistory": "Guru’s individual ×12 release produced 69,497 on 22 May. Four weeks with Nail brought the base to 77,000; the Brask engagement and subsequent training led to 79,807 on 28 June. The following month of intensive Yardrat training brought the measured base to 97,079 on 28 July. Earlier readings remain dated in the journal. No repeated potential release, human Zenkai or automatic absorption of channel power. Form totals use the recorded integer base; they are not new transformed scans. Subsequent fortnight readings were 106,996 on 11 August and 118,354 on 25 August. Light preparation brought the ordinary reading to 118,366 on 27 August. Controlled training with Vegeta on 28 August brought two rested readings to 118,834 the following morning. Medical recovery itself granted no power increase. Routine practice and missions brought rested readings to 121,306 on 29 September and 121,802 on 6 October. The corrected month includes no injuries from the ×10-fruit Nappa encounter or forced base-only fight with the native Vegeta.",
+    "powerHistory": "Guru’s individual ×12 release produced 69,497 on 22 May. Four weeks with Nail brought the base to 77,000; the Brask engagement and subsequent training led to 79,807 on 28 June. The following month of intensive Yardrat training brought the measured base to 97,079 on 28 July. Earlier readings remain dated in the journal. Before the integration wish, these gains included no repeated potential release, human Zenkai or automatic absorption of channel power. Form totals use the recorded integer base; they are not new transformed scans. Subsequent fortnight readings were 106,996 on 11 August and 118,354 on 25 August. Light preparation brought the ordinary reading to 118,366 on 27 August. Controlled training with Vegeta on 28 August brought two rested readings to 118,834 the following morning. That pre-wish medical recovery granted no power increase. Routine practice and missions brought rested readings to 121,306 on 29 September and 121,802 on 6 October. The corrected month includes no injuries from the ×10-fruit Nappa encounter or forced base-only fight with the native Vegeta. From 6–19 October, 162 productive Intensive hours at Q25 brought the ordinary base to 131,542. After the 20 October mission, the first completed critical-injury recovery with D-Cells raised the measured base to 657,709. This is separate from training and from earlier pre-wish recoveries.",
     "initialPower": 50
   },
   "story": {
     "era": "Conton City · Age 854",
-    "date": "6 October, Age 854 · 09:15",
-    "location": "Hercule’s office · Conton City",
-    "situation": "The final Seven-Star Ball has been issued. Zero holds its case; the other six compatible balls are stored in Room 214. Yamcha is now part of Vegeta’s team.",
-    "pendingChoice": "The set is complete. Decide how to proceed with the wish; no summoning has occurred."
+    "date": "20 October, Age 854 · 14:00",
+    "location": "Outside Equipment Services · Conton City",
+    "situation": "Zero and Yamcha are fully healed. Zero wears his repaired Yardrat outfit and carries a matching spare in its package.",
+    "pendingChoice": "Choose where to go next."
   },
   "abilities": [
     {
@@ -126,14 +104,15 @@
         "s257",
         "s305",
         "s306",
-        "s307"
+        "s307",
+        "s312"
       ],
       "artwork": "ability-combat-basics.png",
       "artworkAlt": "Footwork, guards, counters and combinations on the ground and in the air. Symbolic technique illustration.",
       "abilityType": "fundamental",
       "trainingRecord": {
-        "asOf": "6 October, Age 854",
-        "text": "Earlier practice through 28 June, Age 854: Chamber benchmarks remain 75× gravity for ground rounds, 25× for aerial rounds and 150× for slow conditioning; no higher maximum has been established. Peer sparring and cleanup work developed group awareness. In TL-619, tight counters, accumulated damage and sustained pressure let Zero defeat a stronger Nappa while using the sealed channel. Vegeta remained far beyond him; their following training day focused on recovering after interrupted attacks, using separate channel bouts, closure and rest. Four weeks with Nail and the quarry fight developed aerial reversals, guarded combinations and sustained pressure against injured Brask. Subsequent Vegeta rounds improved close-range defence; he still controls their exchanges. Latest practice: 28 August, eight productive hours shared across physical combat, blasts and teleportation; physical work earned 72, with no tier change. S306 dedicated practice adds 160 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery.",
+        "asOf": "19 October, Age 854",
+        "text": "Earlier practice through 28 June, Age 854: Chamber benchmarks remain 75× gravity for ground rounds, 25× for aerial rounds and 150× for slow conditioning; no higher maximum has been established. Peer sparring and cleanup work developed group awareness. In TL-619, tight counters, accumulated damage and sustained pressure let Zero defeat a stronger Nappa while using the sealed channel. Vegeta remained far beyond him; their following training day focused on recovering after interrupted attacks, using separate channel bouts, closure and rest. Four weeks with Nail and the quarry fight developed aerial reversals, guarded combinations and sustained pressure against injured Brask. Subsequent Vegeta rounds improved close-range defence; he still controls their exchanges. Latest practice: 28 August, eight productive hours shared across physical combat, blasts and teleportation; physical work earned 72, with no tier change. S306 dedicated practice adds 160 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery. From 6–19 October, 162 productive Intensive hours at quality 25 across the training programme added 950 in this technique, bringing it to Advanced. Mission use is not an additional training award.",
         "facts": []
       },
       "category": "discipline"
@@ -144,7 +123,7 @@
       "summary": "Directs ki through movement, flight and energy release.",
       "status": "Mastered",
       "effect": "Precise regulation of ki through the whole body.",
-      "control": "Lower-flow channeling is steady through familiar movement; full channel output demands sustained regulation.",
+      "control": "Refined whole-body regulation of personal ki.",
       "development": "Mastered during Yardrat study; maintained through later practice.",
       "history": [
         "s020",
@@ -181,14 +160,15 @@
         "s257",
         "s305",
         "s306",
-        "s307"
+        "s307",
+        "s312"
       ],
       "artwork": "ability-flight.png",
       "artworkAlt": "Uses ki to stay airborne, manoeuvre and fight. Symbolic technique illustration.",
       "abilityType": "fundamental",
       "trainingRecord": {
-        "asOf": "6 October, Age 854",
-        "text": "Earlier practice through 28 June, Age 854: Flight is integrated with evasions, compact strikes and spinning kicks against drones. Full-output aerial rounds reached 25× gravity, distinct from 75× ground rounds and 150× slow conditioning. Flight has now been used in the assessment and both Nappa encounters. Long-range endurance remains unmeasured; greater training gravity did not make Zero faster than a much stronger opponent. Flight-assisted reversals and aerial pressure were also used against Brask. The 28 August Vegeta session added 36 through supporting aerial practice. No higher gravity maximum was established. S306 dedicated practice adds 248 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery.",
+        "asOf": "19 October, Age 854",
+        "text": "Earlier practice through 28 June, Age 854: Flight is integrated with evasions, compact strikes and spinning kicks against drones. Full-output aerial rounds reached 25× gravity, distinct from 75× ground rounds and 150× slow conditioning. Flight has now been used in the assessment and both Nappa encounters. Long-range endurance remains unmeasured; greater training gravity did not make Zero faster than a much stronger opponent. Flight-assisted reversals and aerial pressure were also used against Brask. The 28 August Vegeta session added 36 through supporting aerial practice. No higher gravity maximum was established. S306 dedicated practice adds 248 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery. From 6–19 October, 162 productive Intensive hours at quality 25 across the training programme added 950 in this technique, bringing it to Advanced. Mission use is not an additional training award.",
         "facts": [
           {
             "label": "Demonstrated",
@@ -260,94 +240,30 @@
         "s076",
         "s077",
         "s246",
-        "s257"
+        "s257",
+        "s312"
       ],
       "artwork": "ability-ki-suppression.png",
       "artworkAlt": "Lowers emitted power and deliberately releases it for action. Symbolic technique illustration.",
       "abilityType": "fundamental",
       "trainingRecord": {
-        "asOf": "28 June, Age 854",
-        "text": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains. The opening soldier engagement demonstrated a deliberate full-power striking burst followed by a return to half output. At that historical base, half output was about 39,904; that calculation was not a new suppression check. Difficulty sensing a deeply suppressed opponent does not undo Zero’s own suppression skill.",
+        "asOf": "19 October, Age 854",
+        "text": "Self-taught in the chamber and checked with the scouter. The final test stayed near 1,538 through walking and a short combination, then returned deliberately to 3,075. Hard surprises can still cause spikes. Sleep and unconscious maintenance, perfect concealment and instant expert switching are not established. Suppression makes a given load harder; it does not multiply training gains. The opening soldier engagement demonstrated a deliberate full-power striking burst followed by a return to half output. At that historical base, half output was about 39,904; that calculation was not a new suppression check. Difficulty sensing a deeply suppressed opponent does not undo Zero’s own suppression skill. From 6–19 October, 162 productive Intensive hours at quality 25 across the training programme added 512.5 in this technique, bringing it to Advanced. Mission use is not an additional training award.",
         "facts": []
       },
       "category": "discipline"
     },
     {
-      "id": "uncontrolled-form",
-      "title": "Uncontrolled Dark Factor",
-      "summary": "Releases the Dark Factor through an involuntary, dangerous manifestation.",
-      "status": "Uncontrolled",
-      "abilityType": "transformation",
-      "artwork": "ability-uncontrolled.webp",
-      "artworkAlt": "Symbolic black-and-violet horned energy eruption for Uncontrolled Dark Factor.",
-      "effect": "The attachment can take control of Zero’s body; this is a witnessed manifestation, not a safe voluntary transformation.",
-      "control": "Chronoa’s seal contains it. Losing consciousness or nearing death with the channel open can trigger takeover. The failed Kaioken/channel test also triggered it while conscious: Kaioken collapsed and ×15 replaced ×10, without stacking.",
-      "development": "Containment remains intact; voluntary mastery has not been achieved.",
-      "history": [
-        "s088",
-        "s090",
-        "s091",
-        "s094",
-        "s152"
-      ],
-      "appearance": "A dense black-and-violet mantle encloses body, hair and clothes, enlarging the silhouette with horn-like projections and pale claws. Reversion exposes the underlying clothes and injuries.",
-      "formIds": [
-        "uncontrolled"
-      ],
-      "trainingRecord": {
-        "asOf": "28 June, Age 854",
-        "text": "Power erupted after a voice that felt like Zero’s own thoughts offered strength. Fighting Nappa felt dreamlike and apparently voluntary until the body turned toward a city against his wishes. Vegeta stopped him before he reached it. The dense mantle encloses his body, hair and clothes and slightly enlarges his silhouette; reversion reveals what was underneath without repairing battle damage. Its layered growling laugh is not a new technique. This is a recorded manifestation, not a safe transformation he can freely activate. A brief second takeover occurred during the 15 April Kaioken/channel test; Krillin stopped it immediately. Kaioken dropped out, so ×15 replaced the channel without stacking. Chronoa checked and settled the intact seal.",
-        "facts": []
-      },
-      "category": "forms"
-    },
-    {
-      "id": "sealed-channel-form",
-      "title": "Dark Factor Sealed Channel",
-      "summary": "Draws Dark Factor power through Chronoa’s seal while retaining control.",
-      "status": "Proficient",
-      "abilityType": "transformation",
-      "artwork": "ability-sealed-channel.webp",
-      "artworkAlt": "A circular four-hook seal containing pale violet energy, symbolising Dark Factor Sealed Channel.",
-      "effect": "Opens, regulates and closes the flow through Chronoa’s seal while retaining conscious control.",
-      "control": "Consciously regulate the borrowed power. Combining it with Kaioken remains unsafe.",
-      "development": "Refining conscious regulation through demanding movement.",
-      "history": [
-        "s094",
-        "s096",
-        "s097",
-        "s098",
-        "s106",
-        "s113",
-        "s114",
-        "s152",
-        "s177",
-        "s178",
-        "s235",
-        "s257"
-      ],
-      "appearance": "Pale violet aura and red irises, with ordinary physique and hair colour. The permanent seal is a black circle with four inward-curving hooks below the sternum. The icon is symbolic; the Character gallery carries the full appearance.",
-      "formIds": [
-        "sealed-channel"
-      ],
-      "trainingRecord": {
-        "asOf": "29 August, Age 854",
-        "text": "Earlier practice through 28 June, Age 854: Voluntary opening and closure developed through supervised practice. Full output reached three moving minutes during the first cleanup week; by 10 March the sequence ended without immediate leg trembling, but still left Zero winded and repeated attempts were tiring. No permanent absorption of the multiplier is established. If he loses consciousness or approaches death while channeling, Uncontrolled Dark Factor takes over: ×15 replaces ×10, rather than stacking. Ordinary sleep with the channel closed is safe. The seal contains the attachment; safe removal remains unresolved. The ability icon is symbolic; the character gallery retains the full appearance reference. Attempting Kaioken on top of the channel caused loss of control even while conscious. The seal itself remained intact after Chronoa’s check; separate channel use resumed. On Namek, Zero defeated Nappa while retaining control, then closed the flow before losing consciousness after Turles’s ambush. Later practice with Vegeta improved recovery without a new timed maximum. Used through the Ginyu Force engagement and confrontation with Frieza. The channel closed while Zero remained conscious; treatment later healed the battle injuries.",
-        "facts": []
-      },
-      "category": "forms"
-    },
-    {
       "id": "kaioken-technique",
       "title": "Kaioken x2",
       "summary": "Amplifies Zero’s own output for short periods.",
-      "status": "Proficient",
+      "status": "Advanced",
       "abilityType": "signature-technique",
       "artwork": "ability-kaioken.png",
       "artworkAlt": "A crimson Kaioken aura around a symbolic fighter silhouette.",
       "effect": "King Kai’s technique doubles Zero’s own output, increasing strength, speed and resilience together.",
-      "control": "Use separately from Sealed Channel; combining them triggered takeover.",
-      "development": "Refining familiar x2 bursts, release and sustainable control.",
+      "control": "Controlled ×2 bursts and deliberate release; sustained use remains physically demanding.",
+      "development": "Advanced control of familiar ×2 activation, movement and release.",
       "history": [
         "s150",
         "s151",
@@ -357,15 +273,16 @@
         "s237",
         "s257",
         "s306",
-        "s307"
+        "s307",
+        "s312"
       ],
       "appearance": "A crimson aura surrounds the fighter during activation.",
       "formIds": [
         "kaioken"
       ],
       "trainingRecord": {
-        "asOf": "6 October, Age 854",
-        "text": "Earlier practice through 28 June, Age 854: First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release strengthened overall battle capacity, including resilience and endurance. Kaioken proficiency continued to develop through practice. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling. Yardrat training improved familiar x2 use. A brief impact burst destroyed the third forward craft; the technique was released immediately afterwards. S306 dedicated practice adds 160 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery.",
+        "asOf": "19 October, Age 854",
+        "text": "Earlier practice through 28 June, Age 854: First achieved on 24 March, then developed through six weeks of instruction. Activation, release and movement are possible; no ×3 or higher factor is established. Stacking onto the opened seal triggered Uncontrolled Dark Factor on 15 April. That failed combination is not an available ×20 form. Four further weeks of instruction extended the moving demonstration to one minute. Guru’s release strengthened overall battle capacity, including resilience and endurance. Kaioken proficiency continued to develop through practice. A short ×2 burst injured Brask before his transformation. The latest week improved activation and release while moving; ×2 remains the demonstrated ceiling. Yardrat training improved familiar x2 use. A brief impact burst destroyed the third forward craft; the technique was released immediately afterwards. S306 dedicated practice adds 160 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery. From 6–19 October, 162 productive Intensive hours at quality 25 across the training programme added 1800 in this technique, bringing it to Advanced. Mission use is not an additional training award.",
         "facts": []
       },
       "category": "forms"
@@ -387,14 +304,15 @@
         "s257",
         "s305",
         "s306",
-        "s307"
+        "s307",
+        "s312"
       ],
       "artwork": "ability-ki-sensing.png",
       "artworkAlt": "Locates familiar ki and estimates relative current output. Symbolic technique illustration.",
       "abilityType": "fundamental",
       "trainingRecord": {
-        "asOf": "6 October, Age 854",
-        "text": "Earlier practice through 28 June, Age 854: King Kai’s exercises developed direction and short-range tracking during movement. Zero cannot read exact numbers, hidden reserves or deeply suppressed targets reliably. Familiarity and concentration matter; the scouter still supplies numerical readings. Later practice improved tracking familiar moving signatures without stopping to concentrate. Against Brask, close-range ki tracking helped counter a flash. Recent practice follows familiar and partially suppressed moving signatures; exact values still require the scouter. The 28 August Vegeta session added 36 through supporting sensing practice; no mastery threshold was crossed. S306 dedicated practice adds 248 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery.",
+        "asOf": "19 October, Age 854",
+        "text": "Earlier practice through 28 June, Age 854: King Kai’s exercises developed direction and short-range tracking during movement. Zero cannot read exact numbers, hidden reserves or deeply suppressed targets reliably. Familiarity and concentration matter; the scouter still supplies numerical readings. Later practice improved tracking familiar moving signatures without stopping to concentrate. Against Brask, close-range ki tracking helped counter a flash. Recent practice follows familiar and partially suppressed moving signatures; exact values still require the scouter. The 28 August Vegeta session added 36 through supporting sensing practice; no mastery threshold was crossed. S306 dedicated practice adds 248 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery. From 6–19 October, 162 productive Intensive hours at quality 25 across the training programme added 500 in this technique, bringing it to Advanced. Mission use is not an additional training award.",
         "facts": []
       },
       "category": "discipline"
@@ -427,7 +345,7 @@
       "id": "spirit-spear",
       "title": "Spirit Spear",
       "summary": "Releases gathered spirit energy through a palm strike on contact.",
-      "status": "Proficient",
+      "status": "Advanced",
       "abilityType": "signature-technique",
       "artwork": "ability-spirit-spear.png",
       "artworkAlt": "Spirit energy gathering into an open hand and spreading across the front of its palm and fingers.",
@@ -440,12 +358,13 @@
         "s237",
         "s257",
         "s306",
-        "s307"
+        "s307",
+        "s312"
       ],
       "appearance": "Blue-white spirit energy gathers across the heel of the palm and spreads softly over the front of the hand and fingers, with the skin visible beneath it.",
       "trainingRecord": {
-        "asOf": "6 October, Age 854",
-        "text": "Earlier practice through 28 June, Age 854: Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. The current technique profile records its ×2 regular release and mastery-dependent charge ceiling; those calibrations do not rewrite the earlier partial contacts. Reached Proficient during the final Yardrat fortnight. Used against Frieza: a point-blank clash injured his restricted form, while later contact releases could not overcome his final-form strength. S306 dedicated practice adds 192 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery.",
+        "asOf": "19 October, Age 854",
+        "text": "Earlier practice through 28 June, Age 854: Zero named and first attempted it against Nappa on Namek. The first discharge scorched armour; the second tighter pulse breached a small section of already-damaged back armour and burned beneath it. It did not pierce through Nappa or become a sustained beam. The gathered charge is spent on release. During the latest week, a modest gathered charge became repeatable on a moving training approach and contact. The current technique profile records its ×2 regular release and mastery-dependent charge ceiling; those calibrations do not rewrite the earlier partial contacts. Reached Proficient during the final Yardrat fortnight. Used against Frieza: a point-blank clash injured his restricted form, while later contact releases could not overcome his final-form strength. S306 dedicated practice adds 192 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery. From 6–19 October, 162 productive Intensive hours at quality 25 across the training programme added 2000 in this technique, bringing it to Advanced. Mission use is not an additional training award.",
         "facts": []
       },
       "category": "physical"
@@ -536,21 +455,22 @@
       "id": "spirit-healing",
       "title": "Spirit Healing",
       "category": "spirit-control",
-      "summary": "Restores another person’s energy or repairs accessible wounds through touch.",
+      "summary": "Restores energy or repairs accessible wounds in yourself or another person through touch.",
       "status": "Proficient",
-      "effect": "Restores another person’s energy or repairs accessible wounds through touch.",
+      "effect": "Restores energy or repairs accessible wounds in yourself or another person through touch.",
       "control": "Transfer personal energy or repair accessible wounds through touch; deeper injuries demand more developed healing control.",
       "development": "Building on Yardrat instruction; current handling remains Proficient.",
       "history": [
         "s246",
         "s257",
         "s306",
-        "s307"
+        "s307",
+        "s325"
       ],
       "artwork": "./ability-spirit-healing.webp",
       "trainingRecord": {
-        "asOf": "6 October, Age 854",
-        "text": "Individually practised throughout the 58-day Yardrat stay alongside shared Ki Control exercises. The final fortnight broadened practice across unmastered techniques; subsequent dedicated practice is recorded below. S306 dedicated practice adds 160 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery.",
+        "asOf": "20 October, Age 854",
+        "text": "Individually practised throughout the 58-day Yardrat stay alongside shared Ki Control exercises. The final fortnight broadened practice across unmastered techniques; subsequent dedicated practice is recorded below. S306 dedicated practice adds 160 progress; field use is not a duplicate award. Later dedicated practice through 5 October is included in the current progress total; mission use did not award additional mastery. On 20 October, self-treatment slowed bleeding and repaired superficial damage; the critical wound still required Medical treatment.",
         "facts": []
       },
       "artworkAlt": "A shadow-faced healer directing green energy into a patient."
@@ -562,8 +482,16 @@
       "title": "Yardrat training outfit",
       "summary": "Navy-and-gold tunic, white sleeves and trousers, lavender sash and matching boots.",
       "status": "Worn",
-      "details": "Given during the Yardrat stay; worn with the concealed Time Patrol communicator. Equipment services restored the battle damage while retaining its original design and colours.",
+      "details": "Original Yardrat outfit repaired and cleaned at Equipment Services on 20 October after the quarry mission; currently worn.",
       "location": "carried"
+    },
+    {
+      "id": "yardrat-outfit-spare",
+      "title": "Spare Yardrat outfit",
+      "summary": "Complete matching navy, gold and white outfit with lavender sash and boots.",
+      "status": "Carried · Packaged",
+      "location": "carried",
+      "details": "Made and collected at Equipment Services on 20 October. Still carried under Zero’s arm; not yet stored in Room 214. Ordinary clothing, matching the original."
     },
     {
       "id": "patrol-communicator",
@@ -630,28 +558,24 @@
       "title": "Chronoa’s seal briefing",
       "summary": "Written account of the seal, channel and failed Kaioken combination.",
       "status": "Stored in Room 214",
-      "details": "Guru read the briefing before examining Zero and returned it before the Namek training. The protected scroll is inside Zero’s travel bag, now stored in Room 214.",
+      "details": "Guru read the briefing before examining Zero and returned it before the Namek training. The protected scroll is inside Zero’s travel bag, now stored in Room 214. Historical reference: the Dark Factor and seal were integrated into Zero’s biology on 6 October; the former seal and channel no longer exist.",
       "location": "room-214"
     },
     {
       "id": "patrol-dragon-balls",
       "title": "Conton City Dragon Balls",
-      "summary": "Complete compatible set: seven of seven collected.",
-      "status": "Six stored · Seven-Star carried",
-      "details": "TP-RS-647: Four-Star received 23 April after TL-619, wrapped in clean cloth; Two-Star received 22 May for eight later cleanup assignments, in its padded case. One-, Three-, Five- and Six-Star Balls redeemed on 5, 12, 19 and 26 September. Seven-Star issued 6 October. One through Six are stored in Room 214; Seven-Star remains in its case with Zero. No wish made.",
-      "location": "carried",
+      "summary": "Set used for the integration wish; none currently owned.",
+      "status": "0 / 7",
+      "details": "All seven TP-RS-647 balls were used on 6 October and returned to the Time Nest vault. No remaining wish, reserved replacement or personal cooldown.",
+      "location": "none",
       "facts": [
         {
           "label": "Collection",
-          "value": "7 / 7 · TP-RS-647"
+          "value": "0 / 7"
         },
         {
-          "label": "Stored",
-          "value": "One–Six-Star Balls · Bottom bedside drawer, Room 214"
-        },
-        {
-          "label": "Carried",
-          "value": "Seven-Star Ball · Issued case"
+          "label": "Previous set",
+          "value": "TP-RS-647 · Wish fulfilled"
         }
       ]
     }
@@ -677,10 +601,10 @@
         },
         {
           "label": "Current location",
-          "value": "Conton City · Hercule’s office"
+          "value": "Outside Equipment Services · Conton City"
         }
       ],
-      "details": "Housing, meals and necessary treatment remain Patrol provision. Zero has consumed 36 Senzu in the recorded campaign; none are carried. Borrowed training equipment remains facility property. Seven commendations have now been redeemed for the complete compatible TP-RS-647 set, with no unspent commendations and no wish made. Yamcha spent four commendations: two on his practice room and two on the first balls of his own compatible set, TP-RS-812. He retains no commendations. Vegeta spent his two on the gravity-room retrofit."
+      "details": "Housing, meals and necessary treatment remain Patrol provision. Zero has consumed 37 Senzu across the campaign and carries none. His seven redeemed Dragon Balls were used for the integration wish and returned to the Time Nest vault; no commendations remain. Yamcha’s practice room is in use, and his two compatible balls are stored in his own room. Vegeta’s gravity-room retrofit is installed and commissioned. Both companions retain no unspent commendations."
     }
   ],
   "people": [
@@ -724,7 +648,7 @@
           }
         ]
       },
-      "battlePower": 5365000,
+      "battlePower": 5900774,
       "context": "TL-398 · Frieza on Earth",
       "sections": [
         {
@@ -736,7 +660,7 @@
           "facts": [
             {
               "label": "Current assessed base",
-              "value": "5,365,000 · 6 October; not a scan"
+              "value": "5,900,774 · 20 October; training assessment"
             },
             {
               "label": "Wrathful",
@@ -762,7 +686,7 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Leads Zero and Yamcha’s team. Spent two commendations on an accepted engineering commission for his existing gravity room: reinforced replaceable striking surfaces, moving targets, replay recording and tailored maintenance. Installation and safety commissioning remain pending.",
+          "text": "Leads Zero and Yamcha’s team. Spent two commendations on an accepted engineering commission for his existing gravity room: reinforced replaceable striking surfaces, moving targets, replay recording and tailored maintenance. Installation and safety commissioning completed during the first week of October training.",
           "facts": [
             {
               "label": "Commendations",
@@ -770,9 +694,13 @@
             },
             {
               "label": "Training room",
-              "value": "Existing dedicated room retained; retrofit paid, not installed"
+              "value": "Retrofit installed and commissioned; controlled-output limits"
             }
           ]
+        },
+        {
+          "title": "Latest development",
+          "text": "162 productive Intensive hours at Q25 through 19 October. True Wrathful remains Advanced; all progression uses the cumulative training rule."
         }
       ],
       "history": [
@@ -787,7 +715,8 @@
         "s305",
         "s306",
         "s307",
-        "s307-rewards"
+        "s307-rewards",
+        "s312"
       ],
       "worldGroup": "toki-toki-city"
     },
@@ -863,6 +792,10 @@
         {
           "title": "Relationship & current circumstances",
           "text": "Arranged Vegeta’s retrieval and medical reception after the Earth intervention. On 28 August he reviewed the crystallised timeline with Zero through the Cold and Android crises. The last numerical integrity reading remains the earlier 86%; no post-battle reading has been supplied."
+        },
+        {
+          "title": "Latest assignment",
+          "text": "Assigned the quarry interception to Vegeta’s team. Vegeta delegated it to Zero and Yamcha. Hercule monitored the operation, received the recovered balls’ coordinates and arranged Medical return."
         }
       ],
       "history": [
@@ -889,7 +822,11 @@
         },
         {
           "title": "Relationship & current circumstances",
-          "text": "Her post-outbreak examination identified Dark Factor that was undetected while dormant. She sealed it while Zero was awake, leaving the four-hook abdominal mark, and explained the danger of losing consciousness or nearing death with the channel open. She is investigating whether safe removal is possible; no answer or deadline is established. After the 15 April stacking failure, she checked the intact binding and settled it closed. At the commendation meeting she heard Zero’s integration-wish intention, considered bodily integration viable and offered help with wording. No wish or removal has occurred. Before the Namek departure she supplied a briefing for Guru and explained that Zero’s own potential can be released with the channel closed."
+          "text": "Her post-outbreak examination identified Dark Factor that was undetected while dormant. She sealed it while Zero was awake, leaving the four-hook abdominal mark, and explained the danger of losing consciousness or nearing death with the channel open. She initially investigated safe removal. After the 15 April stacking failure, she checked the intact binding and settled it closed. At the commendation meeting she heard Zero’s integration-wish intention, considered bodily integration viable and offered help with wording. The later 6 October wish completed integration instead. Before the Namek departure she supplied a briefing for Guru and explained that Zero’s own potential can be released with the channel closed."
+        },
+        {
+          "title": "Integration wish",
+          "text": "Examined Zero with Rill after the fulfilled wish on 6 October and named the new D-Cells. The former seal has been consumed."
         }
       ],
       "history": [
@@ -914,6 +851,10 @@
         {
           "title": "Relationship & current circumstances",
           "text": "First treated and cleared Zero after his arrival, forwarded his account to coordination and measured his power at 50. On 27 August she supervised ordinary medical-machine treatment after the Frieza battle, healing his leg, wrist, burns and bruising and clearing him to leave."
+        },
+        {
+          "title": "Latest care",
+          "text": "Confirmed stable D-Cell integration on 6 October. Treated the critical quarry injuries on 20 October; a mission-funded Senzu completed recovery and the ordinary-base scan read 657,709."
         }
       ],
       "history": [
@@ -968,7 +909,7 @@
       "title": "Yamcha",
       "summary": "Teammate under Vegeta; developing Alpha and advanced Kaioken control.",
       "status": "Current companion",
-      "battlePower": 42054,
+      "battlePower": 44501,
       "canTransform": true,
       "art": {
         "appearance": [
@@ -1021,11 +962,11 @@
           "facts": [
             {
               "label": "Current assessed base",
-              "value": "42,054 · 6 October; not a scan"
+              "value": "44,501 · 20 October; training assessment"
             },
             {
               "label": "Alpha",
-              "value": "×50 · Proficient"
+              "value": "×50 · Advanced"
             },
             {
               "label": "Kaioken x2",
@@ -1052,9 +993,13 @@
             {
               "label": "Conton City Dragon Balls",
               "value": "2/7 · One-Star and Two-Star · TP-RS-812",
-              "note": "His own compatible set; carried in their issue case. No wish made."
+              "note": "His own compatible set; stored in their issue case in Yamcha’s room. No wish made."
             }
           ]
+        },
+        {
+          "title": "Latest development",
+          "text": "162 productive Intensive hours at Q25 through 19 October; Alpha is now Advanced. Fully healed in Medical after the 20 October mission; accompanying Zero outside Equipment Services. The two-ball case is stored in his own room."
         }
       ],
       "history": [
@@ -1077,7 +1022,8 @@
         "s305",
         "s306",
         "s307",
-        "s307-rewards"
+        "s307-rewards",
+        "s312"
       ],
       "worldGroup": "toki-toki-city"
     },
@@ -2073,6 +2019,88 @@
       "history": [
         "s293"
       ]
+    },
+    {
+      "id": "reed",
+      "title": "Reed",
+      "summary": "Foreign Dragon Ball collector encountered at the quarry.",
+      "status": "Escaped · Whereabouts unknown",
+      "battlePower": 180000,
+      "context": "Home timeline unknown",
+      "worldGroup": "unknown-timelines",
+      "sections": [
+        {
+          "title": "Identity & appearance",
+          "text": "Tall, muscular green Namekian with antennae, pointed ears, pink arm patches and black nails; dark sleeveless clothing and burgundy accents. Low and rough; domineering and contemptuous.",
+          "facts": [
+            {
+              "label": "Age",
+              "value": "Unknown"
+            }
+          ]
+        },
+        {
+          "title": "Known power",
+          "facts": [
+            {
+              "label": "Briefing base",
+              "value": "180,000"
+            },
+            {
+              "label": "Fruit of Might",
+              "value": "×10 · Consumed during the encounter"
+            }
+          ]
+        },
+        {
+          "title": "Latest encounter",
+          "text": "Fought Zero and Yamcha on 20 October and escaped with his companion. Four recovered native Dragon Balls remained in their timeline. Later condition and destination are unknown."
+        }
+      ],
+      "history": [
+        "s325"
+      ]
+    },
+    {
+      "id": "blue-quarry-fighter",
+      "title": "Blue fighter",
+      "summary": "Foreign Dragon Ball collector encountered at the quarry.",
+      "status": "Escaped · Whereabouts unknown",
+      "battlePower": 150000,
+      "context": "Home timeline unknown",
+      "worldGroup": "unknown-timelines",
+      "sections": [
+        {
+          "title": "Identity & appearance",
+          "text": "Lean blue-skinned man with red eyes, pointed ears and ivory armour over black-and-red clothing. Cultured, mocking and condescending.",
+          "facts": [
+            {
+              "label": "Age",
+              "value": "Unknown"
+            }
+          ]
+        },
+        {
+          "title": "Known power",
+          "facts": [
+            {
+              "label": "Briefing base",
+              "value": "150,000"
+            },
+            {
+              "label": "Fruit of Might",
+              "value": "×10 · Consumed during the encounter"
+            }
+          ]
+        },
+        {
+          "title": "Latest encounter",
+          "text": "Fought Zero and Yamcha on 20 October and escaped with his companion. Four recovered native Dragon Balls remained in their timeline. Later condition and destination are unknown."
+        }
+      ],
+      "history": [
+        "s325"
+      ]
     }
   ],
   "places": [
@@ -2136,7 +2164,7 @@
         },
         {
           "title": "Current circumstances",
-          "text": "Zero’s travel bag, original outfit, scouter and seal briefing are stored here. Six compatible Dragon Balls, numbered One through Six, are in the bottom bedside drawer; the Seven-Star Ball is currently with Zero at Hercule’s office."
+          "text": "Travel bag, original outfit, scouter and historical seal briefing are stored here. No Dragon Balls remain. The newly made spare Yardrat outfit is still carried by Zero."
         }
       ]
     },
@@ -2168,7 +2196,7 @@
           "text": "Across the square from the reception building containing assessment room three; ordinary training rooms are nearby."
         }
       ],
-      "visitRecord": "An empty glass treatment chamber stood opposite the bed. Rill reported that roughly an hour had passed since admission and that the latest scans were clear after treatment for internal bleeding, damaged ribs and a head injury. Original clothes and the scouter were kept nearby. Zero returned after the first mission, underwent Chronoa’s seal while awake and received a Senzu before moving to a nearby hall. On 27 August, ordinary medical-machine treatment healed Zero and Vegeta after the Frieza battle; Zero’s outfit was restored during treatment. Yamcha was cleared after treatment on 28 August. No Senzu was issued for this personal intervention."
+      "visitRecord": "An empty glass treatment chamber stood opposite the bed. Rill reported that roughly an hour had passed since admission and that the latest scans were clear after treatment for internal bleeding, damaged ribs and a head injury. Original clothes and the scouter were kept nearby. Zero returned after the first mission, underwent Chronoa’s seal while awake and received a Senzu before moving to a nearby hall. On 27 August, ordinary medical-machine treatment healed Zero and Vegeta after the Frieza battle; Zero’s outfit was restored during treatment. Yamcha was cleared after treatment on 28 August. No Senzu was issued for this personal intervention. On 20 October, critical mission injuries were repaired, then a Senzu completed recovery. Zero’s ordinary-base scan read 657,709; Yamcha was also fully healed."
     },
     {
       "id": "assessment-room",
@@ -2266,7 +2294,7 @@
         },
         {
           "title": "Current circumstances",
-          "text": "The latest month and week of assigned cleanup work are complete. Hercule has issued Zero the final compatible Dragon Ball. No mission is currently active; no fresh native-future or integrity review has been performed."
+          "text": "The latest quarry assignment is concluded. Hercule received the native Dragon Ball coordinates and arranged Medical return. Both intruders escaped; no fresh integrity assessment or subsequent native collection is recorded."
         }
       ]
     },
@@ -2298,7 +2326,7 @@
           "text": "Windows display boots, gloves and uniforms; repair stations and curtained changing cubicles are inside."
         }
       ],
-      "visitRecord": "The original outfit was fitted after the chamber. After Namek, a technician repaired the same scouter and confirmed its local readings; the network remained disconnected. Zero also had his original clothing and cape repaired without changing outfits. Zero’s Yardrat outfit was restored during his 27 August medical visit, retaining its existing design and colours."
+      "visitRecord": "The original outfit was fitted after the chamber. After Namek, a technician repaired the same scouter and confirmed its local readings; the network remained disconnected. Zero also had his original clothing and cape repaired without changing outfits. Zero’s Yardrat outfit was restored during his 27 August medical visit, retaining its existing design and colours. On 20 October, the original Yardrat outfit was repaired and a complete matching spare made. Zero left wearing the original and carrying the packaged spare."
     },
     {
       "id": "tl218-supply-site",
@@ -2463,7 +2491,7 @@
       "sections": [
         {
           "title": "Current circumstances",
-          "text": "Vegeta retains this dedicated room. His two-commendation equipment retrofit is paid and accepted; installation and safety commissioning are pending. Existing gravity capability remains unchanged."
+          "text": "Vegeta retains this dedicated room. The previously paid retrofit was installed and commissioned during the first week of October training. Existing gravity capability is unchanged; controlled-output safety limits remain."
         },
         {
           "title": "Location & access",
@@ -2733,11 +2761,11 @@
       "title": "Yamcha’s Practice Room",
       "parentId": "toki-toki-city",
       "summary": "A dedicated practice room with programmable aerial targets and saved layouts.",
-      "status": "Allocated",
+      "status": "In use",
       "sections": [
         {
           "title": "Location & Access",
-          "text": "Conton training facilities; Yamcha controls guest access. First use has not yet occurred."
+          "text": "Conton training facilities; Yamcha controls guest access. Used during the October intensive training."
         },
         {
           "title": "Current Circumstances",
@@ -2746,6 +2774,19 @@
       ],
       "history": [
         "s307-rewards"
+      ]
+    },
+    {
+      "id": "timeline-0724",
+      "title": "TL-0001-003-A0724",
+      "summary": "Earth after Raditz’s defeat, before Vegeta and Nappa arrive.",
+      "status": "Route closed",
+      "context": "22 October, Age 762 · Last visited",
+      "sections": [
+        {
+          "title": "Quarry intervention",
+          "text": "Reed and the blue fighter were gathering Dragon Balls. Both escaped. Four recovered balls were left in an open bag beside the access track, coordinates reported to Dispatch. No later collection or fresh integrity report is recorded."
+        }
       ]
     }
   ],
@@ -2768,7 +2809,7 @@
         },
         {
           "title": "Progress",
-          "text": "Zero completed 62 productive Normal hours at quality 16 during the mission month, followed by 14 more at the same quality. Current rested base: 121,802. Yamcha trained 124 then 28 hours at quality 18; Vegeta 186 then 42 hours at quality 18. Latest cumulative progress is reflected in Techniques. Reward purchases add no training gains."
+          "text": "Latest block: 6–19 October, 162 productive Intensive hours each at quality 25. Training bases reached Zero 131,542, Yamcha 44,501 and Vegeta 5,900,774. Zero’s later medical recovery separately raised his base to 657,709. No duplicate mission mastery award."
         },
         {
           "title": "Dependencies",
@@ -2873,33 +2914,23 @@
     {
       "id": "dark-factor-containment",
       "title": "Dark Factor containment",
-      "summary": "Seal intact; separate channel use works, Kaioken stacking does not.",
-      "status": "Developing control",
-      "nextStep": "Continue separate channel practice and prepare the integration wish.",
-      "completed": false,
+      "summary": "Integration wish fulfilled on 6 October; the seal and Dark Factor became part of Zero’s biology.",
+      "status": "Complete",
+      "nextStep": "Develop the resulting personal abilities through training.",
+      "completed": true,
       "sections": [
         {
-          "title": "Purpose",
-          "text": "Seal intact; separate channel use works, Kaioken stacking does not."
-        },
-        {
-          "title": "People involved",
-          "text": "Zero, Chronoa, King Kai and Krillin"
-        },
-        {
-          "title": "Progress",
-          "text": "The seal remains intact. The failed Kaioken/channel combination on 15 April is still unsafe. Zero used the channel during the Earth battle and closed it before losing consciousness, avoiding takeover. Chronoa has offered help with an integration wish; no wish or permanent integration has occurred."
-        },
-        {
-          "title": "Dependencies",
-          "text": "Kaioken/channel stacking remains unsafe."
+          "title": "Outcome",
+          "text": "Shenron fulfilled the integration wish. Chronoa and Rill identified stable D-Cells. Sealed Channel and Uncontrolled Dark Factor are permanently retired; a new personal transformation has not yet manifested."
         }
       ],
       "history": [
         "s094",
         "s152",
         "s192",
-        "s290"
+        "s290",
+        "s310",
+        "s311"
       ]
     },
     {
@@ -3019,26 +3050,14 @@
     {
       "id": "integration-wish",
       "title": "A compatible set",
-      "summary": "All seven compatible Dragon Balls collected; the wish remains unmade.",
-      "status": "Set complete",
-      "nextStep": "Arrange the summoning and settle the wording with Chronoa.",
-      "completed": false,
+      "summary": "Integration wish fulfilled on 6 October; the seal and Dark Factor became part of Zero’s biology.",
+      "status": "Complete",
+      "nextStep": "Develop the resulting personal abilities through training.",
+      "completed": true,
       "sections": [
         {
-          "title": "Purpose",
-          "text": "Use the completed compatible set for the intended integration wish."
-        },
-        {
-          "title": "People involved",
-          "text": "Zero and Chronoa"
-        },
-        {
-          "title": "Progress",
-          "text": "The TP-RS-647 set is complete. Six balls are stored in Room 214 and the Seven-Star Ball has just been issued. Chronoa’s earlier offer to help with wording remains available. The seal and Dark Factor are unchanged."
-        },
-        {
-          "title": "Dependencies",
-          "text": "Zero must choose to proceed; no summoning or wish has been enacted."
+          "title": "Outcome",
+          "text": "Shenron fulfilled the integration wish. Chronoa and Rill identified stable D-Cells. Sealed Channel and Uncontrolled Dark Factor are permanently retired; a new personal transformation has not yet manifested."
         }
       ],
       "history": [
@@ -3046,7 +3065,9 @@
         "s192",
         "s197",
         "s306",
-        "s307"
+        "s307",
+        "s310",
+        "s311"
       ]
     },
     {
@@ -3084,7 +3105,7 @@
       "id": "yamcha-alpha-project",
       "title": "Yamcha · Alpha training",
       "summary": "Alpha achieved during the final Yardrat fortnight.",
-      "status": "Acquired · Proficient",
+      "status": "Acquired · Advanced",
       "nextStep": "Refine the acquired form through practice.",
       "completed": true,
       "sections": [
@@ -3098,7 +3119,7 @@
         },
         {
           "title": "Progress",
-          "text": "Yamcha has acquired Alpha ×50 and practised its control to Proficient."
+          "text": "Alpha ×50 is acquired and Advanced after the October intensive training."
         }
       ],
       "history": [
@@ -3106,15 +3127,16 @@
         "s238",
         "s246",
         "s257",
-        "s268"
+        "s268",
+        "s312"
       ]
     },
     {
       "id": "companion-training-rewards",
       "title": "Companion Training Arrangements",
-      "summary": "Yamcha’s dedicated room is allocated; Vegeta’s retrofit is paid for.",
-      "status": "Arrangements pending",
-      "nextStep": "Schedule and commission Vegeta’s retrofit.",
+      "summary": "Yamcha’s room is in use; Vegeta’s retrofit is installed and commissioned.",
+      "status": "Complete",
+      "nextStep": "Facilities available for further training.",
       "sections": [
         {
           "title": "Purpose",
@@ -3126,15 +3148,35 @@
         },
         {
           "title": "Progress",
-          "text": "Yamcha’s dedicated practice room is allocated. Vegeta’s custom equipment commission is accepted and awaiting installation."
+          "text": "Both earlier purchases were fulfilled during the October training block. No further commendations spent."
         },
         {
           "title": "Dependencies",
-          "text": "Installation and safety commissioning must occur before the retrofit’s benefits are recorded."
+          "text": "Controlled-output safety limits apply; no higher gravity capability or full-power proofing granted."
         }
       ],
       "history": [
-        "s307-rewards"
+        "s307-rewards",
+        "s312"
+      ],
+      "completed": true
+    },
+    {
+      "id": "personal-transformation",
+      "title": "Personal transformation",
+      "summary": "Preparing to access the transformation potential identified after the wish.",
+      "status": "In development",
+      "completed": false,
+      "nextStep": "Continue deliberate practice.",
+      "sections": [
+        {
+          "title": "Current progress",
+          "text": "Dedicated foundation practice completed during October training. No transformation has manifested."
+        }
+      ],
+      "history": [
+        "s311",
+        "s312"
       ]
     }
   ],
@@ -5354,23 +5396,57 @@
       "date": "6 October, Age 854 · 09:15",
       "status": "Recorded",
       "summary": "Yamcha spends four commendations: two on a dedicated practice room and two on the One-Star and Two-Star balls of his own compatible Conton set, TP-RS-812. Vegeta spends two on a custom retrofit of his existing gravity room. Both retain no commendations. Yamcha’s room is allocated and his balls issued; Vegeta’s retrofit awaits installation. King Kai remains willing to train both students without a commendation."
+    },
+    {
+      "id": "s310",
+      "title": "The integration wish",
+      "date": "6 October, Age 854",
+      "status": "Recorded",
+      "summary": "Shenron incorporated the Dark Factor and seal into Zero’s biology. The former forms and seal were consumed; the seven balls returned to the Time Nest vault."
+    },
+    {
+      "id": "s311",
+      "title": "D-Cells identified",
+      "date": "6 October, Age 854",
+      "status": "Recorded",
+      "summary": "Chronoa and Rill examined the stable new biology. Personal transformation potential and lasting growth after severe injury recovery were identified; no new form was unlocked."
+    },
+    {
+      "id": "s312",
+      "title": "Two weeks of intensive training",
+      "date": "6–19 October, Age 854",
+      "status": "Recorded",
+      "summary": "Zero, Yamcha and Vegeta each completed 162 productive Intensive hours at quality 25. Zero’s Spirit Spear and Kaioken reached Advanced; Yamcha’s Alpha reached Advanced. Earlier equipment purchases were put into use."
+    },
+    {
+      "id": "s325",
+      "title": "Quarry mission concluded",
+      "date": "20 October, Age 854",
+      "status": "Recorded",
+      "summary": "Zero and Yamcha confronted Reed and a blue fighter on Earth in TL-0001-003-A0724. Both hostiles used ×10 Fruit of Might and escaped. Four recovered native balls were left beside the quarry access track and their coordinates reported to Hercule. Zero needed urgent Medical treatment."
+    },
+    {
+      "id": "s327",
+      "title": "Recovery and a new reading",
+      "date": "20 October, Age 854 · 13:10",
+      "status": "Recorded",
+      "summary": "Medical repair and a mission-funded Senzu fully healed Zero. His first D-Cell recovery increase brought the ordinary-base scan to 657,709. Yamcha was also fully healed."
+    },
+    {
+      "id": "s328",
+      "title": "Clothing restored and a spare made",
+      "date": "20 October, Age 854 · 14:00",
+      "status": "Recorded",
+      "summary": "Equipment Services repaired the original Yardrat outfit and produced a complete matching spare. Zero wears the original and carries the packaged spare as he leaves with Yamcha."
     }
   ],
-  "recordedThrough": "S307 · Final Dragon Ball and companion reward redemptions",
+  "recordedThrough": "S328 · 20 October, Age 854 · 14:00",
   "rewards": {
     "set": "TP-RS-647",
-    "heldStars": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7
-    ],
+    "heldStars": [],
     "unspentCommendations": 0,
-    "wishMade": false,
-    "storage": "One–Six-Star Balls: Room 214, bottom bedside drawer. Seven-Star Ball: carried in its case.",
-    "asOf": "6 October, Age 854"
+    "wishMade": true,
+    "storage": "TP-RS-647 returned to the Time Nest vault after the 6 October wish; none owned.",
+    "asOf": "20 October, Age 854"
   }
 }

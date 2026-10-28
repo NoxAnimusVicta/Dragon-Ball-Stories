@@ -1,14 +1,22 @@
 {
   "schemaVersion": 1,
-  "recordedThrough": "S307 · 6 October, Age 854 · 09:15",
+  "recordedThrough": "S328 · 20 October, Age 854 · 14:00",
   "records": [
     {
       "id": "yardrat-outfit",
       "title": "Yardrat training outfit",
       "summary": "Navy-and-gold tunic, white sleeves and trousers, lavender sash and matching boots.",
       "status": "Worn",
-      "details": "Given during the Yardrat stay; worn with the concealed Time Patrol communicator. Equipment services restored the battle damage while retaining its original design and colours.",
+      "details": "Original Yardrat outfit repaired and cleaned at Equipment Services on 20 October after the quarry mission; currently worn.",
       "location": "carried"
+    },
+    {
+      "id": "yardrat-outfit-spare",
+      "title": "Spare Yardrat outfit",
+      "summary": "Complete matching navy, gold and white outfit with lavender sash and boots.",
+      "status": "Carried · Packaged",
+      "location": "carried",
+      "details": "Made and collected at Equipment Services on 20 October. Still carried under Zero’s arm; not yet stored in Room 214. Ordinary clothing, matching the original."
     },
     {
       "id": "patrol-communicator",
@@ -75,28 +83,24 @@
       "title": "Chronoa’s seal briefing",
       "summary": "Written account of the seal, channel and failed Kaioken combination.",
       "status": "Stored in Room 214",
-      "details": "Guru read the briefing before examining Zero and returned it before the Namek training. The protected scroll is inside Zero’s travel bag, now stored in Room 214.",
+      "details": "Guru read the briefing before examining Zero and returned it before the Namek training. The protected scroll is inside Zero’s travel bag, now stored in Room 214. Historical reference: the Dark Factor and seal were integrated into Zero’s biology on 6 October; the former seal and channel no longer exist.",
       "location": "room-214"
     },
     {
       "id": "patrol-dragon-balls",
       "title": "Conton City Dragon Balls",
-      "summary": "Complete compatible set: seven of seven collected.",
-      "status": "Six stored · Seven-Star carried",
-      "details": "TP-RS-647: Four-Star received 23 April after TL-619, wrapped in clean cloth; Two-Star received 22 May for eight later cleanup assignments, in its padded case. One-, Three-, Five- and Six-Star Balls redeemed on 5, 12, 19 and 26 September. Seven-Star issued 6 October. One through Six are stored in Room 214; Seven-Star remains in its case with Zero. No wish made.",
-      "location": "carried",
+      "summary": "Set used for the integration wish; none currently owned.",
+      "status": "0 / 7",
+      "details": "All seven TP-RS-647 balls were used on 6 October and returned to the Time Nest vault. No remaining wish, reserved replacement or personal cooldown.",
+      "location": "none",
       "facts": [
         {
           "label": "Collection",
-          "value": "7 / 7 · TP-RS-647"
+          "value": "0 / 7"
         },
         {
-          "label": "Stored",
-          "value": "One–Six-Star Balls · Bottom bedside drawer, Room 214"
-        },
-        {
-          "label": "Carried",
-          "value": "Seven-Star Ball · Issued case"
+          "label": "Previous set",
+          "value": "TP-RS-647 · Wish fulfilled"
         }
       ]
     }

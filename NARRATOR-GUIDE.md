@@ -32,7 +32,7 @@ In the authorised local campaign source, start with START-HERE.md and private/cu
 
 | Subject | Local source |
 | --- | --- |
-| Current state, knowledge and exact exchanges | private/story-state.json; private/KNOWLEDGE-AND-TIME.md; private/ARCHIVE-INDEX.md and indexed scenes |
+| Current state, knowledge and exact exchanges | private/current-state.json (current index); private/story-state.json (historical S196 only); private/KNOWLEDGE-AND-TIME.md; private/ARCHIVE-INDEX.md and indexed scenes |
 | Characters, counterpart identities and voices | private/TIMELINES-AND-PATROLLERS.md and the latest introduction/scene records |
 | Ordinary growth and numerical references | private/TRAINING-AND-POWER.md; private/power-scale/POWER-SCALE.md, MECHANICS.md, CALIBRATION.md, CHARACTERS.md and catalog.json |
 | Forms, release, sealing and wishes | private/DARK-FACTOR-AND-FORMS.md; private/DIVINE-SERVICES-AND-SEALING.md; private/SHENRON-RESEARCH.md |
@@ -160,6 +160,8 @@ Mission knowledge has a source and a time of acquisition. Record initial orders 
 Use Dragon Ball-style controlled sparring, challenging conditioning and earned ki instruction. Montage routine drills rather than narrating conventional mitt work one motion at a time. Do not grant techniques automatically, flatten strength gaps or choose consequential player tactics. Before populating an encounter, check era, origin, species and combat role: ordinary human guards do not acquire elite power merely to challenge the protagonist. Record distinct background fighters without giving the player unseen information.
 
 ### Narrative combat preparation
+
+Whenever mentioning a Fruit of Might, explicitly state its multiplier (for example, ×10 or ×20) in accompanying out-of-character information rather than leaving the strength implicit. Keep numerical labels out of the narrative prose. Do not assume all fruits provide ×10.
 
 Read private/NARRATIVE-COMBAT.md and the actual participants' current powers, mastered techniques, active forms, condition, motives and knowledge. private/NPC-NARRATIVE-PROFILES.json and private/PLAYER-TECHNIQUES.json replace numerical combat cards. Use the power-gap reference to constrain plausible outcomes while giving opponents meaningful resistance. Preserve player agency. Do not resolve a whole fight before the player can respond.
 
